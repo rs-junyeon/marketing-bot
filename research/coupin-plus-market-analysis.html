@@ -1,0 +1,158 @@
+<!DOCTYPE html><html lang='ko'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>쿠핀 PLUS 시장·생태계 분석</title><style>
+  :root{--ink:#1a1d24;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--accent-soft:#eff6ff;--warn:#b45309;--warn-soft:#fffbeb;--ok-soft:#f0fdf4;}
+  *{box-sizing:border-box}
+  body{font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;color:var(--ink);line-height:1.65;margin:0;background:#fff;font-size:14.5px}
+  main{max-width:980px;margin:0 auto;padding:48px 32px 80px}
+  header.cover{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:28px}
+  header.cover .kicker{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:700;text-transform:uppercase}
+  h1{font-size:30px;margin:6px 0 8px;line-height:1.3}
+  h2{font-size:21px;margin:44px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+  h3{font-size:16px;margin:26px 0 8px}
+  .meta{color:var(--muted);font-size:13px}
+  .muted{color:var(--muted);font-size:11.5px}
+  sup a{color:var(--accent);text-decoration:none;font-size:10.5px}
+  a{color:var(--accent)}
+  .tldr{background:var(--accent-soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px}
+  .tldr li{margin:4px 0}
+  .box{border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:14px 0}
+  .warn{background:var(--warn-soft);border-color:#fcd34d}
+  .warn b.t{color:var(--warn)}
+  .ok{background:var(--ok-soft);border-color:#bbf7d0}
+  table{width:100%;border-collapse:collapse;margin:10px 0 6px;font-size:13px}
+  th,td{border-bottom:1px solid var(--line);padding:7px 8px;vertical-align:top;text-align:left}
+  th{background:#f9fafb;font-weight:700;font-size:12.5px}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
+  .kpi{border:1px solid var(--line);border-radius:8px;padding:12px}
+  .kpi .v{font-size:22px;font-weight:800}
+  .kpi .l{font-size:12px;color:var(--muted)}
+  .flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+  .flow span{background:#f3f4f6;border-radius:999px;padding:4px 12px;font-size:12.5px}
+  .flow i{color:var(--muted);font-style:normal}
+  .tag{display:inline-block;font-size:11px;border-radius:4px;padding:1px 6px;background:#f3f4f6;color:#374151;margin-left:4px}
+  ol.src{font-size:12px;color:#374151;padding-left:18px;list-style:none}
+  ol.src li{margin:3px 0;word-break:break-all}
+  .toc{columns:2;font-size:13.5px}
+  .toc a{text-decoration:none}
+  @media print{
+    body{font-size:11px}
+    main{padding:0;max-width:none}
+    h2{break-after:avoid;page-break-after:avoid}
+    h3{break-after:avoid}
+    table,.box,.kpi{break-inside:avoid}
+    tr{break-inside:avoid}
+    a{color:inherit;text-decoration:none}
+    .pb{page-break-before:always}
+  }
+  @page{size:A4;margin:16mm 14mm}
+</style><style>@media print{table{break-inside:auto} thead{display:table-header-group} h2,h3{break-after:avoid}} .grid{grid-template-columns:repeat(4,1fr)}</style></head><body><main>
+<header class="cover">
+  <div class="kicker">마케팅 봇 · 대상 서비스 심층 분석 1부</div>
+  <h1>쿠핀 PLUS 시장·생태계 분석</h1>
+  <div class="meta">작성 전준연 · 2026-11-23 · 2부(마케팅 봇 구축 설계)로 이어집니다</div>
+</header>
+
+<div class="tldr"><b>한눈에 보기</b><ul>
+<li><b>PLUS는</b> 사장님이 스마트폰만으로 가입해 모바일 쿠폰을 만들고 문자·알림톡으로 보내는 <b>소상공인용 SaaS형 쿠폰 발급 서비스</b>입니다. 쿠핀의 발급 솔루션(CIMS)을 소상공인용으로 만든 것입니다.<sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></li>
+<li><b>시장은 큽니다.</b> 소상공인 사업체는 613.4만 개이고, 그중 숙박·음식점업이 79.6만 개입니다. 디지털 기술을 쓰는 사장님은 27.2%로 아직 적습니다.<sup><a href="#s4">[4]</a></sup></li>
+<li><b>기본 기능은 이미 무료입니다.</b> 네이버(플레이스 쿠폰), 토스플레이스, 페이히어가 적립·쿠폰·알림톡을 무료나 낮은 가격으로 함께 줍니다.<sup><a href="#s8">[8]</a></sup><sup><a href="#s12">[12]</a></sup><sup><a href="#s14">[14]</a></sup> 그래서 "쿠폰 보내기" 하나로는 유료 구독 이유를 만들기 어렵습니다.</li>
+<li><b>PLUS가 다른 점</b>은 POS 없이 쓸 수 있고, 쿠폰을 PIN 상품권으로 발급해 쿠핀 중계(HALO)를 거쳐 다른 쿠폰몰에서도 팔 수 있으며, AI 월간 리포트가 있다는 점입니다. 마케팅 봇은 이 강점을 알리고 실제로 쓰게 만드는 쪽에 붙여야 합니다.</li>
+</ul></div>
+
+<h2>1. PLUS는 어떤 서비스인가</h2>
+<h3>1-1. 쿠폰 생태계에서의 위치</h3>
+<p>사내 문서 「서비스 구조」는 쿠폰 생태계를 세 층으로 나눕니다.<sup><a href="#s3">[3]</a></sup> PLUS는 이 중 맨 앞의 <b>발급사</b>에 속하고, 사장님이 직접 시스템을 빌려 쓰는 <b>SaaS형</b>입니다.</p>
+<table><thead><tr><th style="width:14%">층</th><th>하는 일</th><th style="width:34%">쿠핀 서비스</th></tr></thead><tbody>
+<tr><td><b>발급사</b></td><td>쿠폰(PIN·바코드)을 만들고 발급부터 사용·만료까지 관리, 발송·정산</td><td>CIMS(기업용), <b>PLUS(소상공인용)</b></td></tr>
+<tr><td><b>중계사</b></td><td>여러 발급사 상품을 하나의 API로 묶어 쿠폰몰에 공급, 주문·정산 중개</td><td>HALO</td></tr>
+<tr><td><b>쿠폰몰</b></td><td>상품 진열·판매, 결제·회원 관리</td><td>ON(B2C), ONLY(폐쇄몰) 등</td></tr>
+</tbody></table>
+<p class="muted">쿠핀 홈페이지는 PLUS를 "소상공인 모바일 쿠폰 서비스"로, 대표 고객을 "단골 손님에게 쿠폰을 보내고 싶은데 복잡한 시스템은 부담스러운 카페 사장님"으로 소개합니다.<sup><a href="#s1">[1]</a></sup></p>
+
+<h3>1-2. 사장님이 PLUS를 쓰는 흐름</h3>
+<p>사용자 가이드와 coupin-plus 코드에서 확인한 흐름입니다.<sup><a href="#s2">[2]</a></sup></p>
+<div class="flow"><span>가입(사업자 인증)</span><i>→</i><span>관리자 승인</span><i>→</i><span>구독 결제</span><i>→</i><span>매장·상품 등록</span><i>→</i><span>매장 QR로 손님 모으기</span><i>→</i><span>쿠폰 발급·발송</span><i>→</i><span>Audit 앱으로 사용 처리</span><i>→</i><span>매출·AI 리포트</span></div>
+<table><thead><tr><th style="width:20%">기능</th><th>내용</th><th style="width:26%">마케팅 관점의 의미</th></tr></thead><tbody>
+<tr><td>구독·크레딧</td><td>월 발송 횟수 기반 구독 상품(예: "베이직 100")과 크레딧 충전. 가입·로그인 시 크레딧을 주는 이벤트 기능이 있음</td><td>가입 유도용 혜택을 코드 변경 없이 운영할 수 있음</td></tr>
+<tr><td>QR 고객 수집</td><td>손님이 매장 QR을 찍으면 쿠폰을 받고, 고객 데이터·주소록이 쌓임</td><td>사장님이 단골 명단을 직접 갖게 됨</td></tr>
+<tr><td>발급·발송</td><td>쿠폰을 PIN으로 발급해 알림톡·문자로 보냄, 메시지 템플릿 제공</td><td>메시지 문구를 쓰는 일이 사장님 부담</td></tr>
+<tr><td>AI 보조</td><td>상품 사진으로 등록 초안 작성, 도움말, 대화형 등록 비서</td><td>이미 AI 호출 구조가 있음</td></tr>
+<tr><td>AI 리포트</td><td>매출·이용·방문·재방문 수치를 요약하고 "다음 달 실행 과제"를 제안(Gemini·Ollama 교체 가능)</td><td>마케팅 봇이 이어 받을 자리</td></tr>
+<tr><td>외부 판매</td><td>HALO를 거쳐 ON 등 쿠폰몰에 상품 노출</td><td>사장님에게 새 판매 채널</td></tr>
+</tbody></table>
+<p class="muted">실제 구독 가격은 운영 DB에서 관리자가 정하는 값이라 코드로는 확인하지 못했습니다.</p>
+
+<h2>2. 시장 규모</h2>
+<div class="grid">
+<div class="kpi"><div class="v">613.4만</div><div class="l">소상공인 사업체 수(2024)<sup><a href="#s4">[4]</a></sup></div></div>
+<div class="kpi"><div class="v">79.6만</div><div class="l">숙박·음식점업 사업체(13.0%)<sup><a href="#s4">[4]</a></sup></div></div>
+<div class="kpi"><div class="v">27.2%</div><div class="l">디지털·스마트 기술 활용 소상공인(+9.2%p)<sup><a href="#s4">[4]</a></sup></div></div>
+<div class="kpi"><div class="v">8.5조</div><div class="l">e쿠폰 거래액(2024, −15.4%)<sup><a href="#s5">[5]</a></sup></div></div>
+</div>
+<table><thead><tr><th style="width:26%">지표</th><th>내용</th><th style="width:30%">PLUS에 주는 의미 <span class="tag">해석</span></th></tr></thead><tbody>
+<tr><td>대상 사업체</td><td>도·소매업 210.0만(34.2%), 숙박·음식점업 79.6만(13.0%). 사업체당 종사자는 1.57명<sup><a href="#s4">[4]</a></sup></td><td>대부분 1~2명이 운영 → "알아서 해 주는" 자동화 가치가 큼</td></tr>
+<tr><td>디지털 활용</td><td>활용 27.2%. 유형은 온라인 판로 49.0%, 매장관리 34.4%, 경영관리 소프트웨어 19.6%<sup><a href="#s4">[4]</a></sup></td><td>아직 쓰지 않는 70%대가 주 대상. 처음 쓰는 사람용 온보딩이 중요</td></tr>
+<tr><td>경영 애로</td><td>경쟁 심화 61.0%, 원재료비 49.6%, 상권 쇠퇴 33.5%<sup><a href="#s4">[4]</a></sup></td><td>메시지는 "단골·재방문으로 매출 지키기"가 맞음</td></tr>
+<tr><td>모바일 상품권</td><td>e쿠폰 거래액 2023년 10조 원 돌파 후 2024년 8조 5,136억 원(통계청 온라인쇼핑동향 인용). 티메프·해피머니 사태 뒤 규제 강화<sup><a href="#s5">[5]</a></sup></td><td>신뢰·정산 투명성이 판매 포인트가 됨</td></tr>
+<tr><td>수수료 환경</td><td>카카오 선물하기 수수료 상한 14% → 8%, 정산주기 67일 → 37일(민관 상생안)<sup><a href="#s6">[6]</a></sup></td><td>"기프티콘은 수수료가 비싸다"는 사장님 인식이 있음 → 직접 발급 PLUS의 설득 포인트</td></tr>
+<tr><td>정부 지원</td><td>2026년 소상공인 지원사업 1조 3,410억 원. 스마트상점 기술보급 349억 원(약 1.6만 개사, 매출분석 AI 등 포함), AI 활용지원 143.6억 원 신설<sup><a href="#s7">[7]</a></sup></td><td>지원사업 공급기업 등록이 유입 경로가 될 수 있음(확인 필요)</td></tr>
+</tbody></table>
+<p class="muted">"매장용 쿠폰·단골관리 SaaS" 시장 규모를 직접 집계한 공식 통계는 찾지 못했습니다. 위 수치는 대상 사업체 수와 인접 시장으로 규모를 가늠한 것입니다.</p>
+
+<h2>3. 경쟁 서비스</h2>
+<p>사장님 입장에서 PLUS 대신 고를 수 있는 서비스들입니다. 크게 <b>플랫폼 무료 도구</b>, <b>POS·결제 번들</b>, <b>단골관리 전문</b> 세 부류입니다.</p>
+<table><thead><tr><th style="width:15%">서비스</th><th style="width:13%">부류</th><th>쿠폰·단골 기능과 가격</th><th style="width:25%">고객 확보 방식</th></tr></thead><tbody>
+<tr><td><b>네이버 스마트플레이스</b></td><td>플랫폼 무료</td><td>플레이스 쿠폰 무료 발행, 검색·지도에 노출, 톡톡 마케팅메시지로 발송<sup><a href="#s8">[8]</a></sup></td><td>첫 쿠폰 발행 시 Npay 5만원(선착순 100명)<sup><a href="#s9">[9]</a></sup>, 외부 멤버십 연동</td></tr>
+<tr><td><b>토스플레이스</b></td><td>POS 번들</td><td>포인트·스탬프·쿠폰 무료, 적립·쿠폰 알림톡 0원. "쿠폰 쓰면 주문수 3.2배"(업체 발표)<sup><a href="#s12">[12]</a></sup></td><td>단말기·POS 보급 + 매월 무료 「사장님 쿠폰팩」(2026.11)<sup><a href="#s13">[13]</a></sup></td></tr>
+<tr><td><b>페이히어</b></td><td>POS 번들</td><td>무료 모바일 POS, 적립 알림톡 무료. 재방문 쿠폰 알림톡은 유료 재화(씨앗) 차감, 프리미엄 구독 별도<sup><a href="#s14">[14]</a></sup></td><td>무료 POS, 당근 비즈프로필 연동</td></tr>
+<tr><td><b>도도포인트</b></td><td>단골관리 전문</td><td>태블릿 적립, 포인트·스탬프·선불권, 문자 마케팅 유료. 누적 이용 고객 3,000만 명(2022, 업체 발표)<sup><a href="#s11">[11]</a></sup></td><td>네이버 멤버십 연동: 연동 매장 500여 곳 중 99% 방문 증가(네이버 발표)<sup><a href="#s10">[10]</a></sup></td></tr>
+<tr><td><b>단골플러스</b></td><td>단골관리 전문</td><td>태블릿 적립, 설치·A/S 조직 보유. 누적 회원 1,780만 명(2022, 업체 발표)<sup><a href="#s16">[16]</a></sup></td><td>현장 설치·영업</td></tr>
+<tr><td><b>캐시노트</b></td><td>경영관리</td><td>기본 무료 + 플러스 멤버십 Starter 월 9,900원부터<sup><a href="#s15">[15]</a></sup></td><td>매출·카드 정산 관리로 먼저 들어옴</td></tr>
+<tr><td><b>카카오</b></td><td>플랫폼</td><td>톡채널 무료 개설, 소상공인 메시지 발송 지원금<sup><a href="#s17">[17]</a></sup>. 선물하기는 모바일 상품권 판매 채널(수수료 상한 8%)<sup><a href="#s6">[6]</a></sup></td><td>지원금·광고 무료 쿠폰</td></tr>
+<tr><td><b>배달앱(배민 등)</b></td><td>플랫폼</td><td>앱 안 할인 쿠폰. 업주 부담 할인액은 수수료 산정에서 제외 예정(2026.11)<sup><a href="#s18">[18]</a></sup></td><td>배달 주문 기반</td></tr>
+</tbody></table>
+<p class="muted">"3.2배", "99%", "3,000만" 등은 업체나 플랫폼이 직접 밝힌 수치로 독립 검증된 값이 아닙니다.</p>
+
+<div class="box warn"><b class="t">핵심 시사점</b> <span class="tag">해석</span><br>
+적립·쿠폰·알림톡이라는 기본 기능은 네이버·토스·페이히어가 <b>무료로 함께</b> 줍니다. 이들은 POS·검색·지도처럼 사장님이 이미 매일 쓰는 도구에 쿠폰을 끼워 넣습니다. 따라서 PLUS가 "쿠폰을 보낼 수 있다"는 점만 알려서는 유료 구독으로 이어지기 어렵습니다.</div>
+
+<h2>4. 생태계 지도 — 사장님 주변의 도구들</h2>
+<table><thead><tr><th style="width:20%">층</th><th>대표 플레이어</th><th style="width:28%">PLUS와의 관계 <span class="tag">해석</span></th></tr></thead><tbody>
+<tr><td>손님이 가게를 찾는 곳</td><td>네이버 지도·플레이스, 카카오맵·톡채널, 당근, 배달앱</td><td>PLUS 쿠폰을 여기에 노출할 방법이 약함 → 연동이 과제</td></tr>
+<tr><td>결제·POS</td><td>토스플레이스, 페이히어, 기존 VAN·POS</td><td>경쟁자이자 연동 후보. PLUS는 POS가 없어도 되는 점이 강점</td></tr>
+<tr><td>단골관리(CRM)</td><td>도도포인트, 단골플러스, 캐시노트</td><td>직접 경쟁</td></tr>
+<tr><td>쿠폰 발급·유통</td><td><b>PLUS</b> → HALO → ON·다른 쿠폰몰, 카카오 선물하기</td><td>PLUS만의 자리: 쿠폰을 상품권처럼 외부에 팔 수 있음</td></tr>
+<tr><td>메시지 인프라</td><td>알림톡·문자 발송사</td><td>건당 비용 → 구독 상품의 원가</td></tr>
+<tr><td>정책·지원</td><td>중기부·소진공 지원사업, 지역사랑상품권·온누리</td><td>지원사업 연계 시 도입 비용 부담을 덜 수 있음</td></tr>
+</tbody></table>
+
+<h2>5. PLUS의 기회와 위험</h2>
+<p class="muted">이 장은 위 자료를 바탕으로 한 작성자 의견입니다.</p>
+<table><thead><tr><th style="width:50%">기회</th><th>위험</th></tr></thead><tbody>
+<tr><td><b>POS 없이 시작</b>: 기계 없이 스마트폰만으로 시작할 수 있어, 아직 디지털을 안 쓰는 70%대 사장님에게 진입 장벽이 낮음</td><td><b>무료 대체재</b>: 같은 사장님이 이미 네이버·토스 무료 쿠폰을 쓰고 있을 수 있음</td></tr>
+<tr><td><b>외부 판매 채널</b>: HALO를 거쳐 ON 등에서 쿠폰을 팔 수 있음. 단골관리 도구들에는 없는 "새 손님" 경로</td><td><b>가입 중 이탈</b>: 사업자 서류 → 관리자 승인 대기 → 결제까지 단계가 많음</td></tr>
+<tr><td><b>AI 리포트</b>: 이미 "다음 달 실행 과제"를 제안함. 실행까지 이어 주면 차별점이 됨</td><td><b>메시지 원가</b>: 알림톡·문자 비용이 구독 가격에 묶여 있음</td></tr>
+<tr><td><b>수수료 불만</b>: 기프티콘 수수료에 대한 사장님 불만을 "직접 발급"으로 풀 수 있음</td><td><b>상품권 규제</b>: 선불·상품권 규제가 강화되는 흐름<sup><a href="#s5">[5]</a></sup></td></tr>
+</tbody></table>
+
+<h2>6. 마케팅 봇 설계로 넘길 내용</h2>
+<p>마케팅 봇의 대상은 두 겹입니다. 2부에서 각각 "언제, 어떤 조건으로 모델을 부르는지"까지 설계합니다.</p>
+<table><thead><tr><th style="width:24%">대상</th><th>목표</th><th style="width:36%">후보 봇 <span class="tag">가설</span></th></tr></thead><tbody>
+<tr><td><b>① PLUS의 고객</b><br>(사장님 가입·구독)</td><td>무료 대체재와 다른 점(POS 불필요, 외부 판매, AI 리포트)을 알려 가입시키고, 가입 후 첫 쿠폰 발송까지 끌고 가기</td><td>검색·커뮤니티 콘텐츠 봇, 가입 중단·승인 대기 후속 안내 봇, 첫 발송 도우미</td></tr>
+<tr><td><b>② 사장님의 손님</b><br>(PLUS 안의 기능)</td><td>사장님이 쿠폰으로 단골을 만들게 돕기 → PLUS를 계속 쓰는 이유</td><td>AI 리포트 → 쿠폰 문구·대상·시점 제안 봇, 미사용 쿠폰·장기 미방문 손님 재방문 제안</td></tr>
+</tbody></table>
+<p>기존 프로토타입은 이렇게 이어 갑니다. D(트렌드 모니터링)와 A(콘텐츠)는 ① 콘텐츠 봇으로, B(문의 후속)는 ① 가입 후속 봇으로 옮길 수 있습니다. ② 봇은 PLUS에 이미 있는 AI 리포트 구조를 확장하는 방향이 유지보수 측면에서 맞습니다.</p>
+
+<h2>7. 사수님께 확인할 것</h2>
+<ul>
+<li>PLUS의 현재 가입 매장 수와 주요 유입 경로(영업, 소개, 검색 등)</li>
+<li>구독 상품의 실제 가격과 메시지 원가</li>
+<li>HALO를 거친 외부 판매(ON 등)가 사장님 영업에서 실제로 쓰이는 강점인지</li>
+<li>정부 지원사업(스마트상점 등) 공급기업으로 등록했거나 등록할 계획이 있는지</li>
+<li>마케팅 봇을 PLUS 코드에 직접 붙일지, 별도 서비스로 시작할지</li>
+</ul>
+
+<h2>출처</h2>
+<ol class="src"><li id='s1'>[1] 쿠핀 공식 홈페이지 — 서비스 소개(CIMS·PLUS·HALO 등) — <a href='https://coupin.io'>https://coupin.io</a></li><li id='s2'>[2] 쿠핀 Plus 사용자 가이드 v1.0 (2026.05) — <a href='https://guide.coupin.io/plus/'>https://guide.coupin.io/plus/</a></li><li id='s3'>[3] 노션 「서비스 구조」 — 발급사·중계사·쿠폰몰 (사내 문서) — <a href='https://app.notion.com/p/3f78e59a2a27807fb2e7d016e63df4c1'>https://app.notion.com/p/3f78e59a2a27807fb2e7d016e63df4c1</a></li><li id='s4'>[4] KDI 경제정보센터 — 2024년 기준 소상공인실태조사 결과 발표 (중기부, 2026.3.13) — <a href='https://eiec.kdi.re.kr/policy/materialView.do?num=277938'>https://eiec.kdi.re.kr/policy/materialView.do?num=277938</a></li><li id='s5'>[5] 티사이언티픽 — 모바일 상품권 시장의 규제 지형 (2026.8, 업체 작성 글·통계청 인용) — <a href='https://tscorp.ai/insight/mobile-voucher-market-brief'>https://tscorp.ai/insight/mobile-voucher-market-brief</a></li><li id='s6'>[6] 뉴시스 — 카카오 선물하기 수수료 상한 14→8% (2024.12.26) — <a href='https://www.newsis.com/view/NISX20241226_0003010681'>https://www.newsis.com/view/NISX20241226_0003010681</a></li><li id='s7'>[7] 뉴스핌 — 올해 소상공인이 알아야 할 지원사업 10선 (2026.2.13) — <a href='https://newspim.com/news/view/20260213001052'>https://newspim.com/news/view/20260213001052</a></li><li id='s8'>[8] 네이버 스마트플레이스 — 플레이스 쿠폰 소개 — <a href='https://new.smartplace.naver.com/introduction/solution-market/coupon'>https://new.smartplace.naver.com/introduction/solution-market/coupon</a></li><li id='s9'>[9] 네이버 스마트플레이스 공지 — 첫 쿠폰 발행 시 5만원 (2026.9.9) — <a href='https://new.smartplace.naver.com/notices/1109'>https://new.smartplace.naver.com/notices/1109</a></li><li id='s10'>[10] 네이버 스마트플레이스 공지 — 멤버십 연동 매장 99% 손님 증가 (2026.11.18) — <a href='https://m.smartplace.naver.com/notices/1167'>https://m.smartplace.naver.com/notices/1167</a></li><li id='s11'>[11] 도도포인트 홈페이지 — <a href='https://www.dodopoint.co.kr/'>https://www.dodopoint.co.kr/</a></li><li id='s12'>[12] 토스플레이스 — 고객관리(포인트·쿠폰 CRM) — <a href='https://tossplace.com/product/crm'>https://tossplace.com/product/crm</a></li><li id='s13'>[13] 뉴스핌 — 토스플레이스 「사장님 쿠폰팩」 출시 (2026.11.18) — <a href='https://newspim.com/news/view/20261118000123'>https://newspim.com/news/view/20261118000123</a></li><li id='s14'>[14] 페이히어 — 고객 관리·적립 FAQ — <a href='https://payhere.in/loyalty/'>https://payhere.in/loyalty/</a></li><li id='s15'>[15] 캐시노트 고객센터 — 플러스 멤버십 요금 (검색 결과 요약 기준) — <a href='https://cashnote.zendesk.com/hc/ko/articles/13162309621785'>https://cashnote.zendesk.com/hc/ko/articles/13162309621785</a></li><li id='s16'>[16] 단골플러스 홈페이지 — <a href='https://www.dgplus.co.kr/'>https://www.dgplus.co.kr/</a></li><li id='s17'>[17] 카카오비즈니스 — 파트너 지원(소상공인 톡채널 메시지 지원금, 검색 결과 요약 기준) — <a href='https://business.kakao.com/info/partnersupport'>https://business.kakao.com/info/partnersupport</a></li><li id='s18'>[18] 머니투데이 — 배민, 업주 부담 할인액 수수료 제외 (2026.11.12) — <a href='https://mt.co.kr/tech/2026/11/12/2026111209003834875'>https://mt.co.kr/tech/2026/11/12/2026111209003834875</a></li></ol>
+<p class="muted">PLUS의 기능 흐름은 coupin-plus 저장소(읽기 전용 확인)와 사용자 가이드를 근거로 했습니다. "해석·가설" 표시 내용은 작성자 의견입니다. 수치는 2026-11-23에 원문에서 확인했고, 캐시노트·카카오 지원금 항목은 원문 페이지가 자동 접속을 막아 검색 결과 요약을 근거로 했습니다.</p>
+</main></body></html>
