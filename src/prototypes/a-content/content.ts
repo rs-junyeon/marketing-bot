@@ -98,6 +98,8 @@ const PLACEHOLDER_PATTERNS: RegExp[] = [
   /lorem ipsum/i,
   /(?<![A-Za-z])(O{2,}|X{2,})(?![A-Za-z])|○○|ㅇㅇ/,
   /\[(가게|매장|상호|브랜드|이름|링크|URL|주소)[^\]]*\]/i,
+  // 따옴표로 감싼 빈칸: “고객이름”, "가게 이름" 등
+  /[“"'‘](고객\s*이름|고객명|손님\s*이름|가게\s*이름|매장명|상호명)[”"'’]/,
 ];
 
 /** 실패하면 throw 해서 metrics.track 이 failed 로 기록하게 한다. */
@@ -105,7 +107,8 @@ export function validateDraft(raw: unknown): LlmDraft {
   if (!raw || typeof raw !== "object") throw new Error("검증 실패: LLM 응답이 객체가 아닙니다.");
   const draft = raw as Partial<Record<keyof LlmDraft, unknown>>;
   const title = typeof draft.title === "string" ? draft.title.trim() : "";
-  const body = typeof draft.body === "string" ? draft.body.trim() : "";
+  // 일부 모델은 JSON 안에서 줄바꿈을 이중 이스케이프해 본문에 "\\n" 글자가 그대로 남는다.
+  const body = typeof draft.body === "string" ? draft.body.replace(/\\n/g, "\n").trim() : "";
   const summary = typeof draft.summary === "string" ? draft.summary.trim() : "";
   const problems: string[] = [];
   if (!title) problems.push("제목이 비어 있음");

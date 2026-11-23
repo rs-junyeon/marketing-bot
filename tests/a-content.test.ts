@@ -121,4 +121,10 @@ describe("a-content", () => {
       /한자\(중국어\).*卖点/,
     );
   });
+
+  it("validateDraft: 따옴표 빈칸 거부, 남은 \\n 글자는 줄바꿈으로 복원", () => {
+    assert.throws(() => validateDraft({ title: "제목", body: `${validBody} “고객이름”님 안녕하세요`, summary: "s" }), /고객이름/);
+    const draft = validateDraft({ title: "제목", body: `${validBody}\\n다음 줄`, summary: "s" });
+    assert.ok(draft.body.endsWith("\n다음 줄"));
+  });
 });
