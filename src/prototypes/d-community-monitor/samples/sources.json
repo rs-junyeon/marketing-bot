@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Google 뉴스: 소상공인 단골",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%EC%86%8C%EC%83%81%EA%B3%B5%EC%9D%B8%20%EB%8B%A8%EA%B3%A8%20when%3A7d&hl=ko&gl=KR&ceid=KR:ko"
+  },
+  {
+    "name": "Google 뉴스: 자영업자 쿠폰",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%EC%9E%90%EC%98%81%EC%97%85%EC%9E%90%20%EC%BF%A0%ED%8F%B0%20when%3A7d&hl=ko&gl=KR&ceid=KR:ko"
+  },
+  {
+    "name": "Google 뉴스: 사장님 리뷰 관리",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%EC%82%AC%EC%9E%A5%EB%8B%98%20%EB%A6%AC%EB%B7%B0%20%EA%B4%80%EB%A6%AC%20when%3A7d&hl=ko&gl=KR&ceid=KR:ko"
+  },
+  {
+    "name": "Google 뉴스: 소상공인 마케팅 AI",
+    "type": "rss",
+    "url": "https://news.google.com/rss/search?q=%EC%86%8C%EC%83%81%EA%B3%B5%EC%9D%B8%20%EB%A7%88%EC%BC%80%ED%8C%85%20AI%20when%3A7d&hl=ko&gl=KR&ceid=KR:ko"
+  },
+  {
+    "name": "커뮤니티 샘플(가상)",
+    "type": "sample-file",
+    "path": "community-sample.json"
+  }
+]

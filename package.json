@@ -9,11 +9,11 @@
     "typecheck": "tsc --noEmit",
     "test": "node --test 'tests/**/*.test.ts'",
     "check": "pnpm typecheck && pnpm test",
-    "a": "node src/prototypes/a-content/cli.ts",
-    "b": "node src/prototypes/b-lead-followup/server.ts",
-    "c": "node src/prototypes/c-sales-brief/cli.ts",
-    "d": "node src/prototypes/d-community-monitor/cli.ts",
-    "report": "node src/shared/report-cli.ts"
+    "report": "node src/shared/report-cli.ts",
+    "a:content": "node src/prototypes/a-content/cli.ts",
+    "b:lead": "node src/prototypes/b-lead-followup/server.ts",
+    "c:sales": "node src/prototypes/c-sales-brief/cli.ts",
+    "d:monitor": "node src/prototypes/d-community-monitor/cli.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
