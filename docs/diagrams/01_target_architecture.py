@@ -1,6 +1,5 @@
 """목표 구조 — 서비스 무관 공용 엔진 + 서비스별 연결부(어댑터)."""
 
-from diagrams.gcp.ml import VertexAI
 from diagrams.generic.compute import Rack
 from diagrams.generic.device import Mobile
 from diagrams.onprem.client import User, Users
@@ -14,7 +13,7 @@ with diagram("01_target_architecture", "마케팅 봇 목표 구조 — 공용 �
             plus = InputOutput("가입 · 구독 · 발송\nQR 손님 · AI 리포트")
         with cluster("쿠핀 ON (소비자 · B2C)", "service"):
             on = InputOutput("회원 · 구매\n쿠폰 만료 · 동의 이력")
-        future = InputOutput("다음 서비스\n(CIMS, 회사 B2B 서비스)")
+        future = InputOutput("회사의 다른 서비스\n(B2B 영업형 · SaaS · B2C)")
 
     with cluster("연결부 (서비스마다 1개)", "adapter"):
         plus_ad = Preparation("PLUS 연결부\n이벤트 변환 · 대상 조회\n동의 확인 · 채널")
@@ -31,9 +30,8 @@ with diagram("01_target_architecture", "마케팅 봇 목표 구조 — 공용 �
         measure = PredefinedProcess("⑦ 측정")
         playbooks = Document("플레이북 설정\n시나리오 = 설정 추가")
 
-    with cluster("모델 (③에서만 호출)", "model"):
-        local = Rack("기본: Ollama\n배치 · 초안")
-        cloud = VertexAI("상위: Gemini\n실시간 대기 작업만")
+    with cluster("AI 모델 (③에서만 호출 · 운영 모델 미정)", "model"):
+        llm = Rack("설정으로 교체 가능\n프로토타입: gpt-oss:20b")
 
     with cluster("사람", "human"):
         operator = User("운영자\n승인 화면")
@@ -51,8 +49,7 @@ with diagram("01_target_architecture", "마케팅 봇 목표 구조 — 공용 �
         ad >> edge("flow", "공통 이벤트") >> receive
 
     receive >> edge() >> gate >> edge("yes", "통과") >> generate
-    generate >> edge("model") >> local
-    generate >> edge("model", style="dashed") >> cloud
+    generate >> edge("model") >> llm
     generate >> edge() >> verify >> edge() >> approve
     approve >> edge("human") >> operator
     approve >> edge("human") >> owner
