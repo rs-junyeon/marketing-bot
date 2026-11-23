@@ -55,7 +55,8 @@ pnpm d:monitor report                # 최근 리포트 경로·요약
 
 ## A·C로의 전달
 
-- **A**: `readTopicHandoff(store)`로 읽는다. `topics[]` = 콘텐츠 아이디어 `{title, reason, sourceLinks}`. 샘플만 근거인 주제는 reason 끝에 경고가 붙어 있으니 A가 걸러 쓸 수 있다.
+- **A**: `readTopicHandoff(store)`로 읽는다. `topics[]` = 콘텐츠 아이디어 `{title, reason, sourceLinks}`. 샘플만 근거인 주제와 경쟁사 홍보만 근거인 주제는 넘기지 않고, reason 끝에 "근거: 보도 n건 · 기사 m건"과 ⚠ 경고(과장 표현·근거 없는 수치)가 붙는다.
+- **C용 파일**의 각 영업 포인트에는 `competitors`(근거에 나온 경쟁사 이름) 필드가 함께 들어간다.
 - **C**: `data/d-community-monitor/latest-sales-angles.json`을 직접 읽어야 한다. 공용 규약이 필요하면 `shared/handoff.ts`에 추가를 요청한다(아래 "다음 단계").
 
 ## 데이터 품질 장치 (2026-11-23 추가)
