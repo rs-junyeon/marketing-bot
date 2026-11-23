@@ -2,7 +2,8 @@
 
 알에스팀 마케팅 봇 조사·프로토타입 저장소입니다.
 
-- `research/` — 시장조사 자료 (HTML/PDF)
+- `research/` — 시장조사·쿠핀 PLUS 분석·구축 설계·flow 다이어그램 문서 (HTML/PDF)
+- `docs/diagrams/` — flow 다이어그램 원본 (Python diagrams, `python build.py`로 다시 생성)
 - `src/` — 병렬 프로토타입 A~D 코드
 
 ## 프로토타입

@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang='ko'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>마케팅 봇 flow 다이어그램 모음</title><style>
+  :root{--ink:#1a1d24;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--accent-soft:#eff6ff;--warn:#b45309;--warn-soft:#fffbeb;--ok-soft:#f0fdf4;}
+  *{box-sizing:border-box}
+  body{font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;color:var(--ink);line-height:1.65;margin:0;background:#fff;font-size:14.5px}
+  main{max-width:980px;margin:0 auto;padding:48px 32px 80px}
+  header.cover{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:28px}
+  header.cover .kicker{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:700;text-transform:uppercase}
+  h1{font-size:30px;margin:6px 0 8px;line-height:1.3}
+  h2{font-size:21px;margin:44px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+  h3{font-size:16px;margin:26px 0 8px}
+  .meta{color:var(--muted);font-size:13px}
+  .muted{color:var(--muted);font-size:11.5px}
+  sup a{color:var(--accent);text-decoration:none;font-size:10.5px}
+  a{color:var(--accent)}
+  .tldr{background:var(--accent-soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px}
+  .tldr li{margin:4px 0}
+  .box{border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:14px 0}
+  .warn{background:var(--warn-soft);border-color:#fcd34d}
+  .warn b.t{color:var(--warn)}
+  .ok{background:var(--ok-soft);border-color:#bbf7d0}
+  table{width:100%;border-collapse:collapse;margin:10px 0 6px;font-size:13px}
+  th,td{border-bottom:1px solid var(--line);padding:7px 8px;vertical-align:top;text-align:left}
+  th{background:#f9fafb;font-weight:700;font-size:12.5px}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
+  .kpi{border:1px solid var(--line);border-radius:8px;padding:12px}
+  .kpi .v{font-size:22px;font-weight:800}
+  .kpi .l{font-size:12px;color:var(--muted)}
+  .flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+  .flow span{background:#f3f4f6;border-radius:999px;padding:4px 12px;font-size:12.5px}
+  .flow i{color:var(--muted);font-style:normal}
+  .tag{display:inline-block;font-size:11px;border-radius:4px;padding:1px 6px;background:#f3f4f6;color:#374151;margin-left:4px}
+  ol.src{font-size:12px;color:#374151;padding-left:18px;list-style:none}
+  ol.src li{margin:3px 0;word-break:break-all}
+  .toc{columns:2;font-size:13.5px}
+  .toc a{text-decoration:none}
+  @media print{
+    body{font-size:11px}
+    main{padding:0;max-width:none}
+    h2{break-after:avoid;page-break-after:avoid}
+    h3{break-after:avoid}
+    table,.box,.kpi{break-inside:avoid}
+    tr{break-inside:avoid}
+    a{color:inherit;text-decoration:none}
+    .pb{page-break-before:always}
+  }
+  @page{size:A4;margin:16mm 14mm}
+</style><style>
+figure{margin:18px 0 28px}
+figure img{width:100%;border:1px solid #e5e7eb;border-radius:8px;background:#f8f9fa}
+figure p{margin:4px 0 8px}
+@media print{
+  @page{size:A4 landscape;margin:10mm 12mm}
+  figure{break-inside:avoid}
+  figure img{max-height:125mm;object-fit:contain}
+  h2.pb{break-before:page}
+}
+</style></head><body><main>
+<header class="cover">
+  <div class="kicker">마케팅 봇 · flow 기반 아키텍처</div>
+  <h1>마케팅 봇 flow 다이어그램 모음</h1>
+  <div class="meta">작성 전준연 · 2026-11-23 · 다이어그램 6개 · 원본 코드 docs/diagrams/ (python build.py로 다시 생성)</div>
+</header>
+<div class="tldr"><b>구성</b><ul>
+<li><b>마케팅 봇 구조</b> 2장: 공용 엔진 + 서비스별 연결부, 모델을 언제 어떤 조건으로 부르는지</li>
+<li><b>현재 프로토타입</b> 4장: 지금 만들어 둔 A·B·C·D가 실제로 어떻게 동작하는지</li>
+</ul></div>
+<h3>읽는 법</h3>
+
+<table><thead><tr><th style="width:24%">선 색</th><th>의미</th><th style="width:24%">배경색</th><th>의미</th></tr></thead><tbody>
+<tr><td><span style="color:#2196f3">━━</span> 파랑</td><td>기본 진행</td><td><span style="background:#fffde7;padding:0 10px">　</span> 노랑</td><td>시작 신호</td></tr>
+<tr><td><span style="color:#4caf50">━━</span> 초록</td><td>조건 통과</td><td><span style="background:#e8f5e9;padding:0 10px">　</span> 연두</td><td>코드 처리 (엔진)</td></tr>
+<tr><td><span style="color:#e53935">━━</span> 빨강</td><td>조건 실패 · 차단</td><td><span style="background:#fff3e0;padding:0 10px">　</span> 주황</td><td>모델 호출</td></tr>
+<tr><td><span style="color:#ff9800">━━</span> 주황</td><td>모델 호출 · 응답</td><td><span style="background:#fce4ec;padding:0 10px">　</span> 분홍</td><td>사람 승인</td></tr>
+<tr><td><span style="color:#9c27b0">━━</span> 보라</td><td>사람 승인 · 수정</td><td><span style="background:#e0f7fa;padding:0 10px">　</span> 하늘</td><td>발송 · 결과</td></tr>
+<tr><td><span style="color:#795548">━━</span> 갈색 / <span style="color:#607d8b">━━</span> 회색</td><td>데이터 읽기·쓰기 / 지표 기록</td><td><span style="background:#ede7f6;padding:0 10px">　</span> 연보라</td><td>서비스별 연결부</td></tr>
+</tbody></table>
+<p class="muted">마름모는 조건 판단, 서버 아이콘은 모델, 사람 아이콘은 승인하는 사람입니다. 점선은 아직 연결하지 않았거나 선택적인 흐름입니다.</p>
+
+<h2 class="pb">마케팅 봇 구조</h2><figure><h3>1. 공용 엔진 + 서비스별 연결부</h3><p>엔진은 서비스 이름을 모르고, 서비스마다 다른 부분(이벤트 형식, 대상 조회, 수신 동의 확인, 발송 채널)은 연결부가 맡습니다. 쿠핀 PLUS·ON 다음 서비스는 연결부만 추가하면 됩니다. 모델은 ③ 문구 생성에서만 호출됩니다.</p><img src="../docs/diagrams/out/01_target_architecture.png" alt="공용 엔진 + 서비스별 연결부"><figcaption class="muted">docs/diagrams/01_target_architecture.py</figcaption></figure><figure><h3>2. 엔진 처리 흐름 — 모델은 언제, 어떤 조건으로 호출되나</h3><p>이벤트 1건이 엔진을 지나는 모든 분기입니다. 플레이북·수신 동의·발송 한도·데이터 조건 중 하나라도 맞지 않으면 모델을 부르지 않고 사유만 남깁니다. 검증에 실패하면 1회 재생성하고, 그래도 실패하면 사람이 검토합니다. 서비스별 시나리오(PLUS 7개·ON 4개)는 2부 설계 문서 3장 표에 있습니다.</p><img src="../docs/diagrams/out/02_engine_pipeline.png" alt="엔진 처리 흐름 — 모델은 언제, 어떤 조건으로 호출되나"><figcaption class="muted">docs/diagrams/02_engine_pipeline.py</figcaption></figure><h2 class="pb">현재 프로토타입</h2><figure><h3>3. A. 콘텐츠 자동화</h3><p>운영자가 실행하면 D의 글감(없으면 샘플)으로 모델을 1회 호출해 블로그 초안을 만들고, 코드 검증을 통과한 글만 승인 대기열에 올립니다. 승인한 글만 발행(현재 DRY_RUN)합니다.</p><img src="../docs/diagrams/out/03_prototype_a_content.png" alt="A. 콘텐츠 자동화"><figcaption class="muted">docs/diagrams/03_prototype_a_content.py</figcaption></figure><figure><h3>4. B. 문의 후속</h3><p>유일하게 자동으로 모델을 부르는 프로토타입입니다. 문의가 접수되면 감사 페이지를 바로 보여 주고, 뒤에서 접수 확인 메일(모델 미사용) → 후속 메일 생성(모델 1회) 순서로 처리합니다. 광고 동의가 없으면 사람이 고쳐서 1:1 답장으로 보냅니다.</p><img src="../docs/diagrams/out/04_prototype_b_lead.png" alt="B. 문의 후속"><figcaption class="muted">docs/diagrams/04_prototype_b_lead.py</figcaption></figure><figure><h3>5. C. 영업 지원</h3><p>대상 이름·홈페이지·메모로 브리프와 제안서 초안을 만듭니다. 확인된 사실과 추정을 나눠 적고, 아무것도 발송하지 않습니다. 영업 담당자가 검토해 직접 전달합니다.</p><img src="../docs/diagrams/out/05_prototype_c_sales.png" alt="C. 영업 지원"><figcaption class="muted">docs/diagrams/05_prototype_c_sales.py</figcaption></figure><figure><h3>6. D. 커뮤니티·트렌드 모니터링</h3><p>수집(collect)에는 모델을 쓰지 않습니다. 분석(analyze)에서 모델을 1회 부르고, 근거 없는 항목·경쟁사 홍보·샘플만 근거인 항목은 코드가 걸러 A·C로 넘깁니다. A·B·C·D 중 실제로 이어진 곳은 D→A(글감) 하나입니다.</p><img src="../docs/diagrams/out/06_prototype_d_monitor.png" alt="D. 커뮤니티·트렌드 모니터링"><figcaption class="muted">docs/diagrams/06_prototype_d_monitor.py</figcaption></figure>
+<p class="muted" style="margin-top:24px">프로토타입 다이어그램은 marketing-bot 저장소 코드와 README 기준입니다. 구조 다이어그램은 2부 「마케팅 봇 구축 설계」의 제안입니다.</p>
+</main></body></html>
