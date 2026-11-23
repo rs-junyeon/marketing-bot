@@ -27,6 +27,8 @@ export interface Brand {
 export interface TopicList {
   source: "handoff" | "samples";
   topics: TopicSuggestion[];
+  /** D가 주제를 만든 시각 (handoff일 때만). topics 는 캐시를 읽기만 하므로 언제 것인지 보여줘야 한다. */
+  generatedAt?: string;
 }
 
 export interface LlmDraft {
@@ -56,7 +58,7 @@ export function loadBrand(): Brand {
 /** D가 넘겨준 주제가 있으면 그것을, 없으면 samples/topics.json 을 쓴다. */
 export function listTopics(ctx: AppContext): TopicList {
   const handoff = readTopicHandoff(ctx.store);
-  if (handoff && handoff.topics.length > 0) return { source: "handoff", topics: handoff.topics };
+  if (handoff && handoff.topics.length > 0) return { source: "handoff", topics: handoff.topics, generatedAt: handoff.generatedAt };
   const topics = JSON.parse(readFileSync(resolve(SAMPLES_DIR, "topics.json"), "utf8")) as TopicSuggestion[];
   return { source: "samples", topics };
 }

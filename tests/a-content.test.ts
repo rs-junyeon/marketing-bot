@@ -110,8 +110,9 @@ describe("a-content", () => {
       generatedAt: new Date().toISOString(),
       topics: [{ title: "장마철 배달 포장 고민", reason: "커뮤니티 언급 증가", sourceLinks: [] }],
     });
-    const { source, topics } = listTopics(ctx);
+    const { source, topics, generatedAt } = listTopics(ctx);
     assert.equal(source, "handoff");
+    assert.ok(generatedAt, "D가 만든 시각을 함께 돌려준다");
     assert.equal(topics[0].title, "장마철 배달 포장 고민");
   });
 

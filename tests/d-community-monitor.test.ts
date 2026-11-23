@@ -3,7 +3,9 @@ import { readFileSync } from "node:fs";
 import { describe, it } from "node:test";
 import { readTopicHandoff } from "../src/shared/handoff.ts";
 import { EVENTS } from "../src/shared/metrics.ts";
-import { analyze, itemText, latestReport, normalizeAnalysis } from "../src/prototypes/d-community-monitor/analyze.ts";
+import { analyze, buildHandoff, itemText, latestReport, normalizeAnalysis, overclaimWarnings } from "../src/prototypes/d-community-monitor/analyze.ts";
+import { clusterItems, titleSimilarity } from "../src/prototypes/d-community-monitor/cluster.ts";
+import type { CollectedItem } from "../src/prototypes/d-community-monitor/collect.ts";
 import { type SourceConfig, type TextFetcher, collect, readItems } from "../src/prototypes/d-community-monitor/collect.ts";
 import { countKeywords, countWatchKeywords, tokenize } from "../src/prototypes/d-community-monitor/keywords.ts";
 import { decodeEntities, parseRss } from "../src/prototypes/d-community-monitor/rss.ts";
@@ -163,9 +165,9 @@ describe("d-community-monitor: analyze", () => {
 
     const handoff = readTopicHandoff(ctx.store);
     assert.ok(handoff);
-    assert.equal(handoff.topics.length, 2);
+    assert.equal(handoff.topics.length, 1, "샘플만 근거인 글감은 A에 넘기지 않는다");
     assert.deepEqual(handoff.topics[0].sourceLinks, ["https://n/fee"]);
-    assert.match(handoff.topics[1].reason, /샘플/);
+    assert.ok(markdown.includes("샘플만 근거인 글감"), "리포트에는 남긴다");
     assert.equal(ctx.metrics.all().filter((event) => event.name === EVENTS.generated).length, 1);
     // 프롬프트에 샘플 표시가 들어간다
     assert.match(ctx.llm.calls[0].user, /\(샘플\)/);
@@ -188,5 +190,75 @@ describe("d-community-monitor: analyze", () => {
     const ctx = createTestContext();
     await assert.rejects(analyze(ctx, { now: NOW, watchKeywords: [] }), /collect/);
     assert.equal(ctx.llm.calls.length, 0);
+  });
+});
+
+function article(title: string, link = `https://n/${encodeURIComponent(title)}`, isSample = false): CollectedItem {
+  return { id: link, sourceName: "news", title, link, publishedAt: NOW.toISOString(), collectedAt: NOW.toISOString(), snippet: "", isSample };
+}
+
+describe("d-community-monitor: 같은 보도 묶기·경쟁사·과장 표현", () => {
+  it("매체만 다른 같은 보도자료는 1건으로 묶고, 다른 기사는 묶지 않는다", () => {
+    const items = [
+      article("토스플레이스, 소상공인 위한 '사장님 쿠폰팩' 출시 - 이데일리"),
+      article("토스플레이스, 사장님 쿠폰팩 선보여 - 한스경제"),
+      article("'매달 1일은 사장님 쿠폰 받는 날'…토스플레이스, 무료 혜택 제공 - 파이낸셜포스트"),
+      article("배달수수료 인상에 자영업자 부담 커져 - 한국일보"),
+      article("샘플 글 A", "", true),
+      article("샘플 글 A", "", true),
+    ];
+    const stories = clusterItems(items, ["토스플레이스"]);
+    assert.deepEqual(stories.map((s) => s.members.length), [3, 1, 1, 1], "샘플은 같은 제목이어도 묶지 않는다");
+    assert.equal(stories[0].competitor, "토스플레이스");
+    assert.equal(stories[1].competitor, null);
+    assert.ok(titleSimilarity("iM뱅크, 제주 첫 영업점 개점 - 뉴스1", "배달수수료 인상에 자영업자 부담") < 0.2);
+  });
+
+  it("경쟁사 홍보만 근거인 콘텐츠 아이디어는 빼고, 섞여 있으면 경쟁사 근거만 뺀다", () => {
+    const stories = clusterItems(
+      [article("토스플레이스, 사장님 쿠폰팩 출시 - 이데일리"), article("배달수수료 인상에 자영업자 부담 - 한국일보")],
+      ["토스플레이스"],
+    );
+    const analysis = normalizeAnalysis(
+      {
+        themes: [],
+        painPoints: [],
+        contentIdeas: [
+          { title: "쿠폰팩 활용 가이드", reason: "출시 소식", evidence: [1] },
+          { title: "배달 비용 줄이기", reason: "수수료 부담 기사", evidence: [1, 2] },
+        ],
+        salesAngles: [{ text: "경쟁사 무료 쿠폰팩 대비 차별점", evidence: [1] }],
+      },
+      stories,
+    );
+    assert.equal(analysis.droppedCompetitor, 1);
+    assert.deepEqual(analysis.contentIdeas.map((c) => c.title), ["배달 비용 줄이기"]);
+    assert.equal(analysis.contentIdeas[0].evidence.length, 1);
+    assert.equal(analysis.salesAngles[0].evidence[0].competitor, "토스플레이스", "영업 포인트에는 경쟁사 근거를 남긴다");
+  });
+
+  it("근거 보도가 적은데 '다수'·'확산' 같은 표현을 쓰면 경고하고, 전달 문구에 근거 수를 붙인다", () => {
+    const stories = clusterItems(
+      Array.from({ length: 9 }, (_, i) => article(`토스플레이스, 사장님 쿠폰팩 출시 - 매체${i}`)).concat(article("동네 빵집 단골 관리 노하우 - 지역신문")),
+      [],
+    );
+    assert.equal(stories.length, 2);
+    const analysis = normalizeAnalysis(
+      {
+        themes: [],
+        painPoints: [],
+        contentIdeas: [{ title: "무료 쿠폰 활용법", reason: "운영비를 줄여주는 사례가 다수 보고되고 있다", evidence: [1] }],
+        salesAngles: [],
+      },
+      stories,
+    );
+    assert.ok(analysis.contentIdeas[0].warnings[0].includes("근거가 적음 (서로 다른 보도 1건, 기사 9건)"));
+    const [topic] = buildHandoff(analysis, NOW.toISOString()).topics;
+    assert.match(topic.reason, /근거: 보도 1건 · 기사 9건/);
+    assert.match(topic.reason, /⚠/);
+    assert.deepEqual(overclaimWarnings("단골 관리 팁", analysis.contentIdeas[0].evidence), []);
+    const evidence = analysis.contentIdeas[0].evidence;
+    assert.match(overclaimWarnings("문의를 30% 줄이는 방법", evidence)[0], /근거 글에 없는 수치: 30%/);
+    assert.deepEqual(overclaimWarnings("쿠폰팩 출시", evidence), []);
   });
 });

@@ -38,8 +38,16 @@ async function main(argv: string[]): Promise<void> {
 
   switch (command) {
     case "topics": {
-      const { source, topics } = listTopics(ctx);
-      console.log(source === "handoff" ? "📥 D(커뮤니티 모니터링)가 전달한 주제" : "📄 샘플 주제 (D 전달 주제 없음)");
+      const { source, topics, generatedAt } = listTopics(ctx);
+      if (source === "handoff" && generatedAt) {
+        const hours = (Date.now() - Date.parse(generatedAt)) / 3_600_000;
+        const age = hours < 1 ? `${Math.max(1, Math.round(hours * 60))}분 전` : `${hours.toFixed(1)}시간 전`;
+        const at = new Date(generatedAt).toLocaleString("ko-KR", { timeZone: "Asia/Seoul" });
+        console.log(`📥 D(커뮤니티 모니터링)가 전달한 주제 — 분석 시각 ${at} (${age})`);
+        console.log("   새로 만들려면: pnpm d:monitor collect && pnpm d:monitor analyze");
+      } else {
+        console.log(source === "handoff" ? "📥 D(커뮤니티 모니터링)가 전달한 주제" : "📄 샘플 주제 (D 전달 주제 없음)");
+      }
       topics.forEach((topic, index) => console.log(`${index + 1}. ${topic.title}\n   └ ${topic.reason}`));
       return;
     }
