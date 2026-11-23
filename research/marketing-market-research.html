@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang='ko'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>마케팅 기초 정리 — 마케팅 봇 기획 전 필수 내용</title><style>
+  :root{--ink:#1a1d24;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--accent-soft:#eff6ff;--warn:#b45309;--warn-soft:#fffbeb;--ok-soft:#f0fdf4;}
+  *{box-sizing:border-box}
+  body{font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;color:var(--ink);line-height:1.65;margin:0;background:#fff;font-size:14.5px}
+  main{max-width:980px;margin:0 auto;padding:48px 32px 80px}
+  header.cover{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:28px}
+  header.cover .kicker{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:700;text-transform:uppercase}
+  h1{font-size:30px;margin:6px 0 8px;line-height:1.3}
+  h2{font-size:21px;margin:44px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+  h3{font-size:16px;margin:26px 0 8px}
+  .meta{color:var(--muted);font-size:13px}
+  .muted{color:var(--muted);font-size:11.5px}
+  sup a{color:var(--accent);text-decoration:none;font-size:10.5px}
+  a{color:var(--accent)}
+  .tldr{background:var(--accent-soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px}
+  .tldr li{margin:4px 0}
+  .box{border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:14px 0}
+  .warn{background:var(--warn-soft);border-color:#fcd34d}
+  .warn b.t{color:var(--warn)}
+  .ok{background:var(--ok-soft);border-color:#bbf7d0}
+  table{width:100%;border-collapse:collapse;margin:10px 0 6px;font-size:13px}
+  th,td{border-bottom:1px solid var(--line);padding:7px 8px;vertical-align:top;text-align:left}
+  th{background:#f9fafb;font-weight:700;font-size:12.5px}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
+  .kpi{border:1px solid var(--line);border-radius:8px;padding:12px}
+  .kpi .v{font-size:22px;font-weight:800}
+  .kpi .l{font-size:12px;color:var(--muted)}
+  .flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+  .flow span{background:#f3f4f6;border-radius:999px;padding:4px 12px;font-size:12.5px}
+  .flow i{color:var(--muted);font-style:normal}
+  .tag{display:inline-block;font-size:11px;border-radius:4px;padding:1px 6px;background:#f3f4f6;color:#374151;margin-left:4px}
+  ol.src{font-size:12px;color:#374151;padding-left:18px;list-style:none}
+  ol.src li{margin:3px 0;word-break:break-all}
+  .toc{columns:2;font-size:13.5px}
+  .toc a{text-decoration:none}
+  @media print{
+    body{font-size:11px}
+    main{padding:0;max-width:none}
+    h2{break-after:avoid;page-break-after:avoid}
+    h3{break-after:avoid}
+    table,.box,.kpi{break-inside:avoid}
+    tr{break-inside:avoid}
+    a{color:inherit;text-decoration:none}
+    .pb{page-break-before:always}
+  }
+  @page{size:A4;margin:16mm 14mm}
+</style></head><body><main>
+<header class="cover">
+  <div class="kicker">Marketing Bot · 기초 스터디</div>
+  <h1>마케팅 기초 정리<br><span style="font-size:19px;font-weight:600">마케팅 봇을 기획하기 전에 알아야 할 것만</span></h1>
+  <div class="meta">작성: 전준연 · 2026-11-23</div>
+</header>
+
+<section class="tldr"><b>한 장 요약</b>
+<ul>
+ <li><b>마케팅</b> = 고객에게 가치 있는 것을 만들고, 알리고, 전달하고, 교환하는 일 전체. 광고는 그중 일부입니다.<sup><a href="#s1">[1]</a></sup></li>
+ <li><b>마케터</b>는 한 직업이 아니라 역할별로 나뉜 직무군이고, 직무마다 책임지는 숫자(KPI)가 다릅니다.<sup><a href="#s4">[4]</a></sup></li>
+ <li>마케팅 예산은 제자리인데 해야 할 일은 늘고 있어서<sup><a href="#s6">[6]</a></sup> <b>자동화·AI(=마케팅 봇)</b> 수요가 생깁니다.</li>
+ <li>마케팅 도구 대부분은 <b>오픈소스 대안</b>이 있어서, 봇은 처음부터 만들기보다 조합해서 시작할 수 있습니다.</li>
+</ul></section>
+
+<h2>1. 마케팅이란</h2>
+<p>미국마케팅협회(AMA)의 정의: 고객·파트너·사회에 가치 있는 제공물을 <b>만들고(creating) · 알리고(communicating) · 전달하고(delivering) · 교환하는(exchanging)</b> 활동과 과정.<sup><a href="#s1">[1]</a></sup></p>
+<p>이것만 알면 되는 기본 틀 세 가지:</p>
+<table>
+<thead><tr><th style="width:20%">틀</th><th>한 줄 설명</th></tr></thead><tbody>
+<tr><td><b>STP</b></td><td>시장을 나누고(Segmentation) → 공략할 고객을 고르고(Targeting) → 그 고객에게 어떤 서비스로 기억될지 정한다(Positioning).</td></tr>
+<tr><td><b>4P</b></td><td>마케터가 조절하는 네 가지: 제품(Product)·가격(Price)·유통(Place)·홍보(Promotion).<sup><a href="#s2">[2]</a></sup> 쿠폰·할인은 가격·홍보에 해당합니다.</td></tr>
+<tr><td><b>퍼널 (AARRR)</b></td><td>획득 → 활성화 → 유지 → 추천 → 수익. 고객이 어느 단계에서 빠지는지 보는 틀입니다.<sup><a href="#s3">[3]</a></sup></td></tr>
+</tbody></table>
+<div class="flow"><span>고객 이해</span><i>→</i><span>누구에게 무엇을 말할지</span><i>→</i><span>채널로 실행</span><i>→</i><span>숫자로 측정</span><i>→</i><span>개선</span><i>↺</i></div>
+<p class="muted">마케팅은 이 루프를 계속 도는 일입니다. 실행·측정·반복 메시지처럼 반복되는 구간이 봇이 들어가기 좋은 자리입니다.</p>
+
+<h2>2. 마케터는 무슨 일을 하나</h2>
+<table>
+<thead><tr><th style="width:18%">직무</th><th>하는 일</th><th style="width:28%">대표 KPI</th></tr></thead><tbody>
+<tr><td><b>브랜드</b></td><td>"이 분야 하면 우리"가 떠오르게 만든다</td><td>인지도, 브랜드 검색량</td></tr>
+<tr><td><b>퍼포먼스</b></td><td>광고비를 써서 유입·구매를 만든다</td><td>ROAS, CPA</td></tr>
+<tr><td><b>그로스</b></td><td>가입부터 재방문까지 실험으로 개선한다</td><td>전환율, 리텐션</td></tr>
+<tr><td><b>콘텐츠</b></td><td>SNS·블로그로 광고 없이 사람을 모은다</td><td>도달, 참여율</td></tr>
+<tr><td><b>CRM</b></td><td>기존 고객에게 푸시·알림톡으로 다시 사게 만든다</td><td>재구매율, 휴면 복귀율</td></tr>
+<tr><td><b>마테크·데이터</b></td><td>측정이 되도록 데이터·도구를 연결한다</td><td>추적 정확도</td></tr>
+</tbody></table>
+<p class="muted">국내 실무 직무 지도<sup><a href="#s4">[4]</a></sup>의 16개 직무 중 봇과 관련이 큰 6개만 추렸습니다.</p>
+
+<h2>3. 꼭 알아야 할 용어 15개</h2>
+<table>
+<thead><tr><th style="width:18%">용어</th><th>뜻</th><th style="width:28%">예시</th></tr></thead><tbody><tr><td><b>KPI</b></td><td>핵심 성과 지표. 목표 달성 여부를 판단하는 대표 숫자.</td><td>CRM 담당의 KPI = 재구매율</td></tr><tr><td><b>퍼널</b></td><td>알게 됨 → 가입 → 구매로 갈수록 사람이 줄어드는 깔때기 모양의 고객 흐름.</td><td>방문 1,000 → 가입 200 → 구매 50</td></tr><tr><td><b>전환</b></td><td>회사가 원하는 행동을 고객이 실제로 한 것.</td><td>가입, 쿠폰 다운로드, 결제</td></tr><tr><td><b>세그먼트</b></td><td>비슷한 특성으로 묶은 고객 집단. 메시지를 보낼 기본 단위.</td><td>‘30일간 쿠폰 미사용 고객’</td></tr><tr><td><b>CTR / CVR</b></td><td>클릭률(클릭 ÷ 노출) / 전환율(전환 ÷ 클릭).</td><td>2% / 5%</td></tr><tr><td><b>CPC / CPA</b></td><td>클릭 1번 / 전환 1건을 얻는 데 든 비용.</td><td>250원 / 5,000원</td></tr><tr><td><b>ROAS</b></td><td>광고비 대비 매출(%). 이익이 아니라 매출 기준이라는 점에 주의.</td><td>매출 400만 ÷ 광고비 100만 = 400%</td></tr><tr><td><b>CAC / LTV</b></td><td>고객 1명 데려오는 비용 / 고객 1명이 평생 가져다주는 매출. LTV가 CAC보다 커야 남음.</td><td>CAC 2만 원, LTV 6만 원</td></tr><tr><td><b>리텐션 / 이탈</b></td><td>계속 쓰는 고객 비율 / 떠난 고객 비율.</td><td>가입 다음 달 재사용 40%</td></tr><tr><td><b>CRM</b></td><td>① 고객 관리 시스템 ② 기존 고객에게 다시 사게 만드는 마케팅. 문맥으로 구분.</td><td>휴면 고객에게 쿠폰 푸시</td></tr><tr><td><b>A/B 테스트</b></td><td>고객을 무작위로 나눠 두 안을 비교하는 실험.</td><td>푸시 문구 A vs B</td></tr><tr><td><b>UTM</b></td><td>링크 뒤에 붙여 어디서 들어왔는지 표시하는 꼬리표.</td><td>?utm_source=kakao</td></tr><tr><td><b>옵트인(수신동의)</b></td><td>광고성 메시지를 받겠다고 고객이 동의한 상태. 이게 없으면 광고 메시지를 보낼 수 없음.</td><td>—</td></tr><tr><td><b>오가닉 / 페이드</b></td><td>돈 안 들인 유입 / 광고로 산 유입.</td><td>SNS 게시물 vs SNS 광고</td></tr><tr><td><b>마테크</b></td><td>마케팅에 쓰는 소프트웨어 전체.</td><td>GA4, HubSpot, n8n</td></tr></tbody></table>
+<div class="box ok"><b>계산 예시 (가상)</b> 광고비 100만 원 → 노출 20만 회 → 클릭 4,000회 → 구매 200건 → 매출 400만 원이면<br>
+CTR 2% · CPC 250원 · CVR 5% · CPA 5,000원 · ROAS 400%</div>
+
+<h2 class="pb">4. 알아둘 만한 오픈소스</h2>
+<p>HubSpot·GA 같은 유료 마케팅 도구 대부분에 무료 오픈소스 대안이 있습니다. 대표적인 것만 골랐습니다(★ = GitHub 스타 수, 2026-11-23 조회).</p>
+<table>
+<thead><tr><th style="width:17%">이름</th><th style="width:14%">분야</th><th>무엇인가</th><th style="width:9%">★</th><th style="width:20%">라이선스</th></tr></thead><tbody><tr><td><a href='https://github.com/PostHog/posthog'>PostHog</a></td><td>분석</td><td>제품 분석·A/B 테스트 올인원</td><td class='num'>41,025</td><td>MIT + 일부 유료</td></tr><tr><td><a href='https://github.com/umami-software/umami'>Umami</a></td><td>분석</td><td>가벼운 웹 방문 분석(GA 대체)</td><td class='num'>40,303</td><td>MIT</td></tr><tr><td><a href='https://github.com/mautic/mautic'>Mautic</a></td><td>마케팅 자동화</td><td>HubSpot 같은 캠페인·리드 관리</td><td class='num'>11,081</td><td>GPL-3.0</td></tr><tr><td><a href='https://github.com/knadh/listmonk'>listmonk</a></td><td>이메일</td><td>뉴스레터·대량 메일 발송</td><td class='num'>24,424</td><td>AGPL-3.0</td></tr><tr><td><a href='https://github.com/gitroomhq/postiz-app'>Postiz</a></td><td>소셜</td><td>SNS 예약 발행, AI 연동</td><td class='num'>42,184</td><td>AGPL-3.0</td></tr><tr><td><a href='https://github.com/twentyhq/twenty'>Twenty</a></td><td>CRM</td><td>Salesforce 대안 고객 관리</td><td class='num'>61,341</td><td>AGPL 중심</td></tr><tr><td><a href='https://github.com/chatwoot/chatwoot'>Chatwoot</a></td><td>고객 상담</td><td>채팅·상담 통합 창구</td><td class='num'>40,360</td><td>MIT + 일부 유료</td></tr><tr><td><a href='https://github.com/n8n-io/n8n'>n8n</a></td><td>워크플로·AI</td><td>도구 연결 자동화, 봇 조립용 엔진</td><td class='num'>211,842</td><td>fair-code(재판매 제한)</td></tr><tr><td><a href='https://github.com/langgenius/dify'>Dify</a></td><td>워크플로·AI</td><td>LLM 챗봇·에이전트 빌더</td><td class='num'>161,690</td><td>수정 Apache(조건 있음)</td></tr><tr><td><a href='https://github.com/coreyhaines31/marketingskills'>marketingskills</a></td><td>AI 에이전트</td><td>AI 에이전트용 마케팅 노하우 모음</td><td class='num'>62,076</td><td>MIT</td></tr><tr><td><a href='https://github.com/langchain-ai/social-media-agent'>Social Media Agent</a></td><td>AI 에이전트</td><td>글 작성 → 사람 승인 → 예약 발행</td><td class='num'>3,051</td><td>MIT</td></tr></tbody></table>
+<div class="box warn"><b class="t">⚠ 라이선스 한 줄 주의</b> AGPL은 수정해서 서비스로 제공하면 소스 공개 의무가 생길 수 있고, n8n 같은 fair-code는 재판매가 제한됩니다. 회사에서 쓰기 전에 확인이 필요합니다.</div>
+
+<h2>5. 마케팅 봇으로 이어가려면</h2>
+<p>마케팅 봇은 보통 네 종류 중 하나입니다. <b>① 고객 상담 챗봇</b> · <b>② 고객 메시지 자동화(CRM)</b> · <b>③ SNS 콘텐츠 자동화</b> · <b>④ 마케터용 리포트·리서치 비서</b>.</p>
+<p>제 의견으로는, 쿠폰 서비스라면 <b>②번</b>이 재구매·휴면 복귀처럼 숫자로 바로 확인되는 KPI와 가장 잘 연결됩니다. 카카오가 공개한 연구에서도 브랜드메시지 발송 후 재구매 건수가 30.7% 늘었다는 결과가 있습니다(플랫폼사 발표 자료).<sup><a href="#s8">[8]</a></sup> 어떤 유형을 고를지는 사수님과 함께 정할 부분입니다.</p>
+<div class="box"><b>다음에 같이 정할 질문</b>
+<ol style="margin:6px 0 0">
+ <li>봇은 누가 쓰나요? (고객 / 사내 / 가맹점주)</li>
+ <li>무엇으로 성공을 판단하나요? (KPI 하나)</li>
+ <li>어떤 채널로 보내나요? (앱 푸시 / 카카오 / 이메일 / SNS)</li>
+</ol></div>
+
+<h2>출처</h2>
+<ol class="src"><li id='s1'>[1] AMA — Definitions of Marketing — <a href='https://www.ama.org/the-definition-of-marketing-what-is-marketing'>https://www.ama.org/the-definition-of-marketing-what-is-marketing</a></li><li id='s2'>[2] OpenStax Principles of Marketing 1.2 — The Marketing Mix and the 4Ps — <a href='https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing'>https://openstax.org/books/principles-marketing/pages/1-2-the-marketing-mix-and-the-4ps-of-marketing</a></li><li id='s3'>[3] Amplitude — AARRR: Pirate Metrics Framework — <a href='https://amplitude.com/blog/pirate-metrics-framework'>https://amplitude.com/blog/pirate-metrics-framework</a></li><li id='s4'>[4] linsung.wiki — 마케팅 직무 16종, 하는 일과 KPI (2026-09-10) — <a href='https://linsung.wiki/insights/job-map-16-roles'>https://linsung.wiki/insights/job-map-16-roles</a></li><li id='s6'>[6] Marketing Brew — Gartner 2025 CMO Spend Survey 보도 (2025-05) — <a href='https://www.marketingbrew.com/stories/2025/05/20/marketing-budgets-gartner-cmo-report'>https://www.marketingbrew.com/stories/2025/05/20/marketing-budgets-gartner-cmo-report</a></li><li id='s8'>[8] 카카오 보도자료 — 브랜드메시지 효과 연구 (2026-08-25) — <a href='https://kakaocorp.com/page/detail/12120'>https://kakaocorp.com/page/detail/12120</a></li></ol>
+<p class="muted">용어 설명과 직무 요약은 일반 개념을 쉽게 풀어 썼습니다. 오픈소스 스타 수·라이선스는 GitHub에서 직접 조회했습니다. 5장 추천은 작성자 의견입니다.</p>
+</main></body></html>
