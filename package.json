@@ -1,0 +1,22 @@
+{
+  "name": "marketing-bot",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test 'tests/**/*.test.ts'",
+    "check": "pnpm typecheck && pnpm test",
+    "a": "node src/prototypes/a-content/cli.ts",
+    "b": "node src/prototypes/b-lead-followup/server.ts",
+    "c": "node src/prototypes/c-sales-brief/cli.ts",
+    "d": "node src/prototypes/d-community-monitor/cli.ts",
+    "report": "node src/shared/report-cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
