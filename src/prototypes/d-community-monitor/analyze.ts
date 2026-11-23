@@ -291,7 +291,7 @@ export async function analyze(ctx: AppContext, options: AnalyzeOptions = {}): Pr
     PROTOTYPE,
     { stage: "analyze", kind: "trend-report", items: String(promptItems.length) },
     async () => {
-      const text = await ctx.llm.complete({ ...prompt, temperature: 0.3 });
+      const text = await ctx.llm.complete({ ...prompt, temperature: 0.3, json: true });
       return normalizeAnalysis(parseJsonResponse<RawAnalysis>(text), promptItems);
     },
   );

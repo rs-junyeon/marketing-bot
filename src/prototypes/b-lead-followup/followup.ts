@@ -3,6 +3,7 @@ import type { AppContext } from "../../shared/context.ts";
 import { EVENTS } from "../../shared/metrics.ts";
 import { loadPrompt } from "../../shared/prompts.ts";
 import { type Brand, type Lead, PROTOTYPE, recordFollowUp } from "./leads.ts";
+import { findHanCharacters } from "../../shared/text.ts";
 
 export const FOLLOW_UP_KIND = "follow-up-message";
 
@@ -49,9 +50,15 @@ export async function generateFollowUp(ctx: AppContext, brand: Brand, lead: Lead
     concern: lead.concern,
   });
   return ctx.metrics.track(PROTOTYPE, { step: "follow-up", leadId: lead.id }, async () => {
-    const text = (await ctx.llm.complete({ ...prompt, temperature: 0.5 })).trim();
-    if (!text) throw new Error("후속 메시지가 비어 있습니다.");
-    return text;
+    // 한자 섞임은 간헐적이라 한 번만 다시 생성한다. 그래도 섞이면 실패로 기록한다.
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      const text = (await ctx.llm.complete({ ...prompt, temperature: 0.5 })).trim();
+      if (!text) throw new Error("후속 메시지가 비어 있습니다.");
+      const han = findHanCharacters(text);
+      if (!han) return text;
+      if (attempt === 2) throw new Error(`후속 메시지에 한자(중국어)가 섞여 있습니다: "${han}"`);
+    }
+    throw new Error("unreachable");
   });
 }
 

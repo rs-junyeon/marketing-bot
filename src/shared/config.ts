@@ -38,7 +38,7 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
     llmProvider: provider,
     llmBaseUrl: env.LLM_BASE_URL ?? "http://localhost:11434/v1",
     llmApiKey: env.LLM_API_KEY ?? "ollama",
-    llmModel: env.LLM_MODEL ?? "qwen3.8:27b",
+    llmModel: env.LLM_MODEL ?? "qwen3.6:35b-a3b",
     dataDir: resolve(PROJECT_ROOT, env.DATA_DIR ?? "data"),
     // 안전 기본값: 명시적으로 "false"라고 하지 않는 한 실제 발송하지 않는다.
     dryRun: env.DRY_RUN !== "false",

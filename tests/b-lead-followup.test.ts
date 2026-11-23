@@ -216,3 +216,16 @@ describe("b-lead-followup 후속 자동화", () => {
     assert.match(await (await fetch(`${base}/admin`)).text(), /생성\/발송 실패/);
   });
 });
+
+describe("b-lead-followup 한자 섞임", () => {
+  it("한자가 섞이면 한 번 다시 생성해 깨끗한 문장을 보낸다", async () => {
+    let calls = 0;
+    const { ctx, app, base } = await start(() => (++calls === 1 ? "재방문率을 높입니다." : FOLLOW_UP));
+    await fetch(`${base}/leads`, form({ ...VALID, marketingConsent: "on" }));
+    await app.jobs.idle();
+    assert.equal(calls, 2);
+    const followUp = outbox(ctx).find((m) => m.isAdvertising);
+    assert.ok(followUp?.body.includes(FOLLOW_UP));
+    assert.equal(events(ctx, EVENTS.failed).length, 0);
+  });
+});

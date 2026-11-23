@@ -114,4 +114,11 @@ describe("a-content", () => {
     assert.equal(source, "handoff");
     assert.equal(topics[0].title, "장마철 배달 포장 고민");
   });
+
+  it("validateDraft: 한자(중국어) 토큰이 섞이면 거부", () => {
+    assert.throws(
+      () => validateDraft({ title: "제목", body: `${validBody} 핵심卖点을 입력합니다.`, summary: "요약" }),
+      /한자\(중국어\).*卖点/,
+    );
+  });
 });

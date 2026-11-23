@@ -4,6 +4,8 @@ export interface CompletionRequest {
   system: string;
   user: string;
   temperature?: number;
+  /** true면 JSON 객체만 반환하도록 서버에 강제한다(response_format). 본문에 따옴표가 섞여도 깨지지 않는다. */
+  json?: boolean;
 }
 
 /** 프로토타입은 이 인터페이스에만 의존한다. 모델·공급자 교체는 여기서 끝난다. */
@@ -25,7 +27,7 @@ export class OpenAICompatibleClient implements LlmClient {
     this.timeoutMs = options.timeoutMs ?? 300_000;
   }
 
-  async complete({ system, user, temperature = 0.7 }: CompletionRequest): Promise<string> {
+  async complete({ system, user, temperature = 0.7, json = false }: CompletionRequest): Promise<string> {
     const response = await fetch(`${this.baseUrl}/chat/completions`, {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${this.apiKey}` },
@@ -34,6 +36,7 @@ export class OpenAICompatibleClient implements LlmClient {
         temperature,
         // Qwen3 계열의 사고(thinking) 출력을 끈다. 지원하지 않는 서버는 무시한다.
         reasoning_effort: "none",
+        ...(json ? { response_format: { type: "json_object" } } : {}),
         messages: [
           { role: "system", content: system },
           { role: "user", content: user },

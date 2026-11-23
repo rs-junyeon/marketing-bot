@@ -64,7 +64,7 @@ export async function createBrief(ctx: AppContext, target: SalesTarget, deps: Br
       notes: target.notes?.trim() || "(없음)",
       page: describePage(fetched),
     });
-    const raw = await ctx.llm.complete({ ...prompt, temperature: 0.3 });
+    const raw = await ctx.llm.complete({ ...prompt, temperature: 0.3, json: true });
     return { content: validateBrief(parseJsonResponse<unknown>(raw)), fetch: fetched };
   });
 

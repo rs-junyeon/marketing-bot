@@ -7,6 +7,7 @@ import { parseJsonResponse } from "../../shared/llm.ts";
 import { EVENTS } from "../../shared/metrics.ts";
 import { loadPrompt } from "../../shared/prompts.ts";
 import { newId, nowIso } from "../../shared/store.ts";
+import { findHanCharacters } from "../../shared/text.ts";
 
 export const PROTOTYPE = "a-content" as const;
 export const APPROVAL_KIND = "blog-post";
@@ -113,6 +114,9 @@ export function validateDraft(raw: unknown): LlmDraft {
     const hit = `${title}\n${body}`.match(pattern);
     if (hit) problems.push(`빈칸 표시가 남아 있음: "${hit[0]}"`);
   }
+  // Qwen 계열은 한국어 글에 한자(중국어) 토큰이 섞여 나오는 경우가 있다. 예: "핵심卖点"
+  const han = findHanCharacters(`${title}\n${body}`);
+  if (han) problems.push(`한자(중국어)가 섞여 있음: "${han}"`);
   if (problems.length > 0) throw new Error(`검증 실패: ${problems.join(", ")}`);
   return { title, body, summary };
 }
@@ -153,7 +157,7 @@ export async function generateDraft(ctx: AppContext, topic: TopicSuggestion, var
   });
 
   const llmDraft = await ctx.metrics.track(PROTOTYPE, { topic: topic.title, slug }, async () => {
-    const text = await ctx.llm.complete({ system: prompt.system, user: prompt.user, temperature: 0.6 });
+    const text = await ctx.llm.complete({ system: prompt.system, user: prompt.user, temperature: 0.6, json: true });
     return validateDraft(parseJsonResponse<unknown>(text));
   });
 

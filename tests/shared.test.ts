@@ -2,7 +2,9 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import { assertSendable } from "../src/shared/channel.ts";
 import { loadConfig } from "../src/shared/config.ts";
-import { parseJsonResponse, stripThinking } from "../src/shared/llm.ts";
+import { createServer } from "node:http";
+import type { AddressInfo } from "node:net";
+import { OpenAICompatibleClient, parseJsonResponse, stripThinking } from "../src/shared/llm.ts";
 import { EVENTS, summarize } from "../src/shared/metrics.ts";
 import { fill } from "../src/shared/prompts.ts";
 import { createTestContext } from "./helpers.ts";
@@ -83,5 +85,39 @@ describe("metrics", () => {
     assert.equal(summary.counts.generated, 1);
     assert.equal(summary.failureRate, 0.5);
     assert.equal(summary.approvalRate, 1);
+  });
+});
+
+describe("OpenAICompatibleClient", () => {
+  it("json: true 일 때만 response_format 을 보낸다", async () => {
+    const bodies: Record<string, unknown>[] = [];
+    const server = createServer((req, res) => {
+      let raw = "";
+      req.on("data", (chunk) => (raw += chunk));
+      req.on("end", () => {
+        bodies.push(JSON.parse(raw));
+        res.setHeader("content-type", "application/json");
+        res.end(JSON.stringify({ choices: [{ message: { content: "<think>x</think>{}" } }] }));
+      });
+    });
+    await new Promise<void>((resolve) => server.listen(0, "127.0.0.1", resolve));
+    const { port } = server.address() as AddressInfo;
+    const client = new OpenAICompatibleClient({ baseUrl: `http://127.0.0.1:${port}/v1`, apiKey: "k", model: "m" });
+    try {
+      assert.equal(await client.complete({ system: "s", user: "u", json: true }), "{}");
+      await client.complete({ system: "s", user: "u" });
+    } finally {
+      server.close();
+    }
+    assert.deepEqual(bodies[0].response_format, { type: "json_object" });
+    assert.equal(bodies[1].response_format, undefined);
+  });
+});
+
+describe("text.findHanCharacters", async () => {
+  const { findHanCharacters } = await import("../src/shared/text.ts");
+  it("한자 토큰을 찾는다", () => {
+    assert.equal(findHanCharacters("재방문率을 높입니다"), "率");
+    assert.equal(findHanCharacters("한글과 English만"), null);
   });
 });
