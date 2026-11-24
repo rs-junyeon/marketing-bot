@@ -2,14 +2,14 @@
 
 - 대상: country == "KR" 이면서 해외 기업이 아닌 사례(틱톡 라이트·테무처럼 국내 시장의 해외 기업은 제외).
 - 집계는 코드가 계산하고, 대표 근거·통계 문장은 아래 목록에서 손으로 고른다(모두 data/*.json에 있는 수치).
-사용: python3 build.py && python3 summary_kr.py → Chrome으로 acquisition-summary-kr.pdf 인쇄(README 참고)
+사용: python3 build.py && python3 summary_kr.py → Chrome으로 acquisition-summary.pdf 인쇄(README 참고)
 """
 from __future__ import annotations
 
 import json
 from collections import Counter
 
-from summary import CSS, ROOT, SEGMENTS, bars, esc
+from doc_common import CSS, ROOT, SEGMENTS, bars, esc
 
 FOREIGN_COMPANIES = ("틱톡", "테무")
 AD_CHANNELS = ("SNS·디지털 광고", "검색 광고", "TV·옥외 등 매스 광고")
@@ -104,7 +104,7 @@ def main() -> None:
     h = []
     h.append('<header><div class="eyebrow">요약본 · 국내 기업 버전 · 2026-11-24 · 전준연</div><h1>국내 서비스는 어떻게 사용자를 모았나</h1>'
              f'<p class="lead">국내 기업 <b>{len(cases)}개 서비스</b>와 국내 통계를 정리했습니다. 해외 사례와 국내 시장의 해외 기업(틱톡 라이트·테무)은 뺐습니다. '
-             '전체판 요약은 <code>acquisition-summary.pdf</code>, 근거 전체는 <code>acquisition-cases.pdf</code>·<code>index.html</code>에 있습니다.</p></header>')
+             '근거 전체(국내외)는 <code>acquisition-cases.pdf</code>·<code>index.html</code>에 있습니다.</p></header>')
 
     ads = sum(rank.get(k, 0) for k in AD_CHANNELS)
     h.append('<section class="answer"><h2>결론</h2><ol>'

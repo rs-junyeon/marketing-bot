@@ -9,13 +9,13 @@ from __future__ import annotations
 import json
 from collections import Counter
 
-from summary import CSS, ROOT, esc
+from doc_common import CSS, ROOT, esc
 from summary_kr import domestic_cases
 
 SOURCES = [
     ("AMA(미국마케팅협회) 마케팅 정의, 2017 승인", "https://www.ama.org/the-definition-of-marketing-what-is-marketing/"),
     ("정보통신망법 제50조(영리목적의 광고성 정보 전송 제한), 2024-07-24 시행", "https://casenote.kr/법령/정보통신망_이용촉진_및_정보보호_등에_관한_법률/제50조"),
-    ("채널별 사례 수: 국내 기업 사용자 유입 사례 조사(국내 기업만 집계, 해외 사례·국내 시장의 해외 기업 제외)", "acquisition-cases/acquisition-summary-kr.pdf"),
+    ("채널별 사례 수: 국내 기업 사용자 유입 사례 조사(국내 기업만 집계, 해외 사례·국내 시장의 해외 기업 제외)", "acquisition-cases/acquisition-summary.pdf"),
 ]
 
 CONFUSED = [
