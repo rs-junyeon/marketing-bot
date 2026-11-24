@@ -1,0 +1,51 @@
+[
+  {
+    "id": "coupin-plus",
+    "name": "쿠핀 PLUS",
+    "type": "self-serve-saas",
+    "brand": {
+      "name": "쿠핀 PLUS",
+      "tone": "사장님을 돕는 친절하고 담백한 존댓말",
+      "senderName": "쿠핀 PLUS 운영팀",
+      "landingUrl": "https://plus.coupin.io"
+    },
+    "optOutText": "수신거부: 쿠핀 PLUS 콘솔 > 설정 > 알림",
+    "bannedWords": [
+      "대박",
+      "공짜"
+    ],
+    "maxAdsPerSubjectPerWeek": 2,
+    "webhookSecretEnv": "COUPIN_PLUS_WEBHOOK_SECRET",
+    "adapter": {
+      "type": "fixture",
+      "file": "fixtures/coupin-plus.json"
+    },
+    "delivery": {
+      "type": "dry-run"
+    }
+  },
+  {
+    "id": "coupin-on",
+    "name": "쿠핀 ON",
+    "type": "b2c",
+    "brand": {
+      "name": "쿠핀 ON",
+      "tone": "짧고 친근한 존댓말",
+      "senderName": "쿠핀 ON",
+      "landingUrl": "https://on.coupin.io"
+    },
+    "optOutText": "수신거부: 쿠핀 ON 앱 > 내 정보 > 알림 설정",
+    "bannedWords": [
+      "공짜"
+    ],
+    "maxAdsPerSubjectPerWeek": 2,
+    "webhookSecretEnv": "COUPIN_ON_WEBHOOK_SECRET",
+    "adapter": {
+      "type": "fixture",
+      "file": "fixtures/coupin-on.json"
+    },
+    "delivery": {
+      "type": "dry-run"
+    }
+  }
+]

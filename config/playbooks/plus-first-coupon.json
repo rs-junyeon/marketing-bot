@@ -1,0 +1,42 @@
+{
+  "id": "plus-first-coupon",
+  "service": "coupin-plus",
+  "name": "P3 첫 쿠폰 도우미",
+  "enabled": true,
+  "trigger": {
+    "event": "plus.subscription.started",
+    "delayMinutes": 4320
+  },
+  "conditions": [
+    {
+      "fact": "subject.couponSentCount",
+      "op": "eq",
+      "value": 0
+    },
+    {
+      "fact": "subject.productCount",
+      "op": "gte",
+      "value": 1
+    }
+  ],
+  "advertising": false,
+  "frequencyDays": 30,
+  "generation": {
+    "mode": "llm",
+    "prompt": "engine/plus-first-coupon",
+    "fields": {
+      "title": {
+        "maxLength": 30
+      },
+      "body": {
+        "maxLength": 250
+      }
+    }
+  },
+  "approval": "auto",
+  "channel": "inapp",
+  "goal": {
+    "event": "plus.coupon.sent",
+    "windowDays": 7
+  }
+}

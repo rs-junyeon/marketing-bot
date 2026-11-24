@@ -1,0 +1,12 @@
+{
+  "id": "evt-plus-0003",
+  "type": "plus.report.generated",
+  "subjectId": "store-1001",
+  "occurredAt": "2026-11-23T01:00:00Z",
+  "payload": {
+    "period": "2026-10",
+    "summary": "평일 오후 방문이 줄었고 재방문 손님 비중이 높음",
+    "nextAction": "평일 오후 2~5시 재방문 손님 대상 음료 쿠폰 발송",
+    "nextPeriod": "2026-11"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "on-expiry-notice",
+  "service": "coupin-on",
+  "name": "O1 만료 안내 (모델 미사용)",
+  "enabled": true,
+  "trigger": {
+    "event": "on.coupon.expiring",
+    "delayMinutes": 0
+  },
+  "conditions": [
+    {
+      "fact": "event.daysLeft",
+      "op": "in",
+      "value": [
+        30,
+        7,
+        1
+      ]
+    }
+  ],
+  "advertising": false,
+  "frequencyDays": 0,
+  "generation": {
+    "mode": "template",
+    "body": "{{subject_name}}님, 보유하신 '{{event_couponName}}' 쿠폰이 {{event_daysLeft}}일 후 만료됩니다. ({{event_expiresOn}}까지)",
+    "fields": {
+      "body": {
+        "maxLength": 120
+      }
+    }
+  },
+  "approval": "auto",
+  "channel": "alimtalk",
+  "goal": {
+    "event": "on.coupon.redeemed",
+    "windowDays": 30
+  }
+}

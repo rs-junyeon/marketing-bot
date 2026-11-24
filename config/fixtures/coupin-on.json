@@ -1,0 +1,39 @@
+{
+  "member-2001": {
+    "id": "member-2001",
+    "displayName": "지민",
+    "contacts": {
+      "push": "device-token-2001",
+      "alimtalk": "01000002001"
+    },
+    "consents": {
+      "marketing": {
+        "ref": "on-agreement-2001-marketing",
+        "grantedAt": "2026-11-10T03:00:00Z"
+      },
+      "nightMarketing": null
+    },
+    "facts": {
+      "region": "광주 광산구",
+      "purchaseCount": 0,
+      "recommendedCouponName": "달빛카페 아메리카노 1+1",
+      "recommendedCouponPrice": 4500
+    }
+  },
+  "member-2002": {
+    "id": "member-2002",
+    "displayName": "서연",
+    "contacts": {
+      "push": "device-token-2002"
+    },
+    "consents": {
+      "marketing": null
+    },
+    "facts": {
+      "region": "광주 북구",
+      "purchaseCount": 0,
+      "recommendedCouponName": "한솥식당 점심 백반",
+      "recommendedCouponPrice": 7000
+    }
+  }
+}

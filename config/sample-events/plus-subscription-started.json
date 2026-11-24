@@ -1,0 +1,9 @@
+{
+  "id": "evt-plus-0001",
+  "type": "plus.subscription.started",
+  "subjectId": "store-1001",
+  "occurredAt": "2026-11-20T01:00:00Z",
+  "payload": {
+    "plan": "basic"
+  }
+}
