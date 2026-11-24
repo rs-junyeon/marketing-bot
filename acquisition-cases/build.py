@@ -355,6 +355,7 @@ def render_readme(cases: list[dict], stats: list[dict], insights: dict, sources:
              insights.get("subtitle", ""), "",
              "- **요약본(3쪽)**: `acquisition-summary.pdf` — 어떤 채널이 가장 많았나, 구분별 1위, 대표 수치, 쿠핀 적용. `python3 summary.py`로 `summary.html` 생성 후 같은 Chrome 명령으로 인쇄.",
              "- **국내 기업 요약본(3쪽)**: `acquisition-summary-kr.pdf` — 국내 기업 사례·국내 통계만. `python3 summary_kr.py`로 `summary-kr.html` 생성.",
+             "- **마케팅이란(2쪽)**: `marketing-basics.pdf` — 정의, 퍼널, 채널 종류, 대상별 차이, 지표, 정보통신망법 제50조. `python3 basics.py`로 `marketing-basics.html` 생성.",
              "- **보는 법**: `index.html`을 브라우저로 열면 필터·검색이 됩니다. 인쇄본은 `acquisition-cases.pdf`.",
              "- **데이터**: `cases.json`(합친 데이터), `data/*.json`(조사 묶음별 원자료), `data/insights.json`(종합 해석).",
              "- **다시 만들기**: `python3 build.py` 후 PDF는 아래 명령.", "",
