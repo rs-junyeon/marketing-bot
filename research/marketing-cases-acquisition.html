@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang='ko'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>다른 서비스 마케팅 사례와 유입 채널</title><style>
+  :root{--ink:#1a1d24;--muted:#6b7280;--line:#e5e7eb;--accent:#2563eb;--accent-soft:#eff6ff;--warn:#b45309;--warn-soft:#fffbeb;--ok-soft:#f0fdf4;}
+  *{box-sizing:border-box}
+  body{font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;color:var(--ink);line-height:1.65;margin:0;background:#fff;font-size:14.5px}
+  main{max-width:980px;margin:0 auto;padding:48px 32px 80px}
+  header.cover{border-bottom:3px solid var(--ink);padding-bottom:20px;margin-bottom:28px}
+  header.cover .kicker{font-size:12px;letter-spacing:.12em;color:var(--accent);font-weight:700;text-transform:uppercase}
+  h1{font-size:30px;margin:6px 0 8px;line-height:1.3}
+  h2{font-size:21px;margin:44px 0 12px;padding-top:8px;border-top:1px solid var(--line)}
+  h3{font-size:16px;margin:26px 0 8px}
+  .meta{color:var(--muted);font-size:13px}
+  .muted{color:var(--muted);font-size:11.5px}
+  sup a{color:var(--accent);text-decoration:none;font-size:10.5px}
+  a{color:var(--accent)}
+  .tldr{background:var(--accent-soft);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px}
+  .tldr li{margin:4px 0}
+  .box{border:1px solid var(--line);border-radius:8px;padding:12px 16px;margin:14px 0}
+  .warn{background:var(--warn-soft);border-color:#fcd34d}
+  .warn b.t{color:var(--warn)}
+  .ok{background:var(--ok-soft);border-color:#bbf7d0}
+  table{width:100%;border-collapse:collapse;margin:10px 0 6px;font-size:13px}
+  th,td{border-bottom:1px solid var(--line);padding:7px 8px;vertical-align:top;text-align:left}
+  th{background:#f9fafb;font-weight:700;font-size:12.5px}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
+  .kpi{border:1px solid var(--line);border-radius:8px;padding:12px}
+  .kpi .v{font-size:22px;font-weight:800}
+  .kpi .l{font-size:12px;color:var(--muted)}
+  .flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+  .flow span{background:#f3f4f6;border-radius:999px;padding:4px 12px;font-size:12.5px}
+  .flow i{color:var(--muted);font-style:normal}
+  .tag{display:inline-block;font-size:11px;border-radius:4px;padding:1px 6px;background:#f3f4f6;color:#374151;margin-left:4px}
+  ol.src{font-size:12px;color:#374151;padding-left:18px;list-style:none}
+  ol.src li{margin:3px 0;word-break:break-all}
+  .toc{columns:2;font-size:13.5px}
+  .toc a{text-decoration:none}
+  @media print{
+    body{font-size:11px}
+    main{padding:0;max-width:none}
+    h2{break-after:avoid;page-break-after:avoid}
+    h3{break-after:avoid}
+    table,.box,.kpi{break-inside:avoid}
+    tr{break-inside:avoid}
+    a{color:inherit;text-decoration:none}
+    .pb{page-break-before:always}
+  }
+  @page{size:A4;margin:16mm 14mm}
+</style><style>
+@media print{table{break-inside:auto} thead{display:table-header-group} h2,h3{break-after:avoid} tr{break-inside:avoid}}
+td.num{white-space:nowrap;font-weight:700}
+.rel{font-size:10.5px;color:#6b7280;white-space:nowrap}
+</style></head><body><main>
+<header class="cover">
+  <div class="kicker">마케팅 봇 · 사례 조사</div>
+  <h1>다른 서비스는 어떻게 사용자를 모았나 — 어디서 가장 많이 들어왔나</h1>
+  <div class="meta">작성 전준연 · 2026-11-24 · 대상: 소상공인 대상 서비스, 동네·쿠폰 양면 플랫폼, 중소 대상 B2B SaaS (국내외 약 30곳)</div>
+</header>
+
+<div class="tldr"><b>결론</b><ul>
+<li><b>채널별 유입 비중을 숫자로 공개한 곳은 드뭅니다.</b> 확인된 것은 페이히어(가맹점 99% 인바운드 광고), Square(셀러 절반 가까이 자발 가입), Toast(거래 20% 추천), Groupon(방문자 절반 이상 친구 소개) 정도입니다.</li>
+<li><b>사장님은 주로 "사람"에게서 정보를 얻습니다.</b> 주변 지인 54.6%, 협회·모임 37.3%, SNS·검색 13.0%(2019 조사). 성공 사례 대부분도 <b>입소문·추천 · 대리점·영업 · 무료로 시작</b> 중 하나가 주 채널이었습니다.</li>
+<li><b>양면 플랫폼은 한 동네에 집중해 공급을 먼저 채웠습니다</b>(배민 전단지, 당근 판교, 여기어때 무료 제휴). 공급만 돈으로 모은 제로페이는 가맹점 63%가 실적 0이었습니다.</li>
+<li><b>우리에게 가장 필요한 것은 우리 데이터</b>입니다. PLUS 가입 UTM 기록(<code>tn_company_attribution</code>)과 "어떻게 알게 되셨나요" 질문으로 직접 재야 합니다.</li>
+</ul></div>
+
+<h2>1. 어디서 가장 많이 들어왔나 — 수치가 있는 것만</h2>
+<table><thead><tr><th style="width:20%">서비스·조사</th><th style="width:18%">주 유입 채널</th><th>근거</th><th style="width:11%">신뢰도</th></tr></thead><tbody>
+<tr><td>페이히어 (POS)</td><td>인바운드 SNS 광고</td><td>"가맹점 모집의 <b>99%</b>가 인바운드 트래픽, 인스타그램 등에 광고"<sup><a href="#s1">[1]</a></sup></td><td class="rel">대표 인터뷰 2023</td></tr>
+<tr><td>Square (결제·POS)</td><td>자발적 가입</td><td>"셀러의 <b>절반 가까이</b>가 우리를 찾아와 가입". 무료 카드리더를 3만 개 매장에서 배포<sup><a href="#s2">[2]</a></sup></td><td class="rel">상장 서류 2015</td></tr>
+<tr><td>Toast (음식점 POS)</td><td>현장 영업 + 추천</td><td>영업팀 75~80%가 지역 현장 영업, 거래 <b>5건 중 1건</b>이 고객 추천<sup><a href="#s3">[3]</a></sup></td><td class="rel">임원 인터뷰 2023</td></tr>
+<tr><td>Groupon (지역 쿠폰)</td><td>입소문</td><td>도시별 딜 페이지 방문자의 <b>절반 이상</b>이 친구에게 듣고 방문<sup><a href="#s4">[4]</a></sup></td><td class="rel">Forbes 2010</td></tr>
+<tr><td>토스플레이스 (단말기)</td><td>VAN 대리점</td><td>대리점 400여 곳으로 유통, 신규 가맹점 모집 점유율 <b>15%</b><sup><a href="#s5">[5]</a></sup></td><td class="rel">회사 발표 2024</td></tr>
+<tr><td>자영업자 정보 획득 경로</td><td>지인·모임</td><td>주변 지인 <b>54.6%</b>, 협회·모임 37.3%, 현장 조사 27.3%, SNS·검색 13.0%, 본사 6.5%<sup><a href="#s6">[6]</a></sup></td><td class="rel">KB 2019 (2차 인용)</td></tr>
+<tr><td>미국 SMB가 SaaS를 아는 경로</td><td>리뷰·컨설턴트</td><td>온라인 리뷰 22%, 프리랜서·컨설턴트 19%, 매체 영업사원 19%, 가족·친구 17%, 에이전시 12%, SNS 9%<sup><a href="#s7">[7]</a></sup></td><td class="rel">업계 조사 2023</td></tr>
+<tr><td>20인 미만 SMB 정보원</td><td>웹 검색</td><td>웹 검색 54%. 1~2인 사업장은 어드바이저·컨설턴트(46%)와 고객(42%)에 많이 기댐<sup><a href="#s8">[8]</a></sup></td><td class="rel">업계 조사 2024</td></tr>
+<tr><td>정부 지원사업 미참여 이유</td><td>—</td><td>"사업이 있다는 사실을 몰라서" <b>76.2%</b>. 사장님에게 정보가 잘 닿지 않음<sup><a href="#s10">[10]</a></sup></td><td class="rel">중기중앙회 2026</td></tr>
+</tbody></table>
+<p class="muted">캐시노트·배민·당근·네이버·도도포인트 등은 채널별 비중을 공개하지 않아 진술만 있습니다(2장).</p>
+
+<h2>2. 사례 — 소상공인 대상 서비스</h2>
+<table><thead><tr><th style="width:16%">서비스</th><th>어떻게 모았나</th><th style="width:31%">PLUS에 주는 시사점</th></tr></thead><tbody>
+<tr><td><b>캐시노트</b><br><small>230만 사업장</small></td><td>페이스북 기능 광고는 반응 0 → <b>"카드 매출 누락 찾아드림"</b> 손실 메시지로 바꾸자 가입 폭증<sup><a href="#s11">[11]</a></sup>. 매장 방문 영업은 실패, 카카오톡 위에서 무설치로 시작해 <b>사장님 단톡방 입소문</b>으로 주 2,000곳 가입<sup><a href="#s12">[12]</a></sup>. 코로나 지원금 정보 수요로 다시 급증<sup><a href="#s13">[13]</a></sup></td><td>기능("쿠폰 발급")이 아니라 <b>사장님이 바로 느끼는 손익</b>으로 말할 것. 앱 설치 없이 시작</td></tr>
+<tr><td><b>토스플레이스</b><br><small>50만 곳</small></td><td>VAN <b>대리점</b>에 단말기 비용을 돌려줘 사장님은 0~10원에 도입<sup><a href="#s15">[15]</a></sup>. 본사로 온 설치 문의를 대리점에 연결<sup><a href="#s14">[14]</a></sup></td><td>매장을 이미 드나드는 대리점·POS 업체와 수수료 제휴. 단, 토스식 보조금은 불가</td></tr>
+<tr><td><b>페이히어</b><br><small>8.7만 곳</small></td><td>초기 99% SNS 광고 인바운드<sup><a href="#s1">[1]</a></sup>. 지금은 채널마다 UTM을 달아 "어느 광고·소재로 문의했는지" 추적하고 즉시 상담<sup><a href="#s16">[16]</a></sup></td><td>셀프 가입형이라 가장 비슷한 경로. <b>처음부터 채널별 측정</b></td></tr>
+<tr><td><b>도도포인트</b><br><small>2.5만 매장</small></td><td>홍대 한 상권에 집중, 태블릿 200대 무료 제공하고 매장을 직접 방문 → 옆 가게 입소문<sup><a href="#s17">[17]</a></sup></td><td>PLUS와 가장 비슷한 매장 쿠폰·적립. <b>한 상권 밀집 파일럿</b></td></tr>
+<tr><td><b>배민아카데미</b></td><td>사장님 무료 교육 누적 35.7만 명, 1년에 5만 명 증가<sup><a href="#s18">[18]</a></sup></td><td>"단골 만드는 쿠폰 마케팅" 무료 교육을 가입 통로로</td></tr>
+<tr><td><b>테이블링</b></td><td>광고는 최소, <b>인기 매장 먼저</b> 직접 영업. 데이터를 영업 자료로<sup><a href="#s19">[19]</a></sup></td><td>앵커 매장의 성과 데이터가 다음 영업의 근거</td></tr>
+</tbody></table>
+
+<h2>3. 사례 — 동네·쿠폰 양면 플랫폼</h2>
+<table><thead><tr><th style="width:16%">서비스</th><th>어떻게 모았나</th><th style="width:31%">쿠핀에 주는 시사점</th></tr></thead><tbody>
+<tr><td><b>배달의민족</b></td><td>분리수거장 전단지를 모아 매장 정보를 <b>먼저 채움</b> → 앱마켓 1위 → 이후 업주에게 저가 정액 광고(월 8만 원)<sup><a href="#s20">[20]</a></sup></td><td>매장 가입을 기다리지 말고 볼거리를 먼저 채움</td></tr>
+<tr><td><b>당근 (초기)</b></td><td>판교 한 곳에서 팀·지인 물건으로 매물 채움 → 페이스북 반경 1km 광고, 친구 3명 초대 시 커피(가입자당 1,367원)<sup><a href="#s21">[21]</a></sup>. 전단지는 단지 전체에 200명, 드론은 2명<sup><a href="#s22">[22]</a></sup>. WAU 1,000명을 넘기자 저절로 거래<sup><a href="#s23">[23]</a></sup></td><td><b>한 동네 집중</b>, 오프라인 전단은 효율 낮음, 소액 친구초대</td></tr>
+<tr><td><b>여기어때</b></td><td>후발이었지만 4명이 숙소를 반복 방문, <b>제휴비 무료</b>로 1년 8개월 만에 제휴점 4,200곳·MAU 역전<sup><a href="#s24">[24]</a></sup><sup><a href="#s25">[25]</a></sup></td><td>무료 입점 + 반복 대면 영업으로 공급 확보</td></tr>
+<tr><td><b>야놀자</b></td><td>업주 카페(1만 명)를 먼저 만들고 이용자 카페(20만 명)를 500만 원에 인수<sup><a href="#s26">[26]</a></sup></td><td>사장님 커뮤니티를 먼저 장악</td></tr>
+<tr><td><b>토스 만보기</b></td><td>친구 추가 바이럴은 효과가 떨어짐 → <b>매장 방문 미션</b> 도입 후 9개월 만에 사용자 46만 → 400만<sup><a href="#s27">[27]</a></sup></td><td>"근처 PLUS 매장 방문 시 쿠폰" 미션</td></tr>
+<tr><td><b>Yelp · DoorDash</b></td><td>Yelp는 열성 리뷰어 파티·도시별 커뮤니티 매니저<sup><a href="#s29">[29]</a></sup>. DoorDash는 식당 8곳 메뉴를 먼저 올려 수요부터 확인<sup><a href="#s30">[30]</a></sup></td><td>동네 단골 "크루", 가입 전 테스트 쿠폰으로 수요 확인</td></tr>
+<tr><td><b>제로페이</b> (반례)</td><td>예산 400억 원으로 가맹점을 모았지만 소비자 유인이 없어 <b>가맹점 63% 실적 0</b><sup><a href="#s28">[28]</a></sup></td><td>소비자 계획 없는 동네에서 매장만 늘리면 이탈</td></tr>
+</tbody></table>
+
+<h2>4. 사례 — 중소 대상 B2B SaaS</h2>
+<table><thead><tr><th style="width:16%">서비스</th><th>어떻게 모았나</th><th style="width:31%">시사점</th></tr></thead><tbody>
+<tr><td><b>Mailchimp</b></td><td>무료 플랜 도입 1년 만에 사용자 8.5만 → 45만, 유료 고객 150%↑, 획득 비용 감소<sup><a href="#s31">[31]</a></sup></td><td>무료로 시작하게 하는 것이 유입량을 키움</td></tr>
+<tr><td><b>Calendly · 스티비</b></td><td>제품을 쓸 때마다 받는 사람에게 노출. Calendly는 캠페인비 "거의 0"<sup><a href="#s32">[32]</a></sup>, 스티비는 무료 메일 하단 배너<sup><a href="#s33">[33]</a></sup></td><td>PLUS 쿠폰을 받는 손님 화면에 "쿠핀으로 만든 쿠폰" 노출 (가설)</td></tr>
+<tr><td><b>플렉스</b></td><td>아웃바운드 0, 100% 인바운드. 미팅은 판매가 아니라 컨설팅<sup><a href="#s34">[34]</a></sup></td><td>문의를 "영업"이 아닌 "상담"으로 받기</td></tr>
+<tr><td><b>잔디</b></td><td>"○○보다 잔디" 비교 검색 콘텐츠 + 용량 제한 무료 플랜<sup><a href="#s35">[35]</a></sup></td><td>"네이버 쿠폰과 뭐가 다른가" 비교 콘텐츠</td></tr>
+<tr><td><b>채널톡</b></td><td>무료 셀프 가입 + 업종 하나씩 "깃발 꽂기" 영업 + 고객 소개<sup><a href="#s36">[36]</a></sup></td><td>업종 하나(예: 카페)부터 사례를 쌓고 넓히기</td></tr>
+</tbody></table>
+
+<h2>5. 공통 패턴과 PLUS 적용 [해석]</h2>
+<table><thead><tr><th style="width:24%">패턴</th><th>근거 사례</th><th style="width:38%">PLUS에서 해볼 것</th></tr></thead><tbody>
+<tr><td><b>① 사장님끼리의 입소문·추천</b></td><td>캐시노트, Toast 20%, Groupon, KB 지인 54.6%</td><td>추천 크레딧(PLUS에 크레딧 체계 있음), 상인회·단톡방 공략</td></tr>
+<tr><td><b>② 매장에 드나드는 파트너</b></td><td>토스플레이스 대리점, 도도포인트 VAN 제휴, 단골플러스 POS 번들</td><td>POS·VAN 대리점, 세무사 등 리셀러 수수료 제휴</td></tr>
+<tr><td><b>③ 한 상권 집중</b></td><td>도도포인트 홍대, 당근 판교, 배민 정자동</td><td>상권 1곳 파일럿 (PLUS 매장 + ON 손님 동시)</td></tr>
+<tr><td><b>④ 손익 메시지 + 무료 시작</b></td><td>캐시노트 "매출 누락", Square·Mailchimp 무료</td><td>"단골 N명 재방문" 메시지, 무료 체험 쿠폰</td></tr>
+<tr><td><b>⑤ 제품이 스스로 노출</b></td><td>Calendly, 스티비</td><td>손님 쿠폰 화면 하단 노출 (가설)</td></tr>
+<tr><td><b>⑥ 채널별로 측정</b></td><td>페이히어 UTM, SaaStr "어떻게 알게 됐나 질문"</td><td>PLUS 가입 UTM 기록 집계부터</td></tr>
+</tbody></table>
+
+<h2>6. 한계</h2>
+<ul>
+<li>채널별 유입 <b>비중</b>은 대부분 비공개라, 1장의 수치 외에는 회사·대표 진술입니다. 한국 소상공인이 "소프트웨어를 알게 되는 경로" 최신 공식 통계는 찾지 못했습니다(KB 2019가 가장 가까움).</li>
+<li>일부 자료는 오래됐습니다(도도포인트 2015~2021, Groupon·Yelp·DoorDash 2010~2013).</li>
+<li>당근 초기 기록과 KB 조사는 원문이 아닌 재게시본으로 읽었습니다.</li>
+</ul>
+
+<h2>출처</h2>
+<ol class="src"><li id='s1'>[1] 넘버스 — 페이히어 박준기 대표 인터뷰 (2023-04) — <a href='https://www.numbers.co.kr/news/articleView.html?idxno=363'>https://www.numbers.co.kr/news/articleView.html?idxno=363</a></li><li id='s2'>[2] Square S-1 (SEC, 2015-10) — <a href='https://www.sec.gov/Archives/edgar/data/1512673/000119312515343733/d937622ds1.htm'>https://www.sec.gov/Archives/edgar/data/1512673/000119312515343733/d937622ds1.htm</a></li><li id='s3'>[3] SaaStr — Toast CRO 인터뷰 (2023-11) — <a href='https://www.saastr.com/cro-confidential-a-look-inside-saas-success-toast-with-cro-jonathan-vassil'>https://www.saastr.com/cro-confidential-a-look-inside-saas-success-toast-with-cro-jonathan-vassil</a></li><li id='s4'>[4] Forbes — Groupon (2010-08) — <a href='https://www.forbes.com/forbes/2010/0830/entrepreneurs-groupon-facebook-twitter-next-web-phenom.html'>https://www.forbes.com/forbes/2010/0830/entrepreneurs-groupon-facebook-twitter-next-web-phenom.html</a></li><li id='s5'>[5] 토스피드 — 토스플레이스 파트너 어워즈 (2024-08) — <a href='https://toss.im/tossfeed/article/tossplace_awards'>https://toss.im/tossfeed/article/tossplace_awards</a></li><li id='s6'>[6] KB 자영업 보고서 2019 인용 블로그 (원문 PDF 미확인) — <a href='https://blog.naver.com/PostView.naver?blogId=cafer00&amp;logNo=221644564439'>https://blog.naver.com/PostView.naver?blogId=cafer00&amp;logNo=221644564439</a></li><li id='s7'>[7] Localogy — How Do SMBs Find SaaS Products? (2023-08) — <a href='https://www.localogy.com/2023/08/how-do-smbs-find-saas-products/'>https://www.localogy.com/2023/08/how-do-smbs-find-saas-products/</a></li><li id='s8'>[8] SMB Group — SMB Technology Buying Journey Part 2 (2024-10) — <a href='https://smb-gr.com/wp-content/uploads/2024/10/The-SMB-Technology-Buying-Journey_Part-Two_final.pdf'>https://smb-gr.com/wp-content/uploads/2024/10/The-SMB-Technology-Buying-Journey_Part-Two_final.pdf</a></li><li id='s9'>[9] 픽플리 — 앱테크 이용자 1,001명 설문 (2025-10) — <a href='https://pickply.com/blog/app-tech-strategy-for-brands'>https://pickply.com/blog/app-tech-strategy-for-brands</a></li><li id='s10'>[10] 헤럴드경제 — 중기중앙회 소상공인 DX·AX 설문 (2026-06) — <a href='https://biz.heraldcorp.com/article/10767025'>https://biz.heraldcorp.com/article/10767025</a></li><li id='s11'>[11] KCD 블로그 — 안태훈 상무 인터뷰 (2024-02) — <a href='http://blog.kcd.co.kr/iterview/?bmode=view&amp;idx=166963112'>http://blog.kcd.co.kr/iterview/?bmode=view&amp;idx=166963112</a></li><li id='s12'>[12] 벤처스퀘어 — 캐시노트, 오프라인 영업 없이 30만 매장 (2019-05) — <a href='https://www.venturesquare.net/781495'>https://www.venturesquare.net/781495</a></li><li id='s13'>[13] 매일경제 — 캐시노트 140만 사업장 (2024-05) — <a href='https://www.mk.co.kr/news/economy/11021014'>https://www.mk.co.kr/news/economy/11021014</a></li><li id='s14'>[14] 토스 뉴스룸 — 토스플레이스 파트너 제도 (2024-07) — <a href='https://toss.im/newsroom/tossplace-partners'>https://toss.im/newsroom/tossplace-partners</a></li><li id='s15'>[15] 바이라인네트워크 — 단말기 0원 프로모션 (2025-03) — <a href='https://byline.network/2025/03/20-438'>https://byline.network/2025/03/20-438</a></li><li id='s16'>[16] 페이히어 블로그 — 세일즈 조직·UTM 리드 관리 — <a href='https://blog.payhere.in/entry/%ED%8C%80-%EC%9D%B8%ED%84%B0%EB%B7%B0-AI%EB%A1%9C-%EC%84%B8%EC%9D%BC%EC%A6%88%EC%9D%98-%EC%9D%BC%ED%95%98%EB%8A%94-%EB%B0%A9%EC%8B%9D%EC%9D%84-%EB%8B%A4%EC%8B%9C-%EC%A7%9C%EB%8A%94-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EC%98%A4%ED%8D%BC%EB%A0%88%EC%9D%B4%EC%85%98-%ED%8C%80'>https://blog.payhere.in/entry/%ED%8C%80-%EC%9D%B8%ED%84%B0%EB%B7%B0-AI%EB%A1%9C-%EC%84%B8%EC%9D%BC%EC%A6%88%EC…</a></li><li id='s17'>[17] 중기이코노미 — 도도포인트 홍대 방문 영업 (2021-12) — <a href='https://www.junggi.co.kr/news/articleView.html?idxno=27901'>https://www.junggi.co.kr/news/articleView.html?idxno=27901</a></li><li id='s18'>[18] 조선비즈 — 배민아카데미 누적 35.7만 명 (2026-06) — <a href='https://biz.chosun.com/distribution/food/2026/06/02/4JHOPDWDCNA4NDRQILQZV25YVQ/'>https://biz.chosun.com/distribution/food/2026/06/02/4JHOPDWDCNA4NDRQILQZV25YVQ/</a></li><li id='s19'>[19] 아이지에이웍스 — 테이블링 사례 (2023-07) — <a href='https://www.igaworks.com/blog/casestudy-tabling-customerdata'>https://www.igaworks.com/blog/casestudy-tabling-customerdata</a></li><li id='s20'>[20] 인사이트코리아 — 배민 전단지 DB (2023-02) — <a href='https://insightkorea.co.kr/news/articleView.html?idxno=105083'>https://insightkorea.co.kr/news/articleView.html?idxno=105083</a></li><li id='s21'>[21] 당근 공동창업자 초기 기록 재게시 (원문 2016-02) — <a href='https://m.blog.naver.com/voicec/222143075340'>https://m.blog.naver.com/voicec/222143075340</a></li><li id='s22'>[22] DBR 당근 케이스 재게시 (2019-11) — <a href='https://valuefactory.tistory.com/869'>https://valuefactory.tistory.com/869</a></li><li id='s23'>[23] 전자신문 — 당근 김용현 인터뷰 (2021-10) — <a href='https://www.etnews.com/20211027000091'>https://www.etnews.com/20211027000091</a></li><li id='s24'>[24] 지디넷 — 여기어때 제휴점 4,200곳·MAU 역전 (2015-12) — <a href='https://zdnet.co.kr/view?no=20151214100907'>https://zdnet.co.kr/view?no=20151214100907</a></li><li id='s25'>[25] 이코노미스트 — 여기어때 심명섭 인터뷰 (2016-03) — <a href='https://economist.co.kr/article/view/ecn201603270031'>https://economist.co.kr/article/view/ecn201603270031</a></li><li id='s26'>[26] 핀포인트리서치 — 야놀자 (2023-12) — <a href='https://pinpointresearch.substack.com/p/yanolja'>https://pinpointresearch.substack.com/p/yanolja</a></li><li id='s27'>[27] 플래텀 — 토스 만보기 방문 미션 (2022-05) — <a href='https://platum.kr/archives/185298'>https://platum.kr/archives/185298</a></li><li id='s28'>[28] 매일경제 — 제로페이 가맹점 63% 실적 제로 (2022-10) — <a href='https://mk.co.kr/news/politics/10475260'>https://mk.co.kr/news/politics/10475260</a></li><li id='s29'>[29] Inc. — You&#x27;ve Been Yelped (2010-02, 아카이브) — <a href='https://web.archive.org/web/20120621053213/http:/www.inc.com/magazine/20100201/youve-been-yelped_pagen_3.html'>https://web.archive.org/web/20120621053213/http:/www.inc.com/magazine/20100201/youve-been-yelped_pagen_3.html</a></li><li id='s30'>[30] Delphi — DoorDash 초기 이야기 (Stanley Tang) — <a href='https://content.delphi.co/dara/the-untold-story-of-building-doordash-3a37e72d6484'>https://content.delphi.co/dara/the-untold-story-of-building-doordash-3a37e72d6484</a></li><li id='s31'>[31] Mailchimp — Going Freemium One Year Later (2010-09, 아카이브) — <a href='https://web.archive.org/web/20160312055038/http:/blog.mailchimp.com/going-freemium-one-year-later'>https://web.archive.org/web/20160312055038/http:/blog.mailchimp.com/going-freemium-one-year-later</a></li><li id='s32'>[32] SaaStr — Calendly CEO (2025-08) — <a href='https://www.saastr.com/from-plg-to-enterprise-to-smb-the-calendly-playbook-insights-from-ceo-tope-awotona/'>https://www.saastr.com/from-plg-to-enterprise-to-smb-the-calendly-playbook-insights-from-ceo-tope-awotona/</a></li><li id='s33'>[33] 위닝즈 — 스티비 마케팅 케이스 (2025-05) — <a href='https://thewinnings.kr/marketing-casestudy-stibee'>https://thewinnings.kr/marketing-casestudy-stibee</a></li><li id='s34'>[34] 위닝즈 — 플렉스 B2B 마케팅 (2025-05) — <a href='https://thewinnings.kr/flexteam-b2bmarketing'>https://thewinnings.kr/flexteam-b2bmarketing</a></li><li id='s35'>[35] 아산 AER — 잔디의 고객 중심 전략 (2025-02) — <a href='https://asan-aer.org/%ED%98%91%EC%97%85%ED%88%B4-%EC%9E%94%EB%94%94%EC%9D%98-%EA%B3%A0%EA%B0%9D-%EC%A4%91%EC%8B%AC-%EC%A0%84%EB%9E%B5%EA%B3%BC-%EC%84%B1%EC%9E%A5-%ED%86%A0%EC%8A%A4%EB%9E%A9/'>https://asan-aer.org/%ED%98%91%EC%97%85%ED%88%B4-%EC%9E%94%EB%94%94%EC%9D%98-%EA%B3%A0%EA%B0%9D-%EC%A4%91%EC%8…</a></li><li id='s36'>[36] 채널톡 — 세일즈 팀 인터뷰 (2021-08) — <a href='https://channel.io/ko/blog/articles/interview-sales-member-2ef1624f'>https://channel.io/ko/blog/articles/interview-sales-member-2ef1624f</a></li></ol>
+<p class="muted">2026-11-24에 원문 페이지를 직접 읽어 확인했습니다. 신뢰도: 회사 발표·인터뷰는 회사 측 주장, 언론·조사기관 자료는 제3자 자료입니다.</p>
+</main></body></html>
