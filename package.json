@@ -13,7 +13,9 @@
     "a:content": "node src/prototypes/a-content/cli.ts",
     "b:lead": "node src/prototypes/b-lead-followup/server.ts",
     "c:sales": "node src/prototypes/c-sales-brief/cli.ts",
-    "d:monitor": "node src/prototypes/d-community-monitor/cli.ts"
+    "d:monitor": "node src/prototypes/d-community-monitor/cli.ts",
+    "engine": "node src/engine/main.ts",
+    "engine:event": "node src/engine/send-event-cli.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",

@@ -1,0 +1,41 @@
+{
+  "store-1001": {
+    "id": "store-1001",
+    "displayName": "달빛카페 김사장",
+    "contacts": {
+      "inapp": "store-1001",
+      "email": "owner1001@example.com"
+    },
+    "consents": {
+      "marketing": null
+    },
+    "facts": {
+      "storeName": "달빛카페",
+      "industry": "카페",
+      "region": "광주 광산구",
+      "couponSentCount": 0,
+      "productCount": 2,
+      "topProductName": "아메리카노 1+1",
+      "consentedCustomerCount": 42
+    }
+  },
+  "store-1002": {
+    "id": "store-1002",
+    "displayName": "한솥식당 박사장",
+    "contacts": {
+      "inapp": "store-1002"
+    },
+    "consents": {
+      "marketing": null
+    },
+    "facts": {
+      "storeName": "한솥식당",
+      "industry": "음식점",
+      "region": "광주 북구",
+      "couponSentCount": 5,
+      "productCount": 3,
+      "topProductName": "점심 백반 1천원 할인",
+      "consentedCustomerCount": 12
+    }
+  }
+}

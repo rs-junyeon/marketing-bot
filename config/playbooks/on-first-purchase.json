@@ -1,0 +1,41 @@
+{
+  "id": "on-first-purchase",
+  "service": "coupin-on",
+  "name": "O2 첫 구매 유도",
+  "enabled": true,
+  "trigger": {
+    "event": "on.member.signed_up",
+    "delayMinutes": 4320
+  },
+  "conditions": [
+    {
+      "fact": "subject.purchaseCount",
+      "op": "eq",
+      "value": 0
+    },
+    {
+      "fact": "subject.recommendedCouponName",
+      "op": "exists"
+    }
+  ],
+  "advertising": true,
+  "frequencyDays": 30,
+  "generation": {
+    "mode": "llm",
+    "prompt": "engine/on-first-purchase",
+    "fields": {
+      "title": {
+        "maxLength": 25
+      },
+      "body": {
+        "maxLength": 90
+      }
+    }
+  },
+  "approval": "manual",
+  "channel": "push",
+  "goal": {
+    "event": "on.order.paid",
+    "windowDays": 7
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "plus-report-action",
+  "service": "coupin-plus",
+  "name": "P4 리포트 → 실행",
+  "enabled": true,
+  "trigger": {
+    "event": "plus.report.generated",
+    "delayMinutes": 0
+  },
+  "conditions": [
+    {
+      "fact": "subject.consentedCustomerCount",
+      "op": "gte",
+      "value": 30
+    },
+    {
+      "fact": "event.nextAction",
+      "op": "exists"
+    }
+  ],
+  "advertising": false,
+  "frequencyDays": 20,
+  "generation": {
+    "mode": "llm",
+    "prompt": "engine/plus-report-action",
+    "fields": {
+      "title": {
+        "maxLength": 30
+      },
+      "body": {
+        "maxLength": 300
+      }
+    }
+  },
+  "approval": "auto",
+  "channel": "inapp",
+  "goal": {
+    "event": "plus.coupon.sent",
+    "windowDays": 14
+  }
+}

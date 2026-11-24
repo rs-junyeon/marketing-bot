@@ -1,0 +1,9 @@
+{
+  "id": "evt-on-0001",
+  "type": "on.member.signed_up",
+  "subjectId": "member-2001",
+  "occurredAt": "2026-11-19T03:00:00Z",
+  "payload": {
+    "channel": "plus-qr"
+  }
+}

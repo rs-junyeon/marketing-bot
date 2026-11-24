@@ -1,0 +1,11 @@
+{
+  "id": "evt-on-0002",
+  "type": "on.coupon.expiring",
+  "subjectId": "member-2001",
+  "occurredAt": "2026-11-23T00:00:00Z",
+  "payload": {
+    "couponName": "달빛카페 아메리카노 1+1",
+    "daysLeft": 7,
+    "expiresOn": "2026-11-30"
+  }
+}
