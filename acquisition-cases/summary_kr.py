@@ -14,6 +14,13 @@ from summary import CSS, ROOT, SEGMENTS, bars, esc
 FOREIGN_COMPANIES = ("틱톡", "테무")
 AD_CHANNELS = ("SNS·디지털 광고", "검색 광고", "TV·옥외 등 매스 광고")
 
+
+
+def domestic_cases(data: dict) -> list[dict]:
+    """국내 기업 사례만: 국가가 KR이면서 국내 시장의 해외 기업(FOREIGN_COMPANIES)은 뺀다."""
+    return [c for c in data["cases"] if c.get("country") == "KR" and not any(f in c.get("service", "") for f in FOREIGN_COMPANIES)]
+
+
 # (서비스, 주 채널, 수치, 출처 종류)
 HIGHLIGHTS = [
     ("캐시노트 (사장님 매출 관리 앱)", "입소문·추천", "출시 8개월 가입 3.4만 곳 중 절반이 자발적 입소문(사장님 단톡방). 오프라인 영업 없이 30만 곳", "인터뷰"),
@@ -72,7 +79,7 @@ TAKEAWAYS = [
 
 def main() -> None:
     data = json.loads((ROOT / "cases.json").read_text())
-    cases = [c for c in data["cases"] if c.get("country") == "KR" and not any(f in c.get("service", "") for f in FOREIGN_COMPANIES)]
+    cases = domestic_cases(data)
     top = lambda cs: Counter(c["top_channel"]["type"] for c in cs)  # noqa: E731
     num = [c for c in cases if c["top_channel"]["numeric"]]
     rank = dict(top(cases).most_common())

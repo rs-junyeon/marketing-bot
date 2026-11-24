@@ -10,11 +10,12 @@ import json
 from collections import Counter
 
 from summary import CSS, ROOT, esc
+from summary_kr import domestic_cases
 
 SOURCES = [
     ("AMA(미국마케팅협회) 마케팅 정의, 2017 승인", "https://www.ama.org/the-definition-of-marketing-what-is-marketing/"),
     ("정보통신망법 제50조(영리목적의 광고성 정보 전송 제한), 2024-07-24 시행", "https://casenote.kr/법령/정보통신망_이용촉진_및_정보보호_등에_관한_법률/제50조"),
-    ("채널별 사례 수·예시 수치: 국내외 138개 서비스 사용자 유입 사례 조사", "acquisition-cases/acquisition-cases.pdf"),
+    ("채널별 사례 수: 국내 기업 사용자 유입 사례 조사(국내 기업만 집계, 해외 사례·국내 시장의 해외 기업 제외)", "acquisition-cases/acquisition-summary-kr.pdf"),
 ]
 
 CONFUSED = [
@@ -54,7 +55,7 @@ CHANNEL_GROUPS = [
 ]
 
 CUSTOMERS = [
-    ("소비자 (B2C)", "본인", "지인, 포털 검색, SNS, 앱스토어", "입소문·리워드", "몇 초~며칠"),
+    ("소비자 (B2C)", "본인", "지인 추천 28.3%·앱스토어 25.2%(리워드 앱, 2025), 포털 검색", "입소문·리워드", "몇 초~며칠"),
     ("소상공인 (B2SMB)", "사장님 본인", "주변 지인 44%(2021), 인터넷 기사, 단톡방·카페, 대리점", "대리점·입소문·무료 제공", "며칠~몇 주"),
     ("기업 (B2B)", "담당자 + 결재권자 여러 명", "기존 네트워크 32.1%(2024), 콘텐츠, 박람회", "콘텐츠·SEO, 영업", "몇 주~몇 달"),
 ]
@@ -63,12 +64,17 @@ METRICS = [
     ("전환율", "다음 단계로 넘어간 비율", "방문 100명 중 가입 5명 → 5%"),
     ("CAC (고객 획득 비용)", "고객 1명을 데려오는 데 든 돈", "광고비 100만 원으로 20명 가입 → 5만 원"),
     ("LTV (고객 생애 가치)", "한 고객이 떠나기 전까지 내는 돈", "월 2만 원 × 평균 12개월 → 24만 원"),
-    ("회수 기간", "CAC를 매출로 되찾는 데 걸리는 시간", "Square 4~5분기, Toast 15개월 미만(상장 공시)"),
+    ("회수 기간", "CAC를 매출로 되찾는 데 걸리는 시간", "CAC 5만 원 ÷ 월 2만 원 → 2.5개월"),
     ("유입 경로", "어느 채널에서 왔는지 기록", "링크에 붙이는 UTM 태그, 가입 시 '어떻게 알게 되셨나요' 질문"),
 ]
 
 # 2쪽에 맞추기 위한 여백 조정
 EXTRA_CSS = "body{font-size:10.6px;line-height:1.42}h2{margin:11px 0 4px}th,td{padding:3px 6px}.answer li{margin:2px 0}.note{margin:4px 0}"
+
+
+def short(name: str) -> str:
+    """'자체 채널 (보유 미디어)' → '자체 채널'"""
+    return name.split(" (")[0]
 
 
 def rows(items: list[tuple], muted_last: bool = True) -> str:
@@ -82,8 +88,10 @@ def rows(items: list[tuple], muted_last: bool = True) -> str:
 
 def main() -> None:
     data = json.loads((ROOT / "cases.json").read_text())
-    cases = data["cases"]
+    cases = domestic_cases(data)
     top = Counter(c["top_channel"]["type"] for c in cases)
+    counts = [(name, sum(top.get(t, 0) for t in types)) for name, types, _, _ in CHANNEL_GROUPS]
+    ranked = sorted(counts, key=lambda x: -x[1])
     group_rows = "".join(
         f"<tr><td><b>{esc(name)}</b><br><span class='muted'>{esc(' · '.join(types))}</span></td>"
         f"<td><b>{sum(top.get(t, 0) for t in types)}곳</b></td><td>{esc(trait)}</td><td class='muted'>{esc(example)}</td></tr>"
@@ -92,7 +100,7 @@ def main() -> None:
 
     h = []
     h.append('<header><div class="eyebrow">요약본 · 2026-11-24 · 전준연</div><h1>마케팅이란 무엇인가</h1>'
-             '<p class="lead">마케팅의 기본 개념만 짧게 정리했습니다. 정의와 법은 원문을 확인했고, 예시 수치는 국내외 서비스 사례 조사에서 가져왔습니다.</p></header>')
+             '<p class="lead">마케팅의 기본 개념만 짧게 정리했습니다. 정의와 법은 원문을 확인했고, 예시 수치는 국내 기업 사례 조사와 국내 통계에서 가져왔습니다.</p></header>')
 
     h.append('<section class="answer"><h2>한 줄로</h2><ol>'
              '<li><b>마케팅은 사람들이 제품·서비스를 알게 되고, 들어오고, 계속 쓰게 만드는 모든 활동입니다.</b> 광고는 그중 한 수단일 뿐입니다.</li>'
@@ -113,18 +121,19 @@ def main() -> None:
              '<table><thead><tr><th style="width:20%">단계</th><th>무슨 일</th><th style="width:32%">보는 숫자</th></tr></thead><tbody>'
              + rows(FUNNEL, muted_last=False) + "</tbody></table>")
 
-    h.append(f'<h2>4. 사람들이 들어오는 길 (채널)</h2><p class="muted">채널은 크게 네 종류입니다. "주 채널" 열은 사례 조사한 {len(cases)}개 서비스 중 그 종류로 가장 많은 사용자가 들어온 곳의 수입니다.</p>'
+    h.append(f'<h2>4. 사람들이 들어오는 길 (채널)</h2><p class="muted">채널은 크게 네 종류입니다. "주 채널" 열은 사례 조사한 국내 기업 {len(cases)}곳 중 그 종류로 가장 많은 사용자가 들어온 곳의 수입니다.</p>'
              '<table><thead><tr><th style="width:34%">종류</th><th style="width:10%">주 채널</th><th style="width:28%">특징</th><th>예시</th></tr></thead><tbody>'
              + group_rows + "</tbody></table>"
-             '<p class="note">사례 조사에서는 광고보다 <b>사람이 직접 하는 것</b>(영업·대리점)과 <b>사용자가 퍼뜨리는 것</b>(입소문·추천)으로 들어온 경우가 훨씬 많았습니다.</p>')
+             + f'<p class="note">국내 사례에서 가장 많이 들어온 길은 <b>{esc(short(ranked[0][0]))}</b>({ranked[0][1]}곳)이었고, '
+             + ", ".join(f"{esc(short(n))}({c}곳)" for n, c in ranked[1:]) + " 순이었습니다.</p>")
 
     h.append('<h2>5. 누구에게 파느냐에 따라 다르다</h2><table><thead><tr><th style="width:16%">대상</th><th style="width:17%">누가 결정</th><th>어디서 알게 되나</th><th style="width:19%">주로 통한 채널</th><th style="width:12%">결정 기간</th></tr></thead><tbody>'
              + rows(CUSTOMERS, muted_last=False)
-             + '</tbody></table><p class="muted">결정 기간은 일반적인 경향이며 조사 수치가 아닙니다. 지인 44%는 엠브레인 자영업자 조사(2021), 기존 네트워크 32.1%는 리캐치 국내 B2B 조사(2024)입니다.</p>')
+             + '</tbody></table><p class="muted">결정 기간은 일반적인 경향이며 조사 수치가 아닙니다. 지인 28.3%는 리워드 앱 이용자 1,001명 조사(2025), 지인 44%는 엠브레인 자영업자 조사(2021), 기존 네트워크 32.1%는 리캐치 국내 B2B 조사(2024)입니다.</p>')
 
     h.append('<h2>6. 잘 되고 있는지 보는 숫자</h2><table><thead><tr><th style="width:22%">지표</th><th>뜻</th><th style="width:42%">예시</th></tr></thead><tbody>'
              + rows(METRICS)
-             + '</tbody></table><p class="note">가장 기본은 <b>LTV가 CAC보다 커야 한다</b>는 것입니다. 그리고 <b>어디서 왔는지 기록하지 않으면</b> 어떤 채널이 효과가 있는지 알 수 없습니다. 전환율·CAC·LTV 예시 숫자는 계산 방법을 보이기 위한 가상의 값입니다.</p>')
+             + '</tbody></table><p class="note">가장 기본은 <b>LTV가 CAC보다 커야 한다</b>는 것입니다. 그리고 <b>어디서 왔는지 기록하지 않으면</b> 어떤 채널이 효과가 있는지 알 수 없습니다. 전환율·CAC·LTV·회수 기간 예시 숫자는 계산 방법을 보이기 위한 가상의 값입니다.</p>')
 
     h.append('<h2>7. 한국에서 꼭 지켜야 하는 규칙 — 정보통신망법 제50조</h2><ul>'
              '<li><b>사전 동의:</b> 문자·메일·메신저 등으로 영리 목적의 광고를 보내려면 받는 사람의 명시적인 사전 동의가 필요합니다. 상대가 사업자여도 같습니다. 같은 종류의 거래를 한 고객에게 정해진 기간 안에 보내는 경우 등은 예외입니다.</li>'
