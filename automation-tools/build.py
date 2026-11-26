@@ -68,9 +68,11 @@ def load() -> tuple[list[dict], list[dict], list[dict], list[dict], list[dict], 
             tasks.append(t)
         for t in raw.get("tools", []):  # 국내 보강 묶음(8~)은 영역을 섞으므로 항목의 area를 우선한다
             t["_areas"] = [t.get("area") if t.get("area") in AREAS else group]
+            t["_zero"] = any("stage" in u for u in raw.get("use_cases", []))  # 초기·소규모 사례 묶음에서 온 툴
             tools.append(t)
         for u in raw.get("use_cases", []):
             u["_area"] = u.get("area") if u.get("area") in AREAS else group
+            u["_file"] = path.stem
             cases.append(u)
         for s in raw.get("stats", []):
             s["_group"] = group
@@ -84,6 +86,40 @@ def domestic_only(cases: list[dict], stats: list[dict]) -> None:
     """국내 버전: 활용 사례는 국내 기업 것(툴 국적 무관), 통계는 국내 조사만 남긴다. 툴 범위는 split_by_kr_usage가 정한다."""
     cases[:] = [u for u in cases if u.get("company_origin") == "국내"]
     stats[:] = [s for s in stats if s.get("region") == "국내"]
+
+
+def split_zero(cases: list[dict]) -> tuple[list[dict], list[dict]]:
+    """초기·소규모(제로베이스) 사례(12~14번 묶음, stage 필드가 있음)를 따로 뗀다. 이 사례는 국내 우선·해외 보충이라 국내 필터를 거치지 않는다."""
+    zero = [u for u in cases if "stage" in u]
+    zero.sort(key=lambda u: (u.get("company_origin") != "국내", not has_number(u.get("result", ""))))
+    return zero, [u for u in cases if "stage" not in u]
+
+
+def zero_table(cases: list[dict], tools: list[dict]) -> str:
+    head = ('<tr><th style="width:13%">기업</th><th style="width:15%">시작할 때 상태</th><th style="width:12%">툴</th>'
+            '<th>어떻게 자동화했나</th><th style="width:20%">결과</th></tr>')
+    rows = []
+    for u in cases:
+        origin = ' <span class="badge gl">해외</span>' if u.get("company_origin") == "해외" else ""
+        period = f' <span class="muted" style="font-size:1em">({esc(u["period"])})</span>' if u.get("period") else ""
+        base = f'<br><span class="muted" style="font-size:1em">도입 전: {esc(u["baseline"])}</span>' if u.get("baseline") else ""
+        rows.append(f'<tr><td><b>{esc(u.get("company"))}</b>{origin}</td><td>{esc(u.get("stage"))}{base}</td>'
+                    f'<td>{esc(u.get("tool"))}{tool_origin_mark(u.get("tool", ""), tools)}</td>'
+                    f'<td>{esc(u.get("what"))}{cites(u.get("evidence", []))}</td>'
+                    f'<td>{esc(u.get("result") or "—")}{period}{vendor_mark(u.get("evidence", []))}</td></tr>')
+    return f"<table><thead>{head}</thead><tbody>{''.join(rows)}</tbody></table>"
+
+
+def pick_zero(cases: list[dict], per_file: int = 4) -> list[dict]:
+    """요약본용: 묶음(국내 B2C·국내 B2B·해외)마다 수치 결과가 있고 제3자 근거가 있는 사례를 먼저 골라 per_file개씩."""
+    by_file: dict[str, list[dict]] = defaultdict(list)
+    for u in cases:
+        by_file[u.get("_file", "")].append(u)
+    return [u for f in sorted(by_file) for u in ranked_cases(by_file[f], per_file)]  # 같은 툴은 묶음당 한 번만
+
+
+ZERO_NOTE = ("사용자·고객이 없거나 적은 상태에서 자동화로 신규 유입·첫 고객을 만든 사례입니다. 국내 사례를 먼저 찾고, 부족한 부분은 해외 사례로 보충해 "
+             '<span class="badge gl">해외</span>로 표시했습니다. 대부분 운영자 본인이나 툴 회사가 쓴 글이라 독립 검증이 안 된 수치입니다.')
 
 
 def same_tool(a: str, b: str) -> bool:
@@ -158,7 +194,7 @@ def dedupe_cases(cases: list[dict]) -> list[dict]:
     return [u for u in cases if best.get((tool_key(u.get("company", "")), tool_key(u.get("tool", "")))) is u]
 
 
-def normalize(tools: list[dict], cases: list[dict], stats: list[dict], sources: Sources) -> None:
+def normalize(tools: list[dict], cases: list[dict], stats: list[dict], sources: Sources, zero: list[dict] | None = None) -> None:
     def fix(evs: list[dict]) -> None:
         for ev in evs:
             ev["ref"] = sources.ref(ev.get("url", ""), ev.get("date", ""), ev.get("reliability", ""))
@@ -167,7 +203,7 @@ def normalize(tools: list[dict], cases: list[dict], stats: list[dict], sources: 
         fix(t.get("evidence", []))
         for g in t.get("_kr_usage", []):
             fix(g.get("evidence", []))
-    for u in cases:
+    for u in cases + (zero or []):
         fix(u.get("evidence", []))
     for s in stats:
         s["ref"] = sources.ref(s.get("url", ""), s.get("date", ""), s.get("reliability", ""))
@@ -336,7 +372,8 @@ def head_html(title: str, extra_css: str = "") -> str:
             f"<title>{esc(title)}</title><style>{CSS}{extra_css}</style></head><body><main>")
 
 
-def render(tasks, tools, cases, stats, gaps, ins, sources: Sources, dropped: list[dict] | None = None) -> str:
+def render(tasks, tools, cases, stats, gaps, ins, sources: Sources, dropped: list[dict] | None = None,
+           zero: list[dict] | None = None) -> str:
     title = ins.get("title", "마케팅 자동화는 무엇을, 어떤 툴로 하나")
     by_area_tasks, by_area_tools, by_area_cases = defaultdict(list), defaultdict(list), defaultdict(list)
     for t in tasks:
@@ -349,7 +386,7 @@ def render(tasks, tools, cases, stats, gaps, ins, sources: Sources, dropped: lis
 
     p = [head_html(title), f'<h1>{esc(title)}</h1><div class="meta">{esc(ins.get("subtitle", ""))}</div>',
          '<nav class="toc"><a href="#sum">결론</a><a href="#frame">정리 기준</a><a href="#map">업무 지도</a><a href="#tools">툴</a>'
-         '<a href="#cases">활용 사례</a><a href="#stats">도입 통계</a><a href="#dir">방향 후보</a><a href="#gaps">한계</a><a href="#src">출처</a></nav>']
+         '<a href="#cases">활용 사례</a><a href="#zero">초기·소규모 사례</a><a href="#stats">도입 통계</a><a href="#dir">방향 후보</a><a href="#gaps">한계</a><a href="#src">출처</a></nav>']
     if ins.get("tldr"):
         p.append('<div class="tldr" id="sum"><b>한눈에 보기</b><ul>' + "".join(f"<li>{t}</li>" for t in ins["tldr"]) + "</ul></div>")
     p.append(f'<div class="kpis"><div class="kpi"><b>{len(tasks)}</b>자동화 업무</div><div class="kpi"><b>{len(tools)}</b>툴·서비스 (국내 {n_kr})</div>'
@@ -386,7 +423,9 @@ def render(tasks, tools, cases, stats, gaps, ins, sources: Sources, dropped: lis
         if cs:
             p.append(f"<h3>3-{i}. {esc(a)}</h3>" + case_table(cs, tools))
 
-    p.append('<h2 id="stats">4. 도입 현황 통계</h2>')
+    if zero:
+        p.append(f'<h2 id="zero">4. 초기·소규모(제로베이스) 사례 ({len(zero)}개)</h2><p class="muted">{ZERO_NOTE}</p>' + zero_table(zero, tools))
+    p.append('<h2 id="stats">5. 도입 현황 통계</h2>')
     sg: dict[str, list[dict]] = defaultdict(list)
     for s in stats:
         sg[s["_group"]].append(s)
@@ -394,9 +433,9 @@ def render(tasks, tools, cases, stats, gaps, ins, sources: Sources, dropped: lis
         if sg.get(g):
             p.append(f"<h3>{esc(g)}</h3>" + stats_table(sg[g]))
 
-    p.append('<h2 id="dir">5. 해석 — 범용 자동화 서비스 방향</h2>' + insight_blocks(ins))
+    p.append('<h2 id="dir">6. 해석 — 범용 자동화 서비스 방향</h2>' + insight_blocks(ins))
 
-    p.append('<h2 id="gaps">6. 한계</h2>')
+    p.append('<h2 id="gaps">7. 한계</h2>')
     if ins.get("limits"):
         p.append("<ul>" + "".join(f"<li>{t}</li>" for t in ins["limits"]) + "</ul>")
     p.append('<details class="gaps"><summary>영역별 상세 한계</summary><ul>' + "".join(f'<li><b>{esc(g["group"])}</b>: {esc(g["text"])}</li>' for g in gaps) + "</ul></details>")
@@ -414,7 +453,7 @@ SUMMARY_CSS = """
 """
 
 
-def render_summary(tasks, tools, cases, stats, ins, sources: Sources) -> str:
+def render_summary(tasks, tools, cases, stats, ins, sources: Sources, zero: list[dict] | None = None) -> str:
     """회의용 요약본: 결론 → 영역별 업무 지도(간단) → 대표 활용 사례 → 방향 후보·회의 질문. 출처 번호는 본문과 같다."""
     title = ins.get("title", "마케팅 자동화는 무엇을, 어떤 툴로 하나")
     p = [head_html(f"{title} — 요약", SUMMARY_CSS),
@@ -429,12 +468,23 @@ def render_summary(tasks, tools, cases, stats, ins, sources: Sources) -> str:
     p.append('<h2>2. 대표 활용 사례</h2><p class="muted">영역마다 수치 결과가 있는 사례 위주로 2~3개씩 골랐습니다.</p>')
     picked = [u for a in AREAS for u in ranked_cases([c for c in cases if c["_area"] == a], 3 if a != AREAS[-1] else 2)]
     p.append(case_table(picked, tools, with_scope=False))
+    n = 3
+    if zero:
+        names = ins.get("summary_zero")  # 회의 대본·한눈에 보기에서 말하는 사례를 요약본에 꼭 싣기 위해 직접 고른다
+        picked = [u for n_ in names for u in zero if u.get("company", "").startswith(n_)] if names else pick_zero(zero)
+        missing = [n_ for n_ in names or [] if not any(u.get("company", "").startswith(n_) for u in zero)]
+        if missing:
+            raise SystemExit(f"summary_zero에 없는 사례: {missing}")
+        p.append(f'<h2>{n}. 초기·소규모(제로베이스) 사례</h2><p class="muted">{ZERO_NOTE} 묶음마다 수치가 있는 사례 위주로 {len(picked)}개를 골랐고, '
+                 f'전체 {len(zero)}개는 본문에 있습니다.</p>' + zero_table(picked, tools))
+        n += 1
     key = [s for s in stats if s.get("topic") in set(ins.get("summary_stats", []))]
     if key:
-        p.append('<h2>3. 도입 현황 숫자</h2><table><thead><tr><th style="width:26%">주제</th><th>핵심 수치</th><th style="width:22%">조사·날짜</th></tr></thead><tbody>'
+        p.append(f'<h2>{n}. 도입 현황 숫자</h2><table><thead><tr><th style="width:26%">주제</th><th>핵심 수치</th><th style="width:22%">조사·날짜</th></tr></thead><tbody>'
                  + "".join(f'<tr><td>{esc(s["topic"])}</td><td>{esc(s.get("finding"))}{cite(s.get("ref"))}</td><td>{esc(s.get("sample"))} · {esc(s.get("date"))}</td></tr>' for s in key)
                  + "</tbody></table>")
-    p.append('<h2>4. 해석과 방향 후보</h2>' + insight_blocks(ins))
+        n += 1
+    p.append(f'<h2>{n}. 해석과 방향 후보</h2>' + insight_blocks(ins))
     if ins.get("limits"):
         p.append('<h2>한계</h2><ul class="muted">' + "".join(f"<li>{t}</li>" for t in ins["limits"]) + "</ul>")
     p.append("</main></body></html>")
@@ -447,7 +497,7 @@ def render_readme(tasks, tools, cases, stats, ins, sources: Sources) -> str:
              "- **본문**: `index.html`(툴 필터·검색), 인쇄본 `automation-tools.pdf`.",
              "- **범위**: 기본은 국내 버전(툴은 국내 툴 + 국내 사용 근거가 있는 해외 툴, 활용 사례는 국내 기업, 통계는 국내 조사). 해외 포함 전체판은 "
              "`python3 build.py --all` → `index-all.html`·`summary-all.html`(해석은 `data/insights-all.json`).",
-             "- **데이터**: `tools.json`(국내 버전 합친 데이터), `data/*.json`(영역별 원자료, 8~10은 국내 보강), `data/insights.json`(국내 해석).",
+             "- **데이터**: `tools.json`(국내 버전 합친 데이터), `data/*.json`(영역별 원자료, 8~10은 국내 보강, 11은 해외 툴 국내 사용 근거, 12~14는 초기·소규모 사례), `data/insights.json`(국내 해석).",
              "- **전달본**: `./final.sh` → build.py, PDF 2개 인쇄, `../final/`에 한글 이름으로 복사.", "",
              "## 한눈에 보기", ""]
     lines += [f"- {re.sub('<[^>]+>', '', t)}" for t in ins.get("tldr", [])]
@@ -464,25 +514,27 @@ def main() -> None:
     tasks, tools, cases, stats, gaps, usage = load()
     tools = dedupe_tools(tools)
     cases = dedupe_cases(cases)
+    zero, cases = split_zero(cases)
     attach_kr_usage(tools, usage, cases)
     dropped: list[dict] = []
     if not scope_all:
+        tools = [t for t in tools if not (t.get("_zero") and t.get("origin") == "해외")]  # 해외 초기 사례에만 나오는 툴은 국내판 툴 목록에 넣지 않는다
         domestic_only(cases, stats)
         dropped = split_by_kr_usage(tools)
         for t in tasks:  # 업무 지도의 대표 툴도 남은 툴만
             t["tools"] = [n for n in t.get("tools", []) if any(same_tool(n, x["name"]) for x in tools)]
     ins = json.loads((DATA / ("insights-all.json" if scope_all else "insights.json")).read_text())
     sources = Sources()
-    normalize(tools, cases, stats, sources)
+    normalize(tools, cases, stats, sources, zero)
     suffix = "-all" if scope_all else ""
-    (ROOT / f"index{suffix}.html").write_text(render(tasks, tools, cases, stats, gaps, ins, sources, dropped))
-    (ROOT / f"summary{suffix}.html").write_text(render_summary(tasks, tools, cases, stats, ins, sources))
+    (ROOT / f"index{suffix}.html").write_text(render(tasks, tools, cases, stats, gaps, ins, sources, dropped, zero))
+    (ROOT / f"summary{suffix}.html").write_text(render_summary(tasks, tools, cases, stats, ins, sources, zero))
     if not scope_all:
-        (ROOT / "tools.json").write_text(json.dumps({"tasks": tasks, "tools": tools, "use_cases": cases, "stats": stats, "gaps": gaps,
+        (ROOT / "tools.json").write_text(json.dumps({"tasks": tasks, "tools": tools, "use_cases": cases, "zero_cases": zero, "stats": stats, "gaps": gaps,
                                                      "sources": sources.items}, ensure_ascii=False, indent=1))
         (ROOT / "README.md").write_text(render_readme(tasks, tools, cases, stats, ins, sources))
     print(f"scope={'all' if scope_all else 'kr'} tasks={len(tasks)} tools={len(tools)} cases={len(cases)} "
-          f"stats={len(stats)} sources={len(sources.items)}")
+          f"zero={len(zero)} stats={len(stats)} sources={len(sources.items)}")
     print("tools by area:", Counter(t["_areas"][0] for t in tools).most_common())
     print("cases by area:", Counter(u["_area"] for u in cases).most_common())
 

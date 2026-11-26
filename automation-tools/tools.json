@@ -610,6 +610,7 @@
     "콘텐츠·SNS·브랜드 캠페인",
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -677,6 +678,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -761,6 +763,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -804,6 +807,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -846,6 +850,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -924,6 +929,7 @@
     "콘텐츠·SNS·브랜드 캠페인",
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -960,6 +966,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Canva Magic Studio",
@@ -1028,6 +1035,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Sprout Social",
@@ -1079,6 +1087,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Runway",
@@ -1148,6 +1157,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -1193,6 +1203,7 @@
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -1261,6 +1272,7 @@
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -1316,6 +1328,7 @@
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -1371,6 +1384,7 @@
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -1415,6 +1429,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "ChatGPT",
@@ -1491,6 +1506,7 @@
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Google Gemini",
@@ -1566,6 +1582,7 @@
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Claude",
@@ -1639,6 +1656,7 @@
    "_areas": [
     "콘텐츠·SNS·브랜드 캠페인"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "CapCut",
@@ -1707,6 +1725,7 @@
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Notion AI",
@@ -1742,6 +1761,288 @@
    ]
   },
   {
+   "name": "카페24 PRO",
+   "vendor": "카페24",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "통합 플랫폼·AI 에이전트",
+   "tasks": [
+    "쇼핑몰 자동 구축·상품 등록",
+    "상세페이지 자동 생성",
+    "SEO·GEO 자동 적용",
+    "멀티마켓 동시 연동"
+   ],
+   "problem": "디자인·개발 인력이 없는 신규·1인 창업자가 쇼핑몰 구축, 상세페이지 제작, 검색 유입 확보에 시간을 많이 쓰는 문제",
+   "users": "카페24 기반 신규·1인·부업 창업자와 중소 D2C 브랜드",
+   "features": [
+    "상품 정보·이미지 입력 시 쇼핑몰 자동 구축·상품 등록",
+    "AI 상세페이지 약 3분 생성",
+    "SEO·GEO 기본 적용",
+    "국내외 15개 마켓 동시 연동",
+    "프로모션·배너 제안"
+   ],
+   "automation_scope": "쇼핑몰 구성, 상품 등록, 상세페이지 레이아웃·문구, SEO 적용, 마켓 연동",
+   "human_scope": "상품 기획·사진·기본 무드 준비, 고객 문의 응대, 브랜드 방향 결정",
+   "korea": "국내 서비스(한국어, 지마켓·무신사·에이블리 등 국내 마켓 연동)",
+   "pricing": "초기 3개월 무료 지원(카페24 마케팅센터 안내 기준), 이후 요금은 확인 못 함",
+   "evidence": [
+    {
+     "claim": "카페24 PRO는 상품 정보와 이미지만 주면 쇼핑몰을 구축하고 상품을 등록하며, AI가 약 3분 만에 상세페이지를 만든다.",
+     "quote": "카페24 프로는 사업자가 상품 정보와 이미지만 제공하면 빅데이터 기반 시스템이 즉시 쇼핑몰을 구축하고 상품을 등록한다.",
+     "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=621451",
+     "date": "2026-01-16",
+     "reliability": "third_party",
+     "ref": 40
+    },
+    {
+     "claim": "AI가 상품 사진과 기본 정보를 분석해 약 3분 만에 상세페이지를 생성한다.",
+     "quote": "AI가 상품 사진과 기본 정보를 분석해 약 3분 만에 상세페이지를 생성한다.",
+     "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=621451",
+     "date": "2026-01-16",
+     "reliability": "third_party",
+     "ref": 40
+    },
+    {
+     "claim": "자사몰 상품을 국내외 15개 마켓에 동시 연동하고 SEO·GEO를 기본 적용한다.",
+     "quote": "여기에 검색엔진최적화(SEO)와 AI 기반 검색 최적화(GEO)를 기본 적용해 광고비 부담 없는 자연 유입 증대를 도모한다.",
+     "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=621451",
+     "date": "2026-01-16",
+     "reliability": "third_party",
+     "ref": 40
+    },
+    {
+     "claim": "카페24 PRO는 초기 3개월 무료 지원을 제공한다고 안내했다.",
+     "quote": "현재 PRO 서비스는 초기 3개월 무료 지원 을 제공하고 있어",
+     "url": "https://mktstory.cafe24.com/2bdda210-9377-8007-b4bc-f46977d25ea5",
+     "date": "2025-11",
+     "reliability": "vendor_doc",
+     "ref": 41
+    }
+   ],
+   "_areas": [
+    "통합 플랫폼·AI 에이전트"
+   ],
+   "_zero": true,
+   "_kr_usage": []
+  },
+  {
+   "name": "오모플레이(OMO PLAY)",
+   "vendor": "오모플레이",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "오프라인 고객 카카오 친구 전환",
+    "친구톡 메시지 자동화",
+    "쿠폰 성과 매장별 관리"
+   ],
+   "problem": "오프라인 매장·행사 방문객을 연락 가능한 회원으로 남기지 못해 재방문·재구매를 만들기 어려운 문제",
+   "users": "소상공인 매장, 프랜차이즈, 전시회·팝업 운영 브랜드",
+   "features": [
+    "QR 한 번으로 카카오 친구·회원 전환",
+    "AI 기반 친구톡 자동 발송",
+    "반응 고객 중심 발송 대상 자동 최적화",
+    "AI 성과 리포트·개선 포인트",
+    "메시지 이미지·문구 AI 생성"
+   ],
+   "automation_scope": "회원 전환 후 메시지 발송, 발송 대상 최적화, 성과 분석 리포트, 메시지 소재 생성",
+   "human_scope": "캠페인 목적·타깃·혜택 결정, 매장 현장 QR 안내",
+   "korea": "국내 서비스, 카카오톡 채널·친구톡 기반",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "오모플레이는 QR로 카카오 친구·회원 전환을 돕고 AI 기반 친구톡 자동화로 재방문·재구매를 유도한다.",
+     "quote": "오모플레이는 오프라인 매장, 전시회, 박람회, 팝업 현장에서 QR 한 번으로 카카오 친구 및 회원 전환을 지원하고, 가입 이후에는 AI 기반 친구톡 메시지 자동화로 재방문 및 재구매를 유도한다.",
+     "url": "https://edaily.co.kr/News/Read?newsId=04218086645315752",
+     "date": "2026-01-08",
+     "reliability": "third_party",
+     "ref": 42
+    },
+    {
+     "claim": "반응 고객 중심으로 발송 대상을 자동 최적화해 발송 비용을 줄인다.",
+     "quote": "메시지 반응(클릭, 쿠폰 사용, 구매) 고객 중심으로 발송 대상을 자동 최적화해 불필요한 발송 비용을 줄이는 것이 특징이다.",
+     "url": "https://edaily.co.kr/News/Read?newsId=04218086645315752",
+     "date": "2026-01-08",
+     "reliability": "third_party",
+     "ref": 42
+    }
+   ],
+   "_areas": [
+    "CRM·멤버십·리텐션"
+   ],
+   "_zero": true,
+   "_kr_usage": []
+  },
+  {
+   "name": "아임웹",
+   "vendor": "아임웹",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "통합 플랫폼·AI 에이전트",
+   "tasks": [
+    "노코드 웹사이트·자사몰 구축"
+   ],
+   "problem": "개발 인력 없이 웹사이트·쇼핑몰을 만들어야 하는 1인·소규모 창업자의 구축 부담",
+   "users": "1인 창업가, 전자상거래·교육 서비스 소상공인",
+   "features": [
+    "코딩 없는 웹사이트 제작",
+    "결제 연동"
+   ],
+   "automation_scope": "웹사이트 템플릿·구축 기능 제공",
+   "human_scope": "사이트 구성·콘텐츠 작성, 외부 자동화 도구 연결",
+   "korea": "국내 서비스(한국어)",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "아임웹은 코딩 없이 웹사이트를 만드는 플랫폼으로, 2024년 아임웹으로 개설된 사이트는 22만곳이다.",
+     "quote": "지난해 아임웹을 통해 웹사이트를 개설한 업체는 22만곳으로 전년(15만곳) 대비 46% 성장했다.",
+     "url": "https://www.sedaily.com/article/14064982",
+     "date": "2025-05-13",
+     "reliability": "third_party",
+     "ref": 43
+    }
+   ],
+   "_areas": [
+    "통합 플랫폼·AI 에이전트"
+   ],
+   "_zero": true,
+   "_kr_usage": []
+  },
+  {
+   "name": "인블로그(inblog)",
+   "vendor": "인블로그",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "SEO 기업 블로그 운영",
+    "블로그 리드 수집"
+   ],
+   "problem": "개발 인력 없이 SEO가 되는 회사 블로그를 만들고, 검색 유입을 리드로 바꾸기 어렵다",
+   "users": "초기 스타트업·B2B 기업의 마케터·대표(개발 지식 없는 담당자)",
+   "features": [
+    "기술 SEO 자동 적용",
+    "서브디렉토리·커스텀 도메인 연결",
+    "유입 키워드·색인 확인 대시보드",
+    "리드 수집 폼·Zapier 자동화"
+   ],
+   "automation_scope": "기술 SEO 설정, 블로그 구축, 유입·색인 집계, 폼 리드 수집과 Zapier 연동",
+   "human_scope": "키워드 선정과 콘텐츠 작성, 수집된 리드 후속 영업",
+   "korea": "국내 서비스(한국어). 원문 기준 979개 고객 블로그 운영",
+   "pricing": "무료 플랜 $0/월, 팀 플랜 $39/월부터(페이지뷰 구간별 자동 조정, VAT 별도), 연 $2,990 트래픽 무제한",
+   "evidence": [
+    {
+     "claim": "인블로그는 SEO/GEO와 리드 수집을 함께 제공하는 기업 블로그 CMS다.",
+     "quote": "SEO/GEO 부터 리드 수집까지, 인블로그 하나면 충분해요.",
+     "url": "https://inblog.ai/ko",
+     "date": "2026-11",
+     "reliability": "vendor_doc",
+     "ref": 44
+    },
+    {
+     "claim": "개발 지식 없이 1분 안에 SEO 최적화 블로그를 만들 수 있다고 안내한다.",
+     "quote": "1분 안에 SEO 최적화된 우리 회사 블로그를 만들 수 있어요",
+     "url": "https://inblog.ai/ko",
+     "date": "2026-11",
+     "reliability": "vendor_doc",
+     "ref": 44
+    },
+    {
+     "claim": "979개 고객 블로그가 쓰고 있다고 밝혔다.",
+     "quote": "979개 고객 블로그가 함께하고 있습니다",
+     "url": "https://inblog.ai/ko",
+     "date": "2026-11",
+     "reliability": "vendor_doc",
+     "ref": 44
+    },
+    {
+     "claim": "팀 요금제는 월 39달러부터이며 페이지뷰에 따라 가격이 조정된다.",
+     "quote": "모든 팀 기능은 동일하며, 페이지뷰에 따라 가격만 자동 조정됩니다. $ 39 / 월 (VAT 별도)",
+     "url": "https://inblog.ai/ko/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc",
+     "ref": 45
+    },
+    {
+     "claim": "팀 요금제에 리드 수집 폼과 Zapier 자동화가 포함된다.",
+     "quote": "인블로그 리드 수집 폼 · Zapier 자동화 — 포함",
+     "url": "https://inblog.ai/ko/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc",
+     "ref": 45
+    }
+   ],
+   "_areas": [
+    "콘텐츠·SNS·브랜드 캠페인"
+   ],
+   "_zero": true,
+   "_kr_usage": []
+  },
+  {
+   "name": "아웃컴(Outcome)",
+   "vendor": "아웃컴",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "리드 목록 수집",
+    "아웃바운드 메일·링크드인 시퀀스",
+    "해외 바이어 발굴"
+   ],
+   "problem": "영업 인력이 없거나 적은 회사가 잠재 고객(해외 바이어 포함)을 찾고 먼저 연락해 미팅까지 잇기 어렵다",
+   "users": "세일즈 인력이 부족한 국내 스타트업·K-뷰티 등 수출 브랜드",
+   "features": [
+    "Clay 기반 리드 DB 교차 검증",
+    "신호(채용·뉴스·소셜) 기반 타깃 선별",
+    "AI 초개인화 메시지",
+    "이메일·링크드인 멀티채널 자동 팔로업",
+    "바이어 진행 현황 대시보드"
+   ],
+   "automation_scope": "잠재 고객 선별·연락처 확보, 개인화 메시지 생성, 반응에 따른 리마인더·팔로업 발송",
+   "human_scope": "캠페인 전략·컨설팅, 대화가 시작된 바이어 후속 관리, 미팅 동석·통역(운영 위탁 시 아웃컴 인력)",
+   "korea": "국내 기업(서울). Clay 한국 공식 파트너. 국내 기업의 해외 B2B 영업 지원에 집중",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "아웃컴은 잠재 고객 선별, 초개인화 메시지 생성, 반응 기반 자동 리마인더 기술을 갖췄다고 밝혔다.",
+     "quote": "아웃컴은 데이터 기반으로 잠재 고객을 선별하고, 학습 데이터를 통해 초개인화 맞춤형 메시지를 생성하며, 타깃 기업의 반응에 따라 자동으로 리마인더 콘텐츠를 발송하는 AI 기술을 보유하고 있습니다.",
+     "url": "https://byline.network/2025/06/16-510/",
+     "date": "2025-06-16",
+     "reliability": "interview",
+     "ref": 46
+    },
+    {
+     "claim": "사업 모델을 소프트웨어를 결합한 서비스로 정의하며, 고객이 직접 운영하거나 운영을 위탁할 수 있다.",
+     "quote": "저희는 스스로의 사업모델을 Service with a Software로 정의하고 있습니다.",
+     "url": "https://byline.network/2025/06/16-510/",
+     "date": "2025-06-16",
+     "reliability": "interview",
+     "ref": 46
+    },
+    {
+     "claim": "Clay로 105개 이상 글로벌 DB를 교차 검증해 유효한 이메일만 남긴다.",
+     "quote": "Clay를 활용해 105개 이상의 글로벌 DB를 교차 검증합니다.",
+     "url": "https://blog.outcome.co.kr/gtmengineering-cold-email-automation",
+     "date": "2026-08-26",
+     "reliability": "company_claim",
+     "ref": 47
+    },
+    {
+     "claim": "Smartlead와 HeyReach로 이메일·링크드인 멀티채널 시퀀스를 자동화한다.",
+     "quote": "Smartlead + HeyReach 조합으로 멀티채널 시퀀스를 자동화합니다.",
+     "url": "https://blog.outcome.co.kr/gtmengineering-cold-email-automation",
+     "date": "2026-08-26",
+     "reliability": "company_claim",
+     "ref": 47
+    }
+   ],
+   "_areas": [
+    "교육·고객 사례·영업 지원"
+   ],
+   "_zero": true,
+   "_kr_usage": []
+  },
+  {
    "name": "썸트렌드",
    "vendor": "바이브컴퍼니",
    "origin": "국내",
@@ -1771,7 +2072,7 @@
      "url": "https://m.ddaily.co.kr/page/view/2026030608202697275",
      "date": "2026-03-06",
      "reliability": "third_party",
-     "ref": 40
+     "ref": 48
     },
     {
      "claim": "답변과 함께 언급량·연관어·감성 지표를 함께 제공한다.",
@@ -1779,7 +2080,7 @@
      "url": "https://m.ddaily.co.kr/page/view/2026030608202697275",
      "date": "2026-03-06",
      "reliability": "third_party",
-     "ref": 40
+     "ref": 48
     },
     {
      "claim": "가입 시 500 크레딧을 준다.",
@@ -1787,12 +2088,13 @@
      "url": "https://apps.some.co.kr/cases/20261102-nmgi",
      "date": "2026-11-02",
      "reliability": "vendor_doc",
-     "ref": 41
+     "ref": 49
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -1804,7 +2106,7 @@
        "url": "https://apps.some.co.kr/cases/20261102-nmgi",
        "date": "2026-11-02",
        "reliability": "company_claim",
-       "ref": 41
+       "ref": 49
       },
       {
        "claim": "이전에는 여러 대시보드를 엑셀로 정리하는 데만 2시간 가까이 들었다.",
@@ -1812,7 +2114,7 @@
        "url": "https://apps.some.co.kr/cases/20261102-nmgi",
        "date": "2026-11-02",
        "reliability": "company_claim",
-       "ref": 41
+       "ref": 49
       }
      ]
     }
@@ -1847,12 +2149,13 @@
      "url": "https://developers.naver.com/products/service-api/datalab/datalab.md",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 42
+     "ref": 50
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -1882,7 +2185,7 @@
      "url": "https://www.cre.ma/blog/crema-review-ai",
      "date": "2023-02-01",
      "reliability": "vendor_doc",
-     "ref": 43
+     "ref": 51
     },
     {
      "claim": "리뷰 본문의 긍정/부정을 빠르게 파악해 불만 리뷰에 대응할 수 있다.",
@@ -1890,7 +2193,7 @@
      "url": "https://www.cre.ma/blog/crema-review-ai",
      "date": "2023-02-01",
      "reliability": "vendor_doc",
-     "ref": 43
+     "ref": 51
     },
     {
      "claim": "현재 패션·뷰티 카테고리만 지원한다.",
@@ -1898,12 +2201,13 @@
      "url": "https://www.cre.ma/blog/crema-review-ai",
      "date": "2023-02-01",
      "reliability": "vendor_doc",
-     "ref": 43
+     "ref": 51
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -1915,7 +2219,7 @@
        "url": "https://www.cre.ma/review",
        "date": "2026-08",
        "reliability": "company_claim",
-       "ref": 44
+       "ref": 52
       }
      ]
     }
@@ -1958,7 +2262,7 @@
      "url": "https://www.datarize.ai/",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 45
+     "ref": 53
     },
     {
      "claim": "캠페인 결과를 소재·시간대·회차별로 분석해 개선점을 제안한다.",
@@ -1966,7 +2270,7 @@
      "url": "https://www.datarize.ai/",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 45
+     "ref": 53
     },
     {
      "claim": "가장 많이 쓴 기능으로 자동 발송 알림톡/친구톡, 온사이트 추천, 발송 모수 예측을 꼽았다",
@@ -1974,7 +2278,7 @@
      "url": "https://www.datarize.ai/case-studies/kr-pulio",
      "date": "2025-07-02",
      "reliability": "company_claim",
-     "ref": 46
+     "ref": 54
     },
     {
      "claim": "장바구니 미구매·1년 미방문·구매 주기 이탈률 50% 이상 등 시그널을 세그먼트로 해석한다",
@@ -1982,13 +2286,14 @@
      "url": "https://www.datarize.ai/case-studies/kr-maatila",
      "date": "2024-01-23",
      "reliability": "company_claim",
-     "ref": 47
+     "ref": 55
     }
    ],
    "_areas": [
     "데이터·AI 활용",
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2000,7 +2305,7 @@
        "url": "https://www.datarize.ai/case-studies/kr-pulio",
        "date": "2025-07-02",
        "reliability": "company_claim",
-       "ref": 46
+       "ref": 54
       },
       {
        "claim": "고객 시그널별로 다양한 메시지·쿠폰을 제공해 자사 매출이 높아졌다고 밝혔다",
@@ -2008,7 +2313,7 @@
        "url": "https://www.datarize.ai/case-studies/kr-maatila",
        "date": "2024-01-23",
        "reliability": "interview",
-       "ref": 47
+       "ref": 55
       }
      ]
     }
@@ -2050,7 +2355,7 @@
      "url": "https://bigin.io/",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 48
+     "ref": 56
     },
     {
      "claim": "SDK 행동 정보와 DB 고객 정보를 조합한다.",
@@ -2058,7 +2363,7 @@
      "url": "https://bigin.io/",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 48
+     "ref": 56
     },
     {
      "claim": "발동 조건을 정하면 타깃 선정부터 발송·전환 추적까지 자동 실행된다",
@@ -2066,7 +2371,7 @@
      "url": "https://bigin.io",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 48
+     "ref": 56
     },
     {
      "claim": "타깃이 매일 자동 갱신되고 AI 스마트 그룹이 가능성 높은 고객을 제안한다",
@@ -2074,7 +2379,7 @@
      "url": "https://bigin.io",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 48
+     "ref": 56
     },
     {
      "claim": "전담 인력이 설계부터 월간 리포트까지 운영을 지원한다",
@@ -2082,13 +2387,14 @@
      "url": "https://bigin.io",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 48
+     "ref": 56
     }
    ],
    "_areas": [
     "데이터·AI 활용",
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -2119,12 +2425,13 @@
      "url": "https://groobee.net/blog/%ea%b0%9c%ec%9d%b8%ed%99%94-%ec%b7%a8%ed%96%a5-%ed%81%90%eb%a0%88%ec%9d%b4%ec%85%98-%ec%a0%9c%eb%8c%80%eb%a1%9c-%ed%95%b4%eb%82%b4%eb%8a%94-ai-%ec%83%81%ed%92%88%ec%b6%94%ec%b2%9c-%ec%82%ac%eb%a1%80/",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 49
+     "ref": 57
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2136,7 +2443,7 @@
        "url": "https://groobee.net/blog/%ea%b0%9c%ec%9d%b8%ed%99%94-%ec%b7%a8%ed%96%a5-%ed%81%90%eb%a0%88%ec%9d%b4%ec%85%98-%ec%a0%9c%eb%8c%80%eb%a1%9c-%ed%95%b4%eb%82%b4%eb%8a%94-ai-%ec%83%81%ed%92%88%ec%b6%94%ec%b2%9c-%ec%82%ac%eb%a1%80/",
        "date": "",
        "reliability": "company_claim",
-       "ref": 49
+       "ref": 57
       }
      ]
     }
@@ -2176,7 +2483,7 @@
      "url": "http://www.businessreport.kr/news/articleView.html?idxno=50829",
      "date": "2026-01-13",
      "reliability": "third_party",
-     "ref": 50
+     "ref": 58
     },
     {
      "claim": "카카오톡 마케팅 메시지 발송까지 통합 관리한다.",
@@ -2184,7 +2491,7 @@
      "url": "http://www.businessreport.kr/news/articleView.html?idxno=50829",
      "date": "2026-01-13",
      "reliability": "third_party",
-     "ref": 50
+     "ref": 58
     },
     {
      "claim": "그로스 플랜 월 결제 가격이 96,000원에서 120,000원으로 바뀌었다.",
@@ -2192,7 +2499,7 @@
      "url": "https://docs.channel.io/updates/ko/articles/%EC%A4%91%EC%9A%94-%EA%B3%B5%EC%A7%80-%EC%B1%84%EB%84%90%ED%86%A1-%EA%B0%80%EA%B2%A9%EC%A0%9C-%EA%B0%9C%ED%8E%B8-%EC%95%88%EB%82%B4251128--8bd5ddd0",
      "date": "2025-10-27",
      "reliability": "vendor_doc",
-     "ref": 51
+     "ref": 59
     },
     {
      "claim": "그로스 플랜에 매월 ALF 기본 제공량 30,000AU가 포함된다.",
@@ -2200,7 +2507,7 @@
      "url": "https://docs.channel.io/updates/ko/articles/%EC%A4%91%EC%9A%94-%EA%B3%B5%EC%A7%80-%EC%B1%84%EB%84%90%ED%86%A1-%EA%B0%80%EA%B2%A9%EC%A0%9C-%EA%B0%9C%ED%8E%B8-%EC%95%88%EB%82%B4251128--8bd5ddd0",
      "date": "2025-10-27",
      "reliability": "vendor_doc",
-     "ref": 51
+     "ref": 59
     },
     {
      "claim": "ALF 마케팅은 행동 신호나 상담 대화 흐름을 감지해 ALF가 먼저 대화를 제안하는 기능이다.",
@@ -2208,7 +2515,7 @@
      "url": "https://docs.channel.io/help/ko/articles/ALF-%EB%A7%88%EC%BC%80%ED%8C%85-%EC%B1%84%ED%8C%85-e488757c",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 52
+     "ref": 60
     },
     {
      "claim": "발송 서비스는 현재 채널톡 메시지와 이메일만 지원한다.",
@@ -2216,7 +2523,7 @@
      "url": "https://docs.channel.io/help/ko/articles/ALF-%EB%A7%88%EC%BC%80%ED%8C%85-%EC%B1%84%ED%8C%85-e488757c",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 52
+     "ref": 60
     },
     {
      "claim": "크레딧이 없으면 세션 1건당 700원, 마케팅 애드온 크레딧 구매 시 500원이다.",
@@ -2224,13 +2531,14 @@
      "url": "https://docs.channel.io/help/ko/articles/ALF-%EB%A7%88%EC%BC%80%ED%8C%85-%EC%B1%84%ED%8C%85-e488757c",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 52
+     "ref": 60
     }
    ],
    "_areas": [
     "데이터·AI 활용",
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2242,7 +2550,7 @@
        "url": "https://channel.io/kr/blog/articles/ai-case-lalasweet-0141b180",
        "date": "2026-07-15",
        "reliability": "company_claim",
-       "ref": 53
+       "ref": 61
       },
       {
        "claim": "CS팀은 알림을 확인하고 승인만 누른다.",
@@ -2250,7 +2558,7 @@
        "url": "https://channel.io/kr/blog/articles/ai-case-lalasweet-0141b180",
        "date": "2026-07-15",
        "reliability": "company_claim",
-       "ref": 53
+       "ref": 61
       }
      ]
     }
@@ -2284,7 +2592,7 @@
      "url": "https://blog.happytalk.io/ai-agent-happytalk",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 54
+     "ref": 62
     },
     {
      "claim": "젝시믹스에 카카오톡 채팅상담 등을 제공하고 AI 고객센터를 구축한다.",
@@ -2292,12 +2600,13 @@
      "url": "https://blog.happytalk.io/xexymix-happytalk-ai-cs-partnership",
      "date": "2024-08-26",
      "reliability": "company_claim",
-     "ref": 55
+     "ref": 63
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -2328,12 +2637,13 @@
      "url": "https://www.similarweb.com/blog/updates/announcements/introducing-ai-agents",
      "date": "2025-05-28",
      "reliability": "vendor_doc",
-     "ref": 56
+     "ref": 64
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Similarweb",
@@ -2346,7 +2656,7 @@
        "url": "https://www.cosinkorea.com/news/article.html?no=56032",
        "date": "2025-09-14",
        "reliability": "third_party",
-       "ref": 57
+       "ref": 65
       },
       {
        "claim": "시밀러웹 엔터프라이즈 페이지가 한국어로 제공된다.",
@@ -2354,7 +2664,7 @@
        "url": "http://www.similarweb.com/corp/ko/enterprise",
        "date": "2026-11",
        "reliability": "vendor_doc",
-       "ref": 58
+       "ref": 66
       }
      ]
     }
@@ -2387,12 +2697,13 @@
      "url": "https://mixpanel.com/customers/how-kolon-mall-uses-mixpanel-to-build-a-culture-of-experimentation-enabling-data-driven-growth",
      "date": "",
      "reliability": "company_claim",
-     "ref": 59
+     "ref": 67
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2404,7 +2715,7 @@
        "url": "https://mixpanel.com/customers/how-kolon-mall-uses-mixpanel-to-build-a-culture-of-experimentation-enabling-data-driven-growth",
        "date": "",
        "reliability": "company_claim",
-       "ref": 59
+       "ref": 67
       },
       {
        "claim": "가능한 곳은 자동화하되 전략적 배치는 사람이 통제한다.",
@@ -2412,7 +2723,7 @@
        "url": "https://mixpanel.com/customers/how-kolon-mall-uses-mixpanel-to-build-a-culture-of-experimentation-enabling-data-driven-growth",
        "date": "",
        "reliability": "company_claim",
-       "ref": 59
+       "ref": 67
       }
      ]
     }
@@ -2444,12 +2755,13 @@
      "url": "https://zendesk.com/customer/qantas-loyalty",
      "date": "",
      "reliability": "company_claim",
-     "ref": 60
+     "ref": 68
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Zendesk AI Agents",
@@ -2462,7 +2774,7 @@
        "url": "https://zdnet.co.kr/view?no=20260402174808",
        "date": "2026-04-02",
        "reliability": "third_party",
-       "ref": 61
+       "ref": 69
       },
       {
        "claim": "젠데스크 코리아가 국내 엔터프라이즈 고객사 대상 AI 에이전트 플랫폼 시범 운영을 시작했다.",
@@ -2470,7 +2782,7 @@
        "url": "https://aimarketingnews.io/news/articleView.html?idxno=4000964",
        "date": "2026-03-30",
        "reliability": "third_party",
-       "ref": 62
+       "ref": 70
       }
      ]
     }
@@ -2507,7 +2819,7 @@
      "url": "https://solapi.com/guides/sms-ad-guide",
      "date": "2026-06",
      "reliability": "vendor_doc",
-     "ref": 63
+     "ref": 71
     },
     {
      "claim": "웹 발송에서 광고 메시지 여부를 선택하면 광고 표기를 자동 추가하고, API/SDK 발송은 직접 적용해야 한다",
@@ -2515,7 +2827,7 @@
      "url": "https://solapi.com/guides/sms-ad-guide",
      "date": "2026-06",
      "reliability": "vendor_doc",
-     "ref": 63
+     "ref": 71
     },
     {
      "claim": "커머스 자동화에 오후 9시~오전 8시 미실행 '야간 제외' 조건이 있다",
@@ -2523,7 +2835,7 @@
      "url": "https://solapi.com/guides/auto-commerce-settings",
      "date": "2026-10-23",
      "reliability": "vendor_doc",
-     "ref": 64
+     "ref": 72
     },
     {
      "claim": "알림톡 건당 13원, 친구톡은 2025-12-31 서비스 종료로 표기돼 있다",
@@ -2531,12 +2843,13 @@
      "url": "https://solapi.com/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 65
+     "ref": 73
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -2571,7 +2884,7 @@
      "url": "https://notifly.tech/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 66
+     "ref": 74
     },
     {
      "claim": "예약·실시간·야간 발송 금지 설정과 AI 타깃 분석을 제공한다",
@@ -2579,7 +2892,7 @@
      "url": "https://notifly.tech/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 66
+     "ref": 74
     },
     {
      "claim": "장바구니 이탈 알림·가입 환영 메일·결제 완료 쿠폰 등을 사용 사례로 든다",
@@ -2587,7 +2900,7 @@
      "url": "https://notifly.tech/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 66
+     "ref": 74
     },
     {
      "claim": "스탠다드 월 15만원, 프로 월 80만원 요금제가 있다",
@@ -2595,7 +2908,7 @@
      "url": "https://notifly.tech/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 67
+     "ref": 75
     },
     {
      "claim": "프로 요금제는 월 80만원이며 A/B 테스트·유저 피로도 관리를 포함한다",
@@ -2603,12 +2916,13 @@
      "url": "https://notifly.tech/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 67
+     "ref": 75
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2620,7 +2934,7 @@
        "url": "https://notifly.tech/",
        "date": "2026-11",
        "reliability": "company_claim",
-       "ref": 66
+       "ref": 74
       }
      ]
     }
@@ -2662,7 +2976,7 @@
      "url": "https://www.hankyung.com/article/202505281292O",
      "date": "2025-05-29",
      "reliability": "third_party",
-     "ref": 68
+     "ref": 76
     },
     {
      "claim": "이마트24는 핵클로 다채널 CRM을 통합 관리하고 A/B 테스트로 최적화했다",
@@ -2670,7 +2984,7 @@
      "url": "https://hackle.io/ko/post/emart24",
      "date": "2026",
      "reliability": "company_claim",
-     "ref": 69
+     "ref": 77
     },
     {
      "claim": "핵클은 행동 분석·A/B 테스트·CRM·기능 플래그를 제공한다.",
@@ -2678,7 +2992,7 @@
      "url": "https://hackle.io/ko/product/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 70
+     "ref": 78
     },
     {
      "claim": "핵클 MCP로 CRM 성과를 차트 시각화하고 자연어로 분석할 수 있다.",
@@ -2686,13 +3000,14 @@
      "url": "https://www.hackle.io/ko/post/crm-campaign-report-mcp-automation/",
      "date": "2026-05-05",
      "reliability": "vendor_doc",
-     "ref": 71
+     "ref": 79
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션",
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2704,7 +3019,7 @@
        "url": "https://blog.hackle.io/post/green-ribbon-lifecatch",
        "date": "",
        "reliability": "company_claim",
-       "ref": 72
+       "ref": 80
       },
       {
        "claim": "2026년 1월 기준 앱 MAU가 전년 동기 대비 30% 성장했다",
@@ -2712,7 +3027,7 @@
        "url": "https://hackle.io/ko/post/emart24",
        "date": "2026",
        "reliability": "company_claim",
-       "ref": 69
+       "ref": 77
       }
      ]
     }
@@ -2754,7 +3069,7 @@
      "url": "https://docs.channel.io/help/ko/articles/%EB%B8%8C%EB%9E%9C%EB%93%9C-%EB%A9%94%EC%8B%9C%EC%A7%80%EC%B9%9C%EA%B5%AC%ED%86%A1--08543518",
      "date": "2026-08",
      "reliability": "vendor_doc",
-     "ref": 73
+     "ref": 81
     },
     {
      "claim": "알림톡은 전송 건당 7PU(1PU=1원)로 과금된다",
@@ -2762,7 +3077,7 @@
      "url": "https://docs.channel.io/help/ko/articles/%EC%B2%AD%EA%B5%AC%EC%84%9C-%ED%95%AD%EB%AA%A9%EB%B3%84-%EC%95%88%EB%82%B4-3208623a",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 74
+     "ref": 82
     },
     {
      "claim": "채널톡은 서포트봇 폼으로 상담 전 고객 정보를 받는 기능을 출시했다.",
@@ -2770,7 +3085,7 @@
      "url": "https://channel.io/kr/blog/articles/launching-leadform-30330799",
      "date": "2022-04-15",
      "reliability": "vendor_doc",
-     "ref": 75
+     "ref": 83
     },
     {
      "claim": "채널코퍼레이션은 리드 수집 기능을 고도화해 세일즈·CRM 마케팅을 지원하는 업데이트를 했다.",
@@ -2778,7 +3093,7 @@
      "url": "https://www.datanet.co.kr/news/articleView.html?idxno=171577",
      "date": "2022-04-14",
      "reliability": "third_party",
-     "ref": 76
+     "ref": 84
     },
     {
      "claim": "요금표에 워크플로우 실행당, 카카오 상담톡 대화당 단가가 있다.",
@@ -2786,13 +3101,14 @@
      "url": "https://channel.io/kr/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 77
+     "ref": 85
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션",
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2804,7 +3120,7 @@
        "url": "https://channel.io/kr/blog/articles/ai-case-lalasweet-0141b180",
        "date": "2026-07-15",
        "reliability": "company_claim",
-       "ref": 53
+       "ref": 61
       },
       {
        "claim": "CS팀은 알림을 확인하고 승인만 누른다.",
@@ -2812,7 +3128,7 @@
        "url": "https://channel.io/kr/blog/articles/ai-case-lalasweet-0141b180",
        "date": "2026-07-15",
        "reliability": "company_claim",
-       "ref": 53
+       "ref": 61
       }
      ]
     }
@@ -2846,7 +3162,7 @@
      "url": "http://www.cre.ma/blog/alimtalk",
      "date": "2026-08",
      "reliability": "vendor_doc",
-     "ref": 78
+     "ref": 86
     },
     {
      "claim": "직접 작성한 알림톡 템플릿은 카카오 검수를 통과해야 한다",
@@ -2854,7 +3170,7 @@
      "url": "http://www.cre.ma/blog/alimtalk",
      "date": "2026-08",
      "reliability": "vendor_doc",
-     "ref": 78
+     "ref": 86
     },
     {
      "claim": "카카오톡 챗봇을 쓰는 고객사에서 리뷰 작성률이 2배 이상 늘었다고 밝혔다",
@@ -2862,12 +3178,13 @@
      "url": "https://www.aitimes.kr/news/articleView.html?idxno=33021",
      "date": "2024-11-28",
      "reliability": "third_party",
-     "ref": 79
+     "ref": 87
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2879,7 +3196,7 @@
        "url": "https://www.cre.ma/review",
        "date": "2026-08",
        "reliability": "company_claim",
-       "ref": 44
+       "ref": 52
       }
      ]
     }
@@ -2916,7 +3233,7 @@
      "url": "https://www.dodopoint.co.kr/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 80
+     "ref": 88
     },
     {
      "claim": "포인트 적립 시 무료 알림톡이 가고 그 안의 버튼으로 네이버 리뷰를 요청한다",
@@ -2924,7 +3241,7 @@
      "url": "https://m.smartplace.naver.com/notices/1167",
      "date": "2026-11-18",
      "reliability": "vendor_doc",
-     "ref": 81
+     "ref": 89
     },
     {
      "claim": "네이버 플레이스 멤버십 연동은 무료이고 도도포인트 이용료는 별도다",
@@ -2932,12 +3249,13 @@
      "url": "https://m.smartplace.naver.com/notices/1167",
      "date": "2026-11-18",
      "reliability": "vendor_doc",
-     "ref": 81
+     "ref": 89
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -2949,7 +3267,7 @@
        "url": "https://m.smartplace.naver.com/notices/1167",
        "date": "2026-11-18",
        "reliability": "company_claim",
-       "ref": 81
+       "ref": 89
       },
       {
        "claim": "쿠폰까지 설정한 매장의 방문 증가 폭은 35%였다",
@@ -2957,7 +3275,7 @@
        "url": "https://m.smartplace.naver.com/notices/1167",
        "date": "2026-11-18",
        "reliability": "company_claim",
-       "ref": 81
+       "ref": 89
       }
      ]
     }
@@ -2990,12 +3308,13 @@
      "url": "https://biz.heraldcorp.com/article/3153031",
      "date": "2023-06-22",
      "reliability": "third_party",
-     "ref": 82
+     "ref": 90
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3025,7 +3344,7 @@
      "url": "https://tossplace.com/story/automatic_coupon",
      "date": "2026-03-24",
      "reliability": "vendor_doc",
-     "ref": 83
+     "ref": 91
     },
     {
      "claim": "쿠폰 자동 발송은 방문 횟수와 방문 간격에 따라 쿠폰을 보낸다",
@@ -3033,12 +3352,13 @@
      "url": "https://tossplace.com/story/automatic_coupon",
      "date": "2026-03-24",
      "reliability": "vendor_doc",
-     "ref": 83
+     "ref": 91
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3074,7 +3394,7 @@
      "url": "https://help.stibee.com/tip/use-auto-email",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 84
+     "ref": 92
     },
     {
      "claim": "2025년 10월 이메일 내용을 바탕으로 AI가 제목을 추천하는 기능을 추가했다",
@@ -3082,7 +3402,7 @@
      "url": "https://blog.stibee.com/2025-oct-update/",
      "date": "2025-10-22",
      "reliability": "vendor_doc",
-     "ref": 85
+     "ref": 93
     },
     {
      "claim": "스티비 자동 이메일은 트리거 조건을 만족할 때마다 이메일을 자동 발송한다.",
@@ -3090,13 +3410,14 @@
      "url": "https://help.stibee.com/email/automation/using",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 86
+     "ref": 94
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션",
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3126,7 +3447,7 @@
      "url": "https://kakaobusiness.gitbook.io/main/ad/infotalk/operations",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 87
+     "ref": 95
     },
     {
      "claim": "브랜드 메시지는 사전 수신 동의 기반 광고형 메시지로 친구톡을 업그레이드한 상품이다",
@@ -3134,7 +3455,7 @@
      "url": "https://m.ddaily.co.kr/page/view/2025051514142346562",
      "date": "2025-05-15",
      "reliability": "third_party",
-     "ref": 88
+     "ref": 96
     },
     {
      "claim": "친구톡 서비스가 2025년 12월 31일 종료된다",
@@ -3142,12 +3463,13 @@
      "url": "https://docs.nhncloud.com/ko/Notification/KakaoTalk%20Bizmessage/ko/friendtalk-compatible-api-guide",
      "date": "2025",
      "reliability": "vendor_doc",
-     "ref": 89
+     "ref": 97
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3180,7 +3502,7 @@
      "url": "https://www.braze.com/docs/user_guide/brazeai/intelligence/intelligent_timing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 90
+     "ref": 98
     },
     {
      "claim": "Quiet Hours를 켜면 해당 시간대에는 발송하지 않고 다음 가능한 시간으로 지연한다",
@@ -3188,7 +3510,7 @@
      "url": "https://www.braze.com/docs/user_guide/brazeai/intelligence/intelligent_timing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 90
+     "ref": 98
     },
     {
      "claim": "국내 기업들은 브레이즈와 카카오톡을 간접 연동해 쓰고 있으며 직접 연동을 준비 중이라고 보도됐다",
@@ -3196,12 +3518,13 @@
      "url": "https://www.bloter.net/news/articleView.html?idxno=621531",
      "date": "2024-08-19",
      "reliability": "third_party",
-     "ref": 91
+     "ref": 99
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -3213,7 +3536,7 @@
        "url": "https://blog.ab180.co/posts/braze-currents-kmong",
        "date": "2025-05-09",
        "reliability": "company_claim",
-       "ref": 92
+       "ref": 100
       },
       {
        "claim": "Amplitude 코호트를 Braze에 다시 연동해 CRM 캠페인에 활용했다.",
@@ -3221,7 +3544,7 @@
        "url": "https://blog.ab180.co/posts/braze-currents-kmong",
        "date": "2025-05-09",
        "reliability": "company_claim",
-       "ref": 92
+       "ref": 100
       }
      ]
     }
@@ -3258,7 +3581,7 @@
      "url": "https://www.facebook.com/business/news/meta-advantage-explained-in-two-minutes",
      "date": "2025-04-22",
      "reliability": "vendor_doc",
-     "ref": 93
+     "ref": 101
     },
     {
      "claim": "Meta는 거의 모든 광고주가 하나 이상의 Advantage+ 제품을 쓰고 있다고 밝혔다.",
@@ -3266,12 +3589,13 @@
      "url": "https://www.facebook.com/business/news/meta-advantage-explained-in-two-minutes",
      "date": "2025-04-22",
      "reliability": "vendor_doc",
-     "ref": 93
+     "ref": 101
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Meta Advantage+",
@@ -3284,7 +3608,7 @@
        "url": "https://bloter.net/news/articleView.html?idxno=674892",
        "date": "2026-10-07",
        "reliability": "third_party",
-       "ref": 94
+       "ref": 102
       },
       {
        "claim": "어댑트가 어드밴티지 플러스로 홍콩 현지 잠재 고객을 선별했다.",
@@ -3292,7 +3616,7 @@
        "url": "https://tnnews.co.kr/archives/291647",
        "date": "2026-08-27",
        "reliability": "third_party",
-       "ref": 95
+       "ref": 103
       }
      ]
     },
@@ -3306,7 +3630,7 @@
        "url": "https://bloter.net/news/articleView.html?idxno=674892",
        "date": "2026-10-07",
        "reliability": "third_party",
-       "ref": 94
+       "ref": 102
       }
      ]
     }
@@ -3342,7 +3666,7 @@
      "url": "https://support.google.com/google-ads/answer/10724817?hl=ko",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 96
+     "ref": 104
     },
     {
      "claim": "Ask Advisor는 Gemini 기반 에이전트형 대화 환경으로 새 텍스트와 광고 소재를 제안한다.",
@@ -3350,12 +3674,13 @@
      "url": "https://support.google.com/google-ads/answer/10724817?hl=ko",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 96
+     "ref": 104
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -3367,7 +3692,7 @@
        "url": "https://business.google.com/kr/think/ai-excellence/google-ai-olive-young-case-study/",
        "date": "2025-08",
        "reliability": "company_claim",
-       "ref": 97
+       "ref": 105
       },
       {
        "claim": "초록우산은 실적 최대화 캠페인으로 정기후원 CPA 51% 감소, 전환수 544% 증대를 기록했다.",
@@ -3375,7 +3700,7 @@
        "url": "https://business.google.com/kr/think/ai-excellence/google-ai-powered-performance-max-campaign-success-green-umbrella",
        "date": "2025-06",
        "reliability": "company_claim",
-       "ref": 98
+       "ref": 106
       }
      ]
     }
@@ -3410,12 +3735,13 @@
      "url": "https://blog.google/products/ads-commerce/google-ai-max-for-search-campaigns",
      "date": "2025-05-06",
      "reliability": "vendor_doc",
-     "ref": 99
+     "ref": 107
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Google AI Max for Search",
@@ -3428,7 +3754,7 @@
        "url": "https://etoday.co.kr/news/view/2648786",
        "date": "2026-11-17",
        "reliability": "third_party",
-       "ref": 100
+       "ref": 108
       }
      ]
     }
@@ -3464,7 +3790,7 @@
      "url": "https://newsroom.tiktok.com/en-US/tiktok-symphony-updates",
      "date": "2025-06-16",
      "reliability": "vendor_doc",
-     "ref": 101
+     "ref": 109
     },
     {
      "claim": "Forment는 Smart+로 크리에이티브 조합과 타깃팅을 자동화했다.",
@@ -3472,12 +3798,13 @@
      "url": "https://ads.tiktok.com/business/ko/inspiration/forment",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 102
+     "ref": 110
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -3489,7 +3816,7 @@
        "url": "https://ads.tiktok.com/business/ko/inspiration/samsungfire",
        "date": "2026-11",
        "reliability": "company_claim",
-       "ref": 103
+       "ref": 111
       }
      ]
     }
@@ -3523,7 +3850,7 @@
      "url": "https://www.adcreative.ai/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 104
+     "ref": 112
     },
     {
      "claim": "AdCreative.ai는 광고 소재 생성·제품 사진·영상 생성 기능을 제공한다.",
@@ -3531,12 +3858,13 @@
      "url": "https://www.adcreative.ai/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 104
+     "ref": 112
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "AdCreative.ai",
@@ -3549,7 +3877,7 @@
        "url": "https://www.appier.com/ko-kr/press-media/adcreativeai_roadshow",
        "date": "2025-05-12",
        "reliability": "company_claim",
-       "ref": 105
+       "ref": 113
       },
       {
        "claim": "서울 행사에 국내 주요 고객사 등 마케팅 관계자 250명이 참석했다.",
@@ -3557,7 +3885,7 @@
        "url": "https://www.appier.com/ko-kr/press-media/adcreativeai_roadshow",
        "date": "2025-05-12",
        "reliability": "company_claim",
-       "ref": 105
+       "ref": 113
       }
      ]
     }
@@ -3593,7 +3921,7 @@
      "url": "https://new.smartplace.naver.com/notices/1142",
      "date": "2026-10-15",
      "reliability": "vendor_doc",
-     "ref": 106
+     "ref": 114
     },
     {
      "claim": "스마트플레이스에서 시작하면 하루 예산과 광고 기간만 정하면 된다.",
@@ -3601,7 +3929,7 @@
      "url": "https://new.smartplace.naver.com/notices/1142",
      "date": "2026-10-15",
      "reliability": "vendor_doc",
-     "ref": 106
+     "ref": 114
     },
     {
      "claim": "ADVoost Max 광고 문안은 네이버 광고 에이전트가 작성하며 광고주가 수정할 수 없다.",
@@ -3609,7 +3937,7 @@
      "url": "https://ads.naver.com/notice/31888",
      "date": "2026-06-15",
      "reliability": "vendor_doc",
-     "ref": 107
+     "ref": 115
     },
     {
      "claim": "ADVoost 쇼핑은 예산만 입력하면 AI가 상품 선정부터 입찰까지 자동 처리한다.",
@@ -3617,12 +3945,13 @@
      "url": "https://ads.naver.com/sub/insight/success/113",
      "date": "2026-01-20",
      "reliability": "vendor_doc",
-     "ref": 108
+     "ref": 116
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -3634,7 +3963,7 @@
        "url": "https://ads.naver.com/sub/insight/success/113",
        "date": "2026-01-20",
        "reliability": "company_claim",
-       "ref": 108
+       "ref": 116
       }
      ]
     }
@@ -3671,7 +4000,7 @@
      "url": "https://kakaobusiness.gitbook.io/main/ad/moment",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 109
+     "ref": 117
     },
     {
      "claim": "모먼트 AI는 18~100점 최적화 점수와 실행 제안을 제공한다.",
@@ -3679,7 +4008,7 @@
      "url": "https://www.kakaocorp.com/page/detail/11845",
      "date": "2025-12-11",
      "reliability": "company_claim",
-     "ref": 110
+     "ref": 118
     },
     {
      "claim": "카카오는 소재 자동 생성과 시뮬레이터 기반 A/B 테스트 기능을 제공할 예정이라고 밝혔다.",
@@ -3687,12 +4016,13 @@
      "url": "https://www.kakaocorp.com/page/detail/11845",
      "date": "2025-12-11",
      "reliability": "company_claim",
-     "ref": 110
+     "ref": 118
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3726,7 +4056,7 @@
      "url": "https://business.daangn.com/insights/cb2f1308-5efe-4d50-9ea0-cdfee22cf8b7/%EB%B9%84%EC%A6%88%ED%94%84%EB%A1%9C%ED%95%84-%EC%A0%84%ED%99%98-%EB%8A%98%EB%A6%AC%EA%B8%B0-%EC%86%8C%EA%B0%9C",
      "date": "2026-11-11",
      "reliability": "vendor_doc",
-     "ref": 111
+     "ref": 119
     },
     {
      "claim": "당근은 비즈프로필 광고 보고서에 주문·쿠폰 사용 전환 지표를 추가했다.",
@@ -3734,12 +4064,13 @@
      "url": "https://today-marketing.com/news/view.php?no=945",
      "date": "2026-09-10",
      "reliability": "third_party",
-     "ref": 112
+     "ref": 120
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3771,12 +4102,13 @@
      "url": "https://tossads.toss.im/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 113
+     "ref": 121
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3809,7 +4141,7 @@
      "url": "https://www.asiae.co.kr/article/2024032210140917508",
      "date": "2024-03-22",
      "reliability": "third_party",
-     "ref": 114
+     "ref": 122
     },
     {
      "claim": "모비온은 카카오·네이트 등 제휴 매체로 월 200억 이상 페이지뷰를 확보했다고 밝혔다.",
@@ -3817,12 +4149,13 @@
      "url": "https://www.asiae.co.kr/article/2024032210140917508",
      "date": "2024-03-22",
      "reliability": "third_party",
-     "ref": 114
+     "ref": 122
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3852,12 +4185,13 @@
      "url": "https://www.newswire.co.kr/newsRead.php?no=1038940",
      "date": "2026-07-21",
      "reliability": "company_claim",
-     "ref": 115
+     "ref": 123
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3888,7 +4222,7 @@
      "url": "https://wowtv.co.kr/NewsCenter/News/Read?articleId=A202605140515",
      "date": "2026-05-14",
      "reliability": "third_party",
-     "ref": 116
+     "ref": 124
     },
     {
      "claim": "카페24 PRO는 가입·첫구매·생일·리뷰·카카오채널 친구추가 등 쿠폰을 미리 준비해 둔다.",
@@ -3896,12 +4230,13 @@
      "url": "https://docs.channel.io/cafe24pro/ko/articles/%ED%95%84%EC%9A%94%ED%95%9C-%EC%BF%A0%ED%8F%B0-%EC%8B%A0%EC%B2%AD%EB%A7%8C-%ED%95%98%EC%84%B8%EC%9A%94-0abb9bbd",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 117
+     "ref": 125
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -3935,7 +4270,7 @@
      "url": "https://salesmap.kr/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 118
+     "ref": 126
     },
     {
      "claim": "요금제에 시퀀스 자동화·워크플로우 자동화·순환 미팅 기능이 포함된다.",
@@ -3943,7 +4278,7 @@
      "url": "https://salesmap.kr/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 119
+     "ref": 127
     },
     {
      "claim": "상위 요금제에 카카오 알림톡 발송 기능이 있다.",
@@ -3951,12 +4286,13 @@
      "url": "https://salesmap.kr/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 119
+     "ref": 127
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -3968,7 +4304,7 @@
        "url": "https://salesmap.kr/blog/backpackr-salesmap-success-story",
        "date": "2024-10-28",
        "reliability": "company_claim",
-       "ref": 120
+       "ref": 128
       },
       {
        "claim": "업무 속도가 월 2개에서 주 2개로 빨라져 약 300% 상승했다.",
@@ -3976,7 +4312,7 @@
        "url": "https://salesmap.kr/blog/backpackr-salesmap-success-story",
        "date": "2024-10-28",
        "reliability": "company_claim",
-       "ref": 120
+       "ref": 128
       }
      ]
     }
@@ -4012,7 +4348,7 @@
      "url": "https://recatch.cc/ko/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 121
+     "ref": 129
     },
     {
      "claim": "AX 플랜 가격은 월 80만 원(VAT 별도)이다.",
@@ -4020,7 +4356,7 @@
      "url": "https://recatch.cc/ko/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 121
+     "ref": 129
     },
     {
      "claim": "리캐치는 2023년 상반기 도입 고객의 미팅 수립 3.2배, 리드 타임 44초 단축 등을 발표했다.",
@@ -4028,12 +4364,13 @@
      "url": "https://recatch.cc/ko/blog/effects-of-recatch",
      "date": "2023",
      "reliability": "company_claim",
-     "ref": 122
+     "ref": 130
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -4045,7 +4382,7 @@
        "url": "https://recatch.cc/ko/blog/customer-success-story-airsupply",
        "date": "2023-05-26",
        "reliability": "company_claim",
-       "ref": 123
+       "ref": 131
       },
       {
        "claim": "도입 후 '문의하기' 클릭자의 80%가 미팅 예약까지 완료한다.",
@@ -4053,7 +4390,7 @@
        "url": "https://recatch.cc/ko/blog/customer-success-story-airsupply",
        "date": "2023-05-26",
        "reliability": "company_claim",
-       "ref": 123
+       "ref": 131
       }
      ]
     }
@@ -4088,7 +4425,7 @@
      "url": "https://blog.event-us.kr/use-case-reminder-webinar-kimdo",
      "date": "2022-08-29",
      "reliability": "vendor_doc",
-     "ref": 124
+     "ref": 132
     },
     {
      "claim": "리마인드 메일·문자 외에 RSVP 메일 자동화와 대기자 기능을 제공한다.",
@@ -4096,12 +4433,13 @@
      "url": "https://event-us.kr/hostcenter/blog/338/how_to_reduce_event_no_show",
      "date": "2024-06-06",
      "reliability": "vendor_doc",
-     "ref": 125
+     "ref": 133
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -4113,7 +4451,7 @@
        "url": "https://blog.event-us.kr/use-case-reminder-webinar-kimdo",
        "date": "2022-08-29",
        "reliability": "company_claim",
-       "ref": 124
+       "ref": 132
       },
       {
        "claim": "목표 150명보다 많은 350명이 신청했다.",
@@ -4121,7 +4459,7 @@
        "url": "https://blog.event-us.kr/use-case-cliwant-b2b-webinar",
        "date": "2024-11-25",
        "reliability": "company_claim",
-       "ref": 126
+       "ref": 134
       }
      ]
     }
@@ -4155,7 +4493,7 @@
      "url": "https://callabo.ai/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 127
+     "ref": 135
     },
     {
      "claim": "주요 논의사항과 액션 아이템을 별도로 추출한다.",
@@ -4163,12 +4501,13 @@
      "url": "https://callabo.ai/blog/ai-meeting-assistant-comparison-callabo-and-clovanote",
      "date": "2024-10-23",
      "reliability": "company_claim",
-     "ref": 128
+     "ref": 136
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -4199,7 +4538,7 @@
      "url": "https://knowledge.hubspot.com/sequences/create-and-edit-sequences",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 129
+     "ref": 137
     },
     {
      "claim": "연락처에 대해 참여도·적합도 점수를 만들 수 있고 Enterprise에서는 AI로 점수를 만든다.",
@@ -4207,7 +4546,7 @@
      "url": "https://knowledge.hubspot.com/scoring/understand-the-lead-scoring-tool",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 130
+     "ref": 138
     },
     {
      "claim": "Prospecting 에이전트는 계정 조사·연락처 탐색·개인화 메일 초안을 만든다.",
@@ -4215,7 +4554,7 @@
      "url": "https://www.hubspot.com/products/sales/ai-prospecting-agent",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 131
+     "ref": 139
     },
     {
      "claim": "품질에 만족하면 검토 없이 발송하는 완전 자율 모드로 전환할 수 있다.",
@@ -4223,12 +4562,13 @@
      "url": "https://www.hubspot.com/products/sales/ai-prospecting-agent",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 131
+     "ref": 139
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "HubSpot(Sales Hub·Breeze)",
@@ -4241,7 +4581,7 @@
        "url": "https://marketingmm.co.kr/partners/%ed%97%88%eb%b8%8c%ec%8a%a4%ed%8c%9f-%eb%8f%84%ec%9e%85%ec%82%ac%eb%a1%80/",
        "date": "2023-11-02",
        "reliability": "company_claim",
-       "ref": 132
+       "ref": 140
       },
       {
        "claim": "국내 대기업이 전문 파트너사를 통해 HubSpot을 도입하는 사례가 늘고 있다.",
@@ -4249,7 +4589,7 @@
        "url": "https://solutionks.com/blog/hubspot/hubspot-onboarding-of-ict-conglomerate",
        "date": "2026-04-17",
        "reliability": "company_claim",
-       "ref": 133
+       "ref": 141
       }
      ]
     }
@@ -4284,7 +4624,7 @@
      "url": "https://www.salesforce.com/sales/ai-sales-agent/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 134
+     "ref": 142
     },
     {
      "claim": "Agibank의 SDR 에이전트는 WhatsApp 캠페인에 반응한 잠재 고객에 즉시 응답해 자격을 판단한다.",
@@ -4292,12 +4632,13 @@
      "url": "https://salesforce.com/customer-stories/agibank/agentic-lead-qualification",
      "date": "2026-09-04",
      "reliability": "company_claim",
-     "ref": 135
+     "ref": 143
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Salesforce(Agentforce SDR·Marketing)",
@@ -4310,7 +4651,7 @@
        "url": "https://www.salesforce.com/kr/blog/agentforce-world-tour-korea-2026-customer-stories",
        "date": "2026-06-12",
        "reliability": "company_claim",
-       "ref": 136
+       "ref": 144
       },
       {
        "claim": "CJ프레시웨이가 세일즈포스 Agentforce를 도입했다.",
@@ -4318,7 +4659,7 @@
        "url": "https://www.salesforce.com/kr/blog/agentforce-world-tour-korea-2026-customer-stories",
        "date": "2026-06-12",
        "reliability": "company_claim",
-       "ref": 136
+       "ref": 144
       }
      ]
     }
@@ -4351,7 +4692,7 @@
      "url": "https://www.clay.com/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 137
+     "ref": 145
     },
     {
      "claim": "여러 데이터 제공자를 순차 조회하는 워터폴을 지원한다.",
@@ -4359,12 +4700,13 @@
      "url": "https://www.clay.com/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 137
+     "ref": 145
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Clay",
@@ -4377,7 +4719,7 @@
        "url": "https://blog.outcome.co.kr/clay-club-seoul-gtm-workshop",
        "date": "2025-12-01",
        "reliability": "company_claim",
-       "ref": 138
+       "ref": 146
       }
      ]
     }
@@ -4410,12 +4752,13 @@
      "url": "https://www.saastr.com/saastr-ai-app-of-the-week-gamma-the-ai-sales-deck-generator-thats-converting-our-biggest/",
      "date": "2025",
      "reliability": "third_party",
-     "ref": 139
+     "ref": 147
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Gamma",
@@ -4428,7 +4771,7 @@
        "url": "https://zdnet.co.kr/view?no=20260317182356",
        "date": "2026-03-18",
        "reliability": "interview",
-       "ref": 140
+       "ref": 148
       },
       {
        "claim": "한국 사용자가 감마를 소셜 미디어 자산 제작에 쓰는 비중이 세계에서 가장 높다.",
@@ -4436,7 +4779,7 @@
        "url": "https://www.mt.co.kr/future/2026/03/18/2026031810210812845",
        "date": "2026-03-18",
        "reliability": "interview",
-       "ref": 141
+       "ref": 149
       }
      ]
     }
@@ -4474,7 +4817,7 @@
      "url": "https://www.airbridge.io/en/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 142
+     "ref": 150
     },
     {
      "claim": "AB180은 AI 에이전트 Airbridge Pilot과 Airbridge MCP를 출시해 자연어로 캠페인 성과·ROAS를 조회할 수 있게 했다.",
@@ -4482,12 +4825,13 @@
      "url": "https://zdnet.co.kr/view/?no=20260326143733",
      "date": "2026-03-26",
      "reliability": "third_party",
-     "ref": 143
+     "ref": 151
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -4499,7 +4843,7 @@
        "url": "https://www.airbridge.io/ko/case-studies/api-ai",
        "date": "2026-03",
        "reliability": "company_claim",
-       "ref": 144
+       "ref": 152
       },
       {
        "claim": "매일 스크립트가 API 호출부터 시트 업데이트까지 사람 개입 없이 실행된다.",
@@ -4507,7 +4851,7 @@
        "url": "https://www.airbridge.io/ko/case-studies/api-ai",
        "date": "2026-03",
        "reliability": "company_claim",
-       "ref": 144
+       "ref": 152
       }
      ]
     }
@@ -4541,7 +4885,7 @@
      "url": "https://www.adbrix.io/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 145
+     "ref": 153
     },
     {
      "claim": "코호트·잔존율 분석과 대용량 이벤트 처리를 지원한다.",
@@ -4549,12 +4893,13 @@
      "url": "https://www.adbrix.io/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 145
+     "ref": 153
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -4586,7 +4931,7 @@
      "url": "https://www.beusable.net/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 146
+     "ref": 154
     },
     {
      "claim": "스크롤·스와이프 히트맵을 교차 분석해 상세페이지 리뷰 영역 소비 효율을 분석했다.",
@@ -4594,12 +4939,13 @@
      "url": "https://beusable.net/blog?p=6263",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 147
+     "ref": 155
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -4631,7 +4977,7 @@
      "url": "https://bizspring.co.kr/prd_air.php",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 148
+     "ref": 156
     },
     {
      "claim": "매일 새벽 각 매체 공식 API에서 데이터를 받아 정리한다.",
@@ -4639,7 +4985,7 @@
      "url": "https://bizspring.co.kr/prd_air.php",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 148
+     "ref": 156
     },
     {
      "claim": "요금은 연 400만 원(월 약 33만 원)이다.",
@@ -4647,12 +4993,13 @@
      "url": "https://bizspring.co.kr/prd_air.php",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 148
+     "ref": 156
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -4664,7 +5011,7 @@
        "url": "https://bizspring.ai/kb/case/weekly-report-automation",
        "date": "2026-08",
        "reliability": "company_claim",
-       "ref": 149
+       "ref": 157
       }
      ]
     }
@@ -4698,7 +5045,7 @@
      "url": "https://imreport.io",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 150
+     "ref": 158
     },
     {
      "claim": "네이버 검색광고 데이터를 키워드·검색어별 전환까지 동기화한다.",
@@ -4706,12 +5053,13 @@
      "url": "https://imreport.io",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 150
+     "ref": 158
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -4743,12 +5091,13 @@
      "url": "https://help.naver.com/service/9864/contents/15298?osType=PC&lang=ko",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 151
+     "ref": 159
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -4779,7 +5128,7 @@
      "url": "https://support.google.com/analytics/answer/9443595?hl=en",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 152
+     "ref": 160
     },
     {
      "claim": "Ask Advisor는 Gemini 기반의 대화형 분석 기능이다.",
@@ -4787,12 +5136,13 @@
      "url": "https://support.google.com/analytics/answer/16675569",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 153
+     "ref": 161
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "GA4",
@@ -4805,7 +5155,7 @@
        "url": "https://bizspring.ai/kb/case/blog-ga4-bigquery-crm-integration",
        "date": "2026-11",
        "reliability": "company_claim",
-       "ref": 154
+       "ref": 162
       }
      ]
     }
@@ -4838,12 +5188,13 @@
      "url": "https://appsflyer.com/customers/bitmango",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 155
+     "ref": 163
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -4855,7 +5206,7 @@
        "url": "https://appsflyer.com/customers/bitmango",
        "date": "2026-11",
        "reliability": "company_claim",
-       "ref": 155
+       "ref": 163
       }
      ]
     }
@@ -4888,12 +5239,13 @@
      "url": "https://supermetrics.com/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 156
+     "ref": 164
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Supermetrics",
@@ -4906,7 +5258,7 @@
        "url": "https://www.soulbind9.com/supermetrics",
        "date": "2026-11",
        "reliability": "company_claim",
-       "ref": 157
+       "ref": 165
       }
      ]
     }
@@ -4940,7 +5292,7 @@
      "url": "https://blog.google/products/ads-commerce/meridian-marketing-mix-model-open-to-everyone/",
      "date": "2025-01-29",
      "reliability": "vendor_doc",
-     "ref": 158
+     "ref": 166
     },
     {
      "claim": "Meridian 학습·인증을 받은 20개 이상 측정 파트너 프로그램을 도입했다.",
@@ -4948,12 +5300,13 @@
      "url": "https://blog.google/products/ads-commerce/meridian-marketing-mix-model-open-to-everyone/",
      "date": "2025-01-29",
      "reliability": "vendor_doc",
-     "ref": 158
+     "ref": 166
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Google Meridian",
@@ -4966,7 +5319,7 @@
        "url": "https://brandbrief.co.kr/site/data/html/2026/11/23/2026112350163.html",
        "date": "2026-11-23",
        "reliability": "third_party",
-       "ref": 159
+       "ref": 167
       }
      ]
     }
@@ -5000,7 +5353,7 @@
      "url": "https://github.com/facebookexperimental/Robyn",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 160
+     "ref": 168
     },
     {
      "claim": "Robyn 사례로 Resident의 매출 20% 증가 등이 소개돼 있다.",
@@ -5008,12 +5361,13 @@
      "url": "https://facebookexperimental.github.io/Robyn/docs/case-studies/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 161
+     "ref": 169
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Meta Robyn",
@@ -5026,7 +5380,7 @@
        "url": "https://theguru.co.kr/news/article.html?no=87339",
        "date": "2025-05-23",
        "reliability": "third_party",
-       "ref": 162
+       "ref": 170
       }
      ]
     },
@@ -5040,7 +5394,7 @@
        "url": "https://theguru.co.kr/news/article.html?no=87339",
        "date": "2025-05-23",
        "reliability": "third_party",
-       "ref": 162
+       "ref": 170
       }
      ]
     }
@@ -5076,7 +5430,7 @@
      "url": "https://amplitude.com/press/ai-agents",
      "date": "2025-06-10",
      "reliability": "company_claim",
-     "ref": 163
+     "ref": 171
     },
     {
      "claim": "무료 플랜은 월 200만 이벤트를 제공한다.",
@@ -5084,12 +5438,13 @@
      "url": "https://amplitude.com/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 164
+     "ref": 172
     }
    ],
    "_areas": [
     "성과 측정"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Amplitude",
@@ -5102,7 +5457,7 @@
        "url": "https://www.ab180.co/solutions/amplitude",
        "date": "2026-11",
        "reliability": "company_claim",
-       "ref": 165
+       "ref": 173
       },
       {
        "claim": "에이비일팔공이 롯데멤버스에 앰플리튜드를 공급했다.",
@@ -5110,7 +5465,7 @@
        "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=606560",
        "date": "2025-11-20",
        "reliability": "third_party",
-       "ref": 166
+       "ref": 174
       }
      ]
     },
@@ -5124,7 +5479,7 @@
        "url": "https://blog.ab180.co/posts/braze-currents-kmong",
        "date": "2025-05-09",
        "reliability": "company_claim",
-       "ref": 92
+       "ref": 100
       },
       {
        "claim": "Amplitude 코호트를 Braze에 다시 연동해 CRM 캠페인에 활용했다.",
@@ -5132,7 +5487,7 @@
        "url": "https://blog.ab180.co/posts/braze-currents-kmong",
        "date": "2025-05-09",
        "reliability": "company_claim",
-       "ref": 92
+       "ref": 100
       }
      ]
     }
@@ -5168,7 +5523,7 @@
      "url": "https://knowledge.hubspot.com/campaigns/use-campaign-agent-in-marketing-studio",
      "date": "2026-10-26",
      "reliability": "vendor_doc",
-     "ref": 167
+     "ref": 175
     },
     {
      "claim": "Campaign agent가 만든 캠페인과 자산은 자동 게시되지 않고 사람이 검토·편집한다.",
@@ -5176,7 +5531,7 @@
      "url": "https://knowledge.hubspot.com/campaigns/use-campaign-agent-in-marketing-studio",
      "date": "2026-10-26",
      "reliability": "vendor_doc",
-     "ref": 167
+     "ref": 175
     },
     {
      "claim": "Customer Agent는 8,000곳 이상에서 대화의 65%를 해결하고 해결 시간을 39% 줄였다고 발표했다.",
@@ -5184,7 +5539,7 @@
      "url": "https://www.hubspot.com/company-news/hubspots-customer-agent-and-prospecting-agent-now-you-pay-when-the-task-is-complete",
      "date": "2026-04-13",
      "reliability": "company_claim",
-     "ref": 168
+     "ref": 176
     },
     {
      "claim": "Customer Agent는 해결 대화당 $0.50, Prospecting Agent는 추천 리드당 $1로 결과 기반 과금한다.",
@@ -5192,7 +5547,7 @@
      "url": "https://www.hubspot.com/company-news/hubspots-customer-agent-and-prospecting-agent-now-you-pay-when-the-task-is-complete",
      "date": "2026-04-13",
      "reliability": "vendor_doc",
-     "ref": 168
+     "ref": 176
     },
     {
      "claim": "해결이란 에이전트가 응대하고 72시간 동안 사람 상담원에게 넘어가지 않은 경우다.",
@@ -5200,12 +5555,13 @@
      "url": "https://www.hubspot.com/products/service/ai-customer-service-agent",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 169
+     "ref": 177
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "HubSpot(Sales Hub·Breeze)",
@@ -5218,7 +5574,7 @@
        "url": "https://marketingmm.co.kr/partners/%ed%97%88%eb%b8%8c%ec%8a%a4%ed%8c%9f-%eb%8f%84%ec%9e%85%ec%82%ac%eb%a1%80/",
        "date": "2023-11-02",
        "reliability": "company_claim",
-       "ref": 132
+       "ref": 140
       },
       {
        "claim": "국내 대기업이 전문 파트너사를 통해 HubSpot을 도입하는 사례가 늘고 있다.",
@@ -5226,7 +5582,7 @@
        "url": "https://solutionks.com/blog/hubspot/hubspot-onboarding-of-ict-conglomerate",
        "date": "2026-04-17",
        "reliability": "company_claim",
-       "ref": 133
+       "ref": 141
       }
      ]
     }
@@ -5259,7 +5615,7 @@
      "url": "https://www.salesforce.com/marketing/agentic-marketing/ai-marketing-agents/",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 170
+     "ref": 178
     },
     {
      "claim": "고객 의도를 바탕으로 캠페인 우선순위를 정하고 보내지 말아야 할 캠페인은 억제한다.",
@@ -5267,12 +5623,13 @@
      "url": "https://www.salesforce.com/marketing/agentic-marketing/ai-marketing-agents/",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 170
+     "ref": 178
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Salesforce(Agentforce SDR·Marketing)",
@@ -5285,7 +5642,7 @@
        "url": "https://www.salesforce.com/kr/blog/agentforce-world-tour-korea-2026-customer-stories",
        "date": "2026-06-12",
        "reliability": "company_claim",
-       "ref": 136
+       "ref": 144
       },
       {
        "claim": "CJ프레시웨이가 세일즈포스 Agentforce를 도입했다.",
@@ -5293,7 +5650,7 @@
        "url": "https://www.salesforce.com/kr/blog/agentforce-world-tour-korea-2026-customer-stories",
        "date": "2026-06-12",
        "reliability": "company_claim",
-       "ref": 136
+       "ref": 144
       }
      ]
     }
@@ -5327,7 +5684,7 @@
      "url": "https://www.braze.com/brazeai-decisioning-studio",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 171
+     "ref": 179
     },
     {
      "claim": "세그먼트가 아니라 개인 단위로 1:1 결정을 한다.",
@@ -5335,12 +5692,13 @@
      "url": "https://www.braze.com/brazeai-decisioning-studio",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 171
+     "ref": 179
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -5352,7 +5710,7 @@
        "url": "https://maxonomy.net/customer/1006",
        "date": "2025-02-06",
        "reliability": "interview",
-       "ref": 172
+       "ref": 180
       }
      ]
     }
@@ -5386,7 +5744,7 @@
      "url": "https://www.make.com/pricing",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 173
+     "ref": 181
     },
     {
      "claim": "Make AI Agents(베타)는 전 요금제에 포함되며 Make의 AI 제공자나 자체 LLM 키로 쓴다.",
@@ -5394,7 +5752,7 @@
      "url": "https://www.make.com/pricing",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 173
+     "ref": 181
     },
     {
      "claim": "Core 요금제는 월 $9다.",
@@ -5402,12 +5760,13 @@
      "url": "https://www.make.com/pricing",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 173
+     "ref": 181
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "Make",
@@ -5469,7 +5828,7 @@
      "url": "https://docs.n8n.io/build/integrate-ai/ai-examples/human-in-the-loop-for-tools",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 174
+     "ref": 182
     },
     {
      "claim": "요금은 단계 수와 무관하게 월 워크플로 실행 횟수 기준이다.",
@@ -5477,7 +5836,7 @@
      "url": "https://n8n.io/pricing",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 175
+     "ref": 183
     },
     {
      "claim": "Starter는 연간 결제 시 월 20€에 2.5K 실행을 제공한다.",
@@ -5485,12 +5844,13 @@
      "url": "https://n8n.io/pricing",
      "date": "",
      "reliability": "vendor_doc",
-     "ref": 175
+     "ref": 183
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "tool": "n8n",
@@ -5503,7 +5863,7 @@
        "url": "https://buildnwrite.com/blog/n8n-seoul-meetup-2026-recap",
        "date": "2026-09-05",
        "reliability": "company_claim",
-       "ref": 176
+       "ref": 184
       },
       {
        "claim": "밋업 신청자 39명 중 주 용도가 사내 업무 자동화인 사람이 23명이었다.",
@@ -5511,7 +5871,7 @@
        "url": "https://buildnwrite.com/blog/n8n-seoul-meetup-2026-recap",
        "date": "2026-09-05",
        "reliability": "company_claim",
-       "ref": 176
+       "ref": 184
       }
      ]
     },
@@ -5525,7 +5885,7 @@
        "url": "https://corp.banksalad.com/blog/tech/banksalad-ax-workflow-automation",
        "date": "2026-11-09",
        "reliability": "company_claim",
-       "ref": 177
+       "ref": 185
       },
       {
        "claim": "사내 호스팅 가능한 오픈소스 n8n을 선택했다.",
@@ -5533,7 +5893,7 @@
        "url": "https://corp.banksalad.com/blog/tech/banksalad-ax-workflow-automation",
        "date": "2026-11-09",
        "reliability": "company_claim",
-       "ref": 177
+       "ref": 185
       }
      ]
     }
@@ -5567,7 +5927,7 @@
      "url": "https://smartplace.naver.com/notices/987",
      "date": "2026-04-09",
      "reliability": "vendor_doc",
-     "ref": 178
+     "ref": 186
     },
     {
      "claim": "AI 초안은 참고용이며 최종 등록 전 반드시 확인해야 한다.",
@@ -5575,7 +5935,7 @@
      "url": "https://smartplace.naver.com/notices/987",
      "date": "2026-04-09",
      "reliability": "vendor_doc",
-     "ref": 178
+     "ref": 186
     },
     {
      "claim": "이용 대상은 플레이스 플러스(beta)를 쓰는 음식점 업종 사업자다.",
@@ -5583,12 +5943,13 @@
      "url": "https://smartplace.naver.com/notices/987",
      "date": "2026-04-09",
      "reliability": "vendor_doc",
-     "ref": 178
+     "ref": 186
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -5619,7 +5980,7 @@
      "url": "https://m.newspim.com/news/view/20251208000676",
      "date": "2025-12-08",
      "reliability": "third_party",
-     "ref": 179
+     "ref": 187
     },
     {
      "claim": "운영·마케팅·고객관리에 AI를 적용해 사장님 의사결정을 자동화한다는 계획이다.",
@@ -5627,12 +5988,13 @@
      "url": "https://m.newspim.com/news/view/20251208000676",
      "date": "2025-12-08",
      "reliability": "third_party",
-     "ref": 179
+     "ref": 187
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -5666,7 +6028,7 @@
      "url": "https://www.kakaocorp.com/page/detail/11719",
      "date": "2025-09-25",
      "reliability": "vendor_doc",
-     "ref": 180
+     "ref": 188
     },
     {
      "claim": "주문·예약 요청 자동 접수 기능이 있다.",
@@ -5674,7 +6036,7 @@
      "url": "https://www.kakaocorp.com/page/detail/11719",
      "date": "2025-09-25",
      "reliability": "vendor_doc",
-     "ref": 180
+     "ref": 188
     },
     {
      "claim": "2026년 업데이트로 매장 정보·메뉴·소식을 종합한 생성형 답변을 도입했다.",
@@ -5682,7 +6044,7 @@
      "url": "https://www.kakaocorp.com/page/detail/12151",
      "date": "2026-09-29",
      "reliability": "vendor_doc",
-     "ref": 181
+     "ref": 189
     },
     {
      "claim": "관리자 상담 요청 시 관리자가 직접 응대할 수 있다.",
@@ -5690,12 +6052,13 @@
      "url": "https://www.kakaocorp.com/page/detail/12151",
      "date": "2026-09-29",
      "reliability": "vendor_doc",
-     "ref": 181
+     "ref": 189
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -5726,7 +6089,7 @@
      "url": "https://etnews.com/20250616000179",
      "date": "2025-06-16",
      "reliability": "third_party",
-     "ref": 182
+     "ref": 190
     },
     {
      "claim": "캐시노트 내부 매출·입금 데이터와 상권 비교 API를 연동해 답한다.",
@@ -5734,7 +6097,7 @@
      "url": "https://etnews.com/20250616000179",
      "date": "2025-06-16",
      "reliability": "third_party",
-     "ref": 182
+     "ref": 190
     },
     {
      "claim": "스탠다드 회원은 월 1000회까지 쓰며 무료 사용자에게도 제공된다.",
@@ -5742,12 +6105,13 @@
      "url": "https://etnews.com/20250616000179",
      "date": "2025-06-16",
      "reliability": "third_party",
-     "ref": 182
+     "ref": 190
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -5780,7 +6144,7 @@
      "url": "https://zdnet.co.kr/view?no=20261113105904",
      "date": "2026-11-13",
      "reliability": "third_party",
-     "ref": 183
+     "ref": 191
     },
     {
      "claim": "플레이북은 마케팅·SNS 등 6개 영역으로 구성됐다.",
@@ -5788,7 +6152,7 @@
      "url": "https://zdnet.co.kr/view?no=20261113105904",
      "date": "2026-11-13",
      "reliability": "third_party",
-     "ref": 183
+     "ref": 191
     },
     {
      "claim": "프롬프트를 복사해 AI 서비스에 넣고 가게 정보를 입력하는 방식이다.",
@@ -5796,12 +6160,13 @@
      "url": "https://zdnet.co.kr/view?no=20261113105904",
      "date": "2026-11-13",
      "reliability": "third_party",
-     "ref": 183
+     "ref": 191
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -5833,7 +6198,7 @@
      "url": "https://ads.coupang.com/%EC%BF%A0%ED%8C%A1-%EA%B4%91%EA%B3%A0-%EC%86%8C%EA%B0%9C",
      "date": "2024-12-13",
      "reliability": "vendor_doc",
-     "ref": 184
+     "ref": 192
     },
     {
      "claim": "광고 수익률 기반 자동 입찰과 스마트 타겟팅을 제공한다.",
@@ -5841,12 +6206,13 @@
      "url": "https://ads.coupang.com/%EC%BF%A0%ED%8C%A1-%EA%B4%91%EA%B3%A0-%EC%86%8C%EA%B0%9C",
      "date": "2024-12-13",
      "reliability": "vendor_doc",
-     "ref": 184
+     "ref": 192
     }
    ],
    "_areas": [
     "광고·프로모션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -5880,7 +6246,7 @@
      "url": "https://zdnet.co.kr/view?no=20250929152529",
      "date": "2025-09-29",
      "reliability": "third_party",
-     "ref": 185
+     "ref": 193
     },
     {
      "claim": "젠투는 고객 맞춤 상담과 상품 추천을 수행한다.",
@@ -5888,7 +6254,7 @@
      "url": "https://zdnet.co.kr/view?no=20250929152529",
      "date": "2025-09-29",
      "reliability": "third_party",
-     "ref": 185
+     "ref": 193
     },
     {
      "claim": "크리에이지는 상품 정보만 넣으면 상세페이지를 자동 구현한다.",
@@ -5896,12 +6262,13 @@
      "url": "https://zdnet.co.kr/view?no=20250929152529",
      "date": "2025-09-29",
      "reliability": "third_party",
-     "ref": 185
+     "ref": 193
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -5932,7 +6299,7 @@
      "url": "https://www.sixshop.com/features/agent",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 186
+     "ref": 194
     },
     {
      "claim": "주문·재고·발송 업무를 계획하고 승인 한 번으로 처리한다.",
@@ -5940,12 +6307,13 @@
      "url": "https://www.sixshop.com/features/agent",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 186
+     "ref": 194
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -5980,7 +6348,7 @@
      "url": "https://enetnews.co.kr/news/articleView.html?idxno=49933",
      "date": "2026-05-13",
      "reliability": "third_party",
-     "ref": 187
+     "ref": 195
     },
     {
      "claim": "2026년 3월 14일 정식 출시했다.",
@@ -5988,7 +6356,7 @@
      "url": "https://enetnews.co.kr/news/articleView.html?idxno=49933",
      "date": "2026-05-13",
      "reliability": "third_party",
-     "ref": 187
+     "ref": 195
     },
     {
      "claim": "네이버 플레이스·블로그·당근·인스타·배달앱 등 155개 채널을 하나의 시스템에서 판단·집행한다.",
@@ -5996,12 +6364,13 @@
      "url": "https://marketpilot.it/about",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 188
+     "ref": 196
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -6035,7 +6404,7 @@
      "url": "https://adriel.ai/kr",
      "date": "2026-11-16",
      "reliability": "vendor_doc",
-     "ref": 189
+     "ref": 197
     },
     {
      "claim": "국내 매체를 포함해 150개 이상 매체를 한 번에 연결한다.",
@@ -6043,7 +6412,7 @@
      "url": "https://adriel.ai/kr",
      "date": "2026-11-16",
      "reliability": "vendor_doc",
-     "ref": 189
+     "ref": 197
     },
     {
      "claim": "Adriel MCP는 약 150개 데이터 소스를 AI 에이전트에 연결한다.",
@@ -6051,12 +6420,13 @@
      "url": "https://magazine.hankyung.com/money/article/202610277939c",
      "date": "2026-10-27",
      "reliability": "third_party",
-     "ref": 190
+     "ref": 198
     }
    ],
    "_areas": [
     "통합 플랫폼·AI 에이전트"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -6068,7 +6438,7 @@
        "url": "https://adriel.com/ko-success-stories/zeroone-ad",
        "date": "2026-11",
        "reliability": "company_claim",
-       "ref": 191
+       "ref": 199
       },
       {
        "claim": "광고 데이터 취합 시간이 80% 줄었다.",
@@ -6076,7 +6446,7 @@
        "url": "https://adriel.com/ko-success-stories/zeroone-ad",
        "date": "2026-11",
        "reliability": "company_claim",
-       "ref": 191
+       "ref": 199
       }
      ]
     }
@@ -6113,7 +6483,7 @@
      "url": "https://flarelane.com/ko",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 192
+     "ref": 200
     },
     {
      "claim": "중요 액션은 승인을 기다린다.",
@@ -6121,7 +6491,7 @@
      "url": "https://flarelane.com/ko",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 192
+     "ref": 200
     },
     {
      "claim": "앱푸시부터 알림톡·이메일까지 채널을 하나로 연결한다.",
@@ -6129,12 +6499,13 @@
      "url": "https://flarelane.com/ko",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 192
+     "ref": 200
     }
    ],
    "_areas": [
     "CRM·멤버십·리텐션"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -6164,7 +6535,7 @@
      "url": "https://byline.network/2024/01/31_11st",
      "date": "2024-01-31",
      "reliability": "third_party",
-     "ref": 193
+     "ref": 201
     },
     {
      "claim": "요금은 스탠다드 월 19,900원, 프리미엄 월 39,900원이다.",
@@ -6172,12 +6543,13 @@
      "url": "https://byline.network/2024/01/31_11st",
      "date": "2024-01-31",
      "reliability": "third_party",
-     "ref": 193
+     "ref": 201
     }
    ],
    "_areas": [
     "데이터·AI 활용"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -6189,7 +6561,7 @@
        "url": "https://byline.network/2024/01/31_11st",
        "date": "2024-01-31",
        "reliability": "company_claim",
-       "ref": 193
+       "ref": 201
       }
      ]
     }
@@ -6225,7 +6597,7 @@
      "url": "https://daglo.ai/d/ko/blog/hoeuirok-jakseong-ai-3gaewol-hugi",
      "date": "2026-07-09",
      "reliability": "vendor_doc",
-     "ref": 194
+     "ref": 202
     },
     {
      "claim": "다글로 팀 자체 사용 기준 1시간 회의의 회의록 작성 시간이 평균 30~40분에서 5분 이내로 줄었다.",
@@ -6233,7 +6605,7 @@
      "url": "https://daglo.ai/d/ko/blog/hoeuirok-jakseong-ai-3gaewol-hugi",
      "date": "2026-07-09",
      "reliability": "company_claim",
-     "ref": 194
+     "ref": 202
     },
     {
      "claim": "DB생명은 보험 용어로 파인튜닝한 다글로 온프레미스를 POC 후 정식 도입했다.",
@@ -6241,7 +6613,7 @@
      "url": "https://daglo.ai/d/ko/customers",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 195
+     "ref": 203
     },
     {
      "claim": "Pro 요금제는 월 11,900원이며 Slack·Notion MCP 연결을 지원한다.",
@@ -6249,12 +6621,13 @@
      "url": "https://daglo.ai/d/ko/pricing",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 196
+     "ref": 204
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -6287,7 +6660,7 @@
      "url": "https://naver.worksmobile.com/products/clovanote",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 197
+     "ref": 205
     },
     {
      "claim": "요금은 기업당 월 18,000원(Lite)부터다.",
@@ -6295,7 +6668,7 @@
      "url": "https://naver.worksmobile.com/products/clovanote",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 197
+     "ref": 205
     },
     {
      "claim": "네이버클라우드가 2024년 10월 보안·커스텀 기능을 강화한 기업용 클로바노트를 출시했다.",
@@ -6303,12 +6676,13 @@
      "url": "https://www.navercloudcorp.com/ko/media/pressrelease/view?seq=33033",
      "date": "2024-10-18",
      "reliability": "company_claim",
-     "ref": 198
+     "ref": 206
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -6320,7 +6694,7 @@
        "url": "https://kgpt.or.kr/cases/franchise-meeting-stt",
        "date": "2026",
        "reliability": "company_claim",
-       "ref": 199
+       "ref": 207
       },
       {
        "claim": "미팅 직후 3분 음성 메모를 전사·항목 추출·시트 적재하는 흐름을 만들었다.",
@@ -6328,7 +6702,7 @@
        "url": "https://kgpt.or.kr/cases/franchise-meeting-stt",
        "date": "2026",
        "reliability": "company_claim",
-       "ref": 199
+       "ref": 207
       }
      ]
     }
@@ -6364,7 +6738,7 @@
      "url": "http://webinow.co.kr",
      "date": "2026-10",
      "reliability": "vendor_doc",
-     "ref": 200
+     "ref": 208
     },
     {
      "claim": "시청 시간·채팅·질문·버튼 클릭·과거 참가 이력을 합산해 참가자 등급을 매긴다.",
@@ -6372,7 +6746,7 @@
      "url": "http://webinow.co.kr",
      "date": "2026-10",
      "reliability": "vendor_doc",
-     "ref": 200
+     "ref": 208
     },
     {
      "claim": "웨비나우 운영사는 주식회사 웨이온이다.",
@@ -6380,12 +6754,13 @@
      "url": "http://webinow.co.kr",
      "date": "2026-10",
      "reliability": "vendor_doc",
-     "ref": 200
+     "ref": 208
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -6419,7 +6794,7 @@
      "url": "https://hypersales.ai/",
      "date": "2026-07",
      "reliability": "vendor_doc",
-     "ref": 201
+     "ref": 209
     },
     {
      "claim": "메일 열람·링크 클릭 등 반응에 맞춰 다음 메일을 자동 발송한다.",
@@ -6427,12 +6802,13 @@
      "url": "https://hypersales.ai/email",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 202
+     "ref": 210
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -6444,7 +6820,7 @@
        "url": "https://hypersales.ai/",
        "date": "2026-07",
        "reliability": "vendor_doc",
-       "ref": 201
+       "ref": 209
       }
      ]
     }
@@ -6480,7 +6856,7 @@
      "url": "https://www.breadai.co.kr/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 203
+     "ref": 211
     },
     {
      "claim": "2026년 11월 기준 고객사가 맞춤 제안서 6,035건을 생성했다.",
@@ -6488,7 +6864,7 @@
      "url": "https://www.breadai.co.kr/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 203
+     "ref": 211
     },
     {
      "claim": "PRO 요금제는 월 200만 원(3개월 단위)이다.",
@@ -6496,12 +6872,13 @@
      "url": "https://www.breadai.co.kr/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 203
+     "ref": 211
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -6513,7 +6890,7 @@
        "url": "https://www.breadai.co.kr/",
        "date": "2026-11",
        "reliability": "vendor_doc",
-       "ref": 203
+       "ref": 211
       }
      ]
     }
@@ -6548,7 +6925,7 @@
      "url": "https://m.dhnews.co.kr/news/view/1065594683093687",
      "date": "2025-10-13",
      "reliability": "third_party",
-     "ref": 204
+     "ref": 212
     },
     {
      "claim": "클로즈 베타 도입 기업의 월 계약 건수가 1건에서 4건으로, 매출은 340% 늘었다고 회사가 밝혔다.",
@@ -6556,12 +6933,13 @@
      "url": "https://m.dhnews.co.kr/news/view/1065594683093687",
      "date": "2025-10-13",
      "reliability": "company_claim",
-     "ref": 204
+     "ref": 212
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -6595,7 +6973,7 @@
      "url": "https://recsee.net/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 205
+     "ref": 213
     },
     {
      "claim": "전날 콜 운영 현황을 요약해 관리자에게 아침마다 메일로 보낸다.",
@@ -6603,12 +6981,13 @@
      "url": "https://recsee.net/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 205
+     "ref": 213
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": []
   },
   {
@@ -6640,7 +7019,7 @@
      "url": "https://vreview.tv/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 206
+     "ref": 214
     },
     {
      "claim": "AI가 후기별 매출 기여도를 분석해 위젯 노출 순서를 바꾼다.",
@@ -6648,7 +7027,7 @@
      "url": "https://vreview.tv/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 206
+     "ref": 214
     },
     {
      "claim": "도입 후 기존 방식 대비 포토·텍스트 후기 수집률이 470% 늘었다고 밝혔다.",
@@ -6656,12 +7035,13 @@
      "url": "https://vreview.tv/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 206
+     "ref": 214
     }
    ],
    "_areas": [
     "교육·고객 사례·영업 지원"
    ],
+   "_zero": false,
    "_kr_usage": [
     {
      "signal": "국내 고객사",
@@ -6673,7 +7053,7 @@
        "url": "https://bloter.net/news/articleView.html?idxno=607413",
        "date": "2023-10-18",
        "reliability": "third_party",
-       "ref": 207
+       "ref": 215
       },
       {
        "claim": "총 6,300여 개 후기 중 동영상 후기가 1,300건이다.",
@@ -6681,7 +7061,7 @@
        "url": "https://bloter.net/news/articleView.html?idxno=607413",
        "date": "2023-10-18",
        "reliability": "third_party",
-       "ref": 207
+       "ref": 215
       }
      ]
     }
@@ -6717,7 +7097,8 @@
     }
    ],
    "company_origin": "국내",
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "1-content"
   },
   {
    "company": "최군푸드(1인 농수산물 쇼핑몰)",
@@ -6735,7 +7116,7 @@
      "url": "https://vcat.ai/blog/success-case4",
      "date": "2025-03-04",
      "reliability": "company_claim",
-     "ref": 208
+     "ref": 216
     },
     {
      "claim": "영상 하나 제작 시간이 2시간 이상에서 평균 1분으로 줄었다.",
@@ -6743,11 +7124,12 @@
      "url": "https://vcat.ai/blog/success-case4",
      "date": "2025-03-04",
      "reliability": "company_claim",
-     "ref": 208
+     "ref": 216
     }
    ],
    "company_origin": "국내",
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "1-content"
   },
   {
    "company": "현대자동차",
@@ -6769,7 +7151,8 @@
     }
    ],
    "company_origin": "국내",
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "1-content"
   },
   {
    "company": "지마켓",
@@ -6791,7 +7174,8 @@
     }
    ],
    "company_origin": "국내",
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "1-content"
   },
   {
    "company": "롯데홈쇼핑",
@@ -6813,7 +7197,8 @@
     }
    ],
    "company_origin": "국내",
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "1-content"
   },
   {
    "company": "KT알파쇼핑",
@@ -6843,7 +7228,8 @@
     }
    ],
    "company_origin": "국내",
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "1-content"
   },
   {
    "company": "이마트",
@@ -6861,11 +7247,12 @@
      "url": "https://typecast.ai/kr/learn/ai-%EB%B3%B4%EC%9D%B4%EC%8A%A4%EB%A1%9C-%EB%B3%80%ED%99%94%ED%95%98%EB%8A%94-%EC%9C%A0%ED%86%B5%EC%97%85%EA%B3%84-%EC%9D%B4%EB%A7%88%ED%8A%B8%EC%9D%98-%EC%84%B1%EA%B3%B5-%EC%82%AC%EB%A1%80-%EB%B6%84",
      "date": "2025-02-13",
      "reliability": "company_claim",
-     "ref": 209
+     "ref": 217
     }
    ],
    "company_origin": "국내",
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "1-content"
   },
   {
    "company": "토스(비바리퍼블리카)",
@@ -6884,7 +7271,7 @@
      "url": "https://toss.im/career/article/49775",
      "date": "2026-05-25",
      "reliability": "company_claim",
-     "ref": 210
+     "ref": 218
     },
     {
      "claim": "사람은 큰 설계도만 그리고 대상·시점은 AI가 실시간 반응 데이터로 제안한다.",
@@ -6892,7 +7279,7 @@
      "url": "https://toss.im/career/article/49775",
      "date": "2026-05-25",
      "reliability": "company_claim",
-     "ref": 210
+     "ref": 218
     },
     {
      "claim": "적용 두 달 만에 전사 광고 푸시 클릭률이 2배 이상 개선됐다.",
@@ -6900,7 +7287,7 @@
      "url": "https://toss.im/career/article/49775",
      "date": "2026-05-25",
      "reliability": "company_claim",
-     "ref": 210
+     "ref": 218
     },
     {
      "claim": "소재 초안은 AI가 작성하고 최종 판단은 사람이 한다.",
@@ -6908,10 +7295,11 @@
      "url": "https://toss.im/career/article/49775",
      "date": "2026-05-25",
      "reliability": "company_claim",
-     "ref": 210
+     "ref": 218
     }
    ],
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "우아한형제들(배달의민족)",
@@ -6930,7 +7318,7 @@
      "url": "https://techblog.woowahan.com/17765/",
      "date": "2024-06-11",
      "reliability": "company_claim",
-     "ref": 211
+     "ref": 219
     },
     {
      "claim": "4시간 이상 걸리던 SQL 작성·검토를 1분 내로 줄이는 것이 기대효과였다.",
@@ -6938,7 +7326,7 @@
      "url": "https://techblog.woowahan.com/17765/",
      "date": "2024-06-11",
      "reliability": "company_claim",
-     "ref": 211
+     "ref": 219
     },
     {
      "claim": "매주 150여 명 마케터가 쓰는 전사 공통 타깃팅 툴이 됐다.",
@@ -6946,10 +7334,11 @@
      "url": "https://techblog.woowahan.com/17765/",
      "date": "2024-06-11",
      "reliability": "company_claim",
-     "ref": 211
+     "ref": 219
     }
    ],
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "카카오스타일(지그재그)",
@@ -6968,7 +7357,7 @@
      "url": "https://aws.amazon.com/ko/blogs/tech/kakaostyle-leverage-genai-with-amazon-bedrock",
      "date": "2024-12-24",
      "reliability": "company_claim",
-     "ref": 212
+     "ref": 220
     },
     {
      "claim": "사람은 AI가 추천한 문구의 오타를 점검·수정한다.",
@@ -6976,7 +7365,7 @@
      "url": "https://aws.amazon.com/ko/blogs/tech/kakaostyle-leverage-genai-with-amazon-bedrock",
      "date": "2024-12-24",
      "reliability": "company_claim",
-     "ref": 212
+     "ref": 220
     },
     {
      "claim": "콘텐츠 제작 시간이 몇 주에서 몇 시간으로 줄었다.",
@@ -6984,7 +7373,7 @@
      "url": "https://aws.amazon.com/ko/blogs/tech/kakaostyle-leverage-genai-with-amazon-bedrock",
      "date": "2024-12-24",
      "reliability": "company_claim",
-     "ref": 212
+     "ref": 220
     },
     {
      "claim": "MD가 참여 스토어를 넣으면 개인 맞춤 기획전이 생성되고, 현재 약 10%의 기획전에 쓰인다.",
@@ -6992,10 +7381,11 @@
      "url": "https://etnews.com/20241122000201",
      "date": "2024-11-24",
      "reliability": "third_party",
-     "ref": 213
+     "ref": 221
     }
    ],
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "롯데홈쇼핑",
@@ -7014,7 +7404,7 @@
      "url": "https://www.hankyung.com/article/2026102898341",
      "date": "2026-10-28",
      "reliability": "third_party",
-     "ref": 214
+     "ref": 222
     },
     {
      "claim": "디자이너 요청 없이 현업 담당자가 직접 배너를 만들 수 있게 됐다.",
@@ -7022,7 +7412,7 @@
      "url": "https://www.hankyung.com/article/2026102898341",
      "date": "2026-10-28",
      "reliability": "third_party",
-     "ref": 214
+     "ref": 222
     },
     {
      "claim": "도입 한 달 만에 약 1000건을 제작했다.",
@@ -7030,7 +7420,7 @@
      "url": "https://www.hankyung.com/article/2026102898341",
      "date": "2026-10-28",
      "reliability": "company_claim",
-     "ref": 214
+     "ref": 222
     },
     {
      "claim": "숏폼 자동 제작으로 월간 제작량이 30배 이상 늘었다.",
@@ -7038,10 +7428,11 @@
      "url": "https://www.hankyung.com/article/2026102898341",
      "date": "2026-10-28",
      "reliability": "company_claim",
-     "ref": 214
+     "ref": 222
     }
    ],
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "KT",
@@ -7060,7 +7451,7 @@
      "url": "https://yna.co.kr/view/AKR20261112052300017",
      "date": "2026-11-12",
      "reliability": "third_party",
-     "ref": 215
+     "ref": 223
     },
     {
      "claim": "작성·검수 시간이 30~60분에서 약 5분으로 줄었다.",
@@ -7068,7 +7459,7 @@
      "url": "https://yna.co.kr/view/AKR20261112052300017",
      "date": "2026-11-12",
      "reliability": "company_claim",
-     "ref": 215
+     "ref": 223
     },
     {
      "claim": "직원들이 메시지 생성 에이전트로 고객 안내 메시지를 검수한다.",
@@ -7076,10 +7467,11 @@
      "url": "https://yna.co.kr/view/AKR20261112052300017",
      "date": "2026-11-12",
      "reliability": "third_party",
-     "ref": 215
+     "ref": 223
     }
    ],
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "현대카드",
@@ -7098,7 +7490,7 @@
      "url": "https://sedaily.com/article/20064856",
      "date": "2026-07-07",
      "reliability": "third_party",
-     "ref": 216
+     "ref": 224
     },
     {
      "claim": "앨로케이션 AI는 쿠폰·포인트 같은 한정 자원 배분을 계산한다.",
@@ -7106,7 +7498,7 @@
      "url": "https://sedaily.com/article/20064856",
      "date": "2026-07-07",
      "reliability": "third_party",
-     "ref": 216
+     "ref": 224
     },
     {
      "claim": "마케팅 설계 기간이 길게는 3일에서 20~40분으로 줄었다.",
@@ -7114,10 +7506,11 @@
      "url": "https://sedaily.com/article/20064856",
      "date": "2026-07-07",
      "reliability": "third_party",
-     "ref": 216
+     "ref": 224
     }
    ],
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "LG유플러스",
@@ -7136,7 +7529,7 @@
      "url": "https://www.sedaily.com/article/14067466",
      "date": "2025-05-18",
      "reliability": "third_party",
-     "ref": 217
+     "ref": 225
     },
     {
      "claim": "마케터가 기획하면 AI가 스크립트·영상·내레이션을 만든다.",
@@ -7144,10 +7537,11 @@
      "url": "https://www.sedaily.com/article/14067466",
      "date": "2025-05-18",
      "reliability": "third_party",
-     "ref": 217
+     "ref": 225
     }
    ],
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "GS샵(GS리테일)",
@@ -7166,7 +7560,7 @@
      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7133381",
      "date": "2025-10-23",
      "reliability": "company_claim",
-     "ref": 218
+     "ref": 226
     },
     {
      "claim": "머신러닝 적용으로 스튜디오 이미지 생성이 5분에서 30초 내외로 줄었다.",
@@ -7174,10 +7568,11 @@
      "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7133381",
      "date": "2025-10-23",
      "reliability": "company_claim",
-     "ref": 218
+     "ref": 226
     }
    ],
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "제일기획",
@@ -7212,10 +7607,11 @@
      "url": "https://magazine.cheil.com/58416",
      "date": "2026-06-07",
      "reliability": "third_party",
-     "ref": 219
+     "ref": 227
     }
    ],
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "무신사",
@@ -7234,7 +7630,7 @@
      "url": "https://www.moloco.com/ko/case-studies/musinsa-molrokowa-hamgge-jaebangmuneseo-gumaeggaji-gogaeg-yeojeongeul-hyeogsinhada",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 220
+     "ref": 228
     },
     {
      "claim": "무신사는 소재 유형을 직접 컨트롤하며 빠르게 테스트할 수 있어 몰로코를 택했다.",
@@ -7242,10 +7638,11 @@
      "url": "https://www.moloco.com/ko/case-studies/musinsa-molrokowa-hamgge-jaebangmuneseo-gumaeggaji-gogaeg-yeojeongeul-hyeogsinhada",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 220
+     "ref": 228
     }
    ],
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "LG헬로렌탈",
@@ -7264,7 +7661,7 @@
      "url": "https://www.facebook.com/business/success/lg-hellorental",
      "date": "2024-09",
      "reliability": "vendor_doc",
-     "ref": 221
+     "ref": 229
     },
     {
      "claim": "여러 캠페인을 수동으로 설정하는 대신 하나의 어드밴티지+ 쇼핑 캠페인을 설정하면 된다.",
@@ -7272,10 +7669,11 @@
      "url": "https://www.facebook.com/business/success/lg-hellorental",
      "date": "2024-09",
      "reliability": "vendor_doc",
-     "ref": 221
+     "ref": 229
     }
    ],
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "크몽",
@@ -7294,7 +7692,7 @@
      "url": "https://blog.ab180.co/posts/braze-currents-kmong",
      "date": "2025-05-09",
      "reliability": "company_claim",
-     "ref": 92
+     "ref": 100
     },
     {
      "claim": "Amplitude 코호트를 Braze에 다시 연동해 CRM 캠페인에 활용했다.",
@@ -7302,10 +7700,11 @@
      "url": "https://blog.ab180.co/posts/braze-currents-kmong",
      "date": "2025-05-09",
      "reliability": "company_claim",
-     "ref": 92
+     "ref": 100
     }
    ],
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "롯데GRS",
@@ -7324,7 +7723,7 @@
      "url": "https://salesforce.com/kr/blog/agentforce-digital-summit-2026-korea-marketing-case-study",
      "date": "2026-07-20",
      "reliability": "vendor_doc",
-     "ref": 222
+     "ref": 230
     },
     {
      "claim": "전체 매출의 51%를 만드는 상위 12% 핵심 고객의 이탈 방지 체계를 만들었다.",
@@ -7332,10 +7731,11 @@
      "url": "https://salesforce.com/kr/blog/agentforce-digital-summit-2026-korea-marketing-case-study",
      "date": "2026-07-20",
      "reliability": "vendor_doc",
-     "ref": 222
+     "ref": 230
     }
    ],
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "씨메스로보틱스",
@@ -7354,7 +7754,7 @@
      "url": "https://salesforce.com/kr/blog/agentforce-digital-summit-2026-korea-marketing-case-study",
      "date": "2026-07-20",
      "reliability": "vendor_doc",
-     "ref": 222
+     "ref": 230
     },
     {
      "claim": "일정 점수 도달 시 Sales Cloud로 SDR에게 자동 전달되는 체계를 만들었다.",
@@ -7362,10 +7762,11 @@
      "url": "https://salesforce.com/kr/blog/agentforce-digital-summit-2026-korea-marketing-case-study",
      "date": "2026-07-20",
      "reliability": "vendor_doc",
-     "ref": 222
+     "ref": 230
     }
    ],
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "10-kr-inhouse"
   },
   {
    "company": "컴투스홀딩스",
@@ -7384,10 +7785,11 @@
      "url": "https://bloter.net/news/articleView.html?idxno=674892",
      "date": "2026-10-07",
      "reliability": "third_party",
-     "ref": 94
+     "ref": 102
     }
    ],
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "11-kr-usage"
   },
   {
    "company": "CJ올리브영·토리든",
@@ -7406,10 +7808,11 @@
      "url": "https://theguru.co.kr/news/article.html?no=87339",
      "date": "2025-05-23",
      "reliability": "third_party",
-     "ref": 162
+     "ref": 170
     }
    ],
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "11-kr-usage"
   },
   {
    "company": "SK텔레콤",
@@ -7431,7 +7834,8 @@
      "ref": 35
     }
    ],
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "11-kr-usage"
   },
   {
    "company": "바이브컴퍼니(썸트렌드 마케팅팀)",
@@ -7449,7 +7853,7 @@
      "url": "https://apps.some.co.kr/cases/20261102-nmgi",
      "date": "2026-11-02",
      "reliability": "company_claim",
-     "ref": 41
+     "ref": 49
     },
     {
      "claim": "이전에는 여러 대시보드를 엑셀로 정리하는 데만 2시간 가까이 들었다.",
@@ -7457,11 +7861,12 @@
      "url": "https://apps.some.co.kr/cases/20261102-nmgi",
      "date": "2026-11-02",
      "reliability": "company_claim",
-     "ref": 41
+     "ref": 49
     }
    ],
    "company_origin": "국내",
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "2-data-ai"
   },
   {
    "company": "라라스윗",
@@ -7479,7 +7884,7 @@
      "url": "https://channel.io/kr/blog/articles/ai-case-lalasweet-0141b180",
      "date": "2026-07-15",
      "reliability": "company_claim",
-     "ref": 53
+     "ref": 61
     },
     {
      "claim": "CS팀은 알림을 확인하고 승인만 누른다.",
@@ -7487,11 +7892,12 @@
      "url": "https://channel.io/kr/blog/articles/ai-case-lalasweet-0141b180",
      "date": "2026-07-15",
      "reliability": "company_claim",
-     "ref": 53
+     "ref": 61
     }
    ],
    "company_origin": "국내",
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "2-data-ai"
   },
   {
    "company": "대웅제약(건강기능식품 사업부)",
@@ -7509,11 +7915,12 @@
      "url": "http://channel.io/kr/blog/articles/ai-case-daewoong-fa05c2c6",
      "date": "2026-06-11",
      "reliability": "company_claim",
-     "ref": 223
+     "ref": 231
     }
    ],
    "company_origin": "국내",
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "2-data-ai"
   },
   {
    "company": "코오롱몰",
@@ -7531,7 +7938,7 @@
      "url": "https://mixpanel.com/customers/how-kolon-mall-uses-mixpanel-to-build-a-culture-of-experimentation-enabling-data-driven-growth",
      "date": "",
      "reliability": "company_claim",
-     "ref": 59
+     "ref": 67
     },
     {
      "claim": "가능한 곳은 자동화하되 전략적 배치는 사람이 통제한다.",
@@ -7539,11 +7946,12 @@
      "url": "https://mixpanel.com/customers/how-kolon-mall-uses-mixpanel-to-build-a-culture-of-experimentation-enabling-data-driven-growth",
      "date": "",
      "reliability": "company_claim",
-     "ref": 59
+     "ref": 67
     }
    ],
    "company_origin": "국내",
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "2-data-ai"
   },
   {
    "company": "그린리본(라이프캐치)",
@@ -7561,11 +7969,12 @@
      "url": "https://blog.hackle.io/post/green-ribbon-lifecatch",
      "date": "",
      "reliability": "company_claim",
-     "ref": 72
+     "ref": 80
     }
    ],
    "company_origin": "국내",
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "2-data-ai"
   },
   {
    "company": "국내 패션 기업 B사(익명)",
@@ -7583,11 +7992,12 @@
      "url": "https://groobee.net/blog/%ea%b0%9c%ec%9d%b8%ed%99%94-%ec%b7%a8%ed%96%a5-%ed%81%90%eb%a0%88%ec%9d%b4%ec%85%98-%ec%a0%9c%eb%8c%80%eb%a1%9c-%ed%95%b4%eb%82%b4%eb%8a%94-ai-%ec%83%81%ed%92%88%ec%b6%94%ec%b2%9c-%ec%82%ac%eb%a1%80/",
      "date": "",
      "reliability": "company_claim",
-     "ref": 49
+     "ref": 57
     }
    ],
    "company_origin": "국내",
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "2-data-ai"
   },
   {
    "company": "이마트24",
@@ -7605,7 +8015,7 @@
      "url": "https://hackle.io/ko/post/emart24",
      "date": "2026",
      "reliability": "company_claim",
-     "ref": 69
+     "ref": 77
     },
     {
      "claim": "기존 해외 솔루션은 채널이 제한적이고 이슈 원인 파악이 어려웠다고 밝혔다",
@@ -7613,11 +8023,12 @@
      "url": "https://hackle.io/ko/post/emart24",
      "date": "2026",
      "reliability": "interview",
-     "ref": 69
+     "ref": 77
     }
    ],
    "company_origin": "국내",
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "3-crm"
   },
   {
    "company": "바이트랩(릴리이브·바르너)",
@@ -7635,7 +8046,7 @@
      "url": "https://hackle.io/en/post/bitelab",
      "date": "2026",
      "reliability": "company_claim",
-     "ref": 224
+     "ref": 232
     },
     {
      "claim": "행동 기반 자동화와 실험 중심 운영으로 주 목표 매출 600%를 달성했다",
@@ -7643,7 +8054,7 @@
      "url": "https://hackle.io/en/post/bitelab",
      "date": "2026",
      "reliability": "company_claim",
-     "ref": 224
+     "ref": 232
     },
     {
      "claim": "브랜드당 70~80개 이상의 자동화 여정을 운영한다",
@@ -7651,11 +8062,12 @@
      "url": "https://hackle.io/en/post/bitelab",
      "date": "2026",
      "reliability": "company_claim",
-     "ref": 224
+     "ref": 232
     }
    ],
    "company_origin": "국내",
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "3-crm"
   },
   {
    "company": "풀리오",
@@ -7673,11 +8085,12 @@
      "url": "https://www.datarize.ai/case-studies/kr-pulio",
      "date": "2025-07-02",
      "reliability": "company_claim",
-     "ref": 46
+     "ref": 54
     }
    ],
    "company_origin": "국내",
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "3-crm"
   },
   {
    "company": "마틸라",
@@ -7695,11 +8108,12 @@
      "url": "https://www.datarize.ai/case-studies/kr-maatila",
      "date": "2024-01-23",
      "reliability": "interview",
-     "ref": 47
+     "ref": 55
     }
    ],
    "company_origin": "국내",
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "3-crm"
   },
   {
    "company": "겟차(Getcha)",
@@ -7717,11 +8131,12 @@
      "url": "https://notifly.tech/",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 66
+     "ref": 74
     }
    ],
    "company_origin": "국내",
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "3-crm"
   },
   {
    "company": "핫핑(크리마 리뷰 페이지 고객 후기)",
@@ -7739,11 +8154,12 @@
      "url": "https://www.cre.ma/review",
      "date": "2026-08",
      "reliability": "company_claim",
-     "ref": 44
+     "ref": 52
     }
    ],
    "company_origin": "국내",
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "3-crm"
   },
   {
    "company": "도도포인트 연동 매장 500여 곳",
@@ -7761,7 +8177,7 @@
      "url": "https://m.smartplace.naver.com/notices/1167",
      "date": "2026-11-18",
      "reliability": "company_claim",
-     "ref": 81
+     "ref": 89
     },
     {
      "claim": "쿠폰까지 설정한 매장의 방문 증가 폭은 35%였다",
@@ -7769,11 +8185,12 @@
      "url": "https://m.smartplace.naver.com/notices/1167",
      "date": "2026-11-18",
      "reliability": "company_claim",
-     "ref": 81
+     "ref": 89
     }
    ],
    "company_origin": "국내",
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "3-crm"
   },
   {
    "company": "놀유니버스 인터파크",
@@ -7791,11 +8208,12 @@
      "url": "https://maxonomy.net/customer/1006",
      "date": "2025-02-06",
      "reliability": "interview",
-     "ref": 172
+     "ref": 180
     }
    ],
    "company_origin": "국내",
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "3-crm"
   },
   {
    "company": "CJ 올리브영",
@@ -7813,11 +8231,12 @@
      "url": "https://business.google.com/kr/think/ai-excellence/google-ai-olive-young-case-study/",
      "date": "2025-08",
      "reliability": "company_claim",
-     "ref": 97
+     "ref": 105
     }
    ],
    "company_origin": "국내",
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "4-ads-promo"
   },
   {
    "company": "초록우산",
@@ -7835,11 +8254,12 @@
      "url": "https://business.google.com/kr/think/ai-excellence/google-ai-powered-performance-max-campaign-success-green-umbrella",
      "date": "2025-06",
      "reliability": "company_claim",
-     "ref": 98
+     "ref": 106
     }
    ],
    "company_origin": "국내",
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "4-ads-promo"
   },
   {
    "company": "삼성화재 N잡크루",
@@ -7857,11 +8277,12 @@
      "url": "https://ads.tiktok.com/business/ko/inspiration/samsungfire",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 103
+     "ref": 111
     }
    ],
    "company_origin": "국내",
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "4-ads-promo"
   },
   {
    "company": "네이버 쇼핑 '식품/음료' 업종 광고주 B(익명)",
@@ -7879,11 +8300,12 @@
      "url": "https://ads.naver.com/sub/insight/success/113",
      "date": "2026-01-20",
      "reliability": "company_claim",
-     "ref": 108
+     "ref": 116
     }
    ],
    "company_origin": "국내",
-   "_area": "광고·프로모션"
+   "_area": "광고·프로모션",
+   "_file": "4-ads-promo"
   },
   {
    "company": "에어서플라이",
@@ -7901,7 +8323,7 @@
      "url": "https://recatch.cc/ko/blog/customer-success-story-airsupply",
      "date": "2023-05-26",
      "reliability": "company_claim",
-     "ref": 123
+     "ref": 131
     },
     {
      "claim": "도입 후 '문의하기' 클릭자의 80%가 미팅 예약까지 완료한다.",
@@ -7909,11 +8331,12 @@
      "url": "https://recatch.cc/ko/blog/customer-success-story-airsupply",
      "date": "2023-05-26",
      "reliability": "company_claim",
-     "ref": 123
+     "ref": 131
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "5-sales-enable"
   },
   {
    "company": "이벤터스(EWL 웨비나)",
@@ -7931,11 +8354,12 @@
      "url": "https://blog.event-us.kr/use-case-reminder-webinar-kimdo",
      "date": "2022-08-29",
      "reliability": "company_claim",
-     "ref": 124
+     "ref": 132
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "5-sales-enable"
   },
   {
    "company": "학원 프랜차이즈 본부(익명)",
@@ -7953,7 +8377,7 @@
      "url": "https://kgpt.or.kr/cases/franchise-meeting-stt",
      "date": "2026",
      "reliability": "company_claim",
-     "ref": 199
+     "ref": 207
     },
     {
      "claim": "미팅 직후 3분 음성 메모를 전사·항목 추출·시트 적재하는 흐름을 만들었다.",
@@ -7961,11 +8385,12 @@
      "url": "https://kgpt.or.kr/cases/franchise-meeting-stt",
      "date": "2026",
      "reliability": "company_claim",
-     "ref": 199
+     "ref": 207
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "5-sales-enable"
   },
   {
    "company": "크몽",
@@ -7983,7 +8408,7 @@
      "url": "https://www.airbridge.io/ko/case-studies/api-ai",
      "date": "2026-03",
      "reliability": "company_claim",
-     "ref": 144
+     "ref": 152
     },
     {
      "claim": "매일 스크립트가 API 호출부터 시트 업데이트까지 사람 개입 없이 실행된다.",
@@ -7991,11 +8416,12 @@
      "url": "https://www.airbridge.io/ko/case-studies/api-ai",
      "date": "2026-03",
      "reliability": "company_claim",
-     "ref": 144
+     "ref": 152
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "6-measurement"
   },
   {
    "company": "비트바이트(돈이돼지)",
@@ -8013,11 +8439,12 @@
      "url": "https://www.airbridge.io/ko/case-studies/bitbyte-predictive-ltv-revenue-growth",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 225
+     "ref": 233
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "6-measurement"
   },
   {
    "company": "마이플레이컴퍼니(플랩풋볼)",
@@ -8035,11 +8462,12 @@
      "url": "https://blog.hackle.io/post/plabfootball",
      "date": "2024-11-25",
      "reliability": "company_claim",
-     "ref": 226
+     "ref": 234
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "6-measurement"
   },
   {
    "company": "타임앤코(롱블랙)",
@@ -8057,11 +8485,12 @@
      "url": "https://blog.hackle.io/post/time-n-co-longblack",
      "date": "2026-01-08",
      "reliability": "company_claim",
-     "ref": 227
+     "ref": 235
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "6-measurement"
   },
   {
    "company": "노크",
@@ -8079,7 +8508,7 @@
      "url": "https://blog.hackle.io/post/knowk-mcp",
      "date": "2025-11-25",
      "reliability": "company_claim",
-     "ref": 228
+     "ref": 236
     },
     {
      "claim": "데이터 정리 시간이 절반 이하로 줄었다.",
@@ -8087,11 +8516,12 @@
      "url": "https://blog.hackle.io/post/knowk-mcp",
      "date": "2025-11-25",
      "reliability": "company_claim",
-     "ref": 228
+     "ref": 236
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "6-measurement"
   },
   {
    "company": "비트망고",
@@ -8109,11 +8539,12 @@
      "url": "https://appsflyer.com/customers/bitmango",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 155
+     "ref": 163
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "6-measurement"
   },
   {
    "company": "스킨푸드",
@@ -8131,7 +8562,7 @@
      "url": "https://channel.io/kr/blog/articles/ai-case-skinfood-91ee4d89",
      "date": "2026-04-27",
      "reliability": "company_claim",
-     "ref": 229
+     "ref": 237
     },
     {
      "claim": "이벤트 기간에만 작동하는 규칙으로 쿠폰 발급과 사용법을 AI가 실시간 안내하게 했다.",
@@ -8139,11 +8570,12 @@
      "url": "https://channel.io/kr/blog/articles/ai-case-skinfood-91ee4d89",
      "date": "2026-04-27",
      "reliability": "company_claim",
-     "ref": 229
+     "ref": 237
     }
    ],
    "company_origin": "국내",
-   "_area": "통합 플랫폼·AI 에이전트"
+   "_area": "통합 플랫폼·AI 에이전트",
+   "_file": "7-platform-agent"
   },
   {
    "company": "뱅크샐러드",
@@ -8162,7 +8594,7 @@
      "url": "https://corp.banksalad.com/blog/tech/banksalad-ax-workflow-automation",
      "date": "2026-11-09",
      "reliability": "company_claim",
-     "ref": 177
+     "ref": 185
     },
     {
      "claim": "사내 호스팅 가능한 오픈소스 n8n을 선택했다.",
@@ -8170,7 +8602,7 @@
      "url": "https://corp.banksalad.com/blog/tech/banksalad-ax-workflow-automation",
      "date": "2026-11-09",
      "reliability": "company_claim",
-     "ref": 177
+     "ref": 185
     },
     {
      "claim": "LLM이 기사 맥락을 요약하고 논조 분석으로 검토 필요 기사를 별도 채널로 알린다.",
@@ -8178,10 +8610,11 @@
      "url": "https://corp.banksalad.com/blog/tech/banksalad-ax-workflow-automation",
      "date": "2026-11-09",
      "reliability": "company_claim",
-     "ref": 177
+     "ref": 185
     }
    ],
-   "_area": "통합 플랫폼·AI 에이전트"
+   "_area": "통합 플랫폼·AI 에이전트",
+   "_file": "8-kr-platform"
   },
   {
    "company": "채널코퍼레이션(채널톡)",
@@ -8200,7 +8633,7 @@
      "url": "https://channel.io/kr/blog/articles/%EC%B1%84%EB%84%90%ED%9A%A8%EC%9C%A8%EB%B6%80%EC%84%9C-DOGE-fdb7d5da",
      "date": "2025-07-31",
      "reliability": "company_claim",
-     "ref": 230
+     "ref": 238
     },
     {
      "claim": "개인당 주 225분이 0분으로 줄었다.",
@@ -8208,10 +8641,11 @@
      "url": "https://channel.io/kr/blog/articles/%EC%B1%84%EB%84%90%ED%9A%A8%EC%9C%A8%EB%B6%80%EC%84%9C-DOGE-fdb7d5da",
      "date": "2025-07-31",
      "reliability": "company_claim",
-     "ref": 230
+     "ref": 238
     }
    ],
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "8-kr-platform"
   },
   {
    "company": "당근",
@@ -8230,7 +8664,7 @@
      "url": "https://byline.network/2025/11/25_danggn-2",
      "date": "2025-11-28",
      "reliability": "third_party",
-     "ref": 231
+     "ref": 239
     },
     {
      "claim": "중고차 경매 에이전트 도입 전후 평균 일당 문의가 56% 줄었다.",
@@ -8238,7 +8672,7 @@
      "url": "https://byline.network/2025/11/25_danggn-2",
      "date": "2025-11-28",
      "reliability": "third_party",
-     "ref": 231
+     "ref": 239
     },
     {
      "claim": "KAMP로 만든 에이전트는 26개다.",
@@ -8246,10 +8680,11 @@
      "url": "https://byline.network/2025/11/25_danggn-2",
      "date": "2025-11-28",
      "reliability": "third_party",
-     "ref": 231
+     "ref": 239
     }
    ],
-   "_area": "통합 플랫폼·AI 에이전트"
+   "_area": "통합 플랫폼·AI 에이전트",
+   "_file": "8-kr-platform"
   },
   {
    "company": "W컨셉",
@@ -8271,7 +8706,8 @@
      "ref": 36
     }
    ],
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "8-kr-platform"
   },
   {
    "company": "코오롱FnC",
@@ -8293,7 +8729,8 @@
      "ref": 36
     }
    ],
-   "_area": "CRM·멤버십·리텐션"
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "8-kr-platform"
   },
   {
    "company": "무신사",
@@ -8323,7 +8760,8 @@
      "ref": 36
     }
    ],
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "8-kr-platform"
   },
   {
    "company": "컬리",
@@ -8345,7 +8783,8 @@
      "ref": 36
     }
    ],
-   "_area": "콘텐츠·SNS·브랜드 캠페인"
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "8-kr-platform"
   },
   {
    "company": "제로원애드",
@@ -8364,7 +8803,7 @@
      "url": "https://adriel.com/ko-success-stories/zeroone-ad",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 191
+     "ref": 199
     },
     {
      "claim": "광고 데이터 취합 시간이 80% 줄었다.",
@@ -8372,10 +8811,11 @@
      "url": "https://adriel.com/ko-success-stories/zeroone-ad",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 191
+     "ref": 199
     }
    ],
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "8-kr-platform"
   },
   {
    "company": "위픽코퍼레이션",
@@ -8394,7 +8834,7 @@
      "url": "https://adriel.com/ko-success-stories/wepick-corporation",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 232
+     "ref": 240
     },
     {
      "claim": "수시간 걸리던 리포팅이 몇 분 만에 완성된다.",
@@ -8402,10 +8842,11 @@
      "url": "https://adriel.com/ko-success-stories/wepick-corporation",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 232
+     "ref": 240
     }
    ],
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "8-kr-platform"
   },
   {
    "company": "LG전자",
@@ -8424,10 +8865,11 @@
      "url": "https://adriel.com/ko-success-stories/lg-electronics",
      "date": "2026-11",
      "reliability": "company_claim",
-     "ref": 233
+     "ref": 241
     }
    ],
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "8-kr-platform"
   },
   {
    "company": "11번가 판매자(AI셀링코치 베타 이용 판매자)",
@@ -8446,10 +8888,11 @@
      "url": "https://byline.network/2024/01/31_11st",
      "date": "2024-01-31",
      "reliability": "company_claim",
-     "ref": 193
+     "ref": 201
     }
    ],
-   "_area": "데이터·AI 활용"
+   "_area": "데이터·AI 활용",
+   "_file": "8-kr-platform"
   },
   {
    "company": "백패커(텀블벅)",
@@ -8467,7 +8910,7 @@
      "url": "https://salesmap.kr/blog/backpackr-salesmap-success-story",
      "date": "2024-10-28",
      "reliability": "company_claim",
-     "ref": 120
+     "ref": 128
     },
     {
      "claim": "업무 속도가 월 2개에서 주 2개로 빨라져 약 300% 상승했다.",
@@ -8475,11 +8918,12 @@
      "url": "https://salesmap.kr/blog/backpackr-salesmap-success-story",
      "date": "2024-10-28",
      "reliability": "company_claim",
-     "ref": 120
+     "ref": 128
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "리뉴어스랩",
@@ -8497,7 +8941,7 @@
      "url": "https://salesmap.kr/blog/renew-earth-lab-salesmap-success-story2",
      "date": "2026-07-20",
      "reliability": "company_claim",
-     "ref": 234
+     "ref": 242
     },
     {
      "claim": "전 과정이 15~25분에 끝나고 대표는 최종 검토와 발송만 한다.",
@@ -8505,7 +8949,7 @@
      "url": "https://salesmap.kr/blog/renew-earth-lab-salesmap-success-story2",
      "date": "2026-07-20",
      "reliability": "company_claim",
-     "ref": 234
+     "ref": 242
     },
     {
      "claim": "미팅 성사까지 1~2주 걸리던 것이 하루 만에 성사되는 경우도 생겼다.",
@@ -8513,11 +8957,12 @@
      "url": "https://salesmap.kr/blog/renew-earth-lab-salesmap-success-story2",
      "date": "2026-07-20",
      "reliability": "company_claim",
-     "ref": 234
+     "ref": 242
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "토스페이먼츠",
@@ -8535,7 +8980,7 @@
      "url": "https://recatch.cc/ko/blog/customer-success-story-tosspayments",
      "date": "2024-05-20",
      "reliability": "company_claim",
-     "ref": 235
+     "ref": 243
     },
     {
      "claim": "홈페이지 개편 A/B 테스트로 전환율 2.6배를 달성했다.",
@@ -8543,11 +8988,12 @@
      "url": "https://recatch.cc/ko/blog/customer-success-story-tosspayments",
      "date": "2024-05-20",
      "reliability": "company_claim",
-     "ref": 235
+     "ref": 243
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "아임웹",
@@ -8565,7 +9011,7 @@
      "url": "https://channel.io/kr/blog/articles/marketing-case-imweb-98d51e56",
      "date": "2025-08-26",
      "reliability": "company_claim",
-     "ref": 236
+     "ref": 244
     },
     {
      "claim": "트라이얼 시점별 가이드 발송 후 단순 문의가 하루 100건 이상 줄었다.",
@@ -8573,11 +9019,12 @@
      "url": "https://channel.io/kr/blog/articles/marketing-case-imweb-98d51e56",
      "date": "2025-08-26",
      "reliability": "company_claim",
-     "ref": 236
+     "ref": 244
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "클라이원트",
@@ -8595,7 +9042,7 @@
      "url": "https://blog.event-us.kr/use-case-cliwant-b2b-webinar",
      "date": "2024-11-25",
      "reliability": "company_claim",
-     "ref": 126
+     "ref": 134
     },
     {
      "claim": "행사로 약 150건의 데모 미팅 요청이 들어왔다.",
@@ -8603,11 +9050,12 @@
      "url": "https://blog.event-us.kr/use-case-cliwant-b2b-webinar",
      "date": "2024-11-25",
      "reliability": "company_claim",
-     "ref": 126
+     "ref": 134
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "롯데월드",
@@ -8625,7 +9073,7 @@
      "url": "https://bloter.net/news/articleView.html?idxno=607413",
      "date": "2023-10-18",
      "reliability": "third_party",
-     "ref": 207
+     "ref": 215
     },
     {
      "claim": "총 6,300여 개 후기 중 동영상 후기가 1,300건이다.",
@@ -8633,11 +9081,12 @@
      "url": "https://bloter.net/news/articleView.html?idxno=607413",
      "date": "2023-10-18",
      "reliability": "third_party",
-     "ref": 207
+     "ref": 215
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "그리팅",
@@ -8655,11 +9104,12 @@
      "url": "https://hypersales.ai/",
      "date": "2026-07",
      "reliability": "vendor_doc",
-     "ref": 201
+     "ref": 209
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "광고 플랫폼 A사(익명)",
@@ -8677,11 +9127,12 @@
      "url": "https://www.breadai.co.kr/",
      "date": "2026-11",
      "reliability": "vendor_doc",
-     "ref": 203
+     "ref": 211
     }
    ],
    "company_origin": "국내",
-   "_area": "교육·고객 사례·영업 지원"
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "일레븐(베이비챗)",
@@ -8699,7 +9150,7 @@
      "url": "https://airbridge.io/ko/case-studies/airbridge-mcp-ai-babechat",
      "date": "2026-09-16",
      "reliability": "company_claim",
-     "ref": 237
+     "ref": 245
     },
     {
      "claim": "팀 내부 논의 시간을 하루 약 2시간 절감했다.",
@@ -8707,11 +9158,12 @@
      "url": "https://airbridge.io/ko/case-studies/airbridge-mcp-ai-babechat",
      "date": "2026-09-16",
      "reliability": "company_claim",
-     "ref": 237
+     "ref": 245
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "원티드랩",
@@ -8729,11 +9181,12 @@
      "url": "https://www.airbridge.io/ko/case-studies/wantedlab-web-to-app-attribution",
      "date": "2026-01",
      "reliability": "company_claim",
-     "ref": 238
+     "ref": 246
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "라이너",
@@ -8751,11 +9204,12 @@
      "url": "https://airbridge.io/ko/case-studies/liner-web-to-app-influencer-marketing",
      "date": "2026-04-23",
      "reliability": "company_claim",
-     "ref": 239
+     "ref": 247
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "플랜핏",
@@ -8773,7 +9227,7 @@
      "url": "https://www.airbridge.io/ko/case-studies/planfit-app-event-optimization-free-trial",
      "date": "2026-04-09",
      "reliability": "company_claim",
-     "ref": 240
+     "ref": 248
     },
     {
      "claim": "쉐어링크로 광고 데이터를 내부 대시보드와 연결했다.",
@@ -8781,11 +9235,12 @@
      "url": "https://www.airbridge.io/ko/case-studies/planfit-app-event-optimization-free-trial",
      "date": "2026-04-09",
      "reliability": "company_claim",
-     "ref": 240
+     "ref": 248
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "국내 광고대행사(익명)",
@@ -8803,11 +9258,12 @@
      "url": "https://bizspring.ai/kb/case/weekly-report-automation",
      "date": "2026-08",
      "reliability": "company_claim",
-     "ref": 149
+     "ref": 157
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "9-kr-sales-measure"
   },
   {
    "company": "센트비",
@@ -8825,11 +9281,1490 @@
      "url": "https://maxonomy.net/customer/1129",
      "date": "2025-05-08",
      "reliability": "company_claim",
-     "ref": 241
+     "ref": 249
     }
    ],
    "company_origin": "국내",
-   "_area": "성과 측정"
+   "_area": "성과 측정",
+   "_file": "9-kr-sales-measure"
+  }
+ ],
+ "zero_cases": [
+  {
+   "company": "클린리펄슨(1인 패션잡화 쇼핑몰)",
+   "tool": "브이캣(VCAT.AI)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "숏폼 상품 영상 자동 생성",
+   "what": "컴퓨터에 익숙하지 않은 부업 1인 셀러가 브이캣으로 상품 영상을 만들어 네이버 숏클립에 올리고, 쿠팡 상세페이지와 GIF 썸네일에도 재활용했다.",
+   "automation_scope": "상품 정보로 숏폼 영상·GIF 생성",
+   "human_scope": "영상 업로드 시점(금요일 저녁·주말)과 후킹 제목 결정, 플랫폼별 재편집",
+   "result": "한 달 만에 스마트스토어 새싹 등급에서 파워 등급으로 상승, 매출 5~6배",
+   "company_origin": "국내",
+   "stage": "1인 사업자, 부업, 독학으로 시작한 위탁상품 판매 쇼핑몰",
+   "baseline": "스마트스토어 새싹 등급",
+   "period": "한 달",
+   "evidence": [
+    {
+     "claim": "클린리펄슨은 1인 사업자 패션잡화 쇼핑몰이다.",
+     "quote": "- 회사명 : 클린리펄슨 - 규모 : 1인 사업자 - 업종 : 패션잡화",
+     "url": "https://vcat.ai/blog/success-case3",
+     "date": "2025-03-04",
+     "reliability": "company_claim",
+     "ref": 250
+    },
+    {
+     "claim": "대표는 혼자 독학으로 시작했고 위탁 상품만 판매했다.",
+     "quote": "혼자서 독학으로 시작했는데, 시간이 부족하다 보니 효율적으로 관리하기 어려웠습니다. 특히 위탁 상품만 판매하다 보니",
+     "url": "https://vcat.ai/blog/success-case3",
+     "date": "2025-03-04",
+     "reliability": "company_claim",
+     "ref": 250
+    },
+    {
+     "claim": "브이캣 영상을 숏클립에 올린 뒤 한 달 만에 새싹 등급에서 파워 등급이 되고 매출이 5~6배 늘었다.",
+     "quote": "브이캣으로 만든 영상을 네이버 숏클립에 올린 뒤, 한 달 만에 스마트스토어 새싹 등급에서 파워 등급으로 올라갔어요. 매출은 5~6배 늘었고",
+     "url": "https://vcat.ai/blog/success-case3",
+     "date": "2025-03-04",
+     "reliability": "company_claim",
+     "ref": 250
+    },
+    {
+     "claim": "부업이라 운영 시간이 부족하다고 밝혔다.",
+     "quote": "아무래도 부업이다 보니 시간이 없네요",
+     "url": "https://vcat.ai/blog/success-case3",
+     "date": "2025-03-04",
+     "reliability": "company_claim",
+     "ref": 250
+    }
+   ],
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "12-zero-kr-b2c"
+  },
+  {
+   "company": "노랑조명(조명 쇼핑몰)",
+   "tool": "브이캣(VCAT.AI)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "숏폼 상품 영상 자동 생성",
+   "what": "영상 제작을 못 하던 소규모 쇼핑몰이 상품 URL만 넣어 숏폼을 만들고 네이버 숏클립에 꾸준히 올렸다.",
+   "automation_scope": "상품 URL에서 제품 정보를 가져와 영상 생성(평균 10분 미만)",
+   "human_scope": "업로드 채널 선택과 꾸준한 게시",
+   "result": "알고리즘을 탄 일부 영상으로 판매량이 평소 대비 10~20% 증가",
+   "company_origin": "국내",
+   "stage": "대표와 직원 2명이 운영하는 소규모 쇼핑몰, 온라인 판매 부진 상태에서 도입",
+   "baseline": "",
+   "period": "",
+   "evidence": [
+    {
+     "claim": "노랑조명은 직원 두 명과 대표가 관리하는 소규모 쇼핑몰이다.",
+     "quote": "직원 두 명과 제가 관리하는 소규모 쇼핑몰입니다",
+     "url": "https://vcat.ai/blog/success/success-case2",
+     "date": "2025-03-04",
+     "reliability": "company_claim",
+     "ref": 251
+    },
+    {
+     "claim": "온라인 판매가 부진해 숏폼 마케팅을 권유받고 브이캣을 시작했다.",
+     "quote": "온라인 판매가 부진하다고 단골 고객에게 말씀드렸더니",
+     "url": "https://vcat.ai/blog/success/success-case2",
+     "date": "2025-03-04",
+     "reliability": "company_claim",
+     "ref": 251
+    },
+    {
+     "claim": "일부 영상이 알고리즘을 타며 판매량이 10~20% 늘었다.",
+     "quote": "몇몇 영상이 알고리즘을 타면서 판매량이 평소 대비 10~20% 증가했습니다",
+     "url": "https://vcat.ai/blog/success/success-case2",
+     "date": "2025-03-04",
+     "reliability": "company_claim",
+     "ref": 251
+    },
+    {
+     "claim": "URL만 넣으면 제품 정보를 자동으로 가져와 영상 제작이 10분도 안 걸린다.",
+     "quote": "평균적으로 10분도 안 걸립니다",
+     "url": "https://vcat.ai/blog/success/success-case2",
+     "date": "2025-03-04",
+     "reliability": "company_claim",
+     "ref": 251
+    }
+   ],
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "12-zero-kr-b2c"
+  },
+  {
+   "company": "엠시베딩(대구 침구 소상공인)",
+   "tool": "브이캣(VCAT.AI)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "숏폼 영상 대량 제작·다채널 업로드",
+   "what": "한국중소벤처기업유통원 AI 콘텐츠 제작 교육에서 브이캣 사용법을 익혀 영상 제작 수량을 두 배로 늘리고 인스타그램·네이버 숏클립에 꾸준히 올렸다.",
+   "automation_scope": "상품 URL로 마케팅 영상·배너 이미지 자동 제작",
+   "human_scope": "채널 운영 전략과 업로드",
+   "result": "교육 이수 후 한 달간 인스타그램 팔로워 1000명, 스마트스토어 알림 신청자 2000명 이상 증가",
+   "company_origin": "국내",
+   "stage": "침구를 제작·판매하는 소상공인",
+   "baseline": "",
+   "period": "교육 이수 후 한 달",
+   "evidence": [
+    {
+     "claim": "엠시베딩은 대구에서 침구를 제작·판매하는 소상공인이다.",
+     "quote": "대구에서 침구를 제작·판매하는 소상공인 '엠시베딩'은 'AI 콘텐츠 제작 교육'을 통해",
+     "url": "https://mt.co.kr/economy/2025/10/01/2025100109340182037",
+     "date": "2025-10-01",
+     "reliability": "third_party",
+     "ref": 252
+    },
+    {
+     "claim": "브이캣을 익혀 영상 제작 시간이 줄고 콘텐츠 수량이 두 배로 늘었다.",
+     "quote": "시간이 줄어든 만큼 제작할 수 있는 콘텐츠 수량이 두배로 늘어 인스타그램, 네이버 숏클립 등 다양한 채널에 콘텐츠를 꾸준히 업로드 할 수 있게 됐다",
+     "url": "https://mt.co.kr/economy/2025/10/01/2025100109340182037",
+     "date": "2025-10-01",
+     "reliability": "interview",
+     "ref": 252
+    },
+    {
+     "claim": "교육 이수 후 한 달간 팔로워 1000명, 스마트스토어 알림 신청자 2000명 이상이 늘었다.",
+     "quote": "엠시베딩은 교육 이수 후 한 달간 인스타그램 팔로워 1000명이 늘었고 네이버 스마트스토어 알림 신청자는 2000명 이상 증가했다.",
+     "url": "https://mt.co.kr/economy/2025/10/01/2025100109340182037",
+     "date": "2025-10-01",
+     "reliability": "third_party",
+     "ref": 252
+    }
+   ],
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "12-zero-kr-b2c"
+  },
+  {
+   "company": "윤지네과자점(서울 홀케이크 소상공인)",
+   "tool": "생성형 AI(챗GPT·제미나이 등, 한유원 데이터 마케팅 교육)",
+   "area": "데이터·AI 활용",
+   "task": "판매 데이터 분석·프로모션 기획",
+   "what": "혼자 운영하던 과자점이 생성형 AI로 상품별 예약 건수·유입 경로 데이터를 분석해 매출 구조와 구매 행동을 파악하고 프로모션에 활용했다.",
+   "automation_scope": "영업 데이터 분석·인사이트 도출",
+   "human_scope": "데이터 수집, 프로모션 결정·실행",
+   "result": "AI 데이터 활용 프로모션 결과 매출 2배 이상",
+   "company_origin": "국내",
+   "stage": "제품 생산·주문 응대·고객관리를 혼자 담당(육아 병행), 마케팅 시간 거의 없음",
+   "baseline": "",
+   "period": "",
+   "evidence": [
+    {
+     "claim": "윤지네과자점은 모든 업무를 혼자 하며 마케팅에 쓸 시간이 없었다.",
+     "quote": "제품 생산, 주문 응대, 고객관리 등 모든 업무를 혼자 담당하고 있었고 육아까지 병행하고 있어 마케팅에 집중할 수 있는 시간이 전무한 상황이었다",
+     "url": "https://mt.co.kr/economy/2025/10/01/2025100109340182037",
+     "date": "2025-10-01",
+     "reliability": "interview",
+     "ref": 252
+    },
+    {
+     "claim": "생성형 AI로 예약 건수·유입 경로 데이터를 분석해 인사이트를 얻었다.",
+     "quote": "생성형 인공지능 프로그램을 활용해 상품별 예약건수, 유입 경로 등 영업 중에 획득한 데이터를 활용해 매출구조와 고객 구매 행동 등에 관한 인사이트를 획득할 수 있었다",
+     "url": "https://mt.co.kr/economy/2025/10/01/2025100109340182037",
+     "date": "2025-10-01",
+     "reliability": "interview",
+     "ref": 252
+    },
+    {
+     "claim": "AI 데이터 활용 프로모션으로 매출이 2배 이상 늘었다.",
+     "quote": "윤지네과자점은 인공지능 데이터 활용 프로모션을 진행한 결과 매출이 2배 이상 늘었다.",
+     "url": "https://mt.co.kr/economy/2025/10/01/2025100109340182037",
+     "date": "2025-10-01",
+     "reliability": "third_party",
+     "ref": 252
+    }
+   ],
+   "_area": "데이터·AI 활용",
+   "_file": "12-zero-kr-b2c"
+  },
+  {
+   "company": "스테이포(반려동물 용품 D2C, 부업 창업)",
+   "tool": "카페24 PRO",
+   "area": "통합 플랫폼·AI 에이전트",
+   "task": "상세페이지 자동 생성·SEO 자동 적용",
+   "what": "서비스직 본업을 둔 대표가 퇴근 후 시간으로 자사몰을 열고, 상품 등록·상세페이지·SEO·프로모션·배너를 카페24 PRO 시스템에 맡겼다.",
+   "automation_scope": "세로형 상세페이지 자동 생성(이미지 배열·문구·모바일 최적화), SEO 자동 적용, 프로모션·배너 제안",
+   "human_scope": "상품 선정·샘플 검증, 사진·기본 무드 준비, 고객 문의 직접 응대",
+   "result": "상세페이지 제작 상품당 20~30분→3분 내외, 전체 유입의 절반 이상이 검색 유입, 매출 매달 5% 이상 성장",
+   "company_origin": "국내",
+   "stage": "부업 창업, 쇼핑몰 운영 처음, 운영 6개월 남짓",
+   "baseline": "",
+   "period": "운영 6개월 남짓",
+   "evidence": [
+    {
+     "claim": "스테이포는 운영 6개월 남짓이며 매달 5% 이상 성장하고 있다.",
+     "quote": "운영을 시작한 지는 6개월 남짓. 매출 규모가 본업을 넘어서진 못했지만, 매달 5% 이상 성장하고 있다.",
+     "url": "https://www.smartbizn.com/news/articleView.html?idxno=132497",
+     "date": "2026-01-14",
+     "reliability": "interview",
+     "ref": 253
+    },
+    {
+     "claim": "대표는 쇼핑몰 운영이 처음이었다.",
+     "quote": "쇼핑몰 운영은 처음이었지만",
+     "url": "https://www.smartbizn.com/news/articleView.html?idxno=132497",
+     "date": "2026-01-14",
+     "reliability": "interview",
+     "ref": 253
+    },
+    {
+     "claim": "상세페이지 제작이 상품당 20~30분에서 3분 내외로 줄었다.",
+     "quote": "상품 하나당 20~30분이 걸리던 작업이, PRO를 쓰고나서 3분 내외로 줄었다.",
+     "url": "https://www.smartbizn.com/news/articleView.html?idxno=132497",
+     "date": "2026-01-14",
+     "reliability": "interview",
+     "ref": 253
+    },
+    {
+     "claim": "SEO가 자동 적용되고 전체 유입의 절반 이상이 검색에서 온다.",
+     "quote": "검색엔진최적화(SEO)도 자동으로 적용된다. 홍 대표 쇼핑몰은 전체 유입자의 절반 이상이 검색을 통해 들어오고 있다.",
+     "url": "https://www.smartbizn.com/news/articleView.html?idxno=132497",
+     "date": "2026-01-14",
+     "reliability": "interview",
+     "ref": 253
+    }
+   ],
+   "_area": "통합 플랫폼·AI 에이전트",
+   "_file": "12-zero-kr-b2c"
+  },
+  {
+   "company": "이너마음(기능성 속옷 D2C, 1인 창업)",
+   "tool": "카페24 PRO",
+   "area": "통합 플랫폼·AI 에이전트",
+   "task": "상세페이지·SEO·CRM 자동화 운영",
+   "what": "99년생 1인 창업자가 2025년 7월 자사몰만으로 브랜드를 론칭하고, 상세페이지 구성·SEO·CRM 자동화·리뷰 응대 운영을 카페24 PRO에 맡겼다. 기사는 입소문도 성장 요인으로 적었다.",
+   "automation_scope": "상세페이지 구성, SEO 최적화, CRM 자동화, 고객 응대 자동화",
+   "human_scope": "제품 개발·브랜딩·콘텐츠·고객 소통",
+   "result": "첫 달 매출 300만원에서 4개월 만에 자사몰 누적 매출 1억원, 카페24 발표 기준 초기 대비 55배",
+   "company_origin": "국내",
+   "stage": "2025년 7월 론칭한 1인 창업 신규 브랜드",
+   "baseline": "첫 달 매출 300만원",
+   "period": "4개월(2025년 7~10월)",
+   "evidence": [
+    {
+     "claim": "이너마음은 7월 론칭 후 첫 달 300만원이던 매출이 4개월 만에 누적 1억원을 넘었다(입소문 언급 포함).",
+     "quote": "이너마음은 올해 7월 본격적으로 브랜드를 론칭한 이후 입소문이 나며 첫 달 300만원으로 시작한 매출이 4개월 만에 누적 매출 1억원을 넘길 정도의 긍정적인 반응을 얻고 있다.",
+     "url": "https://it.chosun.com/news/articleView.html?idxno=2023092151925",
+     "date": "2025-11-29",
+     "reliability": "interview",
+     "ref": 254
+    },
+    {
+     "claim": "카페24 서비스가 상세페이지·SEO·CRM·고객 응대 자동화를 지원해 1인 사업자 운영 부담을 줄였다.",
+     "quote": "카페24 는 상품 등록 및 상세페이지 최적화, SEO 검색 최적화, 프로모션과 CRM 마케팅, 고객 응대 자동화 등 온라인 비즈니스 운영에 필요한 모든 과정을 지원해 1인 사업자의 운영 부담을 최소화한다.",
+     "url": "https://it.chosun.com/news/articleView.html?idxno=2023092151925",
+     "date": "2025-11-29",
+     "reliability": "interview",
+     "ref": 254
+    },
+    {
+     "claim": "카페24는 2025년 7~10월 자사몰 매출 1억원, 초기 대비 55배 성장이라고 밝혔다.",
+     "quote": "2025년 7월~10월 사이 자사몰에서만 매출 1억 원 , 초기 대비 55배 성장",
+     "url": "https://mktstory.cafe24.com/2bdda210-9377-8007-b4bc-f46977d25ea5",
+     "date": "2025-11",
+     "reliability": "company_claim",
+     "ref": 41
+    },
+    {
+     "claim": "PRO가 상세페이지, SEO, CRM 자동화, 리뷰·응대 운영을 세팅했다.",
+     "quote": "• 기능을 정확히 전달하는 상세페이지 구성 • 검색 유입을 키우는 SEO 최적화 • 재구매를 만드는 CRM 자동화",
+     "url": "https://mktstory.cafe24.com/2bdda210-9377-8007-b4bc-f46977d25ea5",
+     "date": "2025-11",
+     "reliability": "company_claim",
+     "ref": 41
+    }
+   ],
+   "_area": "통합 플랫폼·AI 에이전트",
+   "_file": "12-zero-kr-b2c"
+  },
+  {
+   "company": "누끼토끼(1인 웹사이트 제작 서비스)",
+   "tool": "아임웹 + Tally + Make",
+   "area": "통합 플랫폼·AI 에이전트",
+   "task": "문의 접수·견적 작성 워크플로 자동화",
+   "what": "1인 기업이 웹사이트는 아임웹으로 만들고, 고객 문의 접수부터 견적 작성까지를 Tally 폼과 Make 워크플로로 자동화했다.",
+   "automation_scope": "작업 문의 접수와 견적 작성 흐름",
+   "human_scope": "웹사이트 제작 본업, 견적 검토·고객 대응",
+   "result": "2025년 들어 월평균 매출 전년 대비 250% 이상 성장, 대표는 '최소 직원 3명이 필요한 일'을 혼자 하게 됐다고 밝힘",
+   "company_origin": "국내",
+   "stage": "1인 기업",
+   "baseline": "",
+   "period": "2025년 들어(1~5월) 전년 대비",
+   "evidence": [
+    {
+     "claim": "누끼토끼는 1인 기업으로, 자동화 도입 후 올해 월평균 매출이 전년 대비 250% 이상 성장했다.",
+     "quote": "기업용 웹사이트 제작 서비스를 운영하는 1인 기업 누끼토끼는 주요 핵심 업무에 자동화 솔루션을 도입한 결과 올들어 월 평균 매출이 전년 대비 250% 이상 성장했다.",
+     "url": "https://www.sedaily.com/article/14064982",
+     "date": "2025-05-13",
+     "reliability": "third_party",
+     "ref": 43
+    },
+    {
+     "claim": "문의 접수부터 견적 작성은 Tally와 Make로 처리했다.",
+     "quote": "고객 문의 접수부터 견적 작성은 온라인 서식 제공 서비스 ‘탈리’와 워크 플로우 자동화 플랫폼 ‘메이크’를 활용했다.",
+     "url": "https://www.sedaily.com/article/14064982",
+     "date": "2025-05-13",
+     "reliability": "third_party",
+     "ref": 43
+    },
+    {
+     "claim": "대표는 직원 3명이 필요한 일을 혼자 할 수 있게 됐다고 말했다.",
+     "quote": "최소 직원 3명이 필요한 일을 혼자서 직접 할 수 있게 됐다",
+     "url": "https://www.sedaily.com/article/14064982",
+     "date": "2025-05-13",
+     "reliability": "interview",
+     "ref": 43
+    }
+   ],
+   "_area": "통합 플랫폼·AI 에이전트",
+   "_file": "12-zero-kr-b2c"
+  },
+  {
+   "company": "짬뽕가온 구의점(서울 광진구 소상공인 매장)",
+   "tool": "오모플레이(OMO PLAY)",
+   "area": "CRM·멤버십·리텐션",
+   "task": "오프라인 고객 카카오 친구 전환·재방문 메시지 자동화",
+   "what": "매장 방문 고객을 QR로 카카오 친구로 전환하고 오프라인 고객 데이터를 바탕으로 재방문 메시지 운영 구조를 만들었다. 2025 카카오비즈니스 베스트 어워즈 사장님 부문에 선정.",
+   "automation_scope": "친구 전환 후 친구톡 자동 발송·대상 최적화",
+   "human_scope": "매장 내 QR 안내, 혜택·캠페인 결정",
+   "result": "도입 약 6개월 만에 카카오 친구 수 4000명 근접",
+   "company_origin": "국내",
+   "stage": "소상공인 매장(원문 표현, 도입 전 친구 수는 미기재)",
+   "baseline": "",
+   "period": "약 6개월",
+   "evidence": [
+    {
+     "claim": "짬뽕가온 구의점은 서울 광진구 소상공인 매장으로 카카오비즈니스 베스트 어워즈 사장님 부문에 선정됐다.",
+     "quote": "서울시 광진구 소재 소상공인 매장 ‘짬뽕가온 구의점’과 문구 프렌차이즈 브랜드 ‘드림오피스’가 ‘2025 카카오비즈니스 베스트 어워즈’ 사장님 부문 수상팀으로 선정됐다",
+     "url": "https://edaily.co.kr/News/Read?newsId=04218086645315752",
+     "date": "2026-01-08",
+     "reliability": "third_party",
+     "ref": 42
+    },
+    {
+     "claim": "짬뽕가온은 도입 약 6개월 만에 카카오 친구 수가 4000명에 근접했다.",
+     "quote": "짬뽕가온은 솔루션 도입 약 6개월 만에 카카오 친구 수가 4000명에 근접한 것으로 전해졌다.",
+     "url": "https://edaily.co.kr/News/Read?newsId=04218086645315752",
+     "date": "2026-01-08",
+     "reliability": "third_party",
+     "ref": 42
+    }
+   ],
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "12-zero-kr-b2c"
+  },
+  {
+   "company": "머스트무브(라포 매니저)",
+   "company_origin": "국내",
+   "tool": "리캐치",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "미팅 예약·리드 유입 경로 관리 자동화",
+   "stage": "대표 1인 영업으로 고객을 모으던 초기 헬스·피트니스 B2B SaaS",
+   "baseline": "",
+   "period": "6주",
+   "what": "교육·콘텐츠로 모은 리드에게 리캐치 예약 링크를 보내 미팅이 자동으로 잡히게 하고, 유입 경로별(오프라인 강의·직접 요청·기능 글)로 다른 링크를 나눠 리드 출처를 추적했다.",
+   "automation_scope": "미팅 시간 제안·예약 확정, 참석 자동 알림, 유입 경로별 리드 분류",
+   "human_scope": "교육·SNS·이메일 콘텐츠로 리드 모으기, 대표의 1:1 세일즈 미팅, 하루 끝 딜 상태 검토",
+   "result": "1인 영업만으로 6주 만에 유료 고객사 100곳, 매주 20건 이상 영업 미팅, 리캐치로 잡은 미팅 참석률 90% 이상",
+   "evidence": [
+    {
+     "claim": "대표 혼자 영업해 6주 만에 유료 고객사 100곳을 확보하고 매주 20건 이상 미팅을 소화했다.",
+     "quote": "대표의 1인 영업으로 6주만에 유료 고객사 100곳을 확보 하고, 매주 20건 이상의 영업 미팅을 소화 하며 성장한 팀이 있습니다.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-mustmove",
+     "date": "2024-04-12",
+     "reliability": "company_claim",
+     "ref": 255
+    },
+    {
+     "claim": "도입 당시 초기 스타트업 파운더가 직접 1인 영업을 하던 상황이다.",
+     "quote": "초기 스타트업 파운더의 가장 큰 고민 중 하나, 바로 영업입니다.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-mustmove",
+     "date": "2024-04-12",
+     "reliability": "company_claim",
+     "ref": 255
+    },
+    {
+     "claim": "성과 기간은 6주다.",
+     "quote": "1인 영업만으로 6주만에 유료 고객사 100곳 확보",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-mustmove",
+     "date": "2024-04-12",
+     "reliability": "company_claim",
+     "ref": 255
+    },
+    {
+     "claim": "예약 링크를 보내면 미팅이 자동으로 예약된다.",
+     "quote": "예약 페이지 링크를 고객에게 전달하면 자동으로 미팅이 예약되는 부분들이 굉장히 매력적 입니다.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-mustmove",
+     "date": "2024-04-12",
+     "reliability": "company_claim",
+     "ref": 255
+    },
+    {
+     "claim": "리드 그룹별로 다른 예약 링크를 보내 유입 경로를 구분했다.",
+     "quote": "a그룹, b그룹, c그룹으로 나눠서 각 그룹마다 다른 링크를 전달해서 해당 리드가 어떤 경로로 왔는지에 따라 다르게 관리 하는 게 핵심이에요.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-mustmove",
+     "date": "2024-04-12",
+     "reliability": "company_claim",
+     "ref": 255
+    },
+    {
+     "claim": "리캐치로 잡은 미팅 참석률이 90% 이상이다.",
+     "quote": "그리고 리캐치로 수립한 미팅에 거의 90% 이상이 참석해요.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-mustmove",
+     "date": "2024-04-12",
+     "reliability": "company_claim",
+     "ref": 255
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "13-zero-kr-b2b"
+  },
+  {
+   "company": "마인드로직(ChatAPI)",
+   "company_origin": "국내",
+   "tool": "이벤터스",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "첫 세일즈 웨비나로 리드 확보",
+   "stage": "2023년 4월 출시한 ChatAPI를 지인 추천 1:1 영업으로 팔던 단계, 첫 웨비나",
+   "baseline": "PMF 확인을 위해 개인 네트워크로 기업 약 70곳 인터뷰",
+   "period": "웨비나 1회(1시간)",
+   "what": "이벤터스로 참가자 모집 페이지·웨비나 송출·설문·경품 추첨·실시간 채팅을 한 번에 운영하고, 행사 통계 대시보드로 리드 데이터를 받아 후속 미팅에 썼다.",
+   "automation_scope": "참가 신청 접수, 웨비나 송출·채팅, 설문·추첨, 참가자 통계 집계·다운로드",
+   "human_scope": "고객이 궁금해할 주제로 발표 콘텐츠 기획, 발표 진행, 후속 미팅·세일즈",
+   "result": "1시간 웨비나로 잠재고객 약 400명, 획득 단가 약 12,000원, 몇 건의 후속 미팅",
+   "evidence": [
+    {
+     "claim": "ChatAPI는 2023년 4월 출시된 서비스다.",
+     "quote": "ChatAPI는 올해 4월에 런칭된 서비스인데요.",
+     "url": "https://blog.event-us.kr/use-case-mindlogic",
+     "date": "2023-10-06",
+     "reliability": "company_claim",
+     "ref": 256
+    },
+    {
+     "claim": "도입 전 개인 네트워크로 약 70개 기업을 만나 인터뷰했다.",
+     "quote": "개인적인 네트워크를 활용해 약 70여 개의 기업을 만나 인터뷰를 진행했어요.",
+     "url": "https://blog.event-us.kr/use-case-mindlogic",
+     "date": "2023-10-06",
+     "reliability": "company_claim",
+     "ref": 256
+    },
+    {
+     "claim": "지인 추천으로 한 명씩 찾아가는 영업은 리소스가 너무 많이 들었다.",
+     "quote": "지인 추천을 받아 한 명씩 찾아다니면서 영업을 하기에는 리소스가 너무 많이 드는 거죠.",
+     "url": "https://blog.event-us.kr/use-case-mindlogic",
+     "date": "2023-10-06",
+     "reliability": "company_claim",
+     "ref": 256
+    },
+    {
+     "claim": "참가자 모집·웨비나·설문·경품·채팅 솔루션을 썼다.",
+     "quote": "이용한 행사 솔루션 : 참가자 모집, 웨비나 솔루션 , 참가자 설문조사 , 경품 추첨 , 실시간 채팅",
+     "url": "https://blog.event-us.kr/use-case-mindlogic",
+     "date": "2023-10-06",
+     "reliability": "company_claim",
+     "ref": 256
+    },
+    {
+     "claim": "1시간 만에 잠재고객 약 400명을 확보했다.",
+     "quote": "단 1시간 만에 약 400명의 잠재고객을 확보했는데요.",
+     "url": "https://blog.event-us.kr/use-case-mindlogic",
+     "date": "2023-10-06",
+     "reliability": "company_claim",
+     "ref": 256
+    },
+    {
+     "claim": "고객 획득 단가는 약 12,000원이었다.",
+     "quote": "고객 획득 단가가 약 12,000원으로 나타났습니다.",
+     "url": "https://blog.event-us.kr/use-case-mindlogic",
+     "date": "2023-10-06",
+     "reliability": "company_claim",
+     "ref": 256
+    },
+    {
+     "claim": "웨비나 후 몇 건의 후속 미팅을 진행했다.",
+     "quote": "웨비나 종료 후 몇 건의 후속 미팅을 진행했고",
+     "url": "https://blog.event-us.kr/use-case-mindlogic",
+     "date": "2023-10-06",
+     "reliability": "company_claim",
+     "ref": 256
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "13-zero-kr-b2b"
+  },
+  {
+   "company": "그로스핏",
+   "company_origin": "국내",
+   "tool": "이벤터스",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "첫 세일즈 웨비나로 리드 확보·상담 전환",
+   "stage": "광고·블로그로는 전환이 거의 없고 마케팅 모수가 적던 BI 대시보드 컨설팅(B2B SaaS)",
+   "baseline": "검색·SNS 광고 회원가입 CAC 약 150,000원, 광고 유입의 실제 전환은 0에 가까움",
+   "period": "웨비나 후 한 달 이내",
+   "what": "이벤터스 세일즈 웨비나 솔루션으로 GA4 가이드 웨비나를 열고, 유입·전환율·고객 분류 데이터로 리드를 페르소나별로 나눠 후속(다음 웨비나 안내·소개서·세일즈콜)했다.",
+   "automation_scope": "신청 접수·웨비나 운영, 유입·전환 통계와 참가자 분류 데이터",
+   "human_scope": "세일즈 목적이 드러나지 않는 정보형 발표 콘텐츠 준비, 리드 등급별 후속 연락·세일즈콜",
+   "result": "리드 약 200명, 참가자 약 5% 웨비나 직후 도입 상담 희망, 리드 획득 비용 약 17,000원(기존 대비 8.8배↓), 한 달 안에 계약 성사 건 발생",
+   "evidence": [
+    {
+     "claim": "광고로 트래픽이 들어와도 실제 전환은 0에 가까웠다.",
+     "quote": "SNS 타겟팅 광고나 검색 광고로 트래픽이 유입되어도 실제 전환은 0에 가까웠습니다.",
+     "url": "https://blog.event-us.kr/use-case-growthfit",
+     "date": "2023-10-18",
+     "reliability": "company_claim",
+     "ref": 257
+    },
+    {
+     "claim": "블로그·지인 소개도 마케팅 모수가 적어 효과가 작았다.",
+     "quote": "마케팅 모수가 적어 큰 세일즈 효과를 보지는 못했습니다.",
+     "url": "https://blog.event-us.kr/use-case-growthfit",
+     "date": "2023-10-18",
+     "reliability": "company_claim",
+     "ref": 257
+    },
+    {
+     "claim": "기존 광고 회원가입 CAC는 약 15만원이었다.",
+     "quote": "키워드 검색 광고, SNS 타겟 광고의 회원가입자의 고객획득비용(CAC)은 150,000원 수준으로 높은 편이었어요.",
+     "url": "https://blog.event-us.kr/use-case-growthfit",
+     "date": "2023-10-18",
+     "reliability": "company_claim",
+     "ref": 257
+    },
+    {
+     "claim": "웨비나로 약 200명의 잠재 고객을 확보했다.",
+     "quote": "첫 세일즈 웨비나에 도전해 약 200명의 잠재 고객을 확보했고",
+     "url": "https://blog.event-us.kr/use-case-growthfit",
+     "date": "2023-10-18",
+     "reliability": "company_claim",
+     "ref": 257
+    },
+    {
+     "claim": "참가자 약 5%가 웨비나 직후 도입 상담을 원했다.",
+     "quote": "참가자의 약 5% 해당하는 고객이 웨비나 직후 도입 상담을 희망하셨어요.",
+     "url": "https://blog.event-us.kr/use-case-growthfit",
+     "date": "2023-10-18",
+     "reliability": "company_claim",
+     "ref": 257
+    },
+    {
+     "claim": "웨비나 기준 고객획득비용은 약 17,000원이었다.",
+     "quote": "고객획득비용은 약 17,000원 수준으로 나타났습니다.",
+     "url": "https://blog.event-us.kr/use-case-growthfit",
+     "date": "2023-10-18",
+     "reliability": "company_claim",
+     "ref": 257
+    },
+    {
+     "claim": "웨비나 후 한 달이 안 돼 계약이 성사된 건이 있다.",
+     "quote": "웨비나를 진행한 지 한 달도 채 되지 않았는데 이미 계약이 성사된 건들도 있고요.",
+     "url": "https://blog.event-us.kr/use-case-growthfit",
+     "date": "2023-10-18",
+     "reliability": "company_claim",
+     "ref": 257
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "13-zero-kr-b2b"
+  },
+  {
+   "company": "와들(젠투)",
+   "company_origin": "국내",
+   "tool": "이벤터스",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "모객 보장형 웨비나·리드 육성",
+   "stage": "생소한 'AI 점원' 개념을 알려야 했던 초기 단계 커머스 AI 에이전트 스타트업",
+   "baseline": "",
+   "period": "첫 웨비나 후 약 6개월 추적",
+   "what": "이벤터스 모객보장패키지로 웨비나 2회를 열어 이벤터스 DB 기반으로 주제를 정하고 이벤터스 채널로 모객한 뒤, 관심 리드부터 단계별로 팔로업했다.",
+   "automation_scope": "이벤터스 채널 홍보·신청 접수, 신청자 유입 채널 데이터 제공",
+   "human_scope": "발표 콘텐츠 기획, 관심 리드 분류와 반복 팔로업, 후속 미팅",
+   "result": "이벤터스 홍보로 관심 리드 100명 확보, 연 1천만원 이상 솔루션으로 1~2건 전환 시 높은 ROI 기준을 웃도는 결과(전환 건수 미공개)",
+   "evidence": [
+    {
+     "claim": "초기 단계 스타트업의 행사 활용 사례로 소개됐다.",
+     "quote": "'행사'를 통해 잠재 고객과 만나고자 하는 초기 단계의 스타트업이라면",
+     "url": "https://blog.event-us.kr/startup-roi-event-strategy",
+     "date": "2025-08-12",
+     "reliability": "company_claim",
+     "ref": 258
+    },
+    {
+     "claim": "2년 전 처음 세일즈를 시작할 때 생소한 개념을 알리는 것이 고민이었다.",
+     "quote": "2년 전에 처음 세일즈를 시작했을 때, 가장 고민했던 부분은 바로 '사고 리더십' 그 자체였습니다.",
+     "url": "https://blog.event-us.kr/startup-roi-event-strategy",
+     "date": "2025-08-12",
+     "reliability": "company_claim",
+     "ref": 258
+    },
+    {
+     "claim": "이벤터스 자체 홍보로 관심 리드 100명을 얻었다.",
+     "quote": "이벤터스 자체 홍보를 통해, 실제로 저희 솔루션에 관심이 있을 만한 리드 백 명을 획득했습니다.",
+     "url": "https://blog.event-us.kr/startup-roi-event-strategy",
+     "date": "2025-08-12",
+     "reliability": "company_claim",
+     "ref": 258
+    },
+    {
+     "claim": "첫 웨비나 이후 약 6개월간 성과를 추적했다.",
+     "quote": "첫 웨비나 이후 약 6개월 동안 계속해서 성과를 트래킹했어요.",
+     "url": "https://blog.event-us.kr/startup-roi-event-strategy",
+     "date": "2025-08-12",
+     "reliability": "company_claim",
+     "ref": 258
+    },
+    {
+     "claim": "1~2건 전환만 돼도 ROI가 높은데 그 이상 결과가 나왔다.",
+     "quote": "1~2건의 전환만 일어나도 ROI가 높은 편인데, 이러한 ROI를 상회하는 결과를 얻었습니다.",
+     "url": "https://blog.event-us.kr/startup-roi-event-strategy",
+     "date": "2025-08-12",
+     "reliability": "company_claim",
+     "ref": 258
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "13-zero-kr-b2b"
+  },
+  {
+   "company": "인블로그(inblog)",
+   "company_origin": "국내",
+   "tool": "인블로그(inblog)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "자사 제품으로 SEO 콘텐츠 발행해 검색 유입 확보",
+   "stage": "5명 팀, 서비스 출시 4개월 만에 첫 유료 고객이 생긴 B2B SaaS",
+   "baseline": "유료 고객사 10곳으로 운영 시작",
+   "period": "",
+   "what": "퍼포먼스 광고 없이 자사 SEO 블로그 제품으로 \"기업 블로그 플랫폼\", \"고스트 블로그\", \"노션 SEO\" 등 타깃 키워드 콘텐츠를 출시 직후부터 꾸준히 발행해 검색 상위 노출로 고객을 유입시켰다. 커뮤니티 활동·추천도 함께 썼다.",
+   "automation_scope": "블로그의 기술 SEO 적용(제품 기능)",
+   "human_scope": "키워드 선정·콘텐츠 작성, B2B 마케터 커뮤니티 활동, 고객 인터뷰·제품 개선",
+   "result": "광고 없이 SEO·추천·커뮤니티로 유료 고객사 100곳, MRR $4k(채널별 기여도는 미공개)",
+   "evidence": [
+    {
+     "claim": "서비스 출시 4개월 만에 첫 유료 고객사가 생겼다.",
+     "quote": "서비스 출시 4개월만에 유료 전환을 하면서 처음으로 inblog의 유료 고객사가 생겼습니다.",
+     "url": "https://inblog.ai/ko/blog/100-paying-customers-without-ads",
+     "date": "2024-11-14",
+     "reliability": "company_claim",
+     "ref": 259
+    },
+    {
+     "claim": "유료 고객사 10곳으로 운영을 시작했다.",
+     "quote": "10곳의 유료 고객사를 가지고 서비스를 운영하기 시작합니다.",
+     "url": "https://inblog.ai/ko/blog/100-paying-customers-without-ads",
+     "date": "2024-11-14",
+     "reliability": "company_claim",
+     "ref": 259
+    },
+    {
+     "claim": "팀은 5명이다.",
+     "quote": "저희 팀은 5명 밖에 되지 않는 작은 팀입니다.",
+     "url": "https://inblog.ai/ko/blog/100-paying-customers-without-ads",
+     "date": "2024-11-14",
+     "reliability": "company_claim",
+     "ref": 259
+    },
+    {
+     "claim": "타깃 키워드 콘텐츠로 상위 노출돼 고객 유입이 생겼다.",
+     "quote": "꾸준히 콘텐츠를 작성했고, 결국 타겟하는 “기업 블로그 플랫폼”, “고스트 블로그”, “노션 SEO” 등 키워드에서 상위 노출되면서 고객 유입을 만들었습니다.",
+     "url": "https://inblog.ai/ko/blog/100-paying-customers-without-ads",
+     "date": "2024-11-14",
+     "reliability": "company_claim",
+     "ref": 259
+    },
+    {
+     "claim": "검색 광고 없이 SEO·추천·커뮤니티로 유료 고객사 100곳을 달성했다.",
+     "quote": "검색 광고 등 퍼포먼스 하나 없이 SEO와 추천, 그리고 커뮤니티 활동으로만 달성한 것인데요.",
+     "url": "https://inblog.ai/ko/blog/100-paying-customers-without-ads",
+     "date": "2024-11-14",
+     "reliability": "company_claim",
+     "ref": 259
+    },
+    {
+     "claim": "MRR은 4천 달러다.",
+     "quote": "inblog MRR $4k",
+     "url": "https://inblog.ai/ko/blog/100-paying-customers-without-ads",
+     "date": "2024-11-14",
+     "reliability": "company_claim",
+     "ref": 259
+    }
+   ],
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "13-zero-kr-b2b"
+  },
+  {
+   "company": "빌딩케어(디원더)",
+   "company_origin": "국내",
+   "tool": "리캐치",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "웹사이트 도입 문의→미팅 자동 예약(인바운드 응대 자동화)",
+   "stage": "정식 출시 전후, 첫 고객 10곳·100곳을 확보하려던 제로투원 단계의 건물관리 협업툴",
+   "baseline": "홈페이지 문의를 챗봇으로만 응대해 미팅으로 거의 이어지지 않음(수치 없음)",
+   "period": "도입 한 달",
+   "what": "홈페이지 도입 문의 버튼에 리캐치를 붙여, 유튜브 출연 뒤 들어온 방문자가 문의하는 순간 원하는 시간을 골라 미팅을 잡고 담당자가 자동 배정되게 했다.",
+   "automation_scope": "도입 신청 접수, 미팅 시간 선택·확정, 담당자 자동 배정",
+   "human_scope": "유튜브 출연 등 유입 만들기, 디스커버리 콜·미팅·계약, 세일즈 프로세스 설계",
+   "result": "별도 응대 없이 관심 고객이 스스로 미팅을 예약하고 실제 계약까지 이어짐(수치 미공개)",
+   "evidence": [
+    {
+     "claim": "첫 고객 10곳, 100곳 확보가 가장 어려웠던 제로투원 단계였다.",
+     "quote": "특히 첫 고객 10곳, 100곳을 확보하기 위한 ‘세일즈’ 가 가장 어려웠다고 해요.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-buildingcare",
+     "date": "2023-10-11",
+     "reliability": "company_claim",
+     "ref": 260
+    },
+    {
+     "claim": "도입 전에는 홈페이지 문의를 챗봇으로만 응대해 미팅으로 이어지지 않는 경우가 많았다.",
+     "quote": "이때는 별도 프로세스 없이 챗봇으로만 응대하다가 결국 미팅까지 이어지지 않는 경우가 많았습니다.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-buildingcare",
+     "date": "2023-10-11",
+     "reliability": "company_claim",
+     "ref": 260
+    },
+    {
+     "claim": "리캐치 도입 한 달 만에 세일즈 프로세스를 완성했다.",
+     "quote": "리캐치 도입 한 달만에 세일즈 프로세스를 완성",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-buildingcare",
+     "date": "2023-10-11",
+     "reliability": "company_claim",
+     "ref": 260
+    },
+    {
+     "claim": "도입 신청 순간 고객이 시간을 고르고 담당자가 자동 배정된다.",
+     "quote": "고객의 관심도가 가장 높은 순간(‘도입 신청’ 버튼을 누르는 순간)에 고객이 원하는 시간을 고르고, 자동 배정된 담당자가 미팅을 진행합니다.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-buildingcare",
+     "date": "2023-10-11",
+     "reliability": "company_claim",
+     "ref": 260
+    },
+    {
+     "claim": "관심 고객이 스스로 미팅을 예약해 계약까지 이어졌다.",
+     "quote": "가만히 있어도 관심 있는 고객이 리캐치를 통해 미팅을 예약 하고 영업 기회가 만들어져 실제 계약까지 이어지는 과정을 경험했습니다.",
+     "url": "https://www.recatch.cc/ko/blog/customer-success-story-buildingcare",
+     "date": "2023-10-11",
+     "reliability": "company_claim",
+     "ref": 260
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "13-zero-kr-b2b"
+  },
+  {
+   "company": "디어먼데이",
+   "company_origin": "국내",
+   "tool": "스티비",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "구독폼 리드 수집·뉴스레터·수신자별 반응으로 관심 고객 찾기",
+   "stage": "극초기 시장(B2B 워케이션)의 초기 스타트업, 비싼 마케팅이 어려운 상태",
+   "baseline": "",
+   "period": "",
+   "what": "홈페이지 구독폼으로 인사·조직문화 담당자 이메일을 모으고 스티비로 신규 지점 오픈·할인 소식을 보낸 뒤, 구독자별 오픈·클릭 통계로 관심이 높은 고객을 찾아 혜택을 제안했다.",
+   "automation_scope": "구독폼 수집, 이메일 발송, 구독자별 오픈·클릭 통계",
+   "human_scope": "콘텐츠·혜택 기획, 통계로 찾은 고객에게 개별 제안·영업",
+   "result": "전화 문의가 없던 고객을 이메일 반응 통계로 찾아내 계약 성사(건수 미공개)",
+   "evidence": [
+    {
+     "claim": "워케이션은 극초기 시장이다.",
+     "quote": "워케이션은 극초기 시장이에요.",
+     "url": "https://blog.stibee.com/emailmarketing-dearmonday/",
+     "date": "2024-04-09",
+     "reliability": "company_claim",
+     "ref": 261
+    },
+    {
+     "claim": "초기 스타트업이라 비용이 많이 드는 마케팅이 어려웠다.",
+     "quote": "초기 스타트업이고 오프라인 공간을 제공하는 서비스라 비용이 많이 드는 마케팅을 하기는 어려운데요.",
+     "url": "https://blog.stibee.com/emailmarketing-dearmonday/",
+     "date": "2024-04-09",
+     "reliability": "company_claim",
+     "ref": 261
+    },
+    {
+     "claim": "홈페이지 구독폼으로 관심 회사·담당자 이메일을 모았다.",
+     "quote": "홈페이지에 ‘소식지 받기’, ‘신규 지점 오픈 소식 받기’ 등의 구독 폼을 열어놓고 워케이션에 관심있는 회사와 담당자 이메일 데이터를 모았습니다.",
+     "url": "https://blog.stibee.com/emailmarketing-dearmonday/",
+     "date": "2024-04-09",
+     "reliability": "company_claim",
+     "ref": 261
+    },
+    {
+     "claim": "전화번호를 함께 받을 때보다 이메일만 받을 때 신청자가 더 많았다.",
+     "quote": "핸드폰 번호를 같이 수집할 때보다 이메일만 수집할 때 신청자가 더 많았어요.",
+     "url": "https://blog.stibee.com/emailmarketing-dearmonday/",
+     "date": "2024-04-09",
+     "reliability": "company_claim",
+     "ref": 261
+    },
+    {
+     "claim": "이메일 통계로 찾은 고객에게 제안해 계약을 성사시켰다.",
+     "quote": "이에 조금 더 적극적인 혜택 제안과 마케팅을 진행해 계약을 성사시킨 사례가 있습니다.",
+     "url": "https://blog.stibee.com/emailmarketing-dearmonday/",
+     "date": "2024-04-09",
+     "reliability": "company_claim",
+     "ref": 261
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "13-zero-kr-b2b"
+  },
+  {
+   "company": "Paraform",
+   "company_origin": "해외",
+   "tool": "Apollo.io",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "리드 목록 필터링·콜드메일 자동 시퀀스",
+   "stage": "초기 스타트업, 지인 네트워크 영업 이후 콜드 고객 확보 단계",
+   "baseline": "",
+   "period": "",
+   "what": "Apollo 필터로 최근 투자받고 채용 공고가 있는 기업의 담당자 리스트를 만들고 Python 스크립트로 정제했다. 도메인을 추가로 사서 인박스당 하루 40통·7분 간격으로 워밍업하고, 3통(가치 제안→가벼운 팔로업→타이밍 확인) 자동 캠페인 2개를 돌렸다.",
+   "automation_scope": "인텐트 필터 기반 리스트 추출, 시퀀스 자동 발송·발송 간격 조절",
+   "human_scope": "타이밍 중심 ICP 가설, 제목줄·카피 작성, 미팅",
+   "result": "베스트 시퀀스 오픈율 80%, 신규 고객 전환율 5%, 아웃바운드만으로 고객 100곳 이상",
+   "evidence": [
+    {
+     "claim": "초기 스타트업 단계에서 발송량을 시험하는 중이었다.",
+     "quote": "As an early-stage startup, we didn't want to get banned while we refined our volume strategy",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim",
+     "ref": 262
+    },
+    {
+     "claim": "Apollo로 최근 투자·채용 중인 기업을 걸러 리스트를 만들었다.",
+     "quote": "They used Apollo to filter against the attributes that were most important to them in a customer: mid- to enterprise-level recently-funded accounts with open headcount and new job postings.",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim",
+     "ref": 262
+    },
+    {
+     "claim": "인박스당 하루 40통으로 시작해 워밍업했다.",
+     "quote": "they started at a low volume: 40 emails per day per inbox",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim",
+     "ref": 262
+    },
+    {
+     "claim": "리드를 3단계 자동 캠페인 2개에 넣었고 응답의 90%가 팔로업에서 나왔다.",
+     "quote": "John and his team queued up their leads into two automated campaigns, built around three email touchpoints",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim",
+     "ref": 262
+    },
+    {
+     "claim": "결과: 오픈율 80%, 전환율 5%, 아웃바운드로 100곳 이상.",
+     "quote": "80% open rates on their best sequences 5% conversion rate to new customers 100+ customers secured through outbound alone",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim",
+     "ref": 262
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "Jeeva.ai",
+   "company_origin": "해외",
+   "tool": "Jeeva.ai AI 에이전트(자사) + LinkedIn Sales Navigator",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "수동 검증 후 AI 멀티채널 아웃바운드 시퀀스",
+   "stage": "반쯤 만든 프로토타입, 고객 0명",
+   "baseline": "고객 0명",
+   "period": "4개월(유료 고객 100곳)",
+   "what": "1개월차에 창업자가 피드백 요청 메일·Slack 메시지를 직접 보내 스크립트를 검증했고, 2개월차에 자사 AI 에이전트로 LinkedIn Sales Navigator 프로필 수집→개인화 메일→자동 음성메일→LinkedIn 연결의 4단계 시퀀스를 돌렸다. 4개월차에는 고유 추천 코드와 대시보드로 추천 프로그램을 운영했다.",
+   "automation_scope": "ICP 프로필 수집, 메일 개인화, 자동 음성메일, 추천 코드 추적",
+   "human_scope": "초기 수동 아웃리치로 스크립트 검증, Slack 수동 DM, LinkedIn 게시물, 파트너십",
+   "result": "AI 시퀀스 회신율 11%, 메일 100통당 데모 약 5건; 추천 프로그램으로 18곳; 4개월간 전 채널 합계 유료 고객 100곳",
+   "evidence": [
+    {
+     "claim": "0명에서 4개월 만에 100명, 반쯤 만든 프로토타입에서 시작했다.",
+     "quote": "Going from zero customers to 100 in just four months",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim",
+     "ref": 263
+    },
+    {
+     "claim": "반쯤 만든 프로토타입에서 유료 고객 100곳으로 키웠다.",
+     "quote": "from a half-built prototype to 100 paying customers and $5M in ARR",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim",
+     "ref": 263
+    },
+    {
+     "claim": "2개월차에 검증된 스크립트로 AI 다일 시퀀스를 구성했다.",
+     "quote": "With validated scripts from early sales, we structured our outreach into a multi-day sequence using AI",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim",
+     "ref": 263
+    },
+    {
+     "claim": "시퀀스 지표는 회신율 11%, 메일 100통당 데모 약 5건이다.",
+     "quote": "Reply rate: 11% Demo booking rate: ~5 demos per 100 emails",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim",
+     "ref": 263
+    },
+    {
+     "claim": "추천 코드·대시보드 기반 추천 프로그램으로 18곳을 얻었다.",
+     "quote": "Implemented a general referral system using unique referral codes, tracked via a custom dashboard. Offered a $50 Amazon gift card per successful customer conversion, resulting in 18 new customers.",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim",
+     "ref": 263
+    },
+    {
+     "claim": "사람이 먼저 수동으로 검증하고 그다음 자동화했다.",
+     "quote": "Manual before Scale: Do personalized outreach yourself first, then automate once validated.",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim",
+     "ref": 263
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "ColdClicks",
+   "company_origin": "해외",
+   "tool": "Apollo.io + ColdClicks(자사 AI) + Instantly",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "AI 개인화 첫 문장 + 콜드메일 대량 발송",
+   "stage": "공동창업자 2명이 출시 2주차인 부트스트랩 스타트업",
+   "baseline": "고객 1명(직전 주)",
+   "period": "출시 4주",
+   "what": "Apollo.io에서 타깃 리드를 뽑아 자사 툴에 올리면 AI가 리드별로 조사해 메일 첫 문장을 쓰고, 이를 Instantly로 내보내 발송했다. 매주 신규 고객 1명을 목표로 운영했다.",
+   "automation_scope": "리드별 조사·개인화 첫 문장 작성, 대량 발송",
+   "human_scope": "타깃 시장 선정, 본문 오퍼, 데모 진행",
+   "result": "2주차 고객 1→2명, 데모 5건 추가 예약, 출시 4주 만에 MRR 400달러 돌파",
+   "evidence": [
+    {
+     "claim": "2주 전 공동창업자와 부트스트랩으로 출시했다.",
+     "quote": "Two weeks ago my Co-founder and I launched our bootstrapped startup ColdClicks",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim",
+     "ref": 264
+    },
+    {
+     "claim": "직전 주 1명에서 2명이 됐다.",
+     "quote": "we're now at 2 customers, up from 1 last week",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim",
+     "ref": 264
+    },
+    {
+     "claim": "Apollo 리드를 툴에 올려 AI가 첫 문장을 쓰게 했다.",
+     "quote": "we generate leads in our target market from a good lead source - Apollo.io. Then, we upload the leads to our tool which researches each lead then uses AI to write the first line of the email.",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim",
+     "ref": 264
+    },
+    {
+     "claim": "데모 1건을 하고 다음 주 데모 5건을 더 잡았다.",
+     "quote": "Yesterday we ran a product demo, and booked 5 additional demos for next week.",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim",
+     "ref": 264
+    },
+    {
+     "claim": "출시 4주 만에 MRR 400달러를 넘겼다.",
+     "quote": "4 weeks after launch, we woke up to see we crossed the 400 MRR mark",
+     "url": "https://www.indiehackers.com/post/400-mrr-in-4-weeks-ac92526ce1",
+     "date": "2024-03-20",
+     "reliability": "company_claim",
+     "ref": 265
+    }
+   ],
+   "_area": "교육·고객 사례·영업 지원",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "Arcads",
+   "company_origin": "해외",
+   "tool": "Arcads(자사) + Gumloop + Meta 광고",
+   "area": "광고·프로모션",
+   "task": "자사 AI 광고 소재로 유료 광고 + 그로스 워크플로 자동화",
+   "stage": "2024년 1월 출시, 엔지니어 5명의 부트스트랩 팀",
+   "baseline": "",
+   "period": "약 5개월(ARR 100만 달러)",
+   "what": "자사 툴로 만든 AI UGC 광고를 Meta에 집행하는 것이 주 유입 채널이다. Gumloop 워크플로 약 100개로 인플루언서 소싱, 아웃리치 초안, 트윗 후크 작성, 경쟁사 광고 라이브러리 매일 수집→ChatGPT로 Arcads용 재작성→Slack 전달을 자동화했다.",
+   "automation_scope": "광고 소재 생성, 경쟁사 광고 수집·재작성, 인플루언서 소싱·아웃리치 초안",
+   "human_scope": "복제할 광고 선택(원클릭), 크리에이터 파트너십, 고액 광고주 대상 영업",
+   "result": "출시 첫 주 MRR 약 5000달러, 약 5개월 만에 ARR 100만 달러, 2025년 5월 ARR 600만 달러·유료 고객 약 4000곳",
+   "evidence": [
+    {
+     "claim": "2024년 1월 출시해 그달 첫 고객을 받았다.",
+     "quote": "Arcads launched in January 2024 and onboarded its first customer that month",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview",
+     "ref": 266
+    },
+    {
+     "claim": "출시 첫 주 MRR 약 5000달러였다.",
+     "quote": "Romain recalls roughly $5,000 in MRR within the first week after launch",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview",
+     "ref": 266
+    },
+    {
+     "claim": "출시 약 5개월 만인 2024년 6월 ARR 100만 달러를 넘었다.",
+     "quote": "Arcads crossed $1 million ARR in June 2024, roughly five months after launch",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview",
+     "ref": 266
+    },
+    {
+     "claim": "2025년 5월 ARR 600만 달러, 유료 고객 약 4000곳, 엔지니어 5명이다.",
+     "quote": "with about 4,000 paid customers and a team of 5 engineers",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview",
+     "ref": 266
+    },
+    {
+     "claim": "주 유입 채널은 자사 툴로 만든 Meta 광고다.",
+     "quote": "Romain's primary acquisition channel is running paid ads on Meta using Arcads itself to create the ad creatives.",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview",
+     "ref": 266
+    },
+    {
+     "claim": "경쟁사 광고를 매일 수집·재작성해 Slack에 원클릭 복제 버튼과 함께 보낸다.",
+     "quote": "scrapes the Facebook ads library for competitor ads every day, pulls transcripts, rewrites the copy for Arcads using ChatGPT, and sends the result directly to Slack with a one-click replication button",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview",
+     "ref": 266
+    }
+   ],
+   "_area": "광고·프로모션",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "TopTool(인디 개발자 Dan의 디렉터리 사이트)",
+   "company_origin": "해외",
+   "tool": "Apify + ChatGPT(LLM) 자동 게시 파이프라인",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "AI 프로그래매틱·다국어 SEO 페이지 대량 생성",
+   "stage": "1인 사이드 프로젝트(스타트업 디렉터리)",
+   "baseline": "출시 직후 유입 거의 없음",
+   "period": "수개월 후 검색 유입 급증",
+   "what": "Apify 스크레이퍼로 Product Hunt 런칭을 매일 수집하고 LLM으로 구조화 콘텐츠(JSON)를 만든 뒤 10개 언어로 번역해 SEO 페이지를 자동 게시했다. 사이트 자체는 Product Hunt에 직접 런칭했다.",
+   "automation_scope": "매일 스크래핑, LLM 콘텐츠 생성, 10개 언어 번역, 페이지 일괄 게시",
+   "human_scope": "Product Hunt 런칭, 키워드 성과 확인, 유료 등록 수익화",
+   "result": "구글 월 클릭 최고 20만, 이후 월 약 5만 유지; 스타트업 유료 등록으로 월 100~500달러",
+   "evidence": [
+    {
+     "claim": "과거 1인 프로젝트로 AI SEO 엔진을 만들었다.",
+     "quote": "I'm breaking down one of my past projects where I built an AI-powered SEO engine that peaked at 200,000 monthly clicks from Google",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim",
+     "ref": 267
+    },
+    {
+     "claim": "처음에는 아무 일도 일어나지 않았다.",
+     "quote": "At first, nothing really happened",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim",
+     "ref": 267
+    },
+    {
+     "claim": "Product Hunt 런칭을 수집해 LLM으로 만들고 10개 언어로 자동 게시했다.",
+     "quote": "Scrapes Product Hunt launches Uses AI (LLM) to generate content in a structured JSON format Translates it into 10 languages And then publishes SEO-optimized pages automatically",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim",
+     "ref": 267
+    },
+    {
+     "claim": "몇 달 뒤 한 키워드의 노출이 폭증했다.",
+     "quote": "A few months in, I checked Google Search Console and noticed one of the keywords had exploded in impressions",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim",
+     "ref": 267
+    },
+    {
+     "claim": "현재도 월 약 5만 클릭, 월 100~500달러 수익.",
+     "quote": "Today, it's still getting around 50,000 clicks/month",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim",
+     "ref": 267
+    },
+    {
+     "claim": "유료 등록으로 월 100~500달러를 벌었다.",
+     "quote": "I started earning $100–$500/month",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim",
+     "ref": 267
+    }
+   ],
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "KündigungExpress",
+   "company_origin": "해외",
+   "tool": "프로그래매틱 SEO(업체별 템플릿 랜딩 페이지)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "업체별 랜딩 페이지 대량 생성(B2C 해지 서류 서비스)",
+   "stage": "2026년 1월 만든 건당 4.99유로 B2C 서비스",
+   "baseline": "1월 검색 노출 222회",
+   "period": "10주",
+   "what": "독일 계약 해지서 PDF 생성 서비스로, 설명 글 대신 McFit·Telekom 등 약 65개 업체별 랜딩 페이지에 해지 주소·법정 기한을 미리 채워 두고 카테고리 허브와 내부 링크로 묶었다. 광고·SNS·링크 빌딩은 하지 않았다.",
+   "automation_scope": "업체 데이터가 채워진 템플릿 페이지 생성, 서류 PDF 자동 생성",
+   "human_scope": "검색 의도에 맞춘 페이지 제목·구조 설계, 업체 데이터 정리",
+   "result": "10주 누적 노출 8,594회, 클릭 35회, 유료 고객 2명(대부분 2~3페이지 순위라 클릭률 낮음)",
+   "evidence": [
+    {
+     "claim": "2026년 1월 만든 해지서 생성 툴이다.",
+     "quote": "I built KündigungExpress in january 2026. It's a tool that generates cancellation letters for German contracts as a PDF",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim",
+     "ref": 268
+    },
+    {
+     "claim": "1월 노출은 222회였다.",
+     "quote": "January: 222 impressions. Barely anything.",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim",
+     "ref": 268
+    },
+    {
+     "claim": "0에서 10주 만에 노출 8,500회.",
+     "quote": "from zero to 8,500 search impressions in 10 weeks",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim",
+     "ref": 268
+    },
+    {
+     "claim": "업체별 랜딩 페이지에 해지 주소·기한을 미리 채웠다.",
+     "quote": "Each page is pre-loaded with that provider's cancellation address, legal deadline, and contract type.",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim",
+     "ref": 268
+    },
+    {
+     "claim": "현재 노출 8,594회, 클릭 35회, 유료 고객 2명.",
+     "quote": "8,594 impressions, 35 clicks, 2 real paying customers",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim",
+     "ref": 268
+    }
+   ],
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "Wimp Decaf Coffee Co.",
+   "company_origin": "해외",
+   "tool": "Klaviyo",
+   "area": "CRM·멤버십·리텐션",
+   "task": "출시 전 웨잇리스트·환영 플로우로 첫 구매 확보",
+   "stage": "3인 부트스트랩 디카페인 커피 D2C 브랜드, 판매 시작 전",
+   "baseline": "구독자 0명",
+   "period": "약 6주(7/5 웨잇리스트 → 8/16 스토어 오픈)",
+   "what": "구매 기능 없이 웨잇리스트 폼만 있는 사이트와 Klaviyo를 먼저 열어 환영 플로우로 가입자를 받고 점진 발송으로 발송 도메인을 데웠다. 스토어 오픈 날 전체 리스트에 캠페인을 보냈고 제목줄 A/B 테스트를 했다.",
+   "automation_scope": "웨잇리스트 가입 수집, 환영 플로우 자동 발송, 점진 발송, A/B 테스트",
+   "human_scope": "지인·트윗으로 초기 유입, 캠페인 메일 작성, 제목줄 판단",
+   "result": "첫 주 구독자 202명, 스토어 오픈일 구독자 498명·주문 76건, 오픈일 매출의 58%를 Klaviyo 기여로 집계, 광고비 0달러",
+   "evidence": [
+    {
+     "claim": "시작 시점 구독자는 0명이었다.",
+     "quote": "0 subscribers to start 41 new subscribers on launch day (mostly friends and family) 202 new subscribers in the first week",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim",
+     "ref": 269
+    },
+    {
+     "claim": "7월 5일 구매 기능 없는 웨잇리스트 사이트를 열었다.",
+     "quote": "On July 5, Wimp launched their lightweight website—with no option to purchase yet, just a waitlist sign-up form and product education—and their Klaviyo account.",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim",
+     "ref": 269
+    },
+    {
+     "claim": "8월 16일 쇼피파이 스토어를 열었다.",
+     "quote": "On August 16, Wimp launched their Shopify store with 5 products",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim",
+     "ref": 269
+    },
+    {
+     "claim": "3인 팀이며 부트스트랩이라 전업자가 없다.",
+     "quote": "The 3-person team has tons of exciting, creative ideas for email and beyond—but as they’re currently bootstrapped, none of them can focus on the business full-time yet.",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim",
+     "ref": 269
+    },
+    {
+     "claim": "웨잇리스트 가입 후 플로우로 메일을 보내고 점진 발송을 했다.",
+     "quote": "we could send them an email through a flow, and then also be able to track the best time to send emails and start that process of gradual sending",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim",
+     "ref": 269
+    },
+    {
+     "claim": "오픈일 주문 76건, 구독자 498명, 매출 58%가 Klaviyo 기여.",
+     "quote": "76 orders on ecommerce launch day 20 first-time purchasers bought coffee subscriptions in first week $0 spent on paid advertising so far Klaviyo activity by the numbers 498 email subscribers on ecommerce launch day 58% of launch day ecommerce revenue attributed to Klaviyo",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim",
+     "ref": 269
+    }
+   ],
+   "_area": "CRM·멤버십·리텐션",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "Snugly·Liply(1인 개발자 Oliver Henry의 앱)",
+   "company_origin": "해외",
+   "tool": "OpenClaw 에이전트(Larry) + OpenAI gpt-image-1.5 + Postiz",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "AI 에이전트의 틱톡 슬라이드쇼 대량 제작·예약",
+   "stage": "본업 시작 직전 출시한 1인 개발 앱 2개, 홍보할 시간 없음",
+   "baseline": "",
+   "period": "5일(1주 미만)",
+   "what": "AI 에이전트가 후크 조사, 6장 슬라이드 이미지 생성(같은 방 구조를 고정한 프롬프트), 캡션 작성, Postiz API로 틱톡 임시보관함 업로드까지 하고, 성과·RevenueCat 지표를 메모리에 기록해 다음 후크에 반영한다. 개발자는 음악을 넣고 게시만 한다.",
+   "automation_scope": "후크 리서치, 이미지·캡션 생성, 업로드, 성과 기록·학습",
+   "human_scope": "WhatsApp으로 방향 지시, 음악 추가·게시(게시물당 약 60초)",
+   "result": "틱톡 조회 50만+, 두 앱 유료 구독자 108명, MRR 약 588달러(본문 다른 곳 714달러), 게시물당 API 비용 약 0.5달러",
+   "evidence": [
+    {
+     "claim": "본업 시작 직전 앱을 출시했다.",
+     "quote": "He launched these right before starting his job at RevenueCat.",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party",
+     "ref": 270
+    },
+    {
+     "claim": "에이전트 없이는 홍보를 못 했을 것이다.",
+     "quote": "Without Larry, these apps wouldn’t be getting promoted at all. He doesn’t have the time.",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party",
+     "ref": 270
+    },
+    {
+     "claim": "지난 5일간 틱톡 조회 50만 이상.",
+     "quote": "And in the last 5 days, Larry has generated over 500,000 TikTok views",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party",
+     "ref": 270
+    },
+    {
+     "claim": "유료 구독자 108명, MRR 약 588달러, 게시물당 0.5달러·60초.",
+     "quote": "108 paying subscribers across his two apps ~$588/month MRR and growing Cost per post: roughly $0.50 in API calls Time Oliver spends per post: about 60 seconds to add music and publish",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party",
+     "ref": 270
+    },
+    {
+     "claim": "Postiz API로 틱톡 임시보관함에 올린다.",
+     "quote": "Larry posts everything through Postiz - a social media scheduling tool with an API.",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party",
+     "ref": 270
+    }
+   ],
+   "_area": "콘텐츠·SNS·브랜드 캠페인",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "wedissimo",
+   "company_origin": "해외",
+   "tool": "Zapier + ChatGPT + ActiveCampaign",
+   "area": "통합 플랫폼·AI 에이전트",
+   "task": "상담 예약 후 리드 등록·후속 메일 자동화",
+   "stage": "직원 2~10명의 런던 웨딩 마켓플레이스 스타트업",
+   "baseline": "첫 상담→예약 전환율 30%",
+   "period": "9개월",
+   "what": "커플·업체가 상담을 예약하면 Zap이 ActiveCampaign에 연락처를 만들고, 웹사이트 문의는 ChatGPT가 판단해 필요할 때만 WhatsApp 메시지를 보낸다. 통화는 Fireflies로 요약하고 통화 후 맞춤 후속 메일을 정해진 간격으로 자동 발송한다.",
+   "automation_scope": "CRM 등록, 문의 분류·WhatsApp 발송, 통화 요약, 후속 메일 시퀀스",
+   "human_scope": "상담 통화, 워크플로 설계",
+   "result": "첫 상담→예약 전환율 30%→50%, 9개월간 900% 성장(회사는 자동화를 성장 요인 중 하나로 언급), 통화 후 메일 작성 업무 100% 제거",
+   "evidence": [
+    {
+     "claim": "회사 규모는 2~10명이다.",
+     "quote": "Company size: 2-10",
+     "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+     "date": "2024-12-04",
+     "reliability": "company_claim",
+     "ref": 271
+    },
+    {
+     "claim": "9개월 만에 900% 성장했고 후속 업무 자동화가 핵심이었다.",
+     "quote": "In just nine months, wedissimo grew an incredible 900%—and integral to that growth was automating their customer follow-up work with Zapier.",
+     "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+     "date": "2024-12-04",
+     "reliability": "company_claim",
+     "ref": 271
+    },
+    {
+     "claim": "통화 후 맞춤 육성 메일을 정해진 간격으로 보낸다.",
+     "quote": "Zapier triggers a series of personalized nurture emails from ActiveCampaign sent at pre-defined intervals.",
+     "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+     "date": "2024-12-04",
+     "reliability": "company_claim",
+     "ref": 271
+    },
+    {
+     "claim": "상담→예약 전환율이 30%에서 50%로 올랐다.",
+     "quote": "from initial calls to bookings soar from 30% to 50%",
+     "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+     "date": "2024-12-04",
+     "reliability": "company_claim",
+     "ref": 271
+    }
+   ],
+   "_area": "통합 플랫폼·AI 에이전트",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "Contando Estrelas",
+   "company_origin": "해외",
+   "tool": "ManyChat",
+   "area": "데이터·AI 활용",
+   "task": "인스타그램 댓글→DM 자동 응답·AI 판매 응대",
+   "stage": "수공예품·온라인 강의를 파는 1인(+파트너 1명) 사업자, 기술 지식 없음",
+   "baseline": "월 판매 10~15건, 게시물 댓글 약 15개",
+   "period": "30일",
+   "what": "릴스에 키워드 댓글을 달면 무료 파일을 DM으로 보내는 자동 응답을 걸고, 제품 문의는 AI가 답하며 구매 의향을 가려 필요한 경우만 사람에게 넘겼다. ManyChat 픽셀로 전환을 추적했다.",
+   "automation_scope": "댓글 트리거 DM, FAQ·판매 응대, 구매 의향 분류, 전환 추적",
+   "human_scope": "게시물 기획, AI 응답 학습, 넘겨받은 문의 응대",
+   "result": "30일간 판매 61건(이전 월 10~15건), 판매 400% 증가, 리드→판매 전환 12%, 게시물 댓글 15→500+",
+   "evidence": [
+    {
+     "claim": "혼자서 수공예품·강의를 판매한다.",
+     "quote": "Dani Maya created Contando Estrelas to sell handmade products and digital courses — all by herself.",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim",
+     "ref": 272
+    },
+    {
+     "claim": "댓글 하나가 DM을 트리거해 댓글이 15개에서 500개 이상이 됐다.",
+     "quote": "She went from 15 comments to over 500 overnight — all because one comment triggered a DM that did the work.",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim",
+     "ref": 272
+    },
+    {
+     "claim": "구매 준비된 사람은 흐름에 남고 필요할 때만 사람에게 연결했다.",
+     "quote": "People ready to buy stayed in the flow, and anyone who needed extra help was routed to human support only when necessary.",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim",
+     "ref": 272
+    },
+    {
+     "claim": "월 10~15건이던 판매가 30일에 61건이 됐다.",
+     "quote": "She replaced it with 61 sales in just 30 days.",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim",
+     "ref": 272
+    },
+    {
+     "claim": "이전 판매는 월 10~15건이었다.",
+     "quote": "10 to 15 sales per month",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim",
+     "ref": 272
+    },
+    {
+     "claim": "30일 판매 400% 증가, 리드→판매 전환 12%.",
+     "quote": "400% growth in sales 12% lead-to-sale conversion rate",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim",
+     "ref": 272
+    }
+   ],
+   "_area": "데이터·AI 활용",
+   "_file": "14-zero-global"
+  },
+  {
+   "company": "Growth Catalyst Club",
+   "company_origin": "해외",
+   "tool": "beehiiv + SparkLoop + Facebook 광고",
+   "area": "광고·프로모션",
+   "task": "추천 프로그램·광고로 뉴스레터 구독자 확보·수익화",
+   "stage": "2023년 창간한 1인 뉴스레터, 첫 호 구독자 36명",
+   "baseline": "2개월 후 구독자 560명·매출 0달러",
+   "period": "14개월(매각까지)",
+   "what": "beehiiv로 옮긴 뒤 Facebook 광고로 구독자를 사고, SparkLoop 추천(리퍼럴)·beehiiv Boosts·광고 네트워크로 구독자 획득비를 수익으로 상쇄했다.",
+   "automation_scope": "추천 보상·추적, 광고 게재·수익화 도구",
+   "human_scope": "광고 소재 인사이트 콘텐츠 작성, 광고 집행 판단",
+   "result": "구독자당 비용 1.2~1.6달러, 일 매출 70~250달러, 월 200% 성장, 광고비 전액 상쇄, 14개월 만에 Acquire.com에서 매각",
+   "evidence": [
+    {
+     "claim": "2023년 창간, 첫 호 구독자 36명.",
+     "quote": "His first issue went to just 36 subscribers",
+     "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+     "date": "2025-03-25",
+     "reliability": "company_claim",
+     "ref": 273
+    },
+    {
+     "claim": "2개월 후 구독자 560명, 매출 0.",
+     "quote": "After two months, Andy had 560 subscribers and $0 revenue.",
+     "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+     "date": "2025-03-25",
+     "reliability": "company_claim",
+     "ref": 273
+    },
+    {
+     "claim": "추천(SparkLoop)·유료 광고·오가닉으로 성장했다.",
+     "quote": "An ecosystem that supported growth via referrals (SparkLoop), paid ads, and organic reach (Twitter, Reddit)",
+     "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+     "date": "2025-03-25",
+     "reliability": "company_claim",
+     "ref": 273
+    },
+    {
+     "claim": "결과: 구독자당 1.2~1.6달러, 월 200% 성장, 14개월 만에 매각.",
+     "quote": "Subscriber cost dropped to $1.20–$1.60 Grew revenue to $70–$250/day via monetization Hit 200% month-over-month growth Fully offset ad spend through newsletter revenue Sold Growth Catalyst Club via Acquire.com in just 14 months",
+     "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+     "date": "2025-03-25",
+     "reliability": "company_claim",
+     "ref": 273
+    }
+   ],
+   "_area": "광고·프로모션",
+   "_file": "14-zero-global"
   }
  ],
  "stats": [
@@ -8844,7 +10779,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "콘텐츠·SNS·브랜드 캠페인",
-   "ref": 242
+   "ref": 274
   },
   {
    "topic": "국내 업무용 AI 앱 사용자 수",
@@ -8883,7 +10818,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "통합 플랫폼·AI 에이전트",
-   "ref": 243
+   "ref": 275
   },
   {
    "topic": "마케터 AI 사용 빈도",
@@ -8896,7 +10831,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "통합 플랫폼·AI 에이전트",
-   "ref": 244
+   "ref": 276
   },
   {
    "topic": "국내 실무자 리서치 내재화",
@@ -8909,7 +10844,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "데이터·AI 활용",
-   "ref": 245
+   "ref": 277
   },
   {
    "topic": "국내 CRM 담당자의 AI·통합 플랫폼 활용",
@@ -8922,7 +10857,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "CRM·멤버십·리텐션",
-   "ref": 246
+   "ref": 278
   },
   {
    "topic": "국내 이메일 마케터 AI 사용",
@@ -8935,7 +10870,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "CRM·멤버십·리텐션",
-   "ref": 247
+   "ref": 279
   },
   {
    "topic": "카카오 비즈니스 메시지 시장",
@@ -8948,7 +10883,7 @@
    "reliability": "company_claim",
    "region": "국내",
    "_group": "CRM·멤버십·리텐션",
-   "ref": 248
+   "ref": 280
   },
   {
    "topic": "국내 광고 제작 현장 AI 활용률",
@@ -8961,7 +10896,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "광고·프로모션",
-   "ref": 249
+   "ref": 281
   },
   {
    "topic": "네이버 광고 매출 증가에 대한 AI 기여",
@@ -8974,7 +10909,7 @@
    "reliability": "third_party",
    "region": "국내",
    "_group": "광고·프로모션",
-   "ref": 250
+   "ref": 282
   },
   {
    "topic": "국내 마케터의 광고 전환 고민",
@@ -8987,7 +10922,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "광고·프로모션",
-   "ref": 251
+   "ref": 283
   },
   {
    "topic": "당근 전환 최적화 캠페인 성과",
@@ -9000,7 +10935,7 @@
    "reliability": "company_claim",
    "region": "국내",
    "_group": "광고·프로모션",
-   "ref": 111
+   "ref": 119
   },
   {
    "topic": "국내 이메일 자동화 도입·성과",
@@ -9013,7 +10948,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "교육·고객 사례·영업 지원",
-   "ref": 252
+   "ref": 284
   },
   {
    "topic": "국내 고성장 B2B 인바운드 응대·CRM",
@@ -9026,7 +10961,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "교육·고객 사례·영업 지원",
-   "ref": 253
+   "ref": 285
   },
   {
    "topic": "국내 고성장 B2B 리드 선별 기준",
@@ -9039,7 +10974,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "교육·고객 사례·영업 지원",
-   "ref": 253
+   "ref": 285
   },
   {
    "topic": "행사·웨비나 노쇼율",
@@ -9052,7 +10987,7 @@
    "reliability": "company_claim",
    "region": "국내",
    "_group": "교육·고객 사례·영업 지원",
-   "ref": 125
+   "ref": 133
   },
   {
    "topic": "서울 소상공인 AI 활용률",
@@ -9065,7 +11000,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "통합 플랫폼·AI 에이전트",
-   "ref": 254
+   "ref": 286
   },
   {
    "topic": "소상공인 디지털·AI 활용 분야",
@@ -9078,7 +11013,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "통합 플랫폼·AI 에이전트",
-   "ref": 255
+   "ref": 287
   },
   {
    "topic": "중소기업 AI 활용률·활용 분야",
@@ -9091,7 +11026,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "통합 플랫폼·AI 에이전트",
-   "ref": 256
+   "ref": 288
   },
   {
    "topic": "국내 기업 AI 기술 활용률",
@@ -9104,7 +11039,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "통합 플랫폼·AI 에이전트",
-   "ref": 257
+   "ref": 289
   },
   {
    "topic": "국내 디지털 마케터의 성과 측정 부담",
@@ -9117,7 +11052,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "교육·고객 사례·영업 지원",
-   "ref": 258
+   "ref": 290
   },
   {
    "topic": "국내 마케터 AI 도구 활용 단계",
@@ -9130,7 +11065,7 @@
    "reliability": "survey",
    "region": "국내",
    "_group": "교육·고객 사례·영업 지원",
-   "ref": 258
+   "ref": 290
   }
  ],
  "gaps": [
@@ -9349,6 +11284,158 @@
   {
    "group": "통합 플랫폼·AI 에이전트",
    "text": "아이보스 원문(i-boss.co.kr)은 봇 차단으로 받지 못해 같은 글의 큐레터(qletter.co.kr) 게시본을 사용함. 스티비 2025 리포트에는 툴 사용률 수치가 없어 stats에 넣지 않음."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "당근비즈니스 사례(오픈 3개월 '댕파티셰' 단골 130명, 샵인샵 '브로우아리아' 하루 1명 신규 고객)는 원문을 받았으나 광고 자동화 기능 언급이 없어 제외(일반 광고·비즈프로필 운영)."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "카페24 PRO 고객 사례 '펫올웨이즈'(구매전환율 22%↑)·'굿무디'(2주 매출 70%↑)·'메리아빈'은 docs.channel.io·cafe24.com 페이지가 JS/보안문자로 본문을 못 받아 제외."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "브이캣 고객 '해나미'(쇼츠 25만 뷰)는 원문 확보했으나 같은 툴 사례가 이미 3건이라 제외."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "브이리뷰 '멀로'는 오픈 3주 3000만원 매출이 리뷰 자동화 도입 전 일이라 제외(도입 효과는 반품률 15%→3%)."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "디스콰이엇 '길라'(광고비 0원 SEO로 DAU 1,500)는 자동화 도구·방식이 원문에 구체적으로 없어 제외."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "사주아이(4개월 100만 유저)는 성장 원인이 X·인플루언서 바이럴(입소문)이라 제외; Mirra(쓰레드 자동화, MRR 400만)는 이오플래닛 로그인 벽으로 본문 확인 못 함."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "크로켓(소셜비즈 DM 자동화 판매량 800%↑)·드림오피스(오모플레이)는 도입 전 규모가 작다는 근거가 없어 제외."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "네이버 AI 케이스 스터디 리포트(스마트플레이스 AI 리뷰·톡톡 AI FAQ)는 사장님 후기는 있으나 도입 전 규모·유입 수치가 없어 제외."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "메타 Advantage+·쿠팡 AI스마트 광고의 국내 신규·1인 셀러 실명 사례는 대행사 블로그(익명 'A사') 외에는 찾지 못함."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "출시 초기 국내 앱이 마케팅 자동화로 첫 사용자를 모은 실명·수치 사례는 찾지 못함(노티플라이 등 고객 사례는 도입 전 규모 미기재)."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "스테이포 기사 부제의 '1년 만에 거래액 14.6배'는 본문상 카페24 PRO 서비스 전체 거래액 수치라 스테이포 결과로 쓰지 않음."
+  },
+  {
+   "group": "콘텐츠·SNS·브랜드 캠페인",
+   "text": "1인 창조기업 실태조사 통계(첫 매출까지 기간, 기업 수)는 자동화와 직접 관련이 없어 통계에서 뺐다: 1인 기업 첫 매출·손익분기 소요 기간; 국내 1인 창조기업 수·업종"
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "달파: 하루 300곳 넘게 맞춤 콜드메일을 보내 미팅 20곳·고객사 5곳을 만들었지만 당시 작업은 수작업이었다. 스티비·센드그리드·Apps Script 자동화 후속 글을 찾지 못해 넣지 않았다(disquiet.io/articles/BrsL0G)."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "볼타(3개월 고객사 400곳)·심플리·서치라이트·리틀리: 엘리펀트컴퍼니(대행사)의 고객 사례 홍보글이라 규격상 뺐다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "세일즈맵의 첫 고객: 콜드콜·콜드메일 수작업으로 얻었고 자동화 근거가 없어 뺐다. 리뉴어스랩(세일즈맵 API+AI 에이전트로 하루 만에 미팅 성사)은 도입 전 규모가 원문에 없어 뺐다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "리텐션 주식회사(Ghost+n8n 콘텐츠 게이팅, 구독자 증가 속도 3배): 회사 단계·규모 근거가 없고 자사 컨설팅 홍보 성격이라 뺐다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "폴라리스쓰리디(SEO로 웹사이트 노출 4→2,071, 16개월)는 창업 8년차, 마크비전 마크폴리오(콜드메일 주 2,000건)와 스마일샤크·그리팅(하이퍼세일즈)은 초기가 아니라 뺐다. 하이퍼세일즈 고객 중 초기 스타트업 사례는 찾지 못했다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "아웃컴 자체 성장(사업 초기 월 매출 25만원→100배 이상)은 자사 아웃바운드 자동화 덕분인지 원문에 없다. 부동산 중개 고객(마케팅비 10억→5천만원, 월 미팅 40건)은 기업명이 없어 뺐다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "국내 프로그래매틱 SEO 초기 사례 중 실명·수치가 있는 것을 찾지 못했다. 브런치·퍼블리·크러커스에서도 실명·수치가 있는 초기 자동화 회고를 찾지 못했다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "수치 공백: 빌딩케어·디어먼데이는 결과 수치가 없고, 와들은 도입 전 수치와 전환 건수가 없다. 인블로그 유료 고객 100곳은 SEO·추천·커뮤니티 합계라 SEO 단독 기여는 모른다. 디르는 아웃컴 인력이 직접 운영한 위탁형이라 순수 툴 자동화 효과와는 다르다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Point3(디스콰이엇 인터뷰)는 콜드메일 수천 통에 답장이 0건이었던 실패 사례라 넣지 않았다(disquiet.io/articles/vxsArd)."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "stats: 국내 초기·소규모 사업자의 마케팅 자동화·유입 채널 통계(표본·조사 주체가 있는 것)를 찾지 못해 비워 두었다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "아웃컴 요금 페이지(outcome.co.kr/pricing)는 JS 렌더링이라 curl로 본문을 받지 못해 pricing을 비워 두었다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "디르(DI/RE)/아웃컴: 3개월간 바이어 3,463명 발굴·대화 53건이지만 계약 0건이고 아웃컴 인력이 직접 운영한 위탁형이라 사례에서 뺐다."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Indie Hackers는 curl에 Cloudflare 차단(403 대기 화면)이 걸려 r.jina.ai 경유로 같은 URL 본문을 받아 저장함(raw14, 첫 줄은 원래 URL)."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Paraform 사례는 Apollo 자사 매거진(툴 회사 글)이라 company_claim; 창업자 본인 글은 찾지 못함. 기간(period) 원문에 없음."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Jeeva.ai의 4개월 100곳은 수동 메일·Slack DM·LinkedIn 바이럴·추천을 합친 수치이며, 자동화 몫은 2개월차 시퀀스 지표(회신율 11%)와 추천 18곳만 분리 가능."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Arcads·Snugly/Liply·TopTool은 성장이 여러 채널(Product Hunt 런칭, 크리에이터, 영업 등) 합산이라 자동화 단독 기여는 원문에서 분리되지 않음."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Snugly/Liply의 MRR은 같은 글 안에서 714달러와 약 588달러가 함께 나와 둘 다 적음. 도입 전 수치(baseline)는 원문에 없음."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Viewings·Growth Catalyst Club·Contando Estrelas·wedissimo는 툴 회사 고객 사례(company_claim). Viewings는 날짜가 게시일만 있고 캠페인 기간·도입 전 수치 없음."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Peach(ReferralHero, 웨잇리스트 947→2,742명/1주)는 2022년 사례라 2023년 이후 기준에서 제외. The Pour Over(SparkLoop)도 2018~ 시작이라 제외."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Rivin.ai(콜드메일 첫 10곳 8.4k달러), Origami(YC, 콜드메일 30일 MRR 1만 달러)는 본문이 수동 작성·발송 중심이라 자동화 기여가 불분명해 제외."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Artisan(8개월 ARR 130만 달러)은 AE 영업 중심, Runway(Zapier 리드 자격심사)는 40명 규모라 제로베이스 기준에서 제외. BePresent(틱톡)는 수동 게시라 제외."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "SaasPedia \"908 유료 가입\" 글은 실제 결과가 아닌 가정 계산·제휴 링크 글이라 제외. LeadFluxA 무료 도구 페이지는 자동화 여부가 원문에 없어 제외."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Lenny's Newsletter 첫 고객 글(How to win your first 10 B2B customers)은 대부분 창업자 네트워크·직접 영업이라 사례로 넣지 않음."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "소상공인 오프라인 매장(식당·미용실)의 자동화로 첫 고객을 만든 2023년 이후 사례는 ManyChat 식당 사례 등이 Cloudflare 차단·날짜 불명이라 확인하지 못함."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "초기·소규모 사업자 대상 마케팅 자동화 통계는 이번 범위에서 원문 확인까지 하지 못해 stats는 비움."
+  },
+  {
+   "group": "교육·고객 사례·영업 지원",
+   "text": "Viewings/QueueForm: 기간·도입 전 수치가 원문에 없고 툴 회사 사례뿐이라 뺐다."
   },
   {
    "group": "데이터·AI 활용",
@@ -9850,6 +11937,46 @@
    "url": "https://zdnet.co.kr/view?no=20251023120811",
    "date": "2025-10-23",
    "reliability": "third_party"
+  },
+  {
+   "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=621451",
+   "date": "2026-01-16",
+   "reliability": "third_party"
+  },
+  {
+   "url": "https://mktstory.cafe24.com/2bdda210-9377-8007-b4bc-f46977d25ea5",
+   "date": "2025-11",
+   "reliability": "vendor_doc"
+  },
+  {
+   "url": "https://edaily.co.kr/News/Read?newsId=04218086645315752",
+   "date": "2026-01-08",
+   "reliability": "third_party"
+  },
+  {
+   "url": "https://www.sedaily.com/article/14064982",
+   "date": "2025-05-13",
+   "reliability": "third_party"
+  },
+  {
+   "url": "https://inblog.ai/ko",
+   "date": "2026-11",
+   "reliability": "vendor_doc"
+  },
+  {
+   "url": "https://inblog.ai/ko/pricing",
+   "date": "2026-11",
+   "reliability": "vendor_doc"
+  },
+  {
+   "url": "https://byline.network/2025/06/16-510/",
+   "date": "2025-06-16",
+   "reliability": "interview"
+  },
+  {
+   "url": "https://blog.outcome.co.kr/gtmengineering-cold-email-automation",
+   "date": "2026-08-26",
+   "reliability": "company_claim"
   },
   {
    "url": "https://m.ddaily.co.kr/page/view/2026030608202697275",
@@ -10859,6 +12986,126 @@
   {
    "url": "https://maxonomy.net/customer/1129",
    "date": "2025-05-08",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://vcat.ai/blog/success-case3",
+   "date": "2025-03-04",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://vcat.ai/blog/success/success-case2",
+   "date": "2025-03-04",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://mt.co.kr/economy/2025/10/01/2025100109340182037",
+   "date": "2025-10-01",
+   "reliability": "third_party"
+  },
+  {
+   "url": "https://www.smartbizn.com/news/articleView.html?idxno=132497",
+   "date": "2026-01-14",
+   "reliability": "interview"
+  },
+  {
+   "url": "https://it.chosun.com/news/articleView.html?idxno=2023092151925",
+   "date": "2025-11-29",
+   "reliability": "interview"
+  },
+  {
+   "url": "https://www.recatch.cc/ko/blog/customer-success-story-mustmove",
+   "date": "2024-04-12",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://blog.event-us.kr/use-case-mindlogic",
+   "date": "2023-10-06",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://blog.event-us.kr/use-case-growthfit",
+   "date": "2023-10-18",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://blog.event-us.kr/startup-roi-event-strategy",
+   "date": "2025-08-12",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://inblog.ai/ko/blog/100-paying-customers-without-ads",
+   "date": "2024-11-14",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://www.recatch.cc/ko/blog/customer-success-story-buildingcare",
+   "date": "2023-10-11",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://blog.stibee.com/emailmarketing-dearmonday/",
+   "date": "2024-04-09",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+   "date": "2024-02-12",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+   "date": "2025-05-19",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+   "date": "2024-03-14",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://www.indiehackers.com/post/400-mrr-in-4-weeks-ac92526ce1",
+   "date": "2024-03-20",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+   "date": "2025-05",
+   "reliability": "interview"
+  },
+  {
+   "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+   "date": "2025-05-25",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+   "date": "2026-03-18",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+   "date": "2024-07-18",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+   "date": "2026-02-24",
+   "reliability": "third_party"
+  },
+  {
+   "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+   "date": "2024-12-04",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+   "date": "2026-02-19",
+   "reliability": "company_claim"
+  },
+  {
+   "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+   "date": "2025-03-25",
    "reliability": "company_claim"
   },
   {

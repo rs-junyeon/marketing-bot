@@ -1,0 +1,787 @@
+{
+ "group": "교육·고객 사례·영업 지원",
+ "tasks": [],
+ "tools": [
+  {
+   "name": "Instantly",
+   "vendor": "Instantly",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "콜드메일 발송·시퀀스",
+    "메일 계정 워밍업",
+    "리드 검색"
+   ],
+   "problem": "여러 발송 계정으로 콜드메일을 스팸함에 빠지지 않게 대량 발송하고 답장을 한곳에서 관리하기 어려움",
+   "users": "초기 B2B 창업자·SDR·아웃바운드 대행사",
+   "features": [
+    "발송 계정 무제한 연결",
+    "자동 워밍업",
+    "B2B 리드 DB",
+    "AI 답장·SDR 에이전트"
+   ],
+   "automation_scope": "계정 워밍업, 시퀀스 발송, 리드 검색·보강",
+   "human_scope": "ICP·리스트 기준, 메일 카피, 답장 이후 미팅·계약",
+   "korea": "한국어 UI·카카오/네이버 연동은 확인하지 못함(이메일 기반이라 국내 사용 자체는 가능)",
+   "pricing": "아웃리치 Growth 월 47달러(무제한 계정·워밍업, 월 5000통), Starter 번들 월 94달러",
+   "evidence": [
+    {
+     "claim": "Growth 요금제는 월 47달러에 발송 계정·워밍업 무제한, 월 5000통이다.",
+     "quote": "Outreach Growth Plan $47/mo Unlimited Email Accounts Unlimited Email Warmup 1000 Uploaded Contacts 5000 Emails Monthly",
+     "url": "https://instantly.ai/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "ColdClicks는 Apollo 리드에 AI 첫 문장을 붙여 Instantly로 발송했다.",
+     "quote": "Once the personalizations are generated, we export them into our email sending tool - Instantly.ai and send away!",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "Gumloop",
+   "vendor": "Gumloop",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "통합 플랫폼·AI 에이전트",
+   "tasks": [
+    "그로스 반복 업무 워크플로",
+    "경쟁사 광고 수집·재작성",
+    "아웃리치 초안"
+   ],
+   "problem": "소수 인원이 인플루언서 소싱·아웃리치·경쟁사 모니터링 같은 반복 그로스 업무를 다 하기 어려움",
+   "users": "소규모 스타트업 그로스 담당·창업자",
+   "features": [
+    "AI 에이전트·워크플로 빌더",
+    "35개+ 모델",
+    "리드 생성·광고 캠페인·SEO 템플릿"
+   ],
+   "automation_scope": "스크래핑, LLM 요약·재작성, Slack 등으로 결과 전달",
+   "human_scope": "워크플로 설계, 결과물 선택·실행(예: 광고 복제 승인)",
+   "korea": "한국어·국내 채널 연동은 확인하지 못함",
+   "pricing": "Pro 월 37달러(14일 무료 체험), Enterprise 별도",
+   "evidence": [
+    {
+     "claim": "Pro 요금제는 월 37달러다.",
+     "quote": "Pro $37 / month Start trial",
+     "url": "https://www.gumloop.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Arcads 창업자는 Gumloop 워크플로 약 100개로 그로스 반복 업무를 돌린다.",
+     "quote": "Romain built about 100 automated workflows in Gumloop that handle repetitive growth tasks including sourcing influencers, drafting outreach messages, generating tweet hooks, and scraping competitor ad libraries daily to surface replication opportunities in Slack.",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview"
+    }
+   ]
+  },
+  {
+   "name": "Arcads",
+   "vendor": "Arcads",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "AI UGC 광고 영상 제작"
+   ],
+   "problem": "광고용 UGC 영상을 사람 배우·촬영 없이 빠르게 여러 개 만들기",
+   "users": "D2C 브랜드·모바일 앱·마케팅 대행사의 퍼포먼스 마케터",
+   "features": [
+    "AI 배우 1000명+ 라이브러리",
+    "자체 아바타 생성",
+    "번역·자막·B롤 편집"
+   ],
+   "automation_scope": "배우 영상·음성 생성, 번역·편집",
+   "human_scope": "스크립트·후크 기획, 소재 선택·광고 집행",
+   "korea": "한국어 지원 여부는 확인하지 못함",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "AI 배우 1000명 이상 라이브러리로 광고를 만든다.",
+     "quote": "Use our library of 1,000+ Captivating AI Actors, or create your own AI Avatar",
+     "url": "https://www.arcads.ai/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "ManyChat",
+   "vendor": "Manychat",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "인스타그램 댓글→DM 자동 응답",
+    "AI 상담·판매 응대"
+   ],
+   "problem": "1인 사업자가 인스타그램 DM·댓글 문의에 실시간으로 답하지 못해 판매를 놓침",
+   "users": "크리에이터·소상공인·이커머스",
+   "features": [
+    "댓글 키워드→DM 자동 발송",
+    "AI 응답 단계",
+    "60개+ 템플릿",
+    "인스타그램·틱톡·왓츠앱·메신저 연결"
+   ],
+   "automation_scope": "댓글 트리거 DM, FAQ·구매 의향 응대, 사람 연결 분기",
+   "human_scope": "흐름·키워드 설계, AI 학습 내용, 복잡한 문의 응대",
+   "korea": "지원 채널은 인스타그램·틱톡·왓츠앱·메신저·텔레그램이며 카카오톡 연동은 없음",
+   "pricing": "무료(월 활성 연락처 25명), Essential 월 14~17달러(250명)부터",
+   "evidence": [
+    {
+     "claim": "무료 요금제는 월 활성 연락처 25명까지다.",
+     "quote": "Start automating for free $0 25 active contacts",
+     "url": "https://manychat.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "연결 가능한 채널은 인스타그램·틱톡·메신저·텔레그램 등이다.",
+     "quote": "Connect any 2 channels and choose from: Instagram, TikTok, Facebook Messenger or Telegram",
+     "url": "https://manychat.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "SparkLoop",
+   "vendor": "SparkLoop",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "뉴스레터 추천(리퍼럴) 프로그램",
+    "뉴스레터 간 유료 추천"
+   ],
+   "problem": "광고비 없이 기존 구독자 추천으로 뉴스레터 구독자를 늘리기",
+   "users": "뉴스레터 운영자·미디어 스타트업",
+   "features": [
+    "리퍼럴 보상 자동 지급",
+    "추천 경품 이벤트",
+    "메일 내 추천 섹션",
+    "ESP 2클릭 연동"
+   ],
+   "automation_scope": "추천 링크·카운트 추적, 디지털·실물 보상 지급",
+   "human_scope": "보상 구조 설계, 뉴스레터 콘텐츠",
+   "korea": "국내 ESP(스티비 등) 연동은 확인하지 못함",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "이메일 플랫폼과 2클릭 연동하고 보상을 자동 지급한다.",
+     "quote": "Integrate with your email platform in two-clicks Automatically fulfil digital and physical rewards",
+     "url": "https://sparkloop.app/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "company": "Paraform",
+   "company_origin": "해외",
+   "tool": "Apollo.io",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "리드 목록 필터링·콜드메일 자동 시퀀스",
+   "stage": "초기 스타트업, 지인 네트워크 영업 이후 콜드 고객 확보 단계",
+   "baseline": "",
+   "period": "",
+   "what": "Apollo 필터로 최근 투자받고 채용 공고가 있는 기업의 담당자 리스트를 만들고 Python 스크립트로 정제했다. 도메인을 추가로 사서 인박스당 하루 40통·7분 간격으로 워밍업하고, 3통(가치 제안→가벼운 팔로업→타이밍 확인) 자동 캠페인 2개를 돌렸다.",
+   "automation_scope": "인텐트 필터 기반 리스트 추출, 시퀀스 자동 발송·발송 간격 조절",
+   "human_scope": "타이밍 중심 ICP 가설, 제목줄·카피 작성, 미팅",
+   "result": "베스트 시퀀스 오픈율 80%, 신규 고객 전환율 5%, 아웃바운드만으로 고객 100곳 이상",
+   "evidence": [
+    {
+     "claim": "초기 스타트업 단계에서 발송량을 시험하는 중이었다.",
+     "quote": "As an early-stage startup, we didn't want to get banned while we refined our volume strategy",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "Apollo로 최근 투자·채용 중인 기업을 걸러 리스트를 만들었다.",
+     "quote": "They used Apollo to filter against the attributes that were most important to them in a customer: mid- to enterprise-level recently-funded accounts with open headcount and new job postings.",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "인박스당 하루 40통으로 시작해 워밍업했다.",
+     "quote": "they started at a low volume: 40 emails per day per inbox",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "리드를 3단계 자동 캠페인 2개에 넣었고 응답의 90%가 팔로업에서 나왔다.",
+     "quote": "John and his team queued up their leads into two automated campaigns, built around three email touchpoints",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "결과: 오픈율 80%, 전환율 5%, 아웃바운드로 100곳 이상.",
+     "quote": "80% open rates on their best sequences 5% conversion rate to new customers 100+ customers secured through outbound alone",
+     "url": "https://www.apollo.io/magazine/how-john-kim-won-his-startup-its-first-100-customers",
+     "date": "2024-02-12",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "company": "Jeeva.ai",
+   "company_origin": "해외",
+   "tool": "Jeeva.ai AI 에이전트(자사) + LinkedIn Sales Navigator",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "수동 검증 후 AI 멀티채널 아웃바운드 시퀀스",
+   "stage": "반쯤 만든 프로토타입, 고객 0명",
+   "baseline": "고객 0명",
+   "period": "4개월(유료 고객 100곳)",
+   "what": "1개월차에 창업자가 피드백 요청 메일·Slack 메시지를 직접 보내 스크립트를 검증했고, 2개월차에 자사 AI 에이전트로 LinkedIn Sales Navigator 프로필 수집→개인화 메일→자동 음성메일→LinkedIn 연결의 4단계 시퀀스를 돌렸다. 4개월차에는 고유 추천 코드와 대시보드로 추천 프로그램을 운영했다.",
+   "automation_scope": "ICP 프로필 수집, 메일 개인화, 자동 음성메일, 추천 코드 추적",
+   "human_scope": "초기 수동 아웃리치로 스크립트 검증, Slack 수동 DM, LinkedIn 게시물, 파트너십",
+   "result": "AI 시퀀스 회신율 11%, 메일 100통당 데모 약 5건; 추천 프로그램으로 18곳; 4개월간 전 채널 합계 유료 고객 100곳",
+   "evidence": [
+    {
+     "claim": "0명에서 4개월 만에 100명, 반쯤 만든 프로토타입에서 시작했다.",
+     "quote": "Going from zero customers to 100 in just four months",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "반쯤 만든 프로토타입에서 유료 고객 100곳으로 키웠다.",
+     "quote": "from a half-built prototype to 100 paying customers and $5M in ARR",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "2개월차에 검증된 스크립트로 AI 다일 시퀀스를 구성했다.",
+     "quote": "With validated scripts from early sales, we structured our outreach into a multi-day sequence using AI",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "시퀀스 지표는 회신율 11%, 메일 100통당 데모 약 5건이다.",
+     "quote": "Reply rate: 11% Demo booking rate: ~5 demos per 100 emails",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "추천 코드·대시보드 기반 추천 프로그램으로 18곳을 얻었다.",
+     "quote": "Implemented a general referral system using unique referral codes, tracked via a custom dashboard. Offered a $50 Amazon gift card per successful customer conversion, resulting in 18 new customers.",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "사람이 먼저 수동으로 검증하고 그다음 자동화했다.",
+     "quote": "Manual before Scale: Do personalized outreach yourself first, then automate once validated.",
+     "url": "https://mucker.com/blog/zero-%E2%86%92-100-the-exact-steps-we-took-to-close-our-first-100-paying-cus",
+     "date": "2025-05-19",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "company": "ColdClicks",
+   "company_origin": "해외",
+   "tool": "Apollo.io + ColdClicks(자사 AI) + Instantly",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "AI 개인화 첫 문장 + 콜드메일 대량 발송",
+   "stage": "공동창업자 2명이 출시 2주차인 부트스트랩 스타트업",
+   "baseline": "고객 1명(직전 주)",
+   "period": "출시 4주",
+   "what": "Apollo.io에서 타깃 리드를 뽑아 자사 툴에 올리면 AI가 리드별로 조사해 메일 첫 문장을 쓰고, 이를 Instantly로 내보내 발송했다. 매주 신규 고객 1명을 목표로 운영했다.",
+   "automation_scope": "리드별 조사·개인화 첫 문장 작성, 대량 발송",
+   "human_scope": "타깃 시장 선정, 본문 오퍼, 데모 진행",
+   "result": "2주차 고객 1→2명, 데모 5건 추가 예약, 출시 4주 만에 MRR 400달러 돌파",
+   "evidence": [
+    {
+     "claim": "2주 전 공동창업자와 부트스트랩으로 출시했다.",
+     "quote": "Two weeks ago my Co-founder and I launched our bootstrapped startup ColdClicks",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "직전 주 1명에서 2명이 됐다.",
+     "quote": "we're now at 2 customers, up from 1 last week",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "Apollo 리드를 툴에 올려 AI가 첫 문장을 쓰게 했다.",
+     "quote": "we generate leads in our target market from a good lead source - Apollo.io. Then, we upload the leads to our tool which researches each lead then uses AI to write the first line of the email.",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "데모 1건을 하고 다음 주 데모 5건을 더 잡았다.",
+     "quote": "Yesterday we ran a product demo, and booked 5 additional demos for next week.",
+     "url": "https://www.indiehackers.com/post/how-we-doubled-our-customers-in-1-week-with-cold-email-e9a92d02a5",
+     "date": "2024-03-14",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "출시 4주 만에 MRR 400달러를 넘겼다.",
+     "quote": "4 weeks after launch, we woke up to see we crossed the 400 MRR mark",
+     "url": "https://www.indiehackers.com/post/400-mrr-in-4-weeks-ac92526ce1",
+     "date": "2024-03-20",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "company": "Arcads",
+   "company_origin": "해외",
+   "tool": "Arcads(자사) + Gumloop + Meta 광고",
+   "area": "광고·프로모션",
+   "task": "자사 AI 광고 소재로 유료 광고 + 그로스 워크플로 자동화",
+   "stage": "2024년 1월 출시, 엔지니어 5명의 부트스트랩 팀",
+   "baseline": "",
+   "period": "약 5개월(ARR 100만 달러)",
+   "what": "자사 툴로 만든 AI UGC 광고를 Meta에 집행하는 것이 주 유입 채널이다. Gumloop 워크플로 약 100개로 인플루언서 소싱, 아웃리치 초안, 트윗 후크 작성, 경쟁사 광고 라이브러리 매일 수집→ChatGPT로 Arcads용 재작성→Slack 전달을 자동화했다.",
+   "automation_scope": "광고 소재 생성, 경쟁사 광고 수집·재작성, 인플루언서 소싱·아웃리치 초안",
+   "human_scope": "복제할 광고 선택(원클릭), 크리에이터 파트너십, 고액 광고주 대상 영업",
+   "result": "출시 첫 주 MRR 약 5000달러, 약 5개월 만에 ARR 100만 달러, 2025년 5월 ARR 600만 달러·유료 고객 약 4000곳",
+   "evidence": [
+    {
+     "claim": "2024년 1월 출시해 그달 첫 고객을 받았다.",
+     "quote": "Arcads launched in January 2024 and onboarded its first customer that month",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview"
+    },
+    {
+     "claim": "출시 첫 주 MRR 약 5000달러였다.",
+     "quote": "Romain recalls roughly $5,000 in MRR within the first week after launch",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview"
+    },
+    {
+     "claim": "출시 약 5개월 만인 2024년 6월 ARR 100만 달러를 넘었다.",
+     "quote": "Arcads crossed $1 million ARR in June 2024, roughly five months after launch",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview"
+    },
+    {
+     "claim": "2025년 5월 ARR 600만 달러, 유료 고객 약 4000곳, 엔지니어 5명이다.",
+     "quote": "with about 4,000 paid customers and a team of 5 engineers",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview"
+    },
+    {
+     "claim": "주 유입 채널은 자사 툴로 만든 Meta 광고다.",
+     "quote": "Romain's primary acquisition channel is running paid ads on Meta using Arcads itself to create the ad creatives.",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview"
+    },
+    {
+     "claim": "경쟁사 광고를 매일 수집·재작성해 Slack에 원클릭 복제 버튼과 함께 보낸다.",
+     "quote": "scrapes the Facebook ads library for competitor ads every day, pulls transcripts, rewrites the copy for Arcads using ChatGPT, and sends the result directly to Slack with a one-click replication button",
+     "url": "https://getlatka.com/companies/arcads.ai/interviews/arcads-romain-torres-2025-07",
+     "date": "2025-05",
+     "reliability": "interview"
+    }
+   ]
+  },
+  {
+   "company": "TopTool(인디 개발자 Dan의 디렉터리 사이트)",
+   "company_origin": "해외",
+   "tool": "Apify + ChatGPT(LLM) 자동 게시 파이프라인",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "AI 프로그래매틱·다국어 SEO 페이지 대량 생성",
+   "stage": "1인 사이드 프로젝트(스타트업 디렉터리)",
+   "baseline": "출시 직후 유입 거의 없음",
+   "period": "수개월 후 검색 유입 급증",
+   "what": "Apify 스크레이퍼로 Product Hunt 런칭을 매일 수집하고 LLM으로 구조화 콘텐츠(JSON)를 만든 뒤 10개 언어로 번역해 SEO 페이지를 자동 게시했다. 사이트 자체는 Product Hunt에 직접 런칭했다.",
+   "automation_scope": "매일 스크래핑, LLM 콘텐츠 생성, 10개 언어 번역, 페이지 일괄 게시",
+   "human_scope": "Product Hunt 런칭, 키워드 성과 확인, 유료 등록 수익화",
+   "result": "구글 월 클릭 최고 20만, 이후 월 약 5만 유지; 스타트업 유료 등록으로 월 100~500달러",
+   "evidence": [
+    {
+     "claim": "과거 1인 프로젝트로 AI SEO 엔진을 만들었다.",
+     "quote": "I'm breaking down one of my past projects where I built an AI-powered SEO engine that peaked at 200,000 monthly clicks from Google",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "처음에는 아무 일도 일어나지 않았다.",
+     "quote": "At first, nothing really happened",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "Product Hunt 런칭을 수집해 LLM으로 만들고 10개 언어로 자동 게시했다.",
+     "quote": "Scrapes Product Hunt launches Uses AI (LLM) to generate content in a structured JSON format Translates it into 10 languages And then publishes SEO-optimized pages automatically",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "몇 달 뒤 한 키워드의 노출이 폭증했다.",
+     "quote": "A few months in, I checked Google Search Console and noticed one of the keywords had exploded in impressions",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "현재도 월 약 5만 클릭, 월 100~500달러 수익.",
+     "quote": "Today, it's still getting around 50,000 clicks/month",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "유료 등록으로 월 100~500달러를 벌었다.",
+     "quote": "I started earning $100–$500/month",
+     "url": "https://www.indiehackers.com/post/how-i-used-ai-seo-to-hit-200k-monthly-clicks-from-google-side-project-breakdown-342edb179d",
+     "date": "2025-05-25",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "company": "KündigungExpress",
+   "company_origin": "해외",
+   "tool": "프로그래매틱 SEO(업체별 템플릿 랜딩 페이지)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "업체별 랜딩 페이지 대량 생성(B2C 해지 서류 서비스)",
+   "stage": "2026년 1월 만든 건당 4.99유로 B2C 서비스",
+   "baseline": "1월 검색 노출 222회",
+   "period": "10주",
+   "what": "독일 계약 해지서 PDF 생성 서비스로, 설명 글 대신 McFit·Telekom 등 약 65개 업체별 랜딩 페이지에 해지 주소·법정 기한을 미리 채워 두고 카테고리 허브와 내부 링크로 묶었다. 광고·SNS·링크 빌딩은 하지 않았다.",
+   "automation_scope": "업체 데이터가 채워진 템플릿 페이지 생성, 서류 PDF 자동 생성",
+   "human_scope": "검색 의도에 맞춘 페이지 제목·구조 설계, 업체 데이터 정리",
+   "result": "10주 누적 노출 8,594회, 클릭 35회, 유료 고객 2명(대부분 2~3페이지 순위라 클릭률 낮음)",
+   "evidence": [
+    {
+     "claim": "2026년 1월 만든 해지서 생성 툴이다.",
+     "quote": "I built KündigungExpress in january 2026. It's a tool that generates cancellation letters for German contracts as a PDF",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "1월 노출은 222회였다.",
+     "quote": "January: 222 impressions. Barely anything.",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "0에서 10주 만에 노출 8,500회.",
+     "quote": "from zero to 8,500 search impressions in 10 weeks",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "업체별 랜딩 페이지에 해지 주소·기한을 미리 채웠다.",
+     "quote": "Each page is pre-loaded with that provider's cancellation address, legal deadline, and contract type.",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "현재 노출 8,594회, 클릭 35회, 유료 고객 2명.",
+     "quote": "8,594 impressions, 35 clicks, 2 real paying customers",
+     "url": "https://www.indiehackers.com/post/from-0-to-8-500-impressions-in-10-weeks-with-programmatic-seo-what-worked-and-what-didnt-3f5ed16b58",
+     "date": "2026-03-18",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "company": "Wimp Decaf Coffee Co.",
+   "company_origin": "해외",
+   "tool": "Klaviyo",
+   "area": "CRM·멤버십·리텐션",
+   "task": "출시 전 웨잇리스트·환영 플로우로 첫 구매 확보",
+   "stage": "3인 부트스트랩 디카페인 커피 D2C 브랜드, 판매 시작 전",
+   "baseline": "구독자 0명",
+   "period": "약 6주(7/5 웨잇리스트 → 8/16 스토어 오픈)",
+   "what": "구매 기능 없이 웨잇리스트 폼만 있는 사이트와 Klaviyo를 먼저 열어 환영 플로우로 가입자를 받고 점진 발송으로 발송 도메인을 데웠다. 스토어 오픈 날 전체 리스트에 캠페인을 보냈고 제목줄 A/B 테스트를 했다.",
+   "automation_scope": "웨잇리스트 가입 수집, 환영 플로우 자동 발송, 점진 발송, A/B 테스트",
+   "human_scope": "지인·트윗으로 초기 유입, 캠페인 메일 작성, 제목줄 판단",
+   "result": "첫 주 구독자 202명, 스토어 오픈일 구독자 498명·주문 76건, 오픈일 매출의 58%를 Klaviyo 기여로 집계, 광고비 0달러",
+   "evidence": [
+    {
+     "claim": "시작 시점 구독자는 0명이었다.",
+     "quote": "0 subscribers to start 41 new subscribers on launch day (mostly friends and family) 202 new subscribers in the first week",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "7월 5일 구매 기능 없는 웨잇리스트 사이트를 열었다.",
+     "quote": "On July 5, Wimp launched their lightweight website—with no option to purchase yet, just a waitlist sign-up form and product education—and their Klaviyo account.",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "8월 16일 쇼피파이 스토어를 열었다.",
+     "quote": "On August 16, Wimp launched their Shopify store with 5 products",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "3인 팀이며 부트스트랩이라 전업자가 없다.",
+     "quote": "The 3-person team has tons of exciting, creative ideas for email and beyond—but as they’re currently bootstrapped, none of them can focus on the business full-time yet.",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "웨잇리스트 가입 후 플로우로 메일을 보내고 점진 발송을 했다.",
+     "quote": "we could send them an email through a flow, and then also be able to track the best time to send emails and start that process of gradual sending",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "오픈일 주문 76건, 구독자 498명, 매출 58%가 Klaviyo 기여.",
+     "quote": "76 orders on ecommerce launch day 20 first-time purchasers bought coffee subscriptions in first week $0 spent on paid advertising so far Klaviyo activity by the numbers 498 email subscribers on ecommerce launch day 58% of launch day ecommerce revenue attributed to Klaviyo",
+     "url": "https://www.klaviyo.com/blog/startup-diaries-wimp-decaf",
+     "date": "2024-07-18",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "company": "Snugly·Liply(1인 개발자 Oliver Henry의 앱)",
+   "company_origin": "해외",
+   "tool": "OpenClaw 에이전트(Larry) + OpenAI gpt-image-1.5 + Postiz",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "AI 에이전트의 틱톡 슬라이드쇼 대량 제작·예약",
+   "stage": "본업 시작 직전 출시한 1인 개발 앱 2개, 홍보할 시간 없음",
+   "baseline": "",
+   "period": "5일(1주 미만)",
+   "what": "AI 에이전트가 후크 조사, 6장 슬라이드 이미지 생성(같은 방 구조를 고정한 프롬프트), 캡션 작성, Postiz API로 틱톡 임시보관함 업로드까지 하고, 성과·RevenueCat 지표를 메모리에 기록해 다음 후크에 반영한다. 개발자는 음악을 넣고 게시만 한다.",
+   "automation_scope": "후크 리서치, 이미지·캡션 생성, 업로드, 성과 기록·학습",
+   "human_scope": "WhatsApp으로 방향 지시, 음악 추가·게시(게시물당 약 60초)",
+   "result": "틱톡 조회 50만+, 두 앱 유료 구독자 108명, MRR 약 588달러(본문 다른 곳 714달러), 게시물당 API 비용 약 0.5달러",
+   "evidence": [
+    {
+     "claim": "본업 시작 직전 앱을 출시했다.",
+     "quote": "He launched these right before starting his job at RevenueCat.",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "에이전트 없이는 홍보를 못 했을 것이다.",
+     "quote": "Without Larry, these apps wouldn’t be getting promoted at all. He doesn’t have the time.",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "지난 5일간 틱톡 조회 50만 이상.",
+     "quote": "And in the last 5 days, Larry has generated over 500,000 TikTok views",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "유료 구독자 108명, MRR 약 588달러, 게시물당 0.5달러·60초.",
+     "quote": "108 paying subscribers across his two apps ~$588/month MRR and growing Cost per post: roughly $0.50 in API calls Time Oliver spends per post: about 60 seconds to add music and publish",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "Postiz API로 틱톡 임시보관함에 올린다.",
+     "quote": "Larry posts everything through Postiz - a social media scheduling tool with an API.",
+     "url": "https://gameplaydev.substack.com/p/how-his-openclaw-agent-larry-got",
+     "date": "2026-02-24",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "company": "wedissimo",
+   "company_origin": "해외",
+   "tool": "Zapier + ChatGPT + ActiveCampaign",
+   "area": "통합 플랫폼·AI 에이전트",
+   "task": "상담 예약 후 리드 등록·후속 메일 자동화",
+   "stage": "직원 2~10명의 런던 웨딩 마켓플레이스 스타트업",
+   "baseline": "첫 상담→예약 전환율 30%",
+   "period": "9개월",
+   "what": "커플·업체가 상담을 예약하면 Zap이 ActiveCampaign에 연락처를 만들고, 웹사이트 문의는 ChatGPT가 판단해 필요할 때만 WhatsApp 메시지를 보낸다. 통화는 Fireflies로 요약하고 통화 후 맞춤 후속 메일을 정해진 간격으로 자동 발송한다.",
+   "automation_scope": "CRM 등록, 문의 분류·WhatsApp 발송, 통화 요약, 후속 메일 시퀀스",
+   "human_scope": "상담 통화, 워크플로 설계",
+   "result": "첫 상담→예약 전환율 30%→50%, 9개월간 900% 성장(회사는 자동화를 성장 요인 중 하나로 언급), 통화 후 메일 작성 업무 100% 제거",
+   "evidence": [
+    {
+     "claim": "회사 규모는 2~10명이다.",
+     "quote": "Company size: 2-10",
+     "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+     "date": "2024-12-04",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "9개월 만에 900% 성장했고 후속 업무 자동화가 핵심이었다.",
+     "quote": "In just nine months, wedissimo grew an incredible 900%—and integral to that growth was automating their customer follow-up work with Zapier.",
+     "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+     "date": "2024-12-04",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "통화 후 맞춤 육성 메일을 정해진 간격으로 보낸다.",
+     "quote": "Zapier triggers a series of personalized nurture emails from ActiveCampaign sent at pre-defined intervals.",
+     "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+     "date": "2024-12-04",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "상담→예약 전환율이 30%에서 50%로 올랐다.",
+     "quote": "from initial calls to bookings soar from 30% to 50%",
+     "url": "https://zapier.com/blog/wedissimo-grows-900-percent-with-zapier",
+     "date": "2024-12-04",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "company": "Contando Estrelas",
+   "company_origin": "해외",
+   "tool": "ManyChat",
+   "area": "데이터·AI 활용",
+   "task": "인스타그램 댓글→DM 자동 응답·AI 판매 응대",
+   "stage": "수공예품·온라인 강의를 파는 1인(+파트너 1명) 사업자, 기술 지식 없음",
+   "baseline": "월 판매 10~15건, 게시물 댓글 약 15개",
+   "period": "30일",
+   "what": "릴스에 키워드 댓글을 달면 무료 파일을 DM으로 보내는 자동 응답을 걸고, 제품 문의는 AI가 답하며 구매 의향을 가려 필요한 경우만 사람에게 넘겼다. ManyChat 픽셀로 전환을 추적했다.",
+   "automation_scope": "댓글 트리거 DM, FAQ·판매 응대, 구매 의향 분류, 전환 추적",
+   "human_scope": "게시물 기획, AI 응답 학습, 넘겨받은 문의 응대",
+   "result": "30일간 판매 61건(이전 월 10~15건), 판매 400% 증가, 리드→판매 전환 12%, 게시물 댓글 15→500+",
+   "evidence": [
+    {
+     "claim": "혼자서 수공예품·강의를 판매한다.",
+     "quote": "Dani Maya created Contando Estrelas to sell handmade products and digital courses — all by herself.",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "댓글 하나가 DM을 트리거해 댓글이 15개에서 500개 이상이 됐다.",
+     "quote": "She went from 15 comments to over 500 overnight — all because one comment triggered a DM that did the work.",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "구매 준비된 사람은 흐름에 남고 필요할 때만 사람에게 연결했다.",
+     "quote": "People ready to buy stayed in the flow, and anyone who needed extra help was routed to human support only when necessary.",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "월 10~15건이던 판매가 30일에 61건이 됐다.",
+     "quote": "She replaced it with 61 sales in just 30 days.",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "이전 판매는 월 10~15건이었다.",
+     "quote": "10 to 15 sales per month",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "30일 판매 400% 증가, 리드→판매 전환 12%.",
+     "quote": "400% growth in sales 12% lead-to-sale conversion rate",
+     "url": "https://manychat.com/blog/success-stories/contando-estrelas/",
+     "date": "2026-02-19",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "company": "Growth Catalyst Club",
+   "company_origin": "해외",
+   "tool": "beehiiv + SparkLoop + Facebook 광고",
+   "area": "광고·프로모션",
+   "task": "추천 프로그램·광고로 뉴스레터 구독자 확보·수익화",
+   "stage": "2023년 창간한 1인 뉴스레터, 첫 호 구독자 36명",
+   "baseline": "2개월 후 구독자 560명·매출 0달러",
+   "period": "14개월(매각까지)",
+   "what": "beehiiv로 옮긴 뒤 Facebook 광고로 구독자를 사고, SparkLoop 추천(리퍼럴)·beehiiv Boosts·광고 네트워크로 구독자 획득비를 수익으로 상쇄했다.",
+   "automation_scope": "추천 보상·추적, 광고 게재·수익화 도구",
+   "human_scope": "광고 소재 인사이트 콘텐츠 작성, 광고 집행 판단",
+   "result": "구독자당 비용 1.2~1.6달러, 일 매출 70~250달러, 월 200% 성장, 광고비 전액 상쇄, 14개월 만에 Acquire.com에서 매각",
+   "evidence": [
+    {
+     "claim": "2023년 창간, 첫 호 구독자 36명.",
+     "quote": "His first issue went to just 36 subscribers",
+     "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+     "date": "2025-03-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "2개월 후 구독자 560명, 매출 0.",
+     "quote": "After two months, Andy had 560 subscribers and $0 revenue.",
+     "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+     "date": "2025-03-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "추천(SparkLoop)·유료 광고·오가닉으로 성장했다.",
+     "quote": "An ecosystem that supported growth via referrals (SparkLoop), paid ads, and organic reach (Twitter, Reddit)",
+     "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+     "date": "2025-03-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "결과: 구독자당 1.2~1.6달러, 월 200% 성장, 14개월 만에 매각.",
+     "quote": "Subscriber cost dropped to $1.20–$1.60 Grew revenue to $70–$250/day via monetization Hit 200% month-over-month growth Fully offset ad spend through newsletter revenue Sold Growth Catalyst Club via Acquire.com in just 14 months",
+     "url": "https://beehiiv.com/case-studies/growth-catalyst-club",
+     "date": "2025-03-25",
+     "reliability": "company_claim"
+    }
+   ]
+  }
+ ],
+ "stats": [],
+ "gaps": [
+  "Indie Hackers는 curl에 Cloudflare 차단(403 대기 화면)이 걸려 r.jina.ai 경유로 같은 URL 본문을 받아 저장함(raw14, 첫 줄은 원래 URL).",
+  "Paraform 사례는 Apollo 자사 매거진(툴 회사 글)이라 company_claim; 창업자 본인 글은 찾지 못함. 기간(period) 원문에 없음.",
+  "Jeeva.ai의 4개월 100곳은 수동 메일·Slack DM·LinkedIn 바이럴·추천을 합친 수치이며, 자동화 몫은 2개월차 시퀀스 지표(회신율 11%)와 추천 18곳만 분리 가능.",
+  "Arcads·Snugly/Liply·TopTool은 성장이 여러 채널(Product Hunt 런칭, 크리에이터, 영업 등) 합산이라 자동화 단독 기여는 원문에서 분리되지 않음.",
+  "Snugly/Liply의 MRR은 같은 글 안에서 714달러와 약 588달러가 함께 나와 둘 다 적음. 도입 전 수치(baseline)는 원문에 없음.",
+  "Viewings·Growth Catalyst Club·Contando Estrelas·wedissimo는 툴 회사 고객 사례(company_claim). Viewings는 날짜가 게시일만 있고 캠페인 기간·도입 전 수치 없음.",
+  "Peach(ReferralHero, 웨잇리스트 947→2,742명/1주)는 2022년 사례라 2023년 이후 기준에서 제외. The Pour Over(SparkLoop)도 2018~ 시작이라 제외.",
+  "Rivin.ai(콜드메일 첫 10곳 8.4k달러), Origami(YC, 콜드메일 30일 MRR 1만 달러)는 본문이 수동 작성·발송 중심이라 자동화 기여가 불분명해 제외.",
+  "Artisan(8개월 ARR 130만 달러)은 AE 영업 중심, Runway(Zapier 리드 자격심사)는 40명 규모라 제로베이스 기준에서 제외. BePresent(틱톡)는 수동 게시라 제외.",
+  "SaasPedia \"908 유료 가입\" 글은 실제 결과가 아닌 가정 계산·제휴 링크 글이라 제외. LeadFluxA 무료 도구 페이지는 자동화 여부가 원문에 없어 제외.",
+  "Lenny's Newsletter 첫 고객 글(How to win your first 10 B2B customers)은 대부분 창업자 네트워크·직접 영업이라 사례로 넣지 않음.",
+  "소상공인 오프라인 매장(식당·미용실)의 자동화로 첫 고객을 만든 2023년 이후 사례는 ManyChat 식당 사례 등이 Cloudflare 차단·날짜 불명이라 확인하지 못함.",
+  "초기·소규모 사업자 대상 마케팅 자동화 통계는 이번 범위에서 원문 확인까지 하지 못해 stats는 비움.",
+  "Viewings/QueueForm: 기간·도입 전 수치가 원문에 없고 툴 회사 사례뿐이라 뺐다."
+ ]
+}
