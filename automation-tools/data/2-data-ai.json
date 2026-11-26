@@ -1,0 +1,975 @@
+{
+ "group": "데이터·AI 활용",
+ "tasks": [
+  {
+   "task": "경쟁사 모니터링·시장 조사",
+   "problem": "경쟁사 웹·가격·메시지 변화와 시장 수요를 사람이 매번 찾아 정리하기 어렵고, 영업 현장까지 전달이 늦다.",
+   "how": "웹·검색·리뷰·통화 기록 등에서 경쟁 정보를 자동 수집하고 AI가 요약·배틀카드 초안을 만들어 슬랙·CRM 등 업무 도구로 보낸다. 생성형 AI 이후에는 MCP·에이전트로 데이터에 직접 질문하고 정기 리포트를 예약 실행하는 방식이 늘었다.",
+   "automation_scope": "정보 수집, 변화 감지, 요약·초안 작성, 거래별 팁 자동 발송, 정기 리포트 생성",
+   "human_scope": "추적 대상·질문 설정, 초안 검수, 포지셔닝·전략 판단",
+   "tools": [
+    "Klue",
+    "Similarweb AI Agents",
+    "네이버 데이터랩",
+    "썸트렌드"
+   ]
+  },
+  {
+   "task": "소셜 리스닝·트렌드·리뷰 분석",
+   "problem": "SNS·뉴스·커뮤니티·리뷰에 쌓이는 언급량이 많아 감성·이슈·위기 징후를 사람이 다 읽을 수 없다.",
+   "how": "키워드·브랜드 기준으로 언급을 수집하고 감성 분석·연관어·키워드 추출을 자동으로 돌려 대시보드와 알림으로 보여준다. 최근에는 수집된 원천 데이터 위에서 AI가 질문에 답하거나 주간 브리핑을 만든다.",
+   "automation_scope": "언급 수집, 긍·부정 분류, 연관어·주제 묶음, 실시간 알림, 주간 리포트 생성",
+   "human_scope": "모니터링 키워드 설계, 이슈 해석과 대응 결정, 분석 결과 검증",
+   "tools": [
+    "썸트렌드",
+    "Brandwatch",
+    "크리마 리뷰 AI 분석",
+    "네이버 데이터랩"
+   ]
+  },
+  {
+   "task": "고객 데이터 통합·세분화(CDP·행동 분석)",
+   "problem": "웹·앱·DB에 흩어진 고객 데이터를 묶지 못해 세그먼트를 만들고 전환 병목을 찾는 데 개발·분석 인력이 든다.",
+   "how": "SDK·연동으로 행동·구매 데이터를 모아 고객 프로필을 통합하고, 조건 조합 또는 AI 예측으로 세그먼트를 자동 갱신한다. 퍼널·실험 분석으로 이탈 지점을 찾는다.",
+   "automation_scope": "데이터 수집·통합, 세그먼트 매일 갱신, 가능성 높은 고객 자동 제안, 퍼널·실험 지표 계산",
+   "human_scope": "지표·세그먼트 정의, 실험 가설 설계, 결과 해석과 액션 결정",
+   "tools": [
+    "Twilio Segment",
+    "Mixpanel",
+    "데이터라이즈",
+    "빅인(Bigin)"
+   ]
+  },
+  {
+   "task": "개인화 추천(상품·콘텐츠)",
+   "problem": "모든 방문자에게 같은 상품·콘텐츠를 보여주면 전환율이 낮고, 사람이 매번 큐레이션하기 어렵다.",
+   "how": "상품 유사도·고객 행동·이미지·검색어 기반 알고리즘이나 API로 추천 영역을 자동 구성하고, A/B 테스트로 성과를 비교한다.",
+   "automation_scope": "사용자별 추천 목록 생성, 노출 순서 최적화, 성과 집계",
+   "human_scope": "추천 영역·알고리즘 선택, 전략 상품 배치, A/B 결과 판단",
+   "tools": [
+    "그루비(Groobee)",
+    "Recombee",
+    "데이터라이즈"
+   ]
+  },
+  {
+   "task": "챗봇·AI 상담(고객 문의·구매 안내)",
+   "problem": "배송·주문·제품 문의가 반복되고 상담 인력이 한정돼 응답이 늦어진다.",
+   "how": "지식베이스·규칙·워크플로를 연결한 AI 에이전트가 1차 응대와 실제 처리(조회·접수)를 하고, 고위험·복잡 문의는 사람에게 넘긴다. 생성형 AI 이후 시나리오형 챗봇에서 스스로 판단하는 에이전트로 바뀌고, 해결 건당 과금이 생겼다.",
+   "automation_scope": "문의 이해·답변, 주문·배송 조회, 교환·반품 접수, 제품 추천, 상담 분류·이관",
+   "human_scope": "지식·규칙 작성과 갱신, 고위험 문의 직접 응대, 승인, 오답 모니터링",
+   "tools": [
+    "채널톡 ALF",
+    "해피톡 AI 에이전트",
+    "Intercom Fin",
+    "Zendesk AI Agents"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "name": "썸트렌드",
+   "vendor": "바이브컴퍼니",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "소셜 리스닝·트렌드·리뷰 분석",
+    "경쟁사 모니터링·시장 조사"
+   ],
+   "problem": "소셜·뉴스 언급 데이터를 모아도 해석과 정리에 사람 시간이 많이 든다.",
+   "users": "브랜드·마케팅 담당자, 리서치 담당자",
+   "features": [
+    "소셜·뉴스 언급량 추이",
+    "연관어 클러스터 분석",
+    "긍·부정 감성 추이",
+    "AI 분석 답변",
+    "MCP 연결·작업 예약"
+   ],
+   "automation_scope": "언급 수집·계량 지표 생성, AI 답변 생성, 예약된 주간 리포트 생성",
+   "human_scope": "분석 범위·프롬프트 설정, 결과 해석과 마케팅 액션 결정",
+   "korea": "국내 서비스, 한국어. 국내 소셜·뉴스 데이터 대상.",
+   "pricing": "크레딧 차감 방식(가입 시 500 크레딧 제공)",
+   "evidence": [
+    {
+     "claim": "썸트렌드 클라우드에 원천 데이터 기반 AI 분석 기능을 넣었다.",
+     "quote": "바이브컴퍼니는 썸트렌드 AI가 웹 검색 기반 요약이 아니라 분석 범위 내 원천 데이터를 기반으로 답변을 만든다고 설명했다.",
+     "url": "https://m.ddaily.co.kr/page/view/2026030608202697275",
+     "date": "2026-03-06",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "답변과 함께 언급량·연관어·감성 지표를 함께 제공한다.",
+     "quote": "답변과 함께 실시간 언급량 변화, 연관어 클러스터 분석, 긍·부정 감성 추이 등 계량 지표를 동시에 제공해",
+     "url": "https://m.ddaily.co.kr/page/view/2026030608202697275",
+     "date": "2026-03-06",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "가입 시 500 크레딧을 준다.",
+     "quote": "가입하면 500 크레딧을 드립니다",
+     "url": "https://apps.some.co.kr/cases/20261102-nmgi",
+     "date": "2026-11-02",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "네이버 데이터랩",
+   "vendor": "네이버",
+   "origin": "국내",
+   "type": "API",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "경쟁사 모니터링·시장 조사",
+    "소셜 리스닝·트렌드·리뷰 분석"
+   ],
+   "problem": "국내 검색 수요 변화를 직접 측정하기 어렵다.",
+   "users": "마케터, 상품기획자, 개발자(API 연동)",
+   "features": [
+    "통합검색어 트렌드",
+    "연령·성별·기기별 세분화",
+    "주제어 묶음 합산 조회",
+    "쇼핑인사이트"
+   ],
+   "automation_scope": "검색 추이 조회를 API로 자동 수집",
+   "human_scope": "주제어·검색어 묶음 설계, 결과 해석",
+   "korea": "네이버 검색 데이터 기반 국내 서비스, 한국어.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "네이버 통합검색 검색어를 연령·성별·기기별로 나눠 조회하는 API다.",
+     "quote": "통합검색어 트렌드는 네이버 통합검색에서 발생하는 검색어를 연령별, 성별, 기기별(PC, 모바일)로 세분화해서 조회할 수 있는 API입니다.",
+     "url": "https://developers.naver.com/products/service-api/datalab/datalab.md",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "크리마 리뷰 AI 분석",
+   "vendor": "크리마",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "소셜 리스닝·트렌드·리뷰 분석"
+   ],
+   "problem": "자사몰에 쌓인 대량 리뷰에서 구매 고려 요인과 불만을 빠르게 찾기 어렵다.",
+   "users": "자사몰 운영자, CS팀, 상품기획(대기업~소호몰)",
+   "features": [
+    "리뷰 긍정/중립/부정 분류",
+    "카테고리별 주요 키워드 분석",
+    "AI 리뷰 요약"
+   ],
+   "automation_scope": "리뷰 감성 분류, 키워드별 분석·시각화, 요약",
+   "human_scope": "부정 리뷰 대응, 상품 개선 결정",
+   "korea": "국내 서비스, 한국어. 패션·뷰티 카테고리 우선 지원.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "리뷰 데이터를 AI로 분석·시각화하는 서비스다.",
+     "quote": "‘AI 리뷰 분석’은 고객 리뷰 데이터를 CREMA AI를 통해 분석하고, 시각화하여 제공하는 서비스입니다.",
+     "url": "https://www.cre.ma/blog/crema-review-ai",
+     "date": "2023-02-01",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "리뷰 본문의 긍정/부정을 빠르게 파악해 불만 리뷰에 대응할 수 있다.",
+     "quote": "‘AI 리뷰 분석’을 통해 리뷰 본문의 긍정/부정 여부를 빠르게 파악할 수 있으며, 특히 불만 리뷰를 빠르게 캐치하고 대응할 수 있습니다.",
+     "url": "https://www.cre.ma/blog/crema-review-ai",
+     "date": "2023-02-01",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "현재 패션·뷰티 카테고리만 지원한다.",
+     "quote": "현재는 패션, 뷰티 카테고리 대상으로만 AI 리뷰 분석이 가능하며",
+     "url": "https://www.cre.ma/blog/crema-review-ai",
+     "date": "2023-02-01",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "데이터라이즈",
+   "vendor": "데이터라이즈",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "고객 데이터 통합·세분화(CDP·행동 분석)",
+    "개인화 추천(상품·콘텐츠)"
+   ],
+   "problem": "이커머스 마케터가 적은 인원으로 진단·타겟팅·실행·성과 분석을 모두 해야 한다.",
+   "users": "이커머스 자사몰 마케터(소수 인원 팀)",
+   "features": [
+    "AI 진단·타겟팅",
+    "CRM 캠페인",
+    "팝업·온사이트 개인화",
+    "상품 검색·진열",
+    "캠페인 성과 원인 분석"
+   ],
+   "automation_scope": "타겟 추출, 캠페인 실행, 성과 분석과 개선점 제안",
+   "human_scope": "캠페인 목표·혜택 설계, 개선안 채택",
+   "korea": "국내 서비스, 한국어. 일본 Shopify·LINE 연동 사례 있음.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "진단부터 타겟팅·실행까지 AI가 지원한다고 소개한다.",
+     "quote": "진단부터 타겟팅, 실행까지 모든 과정에서 AI가 함께 합니다. 마케터 한 명으로도 훨씬 넓고 정교한 마케팅이 가능합니다.",
+     "url": "https://www.datarize.ai/",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "캠페인 결과를 소재·시간대·회차별로 분석해 개선점을 제안한다.",
+     "quote": "캠페인 결과를 소재, 시간대, 회차별로 분석해, 원인을 가려내고 다음 마케팅 개선점을 제안합니다.",
+     "url": "https://www.datarize.ai/",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "빅인(Bigin)",
+   "vendor": "빅인사이트",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "고객 데이터 통합·세분화(CDP·행동 분석)"
+   ],
+   "problem": "행동 데이터와 회원 DB를 조합한 정밀 타겟을 직접 만들고 관리하기 어렵다.",
+   "users": "커머스 마케터(웹·앱)",
+   "features": [
+    "SDK 행동 수집 + DB 연동",
+    "속성 무제한 조합 타겟",
+    "타겟 매일 자동 갱신",
+    "AI 스마트 그룹",
+    "AI 상품추천",
+    "전담 운영 지원"
+   ],
+   "automation_scope": "타겟 그룹 매일 갱신, 가능성 높은 고객 자동 제안",
+   "human_scope": "타겟 조건·프로모션 설계(전담인력이 설계·월간 리포트 지원)",
+   "korea": "국내 서비스, 한국어.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "타겟이 매일 자동 갱신되고 AI가 가능성 높은 고객을 제안한다.",
+     "quote": "타겟은 매일 자동 갱신 되고, AI 스마트 그룹 이 가능성 높은 고객을 먼저 제안합니다.",
+     "url": "https://bigin.io/",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "SDK 행동 정보와 DB 고객 정보를 조합한다.",
+     "quote": "SDK로 수집한 행동 정보와 DB로 연동한 고객 정보를 제한 없이 조합 합니다.",
+     "url": "https://bigin.io/",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "그루비(Groobee)",
+   "vendor": "플래티어",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "개인화 추천(상품·콘텐츠)"
+   ],
+   "problem": "사이트 방문자 취향에 맞는 상품을 사람이 큐레이션하기 어렵다.",
+   "users": "커머스·패션 자사몰 운영자",
+   "features": [
+    "상품 기반·고객 행동 기반 추천",
+    "이미지 기반 유사 상품 추천",
+    "검색어 추천 알고리즘",
+    "개인화 타겟팅·메시징"
+   ],
+   "automation_scope": "알고리즘별 추천 영역 자동 구성, 매출 기여 집계",
+   "human_scope": "추천 영역 위치·알고리즘 선택",
+   "korea": "국내 서비스, 한국어.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "고객 행동 기반 알고리즘은 관심사가 비슷한 고객이 선호한 상품을 추천한다.",
+     "quote": "고객 행동 기반 알고리즘은 현재 고객과 관심사가 비슷한 고객들이 선호한 상품을 추천합니다.",
+     "url": "https://groobee.net/blog/%ea%b0%9c%ec%9d%b8%ed%99%94-%ec%b7%a8%ed%96%a5-%ed%81%90%eb%a0%88%ec%9d%b4%ec%85%98-%ec%a0%9c%eb%8c%80%eb%a1%9c-%ed%95%b4%eb%82%b4%eb%8a%94-ai-%ec%83%81%ed%92%88%ec%b6%94%ec%b2%9c-%ec%82%ac%eb%a1%80/",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "채널톡 ALF",
+   "vendor": "채널코퍼레이션",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "챗봇·AI 상담(고객 문의·구매 안내)"
+   ],
+   "problem": "단순 반복 문의를 상담사가 직접 처리해야 한다.",
+   "users": "커머스·F&B·제약·핀테크 등 CS팀(전 세계 18만여 기업이 채널톡 사용)",
+   "features": [
+    "지식 기반 답변",
+    "규칙(고위험 감지·이관)",
+    "워크플로·태스크 실행",
+    "제품 추천 상담",
+    "카카오톡 마케팅 메시지 통합"
+   ],
+   "automation_scope": "1차 응대, 주문·배송 조회, 교환·반품 접수 등 처리",
+   "human_scope": "지식·규칙 관리, 고위험 문의 직접 응대, 승인",
+   "korea": "국내 서비스, 한국어. 카카오톡 상담·마케팅 메시지 연동.",
+   "pricing": "그로스 플랜 월 120,000원(부가세 별도, 25.11.28 개편 후), 매월 ALF 기본 제공량 30,000AU 포함 후 사용량 과금",
+   "evidence": [
+    {
+     "claim": "ALF v2는 스스로 과업을 세우고 수행하는 AI 에이전트로 소개됐다.",
+     "quote": "알프1.0이 고객의 문의에 적합한 답을 내놓는 챗봇에 그쳤다면 알프2.0은 상담사의 목표에 부응하기 위해 스스로 과업을 세우고 면밀하게 수행한다.",
+     "url": "http://www.businessreport.kr/news/articleView.html?idxno=50829",
+     "date": "2026-01-13",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "카카오톡 마케팅 메시지 발송까지 통합 관리한다.",
+     "quote": "카카오톡 마케팅 메시지 발송까지 통합 관리",
+     "url": "http://www.businessreport.kr/news/articleView.html?idxno=50829",
+     "date": "2026-01-13",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "그로스 플랜 월 결제 가격이 96,000원에서 120,000원으로 바뀌었다.",
+     "quote": "월 결제 96,000원 120,000원",
+     "url": "https://docs.channel.io/updates/ko/articles/%EC%A4%91%EC%9A%94-%EA%B3%B5%EC%A7%80-%EC%B1%84%EB%84%90%ED%86%A1-%EA%B0%80%EA%B2%A9%EC%A0%9C-%EA%B0%9C%ED%8E%B8-%EC%95%88%EB%82%B4251128--8bd5ddd0",
+     "date": "2025-10-27",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "그로스 플랜에 매월 ALF 기본 제공량 30,000AU가 포함된다.",
+     "quote": "매월 ALF 기본 제공량 30,000AU(*1AU=1원) 제공됩니다.",
+     "url": "https://docs.channel.io/updates/ko/articles/%EC%A4%91%EC%9A%94-%EA%B3%B5%EC%A7%80-%EC%B1%84%EB%84%90%ED%86%A1-%EA%B0%80%EA%B2%A9%EC%A0%9C-%EA%B0%9C%ED%8E%B8-%EC%95%88%EB%82%B4251128--8bd5ddd0",
+     "date": "2025-10-27",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "해피톡 AI 에이전트",
+   "vendor": "루나소프트-엠비아이솔루션",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "챗봇·AI 상담(고객 문의·구매 안내)"
+   ],
+   "problem": "자율형 AI 상담은 답변이 불확실하고, 시나리오형 챗봇은 유연하지 않다.",
+   "users": "기업 고객센터·CS 관리자",
+   "features": [
+    "워크플로 안 AI 에이전트 노드",
+    "지식베이스",
+    "프롬프트·답변 동작 설정",
+    "카카오톡 채팅상담"
+   ],
+   "automation_scope": "고객 메시지 이해, 답변·다음 행동 선택",
+   "human_scope": "시나리오·지식베이스 설계, 위임 범위 설정",
+   "korea": "국내 서비스, 한국어. 카카오톡 채팅상담 제공.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "판단은 AI에, 안정성은 시나리오에 맡기는 하이브리드 구조다.",
+     "quote": "자율적인 판단은 AI에게 맡기고 안정성은 시나리오 로 지켜내는 ‘ 하이브리드 AI 에이전트’ 예요.",
+     "url": "https://blog.happytalk.io/ai-agent-happytalk",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "젝시믹스에 카카오톡 채팅상담 등을 제공하고 AI 고객센터를 구축한다.",
+     "quote": "젝시믹스 고객들을 위한 비즈니스 메시지 및 카카오톡 채팅상담 서비스 등을 제공하고 있다.",
+     "url": "https://blog.happytalk.io/xexymix-happytalk-ai-cs-partnership",
+     "date": "2024-08-26",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "Klue",
+   "vendor": "Klue",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "경쟁사 모니터링·시장 조사"
+   ],
+   "problem": "경쟁 정보 수집·정리·영업 전달을 소수 인원이 수작업으로 한다.",
+   "users": "PMM·경쟁정보(CI) 담당, B2B 영업팀",
+   "features": [
+    "Compete Agent",
+    "Research Mode(초안 작성)",
+    "Ask Klue(질의응답)",
+    "Deal Tips(거래별 자동 팁)",
+    "Win-Loss"
+   ],
+   "automation_scope": "경쟁 정보 수집·정리·배포, 초안 작성, 경쟁 거래 시 팁 자동 발송",
+   "human_scope": "초안 검수, 포지셔닝 결정",
+   "korea": "국내 채널 연동·한국어 지원 확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "Research Mode가 여러 출처의 경쟁 인사이트를 종합하고 초안을 만든다.",
+     "quote": "Research Mode : Synthesizes competitive insights from multiple sources, surfaced win-loss trends, and creates first drafts of Jordan’s content in minutes.",
+     "url": "https://klue.com/case-study/blackbaud-boosts-competitive-win-rates-against-top-competitors-by-28-with-compete-agent",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "거래가 경쟁 상황이 되면 담당자에게 자동으로 팁을 보낸다.",
+     "quote": "As soon as a deal turns competitive, Klue’s Compete Agent triggers a Deal Tip: an automated, deal-specific insight sent straight to the rep.",
+     "url": "https://klue.com/case-study/blackbaud-boosts-competitive-win-rates-against-top-competitors-by-28-with-compete-agent",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Similarweb AI Agents",
+   "vendor": "Similarweb",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "경쟁사 모니터링·시장 조사"
+   ],
+   "problem": "웹 트래픽·검색 데이터를 보고 실제 액션으로 옮기기까지 시간이 걸린다.",
+   "users": "마케팅·SEO·영업 담당",
+   "features": [
+    "AI Trend Analyzer",
+    "AI SEO Strategy Agent",
+    "AI Meeting Prep Agent",
+    "AI Outreach Agent"
+   ],
+   "automation_scope": "트렌드 원인 설명, SEO 전략·미팅 준비·아웃리치 초안",
+   "human_scope": "에이전트 결과 검토·실행",
+   "korea": "확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "검색 행동 데이터로 수요 변화의 원인을 설명하는 AI Trend Analyzer를 냈다.",
+     "quote": "The AI Trend Analyzer helps you make sense of what’s trending, and more importantly, why.",
+     "url": "https://www.similarweb.com/blog/updates/announcements/introducing-ai-agents",
+     "date": "2025-05-28",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Brandwatch",
+   "vendor": "Brandwatch",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "소셜 리스닝·트렌드·리뷰 분석"
+   ],
+   "problem": "여러 시장의 소비자 대화·트렌드·위기 징후를 빠르게 파악해야 한다.",
+   "users": "대기업 인사이트·마케팅·커뮤니케이션 팀, 에이전시",
+   "features": [
+    "시장별 대시보드",
+    "실시간 감성·트렌드 추적",
+    "AI 인사이트",
+    "위기 모니터링"
+   ],
+   "automation_scope": "대화 수집, 감성·트렌드 실시간 추적",
+   "human_scope": "대시보드 설계, 인사이트 해석",
+   "korea": "확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "삼성은 유럽 43개 시장의 대화·트렌드·위기를 추적할 방법이 필요했다.",
+     "quote": "Samsung needed a scalable way to track consumer conversations, emerging trends, campaign performance, and potential crises across 43 European markets",
+     "url": "https://www.brandwatch.com/case-studies/samsung/",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "Twilio Segment",
+   "vendor": "Twilio",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "고객 데이터 통합·세분화(CDP·행동 분석)"
+   ],
+   "problem": "여러 소스의 온·오프라인 고객 데이터를 하나의 프로필로 묶기 어렵다.",
+   "users": "대기업 데이터·마케팅 팀",
+   "features": [
+    "CDP 프로필 통합",
+    "Profiles Sync(데이터 웨어하우스 연동)",
+    "오디언스 생성",
+    "Connections"
+   ],
+   "automation_scope": "데이터 소스 연결, 프로필 통합, 오디언스 동기화",
+   "human_scope": "데이터 모델·오디언스 정의",
+   "korea": "확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "Sanofi는 Profiles Sync로 여러 소스 데이터를 Snowflake에서 합쳐 골든 프로필을 만들었다.",
+     "quote": "Sanofi turned to Twilio Segment to build “golden profiles” of its customers, using Profiles Sync to combine customer data from multiple sources in their Snowflake data cloud.",
+     "url": "https://customers.twilio.com/en-us/sanofi",
+     "date": "2026-05-18",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "Mixpanel",
+   "vendor": "Mixpanel",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "고객 데이터 통합·세분화(CDP·행동 분석)"
+   ],
+   "problem": "감에 의존한 의사결정을 실험·행동 데이터 기반으로 바꿔야 한다.",
+   "users": "프로덕트·그로스·운영 팀(국내 대기업 커머스 포함)",
+   "features": [
+    "행동 분석",
+    "Experiments(A/B·다중 슬롯)",
+    "퍼널 분석"
+   ],
+   "automation_scope": "이벤트 수집, 실험 지표·유의성 계산",
+   "human_scope": "가설 설계, 결과에 따른 운영 결정",
+   "korea": "국내 코오롱몰 사용 사례 있음.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "코오롱몰은 Mixpanel로 직감에서 구조화된 실험 기반 의사결정으로 옮겼다.",
+     "quote": "Mixpanel has helped Kolon Mall move from gut-feel decision-making to structured, data-driven testing.",
+     "url": "https://mixpanel.com/customers/how-kolon-mall-uses-mixpanel-to-build-a-culture-of-experimentation-enabling-data-driven-growth",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "Recombee",
+   "vendor": "Recombee",
+   "origin": "해외",
+   "type": "API",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "개인화 추천(상품·콘텐츠)"
+   ],
+   "problem": "콘텐츠·상품 추천을 직접 개발하기 어렵다.",
+   "users": "미디어·커머스·채용 플랫폼 개발·프로덕트 팀",
+   "features": [
+    "추천 API",
+    "기사·상품 상세 추천",
+    "A/B 테스트"
+   ],
+   "automation_scope": "사용자별 추천 생성",
+   "human_scope": "편집 기준 유지, 추천 위치 결정",
+   "korea": "확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "Telegraph 기사 상세 페이지 A/B 테스트에서 경쟁 솔루션 대비 CTR이 35% 높았다.",
+     "quote": "+35% CTR uplift versus a competitive solution in A/B testing on article detail pages",
+     "url": "https://www.recombee.com/case-studies/the-telegraph",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "Intercom Fin",
+   "vendor": "Intercom",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "챗봇·AI 상담(고객 문의·구매 안내)"
+   ],
+   "problem": "지원 인력을 늘리지 않고 문의 증가에 대응해야 한다.",
+   "users": "스타트업~엔터프라이즈 CS팀",
+   "features": [
+    "지식베이스 기반 AI 답변",
+    "사람·워크플로 이관(Procedure handoff)",
+    "결과(outcome) 단위 과금"
+   ],
+   "automation_scope": "1차 문의 응대·해결",
+   "human_scope": "지식베이스 정비, 이관된 문의 처리",
+   "korea": "확인 못 함.",
+   "pricing": "결과(outcome)당 $0.99, 월 $49 기본 플랜에 포함 청구",
+   "evidence": [
+    {
+     "claim": "Fin은 결과당 0.99달러이며 월 49달러 기본 플랜에 포함돼 청구된다.",
+     "quote": "Fin is priced at $0.99 per outcome (United States Dollars), which is billed as part of a base plan costing $49 per mont",
+     "url": "https://fin.ai/help/en/articles/13975800-fin-pricing-outcomes",
+     "date": "2026-09-17",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Zendesk AI Agents",
+   "vendor": "Zendesk",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "챗봇·AI 상담(고객 문의·구매 안내)"
+   ],
+   "problem": "대규모 회원의 실시간 문의를 자동으로 해결해야 한다.",
+   "users": "대기업 고객지원팀",
+   "features": [
+    "AI 에이전트 자동 해결",
+    "제한된 공개 범위로 파트너 지원"
+   ],
+   "automation_scope": "일반 문의 자동 해결",
+   "human_scope": "자동화 목표·지식 관리, 복잡 문의 처리",
+   "korea": "한국어 웹사이트 제공(국내 채널 연동은 확인 못 함).",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "Qantas Loyalty는 AI 에이전트로 1,700만 회원의 실시간 해결을 맡겼다.",
+     "quote": "Qantas Loyalty turned to AI Agents to deliver real-time resolutions for its 17 million",
+     "url": "https://zendesk.com/customer/qantas-loyalty",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "company": "바이브컴퍼니(썸트렌드 마케팅팀)",
+   "tool": "썸트렌드",
+   "area": "데이터·AI 활용",
+   "task": "소셜 리스닝·트렌드·리뷰 분석",
+   "what": "썸트렌드 MCP와 Meta 광고·GA를 AI에 연결해 자사·경쟁사 브랜드 모니터링 리포트를 매주 월요일 오전 8시에 자동 생성하도록 예약했다.",
+   "automation_scope": "데이터 수집·요약·리포트 생성과 알림, 소셜 언급량과 방문자 교차 분석",
+   "human_scope": "프롬프트 작성, 심층 분석과 마케팅 액션",
+   "result": "데이터 수집·요약에 쓰던 주 2시간 절약",
+   "evidence": [
+    {
+     "claim": "매주 월요일 8시에 리포트가 생성되고 데이터 정리에 쓰던 2시간을 아꼈다.",
+     "quote": "매 주 월요일 아침 8시에 아래와 같은 리포트가 생성되어 알림이 옵니다. 데이터 자체를 모으고 요약하는데 사용하던 2시간을 아끼고",
+     "url": "https://apps.some.co.kr/cases/20261102-nmgi",
+     "date": "2026-11-02",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "이전에는 여러 대시보드를 엑셀로 정리하는 데만 2시간 가까이 들었다.",
+     "quote": "엑셀로 데이터를 정리하는데만 2시간 가까이 드는게 다반사였어요.",
+     "url": "https://apps.some.co.kr/cases/20261102-nmgi",
+     "date": "2026-11-02",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "Blackbaud",
+   "tool": "Klue",
+   "area": "데이터·AI 활용",
+   "task": "경쟁사 모니터링·시장 조사",
+   "what": "1인 CI 담당자가 Compete Agent로 경쟁 정보를 모으고 초안을 만들며, 영업은 Ask Klue와 자동 Deal Tip으로 답을 받는다.",
+   "automation_scope": "경쟁 정보 종합, 콘텐츠 초안, 거래별 팁·통화 후 이메일 자동 생성",
+   "human_scope": "CI 담당자의 검수·배포",
+   "result": "주요 경쟁사 대비 승률 28% 상승, 담당자 주 2일 절약",
+   "evidence": [
+    {
+     "claim": "Compete Agent로 주 2일을 아끼고 주요 경쟁사 대비 승률이 28% 올랐다.",
+     "quote": "Compete Agent saves me two days a week and has increased our win rates by 28% against our top competitors.",
+     "url": "https://klue.com/case-study/blackbaud-boosts-competitive-win-rates-against-top-competitors-by-28-with-compete-agent",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Abu Dhabi Islamic Bank(ADIB)",
+   "tool": "Talkwalker",
+   "area": "데이터·AI 활용",
+   "task": "소셜 리스닝·트렌드·리뷰 분석",
+   "what": "실시간 리포트·알림, AI 감성 분석, 이미지 로고 인식으로 모바일 앱 관련 고객 경험 이슈를 추적했다.",
+   "automation_scope": "실시간 알림, 감성 분석, 이미지 속 로고 인식",
+   "human_scope": "이슈 대응, 교육 콘텐츠 제작",
+   "result": "브랜드 충성도 12%·긍정 감성 40% 상승, 앱 카테고리 1위",
+   "evidence": [
+    {
+     "claim": "실시간 알림과 AI 감성 분석, 로고 인식을 활용했다.",
+     "quote": "Real-time reports and alerts to address issues as they happen Leveraging AI-powered sentiment analysis to keep track of performance Logo recognition in images to identify hidden brand mentions",
+     "url": "https://www.talkwalker.com/case-studies/adib-use-consumer-intelligence-in-uae",
+     "date": "",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "브랜드 충성도 12%, 긍정 감성 40%가 올랐다.",
+     "quote": "brand loyalty increasing by 12%, positive sentiment by 40%",
+     "url": "https://www.talkwalker.com/case-studies/adib-use-consumer-intelligence-in-uae",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "라라스윗",
+   "tool": "채널톡 ALF",
+   "area": "데이터·AI 활용",
+   "task": "챗봇·AI 상담(고객 문의·구매 안내)",
+   "what": "배송 문의를 ALF로 자동화하고, 이물질·변질 등 고위험 키워드는 사람에게 넘기며, 교환·반품은 시트 기록→외부 AI 사진 판별→승인 알림 워크플로로 처리했다.",
+   "automation_scope": "배송 문의 응대, 교환·반품 접수·사진 판별·안내",
+   "human_scope": "고위험 문의 직접 응대, 교환·반품 승인 클릭",
+   "result": "ALF 관여율 97.2%, 해결률 85.8%(2026년 6월), CSAT 3.5→4.2",
+   "evidence": [
+    {
+     "claim": "ALF 관여율 97.2%, 해결률 85.8%, CSAT 3.5→4.2를 기록했다.",
+     "quote": "성과 : ALF 관여율 97.2%, 해결률 85.8% (2026년 6월 기준) 고객 CSAT 3.5점 → 4.2점으로 개선",
+     "url": "https://channel.io/kr/blog/articles/ai-case-lalasweet-0141b180",
+     "date": "2026-07-15",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "CS팀은 알림을 확인하고 승인만 누른다.",
+     "quote": "CS팀은 알림을 확인하고 승인만 누르면",
+     "url": "https://channel.io/kr/blog/articles/ai-case-lalasweet-0141b180",
+     "date": "2026-07-15",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "대웅제약(건강기능식품 사업부)",
+   "tool": "채널톡 ALF",
+   "area": "데이터·AI 활용",
+   "task": "챗봇·AI 상담(고객 문의·구매 안내)",
+   "what": "전체 문의의 약 30%인 제품 상담을 ALF(지식·태스크·규칙)로 자동화해 건강기능식품 제품 추천까지 맡겼다.",
+   "automation_scope": "제품 상담·추천",
+   "human_scope": "원료·제품 지식 관리",
+   "result": "ALF 상담 해결률 91.1%(2025.11~2026.5)",
+   "evidence": [
+    {
+     "claim": "ALF 상담 해결률 91.1%를 달성했다.",
+     "quote": "성과 : ALF 상담 해결률 91.1% 달성 (2025년 11월~2026년 5월 기준)",
+     "url": "http://channel.io/kr/blog/articles/ai-case-daewoong-fa05c2c6",
+     "date": "2026-06-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "Road",
+   "tool": "Intercom Fin",
+   "area": "데이터·AI 활용",
+   "task": "챗봇·AI 상담(고객 문의·구매 안내)",
+   "what": "기존 지식베이스를 Fin에 맞게 정비한 뒤 채팅 1차 응대를 Fin에 맡겼다.",
+   "automation_scope": "채팅 1차 응대·해결",
+   "human_scope": "지식베이스 최적화, 전략적 상담",
+   "result": "ROI 150%, Fin 해결률 63%, 미해결 대화 70% 이상 감소",
+   "evidence": [
+    {
+     "claim": "Fin ROI 150%, 미해결 대화 70% 이상 감소, 해결률 63%.",
+     "quote": "150% Fin ROI >70% Drop in open conversations 63% Fin resolution rate",
+     "url": "https://intercom.com/customers/road",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Qantas Loyalty",
+   "tool": "Zendesk AI Agents",
+   "area": "데이터·AI 활용",
+   "task": "챗봇·AI 상담(고객 문의·구매 안내)",
+   "what": "Qantas Marketplace·Qantas Wine 이용 회원 문의를 AI 에이전트로 자동 해결했다.",
+   "automation_scope": "일반 문의 자동 해결",
+   "human_scope": "목표 설정, 복잡 문의 처리",
+   "result": "목표 30~35% 대비 2주 만에 자동 해결 60%, 최고 85%",
+   "evidence": [
+    {
+     "claim": "초기 목표 30~35%에서 2주 만에 60%, 최고 85% 자동 해결을 기록했다.",
+     "quote": "We had an initial goal of about 30 to 35 percent automated resolutions when we first launched. We went up to 60 percent within the first two weeks",
+     "url": "https://zendesk.com/customer/qantas-loyalty",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "코오롱몰",
+   "tool": "Mixpanel",
+   "area": "데이터·AI 활용",
+   "task": "개인화 추천(상품·콘텐츠)",
+   "what": "수동 큐레이션 배너와 Multi-Armed Bandit 알고리즘이 정한 배너 순서를 Mixpanel Experiments로 비교했다.",
+   "automation_scope": "CTR 기반 배너 순서 자동 최적화",
+   "human_scope": "전략적 배치는 사람이 통제",
+   "result": "알고리즘 변형 전환율 793bps 높음(p=0.0143), PDP 전환율 4% 상승",
+   "evidence": [
+    {
+     "claim": "자동 배너 최적화가 전환율 793bps 높았다.",
+     "quote": "The automated variant achieved a 793bps higher conversion rate (p = 0.0143) and higher click-through rates.",
+     "url": "https://mixpanel.com/customers/how-kolon-mall-uses-mixpanel-to-build-a-culture-of-experimentation-enabling-data-driven-growth",
+     "date": "",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "가능한 곳은 자동화하되 전략적 배치는 사람이 통제한다.",
+     "quote": "Automate banner ordering where possible, while keeping strategic placements under human control.",
+     "url": "https://mixpanel.com/customers/how-kolon-mall-uses-mixpanel-to-build-a-culture-of-experimentation-enabling-data-driven-growth",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "The Telegraph",
+   "tool": "Recombee",
+   "area": "데이터·AI 활용",
+   "task": "개인화 추천(상품·콘텐츠)",
+   "what": "기사 상세 페이지 추천을 Recombee로 바꾸고 경쟁 솔루션과 A/B 테스트했다.",
+   "automation_scope": "기사 추천 생성",
+   "human_scope": "편집 기준 유지",
+   "result": "CTR 35% 상승(경쟁 솔루션 대비)",
+   "evidence": [
+    {
+     "claim": "A/B 테스트에서 CTR이 35% 높았다.",
+     "quote": "+35% CTR uplift versus a competitive solution in A/B testing on article detail pages",
+     "url": "https://www.recombee.com/case-studies/the-telegraph",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Sanofi",
+   "tool": "Twilio Segment",
+   "area": "데이터·AI 활용",
+   "task": "고객 데이터 통합·세분화(CDP·행동 분석)",
+   "what": "온·오프라인 다중 소스 데이터를 Segment CDP로 묶어 OneView 골든 프로필을 만들고 옴니채널 타겟 오디언스를 구성했다.",
+   "automation_scope": "데이터 소스 연결·프로필 통합",
+   "human_scope": "오디언스 설계",
+   "result": "새 데이터 소스 추가 시간 93% 절감, 활성 오디언스 35개",
+   "evidence": [
+    {
+     "claim": "새 데이터 소스 추가 시간 93% 절감, 오디언스 35개 생성.",
+     "quote": "93% time saved adding new data sources 35 active audiences created with Segment",
+     "url": "https://customers.twilio.com/en-us/sanofi",
+     "date": "2026-05-18",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "그린리본(라이프캐치)",
+   "tool": "핵클",
+   "area": "데이터·AI 활용",
+   "task": "고객 데이터 통합·세분화(CDP·행동 분석)",
+   "what": "핵클의 사용자 속성 기반 개인화로 보험금 소멸시효 임박·예상 보험금 규모 등 세그먼트를 나눠 맞춤 메시지를 보냈다.",
+   "automation_scope": "세그먼트 분류, 맞춤 메시지 발송",
+   "human_scope": "세그먼트·메시지 기획",
+   "result": "친구톡 전환율 1% 미만→1.4% 이상(약 40% 개선)",
+   "evidence": [
+    {
+     "claim": "세그먼트별 메시지로 친구톡 전환율이 약 40% 개선됐다.",
+     "quote": "기존 친구톡 메시지 전환율 1% 미만 → 1.4% 이상으로, 약 40% 이상의 전환율 개선",
+     "url": "https://blog.hackle.io/post/green-ribbon-lifecatch",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "국내 패션 기업 B사(익명)",
+   "tool": "그루비(Groobee)",
+   "area": "데이터·AI 활용",
+   "task": "개인화 추천(상품·콘텐츠)",
+   "what": "상품 상세페이지 하단에 기존 상품 기반 추천 외 이미지 기반 유사 상품 추천을 추가했다.",
+   "automation_scope": "이미지 유사도 기반 추천",
+   "human_scope": "추천 영역 추가 결정",
+   "result": "7월 추천 매출의 22%가 이미지 기반 추천에서 발생",
+   "evidence": [
+    {
+     "claim": "추천 매출의 22%가 이미지 기반 유사 상품 알고리즘에서 나왔다.",
+     "quote": "7월 한 달간 상품추천으로 발생한 전체 매출의 22%에 해당하는 매출이 ‘이미지 기반 유사 상품 알고리즘’에서 창출되었습니다.",
+     "url": "https://groobee.net/blog/%ea%b0%9c%ec%9d%b8%ed%99%94-%ec%b7%a8%ed%96%a5-%ed%81%90%eb%a0%88%ec%9d%b4%ec%85%98-%ec%a0%9c%eb%8c%80%eb%a1%9c-%ed%95%b4%eb%82%b4%eb%8a%94-ai-%ec%83%81%ed%92%88%ec%b6%94%ec%b2%9c-%ec%82%ac%eb%a1%80/",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  }
+ ],
+ "stats": [
+  {
+   "topic": "AI 고객상담 도입(한국 포함)",
+   "finding": "고객 문의의 약 30%를 AI가 처리하고 2027년 50%까지 늘 전망이며, 서비스 전문가 69%가 AI를 하나 이상 쓴다.",
+   "figures": "AI 처리 문의 약 30%; 2027년 50% 전망; AI 활용 69%; AI 에이전트 도입 39%; 한국 응답자 89% 서비스 향상 기여",
+   "sample": "세일즈포스 State of Service, 한국 포함 글로벌 서비스 전문가 6,500명",
+   "quote": "현재 약 30%의 고객 문의가 AI로 처리되고 있으며, 2027년에는 AI 에이전트 활용",
+   "url": "https://brandbrief.co.kr/site/data/html/2025/11/20/2025112009232.html",
+   "date": "2025-11-20",
+   "reliability": "survey",
+   "region": "해외"
+  },
+  {
+   "topic": "국내 실무자 리서치 내재화",
+   "finding": "실무자의 64.6%가 업무 중 리서치를 수행하거나 참여하며, 59.6%가 리서치 전 과정을 내부에서 수행한다.",
+   "figures": "64.6%; 59.6%; 리서치 교육 있는 기업 23.9%",
+   "sample": "오픈서베이 리서치 트랜스포메이션 리포트 2025(리서처 N=114, PwDR N=359 등)",
+   "quote": "실무자의 64.6%는 업무 중 리서치를 수행하거나 필요시 참여하는 PwDR(People who Do Research)입니다.",
+   "url": "https://contents.opensurvey.io/research-transformation-report-2025/",
+   "date": "2025",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "마케터 생성형 AI 사용 빈도",
+   "finding": "마케터 65%가 생성형 AI를 매일 또는 매주 쓰고 37%는 매일 쓴다.",
+   "figures": "65%; 37%; 사용 확대 계획 74%",
+   "sample": "Social Media Examiner 2024 Generative AI Marketing Industry Report, 마케터 1,250명 이상(AI매터스 보도)",
+   "quote": "마케터의 65%가 생성형 AI 도구를 매일 또는 매주 사용하고 있으며, 37%는 매일 AI를 사용하고 있다.",
+   "url": "https://aimatters.co.kr/news-report/ai-report/6022/",
+   "date": "2024",
+   "reliability": "survey",
+   "region": "해외"
+  },
+  {
+   "topic": "마케팅 부서 GenAI 활용 수준",
+   "finding": "마케팅 부서 75%가 GenAI를 쓰지만 고객 여정 매핑(16%)·가격 최적화(14%) 같은 고도화 활용은 낮다.",
+   "figures": "75%; 63% 일상 사용; 고객 상호작용 처리 43%; 고객 여정 매핑 16%; 가격 최적화 14%",
+   "sample": "SAS, 300개 기업 마케팅 담당자(AI매터스 보도)",
+   "quote": "고객 여정 매핑(16%), 가격 최적화(14%) 등 고도화된 마케팅 활동에 대한 GenAI 활용은 상대적으로 낮았다.",
+   "url": "https://aimatters.co.kr/news-report/ai-report/3907/",
+   "date": "2024",
+   "reliability": "survey",
+   "region": "해외"
+  }
+ ],
+ "gaps": [
+  "블랙키위·모바일인덱스(아이지에이웍스)는 JS 렌더링 페이지라 curl 원문이 비어 tools에서 제외",
+  "다이티(Dighty) 오디언스 사례 페이지는 원문에 사례 수치가 없어 제외",
+  "Perplexity·ChatGPT deep research를 시장조사에 쓴 실제 기업 사례·수치 원문 미확보",
+  "Crayon(Salsify 승률 22% 등)은 사례 목록 요약만 있고 개별 원문 미수집",
+  "Dynamic Yield(Saks 등) 사례 페이지는 응답이 비어 미수집, Sprinklr·Amplitude는 tools에 넣지 않음(Amplitude ITVX 등록 12%·로그인 10%는 원문 확보만)",
+  "Genesys 2025 국내 컨택센터 트렌드 보고서(PDF)는 텍스트 추출하지 않아 미반영",
+  "해외 툴(Klue·Similarweb·Brandwatch·Segment·Recombee·Intercom)의 한국어 지원·카카오/네이버 연동 여부 확인 못 함",
+  "Klue·Brandwatch·Segment·Recombee·Zendesk 요금 원문 미확보",
+  "사용 사례 수치는 대부분 툴 회사가 발표한 고객 사례로, 제3자 검증 자료는 찾지 못함",
+  "국내 기업 대상 마케팅 AI 활용 설문(국내 단독 표본) 원문은 찾지 못해 글로벌 조사의 국내 보도로 대체"
+ ]
+}

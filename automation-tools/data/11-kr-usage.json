@@ -1,0 +1,939 @@
+{
+ "group": "통합 플랫폼·AI 에이전트",
+ "tasks": [],
+ "tools": [
+  {
+   "name": "ChatGPT",
+   "vendor": "OpenAI",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "문구 작성",
+    "자료 조사·요약"
+   ],
+   "problem": "기획안·카피·보고서 초안 작성에 드는 시간",
+   "users": "직무·회사 규모 무관 직장인·마케터",
+   "features": [
+    "대화형 글 생성",
+    "요약·정리",
+    "이미지 생성"
+   ],
+   "automation_scope": "초안 작성·요약",
+   "human_scope": "프롬프트 작성, 사실 확인과 최종 검수",
+   "korea": "한국어 사용 가능. 국내 업무용 AI 앱 1위(2026년 9월 MAU 2470만명)",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "2026년 9월 국내 업무용 AI 앱 1위는 챗GPT(MAU 2470만명)다.",
+     "quote": "업무용 AI 앱은 챗GPT로, 월간 사용자 수(MAU) 2470만명을 기록했다",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    },
+    {
+     "claim": "오픈서베이 직장인 조사에서 응답자 82%가 챗GPT를 쓴다고 답했다.",
+     "quote": "전체 응답자의 82%가 챗GPT를 사용하고 있다고 응답했고",
+     "url": "https://blog.opensurvey.co.kr/featured/ds-working-tool-2025-2",
+     "date": "2025-08-20",
+     "reliability": "survey"
+    }
+   ]
+  },
+  {
+   "name": "Google Gemini",
+   "vendor": "Google",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "데이터·AI 활용",
+   "tasks": [
+    "자료 조사·요약",
+    "리뷰 분석"
+   ],
+   "problem": "자료 조사·문서 작성·리뷰 등 비정형 데이터 처리",
+   "users": "직장인·마케터, 구글 클라우드를 쓰는 기업",
+   "features": [
+    "대화형 글 생성",
+    "멀티모달(텍스트·이미지) 분석",
+    "기업용 에이전트 플랫폼(Gemini Enterprise)"
+   ],
+   "automation_scope": "초안 작성, 리뷰·이미지 분석",
+   "human_scope": "결과 검수와 적용 결정",
+   "korea": "한국어 사용 가능. 국내 업무용 AI 앱 3위(987만명), CJ올리브영·카카오뱅크 등 활용",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "2026년 9월 업무용 AI 앱 3위는 구글 제미나이(987만명)다.",
+     "quote": "3위는 구글 제미나이(987만명)였다",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    },
+    {
+     "claim": "CJ올리브영·카카오뱅크·여기어때 등 국내 기업이 구글 AI 기술을 활용하고 있다.",
+     "quote": "유통 분야의 CJ 올리브영, 금융 분야의 카카오뱅크, 헬스케어 분야의 대원제약, 미디어 및 엔터테인먼트 분야의 위버스, 여행 분야의 여기어때 등도 구글 AI 기술을 활용해 혁신을 이뤄내고 있다.",
+     "url": "https://etoday.co.kr/news/view/2603512",
+     "date": "2026-07-14",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "인덴트코퍼레이션이 제미나이로 리뷰 분석·AI 댓글 응대 기능을 구현했다.",
+     "quote": "인덴트코퍼레이션은 구글 클라우드의 제미나이 모델을 활용해 대표 서비스인 '브이리뷰'와 'Spray'에 AI 기능을 구현했으며",
+     "url": "https://cloud.google.com/blog/ko/topics/customers/korea-ai-success-stories-2025",
+     "date": "2025-03-25",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "Claude",
+   "vendor": "Anthropic",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "통합 플랫폼·AI 에이전트",
+   "tasks": [
+    "문구 작성",
+    "업무 자동화"
+   ],
+   "problem": "반복적인 콘텐츠 제작·업무 자동화",
+   "users": "마케터·개발자",
+   "features": [
+    "대화형 글 생성",
+    "Claude Code(코딩 에이전트)"
+   ],
+   "automation_scope": "초안 작성, 자동화 스크립트 작성",
+   "human_scope": "기획과 결과 검수",
+   "korea": "한국어 사용 가능. 국내 업무용 AI 앱 사용자 404만명(2026년 9월)",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "2026년 9월 클로드 국내 업무용 AI 앱 사용자는 404만명이다.",
+     "quote": "이어 클로드(404만명)",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    },
+    {
+     "claim": "SKT 마케터가 클로드 코드·메이크닷컴·탈리·슬랙으로 인스타그램 게시물 제작을 자동화했다.",
+     "quote": "사용 도구 : 클로드 코드, 메이크닷컴, 탈리, 슬랙",
+     "url": "https://www.joongang.co.kr/article/25455707",
+     "date": "2026-08-25",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "CapCut",
+   "vendor": "ByteDance",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "영상 제작"
+   ],
+   "problem": "숏폼 영상 편집의 진입 장벽",
+   "users": "개인 크리에이터·소상공인·SNS 담당자",
+   "features": [
+    "모바일 영상 편집",
+    "템플릿",
+    "자동 자막 등 AI 편집 기능"
+   ],
+   "automation_scope": "자막·템플릿 적용 등 편집 일부",
+   "human_scope": "기획·촬영·최종 편집",
+   "korea": "한국어 앱 제공. 국내 MAU 97만명(2025년 11월)",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "캡컷 국내 MAU가 4년 새 2배로 늘어 2025년 11월 97만명이다.",
+     "quote": "韓 MAU 4년 새 2배… 11월 97만명",
+     "url": "https://biz.chosun.com/it-science/ict/2025/12/29/EIHM2SXPQNDRBOINODYW3RWWZM",
+     "date": "2025-12-29",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "Notion AI",
+   "vendor": "Notion Labs",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "통합 플랫폼·AI 에이전트",
+   "tasks": [
+    "문서·지식 관리",
+    "회의록 작성"
+   ],
+   "problem": "흩어진 업무 문서·회의 기록 정리",
+   "users": "스타트업부터 대기업까지 협업 조직",
+   "features": [
+    "AI 회의록",
+    "엔터프라이즈 검색",
+    "커스텀 에이전트(노션 3.0)"
+   ],
+   "automation_scope": "회의록 요약, 문서 검색, 반복 작업 처리",
+   "human_scope": "에이전트 범위·권한 설정과 결과 확인",
+   "korea": "한국지사 운영, 한국어 사용 가능. GS그룹 전사 도입, 국내 앱 사용자 184만명",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "GS그룹 계열사 다수가 노션을 전사 도입했다.",
+     "quote": "GS, GS건설, GS EPS, GS글로벌, GS에너지는 전사적으로 도입했으며",
+     "url": "https://zdnet.co.kr/view?no=20241107174017",
+     "date": "2024-11-07",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "노션 한국지사장이 노션 3.0 발표 기자간담회에 참석했다.",
+     "quote": "박대성 노션 한국지사장이 참석해",
+     "url": "https://zdnet.co.kr/view?no=20251023120811",
+     "date": "2025-10-23",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "2026년 9월 노션 국내 업무용 AI 앱 사용자는 184만명이다.",
+     "quote": "노션(184만명)",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    }
+   ]
+  },
+  {
+   "name": "Google Looker Studio",
+   "vendor": "Google",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "대시보드"
+   ],
+   "problem": "매체별 광고 성과를 엑셀로 모으는 반복 작업",
+   "users": "퍼포먼스 마케터·광고 대행사",
+   "features": [
+    "데이터 소스 연결",
+    "대시보드 템플릿 사본 만들기",
+    "공유 리포트"
+   ],
+   "automation_scope": "데이터 갱신과 시각화",
+   "human_scope": "지표 설계와 해석",
+   "korea": "한국어 사용 가능. 국내 광고 SaaS LEVER가 메타 광고 대시보드 템플릿 제공",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "국내 광고 운영 SaaS LEVER가 루커 스튜디오 메타 광고 대시보드 템플릿을 제공한다.",
+     "quote": "이번 글에서는 루커 스튜디오로 구현한 메타 광고 분석 대시보드 템플릿과 함께, 각 분석들을 어떻게 활용할 수 있는지 설명해보려고 합니다.",
+     "url": "https://www.lever.me/resource/2278",
+     "date": "2025-10-10",
+     "reliability": "company_claim"
+    }
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "company": "컴투스홀딩스",
+   "company_origin": "국내",
+   "tool": "Meta Advantage+",
+   "area": "광고·프로모션",
+   "task": "타깃·노출 위치 자동화",
+   "what": "'소울 스트라이크' 릴스 광고에서 타깃·노출 위치를 어드밴티지+ 자동화로 같게 두고 스테레오 음향과 공간 음향 소재를 A/B 테스트",
+   "automation_scope": "타깃과 노출 위치 자동 설정",
+   "human_scope": "소재(음향) 전략과 실험 설계",
+   "result": "구매당 비용 82% 감소, 구매 전환율 5.4배, ROAS 12배",
+   "evidence": [
+    {
+     "claim": "공간 음향 광고는 구매당 비용 82% 감소, 전환율 5.4배, ROAS 12배였다.",
+     "quote": "공간 음향 광고는 구매당 비용이 82% 줄었다. 링크 클릭 대비 구매 전환율은 5.4배 늘었다. ROAS는 12배로 뛰었다.",
+     "url": "https://bloter.net/news/articleView.html?idxno=674892",
+     "date": "2026-10-07",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "company": "CJ올리브영·토리든",
+   "company_origin": "국내",
+   "tool": "Meta Robyn",
+   "area": "성과 측정",
+   "task": "MMM",
+   "what": "CJ올리브영이 메타와 Robyn 기반 MMM을 만들어 입점 브랜드 토리든의 채널별 마케팅 효과 측정에 적용",
+   "automation_scope": "채널별 기여도 추정과 예산 최적화 계산",
+   "human_scope": "데이터 준비와 예산 결정",
+   "result": "마케팅 지출 ROI 14% 증가, 협업 광고 ROI 3.98배",
+   "evidence": [
+    {
+     "claim": "토리든 적용 결과 ROI 14% 증가, 협업 광고 ROI 3.98배 향상이 나타났다.",
+     "quote": "전체 마케팅 지출에 대한 ROI 14% 증가, CJ올리브영 전체 매출 20% 상승, 메타 협업 광고로 인한 ROI 3.98배 향상 등의 성과가 나타났다.",
+     "url": "https://theguru.co.kr/news/article.html?no=87339",
+     "date": "2025-05-23",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "company": "SK텔레콤",
+   "company_origin": "국내",
+   "tool": "Make",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "예약 게시",
+   "what": "디지털 커뮤니케이션팀 마케터가 클로드 코드·메이크닷컴·탈리·슬랙으로 인스타그램 카드뉴스 제작·업로드를 자동화",
+   "automation_scope": "카드뉴스 업로드 등 반복 작업",
+   "human_scope": "콘텐츠 컨셉과 검수",
+   "result": "제작비 10%, 제작 기간 열흘에서 이틀",
+   "evidence": [
+    {
+     "claim": "제작비는 10%, 시간은 열흘에서 이틀로 줄었다.",
+     "quote": "제작비는 10%, 시간은 열흘에서 이틀로",
+     "url": "https://www.joongang.co.kr/article/25455707",
+     "date": "2026-08-25",
+     "reliability": "third_party"
+    }
+   ]
+  }
+ ],
+ "usage": [
+  {
+   "tool": "Canva Magic Studio",
+   "signal": "한국 지사·파트너; 국내 사용 통계",
+   "summary": "캔바코리아 지사가 있고 한국은 캔바 상위 5개 시장(12개월간 디자인 1억개)이나, 국내 엔터프라이즈 계약은 아직 없다고 밝힘.",
+   "evidence": [
+    {
+     "claim": "캔바 코리아 지사장이 한국 시장 현황을 발표했고, 한국을 톱5 시장이라고 밝혔다.",
+     "quote": "“한국 이용자들은 캔바 성장을 이끄는 톱5 시장입니다. 지난 12개월 간 1억개의 디자인이 캔바로 생성되는",
+     "url": "https://www.etnews.com/20261027000221",
+     "date": "2026-10-27",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "국내 기업 도입 문의는 있으나 엔터프라이즈 형태 고객 계약은 아직 없다.",
+     "quote": "김 지사장에 따르면 국내 기업들 도입 문의가 들어오고 있지만 엔터프라이즈 형태로 체결한 고객 계약은 아직 없다.",
+     "url": "https://www.ddaily.co.kr/page/view/2026102713153184541",
+     "date": "2026-10-27",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "와이즈앱·리테일 집계에서 2026년 9월 캔바 앱 국내 월간 사용자는 120만명이다.",
+     "quote": "퍼플렉시티(129만명), 캔바(120만명) 순으로 집계됐다",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    }
+   ]
+  },
+  {
+   "tool": "Jasper",
+   "signal": "한국어·국내 채널 지원",
+   "summary": "Jasper가 글을 쓰는 지원 언어에 한국어가 있음(UI 한국어화·국내 고객 사례는 못 찾음).",
+   "evidence": [
+    {
+     "claim": "Jasper 공식 언어 페이지의 작성 지원 언어 목록에 한국어가 있다.",
+     "quote": "Italian Japanese Korean Latvian Lithuanian",
+     "url": "https://www.jasper.ai/languages",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "tool": "Buffer",
+   "signal": "한국어·국내 채널 지원",
+   "summary": "Buffer 안드로이드 앱(9.4.0 이상)이 한국어 UI를 지원(국내 기업 사례는 못 찾음).",
+   "evidence": [
+    {
+     "claim": "Buffer 안드로이드 앱 지원 14개 언어에 한국어가 들어 있다.",
+     "quote": "Japanese (日本語) Korean (한국어) Romanian (Română)",
+     "url": "https://support.buffer.com/articles/can-i-use-buffer-in-another-language-wetiyDOiI4",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "tool": "Sprout Social",
+   "signal": "한국 지사·파트너",
+   "summary": "홍보대행사 NPR이 2024년 Sprout Social과 파트너십을 맺고 국내에 공급.",
+   "evidence": [
+    {
+     "claim": "NPR이 스프라웃 소셜과 파트너십을 맺고 솔루션을 한국에 공급한다고 밝혔다.",
+     "quote": "홍보대행사 NPR은 글로벌 솔루션기업인 ‘스프라웃 소셜(Sprout Social’과 파트너십을 체결하고, 소셜미디어 관리 및 소셜인텔리전스 분석기능을 탑재한 솔루션을 한국에 공급한다고 4일 밝혔다.",
+     "url": "https://www.sentv.co.kr/article/view/sentv202411040076",
+     "date": "2024-11-04",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "HeyGen",
+   "signal": "한국어·국내 채널 지원",
+   "summary": "HeyGen 공식 사이트·비즈니스 페이지가 한국어로 제공됨(국내 기업 고객 사례는 못 찾음).",
+   "evidence": [
+    {
+     "claim": "HeyGen 비즈니스 페이지가 한국어로 제공된다.",
+     "quote": "비즈니스에 최적화된 AI 동영상 생성기를 활용하면 단 몇 분 만에 동영상을 생성하고 업데이트하거나 현지화할 수 있습니다.",
+     "url": "https://heygen.com/ko-kr/business",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "tool": "Runway",
+   "signal": "국내 고객사",
+   "summary": "LG유플러스 100% AI 광고 제작에서 이미지를 영상으로 만드는 데 런웨이를 사용.",
+   "evidence": [
+    {
+     "claim": "LG유플러스 AI 광고 제작에서 이미지 영상화에 런웨이가 쓰였다.",
+     "quote": "이미지를 영상화하는 작업에는 익시·스테이블 디퓨전과 런웨이가 사용됐다.",
+     "url": "https://news.lguplus.com/16015",
+     "date": "2024-06-26",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "Similarweb",
+   "signal": "한국 지사·파트너; 한국어·국내 채널 지원",
+   "summary": "한국 파트너사 H&D어소시에이츠가 있고 국내 뷰티 업계 대상 세미나 진행, 한국어 사이트 제공.",
+   "evidence": [
+    {
+     "claim": "시밀러웹의 한국 파트너사는 H&D어소시에이츠다.",
+     "quote": "시밀러웹의 한국 파트너사인 H&D어소시에이츠의 이영수 대표는",
+     "url": "https://www.cosinkorea.com/news/article.html?no=56032",
+     "date": "2025-09-14",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "시밀러웹 엔터프라이즈 페이지가 한국어로 제공된다.",
+     "quote": "AI가 가리고 있는 쇼핑객 여정을 선점하세요",
+     "url": "http://www.similarweb.com/corp/ko/enterprise",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "tool": "Zendesk AI Agents",
+   "signal": "한국 지사·파트너",
+   "summary": "젠데스크 코리아가 2026년 3월 AI 에이전트 '레졸루션 플랫폼'을 국내 출시하고 KCC정보통신과 한국 공식 총판 계약.",
+   "evidence": [
+    {
+     "claim": "KCC정보통신이 젠데스크와 한국 공식 총판 계약을 맺었다.",
+     "quote": "KCC정보통신은 젠데스크와 한국 공식 총판 계약을 체결했다고 2일 밝혔다.",
+     "url": "https://zdnet.co.kr/view?no=20260402174808",
+     "date": "2026-04-02",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "젠데스크 코리아가 국내 엔터프라이즈 고객사 대상 AI 에이전트 플랫폼 시범 운영을 시작했다.",
+     "quote": "젠데스크 코리아는 오늘부터 국내 주요 엔터프라이즈 고객사를 대상으로 플랫폼 시범 운영에 돌입하며",
+     "url": "https://aimarketingnews.io/news/articleView.html?idxno=4000964",
+     "date": "2026-03-30",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "Klaviyo",
+   "signal": "한국어·국내 채널 지원",
+   "summary": "Klaviyo 고객센터 문서가 한국어로 제공됨(마케팅 에이전트 문서 포함). 국내 브랜드 사례는 못 찾음.",
+   "evidence": [
+    {
+     "claim": "Klaviyo 고객센터에 마케팅 에이전트 사용법 한국어 문서가 있다.",
+     "quote": "고객센터 / 계정 및 청구 / 기타 마케팅 에이전트를 사용하는 방법",
+     "url": "https://help.klaviyo.com/hc/ko-kr/articles/40992879084059",
+     "date": "2025-10-28",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "tool": "Meta Advantage+",
+   "signal": "국내 고객사",
+   "summary": "컴투스홀딩스(소울 스트라이크)가 Advantage+로 ROAS 12배, 어댑트가 홍콩 자사몰 매출 3.3배.",
+   "evidence": [
+    {
+     "claim": "컴투스홀딩스가 어드밴티지+와 공간 음향 소재를 결합해 ROAS를 12배로 올렸다.",
+     "quote": "메타의 인공지능(AI) 자동화 광고 상품 '어드밴티지+(Advantage+)'와 소재 전략을 결합한 결과다.",
+     "url": "https://bloter.net/news/articleView.html?idxno=674892",
+     "date": "2026-10-07",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "어댑트가 어드밴티지 플러스로 홍콩 현지 잠재 고객을 선별했다.",
+     "quote": "어댑트는 메타의 AI 광고 알고리즘인 ‘어드밴티지 플러스(Advantage+)’를 활용해 현지 잠재 고객을 선별하고",
+     "url": "https://tnnews.co.kr/archives/291647",
+     "date": "2026-08-27",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "Google AI Max for Search",
+   "signal": "국내 고객사",
+   "summary": "매드업이 컬리 캠페인에 AI Max 검색 캠페인을 써 2026 Google Ads Impact Awards AI 엑설런스 수상.",
+   "evidence": [
+    {
+     "claim": "매드업이 컬리 캠페인에서 AI Max 검색 캠페인을 앱 캠페인 등과 연계했다.",
+     "quote": "매드업은 컬리 캠페인에서 AI Max 검색 캠페인(AI Max for Search), 앱 캠페인, 확장 검색 등 구글의 AI 광고 솔루션을 고객 구매 여정 전반에 연계해",
+     "url": "https://etoday.co.kr/news/view/2648786",
+     "date": "2026-11-17",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "AdCreative.ai",
+   "signal": "한국 지사·파트너",
+   "summary": "인수사 애피어가 2025년 5월 서울에서 AdCreative.ai 로드쇼를 열었고 국내 고객사 등 250명 참석.",
+   "evidence": [
+    {
+     "claim": "애피어가 서울에서 AdCreative.ai 아태지역 로드쇼를 열었다.",
+     "quote": "서울 드림플러스 강남에서 열린 ‘ AdCreative.ai 2025 아태지역 로드쇼’를 성황리에 마무리했다고 밝혔다",
+     "url": "https://www.appier.com/ko-kr/press-media/adcreativeai_roadshow",
+     "date": "2025-05-12",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "서울 행사에 국내 주요 고객사 등 마케팅 관계자 250명이 참석했다.",
+     "quote": "이번 서울 행사에서는 국내 주요 고객사를 비롯해 이커머스 , 게임 , 디지털 콘텐츠 등 다양한 산업군의 마케팅 관계자 250 명이 참석해",
+     "url": "https://www.appier.com/ko-kr/press-media/adcreativeai_roadshow",
+     "date": "2025-05-12",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "HubSpot(Sales Hub·Breeze)",
+   "signal": "국내 고객사; 한국 지사·파트너",
+   "summary": "국내 협업툴 플로우, 국내 대형 ICT 기업이 국내 파트너사(마름모연구소·경성솔루션)를 통해 HubSpot 도입.",
+   "evidence": [
+    {
+     "claim": "마름모연구소가 국내 협업툴 스타트업 플로우의 HubSpot 온보딩을 진행했다.",
+     "quote": "이번에 진행했던 업체는 국내 협업툴 업체로 알려져 있는 플로우라는 국내 협업툴 스타트업 기업입니다.",
+     "url": "https://marketingmm.co.kr/partners/%ed%97%88%eb%b8%8c%ec%8a%a4%ed%8c%9f-%eb%8f%84%ec%9e%85%ec%82%ac%eb%a1%80/",
+     "date": "2023-11-02",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "국내 대기업이 전문 파트너사를 통해 HubSpot을 도입하는 사례가 늘고 있다.",
+     "quote": "국내에서도 임직원 수천 명 규모의 대기업이 허브스팟을 도입 하고, 전문 파트너사를 통해 체계적인 온보딩을 받는 사례 가 늘어나고 있습니다.",
+     "url": "https://solutionks.com/blog/hubspot/hubspot-onboarding-of-ict-conglomerate",
+     "date": "2026-04-17",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "Salesforce(Agentforce SDR·Marketing)",
+   "signal": "국내 고객사; 한국 지사·파트너",
+   "summary": "세일즈포스 코리아 행사에서 유한킴벌리(Marketing Cloud MCAE)·CJ프레시웨이(Agentforce) 등 국내 사례 공개.",
+   "evidence": [
+    {
+     "claim": "유한킴벌리가 B2B 마케팅에 세일즈포스 MCAE를 도입했다.",
+     "quote": "유한킴벌리는 B2B 마케팅 환경에서 단편적인 캠페인의 한계를 극복하기 위해 세일즈포스 MCAE(Marketing Cloud Account Engagement)를 도입하여",
+     "url": "https://www.salesforce.com/kr/blog/agentforce-world-tour-korea-2026-customer-stories",
+     "date": "2026-06-12",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "CJ프레시웨이가 세일즈포스 Agentforce를 도입했다.",
+     "quote": "CJ프레시웨이는 단 3명의 플랫폼 운영 인력이라는 한계를 극복하고 안전한 개발 가드레일을 확보하기 위해 세일즈포스의 Agentforce를 도입한 과정을 소개했습니다.",
+     "url": "https://www.salesforce.com/kr/blog/agentforce-world-tour-korea-2026-customer-stories",
+     "date": "2026-06-12",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "Clay",
+   "signal": "한국 지사·파트너",
+   "summary": "아웃컴(Outcome)이 Clay 한국 공식 파트너로 2025년 12월 Clay Club Seoul 워크숍 개최.",
+   "evidence": [
+    {
+     "claim": "아웃컴이 Clay의 한국 공식 파트너다.",
+     "quote": "Outcome은 Clay 기반 GTM 실행을 가장 잘 이해하고 있는 Clay의 한국 공식 파트너로서",
+     "url": "https://blog.outcome.co.kr/clay-club-seoul-gtm-workshop",
+     "date": "2025-12-01",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "Gamma",
+   "signal": "국내 사용 통계",
+   "summary": "감마 대표가 한국 도입률이 높다고 밝히고 신기능을 한국에서 세계 최초 공개, 한국 사용자는 SNS 자산 제작 활용 비중이 세계 최고.",
+   "evidence": [
+    {
+     "claim": "감마 대표가 한국의 감마 도입률이 높다고 말했다.",
+     "quote": "감마 도입률이 높은 배경은 한국이 PPT 에셋을 많이 만드는 곳이기 때문",
+     "url": "https://zdnet.co.kr/view?no=20260317182356",
+     "date": "2026-03-18",
+     "reliability": "interview"
+    },
+    {
+     "claim": "한국 사용자가 감마를 소셜 미디어 자산 제작에 쓰는 비중이 세계에서 가장 높다.",
+     "quote": "한국 사용자들이 전세계에서 가장 높은 비중으로 감마를 소셜 미디어 자산 제작에 활용한다는 점",
+     "url": "https://www.mt.co.kr/future/2026/03/18/2026031810210812845",
+     "date": "2026-03-18",
+     "reliability": "interview"
+    }
+   ]
+  },
+  {
+   "tool": "Supermetrics",
+   "signal": "한국 지사·파트너",
+   "summary": "솔바인드9이 국내 유일 Supermetrics 공식 파트너라고 밝힘(국내 고객 사례는 못 찾음).",
+   "evidence": [
+    {
+     "claim": "솔바인드9이 국내 유일 Supermetrics 공식 파트너라고 소개한다.",
+     "quote": "국내 유일 Supermetrics 공식 파트너와 흩어진 마케팅 데이터를 하나의 흐름 으로.",
+     "url": "https://www.soulbind9.com/supermetrics",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "Google Meridian",
+   "signal": "국내 고객사",
+   "summary": "KT나스미디어가 광고 성과 분석 솔루션 '바이퍼 3.0'의 MMM 엔진으로 Meridian 사용.",
+   "evidence": [
+    {
+     "claim": "KT나스미디어가 바이퍼 3.0 광고 효과 분석에 메리디안을 활용했다.",
+     "quote": "광고 효과 분석에는 구글의 오픈소스 마케팅 믹스 모델링(MMM) 엔진 '메리디안(Meridian)'을 활용했다.",
+     "url": "https://brandbrief.co.kr/site/data/html/2026/11/23/2026112350163.html",
+     "date": "2026-11-23",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "Meta Robyn",
+   "signal": "국내 고객사",
+   "summary": "CJ올리브영이 메타와 Robyn으로 MMM을 만들어 토리든에 적용(ROI 14% 증가).",
+   "evidence": [
+    {
+     "claim": "CJ올리브영이 메타 오픈소스 Robyn으로 맞춤형 MMM을 개발했다.",
+     "quote": "CJ올리브영은 메타의 마케팅 사이언스 팀과 협력해 메타 오픈 소스의 오픈 소스 패키지 로빈(Robyn)을 사용해 맞춤형 '마케팅 믹스 모델'(MMM)을 개발했다.",
+     "url": "https://theguru.co.kr/news/article.html?no=87339",
+     "date": "2025-05-23",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "Amplitude",
+   "signal": "한국 지사·파트너; 국내 고객사",
+   "summary": "에이비일팔공이 2019년부터 공식 리셀러로 무신사·토스·컬리·GS리테일 지원, 2025년 롯데멤버스에 공급.",
+   "evidence": [
+    {
+     "claim": "에이비일팔공은 2019년부터 앰플리튜드 공식 리셀러이며 무신사·토스·컬리·GS리테일 등을 지원했다.",
+     "quote": "에이비일팔공은 2019년부터 앰플리튜드 공식 리셀러로 활동하며 입증된 성과를 보여주고 있어요. 전 세계 리셀러 중 고객사 수 1위, APAC에서 가장 많은 전문가 보유, 무신사·토스·컬리·GS리테일 등 주요 기업들의",
+     "url": "https://www.ab180.co/solutions/amplitude",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "에이비일팔공이 롯데멤버스에 앰플리튜드를 공급했다.",
+     "quote": "에이비일팔공, 롯데멤버스에 에어브릿지, 앰플리튜드 동시 공급",
+     "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=606560",
+     "date": "2025-11-20",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "Zapier",
+   "signal": "한국어·국내 채널 지원",
+   "summary": "국내 SaaS 잔디·모두싸인이 공식 블로그에서 Zapier 연동 활용법을 안내(카카오·네이버 연동 문서는 못 찾음).",
+   "evidence": [
+    {
+     "claim": "모두싸인이 Zapier 연동으로 전자계약 자동화 워크플로를 만드는 방법을 안내한다.",
+     "quote": "모두싸인 - 재피어(Zapier) 연동, 개발 리소스 없이 전자계약 자동화 워크플로우 만들기",
+     "url": "https://blog.modusign.co.kr/solution/zapier-integration",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "잔디가 Zapier로 원하는 이메일을 잔디 메시지로 받는 방법을 안내한다.",
+     "quote": "이메일도 재피어를 활용하면 제목에 특정 키워드가 들어간 이메일, 특정인이 보낸 이메일 등 원하는 이메일을 메시지로 받아볼 수 있습니다.",
+     "url": "https://blog.jandi.com/ko/2022/06/30/how-to-zapier-like-a-pro",
+     "date": "2022-06-30",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "Make",
+   "signal": "국내 고객사",
+   "summary": "SK텔레콤 마케터가 Make.com으로 인스타그램 카드뉴스 업로드를 자동화(제작비 10%, 열흘→이틀).",
+   "evidence": [
+    {
+     "claim": "SKT 마케터가 사내 교육에서 배운 메이크닷컴으로 카드뉴스 업로드를 자동화했다.",
+     "quote": "종범은 사내 교육에서 배운 에이전트 툴인 메이크닷컴을 이용해서 비용과 시간이 많이 들어가는 카드 뉴스 업로드부터 자동화를 하기로 했다.",
+     "url": "https://www.joongang.co.kr/article/25455707",
+     "date": "2026-08-25",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "n8n",
+   "signal": "국내 고객사",
+   "summary": "서울 n8n 밋업(2026년 9월, 40명)에서 종합병원·국내 대기업 도입 사례 발표, 참석자 주 용도는 사내 업무 자동화.",
+   "evidence": [
+    {
+     "claim": "n8n Seoul Meetup 발표에서 병원·국내 대기업·1인 사업 도입 사례를 다뤘다.",
+     "quote": "사례 1. 병원 지출증빙 사례 2. 국내 대기업 도입 사례 사례 3. 1인 사업",
+     "url": "https://buildnwrite.com/blog/n8n-seoul-meetup-2026-recap",
+     "date": "2026-09-05",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "밋업 신청자 39명 중 주 용도가 사내 업무 자동화인 사람이 23명이었다.",
+     "quote": "신청서를 보니 참석자 39명 중 n8n 초보자가 20명, 주 용도는 사내 업무 자동화가 23명으로 가장 많았습니다.",
+     "url": "https://buildnwrite.com/blog/n8n-seoul-meetup-2026-recap",
+     "date": "2026-09-05",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "Wix",
+   "signal": "한국어·국내 채널 지원",
+   "summary": "Wix 도움말 센터가 한국어를 지원(국내 기업 사례는 못 찾음).",
+   "evidence": [
+    {
+     "claim": "Wix 도움말 센터 지원 언어에 한국어가 있다.",
+     "quote": "한국어, 영어, 네덜란드어, 프랑스어, 독일어",
+     "url": "https://support.wix.com/ko/article/wix-%EB%8F%84%EC%9B%80%EB%A7%90-%EC%84%BC%ED%84%B0%EC%97%90%EC%84%9C-%EC%82%AC%EC%9A%A9-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%96%B8%EC%96%B4",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "tool": "ChatGPT",
+   "signal": "국내 사용 통계",
+   "summary": "국내 업무용 AI 앱 1위(2026년 9월 MAU 2470만명), 직장인 82%가 사용.",
+   "evidence": [
+    {
+     "claim": "2026년 9월 국내 업무용 AI 앱 1위는 챗GPT(MAU 2470만명)다.",
+     "quote": "업무용 AI 앱은 챗GPT로, 월간 사용자 수(MAU) 2470만명을 기록했다",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    },
+    {
+     "claim": "오픈서베이 직장인 조사에서 응답자 82%가 챗GPT를 쓴다고 답했다.",
+     "quote": "전체 응답자의 82%가 챗GPT를 사용하고 있다고 응답했고",
+     "url": "https://blog.opensurvey.co.kr/featured/ds-working-tool-2025-2",
+     "date": "2025-08-20",
+     "reliability": "survey"
+    }
+   ]
+  },
+  {
+   "tool": "Google Gemini",
+   "signal": "국내 사용 통계; 국내 고객사",
+   "summary": "업무용 AI 앱 3위(987만명), CJ올리브영·카카오뱅크 등이 구글 AI 활용, 인덴트코퍼레이션이 리뷰 분석에 사용.",
+   "evidence": [
+    {
+     "claim": "2026년 9월 업무용 AI 앱 3위는 구글 제미나이(987만명)다.",
+     "quote": "3위는 구글 제미나이(987만명)였다",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    },
+    {
+     "claim": "CJ올리브영·카카오뱅크·여기어때 등 국내 기업이 구글 AI 기술을 활용하고 있다.",
+     "quote": "유통 분야의 CJ 올리브영, 금융 분야의 카카오뱅크, 헬스케어 분야의 대원제약, 미디어 및 엔터테인먼트 분야의 위버스, 여행 분야의 여기어때 등도 구글 AI 기술을 활용해 혁신을 이뤄내고 있다.",
+     "url": "https://etoday.co.kr/news/view/2603512",
+     "date": "2026-07-14",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "인덴트코퍼레이션이 제미나이로 리뷰 분석·AI 댓글 응대 기능을 구현했다.",
+     "quote": "인덴트코퍼레이션은 구글 클라우드의 제미나이 모델을 활용해 대표 서비스인 '브이리뷰'와 'Spray'에 AI 기능을 구현했으며",
+     "url": "https://cloud.google.com/blog/ko/topics/customers/korea-ai-success-stories-2025",
+     "date": "2025-03-25",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "Claude",
+   "signal": "국내 사용 통계; 국내 고객사",
+   "summary": "국내 업무용 AI 앱 사용자 404만명(전년 대비 853% 증가), SKT 마케터가 클로드 코드로 SNS 게시물 자동화.",
+   "evidence": [
+    {
+     "claim": "2026년 9월 클로드 국내 업무용 AI 앱 사용자는 404만명이다.",
+     "quote": "이어 클로드(404만명)",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    },
+    {
+     "claim": "SKT 마케터가 클로드 코드·메이크닷컴·탈리·슬랙으로 인스타그램 게시물 제작을 자동화했다.",
+     "quote": "사용 도구 : 클로드 코드, 메이크닷컴, 탈리, 슬랙",
+     "url": "https://www.joongang.co.kr/article/25455707",
+     "date": "2026-08-25",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "CapCut",
+   "signal": "국내 사용 통계",
+   "summary": "국내 MAU 97만명(2025년 11월), 4년 새 2배.",
+   "evidence": [
+    {
+     "claim": "캡컷 국내 MAU가 4년 새 2배로 늘어 2025년 11월 97만명이다.",
+     "quote": "韓 MAU 4년 새 2배… 11월 97만명",
+     "url": "https://biz.chosun.com/it-science/ict/2025/12/29/EIHM2SXPQNDRBOINODYW3RWWZM",
+     "date": "2025-12-29",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "tool": "Notion AI",
+   "signal": "국내 고객사; 한국 지사·파트너; 국내 사용 통계",
+   "summary": "노션 한국지사 운영, GS그룹 계열사 전사 도입, 국내 앱 사용자 184만명.",
+   "evidence": [
+    {
+     "claim": "GS그룹 계열사 다수가 노션을 전사 도입했다.",
+     "quote": "GS, GS건설, GS EPS, GS글로벌, GS에너지는 전사적으로 도입했으며",
+     "url": "https://zdnet.co.kr/view?no=20241107174017",
+     "date": "2024-11-07",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "노션 한국지사장이 노션 3.0 발표 기자간담회에 참석했다.",
+     "quote": "박대성 노션 한국지사장이 참석해",
+     "url": "https://zdnet.co.kr/view?no=20251023120811",
+     "date": "2025-10-23",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "2026년 9월 노션 국내 업무용 AI 앱 사용자는 184만명이다.",
+     "quote": "노션(184만명)",
+     "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+     "date": "2026-11-04",
+     "reliability": "survey"
+    }
+   ]
+  },
+  {
+   "tool": "Google Looker Studio",
+   "signal": "한국어·국내 채널 지원",
+   "summary": "국내 광고 운영 SaaS LEVER가 루커 스튜디오용 메타 광고 대시보드 템플릿을 배포(국내 사용률 통계는 못 찾음).",
+   "evidence": [
+    {
+     "claim": "국내 광고 운영 SaaS LEVER가 루커 스튜디오 메타 광고 대시보드 템플릿을 제공한다.",
+     "quote": "이번 글에서는 루커 스튜디오로 구현한 메타 광고 분석 대시보드 템플릿과 함께, 각 분석들을 어떻게 활용할 수 있는지 설명해보려고 합니다.",
+     "url": "https://www.lever.me/resource/2278",
+     "date": "2025-10-10",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "tool": "GA4",
+   "signal": "국내 고객사",
+   "summary": "국내 이커머스 기업이 GA4 원천 데이터를 BigQuery·CRM과 결합해 고객 분석에 사용(비즈스프링 고객 사례, 기업명 비공개)",
+   "evidence": [
+    {
+     "claim": "국내 이커머스 기업이 GA4 행동 통계를 회원 ID 기준으로 설계해 CRM DB와 결합했다.",
+     "quote": "GA4 원천 데이터를 BigQuery에 적재하던 이커머스 기업이, 회원 ID 기준으로 GA4 행동 통계를 설계해 CRM DB에 결합함으로써",
+     "url": "https://bizspring.ai/kb/case/blog-ga4-bigquery-crm-integration",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ]
+  }
+ ],
+ "stats": [
+  {
+   "topic": "국내 업무용 AI 앱 사용자 수",
+   "finding": "2026년 9월 국내 업무용 AI 앱 MAU는 챗GPT 2470만, 제미나이 987만, 클로드 404만, 노션 184만, 캔바 120만명이다.",
+   "figures": "챗GPT 2470만명; 제미나이 987만명; 클로드 404만명; 노션 184만명; 캔바 120만명",
+   "sample": "와이즈앱·리테일 국내 스마트폰 이용자 표본 추정",
+   "quote": "이어 클로드(404만명), 마이크로소프트 코파일럿(196만명), 노션(184만명), 클로바노트(166만명), 그록(129만명), 퍼플렉시티(129만명), 캔바(120만명) 순으로 집계됐다.",
+   "url": "https://biz.chosun.com/it-science/ict/2026/11/04/OGQVJ3TPRVA5PNNRQXBZLBHXPE",
+   "date": "2026-11-04",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "직장인 업무 툴 사용률",
+   "finding": "국내 직장인 생산성 툴 중 챗GPT 사용률이 가장 높아 응답자 82%가 사용한다.",
+   "figures": "챗GPT 82%",
+   "sample": "오픈서베이 업무 툴 트렌드 리포트 2025(직장인 1,000명)",
+   "quote": "업무 효율을 높이기 위한 생산성 툴 중 가장 높은 사용률을 기록한 것은 단연 챗GPT였습니다. 전체 응답자의 82%가 챗GPT를 사용하고 있다고 응답했고",
+   "url": "https://blog.opensurvey.co.kr/featured/ds-working-tool-2025-2",
+   "date": "2025-08-20",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "생성형 AI 유료 서비스 이용",
+   "finding": "생성형 AI 이용 경험률 85.0%, 유료 결제 서비스는 챗GPT 53.1%, 제미나이 43.4%, 클로드 15.4%다.",
+   "figures": "이용 경험 85.0%; 유료 결제율 25.9%; 챗GPT 53.1%; 제미나이 43.4%; 클로드 15.4%",
+   "sample": "인크로스, 전국 만 15~69세 2,000명",
+   "quote": "유료 결제 서비스 응답에서는 챗GPT(ChatGPT)가 53.1%로 1위였다. 구글 제미나이(Gemini)는 43.4%, 클로드(Claude)는 15.4%를 기록했다.",
+   "url": "https://startupreport.net/articles/1124471",
+   "date": "2026-10-30",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "마케터 AI 사용 빈도",
+   "finding": "아이보스 마케터 설문에서 응답자 82.7%가 업무에 AI를 거의 매일 사용한다고 답했다.",
+   "figures": "거의 매일 사용 82.7%",
+   "sample": "아이보스(큐레터) 마케터 202명 설문, 2026.08.12~09.14",
+   "quote": "응답자의 82.7%가 \"업무에 AI를 거의 매일 사용한다\"고 답했거든요.",
+   "url": "https://qletter.co.kr/article/1055984-%EB%A7%88%EC%BC%80%ED%84%B0-202%EB%AA%85%EC%9D%B4-AI%EB%A5%BC-%EC%93%B0%EB%A9%B4%EC%84%9C-%EB%8A%90%EB%82%80-%EB%AC%B4%EC%84%9C%EC%9A%B4-%EC%A0%90",
+   "date": "2026-09",
+   "reliability": "survey",
+   "region": "국내"
+  }
+ ],
+ "gaps": [
+  "Copy.ai: 국내 사용 근거 못 찾음",
+  "Hootsuite: 국내 사용 근거 못 찾음",
+  "Klue: 국내 사용 근거 못 찾음",
+  "Twilio Segment: 국내 사용 근거 못 찾음",
+  "Recombee: 국내 사용 근거 못 찾음",
+  "Intercom Fin: 국내 사용 근거 못 찾음",
+  "Customer.io: 국내 사용 근거 못 찾음",
+  "Iterable: 국내 사용 근거 못 찾음",
+  "Smartly: 국내 사용 근거 못 찾음",
+  "Madgicx: 국내 사용 근거 못 찾음",
+  "Birch: 국내 사용 근거 못 찾음",
+  "Apollo.io: 국내 사용 근거 못 찾음",
+  "11x: 국내 사용 근거 못 찾음",
+  "Qualified: 국내 사용 근거 못 찾음",
+  "Gong: 국내 사용 근거 못 찾음",
+  "Livestorm: 국내 사용 근거 못 찾음",
+  "Senja: 국내 사용 근거 못 찾음",
+  "GA4: 국내 사용 근거 못 찾음",
+  "Google Ads 매장 방문 전환: 국내 사용 근거 못 찾음",
+  "Funnel: 국내 사용 근거 못 찾음",
+  "Statsig: 국내 사용 근거 못 찾음",
+  "Adobe Experience Platform: 국내 사용 근거 못 찾음",
+  "Google Pomelli: 국내 사용 근거 못 찾음",
+  "Shopify Sidekick: 국내 사용 근거 못 찾음",
+  "Square: 국내 사용 근거 못 찾음",
+  "GA4: 국내 사용이 널리 알려져 있으나 국내 기업명이 있는 원문 사례를 이번에 받지 못함(대행사 가이드 글만 확인).",
+  "Google Pomelli: Google Labs 도움말에 이용 가능 국가로 South Korea가 있으나 지원 언어는 영어뿐이고 국내 사용 사례는 없음.",
+  "Statsig: 서울 소재 WEIRDSECTOR가 Statsig 컨설팅을 안내하나 공식 파트너 여부·국내 고객사는 확인 못 함.",
+  "Apollo.io: 솔바인드9이 한국기업 대상 활용 시나리오를 안내하나 공식 파트너 여부·국내 고객사는 확인 못 함.",
+  "Smartly: 에이비일팔공이 Smartly.io 사례집(글로벌 사례)을 배포하나 국내 광고주 사례는 확인 못 함.",
+  "Adobe Experience Platform: 롯데렌탈 '묘미'는 Adobe Analytics·Target 사례이고, LG CNS 협약은 AEM·Commerce라 AEP 국내 사례는 확인 못 함.",
+  "Intercom Fin: 국내 도입 사례 대신 잔디가 Intercom에서 채널톡으로 바꾼 사례만 검색됨.",
+  "Customer.io: Packed Data의 'Customer.io 한국 고객 목록' 페이지는 회사명을 공개하지 않아 근거로 쓰지 않음.",
+  "Jasper·Buffer·HeyGen·Klaviyo·Wix·Google Looker Studio는 한국어 지원·국내 연동만 확인했고 국내 기업 사용 사례는 못 찾음.",
+  "Meta Business Suite 예약 게시: 한국어 도움말 페이지를 curl로 받지 못해(오류 페이지) 추가하지 않음.",
+  "아이보스 원문(i-boss.co.kr)은 봇 차단으로 받지 못해 같은 글의 큐레터(qletter.co.kr) 게시본을 사용함. 스티비 2025 리포트에는 툴 사용률 수치가 없어 stats에 넣지 않음."
+ ]
+}

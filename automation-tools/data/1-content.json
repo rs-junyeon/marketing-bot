@@ -1,0 +1,946 @@
+{
+ "group": "콘텐츠·SNS·브랜드 캠페인",
+ "tasks": [
+  {
+   "task": "기획(주제 발굴·콘텐츠 캘린더)",
+   "problem": "채널마다 올릴 주제와 일정을 매번 사람이 정리해야 하고 아이디어가 고갈된다.",
+   "how": "소셜 관리 도구의 아이디어 보드·캘린더에 아이디어를 모으고, 생성형 AI로 주제·초안을 뽑아 캘린더에 배치한다.",
+   "automation_scope": "아이디어 제안, 캘린더 상 게시 슬롯 관리, 기존 콘텐츠 재활용 제안",
+   "human_scope": "캠페인 목표·주제 선정, 일정 확정",
+   "tools": [
+    "Buffer",
+    "Hootsuite",
+    "Jasper",
+    "뤼튼"
+   ]
+  },
+  {
+   "task": "문구 작성(카피·블로그·SNS 글)",
+   "problem": "블로그·SNS·푸시·광고 문구를 채널·상품별로 대량으로 써야 하는데 인력이 부족하다.",
+   "how": "생성형 AI 글쓰기 도구에 브랜드 보이스·상품 정보를 넣고 초안과 변형안을 생성한 뒤 사람이 고른다. 한 원본(블로그)을 SNS용으로 바꾸는 재가공이 흔하다.",
+   "automation_scope": "초안·제목·요약·변형 카피·해시태그 생성, 원본 글을 다른 채널 형식으로 변환",
+   "human_scope": "사실 확인, 톤 최종 조정, 승인",
+   "tools": [
+    "뤼튼",
+    "네이버 클로바 포 라이팅",
+    "Jasper",
+    "Copy.ai",
+    "Hootsuite",
+    "Sprout Social"
+   ]
+  },
+  {
+   "task": "이미지·상세페이지 제작",
+   "problem": "배너·카드뉴스·상세페이지를 디자이너 없이 빠르게 많이 만들어야 한다.",
+   "how": "템플릿 기반 디자인 도구의 AI 기능(배경 제거·이미지 생성)이나, 상품 이미지·URL을 넣으면 상세페이지·배너를 자동 생성하는 커머스 도구를 쓴다.",
+   "automation_scope": "레이아웃 배치, 이미지 분류·배경 처리, 판매 카피 삽입, 사이즈별 변형",
+   "human_scope": "템플릿·테마 선택, 최종 검수",
+   "tools": [
+    "미리캔버스",
+    "Canva Magic Studio",
+    "카페24 AI",
+    "브이캣(VCAT.AI)"
+   ]
+  },
+  {
+   "task": "영상 제작(숏폼·AI 아바타·AI 성우)",
+   "problem": "숏폼·광고 영상과 내레이션을 상품·국가별로 자주 새로 만들어야 해 촬영·성우·편집 비용이 크다.",
+   "how": "상품 URL/정보로 숏폼을 자동 렌더링하거나, 원고를 AI 성우로 더빙하고, AI 아바타·번역으로 영상을 현지화하며, 생성형 영상 모델로 광고 장면을 만든다.",
+   "automation_scope": "영상 템플릿 렌더링, 음성 합성, 립싱크 번역, 장면 생성",
+   "human_scope": "원고·콘셉트 작성, 보이스·아바타 선택, 결과물 검수",
+   "tools": [
+    "브이캣(VCAT.AI)",
+    "타입캐스트",
+    "HeyGen",
+    "Runway"
+   ]
+  },
+  {
+   "task": "예약 게시·멀티채널 배포",
+   "problem": "여러 SNS 계정에 시간 맞춰 올리고 승인 절차를 거치는 일이 반복된다.",
+   "how": "소셜 관리 SaaS에 채널을 연결해 예약·일괄 게시하고, 팀 승인 워크플로·API/MCP로 다른 도구와 연결한다.",
+   "automation_scope": "예약 발행, 다채널 동시 게시, 승인 라우팅",
+   "human_scope": "게시물 승인, 채널별 운영 판단",
+   "tools": [
+    "Buffer",
+    "Hootsuite",
+    "Sprout Social"
+   ]
+  },
+  {
+   "task": "브랜드 일관성(브랜드 키트·보이스)",
+   "problem": "여러 사람이 만들면 로고·색·톤이 제각각이 된다.",
+   "how": "브랜드 키트(로고·색·폰트)와 브랜드 보이스를 도구에 저장해 생성·편집 시 자동 적용하고, 디자인 승인·에디터 제어로 통제한다.",
+   "automation_scope": "브랜드 자산·톤 자동 적용, 템플릿 잠금",
+   "human_scope": "브랜드 가이드 정의, 승인",
+   "tools": [
+    "미리캔버스",
+    "Canva Magic Studio",
+    "Jasper",
+    "브이캣(VCAT.AI)",
+    "카페24 AI"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "name": "브이캣(VCAT.AI)",
+   "vendor": "브이캣",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "영상 제작(숏폼·AI 아바타·AI 성우)",
+    "이미지·상세페이지 제작",
+    "브랜드 일관성(브랜드 키트·보이스)"
+   ],
+   "problem": "커머스 기업이 하루 수십 건 필요한 상품 영상·배너를 디자이너 없이 만들기 어렵다.",
+   "users": "커머스·쇼핑몰·유통 기업 마케터, 1인 사업자부터 대형 플랫폼(대량 렌더링)까지",
+   "features": [
+    "상품 상세페이지 URL로 영상·이미지 자동 생성",
+    "브랜드 가이드 반영",
+    "카피 자동 생성(Copy Gen)",
+    "대량 렌더링·플랫폼 연동"
+   ],
+   "automation_scope": "상품 정보·이미지 추출, 카피 작성, 템플릿 적용, 영상 렌더링",
+   "human_scope": "템플릿·브랜드 가이드 설정, 업로드 채널·시간 결정",
+   "korea": "국내 서비스(한국어). 고객 사례에서 네이버 숏클립·쿠팡 상세페이지 활용 확인.",
+   "pricing": "구독 요금제(월간/연간, 연간 결제 할인). 금액은 원문에서 확인 못 함.",
+   "evidence": [
+    {
+     "claim": "상세페이지 URL 하나로 이미지·텍스트를 추출해 브랜드 가이드에 맞춘 이미지·영상을 자동 제작한다.",
+     "quote": "브이캣은 제품 상세페이지 URL 하나만 입력하면, AI가 이미지·텍스트를 추출하고 브랜드 가이드에 맞춰 이미지나 영상을 자동으로 제작하는 ‘URL 기반 콘텐츠 생성’을 구현했다.",
+     "url": "https://zdnet.co.kr/view/?no=20250605143249",
+     "date": "2025-06-05",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "연간 요금제는 할인된 금액으로 결제할 수 있다.",
+     "quote": "40% 할인된 금액 으로 이용 가능!",
+     "url": "https://guide.vcat.ai/ko/start/subscribe",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "타입캐스트",
+   "vendor": "네오사피엔스",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "영상 제작(숏폼·AI 아바타·AI 성우)"
+   ],
+   "problem": "방송·SNS·매장 안내용 내레이션을 매번 성우 섭외·녹음으로 만들면 비용과 시간이 든다.",
+   "users": "홈쇼핑·유통사 방송·마케팅 담당자, 크리에이터, 기업/공공기관/에이전시",
+   "features": [
+    "원고 입력으로 AI 더빙 생성",
+    "웹 에디터(스튜디오)",
+    "API",
+    "비즈니스 요금제"
+   ],
+   "automation_scope": "원고를 음성으로 합성, 수정 시 즉시 재생성",
+   "human_scope": "원고 작성, 목소리·톤 선택, 최종 검수",
+   "korea": "국내 서비스, 한국어 음성 지원.",
+   "pricing": "무료 체험 플랜(₩0/월)부터, 다운로드 시간 차감형. 기업/공공기관/에이전시는 비즈니스 요금제.",
+   "evidence": [
+    {
+     "claim": "음성 생성·재생은 모든 플랜에서 무료이고 다운로드 시 플랜별 시간이 차감되며, 기업은 비즈니스 요금제를 쓴다.",
+     "quote": "음성 생성과 재생 은 모든 플랜에서 무료 이며, 음성 다운로드 시에만 플랜별 다운로드 시간이 차감 됩니다. 기업/공공기관/에이전시는 비즈니스 요금제를 이용해주세요.",
+     "url": "https://typecast.ai/kr/pricing/",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "원고만 있으면 성우 섭외·녹음실 예약 없이 더빙이 생성된다.",
+     "quote": "원고만 있으면 바로 더빙이 생성 됩니다.",
+     "url": "https://typecast.ai/kr/learn/%EB%B0%A9%EC%86%A1-%EC%A0%9C%EC%9E%91-%EC%8B%9C%EA%B0%84-50%EB%A5%BC-%EC%A4%84%EC%9D%B8-%EB%A1%AF%EB%8D%B0%ED%99%88%EC%87%BC%ED%95%91%EC%9D%98-%EB%B9%84%EB%B2%95",
+     "date": "2025-11-20",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "미리캔버스",
+   "vendor": "미리디",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "이미지·상세페이지 제작",
+    "브랜드 일관성(브랜드 키트·보이스)"
+   ],
+   "problem": "디자이너 병목과 외주 디자인 비용, 사람마다 다른 디자인 톤.",
+   "users": "마케팅·영업·HR·기획 등 비디자이너 직원, 팀 단위(최소 3인)~대규모 조직",
+   "features": [
+    "템플릿 기반 에디터",
+    "AI 배경 제거·이미지 생성·프레젠테이션 자동 작성",
+    "브랜드 키트",
+    "디자인 승인·에디터 제어"
+   ],
+   "automation_scope": "AI 이미지 생성·배경 제거, 템플릿 적용",
+   "human_scope": "디자인 편집, 승인",
+   "korea": "국내 서비스, 한국어 템플릿. 세금계산서 발행 지원.",
+   "pricing": "기업용 Pro ₩482,400~/연(최소 3인), Enterprise 맞춤 견적.",
+   "evidence": [
+    {
+     "claim": "브랜드 키트에 저장한 자산으로 누가 작업해도 같은 톤앤매너를 유지한다.",
+     "quote": "브랜드 키트에 저장한 자산을 사용해 누가 작업해도 동일한 디자인 톤앤매너를 유지할 수 있습니다.",
+     "url": "https://www.miricanvas.com/business/design-solutions/pro-for-business",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "드래그 앤 드롭 에디터에 AI 배경 제거·이미지 생성·프레젠테이션 자동 작성을 제공한다.",
+     "quote": "직관적인 드래그 앤 드롭 방식에 AI 배경 제거, 이미지 생성, 프레젠테이션 자동 작성까지.",
+     "url": "https://www.miricanvas.com/business/design-solutions/pro-for-business",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "기업용 Pro는 연 48만 2,400원부터이며 최소 3인부터다.",
+     "quote": "기업용 Pro ₩482,400~ /연(최소 3인부터)",
+     "url": "https://www.miricanvas.com/business/pricing",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "엔터프라이즈 버전은 디자인 승인·브랜드 키트·에디터 제어로 브랜드 규정에 맞춘 작업 환경을 제공한다.",
+     "quote": "△디자인 승인 △브랜드 키트 △에디터 제어 등의 기능을 활용하여 기업의 브랜드 아이덴티티 규정에 맞춘 디자인 작업 환경도 제공한다.",
+     "url": "https://www.mk.co.kr/news/business/10458894",
+     "date": "2022-09-19",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "뤼튼",
+   "vendor": "뤼튼테크놀로지스",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "문구 작성(카피·블로그·SNS 글)",
+    "기획(주제 발굴·콘텐츠 캘린더)"
+   ],
+   "problem": "마케팅 문구·블로그 포스팅 초안 작성에 드는 시간.",
+   "users": "개인·소상공인·직장인(대중용 AI 서비스)",
+   "features": [
+    "상황별 글쓰기 툴 추천(마케팅 문구·블로그 포스팅 등)",
+    "질문별 LLM 자동 선택"
+   ],
+   "automation_scope": "문구·블로그 초안 생성",
+   "human_scope": "프롬프트 작성, 편집·검수",
+   "korea": "국내 서비스, 한국어. 2023년 MAU 50만 → 1년 10개월 만에 500만 돌파(요즘IT 보도).",
+   "pricing": "대화형 서비스 무료 제공 방침(요즘IT 보도). 기업용 요금은 확인 못 함.",
+   "evidence": [
+    {
+     "claim": "뤼튼은 마케팅 문구·문서·블로그 포스팅 등 상황에 맞는 툴을 추천한다.",
+     "quote": "뤼튼은 마케팅 문구, 문서 작업, 블로그 포스팅, 자기소개서 등 상황에 맞는 툴을 추천해 사용자의 편의성을 높였다는 평가를 받고 있다.",
+     "url": "https://www.startuptoday.kr/news/articleView.html?idxno=46720",
+     "date": "2023-04-18",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "월간 활성 사용자가 2023년 50만 명에서 1년 10개월 만에 500만 명을 넘었다.",
+     "quote": "2023년 50만 명에 불과하던 월간 활성 사용자(MAU) 수가 1년 10개월 만에 500만 명을 돌파한 것인데요.",
+     "url": "https://yozm.wishket.com/magazine/detail/3213/",
+     "date": "2025-07-02",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "네이버 클로바 포 라이팅",
+   "vendor": "네이버",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "문구 작성(카피·블로그·SNS 글)"
+   ],
+   "problem": "네이버 블로그·인플루언서 토픽 작성 시 요약문·제목 작성에 드는 시간.",
+   "users": "네이버 창작자·인플루언서·SME(사업자)",
+   "features": [
+    "스마트에디터에 하이퍼클로바X 결합",
+    "블로그 요약문·제목 생성"
+   ],
+   "automation_scope": "요약문·제목 초안 생성",
+   "human_scope": "본문 작성·선택·발행",
+   "korea": "네이버 스마트에디터 내장(한국어, 네이버 블로그 직접 연동).",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "클로바 포 라이팅은 스마트에디터에 하이퍼클로바X를 결합한 글쓰기 도구다.",
+     "quote": "콘텐츠 제작 툴 ‘스마트에디터’에 하이퍼클로바X를 결합하여 네이버에서 활동하는 창작자와 사업자의 효과적인 글쓰기를 돕는 도구다.",
+     "url": "https://www.navercorp.com/media/pressReleasesDetail?seq=2293",
+     "date": "2023-10-13",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "인플루언서는 토픽 발행 시 블로그 요약문과 제목을 빠르게 작성할 수 있다.",
+     "quote": "네이버 인플루언서는 인플루언서 토픽 발행 시 클로바 포 라이팅을 활용해 블로그 요약문과 제목을 빠르게 작성할 수 있다.",
+     "url": "https://www.navercorp.com/media/pressReleasesDetail?seq=2293",
+     "date": "2023-10-13",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "카페24 AI",
+   "vendor": "카페24",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "이미지·상세페이지 제작",
+    "문구 작성(카피·블로그·SNS 글)",
+    "브랜드 일관성(브랜드 키트·보이스)"
+   ],
+   "problem": "쇼핑몰 운영자가 상세페이지와 SNS 게시물을 매번 직접 만들어야 한다.",
+   "users": "카페24 쇼핑몰 운영자(1인 셀러~글로벌 쇼핑몰)",
+   "features": [
+    "상품 이미지로 상세페이지 자동 구성(13개 섹션·7종 테마)",
+    "판매 카피 생성",
+    "SNS 게시물·캡션·해시태그 생성",
+    "SNS 채널 분석 기반 톤앤매너 적용"
+   ],
+   "automation_scope": "이미지 분류·배치, 카피·SNS 게시물 생성",
+   "human_scope": "테마 선택, 검수",
+   "korea": "국내 플랫폼(한국어·일본어·영어 페이지).",
+   "pricing": "카페24 무료 시작 가능(AI 기능별 요금은 확인 못 함).",
+   "evidence": [
+    {
+     "claim": "상품 이미지를 올리면 AI가 컷을 분류해 13개 섹션에 배치하고 판매 카피까지 작성한다.",
+     "quote": "상품 이미지를 올리는 순간, AI가 모델컷·상세컷·색상컷으로 자동 분류해 13개 섹션에 배치하고 판매 카피까지 완성해줘요.",
+     "url": "https://cafe24.ai",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "같은 이미지로 SNS 게시물·캡션·해시태그를 이어서 만들고 기존 SNS 채널을 분석해 톤앤매너를 적용한다.",
+     "quote": "같은 이미지로 SNS 게시물·캡션·해시태그까지 이어서 생성돼요. 기존 SNS 채널을 분석해서 브랜드 톤앤매너도 일관되게 적용해줘서",
+     "url": "https://cafe24.ai",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Canva Magic Studio",
+   "vendor": "Canva",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "이미지·상세페이지 제작",
+    "브랜드 일관성(브랜드 키트·보이스)"
+   ],
+   "problem": "비디자이너가 빠르게 디자인 자산을 만들어야 한다.",
+   "users": "기업 마케팅·전사 직원(Canva Enterprise)",
+   "features": [
+    "Text to Graphic",
+    "AI 사진·영상 편집",
+    "엔터프라이즈 연동(SharePoint·HubSpot 등)"
+   ],
+   "automation_scope": "텍스트로 그래픽 생성, AI 편집",
+   "human_scope": "디자인 선택·편집",
+   "korea": "한국어 서비스 제공 여부는 이번 원문에서 확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "업그레이드된 Magic Studio는 Text to Graphic과 AI 사진·영상 편집 기능을 제공한다.",
+     "quote": "The newly upgraded Canva Magic Studio boasts features like Text to Graphic, AI-powered photo and video editing tools, and enhanced AI design technology.",
+     "url": "https://www.reworked.co/collaboration-productivity/canva-challenges-leading-productivity-suites-with-enterprise-release/",
+     "date": "2024-07-08",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "Jasper",
+   "vendor": "Jasper AI",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "문구 작성(카피·블로그·SNS 글)",
+    "브랜드 일관성(브랜드 키트·보이스)",
+    "기획(주제 발굴·콘텐츠 캘린더)"
+   ],
+   "problem": "브랜드 톤을 지키면서 마케팅 콘텐츠를 대량으로 만들기 어렵다.",
+   "users": "기업 마케팅팀(엔터프라이즈 포함)",
+   "features": [
+    "Brand IQ(Brand Voice·Visual Guidelines·Style Guide)",
+    "마케팅 워크플로 에이전트",
+    "번역·GEO·리서치"
+   ],
+   "automation_scope": "브랜드 맥락을 반영한 콘텐츠 생성, 에이전트 워크플로",
+   "human_scope": "브랜드 정보 입력, 검수",
+   "korea": "확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "브랜드 보이스·비주얼 가이드·스타일 가이드를 관리하고 마케팅 워크플로를 실행하는 에이전트를 제공한다.",
+     "quote": "Brand Voice Brand Voice Visual Guidelines Visual Guidelines Style Guide Style Guide Product IQ Product IQ Knowledge Knowledge Agents Agents Agents Purpose-built agents that execute end-to-end marketing workflows",
+     "url": "https://www.jasper.ai/case-studies/akbank",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Copy.ai",
+   "vendor": "Copy.ai",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "문구 작성(카피·블로그·SNS 글)"
+   ],
+   "problem": "적은 마케팅 인력으로 콘텐츠 양을 늘려야 한다.",
+   "users": "B2B·GTM 마케팅팀(스타트업 포함)",
+   "features": [
+    "GTM AI 워크플로",
+    "Brand Voice",
+    "Copy Agents"
+   ],
+   "automation_scope": "블로그를 LinkedIn 게시물 등으로 재가공하는 워크플로 실행",
+   "human_scope": "워크플로 설계, 검수",
+   "korea": "확인 못 함.",
+   "pricing": "무료 체험 제공(요금 상세는 확인 못 함).",
+   "evidence": [
+    {
+     "claim": "Copy.ai는 워크플로·Copy Agents·Brand Voice 기능을 제공한다.",
+     "quote": "AI Workflows What are Workflows? Building Workflows Copy Agents Intelligence Layer Tables Actions Brand Voice",
+     "url": "https://www.copy.ai/case-studies/defendify-scales-content-creation-33x-with-ai-powered-workflows",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Buffer",
+   "vendor": "Buffer",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "예약 게시·멀티채널 배포",
+    "기획(주제 발굴·콘텐츠 캘린더)",
+    "문구 작성(카피·블로그·SNS 글)"
+   ],
+   "problem": "여러 SNS 채널 예약 게시와 아이디어 관리.",
+   "users": "크리에이터·소규모 기업·에이전시",
+   "features": [
+    "채널별 무제한 예약 게시",
+    "아이디어 보드",
+    "AI Assistant(작성·다듬기·재활용)",
+    "API·MCP 연동"
+   ],
+   "automation_scope": "예약 발행, AI 초안",
+   "human_scope": "게시물 확정, 일정 결정",
+   "korea": "지원 채널: Instagram·Facebook·TikTok·LinkedIn·X·YouTube·Threads 등. 네이버·카카오 채널은 목록에 없음.",
+   "pricing": "Essentials $5/월(채널 1개, 연간 결제 기준), Team $10/월(채널 1개).",
+   "evidence": [
+    {
+     "claim": "AI Assistant는 콘텐츠 작성·다듬기·재활용을 돕고, API·MCP로 AI 도구에서 작성·예약·분석할 수 있다.",
+     "quote": "AI Assistant Get help creating, refining, and repurposing content API Connect Buffer to your agents, automation tools, or build something entirely new MCP Draft, schedule, and analyze your posts from",
+     "url": "https://buffer.com/pricing",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Essentials 요금은 채널당 월 5달러(연 60달러)다.",
+     "quote": "Essentials Recommended $5 /month 1 channel · $ 60 billed yearly",
+     "url": "https://buffer.com/pricing",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "연동 채널에 Instagram·TikTok·YouTube·Threads 등이 포함된다.",
+     "quote": "Channels Instagram Facebook TikTok LinkedIn X (Twitter) YouTube Threads Pinterest Google Business Profile Bluesky Mastodon Substack",
+     "url": "https://buffer.com/pricing",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Hootsuite",
+   "vendor": "Hootsuite",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "예약 게시·멀티채널 배포",
+    "문구 작성(카피·블로그·SNS 글)",
+    "기획(주제 발굴·콘텐츠 캘린더)"
+   ],
+   "problem": "여러 계정의 게시·승인·응대를 한 곳에서 처리해야 한다.",
+   "users": "기업 소셜미디어팀·에이전시",
+   "features": [
+    "캘린더 기반 무제한 예약",
+    "AI로 게시물·이미지 생성",
+    "OwlyGPT 실시간 문구 편집",
+    "팀 승인·자동 라우팅"
+   ],
+   "automation_scope": "예약 발행, AI 초안·톤 조정, 인박스 응답·워크플로 자동화",
+   "human_scope": "콘텐츠 승인, 응대 판단",
+   "korea": "확인 못 함.",
+   "pricing": "Standard $99, Professional $199, Advanced $399(사용자당 월), 14일 무료 체험.",
+   "evidence": [
+    {
+     "claim": "OwlyGPT는 선택한 계정을 인식해 게시물 초안 작성·수정·톤 조정을 실시간으로 돕는다.",
+     "quote": "OwlyGPT can detect your selected accounts and review your post to help draft, refine and adjust tone in real time.",
+     "url": "https://www.hootsuite.com/whats-new/owlygpt-in-create",
+     "date": "2026-01-27",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Standard 요금제는 월 99달러로 최대 10개 계정을 한 캘린더에서 관리하고 AI로 게시물·이미지를 생성한다.",
+     "quote": "Manage up to 10 social media accounts from one calendar. $ 99 per month per user/month * Free 14-day trial Includes: Schedule unlimited social posts* Generate posts and images with AI",
+     "url": "https://www.hootsuite.com/plans",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Advanced 요금제는 팀 콘텐츠 검토·승인 기능을 포함한다.",
+     "quote": "Streamline approvals and co-work across teams. $ 399 per month per user/month",
+     "url": "https://www.hootsuite.com/plans",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Sprout Social",
+   "vendor": "Sprout Social",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "문구 작성(카피·블로그·SNS 글)",
+    "예약 게시·멀티채널 배포"
+   ],
+   "problem": "다수 브랜드 계정에 반복 없이 문구를 쓰고 접근성(alt text)까지 챙겨야 한다.",
+   "users": "기업 소셜미디어팀(엔터프라이즈)",
+   "features": [
+    "AI Assist 카피 변형 생성",
+    "이미지 alt text 생성",
+    "AI 에이전트 Trellis(리스닝 질의)"
+   ],
+   "automation_scope": "카피 변형·alt text 생성",
+   "human_scope": "게시 선택·승인",
+   "korea": "확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "AI Assist는 캠페인 문구 변형을 여러 개 만들고 이미지 alt text를 생성한다.",
+     "quote": "AI Assist generates multiple variations of campaign and employer brand copy, helping the team avoid repetition when publishing across multiple accounts. It also creates alt text for images",
+     "url": "https://sproutsocial.com/insights/examples-of-brands-using-sprout-social-ai/",
+     "date": "2026",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "HeyGen",
+   "vendor": "HeyGen",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "영상 제작(숏폼·AI 아바타·AI 성우)"
+   ],
+   "problem": "광고·영상을 여러 언어로 현지화하는 데 촬영·후반작업 비용과 시간이 든다.",
+   "users": "기업 마케팅·L&D팀, 크리에이터",
+   "features": [
+    "AI 아바타",
+    "영상 번역·현지화",
+    "Video Agent",
+    "커스텀 아바타(본인 목소리·외모)"
+   ],
+   "automation_scope": "아바타 영상 생성, 다국어 번역·립싱크",
+   "human_scope": "원고·콘셉트, 검수",
+   "korea": "Creator 플랜 175개 이상 언어·방언(한국어 포함 여부는 원문에서 명시 확인 못 함).",
+   "pricing": "Free $0, Creator $29/월, Pro $49/월.",
+   "evidence": [
+    {
+     "claim": "Creator 플랜은 월 29달러이고 커스텀 아바타와 175개 이상 언어·방언을 지원한다.",
+     "quote": "Custom Video Avatar with your own voice and likeness 175+ languages and dialects",
+     "url": "https://www.heygen.com/pricing",
+     "date": "",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "체험용 무료 플랜(월 0달러)이 있다.",
+     "quote": "Free $0/mo For trying it out",
+     "url": "https://www.heygen.com/pricing",
+     "date": "",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Runway",
+   "vendor": "Runway",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "tasks": [
+    "영상 제작(숏폼·AI 아바타·AI 성우)"
+   ],
+   "problem": "광고 영상 제작 비용·기간.",
+   "users": "광고 제작사·브랜드 크리에이티브팀(엔터프라이즈)",
+   "features": [
+    "생성형 영상 모델(Gen-4.5, Aleph 등)",
+    "이미지 대체 등 편집 도구",
+    "서드파티 모델 면책 처리"
+   ],
+   "automation_scope": "장면·영상 생성, 편집",
+   "human_scope": "콘셉트·연출, 선별",
+   "korea": "확인 못 함.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "Runway가 서드파티 모델 면책을 상당 부분 처리해 제작사 작업이 쉬워졌다고 한다.",
+     "quote": "Runway handles a lot of the third-party model indemnification, and it makes our work significantly easier.",
+     "url": "https://runway.com/customers/how-silverside-ai-builds-coca-colas-best-ads-for-65-percent-less",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "company": "번개장터",
+   "tool": "브이캣(VCAT.AI)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "영상 제작(숏폼·AI 아바타·AI 성우)",
+   "what": "셀러 관리 시스템과 VCAT.AI를 연동해 셀러가 등록한 상품명·설명·이미지로 앱 안에서 숏폼을 자동 제작하고, 가격을 뺀 카피를 자동 생성해 전용 템플릿에 적용.",
+   "automation_scope": "상품 정보 추출, 카피 생성, 숏폼 렌더링",
+   "human_scope": "셀러가 '숏폼 자동 만들기' 켜기",
+   "result": "하루 5천 개 이상·월 10만 개 숏폼 자동 제작, 고객 체류시간 약 12% 상승",
+   "evidence": [
+    {
+     "claim": "셀러 관리 시스템과 연동해 편집 없이 상품 정보만으로 숏폼이 자동 제작되게 했다.",
+     "quote": "번개장터의 셀러 관리 시스템과 VCAT.AI를 연동해, 셀러가 따로 편집을 하지 않아도 상품 정보만으로 번개장터 앱 내에서 숏폼 영상이 자동 제작되도록 했습니다.",
+     "url": "https://vcat.ai/blog/successstory_3",
+     "date": "2025-09-05",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "하루 5천 개 이상, 월 10만 개 숏폼을 만들고 체류시간이 약 12% 올랐다.",
+     "quote": "하루 5천개 이상 , 월 10만 개 '숏폼 자동제작' 고객 체류시간 약 12% 상승",
+     "url": "https://vcat.ai/blog/successstory_3",
+     "date": "2025-09-05",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "최군푸드(1인 농수산물 쇼핑몰)",
+   "tool": "브이캣(VCAT.AI)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "영상 제작(숏폼·AI 아바타·AI 성우)",
+   "what": "상세페이지 URL로 숏폼을 만들어 네이버 숏클립·쿠팡 등에 업로드(매시 정각 영상 게시).",
+   "automation_scope": "URL 기반 영상 생성",
+   "human_scope": "업로드 채널·시간 운영, 기획전 신청",
+   "result": "월 250~300개 영상 제작, 영상당 2시간 이상 → 평균 1분, 매출 20% 이상 증가",
+   "evidence": [
+    {
+     "claim": "네이버 숏클립에 영상을 올려 매출을 20% 이상 늘렸고 월 250~300개 영상을 만들었다.",
+     "quote": "네이버 숏클립에 영상을 올려 매출을 20% 이상 끌어올렸습니다.",
+     "url": "https://vcat.ai/blog/success-case4",
+     "date": "2025-03-04",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "영상 하나 제작 시간이 2시간 이상에서 평균 1분으로 줄었다.",
+     "quote": "편집 프로그램을 사용했을 땐 하나를 만드는데 2시간 넘게 걸렸는데, 브이캣은 평균 1분이면 완성됩니다.",
+     "url": "https://vcat.ai/blog/success-case4",
+     "date": "2025-03-04",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "현대자동차",
+   "tool": "브이캣(VCAT.AI)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "브랜드 일관성(브랜드 키트·보이스)",
+   "what": "국가별로 따로 만들던 광고 콘텐츠를 AI 템플릿으로 통일하고 각국 딜러가 직접 로컬 콘텐츠를 제작.",
+   "automation_scope": "템플릿 기반 현지 콘텐츠 생성",
+   "human_scope": "딜러가 로컬 콘텐츠 제작·운영",
+   "result": "연간 약 70억 원 제작비 절감, 브랜드 정체성 유지",
+   "evidence": [
+    {
+     "claim": "AI 템플릿 통일로 연간 약 70억 원 제작비를 줄였다.",
+     "quote": "그 결과 현대차는 연간 약 70억 원의 제작 비용을 줄였고, 브랜드 정체성도 유지할 수 있었다.",
+     "url": "https://zdnet.co.kr/view/?no=20250605143249",
+     "date": "2025-06-05",
+     "reliability": "third_party"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "지마켓",
+   "tool": "브이캣(VCAT.AI)",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "이미지·상세페이지 제작",
+   "what": "외주로 제작하던 배너를 브이캣으로 자동화.",
+   "automation_scope": "배너 대량 생성",
+   "human_scope": "",
+   "result": "월 1만 건 → 월 5만 건, 비용 1/5",
+   "evidence": [
+    {
+     "claim": "외주 제작하던 월 1만 건 배너를 비용 1/5로 월 5만 건까지 자동화했다.",
+     "quote": "브이캣은 지마켓과의 협업으로 외주 제작하던 월 1만 건의 배너를 비용 1/5로 월 5만 건까지 자동화했다.",
+     "url": "https://zdnet.co.kr/view/?no=20250605143249",
+     "date": "2025-06-05",
+     "reliability": "third_party"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "롯데홈쇼핑",
+   "tool": "타입캐스트",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "영상 제작(숏폼·AI 아바타·AI 성우)",
+   "what": "AI 쇼호스트 '루시' 도입을 계기로 방송 상품 소개·이벤트 멘트와 SNS 숏폼·프로모션 영상 내레이션을 실무자가 원고 입력 → AI 더빙으로 제작.",
+   "automation_scope": "원고 → 음성 합성, 즉시 수정·재제작",
+   "human_scope": "원고 작성, 결과 확인",
+   "result": "음성 제작 리드타임 약 50% 단축, 성우·녹음 비용 절감",
+   "evidence": [
+    {
+     "claim": "음성 제작 리드타임이 약 50% 단축되고 성우·녹음 예산이 줄었다.",
+     "quote": "결과적으로 음성 제작 리드타임은 약 50% 단축 . 그뿐 아니라 성우 섭외 비용 과 녹음 관련 예산 도 크게 줄었습니다.",
+     "url": "https://typecast.ai/kr/learn/%EB%B0%A9%EC%86%A1-%EC%A0%9C%EC%9E%91-%EC%8B%9C%EA%B0%84-50%EB%A5%BC-%EC%A4%84%EC%9D%B8-%EB%A1%AF%EB%8D%B0%ED%99%88%EC%87%BC%ED%95%91%EC%9D%98-%EB%B9%84%EB%B2%95",
+     "date": "2025-11-20",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "KT알파쇼핑",
+   "tool": "타입캐스트",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "영상 제작(숏폼·AI 아바타·AI 성우)",
+   "what": "매주 바뀌는 상품별 방송 안내 멘트를 웹 에디터로 AI 음성 제작.",
+   "automation_scope": "안내 멘트 음성 합성",
+   "human_scope": "멘트 원고·목소리 선택",
+   "result": "음성 작업 1시간 30분 → 1분, 음성으로 인한 녹화 지연 0분, 비용 90% 절감(외주 비용 수치는 업계 평균 기준 추정치)",
+   "evidence": [
+    {
+     "claim": "방송 안내 멘트 제작이 1시간 30분에서 1분으로, 비용은 90% 줄었다.",
+     "quote": "활용 방송 안내 멘트 음성 제작 (웹 에디터) 1시간 30분 → 1분 녹화 중 음성 작업 0분 음성으로 인한 녹화 지연 90% 비용 절감 외주 녹음 → 구독료로 대체",
+     "url": "https://typecast.ai/kr/learn/ktalpha-commerce-broadcast-ai-voice",
+     "date": "2026-07-01",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "외주 비용 환산액은 KT알파쇼핑 실측이 아닌 업계 평균 기준 추정치다.",
+     "quote": "※ 위 외주 비용은 업계 평균 외주 단가 기준으로 환산한 추정치이며, KT알파 쇼핑의 실측 금액이 아닙니다.",
+     "url": "https://typecast.ai/kr/learn/ktalpha-commerce-broadcast-ai-voice",
+     "date": "2026-07-01",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "이마트",
+   "tool": "타입캐스트",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "영상 제작(숏폼·AI 아바타·AI 성우)",
+   "what": "매장 내 프로모션 방송을 성우 녹음 대신 AI 보이스로 제작해 전국 매장에 동일 브랜드 보이스 적용.",
+   "automation_scope": "프로모션 멘트 음성 합성·변경 반영",
+   "human_scope": "프로모션 내용 결정",
+   "result": "성우 녹음 대비 70% 이상 비용 절감, 프로모션 변경 실시간 반영",
+   "evidence": [
+    {
+     "claim": "AI 보이스 도입 후 성우 녹음 대비 70% 이상 비용을 줄였다.",
+     "quote": "AI 보이스 도입 이후, 이마트는 기존 성우 녹음 대비 70% 이상의 비용을 절감했으며, 프로모션 변경 사항을 실시간으로 반영할 수 있어 마케팅 실행 속도가 획기적으로 개선되었습니다.",
+     "url": "https://typecast.ai/kr/learn/ai-%EB%B3%B4%EC%9D%B4%EC%8A%A4%EB%A1%9C-%EB%B3%80%ED%99%94%ED%95%98%EB%8A%94-%EC%9C%A0%ED%86%B5%EC%97%85%EA%B3%84-%EC%9D%B4%EB%A7%88%ED%8A%B8%EC%9D%98-%EC%84%B1%EA%B3%B5-%EC%82%AC%EB%A1%80-%EB%B6%84",
+     "date": "2025-02-13",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "Akbank",
+   "tool": "Jasper",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "문구 작성(카피·블로그·SNS 글)",
+   "what": "디지털마케팅팀이 PoC로 브랜드 보이스에 맞춘 개인화 푸시 알림·SMS 캠페인 문구를 Jasper로 작성.",
+   "automation_scope": "캠페인 문구 생성",
+   "human_scope": "캠페인 기획, 문구 선택",
+   "result": "콘텐츠 제작 시간 40% 감소, 클릭 참여율 3% 증가, 캠페인 단위 CTR 최대 70% 증가",
+   "evidence": [
+    {
+     "claim": "콘텐츠 제작 시간 40% 감소, 클릭 참여율 3% 증가, 캠페인 CTR 최대 70% 증가.",
+     "quote": "40% reduction of time spent creating content 3% increase in click-through engagement rates Up to 70% CTR increase on a campaign basis",
+     "url": "https://www.jasper.ai/case-studies/akbank",
+     "date": "",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "Jasper를 주로 브랜드 보이스에 맞춘 개인화 푸시·SMS 캠페인 작성에 썼다.",
+     "quote": "Jasper was primarily used to craft engaging and personalized push notification and SMS marketing campaigns",
+     "url": "https://www.jasper.ai/case-studies/akbank",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Defendify",
+   "tool": "Copy.ai",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "문구 작성(카피·블로그·SNS 글)",
+   "what": "2인 마케팅팀이 AI 워크플로로 월 4개 블로그 글에서 LinkedIn 게시물 66개를 파생 생성.",
+   "automation_scope": "블로그 → LinkedIn 게시물 변환",
+   "human_scope": "블로그 기획, 검수",
+   "result": "콘텐츠 생산 33배, 비용 20만 달러 이상 절감(추정)",
+   "evidence": [
+    {
+     "claim": "월 4개 블로그 글에서 LinkedIn 게시물 66개를 만들고 20만 달러 이상 비용을 절감했다.",
+     "quote": "4 Blog Posts 4 high quality blog posts produced monthly 66 Linkedin Posts 66 LinkedIn posts generated from the blog posts Saved $200,000+ $200,000+ in estimated cost savings",
+     "url": "https://www.copy.ai/case-studies/defendify-scales-content-creation-33x-with-ai-powered-workflows",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Caesars Entertainment",
+   "tool": "Sprout Social",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "문구 작성(카피·블로그·SNS 글)",
+   "what": "여러 브랜드·채용 계정에 올릴 캠페인 문구 변형과 이미지 alt text를 AI Assist로 생성.",
+   "automation_scope": "문구 변형·alt text 생성",
+   "human_scope": "게시 선택",
+   "result": "",
+   "evidence": [
+    {
+     "claim": "AI Assist로 캠페인·채용 브랜드 문구 변형과 alt text를 만든다.",
+     "quote": "AI Assist generates multiple variations of campaign and employer brand copy",
+     "url": "https://sproutsocial.com/insights/examples-of-brands-using-sprout-social-ai/",
+     "date": "2026",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "trivago",
+   "tool": "HeyGen",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "영상 제작(숏폼·AI 아바타·AI 성우)",
+   "what": "30개 시장용 TV 광고를 HeyGen으로 동시 현지화.",
+   "automation_scope": "영상 현지화(언어·방언)",
+   "human_scope": "광고 콘셉트·검수",
+   "result": "후반작업 시간 50% 감소, 3~4개월 절약, 30개 시장 현지화",
+   "evidence": [
+    {
+     "claim": "HeyGen으로 30개 시장 TV 광고를 현지화해 후반작업 시간을 절반으로 줄였다.",
+     "quote": "trivago used HeyGen to simultaneously localize TV ads in 30 markets",
+     "url": "https://www.heygen.com/en-ca/customer-stories/trivago",
+     "date": "",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "후반작업 시간이 절반으로 줄어 3~4개월을 절약했다.",
+     "quote": "The technology has cut post-production time in half, saving teams an impressive 3–4 m",
+     "url": "https://www.heygen.com/en-ca/customer-stories/trivago",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Silverside AI(Coca-Cola 광고 제작)",
+   "tool": "Runway",
+   "area": "콘텐츠·SNS·브랜드 캠페인",
+   "task": "영상 제작(숏폼·AI 아바타·AI 성우)",
+   "what": "AI 크리에이티브 제작사가 Runway를 쓰며 Coca-Cola 광고를 제작.",
+   "automation_scope": "생성형 영상 제작",
+   "human_scope": "크리에이티브 기획·연출",
+   "result": "프로젝트당 평균 비용 65%·시간 73% 절감, System1 기준 Coca-Cola 최고 성과 광고 중 하나",
+   "evidence": [
+    {
+     "claim": "프로젝트당 평균 비용·시간 절감 수치(65%, 73%)를 제시한다.",
+     "quote": "average cost savings per project 65% average time savings per project 73%",
+     "url": "https://runway.com/customers/how-silverside-ai-builds-coca-colas-best-ads-for-65-percent-less",
+     "date": "",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "System1 데이터 기준 Coca-Cola 최고 성과 광고 중 하나를 만들었다.",
+     "quote": "that persistence had produced one of Coca-Cola’s highest-performing ads ever, per data from System1.",
+     "url": "https://runway.com/customers/how-silverside-ai-builds-coca-colas-best-ads-for-65-percent-less",
+     "date": "",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  }
+ ],
+ "stats": [
+  {
+   "topic": "마케터의 AI 콘텐츠 생성 활용",
+   "finding": "마케터 75% 이상이 AI를 콘텐츠 생성에 활용(전년 대비 103% 증가). 초안 전체 생성보다 형식 변환(블로그→영상 스크립트 등)이 더 흔하다.",
+   "figures": "75% 이상; 전년 대비 103% 증가; 콘텐츠 생성 43%; 아이디어 브레인스토밍 27%",
+   "sample": "허브스팟, 마케터 1,700명 이상(전자신문 보도)",
+   "quote": "허브스팟은 1700명 이상 마케터를 대상으로 조사한 설문에서 지난해 마케터의 75% 이상이 AI를 콘텐츠 생성에 활용하고 있다고 보고했다. 이는 전년 대비 103% 증가한 수치로",
+   "url": "https://www.etnews.com/20250312000244",
+   "date": "2025-03-12",
+   "reliability": "survey",
+   "region": "해외"
+  },
+  {
+   "topic": "마케터의 AI 활용 방식",
+   "finding": "AI로 전체 초안을 만들기보다 콘텐츠 형식을 바꾸는 용도가 더 일반적이다.",
+   "figures": "",
+   "sample": "허브스팟, 마케터 1,700명 이상(전자신문 보도)",
+   "quote": "AI를 사용해 콘텐츠의 전체 초안을 생성하는 것보다 콘텐츠 형식을 바꾸는 것이 일반적으로 많이 활용하는 방법으로 나타났다.",
+   "url": "https://www.etnews.com/20250312000244",
+   "date": "2025-03-12",
+   "reliability": "survey",
+   "region": "해외"
+  },
+  {
+   "topic": "국내 기업 생성형 AI 도입률",
+   "finding": "국내 기업 55.7%가 생성형 AI를 전사(22.4%) 또는 일부 부서(33.2%)에서 활용 중. 마케팅은 주요 활용 부서 중 하나.",
+   "figures": "55.7%; 전사 22.4%; 일부 부서 33.2%; 2026년 85% 이상 전망",
+   "sample": "메가존클라우드·파운드리(구 IDG), 국내 749개 기업",
+   "quote": "보고서에 따르면 국내 기업의 55.7%가 이미 생성형 AI를 전사적으로(22.4%) 또는 일부 부서(33.2%)에서 활용 중인 것으로 나타났다.",
+   "url": "https://denews.co.kr/news/articleView.html?idxno=33506",
+   "date": "2025-08-26",
+   "reliability": "survey",
+   "region": "국내"
+  }
+ ],
+ "gaps": [
+  "Canva·Adobe(Firefly/GenStudio) 공식 고객 사례·요금 페이지는 curl과 브라우저 모두 차단(403/HTTP2 오류)돼 원문 확보 못 함 → Adobe는 tools에서 제외, Canva는 제3자 기사로 기능만 기재.",
+  "CapCut(Commerce Pro), Later, Typefully, Writer, Synthesia의 마케팅 사례·요금은 원문 확보 또는 영역 적합 사례 확인 못 해 제외.",
+  "카카오 비즈니스의 콘텐츠 생성 AI 기능은 이번 조사에서 확인 못 함(검색 결과는 메시지 광고 소재 문서로 영역 4에 가까움).",
+  "뤼튼의 기업 고객 마케팅 사례·기업용 요금은 원문에서 확인 못 함.",
+  "Buffer·Hootsuite·Sprout Social의 네이버 블로그·카카오 채널 연동은 원문에서 확인되지 않음(Buffer 채널 목록에 없음).",
+  "HeyGen·Runway·Jasper·Copy.ai의 한국어 지원 여부를 원문으로 확인 못 함.",
+  "국내 마케터만 대상으로 한 콘텐츠 자동화 도구 사용률 통계는 찾지 못함(국내 통계는 전사 생성형 AI 도입률만 확보).",
+  "네이버 클로바 포 라이팅 근거는 2023년 보도자료, 미리캔버스 엔터프라이즈 기능 기사는 2022년 자료로 최신 기능 변화는 확인 못 함."
+ ]
+}

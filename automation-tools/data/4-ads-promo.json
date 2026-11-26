@@ -1,0 +1,1012 @@
+{
+ "group": "광고·프로모션",
+ "tasks": [
+  {
+   "task": "광고 소재 자동 생성(문구·이미지·영상 변형)",
+   "problem": "채널·지면·규격마다 소재 변형을 대량으로 만들어야 하는데 디자이너·촬영 리소스가 부족하다",
+   "how": "상품 URL·카탈로그·업체 등록 정보를 입력하면 생성형 AI가 이미지·문구·영상을 템플릿 또는 생성 모델로 대량 변형하고, 플랫폼이 성과 좋은 조합을 자동 노출",
+   "automation_scope": "상품 정보 추출, 규격별 이미지·배너·영상 생성, 문구 작성, 배경·장면 교체, 조합 테스트",
+   "human_scope": "브랜드 가이드·템플릿 정의, 생성물 검수·승인, 일부 플랫폼(네이버 ADVoost Max·플레이스)은 문안 직접 수정 불가",
+   "tools": [
+    "브이캣(VCAT)",
+    "AdCreative.ai",
+    "Smartly",
+    "TikTok Smart+ / Symphony",
+    "Meta Advantage+",
+    "네이버 ADVoost (쇼핑·플레이스·Max)"
+   ]
+  },
+  {
+   "task": "입찰·타깃·예산 자동화(AI 캠페인)",
+   "problem": "키워드·타깃·입찰가를 수동으로 관리하면 상품·지면이 많을수록 운영 시간이 늘고 놓치는 상품이 생긴다",
+   "how": "광고주는 목표(전환·ROAS)와 예산만 정하고, 플랫폼 AI 캠페인이 입찰·타깃·지면·상품 선정을 실시간 자동 조정",
+   "automation_scope": "실시간 입찰가 조정, 오디언스 탐색, 지면 배분, 검색어 확장, 상품 선정",
+   "human_scope": "목표·일 예산·기간 설정, 전환 추적 설치, 상품 피드·랜딩 정보 품질 관리, 성과 검토",
+   "tools": [
+    "Meta Advantage+",
+    "Google Performance Max / Demand Gen",
+    "Google AI Max for Search",
+    "TikTok Smart+ / Symphony",
+    "네이버 ADVoost (쇼핑·플레이스·Max)",
+    "카카오모먼트 (자동입찰·모먼트 AI)",
+    "토스애즈"
+   ]
+  },
+  {
+   "task": "광고 운영 자동 규칙·리포트",
+   "problem": "여러 캠페인을 상시 모니터링하고 예산·중지 조치를 사람이 반복하기 어렵고 리포트 작성에 시간이 든다",
+   "how": "조건 기반 자동 규칙(지표가 기준을 넘으면 중지·예산 증감·알림)과 AI 진단·대화형(MCP) 리포트로 운영 판단을 자동화",
+   "automation_scope": "정해진 주기로 지표 점검, 일시중지·예산·입찰 조정, 알림, 성과 요약·최적화 점수·개선 제안",
+   "human_scope": "규칙 조건·임계값 설계, 제안 채택 여부 결정, 규칙 충돌 점검",
+   "tools": [
+    "Birch (구 Revealbot)",
+    "Madgicx",
+    "카카오모먼트 (자동입찰·모먼트 AI)",
+    "데이블 (Dable) MCP 광고 연동"
+   ]
+  },
+  {
+   "task": "소상공인용 간편 광고(지도·플레이스·당근)",
+   "problem": "마케터가 없는 동네 가게·소상공인은 광고 계정 설정·소재 제작·타깃팅이 어렵다",
+   "how": "플레이스·비즈프로필에 등록된 업체 정보로 소재를 자동 생성하고, 하루 예산·기간만 정하면 입찰·타깃을 자동 운영(간편모드)",
+   "automation_scope": "업체 사진·혜택 기반 소재 생성, 입찰가·노출 지면·대상 자동 조정, 전환 이벤트 최적화",
+   "human_scope": "업체 정보·사진·쿠폰 등록, 하루 예산·기간·요일/시간 설정, 광고 켜기/끄기",
+   "tools": [
+    "네이버 ADVoost (쇼핑·플레이스·Max)",
+    "당근 광고 (간편모드·비즈프로필 전환 늘리기)",
+    "카카오모먼트 (자동입찰·모먼트 AI)"
+   ]
+  },
+  {
+   "task": "프로모션·쿠폰 자동화(기간·대상·발행)",
+   "problem": "프로모션마다 상품 선정·할인율·쿠폰 조건·페이지·메시지 발송을 따로 해야 해 소규모 쇼핑몰은 매주 운영하기 어렵다",
+   "how": "판매 데이터를 분석해 프로모션 콘셉트·대상 상품·메시지를 자동 제안하고, 승인하면 기간 할인·쿠폰 발급·팝업·카카오 메시지 발송까지 자동 실행",
+   "automation_scope": "프로모션 기획 제안, 기간 할인 설정, 기획전 페이지·팝업, 상시 쿠폰(가입·첫구매·생일 등) 발급, 친구톡 발송, SNS 게시",
+   "human_scope": "최대 할인율 설정, 제안 승인·종료, 이벤트·시즌 쿠폰 신청",
+   "tools": [
+    "카페24 PRO 프로모션 다해드림",
+    "당근 광고 (간편모드·비즈프로필 전환 늘리기)"
+   ]
+  },
+  {
+   "task": "리타기팅·카탈로그(다이내믹) 광고",
+   "problem": "사이트 방문 후 구매하지 않은 고객을 다시 불러오려면 상품별 소재와 타깃 조합이 너무 많다",
+   "how": "방문·행동 데이터와 상품 카탈로그를 연결해 AI가 고객별 상품 광고를 자동 생성·노출(다이내믹/카탈로그 광고)",
+   "automation_scope": "행동 데이터 기반 모수 조합, 상품별 소재 생성, 예산 분배, 노출 빈도·타이밍 최적화",
+   "human_scope": "픽셀·카탈로그 연동, 제외 대상·예산 설정, 성과 확인",
+   "tools": [
+    "모비온 (MOBON)",
+    "Meta Advantage+",
+    "Smartly",
+    "TikTok Smart+ / Symphony"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "name": "Meta Advantage+",
+   "vendor": "Meta",
+   "origin": "해외",
+   "type": "플랫폼 내장 기능",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 소재 자동 생성(문구·이미지·영상 변형)",
+    "입찰·타깃·예산 자동화(AI 캠페인)",
+    "리타기팅·카탈로그(다이내믹) 광고"
+   ],
+   "problem": "페이스북·인스타그램 캠페인의 타깃·지면·소재 조합을 사람이 일일이 최적화하기 어렵다",
+   "users": "Meta 광고를 집행하는 이커머스·앱·리드 광고주(소규모~대기업)",
+   "features": [
+    "어드밴티지+ 판매 캠페인(구 쇼핑 캠페인)",
+    "어드밴티지+ 앱·잠재 고객 캠페인",
+    "어드밴티지+ 카탈로그 광고",
+    "어드밴티지+ 크리에이티브(소재 자동 변형)",
+    "광고 최적화 지수 추천"
+   ],
+   "automation_scope": "구매 가능성이 높은 고객 탐색, 실시간 노출 최적화, 카탈로그 상품 광고 생성, 소재 변형",
+   "human_scope": "캠페인 목표·예산 설정, 소재·카탈로그 제공, 추천 사항 적용 여부 결정",
+   "korea": "국내 광고주 사용 가능, 비즈니스 페이지·안내 한국어 제공(한국어 보도문 확인). 네이버·카카오 연동은 해당 없음",
+   "pricing": "별도 이용료 없이 광고비로 집행(입찰 경매)",
+   "evidence": [
+    {
+     "claim": "어드밴티지+ 판매 캠페인은 AI로 구매 가능성이 큰 고객을 찾으며 사용 비즈니스의 행동당 비용이 평균 9% 감소했다고 Meta가 밝혔다.",
+     "quote": "어드밴티지+ 판매 캠페인(이전 명칭: 어드밴티지+ 쇼핑 캠페인): 주요 목표가 온라인 판매 늘리기인 광고주를 위해 마련된 이 도구는 AI를 사용하여 광고주의 제품을 구매할 가능성이 가장 큰 고객을 찾습니다. 어드밴티지+ 판매 캠페인을 사용한 비즈니스는 행동당 비용이 평균적으로 9% 감소했습니다",
+     "url": "https://www.facebook.com/business/news/meta-advantage-explained-in-two-minutes",
+     "date": "2025-04-22",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Meta는 거의 모든 광고주가 하나 이상의 Advantage+ 제품을 쓰고 있다고 밝혔다.",
+     "quote": "지금은 Meta의 거의 모든 광고주가 하나 이상의 Meta Advantage+ 제품을 사용하고 있습니다.",
+     "url": "https://www.facebook.com/business/news/meta-advantage-explained-in-two-minutes",
+     "date": "2025-04-22",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Google Performance Max / Demand Gen",
+   "vendor": "Google",
+   "origin": "해외",
+   "type": "플랫폼 내장 기능",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 소재 자동 생성(문구·이미지·영상 변형)",
+    "입찰·타깃·예산 자동화(AI 캠페인)"
+   ],
+   "problem": "검색·YouTube·디스플레이·Gmail·지도 등 채널별 캠페인을 따로 운영하면 예산·입찰 최적화가 분산된다",
+   "users": "전환 목표(온라인 판매·리드)가 있는 광고주, 리테일·통신·비영리 등",
+   "features": [
+    "하나의 캠페인으로 Google 전 인벤토리 접근",
+    "목표 기반 입찰(전환·전환 가치)",
+    "애셋 조합 자동 생성",
+    "Ask Advisor(Gemini 기반 대화형 에이전트) 소재 제안",
+    "Demand Gen: YouTube 중심 이미지·영상 캠페인"
+   ],
+   "automation_scope": "채널·지면 배분, 입찰, 오디언스 탐색, 애셋 조합",
+   "human_scope": "전환 목표·예산·목표 CPA/ROAS 설정, 애셋 제공, 최적화 점수 검토",
+   "korea": "국내 사용 가능, 한국어 고객센터 문서 제공. 올리브영·LG유플러스·초록우산 등 국내 사례 공개",
+   "pricing": "별도 이용료 없이 광고비로 집행",
+   "evidence": [
+    {
+     "claim": "실적 최대화 캠페인은 하나의 캠페인으로 YouTube·디스플레이·검색·지도 등 모든 Google Ads 인벤토리에 접근하는 목표 기반 캠페인이다.",
+     "quote": "실적 최대화 캠페인은 광고주가 하나의 캠페인에서 YouTube, 디스플레이, 검색, 디스커버, Gmail, 지도 등 모든 Google Ads 인벤토리 에 액세스하도록 해주는 목표 기반 캠페인입니다.",
+     "url": "https://support.google.com/google-ads/answer/10724817?hl=ko",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Ask Advisor는 Gemini 기반 에이전트형 대화 환경으로 새 텍스트와 광고 소재를 제안한다.",
+     "quote": "Ask Advisor는 Google Ads의 Gemini 기반 에이전트형 대화형 환경입니다.",
+     "url": "https://support.google.com/google-ads/answer/10724817?hl=ko",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Google AI Max for Search",
+   "vendor": "Google",
+   "origin": "해외",
+   "type": "플랫폼 내장 기능",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 소재 자동 생성(문구·이미지·영상 변형)",
+    "입찰·타깃·예산 자동화(AI 캠페인)"
+   ],
+   "problem": "정확·구문 일치 키워드만으로는 예측하지 못한 검색어 수요를 놓친다",
+   "users": "Google 검색광고 광고주",
+   "features": [
+    "검색어 매칭 확장(search term matching)",
+    "광고 문구·랜딩 페이지 실시간 맞춤",
+    "원클릭 활성화",
+    "세부 제어·리포트"
+   ],
+   "automation_scope": "새 검색어 발굴, 광고 문안·최종 URL 맞춤",
+   "human_scope": "활성화 여부, 브랜드·지역 등 제어 설정, 검색어 리포트 검토",
+   "korea": "국내 Google Ads 계정에서 사용 가능 여부는 원문에서 확인 못 함",
+   "pricing": "별도 이용료 없이 검색광고비로 집행",
+   "evidence": [
+    {
+     "claim": "Google은 AI Max를 켠 검색 캠페인이 비슷한 CPA/ROAS에서 전환이 통상 14% 늘고, 정확·구문 키워드 위주 캠페인은 27% 늘었다고 밝혔다.",
+     "quote": "advertisers that activate AI Max in Search campaigns will typically see 14% more conversions or conversion value at a similar CPA/ROAS. For campaigns that are still mostly using exact and phrase keywords, the typical uplift is even higher at 27%.",
+     "url": "https://blog.google/products/ads-commerce/google-ai-max-for-search-campaigns",
+     "date": "2025-05-06",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "TikTok Smart+ / Symphony",
+   "vendor": "TikTok(ByteDance)",
+   "origin": "해외",
+   "type": "플랫폼 내장 기능",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 소재 자동 생성(문구·이미지·영상 변형)",
+    "입찰·타깃·예산 자동화(AI 캠페인)",
+    "리타기팅·카탈로그(다이내믹) 광고"
+   ],
+   "problem": "숏폼 소재 제작 부담과 타깃·크리에이티브 조합 운영의 복잡함",
+   "users": "TikTok 광고주(이커머스·리드·앱), 대행사",
+   "features": [
+    "Smart+ 자동화 캠페인(타깃·소재 조합 자동화)",
+    "Smart+ 카탈로그·Web 캠페인",
+    "Symphony 생성형 AI: Image to Video, Text to Video, Showcase Products",
+    "Adobe Express·WPP Open 연동"
+   ],
+   "automation_scope": "크리에이티브 조합·타깃팅·노출 실시간 최적화, 이미지·텍스트로 영상 생성",
+   "human_scope": "캠페인 목표·예산, 원본 소재·카탈로그 제공, 생성 영상 검수",
+   "korea": "국내 광고주 사용 가능, 한국어 사례 페이지(Forment·삼성화재 N잡크루) 공개",
+   "pricing": "Smart+는 광고비로 집행. Symphony 요금은 확인 못 함",
+   "evidence": [
+    {
+     "claim": "TikTok은 Symphony에 Image to Video, Text to Video, Showcase Products 생성형 AI 도구를 추가했다.",
+     "quote": "We're introducing new state-of-the-art generative AI tools - Image to Video, Text to Video , and Showcase Products - to make it easier than ever for marketers to unlock new creative potential and to create and optimize TikTok-first content.",
+     "url": "https://newsroom.tiktok.com/en-US/tiktok-symphony-updates",
+     "date": "2025-06-16",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Forment는 Smart+로 크리에이티브 조합과 타깃팅을 자동화했다.",
+     "quote": "제품 카탈로그 기반 올리브영 협력광고에 Smart+ 자동화 솔루션을 도입해 크리에이티브 조합과 타겟팅을 자동화했습니다.",
+     "url": "https://ads.tiktok.com/business/ko/inspiration/forment",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "AdCreative.ai",
+   "vendor": "AdCreative.ai (Appier 제품군)",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 소재 자동 생성(문구·이미지·영상 변형)"
+   ],
+   "problem": "광고 규격·변형을 디자이너 없이 빠르게 대량 제작하고 성과를 예측하고 싶다",
+   "users": "소상공인·이커머스 운영자, 퍼포먼스 마케터, 대행사",
+   "features": [
+    "전환 중심 광고 소재 생성",
+    "제품 사진 촬영 대체(Product Photoshoots)",
+    "UGC·패션 영상 생성",
+    "소재 성과·브랜드 점수 예측"
+   ],
+   "automation_scope": "규격별 소재·문구 생성, 성과 예측 점수",
+   "human_scope": "브랜드·제품 입력, 생성물 선택·수정, 매체 업로드",
+   "korea": "Appier 한국어 사이트 제품 메뉴에 AdCreative.ai가 포함됨. 한국어 소재 생성 품질·국내 매체 연동은 확인 못 함",
+   "pricing": "Starter $39/월(20크레딧, 1브랜드)부터, Professional $249/월(300크레딧, 10브랜드), 분기·연간 50% 할인",
+   "evidence": [
+    {
+     "claim": "AdCreative.ai Starter 요금은 월 39달러, 월 20크레딧이다.",
+     "quote": "Starter Plans The all-in-one solution that does all the work and drives real growth for small businesses. $ 39 /month Less than $ 10 a week 20 Credits / Month",
+     "url": "https://www.adcreative.ai/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "AdCreative.ai는 광고 소재 생성·제품 사진·영상 생성 기능을 제공한다.",
+     "quote": "Ad Creatives Generate conversion-focused ad creatives Product Photoshoots",
+     "url": "https://www.adcreative.ai/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Smartly",
+   "vendor": "Smartly.io",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 소재 자동 생성(문구·이미지·영상 변형)",
+    "리타기팅·카탈로그(다이내믹) 광고",
+    "입찰·타깃·예산 자동화(AI 캠페인)"
+   ],
+   "problem": "대규모 광고주가 여러 시장·채널에 개인화된 소재를 빠르게 대량 집행하기 어렵다",
+   "users": "대형 리테일·이커머스·글로벌 브랜드의 소셜·퍼포먼스 광고팀",
+   "features": [
+    "생성형 AI 상품 이미지 장면 교체",
+    "다이내믹 상품 광고 템플릿",
+    "크로스채널(Meta·Google 등) 캠페인 자동화",
+    "대량 소재 변형"
+   ],
+   "automation_scope": "카탈로그 기반 소재 대량 생성·갱신, 캠페인 셋업 자동화",
+   "human_scope": "브랜드 템플릿·전략 설계, 소재 승인",
+   "korea": "국내 매체(네이버·카카오) 연동·한국어 지원은 확인 못 함",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "Foot Locker는 Smartly 생성형 AI로 한 번에 1만 장 이상의 상품 이미지를 새 장면으로 바꿨다.",
+     "quote": "They produced over 10,000 refreshed product images with new scenes in a single click",
+     "url": "https://www.smartly.io/case/foot-lockers-gen-ai-initiative",
+     "date": "2025-03-05",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "Madgicx",
+   "vendor": "Madgicx",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 운영 자동 규칙·리포트",
+    "광고 소재 자동 생성(문구·이미지·영상 변형)"
+   ],
+   "problem": "Meta 광고 계정의 규칙·예산 조정·오디언스 탐색을 사람이 상시 관리하기 어렵다",
+   "users": "Meta 광고를 운영하는 이커머스 브랜드·대행사(중소 규모)",
+   "features": [
+    "자동화(규칙·전술)",
+    "AI 오디언스 타깃팅",
+    "AI 광고 생성",
+    "분석 대시보드·트래킹"
+   ],
+   "automation_scope": "조건 충족 시 광고 끄기·알림 등 규칙 실행, 오디언스 추천",
+   "human_scope": "규칙 조건·임계값 설정, 예산 전략",
+   "korea": "Meta 광고 계정 대상이라 국내 광고주도 연동 가능할 것으로 보이나 한국어 지원은 확인 못 함",
+   "pricing": "Madgicx Pro 월 $45(분기 $38, 연간 $32) 표기, 트래킹 Pro 월 $49 별도",
+   "evidence": [
+    {
+     "claim": "Madgicx는 Meta 자동 규칙이 일정 주기로 조건을 점검해 끄기·알림 등을 실행한다고 설명한다.",
+     "quote": "An automated rule in Meta Ads Manager checks your campaigns, ad sets or ads on a schedule and, when every condition is true, takes the action you chose, such as turning the item off or sending a notification.",
+     "url": "https://madgicx.com/answers/meta-ads-automated-rules",
+     "date": "2026-11-05",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Madgicx Pro 요금이 월 45달러부터 표시된다.",
+     "quote": "See price inside the app $ 45 38 32 /mo (Billed quarterly) (Billed annually)",
+     "url": "https://madgicx.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Birch (구 Revealbot)",
+   "vendor": "Birch",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 운영 자동 규칙·리포트"
+   ],
+   "problem": "여러 광고 계정의 시작·중지·예산·입찰 조정을 규칙으로 자동화하고 싶다",
+   "users": "Meta(페이스북·인스타그램) 광고를 운영하는 퍼포먼스 마케터·대행사",
+   "features": [
+    "조건 기반 자동 규칙(AND/OR, 중첩 조건)",
+    "예산·입찰 증감 액션",
+    "규칙 로그",
+    "Birch AI·MCP(Claude·ChatGPT 연결)",
+    "Routines(반복 워크플로 예약)"
+   ],
+   "automation_scope": "규칙에 따른 시작·중지·예산·입찰 변경, 알림",
+   "human_scope": "규칙 설계·로그 검토",
+   "korea": "한국어 지원·국내 매체 연동은 확인 못 함",
+   "pricing": "월 광고비 1만 달러 이하 기준 Essential $49/월, Pro $99/월(연간 결제 할인)",
+   "evidence": [
+    {
+     "claim": "Birch는 시작·중지·예산·입찰 증감 액션과 AND/OR 조건으로 Meta 캠페인을 자동화한다.",
+     "quote": "Automate your Meta ad campaigns using start, pause, set / increase / decrease budget and bid actions. Build custom rules using AND / OR operators, nested conditions and metrics comparison.",
+     "url": "https://bir.ch/facebook-ads/automated-rules",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Birch Essential 요금은 월 49달러다.",
+     "quote": "Essential $ 49 $ 45 /mo $ 540 billed annually",
+     "url": "https://bir.ch/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "네이버 ADVoost (쇼핑·플레이스·Max)",
+   "vendor": "네이버",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "광고·프로모션",
+   "tasks": [
+    "입찰·타깃·예산 자동화(AI 캠페인)",
+    "광고 소재 자동 생성(문구·이미지·영상 변형)",
+    "소상공인용 간편 광고(지도·플레이스·당근)"
+   ],
+   "problem": "네이버 쇼핑·플레이스·검색광고에서 상품·키워드·입찰을 수동 관리하기 어려운 광고주(특히 소상공인)의 운영 부담",
+   "users": "스마트스토어·쇼핑몰 광고주(ADVoost 쇼핑), 스마트플레이스 등록 소상공인(ADVoost 플레이스), 검색광고 광고주(ADVoost Max)",
+   "features": [
+    "ADVoost 쇼핑: 상품 선정·입찰 자동, 부스트 업(외부 매체 확장)",
+    "ADVoost 플레이스(beta): 자동입찰·자동 타겟팅·자동 소재 생성",
+    "ADVoost Max: AI 브리핑 지면에 광고 에이전트가 문안 작성·위치 배치",
+    "ADVoost Max 인사이트 보고서"
+   ],
+   "automation_scope": "상품·키워드·지면 선정, 실시간 입찰, 타깃팅, 업체 정보 기반 소재·문안 생성",
+   "human_scope": "하루 예산·광고 기간 설정, 요일·시간 지정, 업체 정보·사진·랜딩(schema.org)·전환 스크립트 준비. 소재·문안 직접 수정과 개별 입찰가 설정은 불가",
+   "korea": "국내 서비스(한국어, 네이버 지도·통합검색·쇼핑 지면). 병·의원 등 일부 업종 제외",
+   "pricing": "클릭당 과금(CPC). ADVoost Max는 연관 파워링크 평균가 기반으로 결정되며 입찰가 설정 불가. 신규 광고주 첫 광고비 최대 50만원 지원(플레이스)",
+   "evidence": [
+    {
+     "claim": "ADVoost 플레이스는 자동입찰·자동 타겟팅·자동 소재 생성으로 플레이스광고 운영을 자동화한다.",
+     "quote": "'ADVoost 플레이스'는 자동입찰, 자동 타겟팅, 자동 소재 생성으로 플레이스광고의 주요 운영 과정을 자동화하는 기능입니다.",
+     "url": "https://new.smartplace.naver.com/notices/1142",
+     "date": "2026-10-15",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "스마트플레이스에서 시작하면 하루 예산과 광고 기간만 정하면 된다.",
+     "quote": "[ADVoost 플레이스 자동 운영] 방식으로 운영되어, 하루 예산과 광고 기간만 정하면 됩니다.",
+     "url": "https://new.smartplace.naver.com/notices/1142",
+     "date": "2026-10-15",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "ADVoost Max 광고 문안은 네이버 광고 에이전트가 작성하며 광고주가 수정할 수 없다.",
+     "quote": "광고 소재 문안은 광고주센터 내의 정보, 랜딩페이지의 정보를 활용하여 네이버 광고 에이전트가 작성한 문안으로 노출됩니다. 문안은 광고주님께서 직접 수정할 수 없습니다.",
+     "url": "https://ads.naver.com/notice/31888",
+     "date": "2026-06-15",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "ADVoost 쇼핑은 예산만 입력하면 AI가 상품 선정부터 입찰까지 자동 처리한다.",
+     "quote": "복잡한 설정 없이 예산만 입력하면 AI가 상품 선정부터 입찰까지 모두 자동으로 처리하기 때문에",
+     "url": "https://ads.naver.com/sub/insight/success/113",
+     "date": "2026-01-20",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "카카오모먼트 (자동입찰·모먼트 AI)",
+   "vendor": "카카오",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "광고·프로모션",
+   "tasks": [
+    "입찰·타깃·예산 자동화(AI 캠페인)",
+    "광고 운영 자동 규칙·리포트",
+    "소상공인용 간편 광고(지도·플레이스·당근)"
+   ],
+   "problem": "자영업자·중소상공인이 광고 데이터를 해석하고 입찰·개선 조치를 정하기 어렵다",
+   "users": "카카오모먼트 광고주, 특히 자영업자·중소상공인",
+   "features": [
+    "자동입찰(일 예산 내 효율 최대화, 비용·ROAS 목표 옵션)",
+    "모먼트 AI 최적화 점수(18~100점)와 실행 제안",
+    "경쟁 광고주 대비 성과 분위 비교",
+    "4단계 퍼널 고객 행동 분석",
+    "소재 자동 생성·A/B 테스트는 예정"
+   ],
+   "automation_scope": "입찰금액 자동 설정, 캠페인 데이터 분석·점수화·개선 제안",
+   "human_scope": "제안 조치 선택·반영, 목표·예산·타깃·소재 결정",
+   "korea": "국내 서비스(카카오톡·다음 등 카카오 지면, 한국어)",
+   "pricing": "실시간 입찰 방식(CPC·CPM·CPA·CPV 등)",
+   "evidence": [
+    {
+     "claim": "카카오모먼트 자동입찰은 일 예산 내에서 효율을 높이도록 입찰금액을 자동 설정한다.",
+     "quote": "광고그룹 일 예산 내에서 선택한 광고 효율을 최대한 높이도록 입찰금액을 자동으로 설정합니다.",
+     "url": "https://kakaobusiness.gitbook.io/main/ad/moment",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "모먼트 AI는 18~100점 최적화 점수와 실행 제안을 제공한다.",
+     "quote": "광고주별 캠페인 데이터를 분석해 18점부터 100점까지 최적화 점수를 제공하며",
+     "url": "https://www.kakaocorp.com/page/detail/11845",
+     "date": "2025-12-11",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "카카오는 소재 자동 생성과 시뮬레이터 기반 A/B 테스트 기능을 제공할 예정이라고 밝혔다.",
+     "quote": "소재 자동 생성과 시뮬레이터 기반 A/B 테스트 기능도 제공할 예정이다.",
+     "url": "https://www.kakaocorp.com/page/detail/11845",
+     "date": "2025-12-11",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "당근 광고 (간편모드·비즈프로필 전환 늘리기)",
+   "vendor": "당근",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "광고·프로모션",
+   "tasks": [
+    "소상공인용 간편 광고(지도·플레이스·당근)",
+    "입찰·타깃·예산 자동화(AI 캠페인)",
+    "프로모션·쿠폰 자동화(기간·대상·발행)"
+   ],
+   "problem": "동네 가게가 문의·예약·쿠폰 받기 같은 실제 전환을 늘리는 지역 광고를 쉽게 운영하고 싶다",
+   "users": "당근 비즈프로필을 운영하는 지역 소상공인(간편모드), 브랜드·대행사(전문가모드)",
+   "features": [
+    "간편모드 광고",
+    "비즈프로필 전환 늘리기 캠페인(문의·예약, 쿠폰받기, 단골맺기 중 선택)",
+    "추가 추적 코드 없이 당근 내 행동 데이터로 최적화",
+    "주문·쿠폰 사용 전환 지표 보고서",
+    "당근 광고 MCP 가이드"
+   ],
+   "automation_scope": "선택한 전환 이벤트 기준 캠페인 자동 최적화",
+   "human_scope": "비즈프로필·소식·쿠폰 작성, 전환 목표·예산·타깃 설정",
+   "korea": "국내 서비스(한국어, 당근 앱 지역 지면)",
+   "pricing": "광고 캐시 충전 후 집행(세부 단가는 확인 못 함)",
+   "evidence": [
+    {
+     "claim": "전환 이벤트를 고르면 캠페인이 자동 최적화되고 추적 코드 연동이 필요 없다.",
+     "quote": "문의·예약, 쿠폰받기, 단골맺기 중 극대화하고 싶은 전환 이벤트를 선택하면, 해당 목표에 알맞게 캠페인이 자동으로 최적화돼요.",
+     "url": "https://business.daangn.com/insights/cb2f1308-5efe-4d50-9ea0-cdfee22cf8b7/%EB%B9%84%EC%A6%88%ED%94%84%EB%A1%9C%ED%95%84-%EC%A0%84%ED%99%98-%EB%8A%98%EB%A6%AC%EA%B8%B0-%EC%86%8C%EA%B0%9C",
+     "date": "2026-11-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "당근은 비즈프로필 광고 보고서에 주문·쿠폰 사용 전환 지표를 추가했다.",
+     "quote": "당근이 9월 8일부터 비즈프로필 광고 보고서에 주문과 쿠폰 사용 관련 전환 지표를 추가했다.",
+     "url": "https://today-marketing.com/news/view.php?no=945",
+     "date": "2026-09-10",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "토스애즈",
+   "vendor": "비바리퍼블리카(토스)",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "광고·프로모션",
+   "tasks": [
+    "입찰·타깃·예산 자동화(AI 캠페인)"
+   ],
+   "problem": "결제 데이터 기반으로 구매 가능성 높은 고객에게 광고를 자동 노출하고 싶다",
+   "users": "토스 앱에 광고하는 브랜드·앱·리드 광고주, 대행사",
+   "features": [
+    "머신러닝 자동 최적화(반응·전환 가능성 높은 유저 탐색)",
+    "디스플레이·리워드 광고",
+    "카탈로그 연동",
+    "토스 픽셀·MMP 전환 추적",
+    "광고 반응·전환·고객 목록 타겟"
+   ],
+   "automation_scope": "전환 가능성 높은 유저 자동 탐색·노출",
+   "human_scope": "광고 목표·소재·타겟 조합 설정, 픽셀·카탈로그 연동",
+   "korea": "국내 서비스(토스 앱, 한국어 광고주 가이드)",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "토스애즈는 반응·전환 가능성이 높은 유저를 머신러닝으로 자동 탐색한다고 소개한다.",
+     "quote": "알아서 자동으로 머신러닝 최적화 반응 · 전환 가능성이 높은 유저를 머신러닝이 자동으로 탐색",
+     "url": "https://tossads.toss.im/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "브이캣(VCAT)",
+   "vendor": "브이캣",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 소재 자동 생성(문구·이미지·영상 변형)"
+   ],
+   "problem": "커머스·유통 기업이 하루 수십 건의 광고 영상·배너를 디자이너 없이 만들어야 한다",
+   "users": "커머스·쇼핑몰·유통 대기업과 브랜드 마케팅팀(SSG닷컴·G마켓·현대차 등)",
+   "features": [
+    "상품 URL 기반 이미지·영상 자동 생성",
+    "브랜드 가이드·디자인 템플릿 적용",
+    "기획전·이벤트 배너 대량 자동 제작",
+    "Fashion to Video(착장컷→룩북 영상)",
+    "멀티모달 생성 플랫폼 크리젠(CreZen)"
+   ],
+   "automation_scope": "상품 페이지에서 이미지·텍스트 추출, 규격별 배너·영상 생성",
+   "human_scope": "템플릿·브랜드 가이드 등록, 결과물 검수",
+   "korea": "국내 서비스(한국어), 네이버 스마트스토어 URL 분석 지원",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "브이캣은 상품 상세페이지 URL만 입력하면 브랜드 가이드에 맞춰 이미지·영상을 자동 제작한다.",
+     "quote": "브이캣은 제품 상세페이지 URL 하나만 입력하면, AI가 이미지·텍스트를 추출하고 브랜드 가이드에 맞춰 이미지나 영상을 자동으로 제작하는 ‘URL 기반 콘텐츠 생성’을 구현했다.",
+     "url": "https://zdnet.co.kr/view?no=20250605143249",
+     "date": "2025-06-05",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "SSG닷컴은 기획전·이벤트 영역 배너 전량을 브이캣으로 자동 제작하도록 했다.",
+     "quote": "특히 브이캣은 빠른 교체가 중요한 기획전, 이벤트 영역의 배너 전량이 자동 제작되도록 SSG닷컴에 맞춰 솔루션을 고도화했다.",
+     "url": "https://vcat.ai/blog/240125",
+     "date": "2024-01-25",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "모비온 (MOBON)",
+   "vendor": "인라이플",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "리타기팅·카탈로그(다이내믹) 광고",
+    "광고 소재 자동 생성(문구·이미지·영상 변형)",
+    "입찰·타깃·예산 자동화(AI 캠페인)"
+   ],
+   "problem": "사이트 방문 고객을 다시 불러오는 리타기팅의 표적화·예산 분배·소재 제작을 자동화",
+   "users": "국내 쇼핑몰·브랜드 광고주",
+   "features": [
+    "행동 데이터·CDP 기반 리타기팅",
+    "AI 표적화·예산 분배 자동 운영",
+    "생성형 AI 카피·배너 생성",
+    "AI ASK(질문형 광고, 동영상 소재)"
+   ],
+   "automation_scope": "모수 조합·표적화, 예산 분배, 카피·배너 생성",
+   "human_scope": "광고 목표·예산 설정, 스크립트 설치",
+   "korea": "국내 서비스(한국어), 카카오·네이트 등 국내 제휴 매체 노출",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "모비온 3.0은 AI 엔진이 표적화와 예산 분배를 자동 운영하고 생성형 AI로 카피·배너를 만든다.",
+     "quote": "현재는 AI 엔진이 다양한 경우의 수를 분석 및 예측해 표적화와 예산 분배 등을 자동으로 운영할 수 있다. 이뿐만 아니라 생성형 AI가 탑재돼 카피나 배너 이미지 생성이 자동화되면서 크리에이티브 영역까지 강화됐다.",
+     "url": "https://www.asiae.co.kr/article/2024032210140917508",
+     "date": "2024-03-22",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "모비온은 카카오·네이트 등 제휴 매체로 월 200억 이상 페이지뷰를 확보했다고 밝혔다.",
+     "quote": "카카오, 네이트, 캐시워크, 후후 등 제휴 매체와 자체 개발한 애플리케이션 등을 통해 월 200억 이상의 페이지뷰(PV)를 확보하고 있어",
+     "url": "https://www.asiae.co.kr/article/2024032210140917508",
+     "date": "2024-03-22",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "데이블 (Dable) MCP 광고 연동",
+   "vendor": "데이블",
+   "origin": "국내",
+   "type": "API",
+   "area": "광고·프로모션",
+   "tasks": [
+    "광고 운영 자동 규칙·리포트"
+   ],
+   "problem": "광고 성과를 보려면 관리 화면 로그인·리포트 다운로드·수치 해석을 반복해야 한다",
+   "users": "데이블 네이티브 광고(DNA) 광고주·광고 담당자",
+   "features": [
+    "MCP로 Claude·ChatGPT 등 AI 비서에 광고 계정 연결",
+    "자연어 질문으로 성과 조회·요약",
+    "OAuth 인증, 광고주 허용 범위 내 접근"
+   ],
+   "automation_scope": "성과 데이터 실시간 조회·요약",
+   "human_scope": "질문·해석, 연결 권한 관리",
+   "korea": "국내 서비스(한국어)",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "데이블은 AI 비서에 계정을 연결하면 질문만으로 AI가 광고 성과를 가져와 요약하는 기능을 냈다.",
+     "quote": "Claude·ChatGPT 등 AI 비서에 데이블 계정을 한 번 연결해두면 ‘이번 달 광고 성과 정리해줘’라는 질문만으로 AI가 데이터를 가져와 요약한다.",
+     "url": "https://www.newswire.co.kr/newsRead.php?no=1038940",
+     "date": "2026-07-21",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "카페24 PRO 프로모션 다해드림",
+   "vendor": "카페24",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "광고·프로모션",
+   "tasks": [
+    "프로모션·쿠폰 자동화(기간·대상·발행)"
+   ],
+   "problem": "1인·소규모 쇼핑몰이 상품 선정·할인율·페이지·메시지 발송까지 프로모션을 매주 운영하기 어렵다",
+   "users": "카페24 기반 1인·소규모 쇼핑몰 운영자",
+   "features": [
+    "판매 데이터 기반 프로모션 콘셉트·대상 상품·메시지 자동 제안(주 1회)",
+    "승인 시 기간 할인·기획전·팝업·카카오 친구톡 자동 실행",
+    "SNS(인스타그램·페이스북·틱톡) 게시물 자동 게시",
+    "가입·첫구매·생일 등 상시 쿠폰 및 쿠폰 발급 대행"
+   ],
+   "automation_scope": "프로모션 기획 제안, 할인 설정, 페이지 제작, 팝업, 카카오 메시지 발송, SNS 게시",
+   "human_scope": "최대 할인율 사전 설정, 제안 승인·종료, 의견 피드백",
+   "korea": "국내 서비스(한국어), 카카오 친구톡·알림톡 연동",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "다해드림은 운영자가 승인하면 기간 할인·페이지 제작·팝업·카카오 친구톡 발송을 자동 실행한다.",
+     "quote": "운영자가 제안 내용을 승인하면 ▲특정 상품 기간 할인 설정 ▲프로모션 상품분류 생성 및 진열 ▲프로모션 페이지 제작 ▲프로모션 기간 팝업 노출 ▲카카오 친구톡 광고 메시지 발송 등 주요 작업이 자동으로 실행된다.",
+     "url": "https://wowtv.co.kr/NewsCenter/News/Read?articleId=A202605140515",
+     "date": "2026-05-14",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "카페24 PRO는 가입·첫구매·생일·리뷰·카카오채널 친구추가 등 쿠폰을 미리 준비해 둔다.",
+     "quote": "회원가입 · 첫구매 · 생일 · 리뷰 작성 · 카카오채널 친구추가 · 재방문 · 재구매 쿠폰 이 쿠폰들은 카페24 PRO에 이미 준비돼 있어요.",
+     "url": "https://docs.channel.io/cafe24pro/ko/articles/%ED%95%84%EC%9A%94%ED%95%9C-%EC%BF%A0%ED%8F%B0-%EC%8B%A0%EC%B2%AD%EB%A7%8C-%ED%95%98%EC%84%B8%EC%9A%94-0abb9bbd",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "company": "CJ 올리브영",
+   "tool": "Google Performance Max / Demand Gen",
+   "area": "광고·프로모션",
+   "task": "입찰·타깃·예산 자동화(AI 캠페인)",
+   "what": "2024년 3분기 올영세일에 기존 실적 최대화 캠페인에 디맨드젠 캠페인을 더해 YouTube 사용자까지 AI 캠페인으로 도달",
+   "automation_scope": "채널·오디언스·입찰 최적화",
+   "human_scope": "캠페인 조합·목표(ROAS) 설정",
+   "result": "전년 동기(실적 최대화 단독) 대비 ROAS 42% 증가, 총 전환 가치 2.1배, 동시 도달 사용자 ARPU 30% 증가",
+   "evidence": [
+    {
+     "claim": "올리브영은 디맨드젠과 실적 최대화 캠페인을 함께 운영해 ROAS 42%, 총 전환 가치 2.1배 증가를 기록했다.",
+     "quote": "디맨드젠과 실적 최대화 캠페인을 함께 운영함으로써 ROAS가 42% 증가했으며, 총 전환 가치(Total Conversion Value)는 2.1배(112%) 증가했다는 것입니다.",
+     "url": "https://business.google.com/kr/think/ai-excellence/google-ai-olive-young-case-study/",
+     "date": "2025-08",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "초록우산",
+   "tool": "Google Performance Max / Demand Gen",
+   "area": "광고·프로모션",
+   "task": "입찰·타깃·예산 자동화(AI 캠페인)",
+   "what": "정기후원 전환을 목표로 실적 최대화 캠페인을 운영하며 최적화 점수를 관리하고 일 예산을 목표 CPA의 15~20배 수준으로 증액",
+   "automation_scope": "전 지면 입찰·노출 최적화",
+   "human_scope": "최적화 점수 모니터링, 예산 증액 결정",
+   "result": "정기후원 CPA 51% 감소, 전환수 544% 증대, CPC 35% 감소",
+   "evidence": [
+    {
+     "claim": "초록우산은 실적 최대화 캠페인으로 정기후원 CPA 51% 감소, 전환수 544% 증대를 기록했다.",
+     "quote": "정기후원 전환당 비용(CPA) 51% 감소   정기후원 전환수 544% 증대 (Google 투자 규모는 214% 증대)   클릭당 비용(CPC) 35% 감소",
+     "url": "https://business.google.com/kr/think/ai-excellence/google-ai-powered-performance-max-campaign-success-green-umbrella",
+     "date": "2025-06",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "ClickUp",
+   "tool": "Google AI Max for Search",
+   "area": "광고·프로모션",
+   "task": "입찰·타깃·예산 자동화(AI 캠페인)",
+   "what": "테스트 캠페인으로 AI Max를 검증한 뒤 400개 이상 검색 캠페인으로 확대",
+   "automation_scope": "검색어 확장·문안 맞춤",
+   "human_scope": "테스트 설계, 확대 결정",
+   "result": "증분 전환 20% 증가, 증분 ROAS 16% 상승, CPA 22% 감소, 전환율 15% 상승",
+   "evidence": [
+    {
+     "claim": "ClickUp은 AI Max 도입 후 증분 전환 20%, 증분 ROAS 16% 상승, CPA 22% 감소를 기록했다.",
+     "quote": "a 20% lift in incremental conversions, 16% higher incremental return on ad spend (ROAS), a 22% lower cost per acquisition (CPA), and a 15% higher conversion rate.",
+     "url": "https://business.google.com/en-all/think/ai-excellence/how-brands-use-ai-max-search-campaigns",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Steve Madden",
+   "tool": "Meta Advantage+",
+   "area": "광고·프로모션",
+   "task": "리타기팅·카탈로그(다이내믹) 광고",
+   "what": "크리에이터 파트너십 광고와 어드밴티지+ 카탈로그 광고를 어드밴티지+ 판매 캠페인에서 함께 운영",
+   "automation_scope": "카탈로그 상품 광고 생성·타깃·노출 최적화",
+   "human_scope": "크리에이터 소재 기획, 캠페인 구성",
+   "result": "파트너십 광고 단독 대비 행동당 비용 77% 감소, 구매 4.3배, 매출 4.4배",
+   "evidence": [
+    {
+     "claim": "Steve Madden은 파트너십 광고와 어드밴티지+ 카탈로그 광고 결합으로 행동당 비용 77% 감소를 기록했다.",
+     "quote": "77% lower cost per action with partnership ads and Advantage+ catalog ads, compared to its usual partnership ads alone",
+     "url": "https://www.facebook.com/business/success/steve-madden",
+     "date": "2025-11-08",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Mango",
+   "tool": "Meta Advantage+",
+   "area": "광고·프로모션",
+   "task": "리타기팅·카탈로그(다이내믹) 광고",
+   "what": "캐러셀 형식 어드밴티지+ 카탈로그 광고와 카탈로그 상품 동영상을 기존 광고와 함께 집행",
+   "automation_scope": "카탈로그 기반 상품 소재 생성·노출",
+   "human_scope": "카탈로그 관리, 기존 광고 병행 설계",
+   "result": "증분 구매 65% 증가, 증분 장바구니 담기당 비용 49% 감소, 증분 ROAS 6.5배",
+   "evidence": [
+    {
+     "claim": "Mango는 어드밴티지+ 카탈로그 광고 병행으로 증분 구매가 65% 늘었다.",
+     "quote": "65% increase in incremental purchases for Advantage+ catalog ads in carousel format with catalog product videos plus its usual ads, compared to running usual ads alone",
+     "url": "https://www.facebook.com/business/success/2-mango",
+     "date": "2025-05-08",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Foot Locker",
+   "tool": "Smartly",
+   "area": "광고·프로모션",
+   "task": "광고 소재 자동 생성(문구·이미지·영상 변형)",
+   "what": "Smartly 생성형 AI로 다이내믹 상품 광고 이미지를 웹사이트와 같은 장면으로 일괄 교체(1만 장 이상)",
+   "automation_scope": "상품 이미지 배경·장면 생성",
+   "human_scope": "브랜드 일관성 기준 설정",
+   "result": "CPA 28% 감소, CTR 32% 상승",
+   "evidence": [
+    {
+     "claim": "Foot Locker는 Smartly 생성형 AI 도입 후 CPA 28% 감소, CTR 32% 상승을 기록했다.",
+     "quote": "KEY FINDINGS: 28% Lower CPA 32% Uplift in CTR 10k+ Product images",
+     "url": "https://www.smartly.io/case/foot-lockers-gen-ai-initiative",
+     "date": "2025-03-05",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Eventbrite",
+   "tool": "Smartly",
+   "area": "광고·프로모션",
+   "task": "광고 소재 자동 생성(문구·이미지·영상 변형)",
+   "what": "Google Performance Max 캠페인용 개인화 애셋 변형을 7개 시장에 대량 제작",
+   "automation_scope": "애셋 변형 대량 생성",
+   "human_scope": "캠페인 전략·시장 선정",
+   "result": "CTR 247% 상승, 애셋 제작 속도 3배",
+   "evidence": [
+    {
+     "claim": "Eventbrite는 Smartly로 CTR 247% 상승과 3배 빠른 애셋 제작을 기록했다.",
+     "quote": "KEY FINDINGS: +247% uplift in CTR 3x faster asset creation",
+     "url": "https://www.smartly.io/resources/eventbrite-delivers-3x-faster-campaign-execution",
+     "date": "2025-09-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Forment",
+   "tool": "TikTok Smart+ / Symphony",
+   "area": "광고·프로모션",
+   "task": "입찰·타깃·예산 자동화(AI 캠페인)",
+   "what": "올리브영 세일 기간 카탈로그 기반 협력광고에 Smart+를 적용하고 동일 조건 수동 캠페인과 비교 테스트",
+   "automation_scope": "크리에이티브 조합·타깃팅 자동화",
+   "human_scope": "테스트 설계(변수 통제), 예산 전략",
+   "result": "Smart+ ROAS 490%(수동 286% 대비 약 71% 높음), CPM 19% 감소",
+   "evidence": [
+    {
+     "claim": "Forment의 Smart+ 캠페인은 ROAS 490%로 수동 캠페인(286%)보다 약 71% 높았다.",
+     "quote": "Smart+ 캠페인은 ROAS 490%를 기록, 수동형 캠페인(ROAS 286%) 대비 약 71% 높은 성과를 달성했습니다.",
+     "url": "https://ads.tiktok.com/business/ko/inspiration/forment",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "삼성화재 N잡크루",
+   "tool": "TikTok Smart+ / Symphony",
+   "area": "광고·프로모션",
+   "task": "입찰·타깃·예산 자동화(AI 캠페인)",
+   "what": "40~50대 대상 웹사이트 리드 캠페인에 Smart+를 함께 활용해 전환 가능성 높은 오디언스 도달 극대화",
+   "automation_scope": "오디언스 탐색·노출 최적화",
+   "human_scope": "리드 목표·이벤트 매핑 설정",
+   "result": "CPL 60% 절감('26년 4월), CPM 3배·CPC 4배 절감('26년 4~6월)",
+   "evidence": [
+    {
+     "claim": "삼성화재 N잡크루는 Smart+로 CPL을 60% 절감했다.",
+     "quote": "60 % CPL 절감 ('26년 4월 기준) 3 배 CPM 절감 ('26년 4월 ~ 6월 기준) 4 배 CPC 절감",
+     "url": "https://ads.tiktok.com/business/ko/inspiration/samsungfire",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "네이버 쇼핑 '식품/음료' 업종 광고주 B(익명)",
+   "tool": "네이버 ADVoost (쇼핑·플레이스·Max)",
+   "area": "광고·프로모션",
+   "task": "입찰·타깃·예산 자동화(AI 캠페인)",
+   "what": "ADVoost 쇼핑으로 상품 선정·입찰을 AI에 맡기고 광고비를 약 1.4배 증액",
+   "automation_scope": "키워드·지면·입찰 자동",
+   "human_scope": "예산 증액 결정",
+   "result": "유입 약 2.7배, 구매 ROAS 810%→1,830%(약 2.3배)",
+   "evidence": [
+    {
+     "claim": "ADVoost 쇼핑을 쓴 식품 광고주 B는 구매 ROAS가 810%에서 1,830%로 올랐다.",
+     "quote": "구매 ROAS*도 810%에서 1,830%로 약 2.3배 상승 했습니다.",
+     "url": "https://ads.naver.com/sub/insight/success/113",
+     "date": "2026-01-20",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "DR.CINK(닥터씽크, 대만)",
+   "tool": "AdCreative.ai",
+   "area": "광고·프로모션",
+   "task": "광고 소재 자동 생성(문구·이미지·영상 변형)",
+   "what": "광군제·창립 기념 프로모션용 시나리오별 광고 소재와 AI 모델 이미지를 촬영 없이 제작",
+   "automation_scope": "소재·모델 이미지 생성",
+   "human_scope": "시나리오 기획, 소재 선택",
+   "result": "광군제 매출 22% 성장·재구매율 23% 상승, 제작 시간 50% 단축",
+   "evidence": [
+    {
+     "claim": "DR.CINK는 AdCreative.ai 도입 후 광군제 매출 22% 성장, 제작 시간 50% 단축을 기록했다.",
+     "quote": "광군제 캠페인은 매출 22% 성장과 재구매율 23% 상승 을 기록하며",
+     "url": "https://www.appier.com/ko-kr/success-story-dr-cink",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  }
+ ],
+ "stats": [
+  {
+   "topic": "국내 광고 제작 현장 AI 활용률",
+   "finding": "코바코 조사에서 광고 제작 종사자 중 회사 소속 68.8%, 프리랜서 64.2%가 제작에 AI가 실제 활용된다고 답했다(전년 43.2%).",
+   "figures": "회사 소속 68.8%; 프리랜서 64.2%; 2025년 43.2%",
+   "sample": "한국방송광고진흥공사(코바코) '2026 광고 제작 현장 AI 활용 실태조사'(K라이프저니 보도)",
+   "quote": "광고 제작 종사자 중 회사 소속 68.8%, 프리랜서 64.2%가 제작 과정에서 AI가 실제로 활용되고 있다고 응답했다. 이는 전년(2025년 43.2%) 대비 25.6%포인트 급증한 수치로",
+   "url": "https://klifejourney.com/article/1065584027493763",
+   "date": "2026-02-12",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "생성형 AI 영상 광고 제작 활용(미국)",
+   "finding": "IAB 조사에서 광고 구매자의 86%가 영상 광고 소재 제작에 생성형 AI를 쓰거나 쓸 계획이며, 2026년 전체 광고의 40%가 생성형 AI 소재가 될 것으로 전망했다.",
+   "figures": "86%; 2026년 40%",
+   "sample": "IAB 2025 Digital Video Ad Spend & Strategy Full Report(미국 광고 구매자)",
+   "quote": "GenAI is now essential for video ad creation, with 86% of buyers using/planning to use it to build video ad creative.",
+   "url": "https://iab.com/news/nearly-90-of-advertisers-will-use-gen-ai-to-build-video-ads",
+   "date": "2025-07-15",
+   "reliability": "survey",
+   "region": "해외"
+  },
+  {
+   "topic": "네이버 광고 매출 증가에 대한 AI 기여",
+   "finding": "네이버 CFO는 2분기 실적발표에서 AI가 광고 매출 증가분의 60% 이상을 기여했다고 밝혔다.",
+   "figures": "60% 이상; 2분기 광고 매출 1조4472억원(+7.5%)",
+   "sample": "네이버 2분기 실적발표 컨퍼런스콜(머니투데이 보도)",
+   "quote": "광고지면 최적화와 타깃팅 고도화 등에 힘입어 AI가 광고 매출 증가분의 60% 이상을 기여했다",
+   "url": "https://mt.co.kr/tech/2026/09/15/2026091414380547693",
+   "date": "2026-09-15",
+   "reliability": "third_party",
+   "region": "국내"
+  },
+  {
+   "topic": "Meta Advantage+ 광고 수익률",
+   "finding": "Meta는 Advantage+ 제품에 1달러를 쓸 때 평균 4.52달러의 비즈니스 수익이 나며 기존 캠페인 대비 22% 높다고 밝혔다.",
+   "figures": "$4.52; +22%",
+   "sample": "Meta 자체 연구(2025년 1분기 실적 관련 발표)",
+   "quote": "AI 기반 어드밴티지+ 제품을 사용하여 1달러를 지출할 때마다 광고주가 평균 4.52달러의 비즈니스 수익을 창출하는 것으로 확인되었습니다.",
+   "url": "https://www.facebook.com/business/news/q1-2025-earnings-advertiser-takeaways",
+   "date": "2025-05-01",
+   "reliability": "company_claim",
+   "region": "해외"
+  },
+  {
+   "topic": "국내 마케터의 광고 전환 고민",
+   "finding": "인라이플 설문에서 마케터 32.2%가 '클릭은 나오지만 구매·전환으로 이어지지 않는다'를 가장 큰 고민으로 꼽았다.",
+   "figures": "32.2%",
+   "sample": "인라이플(모비온) 마케터 대상 자체 설문(표본 수 미공개)",
+   "quote": "응답자의 32.2%가 ‘클릭은 나오지만 구매·전환으로 이어지지 않는다’를 가장 큰 마케팅 고민으로 꼽았다.",
+   "url": "https://www.datanet.co.kr/news/articleView.html?idxno=300229",
+   "date": "2026-11-17",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "당근 전환 최적화 캠페인 성과",
+   "finding": "2주간 두 캠페인을 모두 집행한 전문가모드 광고주 비교에서 전환 늘리기 캠페인의 CVR이 2.1배 높고 CPA가 21% 낮았다.",
+   "figures": "CVR 2.1배; CPA -21%; 문의·예약 CVR 2.4배·CPA -24%",
+   "sample": "당근 내부 데이터(전문가모드 광고주, 2주)",
+   "quote": "전환 늘리기 캠페인이 알리기 캠페인보다 CVR(클릭 후 전환 비율)은 2.1배 높았고 CPA(전환당 비용)는 21% 낮았어요.",
+   "url": "https://business.daangn.com/insights/cb2f1308-5efe-4d50-9ea0-cdfee22cf8b7/%EB%B9%84%EC%A6%88%ED%94%84%EB%A1%9C%ED%95%84-%EC%A0%84%ED%99%98-%EB%8A%98%EB%A6%AC%EA%B8%B0-%EC%86%8C%EA%B0%9C",
+   "date": "2026-11-11",
+   "reliability": "company_claim",
+   "region": "국내"
+  }
+ ],
+ "gaps": [
+  "Meta Advantage+ 한국 광고주 사례(수치 포함)는 원문을 확보하지 못함",
+  "카카오모먼트 자동입찰·모먼트 AI 도입 광고주의 성과 수치 사례를 찾지 못함",
+  "당근 간편모드 광고의 소상공인 성과 수치(CPA 등)는 공식 사례에서 확인 못 함 — 인터뷰형 사례(센스쟁이 미용실 '연매출 앞자리 변화')만 확인",
+  "Smartly·Madgicx·Birch의 한국어 지원·네이버/카카오 연동 여부 확인 못 함, Smartly 요금 비공개",
+  "브이캣·모비온·데이블·토스애즈 요금은 공개 페이지에서 확인 못 함",
+  "와이더플래닛·크리마·데이블 광고 상품의 AI 자동화 성과 수치는 확인 못 함(와이더플래닛 자료는 데이터 인프라 사례 위주)",
+  "에코마케팅 계열·아이보스 자료는 이번 조사에서 내려받지 못함",
+  "Google AI Max의 한국 계정 제공 여부는 원문으로 확인 못 함",
+  "쿠폰 자동 발행 자체의 성과 수치는 카페24 '3개월차 매출 성장률 23.9%' 사례 언급 외에는 확인 못 함"
+ ]
+}

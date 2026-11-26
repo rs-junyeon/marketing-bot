@@ -1,0 +1,749 @@
+{
+ "group": "교육·고객 사례·영업 지원",
+ "tasks": [],
+ "tools": [
+  {
+   "name": "다글로(daglo)",
+   "vendor": "액션파워",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "AI 회의록·통화 요약",
+    "영업 미팅 후속 조치 정리"
+   ],
+   "problem": "회의·미팅 내용을 손으로 정리하는 데 시간이 들고 후속 조치(누가·언제까지)가 흐지부지된다.",
+   "users": "회의가 잦은 팀·영업·교육 조직, 폐쇄망이 필요한 금융·공공(온프레미스)",
+   "features": [
+    "음성 자동 받아쓰기·화자 분리",
+    "결정사항·액션아이템·담당자·마감일 자동 정리",
+    "보이스매칭",
+    "다글로챗 MCP 연결(Slack·Notion)",
+    "온프레미스 맞춤 엔진"
+   ],
+   "automation_scope": "녹음 → 전사 → 요약 → 액션아이템·담당자·마감일 추출까지 자동.",
+   "human_scope": "사내 고유명사 오인식 확인·수정, 요약 결과 검토와 공유 여부 결정.",
+   "korea": "국내 개발(액션파워), 한국어 음성인식 중심. 대구시 시의회 회의록, DB생명 온프레미스 도입 사례 공개.",
+   "pricing": "Free 0원(월 1,000 크레딧), Pro 월 11,900원, Premium 월 20,750원(월 구독 기준), 기업 요금제 별도.",
+   "evidence": [
+    {
+     "claim": "다글로는 회의 종료 후 결정사항·근거·리스크·액션아이템·담당자·마감일 6개 항목을 자동으로 정리한다.",
+     "quote": "다글로는 회의 종료 후 결정사항·근거·리스크·액션아이템·담당자·마감일 6개 항목을 자동으로 정리해줘, 회의록을 따로 다시 작성할 필요가 없습니다.",
+     "url": "https://daglo.ai/d/ko/blog/hoeuirok-jakseong-ai-3gaewol-hugi",
+     "date": "2026-07-09",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "다글로 팀 자체 사용 기준 1시간 회의의 회의록 작성 시간이 평균 30~40분에서 5분 이내로 줄었다.",
+     "quote": "회의록 작성 시간 (1시간 회의 기준) 평균 30~40분 평균 5분 이내",
+     "url": "https://daglo.ai/d/ko/blog/hoeuirok-jakseong-ai-3gaewol-hugi",
+     "date": "2026-07-09",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "DB생명은 보험 용어로 파인튜닝한 다글로 온프레미스를 POC 후 정식 도입했다.",
+     "quote": "고객의 발화 패턴과 용어로 엔진을 파인튜닝한 다글로 온프레미스를, 내부망 환경에서 POC를 시작하였습니다.",
+     "url": "https://daglo.ai/d/ko/customers",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "Pro 요금제는 월 11,900원이며 Slack·Notion MCP 연결을 지원한다.",
+     "quote": "Pro 광고 없이 사용하는 실무 플랜 11,900원 /월",
+     "url": "https://daglo.ai/d/ko/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "네이버웍스 클로바노트(기업용)",
+   "vendor": "네이버클라우드",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "AI 회의록·통화 요약",
+    "회의 기록 공유"
+   ],
+   "problem": "회의·인터뷰 음성 기록이 흩어져 검색·공유가 어렵고, 개인용 도구는 보안 관리가 안 된다.",
+   "users": "소규모 팀부터 대기업까지 회의가 잦은 조직(영업·기획 포함)",
+   "features": [
+    "회의 자동 기록·요약",
+    "다음 할 일 추천",
+    "기업 고유명사 어휘사전",
+    "공유·접근·다운로드 권한 제어",
+    "2단계 인증·IP 제한"
+   ],
+   "automation_scope": "음성 기록을 텍스트로 바꾸고 주요 내용 요약과 다음 할 일을 추천.",
+   "human_scope": "관리자가 자주 쓰는 단어 등록·권한 정책 설정, 구성원이 요약 확인·공유.",
+   "korea": "국내 서비스(네이버클라우드), 한국어 기본. 네이버웍스와 연동, 우아한형제들 도입(디딤365 지원).",
+   "pricing": "기업당 월 Lite 18,000원, Team 86,500원, Business 423,000원, Business Plus 1,651,000원; Business 30일 무료 체험.",
+   "evidence": [
+    {
+     "claim": "회의 내용을 바탕으로 주요 내용을 요약하고 다음 할 일을 추천한다.",
+     "quote": "회의 내용을 바탕으로 주요 내용을 요약하고 다음 할 일을 추천해 줍니다.",
+     "url": "https://naver.worksmobile.com/products/clovanote",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "요금은 기업당 월 18,000원(Lite)부터다.",
+     "quote": "Lite 18,000원 기업당 월 비용",
+     "url": "https://naver.worksmobile.com/products/clovanote",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "네이버클라우드가 2024년 10월 보안·커스텀 기능을 강화한 기업용 클로바노트를 출시했다.",
+     "quote": "네이버클라우드(대표이사 김유원)는 자사 AI 기술 기반의 회의록 관리 서비스 '클로바노트'의 기업용 서비스인 ‘네이버웍스 클로바노트’를 출시했다고 18일 밝혔다.",
+     "url": "https://www.navercloudcorp.com/ko/media/pressrelease/view?seq=33033",
+     "date": "2024-10-18",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "웨비나우(Webinow)",
+   "vendor": "웨이온",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "웨비나 개설·운영",
+    "참가자 점수화·후속 메일"
+   ],
+   "problem": "B2B 웨비나 신청 페이지 제작, 참가자 명단 정리, 반응 확인을 일일이 해야 한다.",
+   "users": "제품 설명회·고객 세미나를 여는 B2B 마케팅·영업팀",
+   "features": [
+    "AI 신청 페이지 문구·이미지 생성",
+    "신청·시청 현황 관리",
+    "참가자별 점수·등급 리포트",
+    "AI 맞춤 후속 메일 작성",
+    "PDF·Excel 내보내기"
+   ],
+   "automation_scope": "행사 정보 입력 시 신청 페이지 자동 생성, 시청 시간·채팅·클릭·과거 참가 이력 합산 등급 산출, 후속 메일 초안.",
+   "human_scope": "웨비나 주제·발표 준비, AI가 만든 문구·이미지 수정, 등급별 영업 후속 결정.",
+   "korea": "국내 회사(주식회사 웨이온, 대구·서울) 서비스, 한국어 UI.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "행사 정보를 입력하면 AI가 웨비나 문구와 이미지를 생성한다.",
+     "quote": "주제·일정·발표자 등 행사 정보를 입력하면 AI가 웨비나의 문구와 이미지를 생성해요.",
+     "url": "http://webinow.co.kr",
+     "date": "2026-10",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "시청 시간·채팅·질문·버튼 클릭·과거 참가 이력을 합산해 참가자 등급을 매긴다.",
+     "quote": "시청 시간, 채팅·질문, 버튼 클릭, 과거 참가 이력을 합산해 등급을 매겨요.",
+     "url": "http://webinow.co.kr",
+     "date": "2026-10",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "웨비나우 운영사는 주식회사 웨이온이다.",
+     "quote": "웨비나우 소개 상호 (주) 웨이온",
+     "url": "http://webinow.co.kr",
+     "date": "2026-10",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "하이퍼세일즈(HyperSales)",
+   "vendor": "도비스튜디오(Dovie Studio)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "B2B 리드 발굴(기업 DB)",
+    "콜드메일 자동화"
+   ],
+   "problem": "B2B 아웃바운드 대상 기업을 찾고 개인화 메일을 대량으로 보내고 반응을 추적하기 어렵다.",
+   "users": "SDR 팀이 없거나 작은 B2B 스타트업·SaaS 영업팀",
+   "features": [
+    "약 340만 개 기업 정보 DB",
+    "AI 필터 추천",
+    "웹사이트 방문자 식별",
+    "개인화 메일 대량 발송",
+    "이메일 유효성 검증",
+    "반응 조건별 재발송"
+   ],
+   "automation_scope": "기업 정보 정제·필터 적용, 고객 정보 기반 개인화 메일 발송, 열람·클릭에 따른 후속 메일 자동 발송.",
+   "human_scope": "타깃 정의, 메일 메시지 기획, 회신 고객과 미팅 진행.",
+   "korea": "국내 회사(서울 강남), 공공데이터 기반 국내 기업 정보 제공.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "공공데이터 기반 약 340만 개 기업 정보를 정제해 제공한다.",
+     "quote": "약 340만 개 고품질 기업 정보 선별 검증된 공공데이터에 기반하여 주기적으로 업데이트하고",
+     "url": "https://hypersales.ai/",
+     "date": "2026-07",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "메일 열람·링크 클릭 등 반응에 맞춰 다음 메일을 자동 발송한다.",
+     "quote": "메일 열람과 링크 클릭 등 고객 반응에 맞춰 다음 메일을 자동으로 보내요.",
+     "url": "https://hypersales.ai/email",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "AimSell(에임셀)",
+   "vendor": "브레드앤에이아이(Bread&AI)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "세일즈 시그널 기반 타깃 발굴",
+    "맞춤 제안서·이메일·콜 스크립트 생성"
+   ],
+   "problem": "타깃 기업 리서치와 기업별 맞춤 제안서 작성에 제안 1건당 30분~1시간이 든다.",
+   "users": "아웃바운드 신규 영업을 하는 B2B 영업팀(1~2인 소기업 ~ 60명 규모)",
+   "features": [
+    "뉴스·채용공고·국민연금 인력 증감 등 세일즈 시그널 탐색",
+    "기업 심층 리서치",
+    "이메일·콜 스크립트·제안서 생성",
+    "팀 영업 현황 관리",
+    "Weekly Signal"
+   ],
+   "automation_scope": "소개서 분석 → 타깃·시그널 선정 → 기업 리서치 → 제안 논리·제안서 초안 생성.",
+   "human_scope": "제안서 검토·수정, 실제 연락과 미팅.",
+   "korea": "국내 회사(서울 송파). 국민연금 인력 증감 등 국내 공개 데이터를 시그널로 사용.",
+   "pricing": "PRO 월 200만 원(3개월 단위, 10인), BASIC 별도 문의; 1주일 무료 체험.",
+   "evidence": [
+    {
+     "claim": "이메일·콜 스크립트·첫 미팅용 제안서를 몇 분 내로 만든다.",
+     "quote": "고객사별 맞춤 제안 논리를 담은 이메일과 콜 스크립트, 첫 미팅용 제안서 를 몇 분 내로 만듭니다",
+     "url": "https://www.breadai.co.kr/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "2026년 11월 기준 고객사가 맞춤 제안서 6,035건을 생성했다.",
+     "quote": "신규 발굴한 타겟 기업 41,815 건 기업 심층 리서치 수행 8,699 건 맞춤 제안서 생성 6,035 건 2026.11 기준",
+     "url": "https://www.breadai.co.kr/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "PRO 요금제는 월 200만 원(3개월 단위)이다.",
+     "quote": "월 200만 원 3개월 단위 결제 · 총 600만 원 · VAT 별도 기본 제공 계정 10인",
+     "url": "https://www.breadai.co.kr/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "셀데이(SELLDAY)",
+   "vendor": "이볼브(EVLOV)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "리드 추천·영업 성공률 예측",
+    "이메일·제안서·계약서 초안 생성"
+   ],
+   "problem": "B2B 스타트업 영업 조직의 데이터 분석 역량 부재와 담당자 간 역량 격차.",
+   "users": "국내 B2B 스타트업 영업팀",
+   "features": [
+    "제품 문서 AI 분석 후 잠재 고객 매칭",
+    "영업 단계별 성공률 예측",
+    "이메일·제안서·계약서 자동 생성",
+    "조직·개인 KPI 대시보드"
+   ],
+   "automation_scope": "유망 리드 추천, 단계별 활동 분석, 문서 초안 생성, 성과 대시보드.",
+   "human_scope": "추천 전략 실행 여부 판단과 고객 커뮤니케이션.",
+   "korea": "국내 스타트업(이볼브), 2025년 10월 오픈 베타.",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "셀데이는 고객 맞춤형 이메일·제안서·계약서를 AI가 자동 생성한다.",
+     "quote": "영업 단계별로 실시간 활동을 분석하고 성공률을 예측하며, 고객 맞춤형 이메일, 제안서, 계약서를 AI가 자동 생성한다.",
+     "url": "https://m.dhnews.co.kr/news/view/1065594683093687",
+     "date": "2025-10-13",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "클로즈 베타 도입 기업의 월 계약 건수가 1건에서 4건으로, 매출은 340% 늘었다고 회사가 밝혔다.",
+     "quote": "도입 기업의 월 계약 건수가 1건에서 4건으로 증가했고, 매출은 340% 증가, 영업 인력은 40% 감축되면서도 성과는 오히려 개선됐다.",
+     "url": "https://m.dhnews.co.kr/news/view/1065594683093687",
+     "date": "2025-10-13",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "RecSee AI",
+   "vendor": "퓨렌스",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "영업 통화 녹취·요약",
+    "후속 조치·CRM 자동 등록"
+   ],
+   "problem": "업무 통화 녹취가 쌓이기만 하고 약속·후속 조치가 기록되지 않으며 CRM에 수기 입력해야 한다.",
+   "users": "법인폰으로 영업·상담하는 텔레마케팅·보험·금융·부동산·교육 조직",
+   "features": [
+    "법인폰·개인폰 업무 통화 자동 녹음",
+    "직원·고객 화자 분리",
+    "AI 통화카드(통화 후 12초 요약)",
+    "약속을 할 일로 전환",
+    "CRM 자동 등록·담당자 알림",
+    "관리자 모닝 브리프 메일"
+   ],
+   "automation_scope": "녹음·전사·요약, 후속 조치 추출, CRM 등록, 일일 콜 현황 요약 메일.",
+   "human_scope": "요약 확인, 영업 기회·재통화 건 실제 대응.",
+   "korea": "국내 회사(퓨렌스, 서울 금천), 카카오톡 상담 채널 운영.",
+   "pricing": "카카오톡 문의 후 업종별 안내(공개 요금 없음).",
+   "evidence": [
+    {
+     "claim": "통화 종료 후 12초 만에 핵심을 요약하고 CRM에 자동 등록한다.",
+     "quote": "통화 종료 후 12초 만에 핵심 요약 직원·고객 자동 화자분리로 맥락 파악 약속을 날짜·담당자 지정 할 일로 전환 CRM 자동 등록 · 담당자 알림 발송",
+     "url": "https://recsee.net/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "전날 콜 운영 현황을 요약해 관리자에게 아침마다 메일로 보낸다.",
+     "quote": "RecSee AI가 어제 하루의 콜 운영 현황을 요약하여 아침마다 메일로 공유해드려요.",
+     "url": "https://recsee.net/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "브이리뷰(Vreview)",
+   "vendor": "인덴트코퍼레이션",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "교육·고객 사례·영업 지원",
+   "tasks": [
+    "고객 후기 수집",
+    "후기 노출·관리"
+   ],
+   "problem": "구매자가 로그인·페이지 이동을 해야 해서 후기 작성률이 낮고 후기 관리에 손이 많이 간다.",
+   "users": "자사몰을 운영하는 이커머스 브랜드, 테마파크 등 경험 상품 기업",
+   "features": [
+    "배송 완료 시점 카카오 알림톡·챗봇 후기 요청",
+    "동영상 후기 수집",
+    "AI 매출 기여도 기반 후기 노출 순서",
+    "AI 댓글 매니저"
+   ],
+   "automation_scope": "송장 배송완료 기준 알림톡 발송(최대 3회), 후기 노출 순서 조정, 후기 답글 작성.",
+   "human_scope": "발송 주기·혜택 설정, 노출 정책·답글 검토.",
+   "korea": "국내 서비스, 카카오톡 알림톡·챗봇으로 후기 수집. 안다르·아모레퍼시픽(라보에이치) 등 사용.",
+   "pricing": "월 구독형(월 평균 주문 수·방문자 수 기준 산정), 무료 알림톡 초과 시 건당 50원.",
+   "evidence": [
+    {
+     "claim": "배송 완료 시점에 맞춰 저녁 시간대에 알림톡으로 후기를 요청하고 최대 3번까지 보낸다.",
+     "quote": "택배사에서 제공하는 배송 완료 상태 의 송장번호를 기준으로 가장 정확한 배송 완료 시점에 맞춰, 리뷰 생산이 가장 효과적으로 이루어지는 저녁 시간대에 알림톡이 발송됩니다.",
+     "url": "https://vreview.tv/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "AI가 후기별 매출 기여도를 분석해 위젯 노출 순서를 바꾼다.",
+     "quote": "AI가 리뷰 별 매출 기여도를 분석 하여 위젯에 노출되는 순서를 변경 합니다.",
+     "url": "https://vreview.tv/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "도입 후 기존 방식 대비 포토·텍스트 후기 수집률이 470% 늘었다고 밝혔다.",
+     "quote": "(브이리뷰 도입 후 기존 리뷰 작성 방식 대비 포토 및 텍스트 리뷰 수집률 470% 증가)",
+     "url": "https://vreview.tv/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "company": "백패커(텀블벅)",
+   "tool": "세일즈맵",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "이메일 시퀀스·팔로업 자동화",
+   "what": "콜드메일 발송 후 회신 확인과 팔로업 메일을 세일즈맵 시퀀스로 자동화하고, 재피어 연동으로 심사 신청을 딜/리드로 자동 생성.",
+   "automation_scope": "회신 여부 확인, 미회신 고객 팔로업 메일 발송, 문의 → 리드 자동 생성.",
+   "human_scope": "최초 제안 작성·발송, 미팅과 심사 진행.",
+   "result": "영업 이니셔티브 처리 속도 월 2개 → 주 2개(최대 8개), 약 300% 상승; 인력은 절반으로 감소",
+   "evidence": [
+    {
+     "claim": "시퀀스로 회신 확인과 팔로업 메일 발송을 자동화했다.",
+     "quote": "그러나 세일즈맵을 도입한 후에는 메일 회신 확인과 팔로업 메일 발송을 시퀀스를 활용해 자동화할 수 있었어요.",
+     "url": "https://salesmap.kr/blog/backpackr-salesmap-success-story",
+     "date": "2024-10-28",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "업무 속도가 월 2개에서 주 2개로 빨라져 약 300% 상승했다.",
+     "quote": "한 달에 2개에서 주당 2개로 업무 속도가 빨라지며 최대 8개까지 증가했습니다. 단순 수치로만 보면 300% 정도 상승한 것이죠.",
+     "url": "https://salesmap.kr/blog/backpackr-salesmap-success-story",
+     "date": "2024-10-28",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "리뉴어스랩",
+   "tool": "세일즈맵",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "AI 에이전트 리드 리서치·컨택 메일 초안",
+   "what": "대표가 세일즈맵 API 문서를 AI에 학습시켜, 매일 오전 7시 CRM 내 기업 20~40개 조사 → ICP A/B/C 등급 → 뉴스 시그널 감지 → 컨택 메일 초안 작성까지 에이전트 워크플로를 구축.",
+   "automation_scope": "기업 조사, ICP 등급 부여, 시그널 감지, 접근 전략 수립, 메일 초안 작성, CRM 기록.",
+   "human_scope": "최종 검토와 발송, 실제 미팅.",
+   "result": "전 과정 약 15~25분; 미팅 성사까지 1~2주 → 하루 만에 성사된 사례",
+   "evidence": [
+    {
+     "claim": "매일 아침 7시 AI 에이전트가 CRM 기업 20~40개를 조사하고 ICP 등급을 매긴다.",
+     "quote": "먼저 매일 아침 7시가 되면 AI 에이전트가 세일즈맵 CRM에 저장된 기업 중 20~40개를 조사해요. 이후 리뉴어스랩의 ICP 기준에 따라 A/B/C 등급을 부여하죠.",
+     "url": "https://salesmap.kr/blog/renew-earth-lab-salesmap-success-story2",
+     "date": "2026-07-20",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "전 과정이 15~25분에 끝나고 대표는 최종 검토와 발송만 한다.",
+     "quote": "이 모든 과정은 약 15~25분 안에 완료되는데요. 각 에이전트를 언제 실행할지 판단하는 것까지도 AI 에이전트가 담당하기 때문에, 저는 최종 검토와 발송만 진행하면 됩니다.",
+     "url": "https://salesmap.kr/blog/renew-earth-lab-salesmap-success-story2",
+     "date": "2026-07-20",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "미팅 성사까지 1~2주 걸리던 것이 하루 만에 성사되는 경우도 생겼다.",
+     "quote": "예전에는 미팅을 잡고 실제 미팅이 성사되기까지 1~2주 정도 걸렸다면, 지금은 하루 만에 미팅이 성사되는 경우도 있어요.",
+     "url": "https://salesmap.kr/blog/renew-earth-lab-salesmap-success-story2",
+     "date": "2026-07-20",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "토스페이먼츠",
+   "tool": "리캐치",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "리드 수집·담당자 자동 배정",
+   "what": "홈페이지 도입 문의 폼 A/B 테스트와 함께 리캐치 폼/리드라우터를 연동해 문의 고객을 유형별 영업 담당자에게 자동 배정하고 바로 미팅을 잡게 함. 제출 시 30초 만에 자동 맞춤 제안서 전달.",
+   "automation_scope": "문의 정보 기반 담당자 자동 할당, 미팅 예약, 자동 맞춤 제안서 전달.",
+   "human_scope": "A/B 테스트 가설 설계, 영업 담당자 상담.",
+   "result": "홈페이지 전환율 2.6배(목표: 3개월 내 도입 문의 2배)",
+   "evidence": [
+    {
+     "claim": "문의 고객이 남긴 정보에 따라 영업 담당자에게 자동 할당된다.",
+     "quote": "토스페이먼츠에서는 홈페이지에 인입되는 모든 도입 문의 고객이 리캐치를 통해 미팅 기회로 꽂히게 되어 있어요. 문의에서 고객이 남긴 정보에 따라 가장 적합한 영업 담당자분들에게 자동으로 할당 이 되고 있습니다.",
+     "url": "https://recatch.cc/ko/blog/customer-success-story-tosspayments",
+     "date": "2024-05-20",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "홈페이지 개편 A/B 테스트로 전환율 2.6배를 달성했다.",
+     "quote": "결국 ‘홈페이지 전환율 2.6배 상승’이라는 초과 달성 을 이루었어요.",
+     "url": "https://recatch.cc/ko/blog/customer-success-story-tosspayments",
+     "date": "2024-05-20",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "아임웹",
+   "tool": "채널톡",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "B2B 상담 유도 메시지·트라이얼 시퀀스",
+   "what": "고객 태그·세그먼트로 네이버 \"모두!\" 종료에 따른 이전 고려 고객만 골라 상담 유도 일회성 메시지를 보내고, 트라이얼 1·3·7일차 가이드 캠페인 메시지를 자동 발송.",
+   "automation_scope": "여정별 캠페인 메시지 자동 발송, 세그먼트 대상 설정.",
+   "human_scope": "타깃 조건 정의, 메시지 작성, 실시간 상담과 이전 지원.",
+   "result": "2주간 상담 연결 800건 이상, 매출 3,000만 원 이상; 유료 플랜 환불 요청 70% 감소, 단순 문의 하루 100건 이상 감소",
+   "evidence": [
+    {
+     "claim": "2주간 상담 연결이 800건을 넘었고 매출 전환 금액이 3천만 원을 넘었다.",
+     "quote": "그 결과, 2주간 상담으로 연결된 건 수가 800건 을 넘었으며, 상담으로 연결된 고객 중 매출로 전환된 금액은 3천만원이 넘는 성과 를 거두었습니다.",
+     "url": "https://channel.io/kr/blog/articles/marketing-case-imweb-98d51e56",
+     "date": "2025-08-26",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "트라이얼 시점별 가이드 발송 후 단순 문의가 하루 100건 이상 줄었다.",
+     "quote": "체험 시작 1일차, 3일차, 7일차 등 고객이 처한 시점에 맞춘 가이드 콘텐츠를 발송하며 스스로 기능을 활용할 수 있도록 도왔어요. 그 결과, 신규 고객의 단순 문의가 하루 평균 100건 이상 줄었고",
+     "url": "https://channel.io/kr/blog/articles/marketing-case-imweb-98d51e56",
+     "date": "2025-08-26",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "클라이원트",
+   "tool": "이벤터스",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "세일즈 웨비나 리드 획득",
+   "what": "AI 입찰 분석 스타트업이 이벤터스 세일즈 웨비나 패키지(기획·송출·마케팅 전담)로 웨비나를 열어 리드를 모음.",
+   "automation_scope": "신청 페이지·모객·송출 운영(이벤터스 측 대행 포함).",
+   "human_scope": "발표 콘텐츠 준비, 데모 미팅 진행.",
+   "result": "목표 150명 대비 350명 신청, 데모 미팅 요청 약 150건",
+   "evidence": [
+    {
+     "claim": "목표 150명보다 많은 350명이 신청했다.",
+     "quote": "\"목표 인원이었던 150명보다 훨씬 많은 350명이 빠르게 신청 해 주셔서 놀랐습니다.\"",
+     "url": "https://blog.event-us.kr/use-case-cliwant-b2b-webinar",
+     "date": "2024-11-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "행사로 약 150건의 데모 미팅 요청이 들어왔다.",
+     "quote": "\"행사를 통해 약 150건의 데모 미팅 요청 이 들어왔어요.\"",
+     "url": "https://blog.event-us.kr/use-case-cliwant-b2b-webinar",
+     "date": "2024-11-25",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "롯데월드",
+   "tool": "브이리뷰(Vreview)",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "고객 후기 수집",
+   "what": "2023년 5월 브이리뷰를 도입해 카카오톡 메시지로 방문 후기(어트랙션 등 무형 경험)를 자사 데이터로 수집.",
+   "automation_scope": "카카오톡 메시지로 후기 작성 요청·수집.",
+   "human_scope": "수집 대상·혜택 설정, 후기 활용.",
+   "result": "후기 약 6,300개 중 동영상 후기 1,300건",
+   "evidence": [
+    {
+     "claim": "롯데월드는 5월 브이리뷰 도입 이후 고객 후기를 자사 데이터로 확보하고 있다.",
+     "quote": "롯데월드는 지난 5월 브이리뷰 도입을 기점으로 고객 후기를 자사 데이터로 확보하고 있다.",
+     "url": "https://bloter.net/news/articleView.html?idxno=607413",
+     "date": "2023-10-18",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "총 6,300여 개 후기 중 동영상 후기가 1,300건이다.",
+     "quote": "특히 총 6300여개의 후기 중 동영상 리뷰가 1300건에 달한다는 점은 주목할 만하다.",
+     "url": "https://bloter.net/news/articleView.html?idxno=607413",
+     "date": "2023-10-18",
+     "reliability": "third_party"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "그리팅",
+   "tool": "하이퍼세일즈(HyperSales)",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "B2B 리드 정보 보강",
+   "what": "확보한 리드 기업의 추가 정보를 하이퍼세일즈 기업 DB로 채워 영업에 활용.",
+   "automation_scope": "기업 정보 자동 보강.",
+   "human_scope": "보강된 정보로 미팅 제안·진행.",
+   "result": "리드 미팅 전환율 46% 개선",
+   "evidence": [
+    {
+     "claim": "추가 기업 정보를 채운 뒤 리드 미팅 전환율이 46% 개선됐다.",
+     "quote": "확보한 기업의 추가 정보를 채워주니까 리드 미팅 전환률이 46% 개선 됐어요. 그리팅",
+     "url": "https://hypersales.ai/",
+     "date": "2026-07",
+     "reliability": "vendor_doc"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "광고 플랫폼 A사(익명)",
+   "tool": "AimSell(에임셀)",
+   "area": "교육·고객 사례·영업 지원",
+   "task": "맞춤 제안서 자동 생성",
+   "what": "AimSell로 시그널 기반 타깃 발굴과 기업별 맞춤 제안을 자동화.",
+   "automation_scope": "타깃 탐색, 리서치, 제안서·이메일 초안.",
+   "human_scope": "제안 검토, 미팅.",
+   "result": "미팅 주 3~4건으로 증가, 분기 광고 매출 3배 이상",
+   "evidence": [
+    {
+     "claim": "도입 후 미팅이 주 3~4건으로 늘고 분기 매출이 3배 이상 뛰었다.",
+     "quote": "광고 플랫폼 A사 “ 솔루션을 도입한 후 미팅이 주 3~4건으로 대폭 늘었고, 그 결과 분기 매출이 3배 이상 뛰었습니다 ”",
+     "url": "https://www.breadai.co.kr/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "일레븐(베이비챗)",
+   "tool": "에어브릿지(Airbridge)",
+   "area": "성과 측정",
+   "task": "AI 에이전트 데이터 분석·의사결정 자동화",
+   "what": "에어브릿지 MCP로 광고비·유저 데이터를 자동 결합하고, Codex 기반 역할별(UA·콘텐츠·그로스·운영) AI 에이전트가 매일 슬랙에서 실측 데이터로 아이디어 제시·토론하고 필요 시 담당자에게 의사결정을 요청.",
+   "automation_scope": "데이터 결합·조회(Actuals·Active Users·Retention 리포트), 가설 제시, 에이전트 간 토론.",
+   "human_scope": "최종 실행 여부 결정, 에이전트 페르소나·호출 규칙 설계.",
+   "result": "팀 논의 시간 하루 약 2시간 절감",
+   "evidence": [
+    {
+     "claim": "에어브릿지 MCP와 Codex 기반 AI 에이전트로 슬랙에서 분석부터 의사결정까지 자동화했다.",
+     "quote": "에어브릿지 MCP로 마케팅 비용·유저 데이터를 자동 결합하고, 이를 Codex 엔진을 활용한 AI 에이전트에 연동해 슬랙에서 데이터 분석부터 전략 논의·의사결정까지 자동화했습니다.",
+     "url": "https://airbridge.io/ko/case-studies/airbridge-mcp-ai-babechat",
+     "date": "2026-09-16",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "팀 내부 논의 시간을 하루 약 2시간 절감했다.",
+     "quote": "기존 팀 내부 논의에 사용하던 시간을 하루 약 2시간 정도 절감할 수 있었습니다.",
+     "url": "https://airbridge.io/ko/case-studies/airbridge-mcp-ai-babechat",
+     "date": "2026-09-16",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "원티드랩",
+   "tool": "에어브릿지(Airbridge)",
+   "area": "성과 측정",
+   "task": "웹투앱 어트리뷰션",
+   "what": "기존 MMP에서 에어브릿지로 이관해 트래킹 링크·액츄얼스·퍼널 리포트로 웹→앱 유저 여정을 추적하고, 카카오 비즈보드 등 국내 채널 성과를 통합 측정.",
+   "automation_scope": "채널·소재별 전환 자동 집계, 웹투앱 어트리뷰션.",
+   "human_scope": "예산 재배분·채널 선택.",
+   "result": "광고비 2배 이상 증액하면서 CPA 38% 이상 절감",
+   "evidence": [
+    {
+     "claim": "광고비를 2배 이상 늘리면서 CPA는 38% 이상 절감했다.",
+     "quote": "광고비를 2배 이상 증액하면서도 CPA는 38% 이상 절감하는 등 전체 마케팅 효율이 크게 개선되었어요.",
+     "url": "https://www.airbridge.io/ko/case-studies/wantedlab-web-to-app-attribution",
+     "date": "2026-01",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "라이너",
+   "tool": "에어브릿지(Airbridge)",
+   "area": "성과 측정",
+   "task": "인플루언서·파트너십 성과 측정",
+   "what": "파트너십(BC카드·SKT·LG U+)과 인스타그램 인플루언서마다 커스텀 트래킹 링크·딥링크를 부여해 클릭~앱 설치~구독 전환을 추적하고, 앰플리튜드와 연동.",
+   "automation_scope": "링크별 유입·전환 자동 추적.",
+   "human_scope": "파트너·인플루언서 선정과 콘텐츠 전략 수정.",
+   "result": "앱 다운로드 350% 증가, 인플루언서 마케팅 구독 전환율 155% 증가",
+   "evidence": [
+    {
+     "claim": "커스텀 트래킹 링크로 파트너십·인플루언서 트래픽을 측정해 앱 다운로드 350%, 구독 전환율 155% 증가를 달성했다.",
+     "quote": "라이너는 에어브릿지 커스텀 트래킹 링크로 파트너십과 인플루언서 트래픽을 정확히 측정하고, 앱 다운로드 350% 증가와 구독 전환율 155% 증가를 달성했어요.",
+     "url": "https://airbridge.io/ko/case-studies/liner-web-to-app-influencer-marketing",
+     "date": "2026-04-23",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "플랜핏",
+   "tool": "에어브릿지(Airbridge)",
+   "area": "성과 측정",
+   "task": "전환 이벤트 최적화·통합 대시보드",
+   "what": "에어브릿지로 인앱 이벤트를 실험해 무료 체험 시작 이벤트 기준으로 광고를 최적화하고, 쉐어링크로 광고 데이터를 내부 대시보드에 연결(앰플리튜드·레비뉴캣 연동).",
+   "automation_scope": "광고~구독 데이터 연결, 대시보드 자동 갱신.",
+   "human_scope": "최적화 이벤트 선택, 소재 실험 설계.",
+   "result": "CAC 약 40% 개선",
+   "evidence": [
+    {
+     "claim": "무료 체험 시작 이벤트 중심으로 전환해 CAC를 약 40% 개선했다.",
+     "quote": "이를 기반으로 광고 전략을 이벤트 중심으로 전환했고, 그 결과 결제당 비용(CAC)을 약 40% 개선할 수 있었어요.",
+     "url": "https://www.airbridge.io/ko/case-studies/planfit-app-event-optimization-free-trial",
+     "date": "2026-04-09",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "쉐어링크로 광고 데이터를 내부 대시보드와 연결했다.",
+     "quote": "특히 에어브릿지 쉐어링크를 활용해 광고 데이터를 내부 대시보드와 연결하면서 팀 전체가 동일한 데이터를 기반으로 더 빠르게 의사결정을 내릴 수 있게 되었어요.",
+     "url": "https://www.airbridge.io/ko/case-studies/planfit-app-event-optimization-free-trial",
+     "date": "2026-04-09",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "국내 광고대행사(익명)",
+   "tool": "비즈스프링 AIR",
+   "area": "성과 측정",
+   "task": "광고주별 주간 리포트 자동화",
+   "what": "매체 API 수집 → 표준 지표 테이블 적재 → 광고주별 템플릿 자동 채움 → 주간 자동 실행·급변 지표 하이라이트. 2주 병행 운영으로 수기 리포트와 정합성 검증 후 전환.",
+   "automation_scope": "데이터 취합, 리포트 생성, 이상 수치 하이라이트, 완료 알림.",
+   "human_scope": "검토·해석·코멘트.",
+   "result": "팀 주당 8시간 이상 → 20분",
+   "evidence": [
+    {
+     "claim": "주당 8시간 이상 걸리던 취합 작업이 20분으로 줄었고 검토·해석은 사람이 맡았다.",
+     "quote": "팀 전체 기준 주당 8시간 이상 걸리던 취합 작업이 20분으로 줄었습니다. 취합 작업만 자동화하고 검토·해석은 사람이 계속 담당했습니다.",
+     "url": "https://bizspring.ai/kb/case/weekly-report-automation",
+     "date": "2026-08",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "센트비",
+   "tool": "Amplitude",
+   "area": "성과 측정",
+   "task": "퍼널·코호트 분석",
+   "what": "Amplitude 퍼널 차트로 전환·이탈 유저 코호트를 만들어 이탈 원인을 분석하고 인증 단계 퍼널을 단축(국내 파트너 맥소노미 지원).",
+   "automation_scope": "퍼널·코호트 자동 집계.",
+   "human_scope": "이탈 원인 해석, 퍼널 개선 설계.",
+   "result": "송금 전환 퍼널 전환율 최대 10% 상승",
+   "evidence": [
+    {
+     "claim": "퍼널 개선 후 송금 전환 퍼널 이탈률이 줄고 전환율이 최대 10% 높아졌다.",
+     "quote": "그 결과 실제로 송금까지 전환하는 퍼널에서의 이탈율이 줄어든 것을 확인할 수 있었고, 최대 10%까지 전환율이 높아지기도 했습니다.",
+     "url": "https://maxonomy.net/customer/1129",
+     "date": "2025-05-08",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  }
+ ],
+ "stats": [
+  {
+   "topic": "국내 디지털 마케터의 성과 측정 부담",
+   "finding": "데이터 분석과 성과 측정의 어려움이 전략 실행의 큰 부담으로 인식된다.",
+   "figures": "응답자 n=313",
+   "sample": "인하우스·에이전시 디지털 마케터 313명, DMC미디어 K-SDM 2025 & 2026 요약본",
+   "quote": "반면데이터분석과성과측정의어려움은여전히큰 부담으로인식되고 있음.",
+   "url": "https://tsn.dmcmedia.co.kr/dmcreportCDN/rp/pdf_or_img/1766388036022.pdf",
+   "date": "2025-12",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "국내 마케터 AI 도구 활용 단계",
+   "finding": "디지털 마케터 95.5%가 AI 도구 사용 경험이 있으나, 데이터 분석·광고 집행 자동화는 아직 가능성을 확인하는 단계라는 인식이 많다.",
+   "figures": "AI 도구 사용 경험 95.5%",
+   "sample": "인하우스·에이전시 디지털 마케터 313명, DMC미디어 K-SDM 2025 & 2026 요약본",
+   "quote": "반면데이터분석이나광고집행자동화등 전략·집행영역에서는 ‘가능성을확인하는단계’라는인식이상대적으로많아",
+   "url": "https://tsn.dmcmedia.co.kr/dmcreportCDN/rp/pdf_or_img/1766388036022.pdf",
+   "date": "2025-12",
+   "reliability": "survey",
+   "region": "국내"
+  }
+ ],
+ "gaps": [
+  "아드리엘 고객 사례(위픽코퍼레이션 \"하루 10분\" 리포트, 기흥그룹)는 Cloudflare 사람 확인 화면에 막혀 원문을 받지 못해 넣지 않음.",
+  "레몬이드·어반베이스·크리에이티브크립 등 국내 기업의 마케팅 리포트 자동화 기술 블로그 원문은 찾지 못함(비즈스프링 사례는 기업명 익명).",
+  "애드브릭스·뷰저블·아임리포트의 2024년 이후 새 국내 고객 사례(수치 포함)는 찾지 못함.",
+  "스티비·이벤터스 추가 고객 사례 중 2024년 이후 B2B 영업 성과 수치가 있는 것은 클라이원트(이벤터스) 외에 찾지 못함.",
+  "타임톡·리틀리 등 국내 AI 통화 요약 서비스는 확인하지 못함(RecSee AI만 수록).",
+  "온오프믹스·웨비나하우스 등 다른 국내 웨비나 툴의 기능·요금 원문은 받지 않음(웨비나우만 수록, 요금 비공개).",
+  "리드리·자비스 등 요청 예시의 B2B 리드 데이터 서비스는 확인하지 못함(하이퍼세일즈·아웃컴만 확인, 아웃컴은 기능 원문 부족으로 제외).",
+  "국내 마케터 대상 \"리포트 작성 시간·자동화 비율\" 설문 수치는 찾지 못함(DMC 요약본은 정성 서술 위주).",
+  "GA4 기반 국내 기업의 실명 측정 자동화 사례(수치 포함)는 찾지 못함.",
+  "하이퍼세일즈·AimSell 고객 수치는 업체 홈페이지 인용문 외 별도 사례 원문이 없음."
+ ]
+}

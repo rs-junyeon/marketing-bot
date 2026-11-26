@@ -1,0 +1,1077 @@
+{
+ "group": "CRM·멤버십·리텐션",
+ "tasks": [
+  {
+   "task": "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+   "problem": "고객마다 행동 시점이 달라 일괄 발송으로는 가입 직후·장바구니 이탈·재구매 주기·이탈 시점을 놓친다",
+   "how": "SDK·쇼핑몰 연동으로 행동 이벤트를 수집하고, 트리거(가입·장바구니 담기 후 미구매·마지막 구매 후 경과일 등)와 대기·분기 조건을 가진 여정(저니)을 만들어 자동 발송",
+   "automation_scope": "이벤트 감지, 대상자 자동 갱신, 대기 시간 후 발송, 전환 추적",
+   "human_scope": "시나리오·트리거 조건·쿠폰 혜택 설계, 메시지 문구 작성, 성과 보고 후 수정",
+   "tools": [
+    "노티플라이",
+    "핵클",
+    "빅인",
+    "데이터라이즈",
+    "Braze",
+    "Klaviyo",
+    "Customer.io",
+    "스티비"
+   ]
+  },
+  {
+   "task": "채널 통합 발송(알림톡·브랜드 메시지·푸시·이메일·문자)",
+   "problem": "국내는 카카오톡 비중이 커서 해외 툴만으로는 알림톡·브랜드 메시지 발송이 어렵고, 광고성 메시지 규정(수신 동의·야간·(광고) 표기)을 지켜야 한다",
+   "how": "카카오 공식 딜러/파트너 연동으로 알림톡(정보성)·브랜드 메시지(광고성, 친구톡 후속)·문자·푸시·이메일을 한 콘솔에서 발송하고, 실패 시 문자 대체 발송",
+   "automation_scope": "채널별 발송, 대체 발송, 광고 표기·080 수신거부 문구 삽입(일부 툴), 야간 제외 실행",
+   "human_scope": "알림톡 템플릿 작성·카카오 검수 대응, 정보성/광고성 구분, 수신 동의 수집",
+   "tools": [
+    "카카오 비즈메시지(알림톡·브랜드 메시지)",
+    "솔라피",
+    "노티플라이",
+    "채널톡"
+   ]
+  },
+  {
+   "task": "세그먼트·발송 시점 최적화(AI)",
+   "problem": "누구에게 언제 보낼지 사람이 정하면 모수·시점 선택이 감에 의존한다",
+   "how": "행동·구매 데이터로 세그먼트를 자동 갱신하고, AI가 고객별 최적 발송 시각(Send Time Optimization/Intelligent Timing)·가능성 높은 고객군·추천 상품을 제안. 생성형 AI로 문구·타깃 제안",
+   "automation_scope": "세그먼트 갱신, 고객별 발송 시각 계산, 발송 모수 예측, 문구·타깃 추천",
+   "human_scope": "목표 지표 설정, AI 제안 검토·승인, 금지 시간대(quiet hours) 설정",
+   "tools": [
+    "Braze",
+    "Iterable",
+    "빅인",
+    "노티플라이",
+    "핵클",
+    "Klaviyo"
+   ]
+  },
+  {
+   "task": "멤버십·포인트·쿠폰 자동 운영",
+   "problem": "적립·쿠폰 발급·소멸 안내를 사람이 챙기면 누락되고 재방문 유도 시점을 놓친다",
+   "how": "POS·결제 데이터와 연동한 포인트 적립 시 알림톡 자동 발송, 첫 방문·생일·일정 기간 미방문 등 조건별 쿠폰 자동 발송",
+   "automation_scope": "적립 알림, 고객 자동 분류(신규·단골·생일), 조건 충족 시 쿠폰 발송",
+   "human_scope": "적립률·쿠폰 혜택과 조건 설정, 비용 관리",
+   "tools": [
+    "도도포인트",
+    "토스플레이스 쿠폰 자동 발송",
+    "캐시노트 단골 관리"
+   ]
+  },
+  {
+   "task": "리뷰 요청 자동화",
+   "problem": "구매·방문 고객이 리뷰를 직접 남기려면 로그인·검색이 필요해 작성률이 낮다",
+   "how": "배송 완료나 포인트 적립 직후 알림톡·챗봇으로 리뷰 작성 링크를 자동 발송하고 적립금 등 리워드로 유도",
+   "automation_scope": "발송 시점 판단과 발송, 로그인 없는 작성창 연결, AI 리뷰 요약·추천순 노출",
+   "human_scope": "리워드 정책, 알림톡 문구·템플릿 선택",
+   "tools": [
+    "크리마 리뷰",
+    "도도포인트"
+   ]
+  },
+  {
+   "task": "소상공인 매장 단골 관리(매장 CRM)",
+   "problem": "소상공인은 손님 얼굴과 방문 이력을 기억에 의존해 단골 관리·재방문 마케팅을 체계적으로 하기 어렵다",
+   "how": "카드 결제·POS·포인트 적립 데이터로 단골을 식별하고, 네이버 플레이스 멤버십 연동·자동 메시지·쿠폰으로 재방문 유도",
+   "automation_scope": "단골 식별, 고객 분류, 조건별 메시지·쿠폰 발송, 네이버 리뷰 요청",
+   "human_scope": "쿠폰 조건·혜택 결정, 메모 등 고객 관리",
+   "tools": [
+    "캐시노트 단골 관리",
+    "도도포인트",
+    "토스플레이스 쿠폰 자동 발송"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "name": "솔라피",
+   "vendor": "솔라피(누리고)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "채널 통합 발송(알림톡·브랜드 메시지·푸시·이메일·문자)",
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)"
+   ],
+   "problem": "문자·알림톡·브랜드 메시지 대량/자동 발송과 광고성 메시지 규정 준수",
+   "users": "쇼핑몰·스마트스토어 운영자, 개발자(API), 중소기업",
+   "features": [
+    "문자·알림톡·브랜드 메시지·RCS 발송",
+    "커머스 자동화(주문 상태별 자동 문자·알림톡)",
+    "광고 메시지 여부 선택 시 (광고) 표기 자동 추가",
+    "공용 080 무료 수신거부 번호",
+    "야간 제외 실행 조건",
+    "노코드 자동화 연동"
+   ],
+   "automation_scope": "주문 상태를 주기적으로 확인해 자동 발송, 야간(21~08시) 실행 제외 후 오전 8시 이후 처리, 웹 발송 시 광고 표기 추가",
+   "human_scope": "광고/정보성 구분, API 연동 시 광고 표기 직접 적용, 템플릿·발신번호 설정",
+   "korea": "국내 툴. 카카오 알림톡·브랜드 메시지 지원. 가이드에 광고성 메시지는 21~08시 발송 불가(수신 시간 기준)·별도 야간 동의 필요 명시, 웹 발송에서 광고 여부 선택 시 (광고) 표기 자동 추가, 공용 080 수신거부 번호 제공. 커머스 자동화에 '야간 제외' 옵션(오후 9시~오전 8시 미실행). API/SDK 발송은 광고 표기를 직접 넣어야 함",
+   "pricing": "건당 과금(VAT 별도): 알림톡 13원, 친구톡은 2025-12-31 종료. 월 발송량 구간별 할인",
+   "evidence": [
+    {
+     "claim": "광고성 메시지는 오후 9시~오전 8시 발송 불가이며 별도 야간 수신 동의가 필요하고 수신 시간 기준으로 판단한다고 안내한다",
+     "quote": "광고성 메시지는 오후 9시부터 다음 날 오전 8시까지 발송할 수 없습 니다. 해당 시간대 발송을 위해서는 수신자로부터 별도의 야간 광고 수신 동의가 필요합니다. ※ 야간 발송 제한 위반 여부는 발송 시간이 아닌 수신 시간 기준으로 판단됩니다.",
+     "url": "https://solapi.com/guides/sms-ad-guide",
+     "date": "2026-06",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "웹 발송에서 광고 메시지 여부를 선택하면 광고 표기를 자동 추가하고, API/SDK 발송은 직접 적용해야 한다",
+     "quote": "해당 기능을 이용하시는 경우 광고 표기법에 맞게 광고 표시를 추가하여 발송해 드립니다. API / SDK 연동 발송 시 광고 표기 의무사항을 직접 적용해 야 합니다.",
+     "url": "https://solapi.com/guides/sms-ad-guide",
+     "date": "2026-06",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "커머스 자동화에 오후 9시~오전 8시 미실행 '야간 제외' 조건이 있다",
+     "quote": "야간 제외 오후 9시부터 다음 날 오전 8시까지는 자동화를 실행하지 않습니다. 밤중에 들어온 주문으로 고객에게 문자가 가는 것을 막습니다.",
+     "url": "https://solapi.com/guides/auto-commerce-settings",
+     "date": "2026-10-23",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "알림톡 건당 13원, 친구톡은 2025-12-31 서비스 종료로 표기돼 있다",
+     "quote": "카카오톡 알림톡 13원 한글/영어 1,000자 템플릿 기반 버튼5개 *유형 관계없이 1건당 13원으로 동일 친구톡 2025.12.31 서비스종료",
+     "url": "https://solapi.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "노티플라이",
+   "vendor": "그로스데이터(노티플라이)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+    "채널 통합 발송(알림톡·브랜드 메시지·푸시·이메일·문자)",
+    "세그먼트·발송 시점 최적화(AI)"
+   ],
+   "problem": "앱·쇼핑몰의 유저 행동 기반 메시지를 여러 채널로 개발 부담 없이 자동 발송",
+   "users": "앱 서비스·온라인 쇼핑몰의 그로스·CRM 마케터, 스타트업~엔터프라이즈",
+   "features": [
+    "카카오 알림톡·브랜드 메시지(카카오 공식 파트너)",
+    "앱/웹 푸시 무료 발송, 팝업, 이메일, 문자, 웹훅",
+    "유저 여정(행동 기반 시나리오)",
+    "야간 발송 금지 등 세부 설정",
+    "AI 타깃 분석·캠페인 초안 생성",
+    "Amplitude·Mixpanel 연동"
+   ],
+   "automation_scope": "행동 이벤트 기반 실시간 발송, 여정 자동 실행, 웹훅으로 쿠폰 지급·포인트 적립 연동",
+   "human_scope": "여정·타깃 조건 설계, AI 초안 검토 후 실행",
+   "korea": "국내 툴, 카카오 공식 파트너로 별도 대행사 없이 알림톡·브랜드 메시지 발송. 캠페인 설정에 '야간 발송 금지' 옵션. AI 캠페인 초안 예시에 '마케팅 수신 동의' 대상 조건 포함",
+   "pricing": "스탠다드 월 15만원, 프로 월 80만원, 엔터프라이즈 별도 문의(30일 무료체험)",
+   "evidence": [
+    {
+     "claim": "카카오 공식 파트너로 대행사 없이 알림톡·브랜드 메시지를 발송한다",
+     "quote": "노티플라이는 카카오 공식 파트너입니다. 별도의 대행사 연동 없이 카카오톡을 발송할 수 있습니다.",
+     "url": "https://notifly.tech/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "예약·실시간·야간 발송 금지 설정과 AI 타깃 분석을 제공한다",
+     "quote": "예약 발송, 실시간 발송, 야간 발송 금지 등 세부 설정 가능 정교한 타게팅과 AI 활용 유저 속성 및 행동 기반 정확한 타겟팅 AI 기반 타겟 분석과 발송 전 검토 지원",
+     "url": "https://notifly.tech/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "장바구니 이탈 알림·가입 환영 메일·결제 완료 쿠폰 등을 사용 사례로 든다",
+     "quote": "신규 가입 환영 메일, 장바구니 리마인드, 업데이트, 신상품 소식 결제 완료 시 쿠폰 발급, 장바구니 이탈 시 할인 코드 제공",
+     "url": "https://notifly.tech/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "스탠다드 월 15만원, 프로 월 80만원 요금제가 있다",
+     "quote": "15 만원 / 월 앱 푸시, 웹 푸시 무료 발송",
+     "url": "https://notifly.tech/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "프로 요금제는 월 80만원이며 A/B 테스트·유저 피로도 관리를 포함한다",
+     "quote": "80 만원 / 월 스탠다드 플랜의 모든 기능 A/B 테스트 캠페인 고급 설정 - API 기반 발송, 유저 피로도 관리",
+     "url": "https://notifly.tech/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "핵클",
+   "vendor": "핵클",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+    "세그먼트·발송 시점 최적화(AI)"
+   ],
+   "problem": "행동 데이터 분석·A/B 테스트·CRM 캠페인을 따로 운영해 개선 주기가 느림",
+   "users": "앱·커머스·금융사의 그로스·CRM 마케터, PM (중견~대기업 포함)",
+   "features": [
+    "행동 데이터 분석(퍼널)",
+    "인앱 메시지·푸시·카카오 비즈메시지 캠페인",
+    "A/B 테스트",
+    "MCP 연동으로 AI가 성과 요약·타깃 추천·문구 제안"
+   ],
+   "automation_scope": "행동 트리거 기반 여정 실행, 세그먼트 분기, AI 성과 분석·문구 제안",
+   "human_scope": "여정·쿠폰 조건 설계, 실험 설계, AI 제안 채택",
+   "korea": "국내 툴, 카카오 비즈 메시지 발송 결과까지 AI 분석 대상에 포함",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "MCP 연동으로 AI가 퍼널 데이터와 인앱·푸시·카카오 비즈메시지 캠페인 결과, A/B 테스트를 분석해 타깃·문구를 제안한다",
+     "quote": "핵클은 회원가입, 이탈, 상세 페이지 진입, 결제 등 퍼널 전환 데이터를 비롯해 인앱 메시지, 푸시 알림, 카카오 비즈 메시지 등 CRM 캠페인 실행 결과와 다수의 A/B 테스트 실험 데이터를 AI가 분석하도록 지원한다. 이를 바탕으로 성과 요약, 타겟 그룹 추천, 메시지 문구 제안 등",
+     "url": "https://www.hankyung.com/article/202505281292O",
+     "date": "2025-05-29",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "이마트24는 핵클로 다채널 CRM을 통합 관리하고 A/B 테스트로 최적화했다",
+     "quote": "핵클을 통한 다채널 CRM 통합 관리와 A/B 테스트 기반 CRM 최적화",
+     "url": "https://hackle.io/ko/post/emart24",
+     "date": "2026",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "채널톡",
+   "vendor": "채널코퍼레이션",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "채널 통합 발송(알림톡·브랜드 메시지·푸시·이메일·문자)",
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)"
+   ],
+   "problem": "상담 데이터와 고객 연락처를 마케팅 메시지로 이어 쓰기",
+   "users": "D2C 쇼핑몰·스타트업의 CS·마케팅 담당자(중소 규모 다수)",
+   "features": [
+    "고객 메신저·AI 상담 에이전트 ALF",
+    "CRM 마케팅(세그먼트 메시지)",
+    "카카오 브랜드 메시지·알림톡·문자 발송",
+    "워크플로우(구 서포트봇·자동화 규칙)"
+   ],
+   "automation_scope": "세그먼트 대상 발송, 워크플로우 기반 자동 응대·메시지",
+   "human_scope": "세그먼트·메시지 작성, 마케팅 수신 동의 관리",
+   "korea": "국내 툴. 브랜드 메시지는 휴대폰 번호가 있고 마케팅 수신 동의한 고객에게만 보낼 수 있으며, 카카오 채널 차단·문자 수신 거부 고객은 자동 제외",
+   "pricing": "플랜 구독 + 사용량 과금. 알림톡 건당 7PU(1PU=1원)",
+   "evidence": [
+    {
+     "claim": "브랜드 메시지는 마케팅 수신 동의 고객에게만 보내며 채널 차단·문자 수신거부 고객은 제외한다",
+     "quote": "브랜드 메시지(친구톡)는 채널톡 ‘고객 연락처’에 등록된 고객 중 휴대폰 번호가 있고, 마케팅 수신 동의 를 한 고객에게 보낼 수 있습니다. 카카오 채널을 차단한 고객의 전송 대상에서 제외됩니다.",
+     "url": "https://docs.channel.io/help/ko/articles/%EB%B8%8C%EB%9E%9C%EB%93%9C-%EB%A9%94%EC%8B%9C%EC%A7%80%EC%B9%9C%EA%B5%AC%ED%86%A1--08543518",
+     "date": "2026-08",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "알림톡은 전송 건당 7PU(1PU=1원)로 과금된다",
+     "quote": "카카오 알림톡 : 전송 건 당 7PU",
+     "url": "https://docs.channel.io/help/ko/articles/%EC%B2%AD%EA%B5%AC%EC%84%9C-%ED%95%AD%EB%AA%A9%EB%B3%84-%EC%95%88%EB%82%B4-3208623a",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "데이터라이즈",
+   "vendor": "데이터라이즈",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+    "세그먼트·발송 시점 최적화(AI)"
+   ],
+   "problem": "자사몰 고객 시그널(장바구니 이탈·미방문·구매 주기 이탈)을 해석해 맞춤 메시지로 연결",
+   "users": "카페24·Shopify 자사몰 운영 브랜드의 마케터(중소~중견)",
+   "features": [
+    "자동 발송 알림톡/친구톡",
+    "온사이트 상품 추천 팝업",
+    "발송 성공률 기반 발송 모수 예측",
+    "코호트·세그먼트 증감 분석",
+    "컨설팅"
+   ],
+   "automation_scope": "시그널 기반 세그먼트 생성과 메시지 자동 발송, 온사이트 추천",
+   "human_scope": "캠페인 일정·쿠폰 설계, 컨설팅 기반 의사결정",
+   "korea": "국내 툴, 카카오 알림톡·친구톡 자동 발송. 카페24 베스트 파트너, 일본 Shopify 사례도 있음",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "가장 많이 쓴 기능으로 자동 발송 알림톡/친구톡, 온사이트 추천, 발송 모수 예측을 꼽았다",
+     "quote": "자동 발송되는 알림톡/친구톡 온사이트 상품 추천 메시지 발송 성공률 기반의 발송모수 예측 기능",
+     "url": "https://www.datarize.ai/case-studies/kr-pulio",
+     "date": "2025-07-02",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "장바구니 미구매·1년 미방문·구매 주기 이탈률 50% 이상 등 시그널을 세그먼트로 해석한다",
+     "quote": "‘장바구니에 상품을 담았지만 구매하지 않은고객’, ‘1년 동안 미방문’, ‘구매 주기 이탈률 50% 이상’ 등 고객의 시그널을 쉽게 해석하고",
+     "url": "https://www.datarize.ai/case-studies/kr-maatila",
+     "date": "2024-01-23",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "빅인",
+   "vendor": "빅인",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+    "세그먼트·발송 시점 최적화(AI)"
+   ],
+   "problem": "행동·회원 데이터를 조합한 정밀 타깃 캠페인을 운영 인력 부족 없이 실행",
+   "users": "자사몰·앱 운영 기업 마케터(전담 운영 지원 필요 기업)",
+   "features": [
+    "SDK 행동 데이터+회원 DB 통합(CDP)",
+    "타깃 매일 자동 갱신, AI 스마트 그룹 제안",
+    "인웹 팝업·추천, 인앱, 카카오·문자·푸시",
+    "전담 인력 운영·월간 리포트"
+   ],
+   "automation_scope": "조건 충족 시 타깃 선정·발송·전환 추적 자동",
+   "human_scope": "발동 조건 설정, 전담 인력이 설계·리포트 지원",
+   "korea": "국내 툴, 카카오·문자·푸시 메시지 캠페인 지원",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "발동 조건을 정하면 타깃 선정부터 발송·전환 추적까지 자동 실행된다",
+     "quote": "발동 조건을 정해두면 타겟 선정부터 발송, 전환 추적까지 캠페인이 스스로 움직입니다. 타겟 선정 장바구니에 담고 24시간 미구매 고객",
+     "url": "https://bigin.io",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "타깃이 매일 자동 갱신되고 AI 스마트 그룹이 가능성 높은 고객을 제안한다",
+     "quote": "타겟은 매일 자동 갱신 되고, AI 스마트 그룹 이 가능성 높은 고객을 먼저 제안합니다.",
+     "url": "https://bigin.io",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "전담 인력이 설계부터 월간 리포트까지 운영을 지원한다",
+     "quote": "전담인력이 설계부터 월간 리포트까지 운영을 지원합니다.",
+     "url": "https://bigin.io",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "크리마 리뷰",
+   "vendor": "크리마",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "리뷰 요청 자동화"
+   ],
+   "problem": "구매 고객의 리뷰 작성률이 낮고 리뷰 관리에 손이 많이 든다",
+   "users": "자사몰(카페24·고도몰 등) 운영 쇼핑몰",
+   "features": [
+    "배송 완료 후 리뷰 작성 알림톡 자동 발송",
+    "로그인 없이 리뷰 작성창 이동",
+    "카카오톡 크리마 챗봇 리뷰 수집",
+    "AI 리뷰 요약·추천순"
+   ],
+   "automation_scope": "배송 완료 후 리뷰 요청 발송, 개인화 예약어 삽입, AI 요약·노출",
+   "human_scope": "템플릿 선택 또는 직접 작성(카카오 검수 필요), 리워드 정책",
+   "korea": "국내 툴, 카카오 알림톡·카카오톡 챗봇 기반. 직접 작성한 알림톡 템플릿은 카카오 검수 통과 필요",
+   "pricing": "리뷰 최대 6개월 무료 프로모션 표기(정가 미확인)",
+   "evidence": [
+    {
+     "claim": "상품 구매 고객에게 배송 완료 후 리뷰 작성 안내 알림톡을 자동 발송한다",
+     "quote": "크리마 리뷰 알림톡은 상품을 구매한 고객에게 리뷰 작성 안내 메시지를 자동으로 발송해주는 기능 이에요. 배송 완료 후 고객의 카카오톡으로 메시지를 보내",
+     "url": "http://www.cre.ma/blog/alimtalk",
+     "date": "2026-08",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "직접 작성한 알림톡 템플릿은 카카오 검수를 통과해야 한다",
+     "quote": "단, 직접 작성한 알림톡 템플릿은 카카오 검수를 통과해야 발송할 수 있으니 참고해 주세요.",
+     "url": "http://www.cre.ma/blog/alimtalk",
+     "date": "2026-08",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "카카오톡 챗봇을 쓰는 고객사에서 리뷰 작성률이 2배 이상 늘었다고 밝혔다",
+     "quote": "실제로 챗봇을 활용중인 고객사에서 리뷰 작성률이 2배 이상 증가한 사례를 확인했다.",
+     "url": "https://www.aitimes.kr/news/articleView.html?idxno=33021",
+     "date": "2024-11-28",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "도도포인트",
+   "vendor": "플레이스앤(구 스포카)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "멤버십·포인트·쿠폰 자동 운영",
+    "소상공인 매장 단골 관리(매장 CRM)",
+    "리뷰 요청 자동화"
+   ],
+   "problem": "오프라인 매장의 포인트 적립·단골 분류·재방문 쿠폰 운영",
+   "users": "음식점·카페 등 오프라인 매장 사장님, 프랜차이즈 본사",
+   "features": [
+    "태블릿·POS 연동 휴대폰번호 포인트 적립",
+    "적립 알림톡",
+    "신규·단골·생일 고객 자동 분류",
+    "자동 메시지·문자 쿠폰",
+    "네이버 플레이스 멤버십 연동, 네이버 리뷰 요청 알림톡"
+   ],
+   "automation_scope": "적립 시 알림톡, 고객 분류, 조건별 쿠폰·메시지 발송, 리뷰 요청",
+   "human_scope": "적립·쿠폰 조건 설정, 공지/이벤트 문자 발송 대상 선택",
+   "korea": "국내 툴. 네이버 스마트플레이스 멤버십 연동으로 포인트·스탬프·쿠폰이 네이버 플레이스·지도에 표시. 적립 알림톡에 네이버 리뷰 작성 버튼",
+   "pricing": "네이버 멤버십 연동 무료, 도도포인트 이용료 별도(신규 첫 1개월 무료 지원)",
+   "evidence": [
+    {
+     "claim": "신규·단골·생일 고객을 자동 분류하고 자동 메시지로 문자 쿠폰을 보낸다",
+     "quote": "신규, 단골, 생일 고객이 자동으로 분류됩니다. 원하는 고객 유형을 만들 수도 있습니다. 맞춤 마케팅으로 매출을 올려보세요 자동 메시지 맞춤 메시지 도도 메시지가 알아서 완벽한 타이밍에 문자 쿠폰을 보냅니다.",
+     "url": "https://www.dodopoint.co.kr/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "포인트 적립 시 무료 알림톡이 가고 그 안의 버튼으로 네이버 리뷰를 요청한다",
+     "quote": "매장에 방문한 손님이 포인트를 적립하면 , 혜택 적립 알림톡이 무료로 발송 돼요 . 알림톡 속 [ 네이버 리뷰 작성하기 ] 버튼으로 , 다녀간 손님이 바로 방문 리뷰를 남길 수 있게 안내합니다 .",
+     "url": "https://m.smartplace.naver.com/notices/1167",
+     "date": "2026-11-18",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "네이버 플레이스 멤버십 연동은 무료이고 도도포인트 이용료는 별도다",
+     "quote": "※네이버 플레이스 멤버십 연동은 무료이며 , 도도포인트 서비스 이용료는 별도입니다 .",
+     "url": "https://m.smartplace.naver.com/notices/1167",
+     "date": "2026-11-18",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "캐시노트 단골 관리",
+   "vendor": "한국신용데이터",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "소상공인 매장 단골 관리(매장 CRM)"
+   ],
+   "problem": "초보 사장님이 단골을 알아보고 관리하기 어렵다",
+   "users": "캐시노트를 쓰는 소상공인 매장",
+   "features": [
+    "카드 결제 데이터로 단골 식별",
+    "POS·앱에서 결제 시 단골 여부 즉시 확인",
+    "안내 기준 설정·메모"
+   ],
+   "automation_scope": "결제 정보 통계 처리로 단골 자동 식별·표시",
+   "human_scope": "단골 기준 설정, 메모, 응대",
+   "korea": "국내 서비스(무료). 쿠폰·문자 자동 발송 기능은 원문으로 확인 못 함",
+   "pricing": "단골 관리 서비스 무료",
+   "evidence": [
+    {
+     "claim": "매장의 과거 카드 결제 데이터로 단골을 파악하고 POS·앱에서 결제 시 단골 여부를 즉시 보여주는 무료 서비스를 출시했다",
+     "quote": "단골손님 관리 서비스는 포스(POS) 기기만 아니라 스마트폰 앱에서도 지금 결제한 손님이 단골손님인지 여부를 즉시 확인할 수 있다. 단골손님 관리 서비스는 무료로 이용할 수 있다.",
+     "url": "https://biz.heraldcorp.com/article/3153031",
+     "date": "2023-06-22",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "토스플레이스 쿠폰 자동 발송",
+   "vendor": "토스플레이스",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "멤버십·포인트·쿠폰 자동 운영",
+    "소상공인 매장 단골 관리(매장 CRM)"
+   ],
+   "problem": "처음 온 손님·뜸한 손님을 일일이 챙겨 쿠폰을 보내기 어렵다",
+   "users": "토스플레이스 POS를 쓰는 오프라인 매장",
+   "features": [
+    "방문 횟수·간격 조건별 쿠폰 자동 발송(3종)",
+    "쿠폰으로 생긴 수익 확인"
+   ],
+   "automation_scope": "조건 충족 고객에게 쿠폰 자동 발송",
+   "human_scope": "쿠폰 조건·혜택 설정",
+   "korea": "국내 POS 내장 기능",
+   "pricing": "게시 시점 기준 추가 비용 없이 사용 가능",
+   "evidence": [
+    {
+     "claim": "조건을 한 번 설정하면 방문 흐름에 맞춰 쿠폰이 자동 발송되는 기능을 추가했다",
+     "quote": "조건을 한 번만 설정해 두면 고객의 방문 흐름에 맞춰 쿠폰이 자동으로 발송되는 ‘쿠폰 자동 발송’ 기능이 새롭게 추가됐어요.",
+     "url": "https://tossplace.com/story/automatic_coupon",
+     "date": "2026-03-24",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "쿠폰 자동 발송은 방문 횟수와 방문 간격에 따라 쿠폰을 보낸다",
+     "quote": "쿠폰 자동 발송은 손님의 방문 횟수와 방문",
+     "url": "https://tossplace.com/story/automatic_coupon",
+     "date": "2026-03-24",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "스티비",
+   "vendor": "스티비",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)"
+   ],
+   "problem": "뉴스레터·이메일 구독자 환영·후속 메일을 수작업으로 보내야 함",
+   "users": "뉴스레터 발행자, 중소기업·스타트업 마케터",
+   "features": [
+    "트리거 기반 자동 이메일(구독자 추가 등)",
+    "필터·발송 시간대 설정",
+    "AI 제목 추천·텍스트 다듬기"
+   ],
+   "automation_scope": "트리거 발생 시 자동 이메일 발송, AI 제목 후보 생성",
+   "human_scope": "트리거·필터 선택, 콘텐츠 작성",
+   "korea": "국내 툴, 한국어. 이메일 전용(카카오 채널은 확인 못 함)",
+   "pricing": "자동 이메일은 스탠다드·프로·엔터프라이즈 요금제에서 제공",
+   "evidence": [
+    {
+     "claim": "'구독자 추가' 트리거로 새 구독자에게 웰컴 이메일을 자동 발송한다",
+     "quote": "[발송 조건] 단계에서 '구독자 추가' 트리거를 선택합니다.",
+     "url": "https://help.stibee.com/tip/use-auto-email",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "2025년 10월 이메일 내용을 바탕으로 AI가 제목을 추천하는 기능을 추가했다",
+     "quote": "제목 입력란 옆의 [AI에게 추천받기]를 누르면, 이메일 내용을 바탕으로 다양한 스타일의 제",
+     "url": "https://blog.stibee.com/2025-oct-update/",
+     "date": "2025-10-22",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "카카오 비즈메시지(알림톡·브랜드 메시지)",
+   "vendor": "카카오",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "채널 통합 발송(알림톡·브랜드 메시지·푸시·이메일·문자)"
+   ],
+   "problem": "국내 고객에게 도달률 높은 카카오톡으로 정보성·광고성 메시지 발송",
+   "users": "카카오톡 채널을 운영하는 모든 규모의 기업(대부분 딜러사·CRM 툴 경유)",
+   "features": [
+    "알림톡(정보성, 템플릿 심사)",
+    "브랜드 메시지(사전 수신 동의 기반 광고형, 친구톡 후속)",
+    "광고성 체크 시 (광고)·수신거부 안내 자동 표시"
+   ],
+   "automation_scope": "광고성 메시지로 체크 시 프로필명 앞 (광고) 표시와 하단 수신거부 안내 자동 삽입",
+   "human_scope": "정보성/광고성 판단, 템플릿 작성·심사 대응, 수신 동의 수집",
+   "korea": "친구톡은 2025-12-31 종료되고 브랜드 메시지(2025-05 출시, 사전 수신 동의 기반)로 전환. 카카오톡 채널 관리자센터·카카오모먼트에서 광고성으로 체크하면 (광고) 표시·수신거부 안내 자동 표시",
+   "pricing": "딜러사별 건당 과금(예: 솔라피 알림톡 13원)",
+   "evidence": [
+    {
+     "claim": "광고성 메시지로 체크하면 프로필 이름 앞 (광고) 표시와 하단 수신거부·동의 철회 안내가 표시된다",
+     "quote": "※ 카카오톡 채널 관리자센터와 카카오모먼트에서 '광고성 메시지'로 체크 후 발송하 프로필 이름 앞에 (광고)표시, 메시지 하단에 수신거부 및 수신 동의 철회 방법 안내가 표시됩니다.",
+     "url": "https://kakaobusiness.gitbook.io/main/ad/infotalk/operations",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "브랜드 메시지는 사전 수신 동의 기반 광고형 메시지로 친구톡을 업그레이드한 상품이다",
+     "quote": "브랜드 메시지는 사전 수신 동의를 기반으로 한 광고형 메시지로, 기존 친구톡의 투명성과 안정성을 강화하고 광고주의 메시지 활용 효율성을 높여 업그레이드한 상품이다.",
+     "url": "https://m.ddaily.co.kr/page/view/2025051514142346562",
+     "date": "2025-05-15",
+     "reliability": "third_party"
+    },
+    {
+     "claim": "친구톡 서비스가 2025년 12월 31일 종료된다",
+     "quote": "카카오의 친구톡 서비스 가 2025년 12월 31일(수) 을 마지막으로 종료됩니다.",
+     "url": "https://docs.nhncloud.com/ko/Notification/KakaoTalk%20Bizmessage/ko/friendtalk-compatible-api-guide",
+     "date": "2025",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Braze",
+   "vendor": "Braze",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+    "세그먼트·발송 시점 최적화(AI)",
+    "채널 통합 발송(알림톡·브랜드 메시지·푸시·이메일·문자)"
+   ],
+   "problem": "대규모 앱·커머스의 실시간 행동 기반 크로스채널 메시지",
+   "users": "대형 앱·커머스·여행 기업 CRM팀(국내 무신사·발란·지그재그 등)",
+   "features": [
+    "행동 기반 캠페인·캔버스",
+    "Intelligent Timing(고객별 최적 발송 시각)",
+    "Quiet Hours",
+    "Catalog·AI 상품 추천"
+   ],
+   "automation_scope": "고객별 과거 상호작용으로 최적 발송 시각 계산, 금지 시간대 지연 발송",
+   "human_scope": "여정 설계, quiet hours·fallback 시간 설정",
+   "korea": "2024년 한국 법인 설립. 카카오톡은 간접 연동(직접 연동 준비 중이라고 보도). 국내 리셀러(AB180·맥소노미). 야간 광고 제한은 Quiet Hours로 설정 가능하나 한국 규정 전용 기능은 확인 못 함",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "Intelligent Timing은 사용자의 과거 상호작용 통계로 최적 발송 시각을 계산한다",
+     "quote": "Braze calculates the optimal send time based on a statistical analysis of your users’ past interactions with your app",
+     "url": "https://www.braze.com/docs/user_guide/brazeai/intelligence/intelligent_timing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Quiet Hours를 켜면 해당 시간대에는 발송하지 않고 다음 가능한 시간으로 지연한다",
+     "quote": "When quiet hours are turned on, Braze won’t send messages during the quiet period",
+     "url": "https://www.braze.com/docs/user_guide/brazeai/intelligence/intelligent_timing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "국내 기업들은 브레이즈와 카카오톡을 간접 연동해 쓰고 있으며 직접 연동을 준비 중이라고 보도됐다",
+     "quote": "현재 기업들은 브레이즈와 카카오톡을 간접적으로 연동해 고객들에게 메시지를 전송한다. 브레이즈는 자사 솔루션과 카카오톡을 직접적으로 연동하는 방안을 준비하고 있다.",
+     "url": "https://www.bloter.net/news/articleView.html?idxno=621531",
+     "date": "2024-08-19",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "Klaviyo",
+   "vendor": "Klaviyo",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+    "세그먼트·발송 시점 최적화(AI)"
+   ],
+   "problem": "이커머스 이메일·SMS 플로(장바구니·브라우즈 이탈 등) 자동화",
+   "users": "Shopify 등 D2C 이커머스 브랜드(소규모~중견)",
+   "features": [
+    "이메일·SMS 플로(장바구니·브라우즈 이탈)",
+    "Composer(AI 마케팅 에이전트)",
+    "세그먼트"
+   ],
+   "automation_scope": "플로 트리거 발송, AI 에이전트의 발송 초안·예약(승인 기반)",
+   "human_scope": "플로 설계, AI 초안 승인",
+   "korea": "카카오·네이버 연동은 확인 못 함(국내 사용 근거 미확인)",
+   "pricing": "무료: 활성 프로필 250명·월 이메일 500통, 이후 유료",
+   "evidence": [
+    {
+     "claim": "무료 플랜은 활성 프로필 250명·월 이메일 500통이다",
+     "quote": "Klaviyo free plan Up to 250 active profiles and 500 emails per month",
+     "url": "https://www.klaviyo.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Klaviyo는 Composer를 AI 마케팅 에이전트로 소개한다",
+     "quote": "The Autonomous B2C CRM Composer (AI Marketing Agent)",
+     "url": "https://www.klaviyo.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Customer.io",
+   "vendor": "Customer.io",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)"
+   ],
+   "problem": "구독형·SaaS 서비스의 이벤트 기반 라이프사이클 메시지",
+   "users": "구독·SaaS·핀테크 기업 그로스팀",
+   "features": [
+    "비주얼 워크플로 빌더",
+    "이벤트 트리거",
+    "AI Agent"
+   ],
+   "automation_scope": "이벤트 기반 메시지 실행, 이탈 예측 연계",
+   "human_scope": "워크플로·데이터 설계",
+   "korea": "카카오·네이버 연동은 확인 못 함",
+   "pricing": "Essentials 월 $100부터, Premium 월 $1,000부터(연간)",
+   "evidence": [
+    {
+     "claim": "Essentials 요금제는 월 100달러부터 시작한다",
+     "quote": "Essentials starts at $ 100 per month / billed monthly for profiles",
+     "url": "https://customer.io/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Premium은 연간 결제 기준 월 1,000달러부터다",
+     "quote": "Premium starts at $ 1,000 per month / billed yearly",
+     "url": "https://customer.io/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Iterable",
+   "vendor": "Iterable",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "CRM·멤버십·리텐션",
+   "tasks": [
+    "세그먼트·발송 시점 최적화(AI)",
+    "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)"
+   ],
+   "problem": "고객별 발송 시점을 AI로 맞춰 반응률 개선",
+   "users": "중견~대기업 B2C 마케팅팀",
+   "features": [
+    "Send Time Decisioning(구 Send Time Optimization)",
+    "Nova Intelligence AI",
+    "여정(Studio)"
+   ],
+   "automation_scope": "고객별 발송 시각 결정",
+   "human_scope": "실험 설계, 여정 구성",
+   "korea": "카카오·네이버 연동은 확인 못 함",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "Send Time Optimization은 Send Time Decisioning으로 이름이 바뀌었고 AI 기능은 Nova Intelligence에 포함됐다",
+     "quote": "Send Time Optimization is now called Send Time Decisioning, and the AI capabilities discussed are now part of Nova Intelligence.",
+     "url": "https://iterable.com/customers/aspiration",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "company": "이마트24",
+   "tool": "핵클",
+   "area": "CRM·멤버십·리텐션",
+   "task": "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+   "what": "해외 CRM 솔루션에서 핵클로 이관해 앱·매장 연결(O2O) 다채널 CRM을 통합 관리하고 A/B 테스트로 최적화, 첫 결제·재결제·이탈·재방문 여정 자동화를 추진",
+   "automation_scope": "다채널 캠페인 발송, A/B 테스트",
+   "human_scope": "캠페인 목적별 타깃 정의·채널 조합",
+   "result": "2026년 1월 기준 앱 MAU 전년 동기 대비 30% 성장",
+   "evidence": [
+    {
+     "claim": "2026년 1월 기준 앱 MAU가 전년 동기 대비 30% 성장했다",
+     "quote": "이마트24는 2026년 1월 기준, 전년 동기 대비 MAU 30% 성장이라는 놀라운 성과를 기록했어요.",
+     "url": "https://hackle.io/ko/post/emart24",
+     "date": "2026",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "기존 해외 솔루션은 채널이 제한적이고 이슈 원인 파악이 어려웠다고 밝혔다",
+     "quote": "\"기존 해외 솔루션은 채널이 제한적이었고, 기술적인 이슈나 고객 클레임이 생겼을 때 즉각적인 원인 파악이 어려웠어요.",
+     "url": "https://hackle.io/ko/post/emart24",
+     "date": "2026",
+     "reliability": "interview"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "바이트랩(릴리이브·바르너)",
+   "tool": "핵클",
+   "area": "CRM·멤버십·리텐션",
+   "task": "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+   "what": "재구매 주기·이탈 고객을 정의하고 쿠폰 사용 데이터를 분석해 장바구니 이탈 쿠폰 리마인드 등 행동 기반 자동 여정을 브랜드당 70~80개 이상 운영",
+   "automation_scope": "행동 트리거, 세그먼트 분기, 쿠폰 조건 테스트",
+   "human_scope": "여정 설계·결과 확인·수정 반복",
+   "result": "장바구니 이탈 메시지 전환율 약 23%, 주 목표 매출 600% 달성",
+   "evidence": [
+    {
+     "claim": "장바구니 이탈 고객에게 쿠폰 리마인드 메시지를 보내 전환율 약 23%를 냈다",
+     "quote": "타겟: 장바구니에 상품을 담은 뒤 이탈한 고객 포인트: 쿠폰 혜택을 리마인드해 가격 장벽을 낮추고 구매 결정을 돕는 메시지 구성 성과: 전환율 약 23%",
+     "url": "https://hackle.io/en/post/bitelab",
+     "date": "2026",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "행동 기반 자동화와 실험 중심 운영으로 주 목표 매출 600%를 달성했다",
+     "quote": "전체 발송이 아닌 행동 기반 자동화와 실험 중심 CRM 운영 체계 정착하여 주 목표 매출 600% 달성",
+     "url": "https://hackle.io/en/post/bitelab",
+     "date": "2026",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "브랜드당 70~80개 이상의 자동화 여정을 운영한다",
+     "quote": "현재는 브랜드당 70~80개 이상의 자동화 여정을 운영하며",
+     "url": "https://hackle.io/en/post/bitelab",
+     "date": "2026",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "풀리오",
+   "tool": "데이터라이즈",
+   "area": "CRM·멤버십·리텐션",
+   "task": "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+   "what": "가입 당일 알림톡 쿠폰 안내, 5일 후 쿠폰 만료 알림, 10일 후 리뷰를 활용한 친구톡을 보내는 가입 환영 시나리오 설계",
+   "automation_scope": "가입 후 경과일 기반 자동 발송",
+   "human_scope": "시나리오·쿠폰 설계",
+   "result": "신규 회원 다음날 구매율 2.66% → 약 3주 뒤 2.98%",
+   "evidence": [
+    {
+     "claim": "가입 당일·5일 후·10일 후 단계별 메시지로 신규 회원 다음날 구매율이 2.66%에서 2.98%로 올랐다",
+     "quote": "가입 당일에는 알림톡으로 쿠폰을 안내하고, 5일 후에는 쿠폰 만료 알림, 10일 후에는 리뷰를 활용한 친구톡 메시지를 발송해 구매 고민을 줄여주는 방식으로 캠페인을 설계했습니다. 그 결과, 신규 회원의 다음날 구매율이 기존 평균 2.66%에서 약 3주 뒤 2.98%까지 상승하는 긍정적인 효과 를 얻었습니다.",
+     "url": "https://www.datarize.ai/case-studies/kr-pulio",
+     "date": "2025-07-02",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "마틸라",
+   "tool": "데이터라이즈",
+   "area": "CRM·멤버십·리텐션",
+   "task": "세그먼트·발송 시점 최적화(AI)",
+   "what": "장바구니 미구매·1년 미방문·구매 주기 이탈 고객 등 시그널별 세그먼트에 컨설팅을 받아 메시지·쿠폰을 차등 제공",
+   "automation_scope": "시그널 세그먼트 산출, 메시지 발송",
+   "human_scope": "메시지·쿠폰 결정(컨설팅 지원)",
+   "result": "",
+   "evidence": [
+    {
+     "claim": "고객 시그널별로 다양한 메시지·쿠폰을 제공해 자사 매출이 높아졌다고 밝혔다",
+     "quote": "고객별로 다양한 메시지, 쿠폰 등을 제공하여 자사 매출이 높아졌습니다.",
+     "url": "https://www.datarize.ai/case-studies/kr-maatila",
+     "date": "2024-01-23",
+     "reliability": "interview"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "겟차(Getcha)",
+   "tool": "노티플라이",
+   "area": "CRM·멤버십·리텐션",
+   "task": "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+   "what": "상담이 중단된 고객에게 유저 여정으로 후속 메시지 자동 발송",
+   "automation_scope": "상담 중단 이벤트 기반 여정 발송",
+   "human_scope": "여정 설계",
+   "result": "상담 전환율 3배, 기존 해외 솔루션 대비 연간 비용 85% 이상 절감",
+   "evidence": [
+    {
+     "claim": "상담 중단 고객 대상 유저 여정 메시지로 상담 전환율이 3배가 되고 비용이 85% 이상 줄었다",
+     "quote": "상담이 중단된 고객에게 유저 여정으로 메시지를 보내면서 상담 전환율이 3배 높아졌습니다. 기존 해외 솔루션과 비교하면 연간 비용도 85% 이상 줄었습니다.",
+     "url": "https://notifly.tech/",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "핫핑(크리마 리뷰 페이지 고객 후기)",
+   "tool": "크리마 리뷰",
+   "area": "CRM·멤버십·리텐션",
+   "task": "리뷰 요청 자동화",
+   "what": "리뷰 작성 유도 팝업과 리뷰 요청 알림톡 자동 발송, 체형별 리뷰 필터링 운영",
+   "automation_scope": "리뷰 요청 알림톡 자동 발송",
+   "human_scope": "리워드·노출 정책",
+   "result": "연간 리뷰 수 최대 10배",
+   "evidence": [
+    {
+     "claim": "리뷰 작성 유도 팝업과 알림톡으로 연간 리뷰 수가 최대 10배 늘었다는 후기가 게재돼 있다(후기 뒤에 핫핑 표기)",
+     "quote": "리뷰 작성 유도 팝업과 알림톡 덕분에 리뷰가 꾸준히 쌓이면서 연간 리뷰 수가 최대 10배까지 늘었어요.",
+     "url": "https://www.cre.ma/review",
+     "date": "2026-08",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "도도포인트 연동 매장 500여 곳",
+   "tool": "도도포인트",
+   "area": "CRM·멤버십·리텐션",
+   "task": "소상공인 매장 단골 관리(매장 CRM)",
+   "what": "도도포인트를 네이버 플레이스 멤버십과 연동해 포인트·스탬프·쿠폰을 네이버 지도에 노출하고 적립 알림톡으로 리뷰 요청, 자동 메시지로 단골 관리",
+   "automation_scope": "적립 알림톡·리뷰 요청·조건별 쿠폰 메시지",
+   "human_scope": "쿠폰 설정",
+   "result": "연동 매장 99%에서 방문 증가, 방문 횟수 평균 22% 증가(쿠폰 설정 매장 35%)",
+   "evidence": [
+    {
+     "claim": "도도포인트 연동 매장 500여 곳 분석 결과 99%에서 방문이 늘고 방문 횟수가 평균 22% 늘었다",
+     "quote": "‘ 도도포인트’ 연동 매장 500 여 곳을 분석한 결과 , 연동 매장의 99% 에서 손님 방문이 늘었고 방문 횟수는 평균 22% 늘었습니다 .",
+     "url": "https://m.smartplace.naver.com/notices/1167",
+     "date": "2026-11-18",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "쿠폰까지 설정한 매장의 방문 증가 폭은 35%였다",
+     "quote": "방문 증가 폭은 35% 로 , 연동만 한 매장 (21%) 보다 더 컸습니다 .",
+     "url": "https://m.smartplace.naver.com/notices/1167",
+     "date": "2026-11-18",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "놀유니버스 인터파크",
+   "tool": "Braze",
+   "area": "CRM·멤버십·리텐션",
+   "task": "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+   "what": "수동으로 설계하던 캠페인 대부분을 Braze로 자동화, 구매 여정 단계별 인게이지먼트 캠페인에 적용하고 투어-티켓 크로스셀링",
+   "automation_scope": "구매 여정 단계별 자동 캠페인",
+   "human_scope": "여정 설계, 지표 확인",
+   "result": "자동화 캠페인 비율이 전체의 50% 초과",
+   "evidence": [
+    {
+     "claim": "수동 캠페인 대부분을 자동화해 자동화 캠페인 비율이 50%를 넘었다",
+     "quote": "기존에 수동으로 설계하고 진행했던 캠페인의 대부분을 Braze를 통해 자동화했고, 현재는 자동화된 캠페인의 비율이 총 캠페인의 50%를 넘어섰습니다.",
+     "url": "https://maxonomy.net/customer/1006",
+     "date": "2025-02-06",
+     "reliability": "interview"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "Montirex",
+   "tool": "Klaviyo",
+   "area": "CRM·멤버십·리텐션",
+   "task": "행동 기반 메시지 시나리오 자동화(가입 환영·장바구니 이탈·재구매·휴면)",
+   "what": "이메일·SMS 플로를 운영하고 장바구니·브라우즈 이탈 플로에 SMS를 넣어 긴급성 부여",
+   "automation_scope": "이탈 플로 자동 발송",
+   "human_scope": "플로·메시지 설계, 세그먼트 결정",
+   "result": "1년간 매출 300% 증가, SMS 평균 클릭률 9.3%, 브라우즈 이탈 SMS 클릭률 32%",
+   "evidence": [
+    {
+     "claim": "1년간 매출 300% 증가, SMS 평균 클릭률 9.3%, 브라우즈 이탈 SMS 클릭률 32%를 냈다",
+     "quote": "300% increase in revenue in one year 9.3% average click rate for SMS 32% average click rate for browse abandonment SMS",
+     "url": "https://www.klaviyo.com/customers/case-studies/montirex-combine-power-of-email-and-sms-marketing",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "장바구니 이탈 플로에서 SMS가 효과적이었다고 밝혔다",
+     "quote": "The use of SMS in our flows has been very effective, particularly in abandoned cart flows as this creates a sense of urgency for the customer.",
+     "url": "https://www.klaviyo.com/customers/case-studies/montirex-combine-power-of-email-and-sms-marketing",
+     "date": "2026-11",
+     "reliability": "interview"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Les Mills",
+   "tool": "Customer.io",
+   "area": "CRM·멤버십·리텐션",
+   "task": "세그먼트·발송 시점 최적화(AI)",
+   "what": "일괄 이메일에서 이벤트 트리거·전환 추적·머신러닝 이탈 예측 기반 휴면 방지 시스템으로 전환",
+   "automation_scope": "이탈 예측과 위험 고객 대상 메시지",
+   "human_scope": "모델·여정 설계",
+   "result": "이탈 예측 고객의 53% 유지, 위험 고객의 80%를 연간 구독으로 전환",
+   "evidence": [
+    {
+     "claim": "이탈 모델 도입 후 이탈 예측 구독자의 53%를 유지하고 80%를 연간 구독으로 전환했다",
+     "quote": "Les Mills retained 53% of subscribers who were predicted to churn. They converted 80% of at-risk movers to annual subscriptions",
+     "url": "https://customer.io/learn/lifecycle-marketing/les-mills-customer-engagement-strategy",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "GreenFi(구 Aspiration)",
+   "tool": "Iterable",
+   "area": "CRM·멤버십·리텐션",
+   "task": "세그먼트·발송 시점 최적화(AI)",
+   "what": "이메일·푸시와 저참여 고객 재참여 여정에 AI 발송 시점 최적화(Send Time Decisioning) 실험 적용",
+   "automation_scope": "고객별 발송 시각 결정",
+   "human_scope": "실험 설계",
+   "result": "이메일·푸시 오픈·클릭·전환율 2배, 재참여 여정 오픈율 27% 증가",
+   "evidence": [
+    {
+     "claim": "발송 시점 최적화로 이메일·푸시 오픈·클릭·전환율이 2배, 재참여 여정 오픈율이 27% 늘었다",
+     "quote": "2x open, click, and conversion rates for email and push campaigns 27% increase in open rate for re-engagement journey",
+     "url": "https://iterable.com/customers/aspiration",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  }
+ ],
+ "stats": [
+  {
+   "topic": "국내 CRM 담당자의 AI·통합 플랫폼 활용",
+   "finding": "국내 마케팅·CRM 책임자 조사에서 AI 기반 도구 사용 기업은 12%, 목표 초과 달성 기업 중 AI 자동화 활용은 23%. 성과 상위 기업의 65%가 통합 솔루션 활용",
+   "figures": "AI 도구 사용 12%; 목표 초과 달성 기업 중 AI 자동화 23%; 상위 기업 통합 솔루션 65%; 개인정보 우려 최대 장애물 73%",
+   "sample": "AB180·Braze '한국 고객 인게이지먼트 리뷰 2025', 국내 마케팅 책임자 200여 명",
+   "quote": "AI 기반 도구를 실제로 사용하는 기업은 전체의 12%에 불과했고, 매출 목표를 초과 달성한 기업 중에서도 23%만이 AI 자동화를 활용하는 것으로 조사됐다.",
+   "url": "https://www.tech42.co.kr/%EC%97%90%EC%9D%B4%EB%B9%84%EC%9D%BC%ED%8C%94%EA%B3%B5-%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%A6%88-%E9%9F%93-%EA%B3%A0%EA%B0%9D-%EC%9D%B8%EA%B2%8C%EC%9D%B4%EC%A7%80%EB%A8%BC%ED%8A%B8-%EB%A6%AC%EB%B7%B0/",
+   "date": "2025-08-13",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "국내 이메일 마케터 AI 사용",
+   "finding": "스티비 조사에서 응답자의 68.5%가 이메일 마케팅에 AI를 사용, 63.5%가 자동화 시나리오를 AI에 추천받고 싶다고 응답",
+   "figures": "AI 사용 68.5%; ChatGPT 92.1%; 자동화 시나리오 추천 희망 63.5%",
+   "sample": "스티비 국내 이메일 마케팅 담당자 설문(응답자 수 페이지 미기재)",
+   "quote": "응답자의 68.5%가 이메일 마케팅에 AI를 사용하고 있습니다.",
+   "url": "https://campaign.stibee.com/ai-2025",
+   "date": "2025-08",
+   "reliability": "survey",
+   "region": "국내"
+  },
+  {
+   "topic": "자동화 메시지 vs 일괄 발송 성과(미국 이커머스)",
+   "finding": "행동 기반 자동 이메일이 발송량의 1.7%로 이메일 매출의 25%를 만들었다",
+   "figures": "매출 비중 25%; 발송 비중 1.7%; 발송당 매출 $2.01 vs $0.10; 클릭→전환 27.05% vs 7.69%",
+   "sample": "Omnisend 미국 이커머스 브랜드 발송 데이터 분석(2025)",
+   "quote": "behavior-based automated emails generated 25% of total email revenue from just 1.7% of sends",
+   "url": "https://www.prnewswire.com/news-releases/omnisend-ecommerce-study-us-orders-jumped-147-in-2025-top-5-of-brands-drove-majority-of-growth-302660475.html",
+   "date": "2026-01-14",
+   "reliability": "company_claim",
+   "region": "해외"
+  },
+  {
+   "topic": "카카오 비즈니스 메시지 시장",
+   "finding": "카카오 2025년 4분기 비즈니스 메시지 매출이 전년 동기 대비 19% 증가",
+   "figures": "비즈니스 메시지 매출 +19%(YoY, 4Q25); 톡비즈 광고 3,734억 원(+16%)",
+   "sample": "카카오 2025년 실적 보도자료",
+   "quote": "비즈니스 메시지 매출이 전년 동기 대비 19% 늘며 견조한 성장세를 이어갔다.",
+   "url": "https://www.kakaocorp.com/page/detail/11931",
+   "date": "2026-02-12",
+   "reliability": "company_claim",
+   "region": "국내"
+  }
+ ],
+ "gaps": [
+  "Square Loyalty·Toast Marketing·OneSignal·Mailchimp·HubSpot·Salesforce Marketing Cloud는 원문 근거가 부족하거나 분량 제한으로 tools에서 뺌(OneSignal·K Car Braze 사례 페이지는 casestudies.com 차단으로 본문 미수집)",
+  "캐시노트 단골 관리의 쿠폰·문자 자동 발송 기능과 요금은 원문(2023 기사)으로 확인 못 함",
+  "네이버 스마트플레이스 자체 쿠폰 기능 상세는 미수집(도도포인트 연동 공지만 확인)",
+  "Klaviyo·Customer.io·Iterable 사례 페이지는 게시일을 확인 못 해 date에 조회 시점(2026-11)을 적음",
+  "Braze·Klaviyo·Customer.io·Iterable의 한국 야간 광고(21~08시)·(광고) 표기 전용 처리 기능은 확인 못 함(Braze는 일반 Quiet Hours만 확인)",
+  "핵클·데이터라이즈·빅인·Braze 요금은 공개 페이지에서 확인 못 함",
+  "크리마 리뷰 페이지 10배 후기는 후기 뒤에 '핫핑'이 표기된 배치로 판단한 것이며 페이지 구조상 귀속을 완전히 확정하진 못함",
+  "스티비 AI 설문의 표본 수는 페이지에서 확인 못 함",
+  "빅인 블로그의 '재구매 시점 문자 전환율 1.36%' 사례는 기업명이 없어 use_cases에서 제외"
+ ]
+}

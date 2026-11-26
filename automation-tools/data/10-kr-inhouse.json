@@ -1,0 +1,689 @@
+{
+  "group": "콘텐츠·SNS·브랜드 캠페인",
+  "tasks": [],
+  "tools": [
+    {
+      "name": "SKT AI 카피라이터",
+      "vendor": "SK텔레콤",
+      "origin": "국내",
+      "type": "API",
+      "area": "콘텐츠·SNS·브랜드 캠페인",
+      "tasks": [
+        "광고·마케팅 문구 생성"
+      ],
+      "problem": "마케팅 문구·광고 카피를 빠르게 여러 안으로 만들기 어려운 문제",
+      "users": "광고·마케팅 문구를 대량으로 만드는 기업 마케터(API 연동 기업)",
+      "features": [
+        "LLM 기반 카피 생성",
+        "톤·스타일 지정",
+        "API 제공",
+        "ChatGPT·Gemini·Claude 등 모델 선택",
+        "SKT 캠페인 결과 데이터 학습"
+      ],
+      "automation_scope": "원하는 톤·스타일에 맞춰 여러 카피 안을 생성",
+      "human_scope": "톤·스타일 지정, 생성안 선택",
+      "korea": "SK텔레콤이 만든 국내 서비스(한국어 카피)",
+      "pricing": "",
+      "evidence": [
+        {
+          "claim": "SKT는 광고 문구를 자동 생성하는 AI 카피라이터를 내놓았고 배너·영상을 자동 제작하는 AI 디자이너 출시를 앞두고 있다.",
+          "quote": "SK텔레콤은 광고문구를 자동으로 생성하는 ‘AI 카피라이터’에 이어 광고 배너와 영상을 자동으로 제작하는 ‘AI 디자이너’ 출시를 앞두고 있다.",
+          "url": "https://news.sktelecom.com/206622",
+          "date": "2024-08-27",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "AI 카피라이터는 API 형태로 원하는 톤·스타일의 카피를 제안한다.",
+          "quote": "사용자가 원하는 톤과 스타일에 맞게 API 형태*로 다양한 카피를 제안합니다.",
+          "url": "https://news.sktelecom.com/206622",
+          "date": "2024-08-27",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "SKT의 다년간 마케팅 캠페인 결과 데이터를 학습해 문구를 만들고 여러 생성형 AI 모델을 고를 수 있다.",
+          "quote": "AI 카피라이터는 기존 SKT가 운영한 다년간의 마케팅 캠페인 결과 데이터를 학습하여 긍정 반응을 유도하는 문구와 어휘를 생성합니다.",
+          "url": "https://news.sktelecom.com/206622",
+          "date": "2024-08-27",
+          "reliability": "company_claim"
+        }
+      ]
+    },
+    {
+      "name": "베리에이드(VariAid)",
+      "vendor": "드랩(Draph)",
+      "origin": "국내",
+      "type": "SaaS",
+      "area": "광고·프로모션",
+      "tasks": [
+        "배너 광고 규격 변형",
+        "광고 소재 제작"
+      ],
+      "problem": "하나의 배너를 매체·규격별로 수십 가지로 다시 만드는 인력·비용 부담",
+      "users": "광고대행사·브랜드 디자인/광고 운영 담당",
+      "features": [
+        "매체별 가이드라인 맞춤 변형",
+        "구글·네이버·메타·카카오 약 80개 규격 자동 생성",
+        "수동 편집",
+        "자체 시각언어모델"
+      ],
+      "automation_scope": "원본 배너를 매체·규격별 결과물로 자동 변형·생성",
+      "human_scope": "원본 디자인 제공, 수동 편집·최종 검수",
+      "korea": "네이버·카카오 광고 지면 규격 지원(국내 개발)",
+      "pricing": "",
+      "evidence": [
+        {
+          "claim": "베리에이드는 구글·네이버·메타·카카오 등 약 80개 광고 규격 결과물을 자동 생성하고 수동 편집도 지원한다.",
+          "quote": "구글, 네이버, 메타, 카카오 등 다양한 매체의 약 80개 광고 규격에 최적화된 결과물을 자동으로 생성할 수 있다. 수동 편집 기능도 지원하는데",
+          "url": "https://mk.co.kr/news/business/12011760",
+          "date": "2026-04-08",
+          "reliability": "third_party"
+        },
+        {
+          "claim": "드랩 사이트는 VariAid를 한 디자인을 모든 광고 규격으로 자동 리사이즈하는 서비스로 소개한다.",
+          "quote": "VariAid Automatically resize one design for every ad format",
+          "url": "https://draph.art/",
+          "date": "2026-11",
+          "reliability": "vendor_doc"
+        }
+      ]
+    },
+    {
+      "name": "롯데온 스마트매출업",
+      "vendor": "롯데쇼핑(롯데온)",
+      "origin": "국내",
+      "type": "플랫폼 내장 기능",
+      "area": "광고·프로모션",
+      "tasks": [
+        "개인화 상품 광고",
+        "입찰 자동화"
+      ],
+      "problem": "입점 셀러가 광고 기간·지면·키워드를 직접 복잡하게 설정해야 하는 문제",
+      "users": "롯데온 입점 파트너사(셀러)",
+      "features": [
+        "검색·구매 이력 머신러닝 분석",
+        "고객별 맞춤 상품 노출",
+        "수동성과형(최대 입찰가)",
+        "스마트최적화(ROAS 목표)"
+      ],
+      "automation_scope": "간단한 정보 입력 후 AI가 고객별 맞춤 광고 운영",
+      "human_scope": "광고 목적·예산·전략(수동성과형/스마트최적화) 선택",
+      "korea": "롯데온 입점 셀러 전용 국내 광고 상품",
+      "pricing": "광고비 '셀러머니' 충전 방식",
+      "evidence": [
+        {
+          "claim": "스마트매출업은 간단한 정보만 넣으면 AI가 고객별 맞춤 광고를 운영한다.",
+          "quote": "'스마트매출업'에서는 간단한 정보만 입력하면 AI가 데이터를 기반으로 고객 개인별 맞춤형 광고를 운영할 수 있기 때문에",
+          "url": "https://youthdaily.co.kr/news/article.html?no=158471",
+          "date": "2024-07-05",
+          "reliability": "third_party"
+        },
+        {
+          "claim": "3천여 파트너사 대상 약 2개월 시범 운영에서 평균 ROAS 2000% 이상이 나왔다.",
+          "quote": "약 2개월 간 3천여 개 이상의 파트너사를 대상으로 시범 운영한 결과, 해당 기간 광고비 대비 매출(ROAS)이 평균 2000% 이상의 높은 성과를 낸 것으로 나타났다.",
+          "url": "https://youthdaily.co.kr/news/article.html?no=158471",
+          "date": "2024-07-05",
+          "reliability": "company_claim"
+        }
+      ]
+    },
+    {
+      "name": "SSG.COM AI 퍼포먼스광고",
+      "vendor": "SSG닷컴",
+      "origin": "국내",
+      "type": "플랫폼 내장 기능",
+      "area": "광고·프로모션",
+      "tasks": [
+        "개인화 상품 광고",
+        "입찰 자동화",
+        "성과 리포트"
+      ],
+      "problem": "입점 셀러가 적합한 고객·지면·시점을 골라 광고하기 어려운 문제",
+      "users": "SSG.COM 입점 셀러·브랜드",
+      "features": [
+        "구매 이력·쇼핑 습관 기반 상품 자동 선별",
+        "최적 지면 노출",
+        "입찰가 또는 광고 수익 목표율 설정",
+        "실시간 캠페인 리포트",
+        "공식 대행사 무료 운영 지원"
+      ],
+      "automation_scope": "머신러닝이 상품 선별·노출 지면·타이밍 최적화",
+      "human_scope": "노출 상품 선택, 기간·예산, 입찰가 또는 목표 수익률 설정",
+      "korea": "SSG.COM 셀러용 국내 광고 상품",
+      "pricing": "클릭당 과금(CPC), 캐시 충전 또는 판매대금 공제",
+      "evidence": [
+        {
+          "claim": "AI 퍼포먼스광고는 고객별 개인화 추천으로 상품을 자동 선별해 최적 지면에 노출한다.",
+          "quote": "고객별 개인화 추천을 강화하여 적합한 상품을 자동으로 선별하고 최적의 지면에 노출합니다.",
+          "url": "https://adhome.ssgadm.com/ad/info/ai-performance.ssg",
+          "date": "2026-11",
+          "reliability": "vendor_doc"
+        },
+        {
+          "claim": "셀러는 노출 상품을 직접 고르고 입찰가나 광고 수익 목표율을 설정한다.",
+          "quote": "노출할 상품을 직접 선택하고 광고 목표에 맞춰 입찰가 또는 광고 수익 목표율을 설정할 수 있습니다.",
+          "url": "https://adhome.ssgadm.com/ad/info/ai-performance.ssg",
+          "date": "2026-11",
+          "reliability": "vendor_doc"
+        },
+        {
+          "claim": "과금은 클릭당 과금이다.",
+          "quote": "고객이 광고를 클릭했을 때 클릭당 과금됩니다.",
+          "url": "https://adhome.ssgadm.com/ad/info/ai-performance.ssg",
+          "date": "2026-11",
+          "reliability": "vendor_doc"
+        }
+      ]
+    },
+    {
+      "name": "앱인토스 스마트 발송",
+      "vendor": "비바리퍼블리카(토스)",
+      "origin": "국내",
+      "type": "플랫폼 내장 기능",
+      "area": "CRM·멤버십·리텐션",
+      "tasks": [
+        "푸시·알림 캠페인 자동 발송",
+        "발송 타이밍 최적화"
+      ],
+      "problem": "미니앱 파트너가 푸시·알림을 매번 일회성으로 작성·발송해야 하는 운영 부담",
+      "users": "토스 앱 안에 미니앱을 운영하는 파트너사(앱인토스)",
+      "features": [
+        "캠페인 기간 설정 자동 발송",
+        "푸시·알림 통합 작성",
+        "캠페인당 여러 소재 등록",
+        "세그먼트 내 AI 고관여 유저·타이밍 판단",
+        "문구 검수",
+        "API(mTLS) 발송"
+      ],
+      "automation_scope": "설정된 세그먼트 안에서 AI가 고관여 유저와 발송 타이밍을 판단해 자동 발송",
+      "human_scope": "캠페인·세그먼트·소재 등록, 문구 검수 승인, 알림 동의 관리",
+      "korea": "토스 앱 내 미니앱용 국내 기능",
+      "pricing": "",
+      "evidence": [
+        {
+          "claim": "스마트 발송은 세그먼트 안에서 AI가 고관여 유저를 판단해 타이밍에 맞춰 발송한다.",
+          "quote": "캠페인에 설정된 세그먼트 내에서 AI가 고관여 유저를 판단해 타이밍에 맞게 발송하므로, 동일 예산으로 더 높은 성과를 기대 할 수 있어요.",
+          "url": "https://toss.im/apps-in-toss/blog/update-26-2-11",
+          "date": "2026-02-11",
+          "reliability": "vendor_doc"
+        },
+        {
+          "claim": "캠페인 기간을 정해 자동 발송할 수 있다.",
+          "quote": "캠페인 기간을 설정해 자동 발송 할 수 있어, 일회성 발송 대비 운영 부담이 줄어들어요.",
+          "url": "https://toss.im/apps-in-toss/blog/update-26-2-11",
+          "date": "2026-02-11",
+          "reliability": "vendor_doc"
+        },
+        {
+          "claim": "콘솔에서 캠페인을 만들고 문구 검수 승인을 받은 뒤 발송한다.",
+          "quote": "콘솔에서 기능성 캠페인을 생성하고 문구 검수 승인을 받은 뒤",
+          "url": "https://developers-apps-in-toss.toss.im/documentation/common/growth/smart-message",
+          "date": "2026-11",
+          "reliability": "vendor_doc"
+        }
+      ]
+    }
+  ],
+  "use_cases": [
+    {
+      "company": "토스(비바리퍼블리카)",
+      "company_origin": "국내",
+      "tool": "자체 구축(Intelligent Message)",
+      "area": "CRM·멤버십·리텐션",
+      "task": "광고 푸시 대상·발송 시점 최적화, 메시지 소재 초안 작성",
+      "what": "자체 CRM 메시지 캠페인 관리 플랫폼 IM에서 모든 광고 푸시를 AI 모델 최적화를 거쳐 발송하고, 모든 메시지 채널의 소재 초안을 AI가 작성하도록 바꿈",
+      "automation_scope": "구체적 발송 대상 유저와 발송 시점 제안(실시간 반응 데이터 기반), 소재 초안 작성",
+      "human_scope": "소재·기간·유저 특징 등 큰 설계, 초안 채택·수정 등 최종 판단, 마케팅·라이팅 팀과 문구 평가 기준 수립",
+      "result": "적용 두 달 만에 전사 광고 푸시 클릭률 2배 이상 개선",
+      "evidence": [
+        {
+          "claim": "IM은 토스가 자체 개발한 CRM 메시지 캠페인 관리 플랫폼이다.",
+          "quote": "Intelligent Message(IM)은 토스가 자체적으로 개발한 CRM 메시지 캠페인 관리 플랫폼이에요.",
+          "url": "https://toss.im/career/article/49775",
+          "date": "2026-05-25",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "사람은 큰 설계도만 그리고 대상·시점은 AI가 실시간 반응 데이터로 제안한다.",
+          "quote": "사람은 이 소재를 어떤 기간에, 어떤 특징을 가진 유저에게 보내겠다는 큰 설계도만 그리면 돼요. 그 설계도를 바탕으로 구체적으로 어떤 유저에게, 언제 발송할지는 AI 모델이 실시간 반응 데이터를 기반으로 제안해요.",
+          "url": "https://toss.im/career/article/49775",
+          "date": "2026-05-25",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "적용 두 달 만에 전사 광고 푸시 클릭률이 2배 이상 개선됐다.",
+          "quote": "불과 두 달 만에, 전사 광고 푸시 클릭률이 2배 이상 개선되는 결과를 만들었어요.",
+          "url": "https://toss.im/career/article/49775",
+          "date": "2026-05-25",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "소재 초안은 AI가 작성하고 최종 판단은 사람이 한다.",
+          "quote": "최종 판단은 사람이 하되, AI가 제안한 초안이 마음에 들면 그대로 쓰고, 마음에 안 들면 수정해서 쓰는 방식으로요.",
+          "url": "https://toss.im/career/article/49775",
+          "date": "2026-05-25",
+          "reliability": "company_claim"
+        }
+      ]
+    },
+    {
+      "company": "우아한형제들(배달의민족)",
+      "company_origin": "국내",
+      "tool": "자체 구축(BUDS)",
+      "area": "CRM·멤버십·리텐션",
+      "task": "마케팅 타깃 세그먼트 추출·연동",
+      "what": "CDP 기반 타깃팅 툴 BUDS를 만들어 SQL 없이 클릭으로 고객 세그먼트를 찾아 저장하고 푸시·쿠폰 등 시스템 연동·스케줄링에 활용",
+      "automation_scope": "미리 집계된 고객 데이터 항목으로 세그먼트 생성, 유관 시스템 연동, 스케줄링",
+      "human_scope": "마케터가 타깃 조건 선택·캠페인 시나리오 설계, 필요 시 쿼리 세그먼트 작성",
+      "result": "SQL 작성·검토 4시간 이상 → 1분 내 목표; 매주 마케터 150여 명이 2천여 건 트래픽",
+      "evidence": [
+        {
+          "claim": "BUDS는 쿼리 없이 클릭만으로 세그먼트를 찾아 저장·활용하게 한다.",
+          "quote": "BUDS는 쿼리 작성 없이 클릭만으로 원하는 고객 집단(이하 세그먼트)을 찾아 저장하고 업무에 활용할 수 있도록 지원합니다.",
+          "url": "https://techblog.woowahan.com/17765/",
+          "date": "2024-06-11",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "4시간 이상 걸리던 SQL 작성·검토를 1분 내로 줄이는 것이 기대효과였다.",
+          "quote": "4시간 이상도 소요되던 SQL 작성 및 검토 과정을 1분 내로 가능하도록 효율화하고",
+          "url": "https://techblog.woowahan.com/17765/",
+          "date": "2024-06-11",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "매주 150여 명 마케터가 쓰는 전사 공통 타깃팅 툴이 됐다.",
+          "quote": "현재 BUDS는 매 주 150여 명의 마케터들이 2천여 건의 유의미한 트래픽을 일으키는 전사 공통 타깃팅 툴로 자리 잡았습니다.",
+          "url": "https://techblog.woowahan.com/17765/",
+          "date": "2024-06-11",
+          "reliability": "company_claim"
+        }
+      ]
+    },
+    {
+      "company": "카카오스타일(지그재그)",
+      "company_origin": "국내",
+      "tool": "자체 구축(개인화 기획전 자동 생성 시스템, Amazon Bedrock)",
+      "area": "콘텐츠·SNS·브랜드 캠페인",
+      "task": "개인화 기획전 배너·문구·상품 구성 생성",
+      "what": "Amazon Bedrock으로 개인화 기획전의 배너 이미지·마케팅 문구·상품·혜택 구성을 자동 생성하고 지면별 포맷을 맞춤. MD가 참여 스토어·상품 정보·콘셉트만 입력",
+      "automation_scope": "이미지·기획전·상품 정보 기반 콘텐츠 생성, 지면별 포맷팅, 개인별 상품 구성",
+      "human_scope": "MD의 참여 스토어·콘셉트·소구점 입력, AI 문구 오타 점검·편집(Human-in-the-loop)",
+      "result": "콘텐츠 제작 시간 몇 주 → 몇 시간; 기획전 약 10% 적용, 50% 이상으로 확대 계획",
+      "evidence": [
+        {
+          "claim": "개인화 기획전과 혜택을 AI가 자동 생성하는 프로젝트를 수행했다.",
+          "quote": "이는 “ㅇㅇㅇ님을 위한 추천 아이템”과 같은 개인화된 기획전과 혜택을 AI가 자동으로 생성하는 프로젝트입니다.",
+          "url": "https://aws.amazon.com/ko/blogs/tech/kakaostyle-leverage-genai-with-amazon-bedrock",
+          "date": "2024-12-24",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "사람은 AI가 추천한 문구의 오타를 점검·수정한다.",
+          "quote": "AI가 추천한 문구에 대해 오타를 점검하고 수정할 수 있습니다.",
+          "url": "https://aws.amazon.com/ko/blogs/tech/kakaostyle-leverage-genai-with-amazon-bedrock",
+          "date": "2024-12-24",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "콘텐츠 제작 시간이 몇 주에서 몇 시간으로 줄었다.",
+          "quote": "컨텐츠 제작에 소요되는 작업 시간을 몇 주(weeks)에서 몇 시간(hours)으로 획기적으로 단축했습니다.",
+          "url": "https://aws.amazon.com/ko/blogs/tech/kakaostyle-leverage-genai-with-amazon-bedrock",
+          "date": "2024-12-24",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "MD가 참여 스토어를 넣으면 개인 맞춤 기획전이 생성되고, 현재 약 10%의 기획전에 쓰인다.",
+          "quote": "지그재그의 경우, 현재 약 10%의 기획전을 해당 기술을 통해 제작하고 있다.",
+          "url": "https://etnews.com/20241122000201",
+          "date": "2024-11-24",
+          "reliability": "third_party"
+        }
+      ]
+    },
+    {
+      "company": "롯데홈쇼핑",
+      "company_origin": "국내",
+      "tool": "자체 구축(뚝딱 스튜디오)",
+      "area": "콘텐츠·SNS·브랜드 캠페인",
+      "task": "모바일 배너 이미지·문구 제작, 방송 숏폼 제작",
+      "what": "CX·IT·디자인 부서가 공동 개발한 뚝딱 스튜디오로 내부 디자인 가이드에 맞춰 배너 이미지를 생성·수정하고 문구를 추천. 방송 하이라이트를 자동 추출해 숏폼 제작",
+      "automation_scope": "디자인 가이드 기반 이미지 생성·수정, 배너 문구 추천, 하이라이트 자동 추출·숏폼화",
+      "human_scope": "마케터·MD가 직접 배너 제작·선택(디자이너 요청 단계 생략)",
+      "result": "배너 1건 약 10초; 도입 한 달 약 1000건 제작; 월간 숏폼 제작량 30배 이상",
+      "evidence": [
+        {
+          "claim": "AI가 디자인 가이드에 맞춰 이미지를 생성·수정하고 문구를 추천하며 배너 1건에 약 10초가 걸린다.",
+          "quote": "AI가 내부 디자인 가이드에 맞춰 이미지를 생성·수정하고 배너에 들어갈 문구도 추천한다. 배너 한 건을 만드는 데 걸리는 시간은 약 10초다.",
+          "url": "https://www.hankyung.com/article/2026102898341",
+          "date": "2026-10-28",
+          "reliability": "third_party"
+        },
+        {
+          "claim": "디자이너 요청 없이 현업 담당자가 직접 배너를 만들 수 있게 됐다.",
+          "quote": "이제는 현업 담당자가 직접 규격에 맞는 배너를 만들 수 있다.",
+          "url": "https://www.hankyung.com/article/2026102898341",
+          "date": "2026-10-28",
+          "reliability": "third_party"
+        },
+        {
+          "claim": "도입 한 달 만에 약 1000건을 제작했다.",
+          "quote": "서비스 도입 한 달 만에 약 1000건의 이미지를 제작했다.",
+          "url": "https://www.hankyung.com/article/2026102898341",
+          "date": "2026-10-28",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "숏폼 자동 제작으로 월간 제작량이 30배 이상 늘었다.",
+          "quote": "사람이 직접 편집하던 작업을 자동화하면서 월간 숏폼 제작량은 기존보다 30배 이상 늘었다.",
+          "url": "https://www.hankyung.com/article/2026102898341",
+          "date": "2026-10-28",
+          "reliability": "company_claim"
+        }
+      ]
+    },
+    {
+      "company": "KT",
+      "company_origin": "국내",
+      "tool": "자체 구축(메시지 생성 에이전트)",
+      "area": "CRM·멤버십·리텐션",
+      "task": "고객 안내 문자 작성·검수",
+      "what": "사내에 메시지 생성 에이전트를 도입해 안내 문구를 작성 원칙·관련 법규에 맞는지 AI가 작성·검수",
+      "automation_scope": "안내 문자 작성, 작성 원칙·법규 준수 검수, 이미지 제작·다국어 번역 지원",
+      "human_scope": "직원이 AI 결과 메시지를 검수(원문 사진 설명)",
+      "result": "안내 문자 작성·검수 30~60분 → 약 5분; 이미지 제작 4시간 → 15분; 다국어 번역 이틀 이상 → 30초",
+      "evidence": [
+        {
+          "claim": "메시지 생성 에이전트는 안내 문구가 작성 원칙·법규에 어긋나지 않게 AI가 작성·검수한다.",
+          "quote": "KT가 지난달 30일 사내에 도입한 '메시지 생성 에이전트'는 안내 문구가 회사의 작성 원칙이나 관련 법규에 어긋나지 않는지 AI가 알아서 작성하고 검수해 주는 시스템이다.",
+          "url": "https://yna.co.kr/view/AKR20261112052300017",
+          "date": "2026-11-12",
+          "reliability": "third_party"
+        },
+        {
+          "claim": "작성·검수 시간이 30~60분에서 약 5분으로 줄었다.",
+          "quote": "기존에 30∼60분 걸리던 안내 문자 작성·검수 시간은 약 5분으로 줄었다. 이미지 제작은 4시간에서 15분으로",
+          "url": "https://yna.co.kr/view/AKR20261112052300017",
+          "date": "2026-11-12",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "직원들이 메시지 생성 에이전트로 고객 안내 메시지를 검수한다.",
+          "quote": "직원들이 'KDS 2.0'과 AI 기반 '메시지 생성 에이전트'를 활용해 디지털 서비스 화면을 설계하고 고객 안내 메시지를 검수하는 모습",
+          "url": "https://yna.co.kr/view/AKR20261112052300017",
+          "date": "2026-11-12",
+          "reliability": "third_party"
+        }
+      ]
+    },
+    {
+      "company": "현대카드",
+      "company_origin": "국내",
+      "tool": "자체 구축(유니버스·마더 AI·앨로케이션 AI)",
+      "area": "데이터·AI 활용",
+      "task": "마케팅 타깃 고객군 발굴, 쿠폰·포인트 배분 최적화",
+      "what": "자체 AI 플랫폼 유니버스에서 마더 AI가 반응 가능성이 높은 고객군을 찾고 앨로케이션 AI가 쿠폰·포인트 배분 수량을 최적화",
+      "automation_scope": "소비 데이터 조합으로 타깃 고객군 발굴, 한정된 쿠폰·포인트 배분 계산",
+      "human_scope": "마케팅 목적·자원(쿠폰 종류·수량) 설정, 직원이 익숙한 조건 조합",
+      "result": "기존 방식 대비 최대 6배 반응률; 마케팅 설계 최대 3일 → 20~40분",
+      "evidence": [
+        {
+          "claim": "마더 AI가 찾은 고객군은 기존 방식보다 최대 6배 높은 반응률을 냈다.",
+          "quote": "이는 기존 방식보다 최대 6배 높은 반응률을 내는 것으로 나타났다.",
+          "url": "https://sedaily.com/article/20064856",
+          "date": "2026-07-07",
+          "reliability": "third_party"
+        },
+        {
+          "claim": "앨로케이션 AI는 쿠폰·포인트 같은 한정 자원 배분을 계산한다.",
+          "quote": "앨로케이션 AI는 쿠폰·포인트 등 한정된 마케팅 자원을 어떻게 배분해야 효과가 가장 클지 계산한다.",
+          "url": "https://sedaily.com/article/20064856",
+          "date": "2026-07-07",
+          "reliability": "third_party"
+        },
+        {
+          "claim": "마케팅 설계 기간이 길게는 3일에서 20~40분으로 줄었다.",
+          "quote": "이를 통해 길게는 3일이 걸리던 마케팅 설계 기간을 20~40분까지 단축할 수 있었다.",
+          "url": "https://sedaily.com/article/20064856",
+          "date": "2026-07-07",
+          "reliability": "third_party"
+        }
+      ]
+    },
+    {
+      "company": "LG유플러스",
+      "company_origin": "국내",
+      "tool": "자체 구축(AX특공대: 익시·ChatGPT·Sora 활용)",
+      "area": "광고·프로모션",
+      "task": "광고 영상 제작",
+      "what": "마케팅그룹 마케터로만 꾸린 TF가 자사 익시·ChatGPT·Sora로 익시오 홍보 유튜브 쇼츠 6편 제작",
+      "automation_scope": "스크립트 작성, 영상·내레이션 생성",
+      "human_scope": "마케터가 광고 아이디어 기획",
+      "result": "광고 제작비를 기존 대비 5% 수준으로 줄이는 것이 목표(95% 절감 목표)",
+      "evidence": [
+        {
+          "claim": "AX특공대는 익시·ChatGPT·Sora로 광고 제작비를 기존의 5% 수준으로 줄이는 역할을 맡았다.",
+          "quote": "AX특공대는 마케터들로만 이뤄져 자사 기술 ‘익시’와 챗GPT, 영상 생성 모델 ‘소라’ 등 다양한 생성형 AI 도구를 직접 활용해 광고 제작비를 기존 대비 5% 수준으로 줄이는 역할을 맡았다.",
+          "url": "https://www.sedaily.com/article/14067466",
+          "date": "2025-05-18",
+          "reliability": "third_party"
+        },
+        {
+          "claim": "마케터가 기획하면 AI가 스크립트·영상·내레이션을 만든다.",
+          "quote": "마케터가 광고 아이디어를 기획하면 AI가 스크립트를 작성하고 영상과 내레이션을 생성하는 등 광고 제작을 수행한다.",
+          "url": "https://www.sedaily.com/article/14067466",
+          "date": "2025-05-18",
+          "reliability": "third_party"
+        }
+      ]
+    },
+    {
+      "company": "GS샵(GS리테일)",
+      "company_origin": "국내",
+      "tool": "자체 구축(AI 스튜디오)",
+      "area": "콘텐츠·SNS·브랜드 캠페인",
+      "task": "홈쇼핑 방송 배경(가상 스튜디오) 이미지 생성",
+      "what": "실제 스튜디오 화면에 AI 생성 이미지를 더해 상품·방송 콘셉트에 맞는 가상 공간을 연출하고, 축적 이미지로 머신러닝 학습",
+      "automation_scope": "스튜디오 배경 이미지 생성",
+      "human_scope": "카메라·영상 전문가 중심 R&D·연출",
+      "result": "적용률 27% → 62%(월 160여 회 → 370여 회); 이미지 생성 5분 → 30초 내외; 폐기물 연 18톤 감소",
+      "evidence": [
+        {
+          "claim": "AI 스튜디오 적용률이 27%에서 62%로 늘었다.",
+          "quote": "AI 스튜디오 적용률은 27%에서 62%로 대폭 확대된 것이다.",
+          "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7133381",
+          "date": "2025-10-23",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "머신러닝 적용으로 스튜디오 이미지 생성이 5분에서 30초 내외로 줄었다.",
+          "quote": "기존에 5분가량 소요되던 스튜디오 이미지 생성 작업을 30초 내외로 단축시킨 것이다.",
+          "url": "https://weekly.hankooki.com/news/articleView.html?idxno=7133381",
+          "date": "2025-10-23",
+          "reliability": "company_claim"
+        }
+      ]
+    },
+    {
+      "company": "제일기획",
+      "company_origin": "국내",
+      "tool": "베리에이드(VariAid)",
+      "area": "광고·프로모션",
+      "task": "배너 광고 매체별 규격 변형",
+      "what": "제일기획이 아이디어를 내고 드랩이 개발한 베리에이드를 도입해 배너를 매체별 가이드라인에 맞게 자동 변형. 별도로 자체 AI 플랫폼 '커넥트 AI' 공개",
+      "automation_scope": "약 80개 광고 규격 결과물 자동 생성",
+      "human_scope": "원본 배너 제작, 수동 편집",
+      "result": "배너 1건당 평균 제작비 90% 이상 절감 전망; 자체 테스트 검수 통과율 100%에 가까움",
+      "evidence": [
+        {
+          "claim": "제일기획은 배너 1건당 평균 제작비를 90% 이상 아낄 것으로 내다봤다.",
+          "quote": "베리에이드를 활용할 경우 배너 1건당 평균 제작비를 90% 이상 아낄 수 있을 것으로 제일기획은 내다봤다.",
+          "url": "https://mk.co.kr/news/business/12011760",
+          "date": "2026-04-08",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "베리에이드로 만든 배너는 자체 테스트에서 검수 통과율이 100%에 가까웠다.",
+          "quote": "또 베리에이드로 만든 배너 광고물은 자체 테스트에서 100%에 가까운 검수 통과율을 보였다.",
+          "url": "https://mk.co.kr/news/business/12011760",
+          "date": "2026-04-08",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "제일기획은 광고·콘텐츠 제작 효율화를 위한 자체 AI 플랫폼 커넥트 AI를 구축했다.",
+          "quote": "자체 AI 플랫폼 '커넥트 AI'는 광고, 콘텐츠 제작 프로세스 전반의 업무 효율화를 위해 새로 구축한 플랫폼이다.",
+          "url": "https://magazine.cheil.com/58416",
+          "date": "2026-06-07",
+          "reliability": "third_party"
+        }
+      ]
+    },
+    {
+      "company": "무신사",
+      "company_origin": "국내",
+      "tool": "Moloco Ads · Moloco Commerce Media",
+      "area": "광고·프로모션",
+      "task": "기존 유저 리인게이지먼트 광고, 온사이트 상품광고",
+      "what": "Moloco Ads로 오디언스 그룹별 이미지·영상·다이나믹 소재를 운영해 앱 재유입을 만들고, MCM이 탑재된 자체 상품광고 지면으로 구매 전환 연결",
+      "automation_scope": "AI 기반 입찰·노출 최적화, 온사이트 개인화 상품 광고 노출",
+      "human_scope": "오디언스 세그먼트 설계, 소재 유형 제작·직접 컨트롤·테스트",
+      "result": "활성 유저 CPS 타 DSP A·B 대비 10%·22% 개선; 영상 소재 CPS 효율 2.5배; 기여 유저 ARPPU 66% 높음",
+      "evidence": [
+        {
+          "claim": "여름 무진장 기간 타 DSP 대비 CPS가 10%, 22% 개선되고 기여 유저 ARPPU가 66% 높았다.",
+          "quote": "타 DSP 매체 A, B 대비 각각 10%, 22% 개선 영상 소재의 활성 CPS 효율 2.5배 우수 (vs. 이미지 소재) Moloco Ads, MCM 기여 유저가 66% 더 높은 ARPPU 달성",
+          "url": "https://www.moloco.com/ko/case-studies/musinsa-molrokowa-hamgge-jaebangmuneseo-gumaeggaji-gogaeg-yeojeongeul-hyeogsinhada",
+          "date": "2026-11",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "무신사는 소재 유형을 직접 컨트롤하며 빠르게 테스트할 수 있어 몰로코를 택했다.",
+          "quote": "다양하게 활용 가능한 오디언스 세그먼테이션 기능과 이미지 / 영상 / 다아니믹 등 다양한 소재 유형들을 직접 컨트롤하며 빠르게 테스트를 할 수 있는 DSP 매체로서 몰로코가 적합하다고 생각하고",
+          "url": "https://www.moloco.com/ko/case-studies/musinsa-molrokowa-hamgge-jaebangmuneseo-gumaeggaji-gogaeg-yeojeongeul-hyeogsinhada",
+          "date": "2026-11",
+          "reliability": "company_claim"
+        }
+      ]
+    },
+    {
+      "company": "LG헬로렌탈",
+      "company_origin": "국내",
+      "tool": "Meta 어드밴티지+ 쇼핑 캠페인",
+      "area": "광고·프로모션",
+      "task": "구독 전환 광고 자동화",
+      "what": "수동 설정 BAU 캠페인과 어드밴티지+ 쇼핑 캠페인을 같은 소재로 A/B 테스트(2024-09-17~30), 결제 시작에 최적화",
+      "automation_scope": "타게팅·크리에이티브·노출 위치·예산을 하나의 캠페인에서 AI가 자동 관리",
+      "human_scope": "최적화 목표(결제 시작) 선택, 크리에이티브 자산 제공, A/B 테스트 설계",
+      "result": "결제 시작당 비용 31% 감소; 등록 완료당 비용 23% 감소(BAU 수동 설정 대비)",
+      "evidence": [
+        {
+          "claim": "어드밴티지+ 쇼핑 캠페인 테스트 결과 결제 시작당 비용이 31% 줄었다.",
+          "quote": "Meta 어드밴티지+ 쇼핑 캠페인을 테스트한 결과 BAU 수동 설정에 비해 결제 시작당 비용이 31% 감소했습니다.",
+          "url": "https://www.facebook.com/business/success/lg-hellorental",
+          "date": "2024-09",
+          "reliability": "vendor_doc"
+        },
+        {
+          "claim": "여러 캠페인을 수동으로 설정하는 대신 하나의 어드밴티지+ 쇼핑 캠페인을 설정하면 된다.",
+          "quote": "광고주는 타게팅, 크리에이티브, 노출 위치, 예산을 각각 따로 관리하며 여러 캠페인을 수동으로 설정하는 대신 하나의 어드밴티지+ 쇼핑 캠페인을 설정하면 됩니다.",
+          "url": "https://www.facebook.com/business/success/lg-hellorental",
+          "date": "2024-09",
+          "reliability": "vendor_doc"
+        }
+      ]
+    },
+    {
+      "company": "크몽",
+      "company_origin": "국내",
+      "tool": "Braze · Amplitude",
+      "area": "CRM·멤버십·리텐션",
+      "task": "CRM 메시지 전환 분석과 코호트 기반 재타깃팅",
+      "what": "Braze Currents로 메시지 수신·오픈·클릭 이벤트를 Amplitude에 실시간 연동해 구매까지 퍼널을 분석하고, 이탈·고구매가능 코호트를 만들어 Braze 캠페인에 다시 연동",
+      "automation_scope": "메시지 참여 이벤트 실시간 전송, 코호트 동기화",
+      "human_scope": "연동 이벤트 선별, 퍼널·예측 모델 설계, 코호트 정의와 캠페인 운영",
+      "result": "",
+      "evidence": [
+        {
+          "claim": "크몽은 Braze Currents로 CRM 메시지 발송 이벤트를 Amplitude로 실시간 전송했다.",
+          "quote": "크몽은 Braze의 Currents 기능을 활용해 CRM 메시지 발송 이벤트를 Amplitude로 실시간 전송했습니다.",
+          "url": "https://blog.ab180.co/posts/braze-currents-kmong",
+          "date": "2025-05-09",
+          "reliability": "company_claim"
+        },
+        {
+          "claim": "Amplitude 코호트를 Braze에 다시 연동해 CRM 캠페인에 활용했다.",
+          "quote": "Amplitude 에서 생성한 다양한 코호트를 Braze 에 다시 연동시켜 CRM 캠페인 운영에 활용했습니다.",
+          "url": "https://blog.ab180.co/posts/braze-currents-kmong",
+          "date": "2025-05-09",
+          "reliability": "company_claim"
+        }
+      ]
+    },
+    {
+      "company": "롯데GRS",
+      "company_origin": "국내",
+      "tool": "Salesforce Data Cloud",
+      "area": "CRM·멤버십·리텐션",
+      "task": "멀티브랜드 고객 통합과 이탈 예측 혜택 자동 실행",
+      "what": "앱·키오스크·POS·멤버십 데이터를 하나의 Customer 360으로 통합하고 AI가 방문 주기를 학습해 이탈을 예측, 최적 혜택을 자동 실행",
+      "automation_scope": "이탈 예측과 최적 혜택 자동 실행",
+      "human_scope": "마케터는 캠페인 제작 대신 AI 전략 설계",
+      "result": "전체 매출 51%를 내는 상위 12% 핵심 고객 이탈 사전 방지 체계 구축(수치 성과는 미공개)",
+      "evidence": [
+        {
+          "claim": "AI가 방문 주기를 학습해 이탈을 예측하고 최적 혜택을 자동 실행한다.",
+          "quote": "AI 기반 방문 주기 학습으로 이탈 예측 및 최적 혜택 자동 실행 마케터의 역할을 캠페인 제작에서 AI 전략 설계 로 전환",
+          "url": "https://salesforce.com/kr/blog/agentforce-digital-summit-2026-korea-marketing-case-study",
+          "date": "2026-07-20",
+          "reliability": "vendor_doc"
+        },
+        {
+          "claim": "전체 매출의 51%를 만드는 상위 12% 핵심 고객의 이탈 방지 체계를 만들었다.",
+          "quote": "전체 매출의 51%를 창출하는 상위 12% 핵심 고객 의 이탈 사전 방지 체계 구축",
+          "url": "https://salesforce.com/kr/blog/agentforce-digital-summit-2026-korea-marketing-case-study",
+          "date": "2026-07-20",
+          "reliability": "vendor_doc"
+        }
+      ]
+    },
+    {
+      "company": "씨메스로보틱스",
+      "company_origin": "국내",
+      "tool": "Salesforce MCAE · Sales Cloud",
+      "area": "교육·고객 사례·영업 지원",
+      "task": "B2B 리드 점수화·자동 라우팅, 이메일 자동 시퀀스",
+      "what": "Engagement Studio로 세그먼트별 이메일 자동 시퀀스를 돌리고 Lead Scoring 점수가 일정 수준에 이르면 Sales Cloud로 SDR에게 자동 전달",
+      "automation_scope": "이메일 시퀀스 발송, 관심도 점수화, 기준 도달 리드 자동 전달",
+      "human_scope": "SDR·영업 후속 대응, 점수 기준·프로세스 설계",
+      "result": "리드 전달 시간 2.5일 → 0.5일; 도입 문의 155% 증가",
+      "evidence": [
+        {
+          "claim": "리드 전달 시간이 2.5일에서 0.5일로 줄고 도입 문의가 155% 늘었다.",
+          "quote": "리드 전달 시간 2.5일 → 0.5일 단축 도입 문의 155% 증가",
+          "url": "https://salesforce.com/kr/blog/agentforce-digital-summit-2026-korea-marketing-case-study",
+          "date": "2026-07-20",
+          "reliability": "vendor_doc"
+        },
+        {
+          "claim": "일정 점수 도달 시 Sales Cloud로 SDR에게 자동 전달되는 체계를 만들었다.",
+          "quote": "Lead Scoring으로 관심도를 점수화해 일정 점수 도달 시 Sales Cloud를 통해 SDR에게 자동 전달되는 체계를 구축했습니다.",
+          "url": "https://salesforce.com/kr/blog/agentforce-digital-summit-2026-korea-marketing-case-study",
+          "date": "2026-07-20",
+          "reliability": "vendor_doc"
+        }
+      ]
+    }
+  ],
+  "stats": [],
+  "gaps": [
+    "11번가·무신사·올리브영·신세계(SSG)·컬리·신한카드의 자체 AI 카피/개인화 마케팅 수치 사례는 원문에서 확인하지 못함(검색 스니펫만 있거나 수치 없음)",
+    "배민 AI 카피·이미지: 사장님 메뉴 사진 AI 개선(2024-09 뉴시스)만 확인, 마케팅 카피 자동 생성 수치 사례는 못 찾음",
+    "이노션 현대차 100% 생성형 AI 캠페인은 성과 수치가 없어 제외",
+    "카카오모먼트·네이버 광고 AI의 새 광고주 수치 사례, 미리캔버스·뤼튼 기업 도입 수치 사례는 이번에 원문 확보 못 함",
+    "SKT 에이닷·LGU+ 익시오 '광고 상품' 자체의 광고주 성과 수치는 못 찾음(LGU+는 광고 제작 사례로 대체)",
+    "무신사 기술블로그(MATCH Console·MAI)는 Cloudflare 차단으로 원문 확보 실패",
+    "무신사/몰로코 사례 페이지는 게시일 미표기 — date는 수집 시점(2026-11)",
+    "LG유플러스 95%는 목표치이며 실제 달성 수치는 원문에 없음; 제일기획 90%도 전망치",
+    "SKT AI 카피라이터·앱인토스 스마트 발송 요금은 확인 못 함",
+    "국내 통계(stats)는 이번 범위에서 새로 찾지 않음"
+  ]
+}

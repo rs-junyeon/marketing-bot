@@ -1,0 +1,981 @@
+{
+ "group": "성과 측정",
+ "tasks": [
+  {
+   "task": "유입 경로 추적·어트리뷰션(UTM·딥링크·MMP)",
+   "problem": "광고·채널·딥링크별로 설치·가입·구매가 어디서 왔는지 매체 자체 리포트만으로는 겹치고 비교가 어렵다",
+   "how": "앱/웹에 SDK·태그를 심고 트래킹 링크·딥링크를 발급해 MMP가 매체 데이터와 전환을 자동 매칭하고 기여를 판정",
+   "automation_scope": "클릭·노출과 설치·구매 이벤트 매칭, 기여 규칙 적용, 비용·매출 연동, 코호트·LTV 집계",
+   "human_scope": "어트리뷰션 규칙·윈도 설정, 트래킹 링크 네이밍 규칙, 결과 해석과 예산 결정",
+   "tools": [
+    "에어브릿지(Airbridge)",
+    "애드브릭스",
+    "AppsFlyer"
+   ]
+  },
+  {
+   "task": "웹·앱 행동 분석",
+   "problem": "사이트·앱 안에서 사용자가 어디서 이탈하고 무엇을 보는지 모르면 개선 지점을 찾기 어렵다",
+   "how": "분석 스크립트·SDK로 페이지뷰·이벤트·스크롤·클릭을 자동 수집하고 퍼널·히트맵·코호트로 시각화",
+   "automation_scope": "이벤트 수집, 유입 검색어·페이지·방문 분석 보고서, 히트맵 생성",
+   "human_scope": "이벤트 설계, 분석 질문 정의, 개선안 도출",
+   "tools": [
+    "GA4",
+    "네이버 애널리틱스",
+    "뷰저블(Beusable)",
+    "Amplitude"
+   ]
+  },
+  {
+   "task": "광고 매체 데이터 자동 수집·대시보드·자동 리포트",
+   "problem": "구글·메타·네이버·카카오 등 매체마다 리포트 형식이 달라 매일 엑셀로 복사·붙여넣기하는 데 시간이 든다",
+   "how": "매체 API 커넥터로 데이터를 정해진 시간에 자동 수집해 스프레드시트·BI·대시보드로 보내고, 정해진 일정에 리포트를 발송",
+   "automation_scope": "매체 데이터 수집·정규화·적재, 스케줄 업데이트, 리포트 발송, 임계값 알림",
+   "human_scope": "지표 정의·매핑 규칙(캠페인 네이밍 분류), 최종 확인, 해석과 보고",
+   "tools": [
+    "비즈스프링 AIR",
+    "아임리포트(ImReport)",
+    "Supermetrics",
+    "Funnel",
+    "에어브릿지(Airbridge)"
+   ]
+  },
+  {
+   "task": "AI 인사이트(이상 탐지·자연어 질의)",
+   "problem": "대시보드를 매번 탐색하거나 분석가에게 요청해야 해서 이상 징후 발견과 질문 응답이 늦다",
+   "how": "분석 툴의 ML 이상 탐지 알림, 생성형 AI 에이전트·MCP 연동으로 자연어 질의·리포트 생성",
+   "automation_scope": "이상 변화 감지·알림, 자연어 질문에 대한 데이터 조회·차트·요약 생성, 반복 리포트 작성",
+   "human_scope": "알림 조건 설정, AI 답변 검증, 의사결정",
+   "tools": [
+    "GA4",
+    "에어브릿지(Airbridge)",
+    "핵클(Hackle)",
+    "Amplitude",
+    "뷰저블(Beusable)"
+   ]
+  },
+  {
+   "task": "A/B 테스트·실험",
+   "problem": "직관으로 화면·문구·가격을 바꾸면 실제 효과를 알 수 없다",
+   "how": "실험 플랫폼 SDK로 사용자를 무작위 배정하고 지표를 자동 집계·통계 검정",
+   "automation_scope": "트래픽 배정, 지표 집계, 유의성 계산, 기능 플래그 배포",
+   "human_scope": "가설·지표 설정, 실험 설계, 결과 판단과 적용",
+   "tools": [
+    "핵클(Hackle)",
+    "Statsig",
+    "Amplitude"
+   ]
+  },
+  {
+   "task": "MMM·증분 측정",
+   "problem": "쿠키·IDFA 제약으로 클릭 기반 어트리뷰션이 채널 전체 기여를 설명하지 못하고 예산 배분 근거가 약하다",
+   "how": "오픈소스 MMM(Meridian·Robyn) 또는 SaaS로 기간별 매체비·매출을 회귀 모델링하고, 증분 실험 결과로 보정한 뒤 예산 시나리오를 최적화",
+   "automation_scope": "하이퍼파라미터 탐색, 채널별 ROI·반응곡선 추정, 예산 최적화 계산",
+   "human_scope": "데이터 준비, 사전분포·실험 보정 판단, 모델 검증, 예산 결정",
+   "tools": [
+    "Google Meridian",
+    "Meta Robyn",
+    "Funnel"
+   ]
+  },
+  {
+   "task": "매장·오프라인 성과 측정",
+   "problem": "온라인 광고가 매장 방문·오프라인 구매에 준 영향은 온라인 전환에 잡히지 않는다",
+   "how": "광고 플랫폼의 매장 방문 전환(위치 데이터 기반 모델링)이나 오프라인 전환 업로드로 측정",
+   "automation_scope": "광고 클릭·노출 후 매장 방문 추정치 모델링·리포트",
+   "human_scope": "매장 위치 연결, 측정 자격 확인, 결과 해석",
+   "tools": [
+    "Google Ads 매장 방문 전환"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "name": "에어브릿지(Airbridge)",
+   "vendor": "에이비일팔공(AB180)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "유입 경로 추적·어트리뷰션(UTM·딥링크·MMP)",
+    "광고 매체 데이터 자동 수집·대시보드·자동 리포트",
+    "AI 인사이트(이상 탐지·자연어 질의)"
+   ],
+   "problem": "웹·앱 광고 성과를 매체 통합으로 측정하고 리포트 작업을 줄인다",
+   "users": "앱·웹 서비스 그로스·퍼포먼스 마케터(스타트업~대기업)",
+   "features": [
+    "딥링크·QR·웹투앱 배너",
+    "Meta·Google·Apple·TikTok 어트리뷰션",
+    "매출·퍼널 리포트",
+    "pLTV",
+    "Actuals Report API",
+    "AI 에이전트 Airbridge Pilot·MCP"
+   ],
+   "automation_scope": "광고-전환 매칭, 리포트 데이터 API 제공, 자연어 질의로 지표 조회·리포트 생성",
+   "human_scope": "트래킹 링크·규칙 설정, 리포트 매핑 로직, 예산 결정",
+   "korea": "국내 기업(AB180) 제품, 한국어 지원, 국내 고객 사례 다수",
+   "pricing": "Core 플랜 월 $40부터(30일 무료, 50만 데이터 포인트 포함 후 포인트당 $0.0001), Growth 플랜 별도 견적",
+   "evidence": [
+    {
+     "claim": "Core 플랜은 30일 무료 후 월 40달러부터이며 50만 데이터 포인트를 포함한다.",
+     "quote": "Core Plan $40+/mo 30-day free trial. 500K data points included. Then $0.0001 per data point.",
+     "url": "https://www.airbridge.io/en/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "AB180은 AI 에이전트 Airbridge Pilot과 Airbridge MCP를 출시해 자연어로 캠페인 성과·ROAS를 조회할 수 있게 했다.",
+     "quote": "사용자는 AI 도구의 대화창에서 캠페인 성과, ROAS, 리텐션 등 주요 데이터를 자연어로 즉시 조회하고 분석 리포트를 생성할 수 있다",
+     "url": "https://zdnet.co.kr/view/?no=20260326143733",
+     "date": "2026-03-26",
+     "reliability": "third_party"
+    }
+   ]
+  },
+  {
+   "name": "애드브릭스",
+   "vendor": "아이지에이웍스(디파이너리)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "유입 경로 추적·어트리뷰션(UTM·딥링크·MMP)"
+   ],
+   "problem": "국내 매체 중심의 모바일 앱 광고 성과를 측정한다",
+   "users": "모바일 앱 마케터",
+   "features": [
+    "MMP 어트리뷰션",
+    "코호트·잔존율 분석",
+    "3rd DMP 기반 인사이트 리포트",
+    "일 30억 이벤트 처리"
+   ],
+   "automation_scope": "앱 설치·이벤트 어트리뷰션과 코호트·잔존 분석 자동 집계",
+   "human_scope": "측정 설정, 분석 해석",
+   "korea": "국내 기업, 국내 주요 매체 연동 경험 강조",
+   "pricing": "최저가 보장제(견적 문의)",
+   "evidence": [
+    {
+     "claim": "애드브릭스는 12년간 2만 개 이상 기업이 사용한 국내 MMP라고 소개한다.",
+     "quote": "애드브릭스는 12 년 간 2 만 개 이상의 기업이 함께했습니다.",
+     "url": "https://www.adbrix.io/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "코호트·잔존율 분석과 대용량 이벤트 처리를 지원한다.",
+     "quote": "코호트 분석, 잔존율 분석 등 기본 분석부터 고급 분석을 지원합니다.",
+     "url": "https://www.adbrix.io/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "핵클(Hackle)",
+   "vendor": "핵클",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "A/B 테스트·실험",
+    "웹·앱 행동 분석",
+    "AI 인사이트(이상 탐지·자연어 질의)"
+   ],
+   "problem": "A/B 테스트·행동 분석·CRM을 한 곳에서 돌려 데이터로 의사결정하게 한다",
+   "users": "PM·그로스 마케터·개발자(스타트업~중견)",
+   "features": [
+    "A/B 테스트",
+    "고객 행동 데이터 분석",
+    "기능 플래그·원격 구성",
+    "CRM 메시지(카카오 알림톡 등)",
+    "핵클 MCP"
+   ],
+   "automation_scope": "실험 배정·결과 집계, CRM 성과 일자별 다운로드, MCP 연동 차트·자연어 분석",
+   "human_scope": "가설·지표 설계, 실험 결과 판단",
+   "korea": "국내 기업, 한국어, 카카오 알림톡·카페24 연동",
+   "pricing": "메시지 플랜 월 기본료 0원(그 외 플랜은 확인 못 함)",
+   "evidence": [
+    {
+     "claim": "핵클은 행동 분석·A/B 테스트·CRM·기능 플래그를 제공한다.",
+     "quote": "고객 행동 데이터 분석, A/B 테스트, CRM 마케팅, 기능 플래그, 원격 구성 등 핵클이 제공하는 모든 기능을 소개합니다.",
+     "url": "https://hackle.io/ko/product/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "핵클 MCP로 CRM 성과를 차트 시각화하고 자연어로 분석할 수 있다.",
+     "quote": "일자별 성과 다운로드부터 핵클 MCP를 활용한 차트 시각화와 자연어 분석까지, CRM 성과 분석을 자동화하는 방법을 소개합니다.",
+     "url": "https://www.hackle.io/ko/post/crm-campaign-report-mcp-automation/",
+     "date": "2026-05-05",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "뷰저블(Beusable)",
+   "vendor": "포그리트(4GRIT)",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "웹·앱 행동 분석",
+    "AI 인사이트(이상 탐지·자연어 질의)"
+   ],
+   "problem": "웹 페이지에서 사용자가 어디를 보고 클릭하는지 히트맵으로 보여 UX 개선점을 찾는다",
+   "users": "UX·이커머스 마케터·기획자",
+   "features": [
+    "클릭·스크롤·어텐션 UX 히트맵",
+    "CX 저니맵",
+    "생성형 BI(말로 만드는 대시보드)",
+    "AI 도슨트"
+   ],
+   "automation_scope": "행동 데이터 수집·히트맵 생성, 자연어 대시보드 생성",
+   "human_scope": "분석 대상 페이지 선정, 개선안 결정",
+   "korea": "국내 기업, 한국어",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "뷰저블은 UX 히트맵과 말로 만드는 대시보드(생성형 BI)를 제공한다.",
+     "quote": "뷰저블 AI 생성형 BI 말로 만드는 대시보드",
+     "url": "https://www.beusable.net/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "스크롤·스와이프 히트맵을 교차 분석해 상세페이지 리뷰 영역 소비 효율을 분석했다.",
+     "quote": "뷰저블 팀은 두 히트맵을 교차 분석해 상세페이지 리뷰 영역의 소비 효율을 분석해 볼 수 있었습니다.",
+     "url": "https://beusable.net/blog?p=6263",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ]
+  },
+  {
+   "name": "비즈스프링 AIR",
+   "vendor": "비즈스프링",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "광고 매체 데이터 자동 수집·대시보드·자동 리포트"
+   ],
+   "problem": "여러 광고 매체 리포트를 엑셀로 취합하는 수작업을 없앤다",
+   "users": "광고주 마케터·광고 대행사",
+   "features": [
+    "구글·메타·틱톡·네이버·카카오 데이터 통합",
+    "매일 새벽 공식 API 수집",
+    "엑셀·구글 시트 자동 업데이트",
+    "API·MCP",
+    "예약 리포트 발송·임계값 감시"
+   ],
+   "automation_scope": "매체 데이터 수집·정규화, 일정에 따른 리포트 발송, 비용 급등 감시",
+   "human_scope": "매체 연결, 리포트 양식 결정",
+   "korea": "국내 기업, 네이버·카카오 매체 연동",
+   "pricing": "Standard 연 400만 원(부가세 별도), 맞춤 리포트는 견적",
+   "evidence": [
+    {
+     "claim": "구글·메타·틱톡부터 네이버·카카오까지 광고 매체 데이터를 통합한다.",
+     "quote": "구글·메타·틱톡부터 네이버·카카오까지 캠페인에 쓰는 광고 매체를 하나의 데이터로 통합합니다.",
+     "url": "https://bizspring.co.kr/prd_air.php",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "매일 새벽 각 매체 공식 API에서 데이터를 받아 정리한다.",
+     "quote": "매일 새벽 각 매체의 공식 API에서 집행과 성과 데이터를 받아 하나의 기준으로 정리하므로",
+     "url": "https://bizspring.co.kr/prd_air.php",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "요금은 연 400만 원(월 약 33만 원)이다.",
+     "quote": "요금 연 400만 원을 월 기준으로 환산하면 약 33만 원입니다.",
+     "url": "https://bizspring.co.kr/prd_air.php",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "아임리포트(ImReport)",
+   "vendor": "아임리포트",
+   "origin": "국내",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "광고 매체 데이터 자동 수집·대시보드·자동 리포트"
+   ],
+   "problem": "매체별 성과를 구글 스프레드시트로 자동으로 모은다",
+   "users": "퍼포먼스 마케터(중소 규모)",
+   "features": [
+    "네이버 검색광고·카카오 모먼트·메타·구글·GA4 연동",
+    "구글 스프레드시트 자동 업데이트",
+    "소재 썸네일·검색어 데이터",
+    "스케줄 수집"
+   ],
+   "automation_scope": "매체 데이터 수집·컬럼·단위 정리·시트 갱신",
+   "human_scope": "시트 구성·분석",
+   "korea": "네이버 검색광고·카카오 모먼트·네이버 검색 트렌드 연동",
+   "pricing": "무료로 시작 가능(유료 요금 미확인)",
+   "evidence": [
+    {
+     "claim": "정해진 시간에 자동 수집·업데이트하도록 스케줄을 설정한다.",
+     "quote": "매일 원하는 시간에, 원하는 위치에 자동 수집 및 업데이트",
+     "url": "https://imreport.io",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "네이버 검색광고 데이터를 키워드·검색어별 전환까지 동기화한다.",
+     "quote": "네이버 검색광고 캠페인부터 키워드, 검색어별 세부 전환까지 10분이면 동기화.",
+     "url": "https://imreport.io",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "네이버 애널리틱스",
+   "vendor": "네이버",
+   "origin": "국내",
+   "type": "플랫폼 내장 기능",
+   "area": "성과 측정",
+   "tasks": [
+    "웹·앱 행동 분석"
+   ],
+   "problem": "사이트 유입 검색어·페이지·방문 현황을 무료로 확인한다",
+   "users": "소상공인·중소 사이트 운영자·마케터",
+   "features": [
+    "유입 검색어·검색엔진 분석",
+    "페이지 분석",
+    "방문 분석",
+    "네이버 검색광고 전환",
+    "보고서 권한 공유"
+   ],
+   "automation_scope": "방문·유입 데이터 자동 수집과 보고서 생성",
+   "human_scope": "보고서 해석, 사이트 개선",
+   "korea": "네이버 서비스, 한국어, 네이버 검색광고 전환 연동",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "유입분석으로 방문자가 어떤 검색어·검색엔진으로 왔는지 알 수 있다.",
+     "quote": "방문자들이 어떤 검색어를 통해 내 사이트에 방문하는지, 주로 사용하는 검색엔진은 무엇인지 알 수 있습니다.",
+     "url": "https://help.naver.com/service/9864/contents/15298?osType=PC&lang=ko",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "GA4",
+   "vendor": "Google",
+   "origin": "해외",
+   "type": "플랫폼 내장 기능",
+   "area": "성과 측정",
+   "tasks": [
+    "웹·앱 행동 분석",
+    "AI 인사이트(이상 탐지·자연어 질의)"
+   ],
+   "problem": "웹·앱 행동과 전환을 분석하고 이상 변화를 자동으로 알린다",
+   "users": "모든 규모의 웹·앱 마케터·분석가",
+   "features": [
+    "자동 인사이트(이상 변화 감지)",
+    "커스텀 인사이트·이메일 알림(속성당 50개)",
+    "Ask Advisor(Gemini 기반 대화형 분석, 베타)"
+   ],
+   "automation_scope": "이상 변화·트렌드 감지 알림, 자연어 질문 응답",
+   "human_scope": "알림 조건 설정, 답변 검증·결정",
+   "korea": "한국어 UI 지원(카카오·네이버 매체 직접 연동은 확인 못 함)",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "GA4 자동 인사이트는 데이터의 비정상 변화·추세를 감지해 자동으로 알린다.",
+     "quote": "Automated insights: Analytics Intelligence detects unusual changes or emerging trends in your data and notifies you automatically",
+     "url": "https://support.google.com/analytics/answer/9443595?hl=en",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Ask Advisor는 Gemini 기반의 대화형 분석 기능이다.",
+     "quote": "Ask Advisor is an agentic conversational experience in Google Analytics, powered by advanced Gemini models",
+     "url": "https://support.google.com/analytics/answer/16675569",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Google Ads 매장 방문 전환",
+   "vendor": "Google",
+   "origin": "해외",
+   "type": "플랫폼 내장 기능",
+   "area": "성과 측정",
+   "tasks": [
+    "매장·오프라인 성과 측정"
+   ],
+   "problem": "온라인 광고가 매장 방문에 준 영향을 측정한다",
+   "users": "오프라인 매장을 가진 소매·외식·자동차 광고주",
+   "features": [
+    "매장 방문 전환 추적",
+    "모델링 추정치",
+    "옴니채널 최적화"
+   ],
+   "automation_scope": "광고 상호작용 후 방문을 모델링해 리포트",
+   "human_scope": "매장 위치 연결, 해석",
+   "korea": "국내 제공 여부·자격 요건은 확인 못 함",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "매장 방문 전환 추적으로 광고가 매장 방문에 미친 영향을 측정할 수 있다.",
+     "quote": "you can use store visits conversion tracking to help you learn how your ads influence store visits",
+     "url": "https://support.google.com/google-ads/answer/6100636?hl=en",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "클릭·조회 후 방문 데이터로 모델링된 수치를 만든다.",
+     "quote": "Google Ads creates modeled numbers by using current and past data on the number of customers who click or view your ads and later visit your store.",
+     "url": "https://support.google.com/google-ads/answer/6100636?hl=en",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "AppsFlyer",
+   "vendor": "AppsFlyer",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "유입 경로 추적·어트리뷰션(UTM·딥링크·MMP)"
+   ],
+   "problem": "모바일·웹·CTV 광고 어트리뷰션과 오디언스 세분화",
+   "users": "게임·커머스 등 앱 마케터(중견~대기업)",
+   "features": [
+    "모바일·웹·CTV 어트리뷰션",
+    "Measurement suite",
+    "오디언스 세분화"
+   ],
+   "automation_scope": "설치·이벤트 어트리뷰션, 오디언스 생성",
+   "human_scope": "캠페인·오디언스 전략",
+   "korea": "한국어 페이지·국내 고객 사례(비트망고·코오롱몰) 있음",
+   "pricing": "",
+   "evidence": [
+    {
+     "claim": "비트망고는 Measurement suite·모바일 어트리뷰션을 사용했다.",
+     "quote": "Products: Measurement suite Mobile attribution",
+     "url": "https://appsflyer.com/customers/bitmango",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Supermetrics",
+   "vendor": "Supermetrics",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "광고 매체 데이터 자동 수집·대시보드·자동 리포트"
+   ],
+   "problem": "광고·분석 매체 데이터를 시트·BI·AI 도구로 자동 전송해 리포트를 만든다",
+   "users": "대행사·인하우스 마케터",
+   "features": [
+    "매체 커넥터",
+    "스프레드시트·BI·데이터웨어하우스 전송",
+    "ChatGPT·Claude·Copilot 연동"
+   ],
+   "automation_scope": "데이터 수집·전송·리포트 갱신",
+   "human_scope": "리포트 설계·해석",
+   "korea": "네이버·카카오 커넥터는 확인 못 함",
+   "pricing": "Starter 월 $59(연간 결제 시 $44)부터",
+   "evidence": [
+    {
+     "claim": "Starter는 월 59달러(연간 결제 44달러)부터다.",
+     "quote": "For individuals and small teams starting with marketing intelligence. From From $ 59 $ 44 USD per month",
+     "url": "https://supermetrics.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Funnel",
+   "vendor": "Funnel",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "광고 매체 데이터 자동 수집·대시보드·자동 리포트",
+    "MMM·증분 측정"
+   ],
+   "problem": "마케팅 데이터를 통합하고 MMM·증분 테스트로 측정한다",
+   "users": "대행사·중견 이상 마케팅 데이터팀",
+   "features": [
+    "600+ 커넥터",
+    "Funnel AI",
+    "Funnel MCP",
+    "Funnel Measure(MMM+증분 테스트)"
+   ],
+   "automation_scope": "데이터 수집·정제·전송, 리포트",
+   "human_scope": "데이터 모델·측정 설계",
+   "korea": "확인 못 함",
+   "pricing": "Starter 월 $300부터(연간 결제), 상위 플랜 월 $600부터",
+   "evidence": [
+    {
+     "claim": "Funnel은 월 300달러(연간 결제)부터 시작한다.",
+     "quote": "Starts from $ 300 / month, billed annually",
+     "url": "https://funnel.io/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Funnel Measure는 MMM과 증분 테스트를 제공한다.",
+     "quote": "Funnel Measure Marketing mix modeling with incrementality testing",
+     "url": "https://funnel.io/case-studies/mediaschneider",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Google Meridian",
+   "vendor": "Google",
+   "origin": "해외",
+   "type": "오픈소스",
+   "area": "성과 측정",
+   "tasks": [
+    "MMM·증분 측정"
+   ],
+   "problem": "채널별 증분 기여·ROI를 추정해 예산을 재배분한다",
+   "users": "데이터 사이언티스트·측정 파트너·대형 광고주",
+   "features": [
+    "베이지안 MMM",
+    "도달·빈도 반영",
+    "실험 기반 보정",
+    "시나리오 플래닝·예산 최적화"
+   ],
+   "automation_scope": "모델 추정·ROI·반응곡선·예산 최적화 계산",
+   "human_scope": "데이터 준비, 사전분포 설정, 결과 검증",
+   "korea": "오픈소스라 국내 사용 가능, 한국어 문서는 확인 못 함",
+   "pricing": "오픈소스(무료)",
+   "evidence": [
+    {
+     "claim": "Meridian은 구글이 만든 오픈소스 MMM이며 2025년 1월 모두에게 공개됐다.",
+     "quote": "Meridian is the open-source Marketing Mix Model (MMM) built by Google",
+     "url": "https://blog.google/products/ads-commerce/meridian-marketing-mix-model-open-to-everyone/",
+     "date": "2025-01-29",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Meridian 학습·인증을 받은 20개 이상 측정 파트너 프로그램을 도입했다.",
+     "quote": "we’re also introducing a partner program with over 20 measurement partners trained and certified on Meridian",
+     "url": "https://blog.google/products/ads-commerce/meridian-marketing-mix-model-open-to-everyone/",
+     "date": "2025-01-29",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Meta Robyn",
+   "vendor": "Meta",
+   "origin": "해외",
+   "type": "오픈소스",
+   "area": "성과 측정",
+   "tasks": [
+    "MMM·증분 측정"
+   ],
+   "problem": "MMM 모델링을 자동화해 사람의 편향을 줄이고 예산 배분을 돕는다",
+   "users": "분석가·데이터 사이언티스트",
+   "features": [
+    "AI/ML 기반 MMM",
+    "하이퍼파라미터 자동 탐색(진화 알고리즘)",
+    "예산 배분 최적화",
+    "릿지 회귀"
+   ],
+   "automation_scope": "하이퍼파라미터 탐색, 모델 후보 생성, 예산 배분 계산",
+   "human_scope": "모델 선택·검증, 데이터 준비",
+   "korea": "오픈소스라 국내 사용 가능",
+   "pricing": "오픈소스(MIT 라이선스)",
+   "evidence": [
+    {
+     "claim": "Robyn은 Meta Marketing Science의 AI/ML 기반 오픈소스 MMM 패키지다.",
+     "quote": "Robyn is an experimental, AI/ML-powered and open sourced Marketing Mix Modeling (MMM) package from Meta Marketing Science.",
+     "url": "https://github.com/facebookexperimental/Robyn",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    },
+    {
+     "claim": "Robyn 사례로 Resident의 매출 20% 증가 등이 소개돼 있다.",
+     "quote": "How Resident Increased Revenue 20% by Adopting Facebook's Open-Source MMM Solution",
+     "url": "https://facebookexperimental.github.io/Robyn/docs/case-studies/",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Amplitude",
+   "vendor": "Amplitude",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "웹·앱 행동 분석",
+    "AI 인사이트(이상 탐지·자연어 질의)",
+    "A/B 테스트·실험"
+   ],
+   "problem": "제품·마케팅 행동 분석과 실험을 AI 에이전트로 상시 수행한다",
+   "users": "PM·그로스 마케터·분석가",
+   "features": [
+    "제품·마케팅 분석",
+    "세션 리플레이·히트맵",
+    "실험",
+    "AI Agents·MCP"
+   ],
+   "automation_scope": "사용자 행동 분석·실험 실행·최적화를 에이전트가 상시 수행",
+   "human_scope": "목표 설정, 에이전트 결과 검토",
+   "korea": "국내 파트너(AB180 CS Hub에 Amplitude 포함) 확인, 한국어 UI는 확인 못 함",
+   "pricing": "Free 월 200만 이벤트, Plus $0부터, Enterprise 별도(AI Agents·MCP 포함)",
+   "evidence": [
+    {
+     "claim": "Amplitude AI Agents는 24시간 사용자 행동 분석·실험·최적화를 수행한다.",
+     "quote": "AI Agents work 24/7 to analyze user behavior, run experiments, and optimize product experiences",
+     "url": "https://amplitude.com/press/ai-agents",
+     "date": "2025-06-10",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "무료 플랜은 월 200만 이벤트를 제공한다.",
+     "quote": "Free 2M Events/month forever.",
+     "url": "https://amplitude.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  },
+  {
+   "name": "Statsig",
+   "vendor": "Statsig",
+   "origin": "해외",
+   "type": "SaaS",
+   "area": "성과 측정",
+   "tasks": [
+    "A/B 테스트·실험"
+   ],
+   "problem": "실험·기능 플래그·분석을 한 플랫폼에서 대규모로 돌린다",
+   "users": "제품·엔지니어링·그로스 팀",
+   "features": [
+    "실험",
+    "기능 플래그",
+    "분석",
+    "세션 리플레이"
+   ],
+   "automation_scope": "실험 배정·지표 계산·통계",
+   "human_scope": "실험 설계, 결과 판단",
+   "korea": "확인 못 함",
+   "pricing": "Developer 무료, Pro 월 $150(500만 이벤트 포함, 이후 1천 건당 $0.05)",
+   "evidence": [
+    {
+     "claim": "Pro 플랜은 월 150달러에 500만 이벤트를 포함한다.",
+     "quote": "Pro A complete platform for growing teams $150 /mo 5M events included, then $0.05 per 1K events",
+     "url": "https://statsig.com/pricing",
+     "date": "2026-11",
+     "reliability": "vendor_doc"
+    }
+   ]
+  }
+ ],
+ "use_cases": [
+  {
+   "company": "크몽",
+   "tool": "에어브릿지(Airbridge)",
+   "area": "성과 측정",
+   "task": "광고 매체 데이터 자동 수집·대시보드·자동 리포트",
+   "what": "에어브릿지 Actuals Report API로 리포트 3종 데이터를 자동 수집하고, AI 코딩 어시스턴트로 매체 네이밍→내부 카테고리 매핑·비용/매출 매칭 코드를 짜서 로컬 스케줄러로 매일 실행",
+   "automation_scope": "API 호출·데이터 변환·스프레드시트 업데이트",
+   "human_scope": "최종 확인과 대시보드 반영",
+   "result": "일일 리포트 작업 시간 83% 단축",
+   "evidence": [
+    {
+     "claim": "크몽은 에어브릿지 API 자동화로 일일 리포트 작업 시간을 83% 줄였다.",
+     "quote": "일일 리포트 작업 시간 83% 단축",
+     "url": "https://www.airbridge.io/ko/case-studies/api-ai",
+     "date": "2026-03",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "매일 스크립트가 API 호출부터 시트 업데이트까지 사람 개입 없이 실행된다.",
+     "quote": "매일 지정된 시간에 Python 스크립트가 자동으로 실행되어 API 호출부터 데이터 변환, 스프레드시트 업데이트까지 사람의 개입 없이 완료됩니다.",
+     "url": "https://www.airbridge.io/ko/case-studies/api-ai",
+     "date": "2026-03",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "비트바이트(돈이돼지)",
+   "tool": "에어브릿지(Airbridge)",
+   "area": "성과 측정",
+   "task": "유입 경로 추적·어트리뷰션(UTM·딥링크·MMP)",
+   "what": "에어브릿지 pLTV로 유저당 예상 매출을 확인하고 주요 매체 광고비를 늘림",
+   "automation_scope": "예측 LTV 산출",
+   "human_scope": "광고비 증액 결정",
+   "result": "매출 10배 성장, DAU 11만+",
+   "evidence": [
+    {
+     "claim": "pLTV로 유저당 매출을 예측하게 된 뒤 광고비를 공격적으로 집행했다.",
+     "quote": "에어브릿지에서 pLTV를 확인할 수 있게 된 이후 유저 한 명당 남길 매출을 예측할 수 있게 되었고, 광고비를 공격적으로 집행할 수 있는 확신이 생겼어요.",
+     "url": "https://www.airbridge.io/ko/case-studies/bitbyte-predictive-ltv-revenue-growth",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "마이플레이컴퍼니(플랩풋볼)",
+   "tool": "핵클(Hackle)",
+   "area": "성과 측정",
+   "task": "A/B 테스트·실험",
+   "what": "홈 화면 개선을 A/B 테스트 반복으로 진행",
+   "automation_scope": "실험 배정·지표 분석",
+   "human_scope": "가설·개선안 설계",
+   "result": "사용자당 매치 신청 수 약 9.76% 개선",
+   "evidence": [
+    {
+     "claim": "A/B 테스트 반복으로 사용자당 매치 신청 수를 약 9.76% 개선했다.",
+     "quote": "성과: 사용자 당 매치 신청 수 약 9.76% 개선",
+     "url": "https://blog.hackle.io/post/plabfootball",
+     "date": "2024-11-25",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "타임앤코(롱블랙)",
+   "tool": "핵클(Hackle)",
+   "area": "성과 측정",
+   "task": "A/B 테스트·실험",
+   "what": "콘텐츠 탐색 경험과 결제 페이지를 A/B 테스트",
+   "automation_scope": "실험 배정·결과 집계",
+   "human_scope": "가설 검증·의사결정",
+   "result": "구독자 콘텐츠 열람 약 7% 증가, 최종 구독 완료율 10% 개선",
+   "evidence": [
+    {
+     "claim": "A/B 테스트로 최종 구독 완료율을 10% 개선했다.",
+     "quote": "유료 구독자 콘텐츠 열람 횟수 약 7% 증가 - 최종 구독 완료율 10% 개선",
+     "url": "https://blog.hackle.io/post/time-n-co-longblack",
+     "date": "2026-01-08",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "노크",
+   "tool": "핵클(Hackle)",
+   "area": "성과 측정",
+   "task": "AI 인사이트(이상 탐지·자연어 질의)",
+   "what": "핵클·데이터브릭스·노션·슬랙을 Claude 기반 MCP로 연결해 데이터를 불러와 정리·시각화하고 주간·월간 리포트 작성",
+   "automation_scope": "데이터 조회·정리·시각화",
+   "human_scope": "질문 정의·의사결정",
+   "result": "데이터 정리 시간 절반 이하로 감소",
+   "evidence": [
+    {
+     "claim": "핵클 등을 Claude 기반 MCP로 연결해 리포트를 만든다.",
+     "quote": "노크 팀은 핵클, 데이터브릭스, 노션, 슬랙을 클로드(Claude) 기반 MCP로 연결했습니다.",
+     "url": "https://blog.hackle.io/post/knowk-mcp",
+     "date": "2025-11-25",
+     "reliability": "company_claim"
+    },
+    {
+     "claim": "데이터 정리 시간이 절반 이하로 줄었다.",
+     "quote": "이제는 데이터를 정리하는 데 쓰는 시간이 절반 이하로 줄었어요.",
+     "url": "https://blog.hackle.io/post/knowk-mcp",
+     "date": "2025-11-25",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "비트망고",
+   "tool": "AppsFlyer",
+   "area": "성과 측정",
+   "task": "유입 경로 추적·어트리뷰션(UTM·딥링크·MMP)",
+   "what": "AppsFlyer 측정 도구로 데이터 정확도를 높이고 캠페인 최적화 주기를 단축",
+   "automation_scope": "어트리뷰션 데이터 집계",
+   "human_scope": "캠페인 최적화 결정",
+   "result": "D14 ROAS 57% 상승, 최적화 주기 1~2주 단축",
+   "evidence": [
+    {
+     "claim": "비트망고는 D14 ROAS 57% 상승과 최적화 주기 1~2주 단축을 얻었다.",
+     "quote": "57% ROAS increase rate by Day 14 1 to 2 weeks Optimization cycle shortened",
+     "url": "https://appsflyer.com/customers/bitmango",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "국내"
+  },
+  {
+   "company": "Gravital",
+   "tool": "Supermetrics",
+   "area": "성과 측정",
+   "task": "광고 매체 데이터 자동 수집·대시보드·자동 리포트",
+   "what": "HubSpot 파트너 대행사가 고객 리포트를 Supermetrics로 자동화(이전엔 고객당 월 2시간 PPT 작업)",
+   "automation_scope": "데이터 수집·리포트 갱신",
+   "human_scope": "고객 커뮤니케이션",
+   "result": "리포트 100% 자동화, 리포트 시간 53% 절감",
+   "evidence": [
+    {
+     "claim": "Gravital은 리포트 100% 자동화와 리포트 시간 53% 절감을 달성했다.",
+     "quote": "Gravital achieved 100% reporting automation, saved 53% of time on client reporting",
+     "url": "https://supermetrics.com/case-studies/gravital",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Mediaschneider",
+   "tool": "Funnel",
+   "area": "성과 측정",
+   "task": "광고 매체 데이터 자동 수집·대시보드·자동 리포트",
+   "what": "Funnel로 고객 리포트를 간소화하고 수작업 오류 제거",
+   "automation_scope": "데이터 통합·리포트",
+   "human_scope": "고객 관계·분석",
+   "result": "연 7,500시간 이상 절감",
+   "evidence": [
+    {
+     "claim": "Funnel 도입으로 연 7,500 man-hour 이상을 절감했다.",
+     "quote": "The adoption of Funnel led to more than 7500 saved man-hours per year",
+     "url": "https://funnel.io/case-studies/mediaschneider",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Alaska Airlines(Adswerve)",
+   "tool": "Google Meridian",
+   "area": "성과 측정",
+   "task": "MMM·증분 측정",
+   "what": "컨설팅사 Adswerve가 Meridian MMM으로 분석하고 중간 퍼널 쪽으로 예산을 이동",
+   "automation_scope": "MMM 추정",
+   "human_scope": "예산 재배분 결정",
+   "result": "광고 매출 11% 증가 전망(약 1억 달러 기회)",
+   "evidence": [
+    {
+     "claim": "Adswerve는 Meridian으로 광고 매출 11% 증가 가능성을 찾았다.",
+     "quote": "Adswerve identified an 11% projected increase in addressable advertising revenue by using Google’s open-source marketing mix model.",
+     "url": "https://www.marketingdive.com/news/alaska-airlines-100m-revenue-opportunity-google-meridian/752345/",
+     "date": "2025-07-08",
+     "reliability": "third_party"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "fluege.de",
+   "tool": "Google Meridian",
+   "area": "성과 측정",
+   "task": "MMM·증분 측정",
+   "what": "3년치 10개 채널 데이터를 Meridian으로 분석해 예산 배분 최적화",
+   "automation_scope": "MMM 추정·최적화",
+   "human_scope": "예산 결정",
+   "result": "매출 설명력 90%, 최적 배분 시 증분 매출 +3.8%",
+   "evidence": [
+    {
+     "claim": "Meridian 분석으로 최적 배분 시 증분 매출 +3.8%를 얻었다.",
+     "quote": "90% of revenue explained +3.8% incremental revenue with optimized allocation",
+     "url": "https://www.digitl.com/insights/fluege.de-better-budget-allocation-with-meridian-mmm",
+     "date": "2025-03-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Notion",
+   "tool": "Statsig",
+   "area": "성과 측정",
+   "task": "A/B 테스트·실험",
+   "what": "Statsig으로 실험·기능 플래그 운영을 확대",
+   "automation_scope": "실험 운영·지표 계산",
+   "human_scope": "실험 설계",
+   "result": "분기 실험 수 한 자릿수→수백 개, 활성화 6% 증가, 실험 속도 30배",
+   "evidence": [
+    {
+     "claim": "Notion은 Statsig 도입 후 활성화 6% 증가와 실험 속도 30배를 얻었다.",
+     "quote": "6% increase in activation 300+ product experiments, 30x experimentation velocity",
+     "url": "https://statsig.com/customers/notion",
+     "date": "2026-11",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  },
+  {
+   "company": "Mercado Libre",
+   "tool": "Amplitude",
+   "area": "성과 측정",
+   "task": "AI 인사이트(이상 탐지·자연어 질의)",
+   "what": "Amplitude 에이전트·대시보드·MCP로 분석을 전 직원에게 확대",
+   "automation_scope": "에이전트가 인사이트 공유·후속 분석 실행",
+   "human_scope": "에이전트 생성·결정",
+   "result": "70명이 126개 에이전트 생성, 71%가 가치 작업 수행, 에이전트 발송 이메일 오픈율 52%",
+   "evidence": [
+    {
+     "claim": "MELI 사용자 70명이 126개 에이전트를 만들었고 에이전트 이메일 오픈율은 52%다.",
+     "quote": "To date, 70 MELI users have created 126 agents, with 71% completing value operations, such as sharing insights or triggering follow-up analyses. Agent-generated emails see a 52% open rate",
+     "url": "https://amplitude.com/blog/mercado-libre-ai-native-amplitude",
+     "date": "2026-02-17",
+     "reliability": "company_claim"
+    }
+   ],
+   "company_origin": "해외"
+  }
+ ],
+ "stats": [
+  {
+   "topic": "통합 마케팅 측정 활용",
+   "finding": "미국 VP급 마케터 조사에서 MMM 71%, MTA 69%, 증분성 테스트 52%가 활용하나 UMM을 매우 잘한다는 응답은 9%",
+   "figures": "MMM 71%; MTA 69%; 데이터 기반 어트리뷰션 62%; 증분성 테스트 52%; 첫·마지막 클릭 32%",
+   "sample": "Winterberry Group(Lifesight 지원), 미국 VP급 이상 121명, 2026년 7~8월",
+   "quote": "플랫폼이 제공하는 자체 리포팅 도구는 93%가 사용했고, 마케팅 믹스 모델링(MMM)은 71%, 멀티터치 어트리뷰션(MTA)은 69%, 데이터 기반 어트리뷰션은 62%였다.",
+   "url": "https://www.madtimes.co.kr/news/articleView.html?idxno=29137",
+   "date": "2026-10-03",
+   "reliability": "survey",
+   "region": "해외"
+  },
+  {
+   "topic": "마케팅 데이터 분석 시간 부족",
+   "finding": "마케터 56%가 데이터를 분석할 시간이 부족하고 38%가 데이터 통합·리포팅 툴에 어려움",
+   "figures": "데이터량 2020년 대비 230% 증가; 시간 부족 56%; 월 1회 이하 리포트 검토 32%; 리포팅 툴 어려움 38%",
+   "sample": "Supermetrics 2025 마케팅 데이터 보고서, 6천 개 기업 데이터와 마케터 200명 설문",
+   "quote": "마케터의 56%는 데이터를 효과적으로 분석할 시간이 부족하다고 답했으며, 32%는 마케팅 리포트를 한 달에 한 번 이하만 검토하고 있다고 응답했다.",
+   "url": "https://www.gttkorea.com/news/articleView.html?idxno=17404",
+   "date": "2025-03-07",
+   "reliability": "survey",
+   "region": "해외"
+  }
+ ],
+ "gaps": [
+  "국내 마케터 대상 성과 측정·리포트 자동화 설문 통계를 원문으로 확보하지 못함(DMC리포트는 유료/본문 미노출, 위그로스 설문은 페이지 로드 실패) — stats는 해외 조사 2건만",
+  "Triple Whale(Moby Agents, Porter Media 리포트 시간 70% 절감)은 Cloudflare 차단으로 원문 미확보, 제외",
+  "Northbeam·Optimizely(Opal)·Branch·Adjust·Mixpanel·VWO는 원문 일부만 확보되거나(Adjust 차단) 분량 상한으로 tools에서 제외",
+  "빅인·데이터라이즈 리포트·아드리엘의 성과 측정 기능은 원문 미확보(아드리엘 페이지 JS 렌더링) 또는 2022년 자료라 제외",
+  "애드브릭스 고객 사례(수치)와 요금 금액은 확인 못 함",
+  "국내 매장·오프라인 성과(쿠폰 사용·방문) 측정 툴과 사례를 원문으로 확보하지 못함 — Google Ads 매장 방문 전환만 포함, 국내 제공 여부 미확인",
+  "Meta Robyn 개별 사례(Resident 매출 20% 등)는 사례 목록 제목만 확인, 본문 미확보",
+  "날짜가 없는 페이지는 수집 시점(2026-11)을 date로 기록"
+ ]
+}
