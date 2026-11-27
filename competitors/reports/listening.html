@@ -1,0 +1,65 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>경쟁사 언급·광고 분석 툴 조사</title><style>
+@page{size:A4;margin:13mm 13mm}
+body{font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:#111827;font-size:11.3px;line-height:1.55;margin:0}
+header{border-bottom:3px solid #111827;padding-bottom:8px;margin-bottom:10px}.eyebrow{font-size:10.5px;color:#6b7280;letter-spacing:.04em}
+h1{font-size:22px;margin:2px 0 4px}h2{font-size:15px;margin:16px 0 6px;break-after:avoid}h3{font-size:12px;margin:10px 0 4px;break-after:avoid}
+.lead{margin:0;color:#374151}.muted{color:#6b7280}code{font-size:10px;background:#f3f4f6;padding:0 3px;border-radius:3px}
+.answer{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:4px 14px 6px;margin-bottom:6px}.answer li{margin:3px 0}
+table{width:100%;border-collapse:collapse;margin:4px 0 8px}th,td{border:1px solid #e5e7eb;padding:4px 6px;text-align:left;vertical-align:top}th{background:#f3f4f6;font-size:10.5px}
+tr{break-inside:avoid}thead{display:table-header-group}
+blockquote{margin:6px 0;background:#fff7ed;border-left:3px solid #f59e0b;padding:4px 10px}
+.note{background:#f9fafb;border-left:3px solid #9ca3af;padding:4px 8px;margin:6px 0}
+.tag{font-size:9.8px;background:#e0e7ff;color:#3730a3;border-radius:999px;padding:0 6px;white-space:nowrap}
+.tag.in{background:#fef3c7;color:#92400e}
+sup a{color:#2563eb;text-decoration:none;font-size:9px}
+ol.src{font-size:9.6px;color:#374151;padding-left:22px}ol.src li{margin:2px 0;break-inside:avoid}ol.src q{color:#6b7280}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:8px}.shots figure{margin:0;border:1px solid #e5e7eb;border-radius:6px;padding:4px;break-inside:avoid}
+.shots img{width:100%;max-height:260px;object-fit:cover;object-position:top}.shots figcaption{font-size:9.8px;color:#6b7280}
+</style></head><body><header><div class="eyebrow">알에스팀 마케팅 봇 · 경쟁사 역추적</div><h1>경쟁사 언급·광고 분석 툴 조사</h1><p class="lead">경쟁사가 어디서 얼마나 언급되는지, 광고비를 얼마나 쓰는지 알려 주는 기존 툴 11개를 공식 문서로 확인하고, 로그인 없이 되는 범위에서 경쟁사를 직접 조회했습니다. 조회일 2026-11-27.</p></header><p>회의 요구는 두 가지였다. ① 경쟁사가 어디서(사이트·카페·블로그·SNS) 얼마나 언급되는지, ② 광고비 집계. 툴 11개를 공식 문서로 확인했고, 로그인 없이 되는 범위에서 경쟁사를 직접 조회했다. 상세 근거는 <code>listening.json</code>, 화면은 <code>shots/listening/</code>에 있다.</p>
+<h2>결론</h2>
+<ul>
+<li><b>언급량(블로그·뉴스)</b>: 썸트렌드로 해결된다. 로그인 없이도 최근 7일 블로그·뉴스 언급량을 볼 수 있다.</li>
+<li><b>네이버 카페</b>: 썸트렌드 비즈니스 플랜(월 200만 원)이나 Sometrend Data+ API(월 75만 원부터)에서만 문서상 지원한다. 무료·저가 플랜으로는 안 된다.</li>
+<li><b>광고비 집계</b>: 기존 툴로는 거의 안 된다. Similarweb·Semrush·SpyFu에 광고비 추정 기능이 있지만 Google Ads·디스플레이 기준이다. 네이버 파워링크, 당근 광고, 카카오 광고에서 경쟁사가 얼마를 쓰는지 추정하는 툴은 찾지 못했다. 네이버 키워드 도구도 키워드별 &#x27;월평균노출광고수&#x27;만 준다.</li>
+<li><b>소규모 경쟁사</b>: 대부분 데이터가 바닥이다. 단골톡·내근처픽·동네핫딜은 7일 언급 0건이다. 모바일인덱스 비로그인 검색에서도 앱이 안 나왔다.</li>
+</ul>
+<h2>실제 조회 결과 (썸트렌드, 비로그인, 2026-11-20~26, 블로그+뉴스)</h2>
+<table><thead><tr><th>경쟁사</th><th>검색어</th><th>언급량</th><th>채널</th></tr></thead><tbody><tr><td>토스포스 쿠폰</td><td>토스플레이스</td><td>308건</td><td>블로그 293 · 뉴스 15</td></tr><tr><td>당근 비즈프로필 쿠폰</td><td>당근 비즈프로필</td><td>128건</td><td>블로그 128</td></tr><tr><td>도도포인트</td><td>도도포인트</td><td>55건</td><td>블로그 55</td></tr><tr><td>럭키밀</td><td>럭키밀</td><td>40건</td><td>블로그 40</td></tr><tr><td>페이히어</td><td>페이히어</td><td>26건</td><td>블로그 26</td></tr><tr><td>마이쿠폰</td><td>마이쿠폰</td><td>11건</td><td>블로그 11 (일반명사와 섞임)</td></tr><tr><td>단골플러스</td><td>단골플러스</td><td>1건</td><td>블로그 1</td></tr><tr><td>단골톡 / 내근처픽 / 동네핫딜</td><td>같음</td><td>0건</td><td>언급 없음</td></tr></tbody></table>
+<ul>
+<li><b>네이버 데이터랩(1년 검색 추이, 상대값)</b></li>
+<ul>
+<li>PLUS 묶음: 페이히어가 평소 가장 꾸준하다. 도도포인트(2025-12-19)와 토스플레이스(2026-06-26)는 한 번씩 급등했다. 단골톡은 거의 0이다.</li>
+<li>ON 묶음: 럭키밀만 검색량이 있고 나머지는 0에 붙어 있다.</li>
+</ul>
+<li><b>해외 툴 조회는 전부 값 없음</b></li>
+<ul>
+<li>Similarweb: 403 차단</li>
+<li>SpyFu: Cloudflare 차단</li>
+<li>Semrush: 가입 창</li>
+<li>Ahrefs: 사람 확인(CAPTCHA). 통과를 시도하지 않았다.</li>
+</ul>
+<li><b>블랙키위</b>: 결과 화면이 비어 있었다.</li>
+</ul>
+<h2>툴별 요약</h2>
+<table><thead><tr><th>툴</th><th>네이버 카페·블로그</th><th>광고비 추정</th><th>무료</th><th>유료</th></tr></thead><tbody><tr><td>썸트렌드</td><td>예 (카페는 비즈니스만)</td><td>아니오</td><td>비로그인 7일, 가입 시 1개월 블로그·뉴스</td><td>베이직 29,700원 / 프리미엄 149,000원(30일) / 비즈니스 200만 원(월)</td></tr><tr><td>리스닝마인드</td><td>아니오 (검색 인텐트)</td><td>아니오</td><td>7일 체험(가입)</td><td>72만 원부터 (월)</td></tr><tr><td>블랙키위</td><td>미확인</td><td>아니오</td><td>확인 못 함</td><td>13,800원부터 (30일)</td></tr><tr><td>네이버 데이터랩</td><td>아니오 (검색량)</td><td>아니오</td><td>전부 무료, API 하루 1,000회</td><td>무료</td></tr><tr><td>네이버 키워드 도구</td><td>아니오</td><td>아니오</td><td>광고 계정 로그인 필요</td><td>미확인</td></tr><tr><td>Similarweb</td><td>아니오</td><td>예 (Google·디스플레이)</td><td>상위 수준 샘플</td><td>영업 문의</td></tr><tr><td>Semrush</td><td>아니오</td><td>예 (Google Ads)</td><td>하루 10리포트(가입)</td><td>$139부터 (월)</td></tr><tr><td>SpyFu</td><td>아니오</td><td>예 (Google Ads)</td><td>미확인</td><td>$33부터 (월)</td></tr><tr><td>Ahrefs</td><td>미확인</td><td>미확인</td><td>Traffic Checker(CAPTCHA)</td><td>$129부터 (월)</td></tr><tr><td>모바일인덱스</td><td>아니오 (앱만)</td><td>아니오</td><td>가입 후 일부</td><td>원문 가격 미확인</td></tr><tr><td>와이즈앱</td><td>아니오 (앱만)</td><td>아니오</td><td>예시 앱 3개</td><td>300만 원부터 (월)</td></tr></tbody></table>
+<h2>빈 부분 (기존 툴로 안 되는 것)</h2>
+<ol>
+<li>저가로 네이버 카페 언급을 수집하는 방법이 없다.</li>
+<li>국내 매체(네이버·당근·카카오)에 낸 경쟁사 광고의 위치와 광고비를 추정할 수 없다.</li>
+<li>언급 글이 체험단·협찬인지 구분할 수 없다.</li>
+<li>소규모 경쟁사는 어느 툴에서도 측정값이 거의 없다.</li>
+</ol>
+<h2>추천</h2>
+<ol>
+<li><b>썸트렌드 프리미엄 (149,000원/30일, VAT 포함 표기)</b></li>
+<ul>
+<li>블로그·뉴스·인스타·커뮤니티(7,000개+, 회사 발표)·유튜브 언급량과 원문 500건 미리보기를 준다.</li>
+<li>카페가 꼭 필요하면 비즈니스(월 200만 원)나 Data+ API(월 75만 원부터)를 써야 한다.</li>
+<li>먼저 비로그인 7일 조회로 경쟁사 주간 언급을 무료로 기록해 볼 수 있다.</li>
+</ul>
+<li><b>네이버 데이터랩 + 통합 검색어 트렌드 API (무료, 하루 1,000회)</b></li>
+<ul>
+<li>봇에 바로 붙일 수 있는 무료 검색 관심도 지표다.</li>
+</ul>
+</ol>
+<p>광고비 집계는 살 수 있는 툴이 없다. 봇이 직접 만들어야 하는 영역이다. 예를 들어 네이버 검색 결과의 파워링크 노출 여부를 주기적으로 기록하고, 키워드 도구의 클릭 단가를 곱해 추정하는 방식이 있다. 이 방식은 아직 검증하지 않았다.</p><h2>툴별 근거 출처</h2><table><thead><tr><th style='width:40%'>툴</th><th>출처 번호</th></tr></thead><tbody><tr><td>썸트렌드(Sometrend)</td><td><sup><a href="#s1">[1]</a></sup><sup><a href="#s2">[2]</a></sup><sup><a href="#s3">[3]</a></sup></td></tr><tr><td>리스닝마인드(ListeningMind)</td><td><sup><a href="#s4">[4]</a></sup><sup><a href="#s5">[5]</a></sup></td></tr><tr><td>블랙키위(Blackkiwi)</td><td><sup><a href="#s6">[6]</a></sup><sup><a href="#s7">[7]</a></sup></td></tr><tr><td>네이버 데이터랩 검색어트렌드</td><td><sup><a href="#s8">[8]</a></sup><sup><a href="#s9">[9]</a></sup></td></tr><tr><td>네이버 검색광고 키워드 도구</td><td><sup><a href="#s10">[10]</a></sup></td></tr><tr><td>Similarweb</td><td><sup><a href="#s11">[11]</a></sup><sup><a href="#s12">[12]</a></sup></td></tr><tr><td>Semrush</td><td><sup><a href="#s13">[13]</a></sup><sup><a href="#s14">[14]</a></sup></td></tr><tr><td>SpyFu</td><td><sup><a href="#s15">[15]</a></sup></td></tr><tr><td>Ahrefs</td><td><sup><a href="#s16">[16]</a></sup><sup><a href="#s17">[17]</a></sup></td></tr><tr><td>모바일인덱스 INSIGHT</td><td><sup><a href="#s18">[18]</a></sup></td></tr><tr><td>와이즈앱·리테일</td><td><sup><a href="#s19">[19]</a></sup><sup><a href="#s20">[20]</a></sup></td></tr></tbody></table><h2>조회 화면 (일부)</h2><div class="shots"><figure><img src="../tracking/shots/listening/sometrend-토스플레이스.png"><figcaption>썸트렌드 — 토스플레이스 7일 언급량</figcaption></figure><figure><img src="../tracking/shots/listening/sometrend-단골톡.png"><figcaption>썸트렌드 — 단골톡 (언급 없음)</figcaption></figure><figure><img src="../tracking/shots/listening/naver-datalab-plus.png"><figcaption>네이버 데이터랩 — PLUS 경쟁사 검색 추이</figcaption></figure><figure><img src="../tracking/shots/listening/similarweb-payhere.in.png"><figcaption>Similarweb — 차단 화면</figcaption></figure></div><p class="muted">전체 캡처 22장은 저장소 <code>competitors/tracking/shots/listening/</code>에 있습니다.</p><h2>출처</h2><p class="muted">각 출처 아래 인용은 조사 때 원문에서 그대로 옮긴 문장입니다(출처당 최대 3개).</p><ol class="src"><li id="s1" value="1"><a href="https://some.co.kr/pricing">https://some.co.kr/pricing</a><br><q>유튜브 · 네이버·다음 카페</q><br><q>누구나 무료로 최근 1개월의 블로그, 뉴스 채널을 분석할 수 있습니다.</q><br><q>149,000</q></li><li id="s2" value="2"><a href="https://some.co.kr/analysis/social/mention?q=%ED%8E%98%EC%9D%B4%ED%9E%88%EC%96%B4">https://some.co.kr/analysis/social/mention?q=%ED%8E%98%EC%9D%B4%ED%9E%88%EC%96%B4</a><br><q>여기까지는 로그인 없이 볼 수 있어요</q></li><li id="s3" value="3"><a href="https://www.ncloud.com/marketplace/data.some.co.kr">https://www.ncloud.com/marketplace/data.some.co.kr</a><br><q>*제공 데이터: X(트위터), 인스타그램, 블로그, 뉴스, 커뮤니티/카페, 유튜브</q></li><li id="s4" value="4"><a href="https://www.listeningmind.com/ko/plan">https://www.listeningmind.com/ko/plan</a><br><q>₩720,000</q><br><q>위한 7일간의 체험 플랜</q></li><li id="s5" value="5"><a href="https://www.listeningmind.com/ko/daas">https://www.listeningmind.com/ko/daas</a><br><q>네이버와 구글 검색량을 함께 보고, 미국·일본 시장도 같은 API로 조회할 수 있습니다.</q></li><li id="s6" value="6"><a href="https://blackkiwi.net/pricing">https://blackkiwi.net/pricing</a><br><q>13,800</q><br><q>네이버 키워드 분석 10회 / 1분</q></li><li id="s7" value="7"><a href="https://blackkiwi.net/">https://blackkiwi.net/</a><br><q>검색 결과와 AI 답변에서 가장 영향력 있는 웹사이트, 블로그를 알아보세요.</q></li><li id="s8" value="8"><a href="https://datalab.naver.com/keyword/trendSearch.naver">https://datalab.naver.com/keyword/trendSearch.naver</a><br><q>검색어트렌드 네이버통합검색에서 특정 검색어가 얼마나 많이 검색되었는지 확인해보세요.</q></li><li id="s9" value="9"><a href="https://developers.naver.com/docs/serviceapi/datalab/search/search.md">https://developers.naver.com/docs/serviceapi/datalab/search/search.md</a><br><q>통합 검색어 트렌드 API의 하루 호출 한도는 1,000회입니다.</q></li><li id="s10" value="10"><a href="https://ads.naver.com/help/faq/1406">https://ads.naver.com/help/faq/1406</a><br><q>키워드 도구는 [네이버애즈 &gt; 검색광고 &gt; 도구 &gt; 키워드 도구]</q><br><q>조회된 연관키워드의 월간검색수/월평균클릭수/클릭률 등 상세 데이터를 참고하여 키워드를 선별할 수 있습니다.</q></li><li id="s11" value="11"><a href="https://www.similarweb.com/corp/pricing/">https://www.similarweb.com/corp/pricing/</a><br><q>Free data on Similarweb.com is a high-level sample of what we offer and shows a limited set of features without deeper drill downs.</q><br><q>You can also purchase the Similarweb API as a standalone product without a full platform subscription.</q></li><li id="s12" value="12"><a href="https://www.similarweb.com/corp/web/">https://www.similarweb.com/corp/web/</a><br><q>Track cross-channel ad spend</q></li><li id="s13" value="13"><a href="https://www.semrush.com/pricing/seo-ai-search/">https://www.semrush.com/pricing/seo-ai-search/</a><br><q>10 reports per day across all vital tools</q><br><q>instead of $139 monthly</q><br><q>Advanced API data integration</q></li><li id="s14" value="14"><a href="https://www.semrush.com/kb/508-ad-research-positions-report">https://www.semrush.com/kb/508-ad-research-positions-report</a><br><q>This view reveals estimated ad spend during the chosen timeframe.</q></li><li id="s15" value="15"><a href="https://www.spyfu.com/">https://www.spyfu.com/</a><br><q>Membership starts at just $33/month.</q><br><q>Catch changes in ad spend over time.</q><br><q>Build with the SpyFu API</q></li><li id="s16" value="16"><a href="https://ahrefs.com/traffic-checker">https://ahrefs.com/traffic-checker</a><br><q>Break down any site’s traffic across 10+ channels: organic, paid social, referral, direct, AI, email, social, and more.</q></li><li id="s17" value="17"><a href="https://ahrefs.com/pricing">https://ahrefs.com/pricing</a><br><q>129 /mo</q><br><q>API and MCP access</q></li><li id="s18" value="18"><a href="https://www.mobileindex.com/product-info">https://www.mobileindex.com/product-info</a><br><q>회원가입 후 제공 데이터로 모바일인덱스의 일부 데이터를 먼저 확인할 수 있습니다.</q><br><q>모바일인덱스 Insight의 모든 데이터는 안드로이드 및 iOS 기기 기준 데이터이며, Web 데이터는 포함되지 않습니다.</q><br><q>12개월 이용을 약정하고 월 이용료 50% 할인 적용</q></li><li id="s19" value="19"><a href="https://www.wiseapp.co.kr/pricing-plan">https://www.wiseapp.co.kr/pricing-plan</a><br><q>앱의 설치자, 사용자, 사용시간, 사용일수, 실행횟수, 사용연령 등 제공</q><br><q>월 3,000,000원 (부가세 별도)</q></li><li id="s20" value="20"><a href="https://www.wiseapp.co.kr/">https://www.wiseapp.co.kr/</a><br><q>본 정보는 표본조사를 통해 한국인의 사용행태에 대한 통계적 추정치를 제공하는 것입니다.</q></li></ol></body></html>
