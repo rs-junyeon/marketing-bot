@@ -9,7 +9,7 @@ print_pdf() {
     --print-to-pdf="reports/$1.pdf" "file://$PWD/reports/$1.html" 2>/dev/null
   cp "reports/$1.pdf" "../final/$2.pdf"
 }
-print_pdf competitors "쿠핀-경쟁사-조사"
+print_pdf competitors "쿠핀-PLUS-경쟁사-조사"
 print_pdf ads "경쟁사-광고-조회-결과"
 print_pdf listening "경쟁사-언급-광고-분석-툴-조사"
 print_pdf legal "경쟁사-정보-수집-법적-검토"

@@ -193,7 +193,6 @@ def competitor_section(d: dict, src: Sources, label: str) -> str:
 
 def build_competitors() -> str:
     plus = json.loads((ROOT / "plus.json").read_text())
-    on = json.loads((ROOT / "on.json").read_text())
     src = Sources()
     mn = plus.get("meeting_names", {})
     meet = "".join(
@@ -206,28 +205,52 @@ def build_competitors() -> str:
     summary = (
         '<div class="answer"><ul>'
         f"<li><b>쿠핀 PLUS</b>(사장님용) 핵심 경쟁사: {esc(', '.join(c['name'] for c in plus['core']))}</li>"
-        f"<li><b>쿠핀 ON</b>(소비자용) 핵심 경쟁사: {esc(', '.join(c['name'] for c in on['core']))}</li>"
         "<li>회의에서 나온 기프티쇼 비즈·기프티업은 실제 서비스지만, 동네 가게가 직접 쿠폰을 보내는 쿠핀 PLUS와는 결이 달라 <b>간접 경쟁</b>으로 분류했습니다.</li>"
-        "<li>ON 쪽 동네방네는 '결제한 할인을 QR 쿠폰으로 보관해 한 달 동안 쓰는' 구조를 웹에서 안내하고 있어 핵심 재검토 후보입니다(실제 앱 제공 여부는 미확인).</li>"
         "</ul></div>"
     )
-    notes = "".join(f"<li>{esc(strip_urls(n))}</li>" for n in plus["notes"] + on["notes"])
+    notes = "".join(f"<li>{esc(strip_urls(n))}</li>" for n in plus["notes"])
     body = (
         summary
         + f"<h2>회의에서 나온 이름 확인</h2><ul>{meet}</ul>"
         + competitor_section(plus, src, "쿠핀 PLUS")
-        + competitor_section(on, src, "쿠핀 ON")
         + f"<h2>조사 범위와 한계</h2><ul>{notes}</ul>"
         + src.html()
     )
     lead = (
-        "쿠핀 PLUS(소상공인이 손님에게 쿠폰을 보내는 SaaS)와 쿠핀 ON(소비자가 동네 매장 쿠폰을 찾아 받거나 사는 앱)의 국내 경쟁 서비스입니다. "
+        "쿠핀 PLUS(소상공인이 손님에게 쿠폰을 보내는 SaaS)의 국내 경쟁 서비스입니다. "
         f"조사일 {esc(plus['checked_at'])}, 공식 사이트·약관·앱 마켓·언론 원문 기준. 회사가 스스로 밝힌 수치는 '회사 발표'로 표시했습니다."
     )
-    return page("쿠핀 PLUS·ON 경쟁사 조사", "알에스팀 마케팅 봇 · 경쟁사 역추적 준비", lead, body)
+    return page("쿠핀 PLUS 경쟁사 조사", "알에스팀 마케팅 봇 · 경쟁사 역추적 준비", lead, body)
 
 
 # ---------- 2~4. tracking 문서 ----------
+# 조사 MD는 PLUS·ON 경쟁사 10곳을 함께 다룬다. 공유 문서는 PLUS만 남기므로(사용자 결정 2026-11-27)
+# ON 경쟁사 표 행을 빼고, ON이 섞인 문장은 아래 목록대로 고친다. 원문이 바뀌어 패턴이 안 맞으면 멈춘다.
+ON_ROW_NAMES = ("내근처픽", "동네핫딜", "마이쿠폰", "럭키밀", "당근 비즈프로필 쿠폰")
+PLUS_ONLY_EDITS = {
+    "ads": [
+        ("광고비·노출수는 10곳 모두", "광고비·노출수는 5곳 모두"),
+        ("- ON 경쟁사 3곳(내근처픽·동네핫딜·마이쿠폰)은 두 도구 모두에서 광고가 없었다.\n", ""),
+        ("- 럭키밀과 당근은 소비자가 아니라 매장 사장님을 모으는 광고를 하고 있었다.\n", ""),
+        ("(토스 62 대 33, 당근 200 대 57)", "(토스 62 대 33)"),
+    ],
+    "listening": [
+        ("단골톡·내근처픽·동네핫딜은 7일 언급 0건이다.", "단골톡은 7일 언급 0건이다."),
+        ("| 단골톡 / 내근처픽 / 동네핫딜 | 같음 |", "| 단골톡 | 단골톡 |"),
+        ("  - ON 묶음: 럭키밀만 검색량이 있고 나머지는 0에 붙어 있다.\n", ""),
+    ],
+}
+
+
+def plus_only(md: str, doc: str) -> str:
+    for old, new in PLUS_ONLY_EDITS.get(doc, []):
+        if old not in md:
+            raise SystemExit(f"{doc}.md에서 ON 제외용 문구를 못 찾음: {old!r}")
+        md = md.replace(old, new)
+    rows = [ln for ln in md.splitlines() if not (ln.startswith("| ") and ln[2:].startswith(ON_ROW_NAMES))]
+    return "\n".join(rows)
+
+
 def tool_sources(tools: list[dict], src: Sources) -> str:
     """툴마다 근거 출처 번호를 붙인 짧은 표. 본문(MD)에는 번호가 없어서 여기서 이어 준다."""
     rows = "".join(f"<tr><td>{esc(t['tool'])}</td><td>{src.sup(t.get('evidence', []))}</td></tr>" for t in tools)
@@ -237,23 +260,23 @@ def tool_sources(tools: list[dict], src: Sources) -> str:
 def build_ads() -> str:
     d = json.loads((TRACK / "ads.json").read_text())
     src = Sources()
-    body = md_to_html((TRACK / "ads.md").read_text())
+    body = md_to_html(plus_only((TRACK / "ads.md").read_text(), "ads"))
     body += tool_sources(d["tools"], src)
     body += "<h2>조회 화면 (일부)</h2>" + shots([
         ("ads/meta-페이히어.png", "Meta 광고 라이브러리 — 페이히어 (게재 중 약 50개)"),
         ("ads/google-토스포스쿠폰.png", "Google 광고 투명성 센터 — 토스플레이스 (33개)"),
-        ("ads/meta-당근-당근비즈니스.png", "Meta — 당근비즈니스 (개업 패키지 광고)"),
+        ("ads/meta-토스포스쿠폰.png", "Meta 광고 라이브러리 — 토스플레이스 (게재 중 약 5개)"),
         ("ads/google-도도포인트-domain.png", "Google — dodopoint.co.kr 도메인 검색 ((주) 디플랜 360)"),
     ])
-    body += '<p class="muted">전체 캡처 41장은 저장소 <code>competitors/tracking/shots/ads/</code>에 있습니다.</p>' + src.html()
-    lead = "Meta 광고 라이브러리와 Google 광고 투명성 센터에서 쿠핀 핵심 경쟁사 10곳을 직접 조회한 결과입니다. 조회일 2026-11-27, 로그인 없이 화면에 보인 값만 옮겼습니다."
+    body += '<p class="muted">전체 캡처는 저장소 <code>competitors/tracking/shots/ads/</code>에 있습니다.</p>' + src.html()
+    lead = "Meta 광고 라이브러리와 Google 광고 투명성 센터에서 쿠핀 PLUS 핵심 경쟁사 5곳을 직접 조회한 결과입니다. 조회일 2026-11-27, 로그인 없이 화면에 보인 값만 옮겼습니다."
     return page("경쟁사 광고 조회 결과", "알에스팀 마케팅 봇 · 경쟁사 역추적", lead, body)
 
 
 def build_listening() -> str:
     d = json.loads((TRACK / "listening.json").read_text())
     src = Sources()
-    md = (TRACK / "listening.md").read_text()
+    md = plus_only((TRACK / "listening.md").read_text(), "listening")
     body = md_to_html(md)
     body += tool_sources(d["tools"], src)
     body += "<h2>조회 화면 (일부)</h2>" + shots([
