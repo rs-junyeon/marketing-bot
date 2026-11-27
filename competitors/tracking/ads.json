@@ -1,0 +1,594 @@
+{
+  "checked_at": "2026-11-27",
+  "tools": [
+    {
+      "tool": "Meta 광고 라이브러리",
+      "operator": "Meta Platforms",
+      "url": "https://www.facebook.com/ads/library/",
+      "shows": "국가=대한민국 기준 현재 게재 중(활성)인 광고만: 광고주 페이지명, 소재(문구·이미지·영상·랜딩 도메인·CTA), 라이브러리 ID, 게재 시작일, 노출 플랫폼(Facebook·Instagram·Audience Network·Messenger·WhatsApp·Threads 아이콘), '여러 버전' 여부, 결과 개수(~N개, 근사치). 키워드 검색(광고 문구에 단어가 들어간 다른 광고주 광고까지 = '어디서 언급되는지')과 광고주(페이지) 검색 둘 다 가능.",
+      "does_not_show": "한국 일반 상업 광고의 광고비·노출수·도달·타기팅·인구통계. 종료된 광고(KR에서 active_status=inactive 조회 시 페이히어도 0건). 광고 상세 팝업에도 '광고주 정보' 외 지출 정보 없음.",
+      "ad_spend_visible": "아니오(사회 문제·선거·정치 광고와 영국·EU 게재 광고만 지출/노출 범위 등 추가 정보 제공. 한국 상업 광고는 미표시)",
+      "api": {
+        "available": true,
+        "conditions": "Ad Library API는 Facebook 계정 + 신원·위치 확인(Facebook.com/ID) + Meta for Developers 앱이 필요. 대상은 최근 7년 정치·사회 이슈 광고와 최근 1년 영국/EU 게재 광고뿐이라, EU에 노출되지 않은 한국 상업 광고는 API로 나오지 않음. 한국 경쟁사 상업 광고 자동 수집은 웹 화면 수집(약관 검토 필요)만 가능."
+      },
+      "login_required": false,
+      "evidence": [
+        {
+          "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=KR&media_type=all",
+          "quote": "Facebook 계정이 있거나 없는 사람 누구나 광고 라이브러리를 둘러볼 수 있습니다. 하지만 광고를 신고하거나 성인용 콘텐츠를 보려면 계정이 있고 로그인되어 있어야 합니다."
+        },
+        {
+          "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=KR&media_type=all",
+          "quote": "현재 Meta 테크놀로지에서 게재 중인 모든 광고에는 다음과 같은 정보가 표시됩니다:"
+        },
+        {
+          "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=KR&media_type=all",
+          "quote": "광고 게재 시작 시점, 광고를 게재한 광고주 등의 기본 정보"
+        },
+        {
+          "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=KR&media_type=all",
+          "quote": "지출, 도달 및 광고 비용을 지출한 주체에 관한 추가 투명성 정보"
+        },
+        {
+          "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=KR&media_type=all",
+          "quote": "사회 문제, 선거 또는 정치 관련 광고의 경우 전체적인 총 지출 금액과 광고주, 위치별 지출에 관한 상세 정보를 보려면 광고 라이브러리 보고서를 사용하세요."
+        },
+        {
+          "url": "https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=KR&media_type=all",
+          "quote": "광고는 첫 노출 후 24시간 이내에 광고 라이브러리에 표시됩니다."
+        },
+        {
+          "url": "https://www.facebook.com/ads/library/api",
+          "quote": "최근 1년 동안 영국 또는 유럽 연합에 게재된 모든 유형의 광고"
+        },
+        {
+          "url": "https://www.facebook.com/ads/library/api",
+          "quote": "API 이용 승인을 받으려면 Facebook 계정이 필요합니다."
+        },
+        {
+          "url": "https://www.facebook.com/ads/library/api",
+          "quote": "Facebook.com/ID로 이동하여 사회 문제, 선거 또는 정치 관련 광고를 게재하는 데 필요한 확인 절차를 따르세요."
+        }
+      ]
+    },
+    {
+      "tool": "Google 광고 투명성 센터",
+      "operator": "Google",
+      "url": "https://adstransparency.google.com/?region=KR",
+      "shows": "광고주 법적 이름·본사 위치·인증 여부, 광고 비용 지불 주체(다를 때), 선택 기간(기본 '전체 기간', 인증 광고주는 마지막 게재 후 1년 보관) 광고 개수, 플랫폼 필터(검색·YouTube·쇼핑·지도·Play)별 개수, 형식 필터, 광고별 '마지막 게재일'·형식·소재 미리보기. 광고주명뿐 아니라 웹사이트 도메인으로도 검색되어, 대행사/리셀러가 낸 광고도 도메인으로 잡힘.",
+      "does_not_show": "한국 게재 광고의 광고비·노출수 범위·타기팅·주제(유럽·튀르키예·정치 광고만 추가 정보). 게재 시작일(마지막 게재일만). 키워드(문구) 검색 불가 → 경쟁사가 '언급'되는 타사 광고는 못 찾음. 동영상 소재는 화면에서 재생/렌더링이 안 되는 경우가 많고, 연속 조회 시 소재 미리보기가 429(too many requests)로 막힘.",
+      "ad_spend_visible": "아니오(한국 상업 광고는 광고비·노출수 미표시. 노출수 범위는 EEA·튀르키예 게재분과 정치 광고만, 그마저 90일 지연)",
+      "api": {
+        "available": false,
+        "conditions": "공개 API 없음. 공식 도움말상 API 액세스는 EEA 게재 광고 데이터에 한하고, EEA 외 데이터는 규제 기관·자율 규제 기관에만 제공 가능. BigQuery 공개 데이터셋(bigquery-public-data.google_ads_transparency_center)도 EEA·튀르키예에서 게재된 광고만 포함 → 한국 경쟁사 자동 수집은 웹 화면 수집(약관 검토 필요)뿐."
+      },
+      "login_required": false,
+      "evidence": [
+        {
+          "url": "https://support.google.com/adspolicy/answer/13733850?hl=ko",
+          "quote": "Google Ads 투명성 센터 및 광고 정보 공개 문구에는 광고주의 이름, 위치, 광고 비용을 지불하는 주체, 특정 기간 동안 게재한 광고 등 Google 플랫폼(Google 검색 및 YouTube 포함)에 광고를 게재하는 모든 광고주의 정보가 표시됩니다."
+        },
+        {
+          "url": "https://support.google.com/adspolicy/answer/13733850?hl=ko",
+          "quote": "Google은 Google Ads 투명성 센터를 통해 EEA에서 게재되는 광고의 데이터에 대한 API 액세스를 제공합니다."
+        },
+        {
+          "url": "https://support.google.com/adspolicy/answer/13733850?hl=ko",
+          "quote": "Google은 규제 기관 및 자율 규제 기관에 EEA 외부에 게재되는 광고에 대한 광고 투명성 센터의 기존 데이터에 대한 API 액세스 권한을 제공할 수 있습니다."
+        },
+        {
+          "url": "https://adstransparency.google.com/faq?hl=ko&region=KR",
+          "quote": "Google 검색, Play, 지도, 쇼핑, YouTube에 게재된 확인된 광고주의 광고는 마지막으로 게재된 날짜로부터 1년 동안 포함됩니다."
+        },
+        {
+          "url": "https://adstransparency.google.com/faq?hl=ko&region=KR",
+          "quote": "고객인 광고주를 위해 광고를 제작하는 광고 대행사가 아닌 광고주의 이름이 표시됩니다."
+        },
+        {
+          "url": "https://adstransparency.google.com/faq?hl=ko&region=KR",
+          "quote": "유럽과 튀르키예에 게재되는 광고 및 정치 광고는 규정으로 인해 광고의 주제와 더 많은 시청자층 설정 세부정보와 같은 추가적인 정보를 표시합니다."
+        },
+        {
+          "url": "https://adstransparency.google.com/faq?hl=ko&region=KR",
+          "quote": "또한 개인 정보 보호를 위해 노출수 범위는 90일이 지난 뒤에 게시됩니다."
+        },
+        {
+          "url": "https://adstransparency.google.com/faq?hl=ko&region=KR",
+          "quote": "일부 광고에는 연령 제한이 적용되어 제한 연령을 넘긴 로그인한 사용자에게만 게재됩니다."
+        },
+        {
+          "url": "https://storage.googleapis.com/ads-transparency-center/api-data/README.txt",
+          "quote": "region_stats (top level) - Collection of regions in which the ad served (in the European Economic Area and Turkey) and their relevant stats"
+        }
+      ]
+    },
+    {
+      "tool": "네이버 (공개 광고 조회 도구 없음)",
+      "operator": "NAVER",
+      "url": "https://help.naver.com/service/30016/contents/23553?lang=ko&osType=COMMONOS",
+      "shows": "공개 광고 라이브러리/투명성 검색 도구를 찾지 못함. 이용자용 광고 안내는 노출 사유·이용자 정보 활용·광고 종류·숨기기·정책·피해 구제 안내뿐. 검색광고는 네이버에서 키워드를 직접 검색해 눈으로 보는 수밖에 없음.",
+      "does_not_show": "타 광고주 광고 목록·광고비·노출수. 검색광고 API(searchad)는 광고주 본인 계정 데이터용이라 경쟁사 조회 불가(로그인 필요, 이번엔 미시도).",
+      "ad_spend_visible": "아니오(조회 도구 자체가 없음)",
+      "api": {
+        "available": false,
+        "conditions": "경쟁사 광고 조회용 공개 API 없음. 광고주 본인 계정용 API만 있음(로그인·가입 필요해 이번엔 확인하지 않음)."
+      },
+      "login_required": false,
+      "evidence": [
+        {
+          "url": "https://help.naver.com/service/30016/contents/23553?lang=ko&osType=COMMONOS",
+          "quote": "네이버는 검색광고/디스플레이광고 이용약관 및 운영정책에 따라 운영되며, 모든 광고는 광고등록기준에 따라 검토됩니다."
+        },
+        {
+          "url": "https://help.naver.com/service/30016/contents/23553?lang=ko&osType=COMMONOS",
+          "quote": "네이버 서비스의 광고 노출 사유"
+        }
+      ]
+    },
+    {
+      "tool": "카카오 (공개 광고 조회 도구 없음)",
+      "operator": "Kakao",
+      "url": "https://info.ds.kakao.com/ads-transparency/partners-displaying-kakao-ads.html?lang=ko",
+      "shows": "info.ds.kakao.com/ads-transparency/ 아래에 있는 건 광고가 노출되는 파트너 지면 목록, 행태정보 제공 파트너·RTB 참여사 목록뿐. 광고주·광고 소재를 검색하는 라이브러리는 찾지 못함.",
+      "does_not_show": "타 광고주 광고 목록·광고비·노출수.",
+      "ad_spend_visible": "아니오(조회 도구 자체가 없음)",
+      "api": {
+        "available": false,
+        "conditions": "경쟁사 광고 조회용 공개 API 없음."
+      },
+      "login_required": false,
+      "evidence": [
+        {
+          "url": "https://info.ds.kakao.com/ads-transparency/partners-displaying-kakao-ads.html?lang=ko",
+          "quote": "카카오 광고는 카카오와 제휴 관계에 있는 파트너사 서비스 지면을 통해 노출될 수 있습니다."
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "competitor": "단골톡",
+      "tool": "Meta 광고 라이브러리",
+      "query": "광고주 '단골톡-사장님을 위한 재방문 솔루션'(@dangoltalk) / 키워드 단골톡, dangoltalk, dangoltalk.co.kr, 헤드리스",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/meta-단골톡.png",
+      "advertiser_page": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&media_type=all&search_type=page&view_all_page_id=1024674494067125",
+      "count_label": "검색 기준과 일치하는 광고가 없습니다 / 현재 이 광고주는 선택된 국가 및 광고 카테고리에서 광고를 게재하고 있지 않습니다.",
+      "note": "광고주 페이지는 있으나 KR 활성 광고 0. 운영사 페이지 '헤드리스'(@headlessInc)도 0. 키워드 '헤드리스' ~14개는 기타·침대 등 무관 광고."
+    },
+    {
+      "competitor": "단골톡",
+      "tool": "Google 광고 투명성 센터",
+      "query": "헤드리스 → 광고주 '헤드리스(주)' / 웹사이트 dangoltalk.co.kr / 단골톡",
+      "found": true,
+      "active_ads": 4,
+      "examples": [
+        {
+          "summary": "동영상 광고(소재가 화면에 렌더링되지 않아 문구 확인 불가)",
+          "platforms": "YouTube(광고주 플랫폼 필터 기준)",
+          "started": null,
+          "last_shown": "2026년 10월 1일"
+        },
+        {
+          "summary": "동영상 광고(소재 렌더링 안 됨)",
+          "platforms": "YouTube(광고주 플랫폼 필터 기준)",
+          "started": null,
+          "last_shown": "2026년 9월 30일"
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(광고별 페이지에 마지막 게재일·형식만, 노출수 범위·광고비 없음)",
+      "screenshot": "competitors/tracking/shots/ads/google-단골톡.png",
+      "count_basis": "전체 기간 광고 수(활성 여부 아님)",
+      "count_label": "광고 4개",
+      "by_platform": {
+        "검색": 0,
+        "YouTube": 4,
+        "쇼핑": 0,
+        "지도": 0,
+        "Play": 0
+      },
+      "advertiser_page": "https://adstransparency.google.com/advertiser/AR15457089820832038913?region=KR",
+      "note": "'단골톡'으로는 광고주가 안 잡히고, 도메인 dangoltalk.co.kr 검색 시 '헤드리스(주)' 동영상 광고 4개가 나옴(스크린샷 google-단골톡-domain.png)."
+    },
+    {
+      "competitor": "토스포스 쿠폰",
+      "tool": "Meta 광고 라이브러리",
+      "query": "광고주 '토스플레이스'(@tossplace) / 키워드 토스플레이스(~25), 토스포스(~5), tossplace(~16)",
+      "found": true,
+      "active_ads": 5,
+      "examples": [
+        {
+          "summary": "'전화 한 통이면 매장 장비 준비 끝' — 토스 단말기·인터넷·CCTV 상담 유도(TOSSPLACE.COM, 문의하기)",
+          "platforms": "Facebook, Instagram",
+          "started": "2026. 10. 31."
+        },
+        {
+          "summary": "'요식업 토스 단말기 설치하고 최대 250만원 창업 패키지 응모' — 토스 포스·단말기 기능(키오스크 모드 등) 소개 이벤트",
+          "platforms": "Facebook, Instagram, Threads",
+          "started": "2026. 11. 10."
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(카드·상세 팝업에 광고비·노출수 없음)",
+      "screenshot": "competitors/tracking/shots/ads/meta-토스포스쿠폰.png",
+      "count_label": "결과 ~5개",
+      "advertiser_page": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&media_type=all&search_type=page&view_all_page_id=109135385440328",
+      "note": "'쿠폰' 기능 단독 광고는 없음. 키워드 검색에서는 SK브로드밴드·B다이렉트샵·sangyun_networks(토스포스 '포인트·스탬프 적립' 언급) 등 리셀러 광고가 토스를 언급함."
+    },
+    {
+      "competitor": "토스포스 쿠폰",
+      "tool": "Google 광고 투명성 센터",
+      "query": "토스플레이스 → 광고주 '토스플레이스 주식회사' / 토스포스 / tossplace.com",
+      "found": true,
+      "active_ads": 33,
+      "examples": [
+        {
+          "summary": "검색 텍스트 광고 '토스단말기, 포스, 영수증프린터 - 결제단말기 토스 프론트' / '매출 관리부터 무료 포인트 적립까지 한번에' (www.tossplace.com)",
+          "platforms": "형식: 텍스트(광고별 플랫폼 미표시)",
+          "started": null,
+          "last_shown": "2026년 11월 26일"
+        },
+        {
+          "summary": "검색 텍스트 광고 '2026년 성수기 대비 끝! - 토스 QR 테이블오더 무료' / 선불권·횟수권 차감 알림톡, 월회비 0원",
+          "platforms": "형식: 텍스트(광고별 플랫폼 미표시)",
+          "started": null,
+          "last_shown": "2026년 11월 26일"
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(광고별 페이지에 마지막 게재일·형식만, 노출수 범위·광고비 없음)",
+      "screenshot": "competitors/tracking/shots/ads/google-토스포스쿠폰.png",
+      "count_basis": "전체 기간 광고 수(활성 여부 아님)",
+      "count_label": "광고 33개 (검색창 자동완성에는 '광고 약 62개')",
+      "by_platform": {
+        "검색": 20,
+        "YouTube": 30,
+        "쇼핑": 12,
+        "지도": 0,
+        "Play": 0
+      },
+      "advertiser_page": "https://adstransparency.google.com/advertiser/AR02847128099621961729?region=KR"
+    },
+    {
+      "competitor": "페이히어",
+      "tool": "Meta 광고 라이브러리",
+      "query": "광고주 '페이히어 Payhere'(@payherein) / 키워드 페이히어(~69), payhere.in(~41)",
+      "found": true,
+      "active_ads": 50,
+      "examples": [
+        {
+          "summary": "'복잡한 포스기 대신 페이히어 터미널 하나로 끝!' 월 이용료 평생 0원, 단말기 특가(PAYHERE.IN, 지금 구매하기)",
+          "platforms": "Facebook, Instagram, WhatsApp, Threads",
+          "started": "2026. 11. 3."
+        },
+        {
+          "summary": "'테이블 오더 이렇게까지 발전했다고요?' AI 테이블오더 견적 받기",
+          "platforms": "Facebook, Instagram",
+          "started": "2026. 10. 30."
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(카드·상세 팝업에 광고비·노출수 없음)",
+      "screenshot": "competitors/tracking/shots/ads/meta-페이히어.png",
+      "count_label": "결과 ~50개",
+      "advertiser_page": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&media_type=all&search_type=page&view_all_page_id=108999417234057",
+      "note": "키워드 검색에서 '베테랑 사장' 등 리셀러가 '토스, 페이히어 단말기 + 포스까지 평생 무료'로 언급. 블랙프라이데이(2026. 11. 16. 시작) 단말기 최대 72% 할인 광고도 있음."
+    },
+    {
+      "competitor": "페이히어",
+      "tool": "Google 광고 투명성 센터",
+      "query": "페이히어 → 광고주 '주식회사 페이히어' / payhere.in",
+      "found": true,
+      "active_ads": 3,
+      "examples": [
+        {
+          "summary": "검색 텍스트 광고 '단말기 0원+포스 평생무료 - 단말기 0원+포스 평생무료 혜택' / 인터넷 가입 시 단말기 0원 (www.payhere.in/event/internet)",
+          "platforms": "형식: 텍스트(광고별 플랫폼 미표시)",
+          "started": null,
+          "last_shown": "2026년 8월 18일"
+        },
+        {
+          "summary": "텍스트 광고(소재 미리보기가 429 too many requests로 표시 안 됨)",
+          "platforms": "형식: 텍스트",
+          "started": null,
+          "last_shown": "2026년 8월 18일"
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(광고별 페이지에 마지막 게재일·형식만, 노출수 범위·광고비 없음)",
+      "screenshot": "competitors/tracking/shots/ads/google-페이히어.png",
+      "count_basis": "전체 기간 광고 수(활성 여부 아님)",
+      "count_label": "광고 3개 (자동완성에는 '광고 약 7개')",
+      "by_platform": {
+        "검색": 2,
+        "YouTube": 2,
+        "쇼핑": 2,
+        "지도": 0,
+        "Play": 0
+      },
+      "advertiser_page": "https://adstransparency.google.com/advertiser/AR09721327126359048193?region=KR"
+    },
+    {
+      "competitor": "도도포인트",
+      "tool": "Meta 광고 라이브러리",
+      "query": "광고주 '도도 포인트'(@dodopoint) / 운영사 '플레이스앤'(@officialplacen) / 키워드 도도포인트, dodopoint, dodopoint.co.kr, 플레이스앤",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/meta-도도포인트.png",
+      "count_label": "검색 기준과 일치하는 광고가 없습니다",
+      "advertiser_page": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&media_type=all&search_type=page&view_all_page_id=289100511211463",
+      "note": "광고주 페이지(도도 포인트, 플레이스앤)는 있으나 KR 활성 광고 0. 키워드 '도도포인트' ~2개는 반찬가게·식당 등 매장 광고(언급)."
+    },
+    {
+      "competitor": "도도포인트",
+      "tool": "Google 광고 투명성 센터",
+      "query": "웹사이트 dodopoint.co.kr (도도포인트·플레이스앤 광고주명으로는 없음)",
+      "found": true,
+      "active_ads": 5,
+      "examples": [
+        {
+          "summary": "광고주 '(주) 디플랜 360' 검색 텍스트 광고 '단골 손님 늘리는 포인트' / 첫 방문으로 끝나는 손님, 포인트로 다시 부르세요 (www.dodopoint.com)",
+          "platforms": "형식: 텍스트(광고별 플랫폼 미표시)",
+          "started": null,
+          "last_shown": "2026년 6월 7일"
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(광고별 페이지에 마지막 게재일·형식만, 노출수 범위·광고비 없음)",
+      "screenshot": "competitors/tracking/shots/ads/google-도도포인트-domain.png",
+      "count_basis": "전체 기간 광고 수(도메인 검색)",
+      "count_label": "광고 5개",
+      "note": "운영사(플레이스앤)가 아닌 '(주) 디플랜 360'이 광고주로 표시됨. Google FAQ상 대행사가 아니라 광고주 이름이 표시되므로 총판/리셀러일 가능성(미확인). '플레이스앤' 자동완성 결과 '홈 앤 플레이스'는 무관."
+    },
+    {
+      "competitor": "단골플러스",
+      "tool": "Meta 광고 라이브러리",
+      "query": "광고주 '단골플러스'(@dgplus_) / 운영사 'OKPOS' / 키워드 단골플러스, dgplus.co.kr, 오케이포스(~5)",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/meta-단골플러스.png",
+      "count_label": "검색 기준과 일치하는 광고가 없습니다",
+      "advertiser_page": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&media_type=all&search_type=page&view_all_page_id=101354375041569",
+      "related": {
+        "advertiser": "OKPOS(운영사)",
+        "active_ads": 3,
+        "count_label": "결과 ~3개",
+        "screenshot": "competitors/tracking/shots/ads/meta-단골플러스-OKPOS.png",
+        "examples": [
+          {
+            "summary": "'포스는 설치보다 설치 후가 더 중요해요' 오케이포스 본사 신규 가맹 상담",
+            "platforms": "Facebook, Instagram, Audience Network, Messenger, Threads",
+            "started": "2026. 9. 2."
+          },
+          {
+            "summary": "'유선 카드 단말기 + 커넥트가 단돈 100원!' (SMARTSTORE.NAVER.COM)",
+            "platforms": "Facebook, Instagram, Audience Network, Threads",
+            "started": "2026. 11. 22."
+          }
+        ]
+      },
+      "note": "단골플러스 자체 광고 0. 운영사 OKPOS 광고 3개는 POS/단말기 광고로 단골플러스 언급 없음."
+    },
+    {
+      "competitor": "단골플러스",
+      "tool": "Google 광고 투명성 센터",
+      "query": "단골플러스 / dgplus.co.kr / 오케이포스",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/google-단골플러스.png",
+      "count_label": "'단골플러스' 광고주 없음, dgplus.co.kr 도메인 '광고 0개'",
+      "related": {
+        "advertiser": "주식회사 오케이포스(운영사)",
+        "active_ads": 1,
+        "count_label": "광고 1개 (자동완성 '광고 약 36개')",
+        "by_platform": {
+          "검색": 1,
+          "YouTube": 1,
+          "쇼핑": 0,
+          "지도": 0,
+          "Play": 0
+        },
+        "examples": [
+          {
+            "summary": "동영상 광고(소재 렌더링 안 됨). 상세에 '광고비 제공: 오케이포스' 표시",
+            "platforms": "형식: 동영상",
+            "started": null,
+            "last_shown": "2026년 7월 15일"
+          }
+        ],
+        "screenshot": "competitors/tracking/shots/ads/google-단골플러스-오케이포스.png"
+      },
+      "note": "'광고비 제공: 오케이포스'는 지불 주체 이름일 뿐 금액이 아님."
+    },
+    {
+      "competitor": "내근처픽",
+      "tool": "Meta 광고 라이브러리",
+      "query": "내근처픽 / 내근처팩토리 / nearhappens (자동완성 광고주 없음)",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/meta-내근처픽.png",
+      "count_label": "검색 기준과 일치하는 광고가 없습니다"
+    },
+    {
+      "competitor": "내근처픽",
+      "tool": "Google 광고 투명성 센터",
+      "query": "내근처픽 / 내근처팩토리 / nearhappens.com",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/google-내근처픽.png",
+      "count_label": "광고주 없음, nearhappens.com 도메인 '광고 0개 · 광고를 찾을 수 없습니다.'"
+    },
+    {
+      "competitor": "동네핫딜",
+      "tool": "Meta 광고 라이브러리",
+      "query": "동네핫딜 / com.hotdeal.app / COTI(~5, 무관) / 코티(~46, 무관)",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/meta-동네핫딜.png",
+      "count_label": "검색 기준과 일치하는 광고가 없습니다",
+      "note": "'COTI'·'코티' 키워드 결과는 의류·건강식품 등 무관 광고."
+    },
+    {
+      "competitor": "동네핫딜",
+      "tool": "Google 광고 투명성 센터",
+      "query": "동네핫딜 / 코티 / COTI",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/google-동네핫딜.png",
+      "count_label": "광고주·웹사이트 결과 없음('코티'는 '스튜디오 스위스코티지' 등 무관)",
+      "note": "Google Play 패키지명으로 검색하는 기능은 없음(광고주명·웹사이트만)."
+    },
+    {
+      "competitor": "마이쿠폰",
+      "tool": "Meta 광고 라이브러리",
+      "query": "마이쿠폰 / 온리업코퍼레이션 / my-coupin-bridge",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/meta-마이쿠폰.png",
+      "count_label": "검색 기준과 일치하는 광고가 없습니다",
+      "note": "'my-coupin-bridge'는 키워드가 단어별로 쪼개져 ~230개 무관 광고(해외 앱 등)가 나옴 → 무관."
+    },
+    {
+      "competitor": "마이쿠폰",
+      "tool": "Google 광고 투명성 센터",
+      "query": "마이쿠폰 / 온리업 / my-coupin-bridge.com",
+      "found": false,
+      "active_ads": 0,
+      "examples": [],
+      "spend_or_impressions": null,
+      "screenshot": "competitors/tracking/shots/ads/google-마이쿠폰.png",
+      "count_label": "광고주 없음, my-coupin-bridge.com 도메인 '광고 0개'"
+    },
+    {
+      "competitor": "럭키밀",
+      "tool": "Meta 광고 라이브러리",
+      "query": "광고주 'LuckyMeal' / 키워드 luckymeal(~6), luckymeal.io(~6) (한글 '럭키밀'·'모난돌컴퍼니'는 0)",
+      "found": true,
+      "active_ads": 6,
+      "examples": [
+        {
+          "summary": "점주 대상 '이제, 재고 남을까 봐 생산량 걱정 마세요!' 빵집 재고 판매, 입점료·월 이용료 0원(WWW.LUCKYMEAL.IO, 지금 신청하기)",
+          "platforms": "Facebook, Instagram",
+          "started": "2026. 11. 1."
+        },
+        {
+          "summary": "'재고 걱정에 생산량 줄이지 마세요… 약 3,000곳이 함께했어요' 입점 신청 유도",
+          "platforms": "Facebook, Instagram",
+          "started": "2026. 11. 1."
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(카드·상세 팝업에 광고비·노출수 없음)",
+      "screenshot": "competitors/tracking/shots/ads/meta-럭키밀.png",
+      "count_label": "결과 ~6개",
+      "advertiser_page": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&media_type=all&search_type=page&view_all_page_id=140129889176966",
+      "note": "소비자용이 아니라 매장(공급자) 모집 광고."
+    },
+    {
+      "competitor": "럭키밀",
+      "tool": "Google 광고 투명성 센터",
+      "query": "모난돌 → 광고주 '모난돌컴퍼니' / luckymeal.io (럭키밀 광고주명은 없음)",
+      "found": true,
+      "active_ads": 1,
+      "examples": [
+        {
+          "summary": "동영상(세로형) 광고, 자막 '폐기에 대한 부담없이' — 매장 직원이 손님에게 상품 전달하는 장면",
+          "platforms": "YouTube(광고주 플랫폼 필터 기준)",
+          "started": null,
+          "last_shown": "2026년 9월 9일"
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(광고별 페이지에 마지막 게재일·형식만, 노출수 범위·광고비 없음)",
+      "screenshot": "competitors/tracking/shots/ads/google-럭키밀.png",
+      "count_basis": "전체 기간 광고 수",
+      "count_label": "광고 1개",
+      "by_platform": {
+        "검색": 0,
+        "YouTube": 1,
+        "쇼핑": 0,
+        "지도": 0,
+        "Play": 0
+      },
+      "advertiser_page": "https://adstransparency.google.com/advertiser/AR06779711206513967105?region=KR"
+    },
+    {
+      "competitor": "당근 비즈프로필 쿠폰",
+      "tool": "Meta 광고 라이브러리",
+      "query": "광고주 '당근'(@daangn, ~1) · '당근비즈니스'(@daangn_business) / 키워드 당근 쿠폰(~22), 비즈프로필(~29), daangn.com(~32)",
+      "found": true,
+      "active_ads": 8,
+      "examples": [
+        {
+          "summary": "'최대 50만원 #당근동네가게개업패키지' 홍보부터 구인까지 개업 지원, 12월 16일까지(DAANGN.ONELINK.ME)",
+          "platforms": "Facebook, Instagram, WhatsApp, Threads",
+          "started": "2026. 11. 18."
+        },
+        {
+          "summary": "'개업 첫 달, 당근이 도와드려요' 개업 지원금 최대 50만 원 — 첫 광고 지원금, '손님 100명에게 천원 쿠폰 10만' 포함",
+          "platforms": "Facebook, Instagram, WhatsApp, Threads",
+          "started": "2026. 11. 12."
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(카드·상세 팝업에 광고비·노출수 없음)",
+      "screenshot": "competitors/tracking/shots/ads/meta-당근-당근비즈니스.png",
+      "count_label": "당근비즈니스 결과 ~8개 (당근 페이지 결과 ~1개 별도)",
+      "advertiser_page": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=KR&media_type=all&search_type=page&view_all_page_id=110314095443677",
+      "note": "'비즈프로필 쿠폰' 단독 광고는 없고, 사장님 개업 패키지 안에 '천원 쿠폰'이 들어 있음. 당근 본 페이지 ~1개는 2027 프로덕트 빌더 인턴십 채용 광고(2026. 11. 17. 시작, meta-당근.png). 키워드 '비즈프로필'은 마케팅 대행사 광고가 대부분."
+    },
+    {
+      "competitor": "당근 비즈프로필 쿠폰",
+      "tool": "Google 광고 투명성 센터",
+      "query": "당근 / 당근마켓 → 광고주 '주식회사 당근마켓' / daangn.com",
+      "found": true,
+      "active_ads": 57,
+      "examples": [
+        {
+          "summary": "동영상 광고(대안 1/6, 소재 렌더링 안 됨)",
+          "platforms": "형식: 동영상",
+          "started": null,
+          "last_shown": "2026년 11월 26일"
+        }
+      ],
+      "spend_or_impressions": "표시 안 됨(광고별 페이지에 마지막 게재일·형식만, 노출수 범위·광고비 없음)",
+      "screenshot": "competitors/tracking/shots/ads/google-당근.png",
+      "count_basis": "전체 기간 광고 수",
+      "count_label": "광고 57개 (자동완성 '광고 약 200개')",
+      "by_platform": {
+        "검색": 56,
+        "YouTube": 57,
+        "쇼핑": null,
+        "지도": 0,
+        "Play": 32
+      },
+      "advertiser_page": "https://adstransparency.google.com/advertiser/AR13949664447212552193?region=KR",
+      "note": "쇼핑 필터 개수는 화면 로드 실패로 확인 못 함(null). 비즈프로필 쿠폰 관련 소재인지는 동영상이 렌더링되지 않아 확인 불가."
+    }
+  ],
+  "notes": [
+    "조회일 2026-11-27(KST), 로그인 없이 브라우저로 조회. 모든 수치는 화면 표시값 그대로(Meta '~N개'는 근사치 표기, active_ads에는 숫자만 옮김).",
+    "Meta active_ads = 국가 대한민국·활동 상태 '게재 중인 광고' 필터의 광고주 페이지 결과 수. Google active_ads 칸에는 '활성' 개념이 없어 광고주 페이지의 '전체 기간' 광고 수를 넣었음(count_basis 참고). 검색창 자동완성의 '광고 약 N개'와 광고주 페이지 개수가 다르게 나옴(페이히어 7 vs 3, 토스플레이스 62 vs 33, 당근마켓 200 vs 57, 오케이포스 36 vs 1).",
+    "Meta 플랫폼은 카드의 아이콘(SVG)을 판별해 적었음: 아이콘 순서 Facebook·Instagram·Audience Network·Messenger·WhatsApp·Threads를 OKPOS 카드 화면과 대조해 확인.",
+    "Meta 키워드 검색은 광고 문구에 해당 단어가 들어간 '다른 광고주' 광고까지 잡혀서 '어디서 언급되는지' 추적에 쓸 수 있음(예: 리셀러가 토스·페이히어 단말기를 언급). Google은 광고주명/도메인 검색만 돼서 언급 추적은 안 됨. 대신 도메인 검색으로 운영사가 아닌 광고주(도도포인트 → (주) 디플랜 360)를 찾을 수 있었음.",
+    "한국 상업 광고의 광고비는 두 도구 모두 공개하지 않음. 노출수도 마찬가지(Google 노출수 범위는 EEA·튀르키예·정치 광고만). → '광고비 집계'는 공개 도구로는 불가능하고, 활성 광고 수·게재 기간·플랫폼 수를 주기적으로 쌓아 활동량 지표로 대신하거나 유료 추정 툴을 따로 검토해야 함.",
+    "Meta는 KR에서 종료된 광고를 보여 주지 않음(페이히어 active_status=inactive 0건). 따라서 이력은 우리가 매일/매주 직접 스냅샷해야 남음.",
+    "Google 소재 상세를 연속으로 열면 미리보기 영역에 '429. That's an error. ... too many requests' 가 뜸(페이히어 2번째 광고). 자동화 시 요청 간격 필요.",
+    "Google 동영상 소재는 대부분 상세 화면에서 렌더링되지 않아 문구를 확인하지 못함(단골톡·오케이포스·당근). 텍스트 광고는 스크린샷으로 판독.",
+    "네이버·카카오: 공식 공개 광고 라이브러리를 찾지 못함. 카카오 'ads-transparency' 경로는 파트너·RTB 목록 공개용이고, 네이버 이용자용 광고 안내에도 광고 검색 기능이 없음. 3자 사이트(왓애즈·모인나 등)는 이번 범위(공식 도구) 밖이라 조회하지 않음.",
+    "동네핫딜(COTI)은 앱 패키지명 com.hotdeal.app만 있어 Google 투명성 센터에서 검색할 수단이 없음(광고주명·웹사이트 검색만 지원).",
+    "Meta 광고 상세 팝업(페이히어 3251670948351837)에는 소재·라이브러리 ID·시작일·플랫폼·'광고주 정보'만 있고 지출 항목 없음(팝업 텍스트로 확인, 팝업 스크린샷은 캡처되지 않아 남기지 않음)."
+  ]
+}
