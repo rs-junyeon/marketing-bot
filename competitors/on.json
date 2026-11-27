@@ -1,0 +1,443 @@
+{
+  "service": "쿠핀 ON",
+  "checked_at": "2026-11-27",
+  "competitors": [
+    {
+      "name": "동네핫딜",
+      "company": "COTI(코티)",
+      "url": "https://play.google.com/store/apps/details?hl=ko&id=com.hotdeal.app",
+      "type": "직접",
+      "target": "집·직장 주변 음식점·카페·미용실 할인을 찾는 소비자",
+      "what_it_does": "주변 매장의 할인·쿠폰을 지도와 목록에서 찾고, 쿠폰을 받아 매장에서 제시한다.",
+      "overlap": "주변 매장·할인의 지도/목록 탐색, 쿠폰 수령, 현장 사용.",
+      "difference": "오늘만·마감 임박 딜과 새 할인 알림을 내세운다. 유료 쿠폰 결제는 확인하지 못했다.",
+      "pricing": null,
+      "scale": null,
+      "scale_source": null,
+      "evidence": [
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.hotdeal.app",
+          "quote": "동네핫딜은 내 주변에서 지금 진행 중인 할인과 쿠폰을 지도와 목록으로 보여주는 지역 기반 핫딜 앱입니다.",
+          "supports": "서비스 기능·위치 기반 탐색"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.hotdeal.app",
+          "quote": "쿠폰을 받고 매장에서 바로 사용",
+          "supports": "쿠폰 수령·현장 사용"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.hotdeal.app",
+          "quote": "마감 임박·오늘만 진행하는 핫딜 모아보기",
+          "supports": "시간 한정 딜"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "name": "내근처픽",
+      "company": "주식회사 내근처팩토리",
+      "url": "https://www.nearhappens.com/",
+      "type": "직접",
+      "target": "동네 매장의 할인 전단·쿠폰을 찾는 소비자",
+      "what_it_does": "지도에서 근처 매장과 전단을 찾고 쿠폰을 발급받아 쿠폰함에서 사용한다. 원하는 조건에 맞춰 매장 제안을 받을 수도 있다.",
+      "overlap": "지도에서 근처 매장 탐색, 쿠폰 발급·보관·사용.",
+      "difference": "전단지와 소비자 요청에 대한 매장 맞춤 제안이 중심이다. 소비자용 유료 쿠폰 가격은 확인하지 못했다.",
+      "pricing": null,
+      "scale": null,
+      "scale_source": null,
+      "evidence": [
+        {
+          "url": "https://www.nearhappens.com/",
+          "quote": "지도에서 매장과 전단지를 찾고, 받은 쿠폰은 쿠폰함에서 바로 사용하세요.",
+          "supports": "지도·전단·쿠폰함·쿠폰 사용"
+        },
+        {
+          "url": "https://www.nearhappens.com/",
+          "quote": "원하는 조건으로 근처 매장의 맞춤 제안 받기",
+          "supports": "매장 맞춤 제안"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.nearhappensfactory.near_happens_customer_app",
+          "quote": "쿠폰 발급 & 쿠폰함: 마음에 드는 혜택을 쿠폰으로 저장하고 관리",
+          "supports": "쿠폰 발급·보관"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "name": "마이쿠폰(MYCOUPON)",
+      "company": "주식회사 온리업코퍼레이션",
+      "url": "https://my-coupon-bridge.com/",
+      "type": "직접",
+      "target": "생활권 내 음식점·카페·생활 매장 할인을 찾는 소비자",
+      "what_it_does": "GPS로 가까운 상점의 할인쿠폰을 찾고, 쿠폰을 발급받아 현장에서 쓴다.",
+      "overlap": "위치 기반 동네 할인쿠폰 탐색, 매장 방문 사용.",
+      "difference": "앱 설치 없이 웹에서도 쿠폰을 찾을 수 있고, 매장 쪽은 쿠폰 사용 건별 과금을 내세운다. 소비자 유료 쿠폰 구매는 미확인.",
+      "pricing": "소비자 가입 무료. 쿠폰 취득·사용 시 소비자 별도 수수료는 미확인.",
+      "scale": "제휴 매장 999+곳(공식 홈페이지 표시값; 기준일·집계 방식 미공개).",
+      "scale_source": "회사 발표",
+      "evidence": [
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.mycoupon.app",
+          "quote": "GPS 기반으로 지금 내 위치에서 가장 가까운 맛집, 미용실, 병원 등의 할인쿠폰을 실시간으로 확인하세요.",
+          "supports": "위치 기반 할인쿠폰 탐색"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.mycoupon.app",
+          "quote": "간편하게 쿠폰을 발급받고 매장에서 바로 사용할 수 있습니다.",
+          "supports": "쿠폰 발급·현장 사용"
+        },
+        {
+          "url": "https://my-coupon-bridge.com/",
+          "quote": "가입 무료 · 앱 다운로드 필요 없음",
+          "supports": "소비자 가입비·웹 이용"
+        },
+        {
+          "url": "https://my-coupon-bridge.com/",
+          "quote": "쿠폰 사용 1건당 990원",
+          "supports": "점주 과금, 소비자 가격과 구별"
+        },
+        {
+          "url": "https://my-coupon-bridge.com/",
+          "quote": "999+\n제휴 매장",
+          "supports": "회사 표시 제휴 매장 규모"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "name": "상생마켓",
+      "company": "주식회사 로컬",
+      "url": "https://www.sangsaengmarket.co.kr/",
+      "type": "직접",
+      "target": "생활권 내 동네 점포의 쿠폰·주문·예약과 온누리상품권 사용처를 찾는 소비자",
+      "what_it_does": "동네 매장의 쿠폰을 받아 쓰고, 매장 주문·결제와 디지털 온누리상품권 사용을 지원한다.",
+      "overlap": "동네 매장이 발행한 쿠폰의 소비자 수령·사용.",
+      "difference": "동네 상권의 주문·예약과 온누리 가맹점 결제를 묶는다. 약관상 수령 쿠폰은 제3자에게 매매할 수 없다.",
+      "pricing": "상품 대금 할인 또는 증정 혜택을 적용한다. 소비자 별도 수수료는 미확인.",
+      "scale": null,
+      "scale_source": null,
+      "evidence": [
+        {
+          "url": "https://apps.apple.com/kr/app/%EC%83%81%EC%83%9D%EB%A7%88%EC%BC%93/id6801125619",
+          "quote": "사장님이 직접 발행한 쿠폰을 받아 바로 쓰고,",
+          "supports": "매장 발행 쿠폰 수령·사용"
+        },
+        {
+          "url": "https://www.sangsaengmarket.co.kr/",
+          "quote": "상생마켓은 동네 상점을 찾고 예약·주문·결제까지 한 번에 이용하는 지역생활 플랫폼입니다.",
+          "supports": "동네 상점 탐색과 예약·주문·결제"
+        },
+        {
+          "url": "https://www.sangsaengmarket.co.kr/",
+          "quote": "결제할 때 온누리상품권을 선택하고 사용할 금액을 입력합니다",
+          "supports": "디지털 온누리 결제"
+        },
+        {
+          "url": "https://www.sangsaengmarket.co.kr/policy/service",
+          "quote": "상품 대금의 일부를 할인받거나 증정 혜택을 받을 수 있는 쿠폰",
+          "supports": "소비자 가격 구조: 상품 할인·증정"
+        },
+        {
+          "url": "https://www.sangsaengmarket.co.kr/policy/service",
+          "quote": "제3자에게 양도·대여·매매하거나 담보로 제공할 수 없다.",
+          "supports": "수령 쿠폰 거래 금지"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "name": "동네방네",
+      "company": "네오클루",
+      "url": "https://dnbn.kr/",
+      "type": "직접",
+      "target": "주변 소상공인 가게의 특가 상품을 찾고 주문하는 소비자",
+      "what_it_does": "동네 가게를 지도에서 찾고 할인 상품을 탐색해 앱에서 주문·결제하는 공개 베타다. 공식 웹은 결제한 할인을 QR 쿠폰으로 저장해 한 달간 쓰는 방식을 함께 안내한다.",
+      "overlap": "지도 기반 동네 매장 탐색, 할인 상품 선택 및 결제, 결제한 할인을 QR 쿠폰으로 보관·사용.",
+      "difference": "공개 안내는 장바구니 주문과 점주와의 가격 협의에 더해, 소비자가 할인을 미리 결제해 QR 쿠폰으로 담아두고 나중에 쓰는 방식을 내세운다. QR 쿠폰이 실제 베타 앱에서 제공되는지는 확인하지 못했다.",
+      "pricing": null,
+      "scale": null,
+      "scale_source": null,
+      "evidence": [
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.neoclue.dnbnapp",
+          "quote": "우리 동네 가게를 지도에서 찾고, 네고하고, 할인받고, 바로 주문하세요!",
+          "supports": "지도·가격 협의·할인 주문"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.neoclue.dnbnapp",
+          "quote": "장바구니에 담고 빠르게 결제하세요.",
+          "supports": "상품 결제"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.neoclue.dnbnapp",
+          "quote": "현재 동네방네는 베타 버전으로 운영 중입니다.",
+          "supports": "공개 베타 운영"
+        },
+        {
+          "url": "https://dnbn.kr/",
+          "quote": "결제한 할인은 쿠폰으로 저장되어 한 달 동안 여유롭게 사용할 수 있어요",
+          "supports": "선결제 할인의 QR 쿠폰 보관·사용 안내"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "name": "럭키밀",
+      "company": "주식회사 모난돌컴퍼니",
+      "url": "https://www.luckymeal.io/about",
+      "type": "직접",
+      "target": "주변 빵집·카페·식당의 마감 상품을 할인 구매하고 직접 가져가는 소비자",
+      "what_it_does": "근처 매장의 마감 할인 꾸러미를 찾아 앱에서 예약·결제한 후 매장에서 픽업한다.",
+      "overlap": "근처 소상공인 매장의 할인 딜 탐색, 앱 결제, 오프라인 수령.",
+      "difference": "유료 구매 대상은 가게가 당일 내놓은 마감 재고 꾸러미이며, 정해진 시간에 픽업한다. 별도 주문 할인 쿠폰은 쿠폰함에서 관리한다.",
+      "pricing": "앱 안내상 최대 50% 할인된 상품 가격을 지불한다. 일부 주문 취소에는 1,000원 수수료가 붙으며 최초 1회는 면제된다.",
+      "scale": null,
+      "scale_source": null,
+      "evidence": [
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.KIljWLGfMwbi.natively",
+          "quote": "럭키밀 앱에서 주변 맛집과 럭키백을 찾아보세요.",
+          "supports": "주변 매장과 마감 할인 딜 탐색"
+        },
+        {
+          "url": "https://www.luckymeal.io/about",
+          "quote": "앱에서 예약하고 결제한 뒤, 가게가 정한 픽업 시간에 매장을 직접 방문해 받습니다.",
+          "supports": "앱 결제·매장 픽업"
+        },
+        {
+          "url": "https://www.luckymeal.io/about",
+          "quote": "내럭키밀 > 쿠폰함에서 보유한 쿠폰을 확인하실 수 있어요.",
+          "supports": "별도 주문 할인 쿠폰 보관"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.KIljWLGfMwbi.natively",
+          "quote": "최대 50% 할인된 가격으로 간편하게 예약하세요.",
+          "supports": "소비자 할인 가격"
+        },
+        {
+          "url": "https://www.luckymeal.io/about",
+          "quote": "취소 수수료 1,000원을 제외하고 환불돼요(처음 한 번은 수수료 없이 환불돼요).",
+          "supports": "취소 수수료·최초 1회 면제"
+        },
+        {
+          "url": "https://www.luckymeal.io/about",
+          "quote": "빵집·카페·음식점이 그날 다 팔지 못한 음식을 정가의 절반 수준으로 담아 파는",
+          "supports": "마감 재고 판매와 공급 가게군(빵집·카페·음식점)"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "name": "굿카운트",
+      "company": "주식회사 굿카운트",
+      "url": "https://goodcount.kr/",
+      "type": "직접",
+      "target": "파주 야당·운정역 생활권의 할인 포장 음식을 찾는 소비자",
+      "what_it_does": "야당·운정역 주변 음식점의 할인 메뉴를 찾고 미리 주문해 매장에서 픽업한다.",
+      "overlap": "근처 매장 타임세일 탐색, 앱 결제 후 매장 방문.",
+      "difference": "파주 야당·운정역 인근의 음식 포장 주문에 집중한다. 결제 대상은 쿠폰이 아니라 메뉴다.",
+      "pricing": "앱에서 메뉴를 카드 결제한다. 가게가 메뉴별 할인율을 설정하며 배달비는 없다.",
+      "scale": null,
+      "scale_source": null,
+      "evidence": [
+        {
+          "url": "https://goodcount.kr/",
+          "quote": "야당역·운정역 주변 할인 메뉴를 바로 확인할 수 있어요.",
+          "supports": "주변 할인 메뉴 탐색"
+        },
+        {
+          "url": "https://goodcount.kr/",
+          "quote": "앱 내에서 카드 결제로 진행됩니다.",
+          "supports": "소비자 결제"
+        },
+        {
+          "url": "https://goodcount.kr/",
+          "quote": "미리 주문하고 도착 즉시 픽업,",
+          "supports": "주문·매장 픽업"
+        },
+        {
+          "url": "https://goodcount.kr/",
+          "quote": "배달비 0원",
+          "supports": "배달비 없음"
+        },
+        {
+          "url": "https://goodcount.kr/",
+          "quote": "음식점 사장님이 메뉴별로 할인율을 직접 설정",
+          "supports": "할인율 설정 주체"
+        },
+        {
+          "url": "https://goodcount.kr/",
+          "quote": "매일 열리는 타임세일",
+          "supports": "시간 한정 타임세일(타임딜) 운영"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "name": "당근 비즈프로필 쿠폰",
+      "company": "주식회사 당근마켓",
+      "url": "https://bizschool.daangn.com/guide_bizprofile_coupon",
+      "type": "간접",
+      "target": "당근에서 동네 가게 소식·단골 혜택을 찾는 주민",
+      "what_it_does": "당근의 내 근처에서 동네 매장 쿠폰을 찾아 방문하거나 상품 구매에 할인 혜택을 쓴다.",
+      "overlap": "근처 매장 쿠폰 발견, 수령, 매장 사용.",
+      "difference": "독립 쿠폰 앱이 아니라 지역 커뮤니티 안의 기능이다. 단골 관계나 최소 구매 등을 쿠폰 조건으로 설정할 수 있다.",
+      "pricing": "발행 매장이 대표 메뉴 구매, 일정 금액 이상 구매, 누구나 할인 등 조건을 정한다. 소비자 별도 수수료는 미확인.",
+      "scale": "2026-05-29 발표 기준 비즈프로필 누적 300만 개 이상. 쿠폰 발행 매장 수가 아닌 프로필 수.",
+      "scale_source": "회사 발표",
+      "evidence": [
+        {
+          "url": "https://bizschool.daangn.com/guide_bizprofile_coupon",
+          "quote": "쿠폰을 만들기만 해도 [내 근처] 메뉴에 우리 가게 쿠폰이 등록돼요.",
+          "supports": "내 근처 쿠폰 탐색"
+        },
+        {
+          "url": "https://bizschool.daangn.com/guide_bizprofile_coupon",
+          "quote": "쿠폰 혜택을 사용할 겸 가게를 방문하거나 상품을 구매해요.",
+          "supports": "동네 매장 방문·구매"
+        },
+        {
+          "url": "https://bizschool.daangn.com/guide_bizprofile_coupon",
+          "quote": "대표 메뉴를 구매하면 할인, 얼마 이상 구매하면 할인, 누구에게나 할인",
+          "supports": "소비자 할인 이용 조건"
+        },
+        {
+          "url": "https://about.daangn.com/company/pr/archive/%EB%8B%B9%EA%B7%BC-%EB%B9%84%EC%A6%88%ED%94%84%EB%A1%9C%ED%95%84-%EA%B4%80%EB%A6%AC%EC%9E%90-%ED%99%88-%EC%A0%84%EB%A9%B4-%EA%B0%9C%ED%8E%B8%EC%9C%BC%EB%A1%9C-%EB%8B%A8%EA%B3%A8%EA%B4%80%EB%A6%AC-%EB%8D%94-%EC%89%AC%EC%9B%8C%EC%A7%84%EB%8B%A4/",
+          "quote": "현재 누적 300만 개 이상의 비즈프로필이 생성되었으며",
+          "supports": "회사 발표 비즈프로필 누적 수"
+        },
+        {
+          "url": "https://about.daangn.com/company/pr/archive/%EB%8B%B9%EA%B7%BC-%EB%B9%84%EC%A6%88%ED%94%84%EB%A1%9C%ED%95%84-%EA%B4%80%EB%A6%AC%EC%9E%90-%ED%99%88-%EC%A0%84%EB%A9%B4-%EA%B0%9C%ED%8E%B8%EC%9C%BC%EB%A1%9C-%EB%8B%A8%EA%B3%A8%EA%B4%80%EB%A6%AC-%EB%8D%94-%EC%89%AC%EC%9B%8C%EC%A7%84%EB%8B%A4/",
+          "quote": "보도자료 | 2026-05-29",
+          "supports": "규모 수치의 기준일(보도자료 게시일)"
+        },
+        {
+          "url": "https://businessdaangn.gitbook.io/business.daangn/profile/manage/coupon",
+          "quote": "고객이 쿠폰을 받으면 채팅으로 안내 메시지가 전송돼요.",
+          "supports": "주민의 쿠폰 수령과 매장 사용 절차"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "name": "네이버 플레이스 쿠폰",
+      "company": "네이버 주식회사",
+      "url": "https://help.naver.com/service/11713/contents/20805?lang=ko&osType=COMMONOS",
+      "type": "간접",
+      "target": "네이버 지도·플레이스로 방문·예약·주문할 매장을 고르는 소비자",
+      "what_it_does": "네이버 지도와 업체 플레이스에서 할인·증정 쿠폰을 찾아 매장이나 N예약·N주문에서 사용한다. 받은 쿠폰은 MY플레이스에서 관리한다.",
+      "overlap": "근처 가게 혜택 탐색, 쿠폰 받기, 쿠폰함·매장 사용.",
+      "difference": "독립 쿠폰 마켓이 아니라 업체 페이지·지도·예약·주문에 붙는 혜택이다. 매장별로 사용할 수 있는 채널이 다르다.",
+      "pricing": "매장·N예약·N주문에 적용되는 할인 또는 증정 혜택이다. 별도 소비자 쿠폰 수수료는 미확인.",
+      "scale": null,
+      "scale_source": null,
+      "evidence": [
+        {
+          "url": "https://new.smartplace.naver.com/notices/1167",
+          "quote": "네이버 지도에서 먼저 혜택을 확인하고 쿠폰을 받을 수 있습니다!",
+          "supports": "지도에서 혜택 확인 및 쿠폰 수령"
+        },
+        {
+          "url": "https://help.naver.com/service/11713/contents/20805?lang=ko&osType=COMMONOS",
+          "quote": "해당 매장 방문/N예약/N주문 시 쿠폰(할인, 증정)을 사용할 수 있습니다.",
+          "supports": "할인·증정 형태 및 사용처"
+        },
+        {
+          "url": "https://help.naver.com/service/11713/contents/20805?lang=ko&osType=COMMONOS",
+          "quote": "MY플레이스에 접속 후 쿠폰을 누르면 받은 쿠폰을 확인할 수 있습니다.",
+          "supports": "받은 쿠폰 모아보기"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "name": "니콘내콘",
+      "company": "주식회사 더블엔씨",
+      "url": "https://www.ncnc.app/",
+      "type": "간접",
+      "target": "카페·편의점·외식 등 브랜드 상품을 모바일 교환권으로 할인 구매하려는 소비자",
+      "what_it_does": "브랜드 기프티콘을 할인 구매하거나 보유한 기프티콘을 판매하는 서비스다.",
+      "overlap": "디지털 할인 교환권을 결제해 구매한다는 점.",
+      "difference": "가까운 독립 점포의 직접 발급 쿠폰보다는 브랜드 교환권 매입·판매에 무게가 있다.",
+      "pricing": "상품별 할인 가격으로 기프티콘을 구매한다. 구매자 별도 수수료는 미확인.",
+      "scale": "공식 홈페이지 기준 이용 가능 브랜드 400여 개(집계일 미공개).",
+      "scale_source": "회사 발표",
+      "evidence": [
+        {
+          "url": "https://www.ncnc.app/",
+          "quote": "400여개 브랜드를 저렴하게 이용하세요.",
+          "supports": "회사 발표 브랜드 수"
+        },
+        {
+          "url": "https://www.ncnc.app/",
+          "quote": "13%1,750원",
+          "supports": "공식 페이지의 상품별 할인 가격 예시"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.ncncnative",
+          "quote": "스타벅스, 투썸플레이스, 이디야, 문화상품권, 편의점, 치킨 등 원하는 기프티콘을 모두 할인가에 만나보세요!",
+          "supports": "브랜드 교환권 할인 구매"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.ncncnative",
+          "quote": "니콘내콘에서 직접 검수하고 매입한 쿠폰",
+          "supports": "기프티콘 매입 방식"
+        },
+        {
+          "url": "https://play.google.com/store/apps/details?hl=ko&id=com.ncncnative",
+          "quote": "원터치 등록으로 빠르고 편리하게 사용하지 않는 기프티콘을 판매할 수 있습니다.",
+          "supports": "이용자가 보유 기프티콘을 판매"
+        }
+      ],
+      "confidence": "high"
+    }
+  ],
+  "core": [
+    {
+      "name": "내근처픽",
+      "reason": "위치 기반 지도, 매장 혜택, 쿠폰 발급·보관·현장 사용이 쿠핀 ON의 소비자 흐름과 가장 가깝다."
+    },
+    {
+      "name": "동네핫딜",
+      "reason": "동네 할인 쿠폰을 지도·목록에서 찾아 매장에 제시한다는 핵심 화면과 사용 흐름이 겹친다."
+    },
+    {
+      "name": "마이쿠폰(MYCOUPON)",
+      "reason": "GPS 기반 생활권 쿠폰, 점주 발행, 고객의 현장 사용이라는 양면 구조를 직접 비교할 수 있다."
+    },
+    {
+      "name": "럭키밀",
+      "reason": "쿠폰 형식은 다르지만 가까운 매장 탐색부터 할인 딜의 앱 선결제와 현장 수령까지 이어져 유료 기능의 대안이다."
+    },
+    {
+      "name": "당근 비즈프로필 쿠폰",
+      "reason": "이미 주민이 이용하는 지역 커뮤니티에서 별도의 쿠폰 앱 없이 근처 가게의 쿠폰을 찾는 대안이다."
+    }
+  ],
+  "excluded": [
+    {
+      "name": "동백통",
+      "reason": "부산 공공배달앱은 2024년 5월 종료(2026-09-09 헤럴드경제 기사: https://news.nate.com/view/20260909n37477)."
+    },
+    {
+      "name": "기프티쇼 비즈 판촉 서비스",
+      "reason": "공식 공지상 2026-09-12 종료. 종료 범위는 B2B 판촉 주문이며, 모바일쿠폰 서비스 전체가 종료된 것은 아니다: https://biz.giftishow.com/serviceguideview?sgSeq=162"
+    },
+    {
+      "name": "라스트오더",
+      "reason": "소비자·점주용 앱 등록은 확인했으나, 현재 동네 매장에서 실제 주문을 받는다는 최근 공개 근거를 충분히 확인하지 못해 보류했다. 종료로 단정하지 않는다."
+    },
+    {
+      "name": "맵핀",
+      "reason": "공개 쿠폰 화면에 테스트로 보이는 항목이 섞여 있어 정상 운영 중인 실사용 제휴 쿠폰 목록이라는 근거를 확보하지 못했다."
+    }
+  ],
+  "notes": [
+    "직접은 동네 점포의 할인 쿠폰 또는 할인 딜 자체를 탐색하고 받거나 사는 서비스로 분류했다. 간접은 커뮤니티·지도·교환권처럼 본래 목적이 다른 제품에서 같은 소비자 행동을 충족하는 서비스다. 쿠폰이 아닌 시간제·마감 상품 주문은 difference에 구분했다.",
+    "공개 공식 사이트, 고객센터, 약관, 앱 마켓에서 확인한 범위다. 로그인·설치·가입·결제 없이 조사했으므로 실제 발급·결제·픽업 성공 여부와 지역별 활성 매장 밀도는 검증하지 않았다. 동네핫딜은 공개 설치·앱 설명을 확인했으나 거래 규모는 확인하지 못해 medium으로 두었다.",
+    "pricing이 null인 동네핫딜·내근처픽·동네방네는 소비자 쿠폰 수령 비용이나 플랫폼 수수료의 공개 근거를 찾지 못했다. 마이쿠폰의 990원은 점주 비용이므로 소비자 pricing에 넣지 않았다.",
+    "scale이 null인 항목은 현재 비교할 수 있는 이용자·제휴 매장 수 등 공개 근거를 확보하지 못했다. 앱 마켓 다운로드 구간은 활성 이용자·매장 수와 달라 집계에 넣지 않았다. 명시한 제휴 매장·비즈프로필·브랜드 수는 모두 회사가 발표하거나 공식 사이트에 게시한 서로 다른 지표다.",
+    "core 재검토 후보: 동네방네 — 공식 웹의 QR 쿠폰 서비스는 소비자가 할인을 미리 결제해 쿠폰으로 보관하고 한 달 안에 꺼내 쓰는 구조로, 쿠핀 ON의 유료 쿠폰 발급·보관·사용과 가장 가깝다. 다만 공개 웹 안내만 확인했고 실제 베타 앱에서 이 기능이 제공되는지는 미확인이다. core 목록은 이번 조사에서 바꾸지 않았다."
+  ]
+}
